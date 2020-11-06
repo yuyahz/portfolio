@@ -1,22 +1,45 @@
-import React from 'react'
-import { Nav, NavbarContainer, NavLogo } from './NavbarElements';
+import React from 'react';
+import { TiEquals } from "react-icons/ti";
+import { 
+    Nav, 
+    NavbarContainer, 
+    NavLogo, 
+    MobileIcon, 
+    NavMenu, 
+    NavItem, 
+    NavLinks,
+    NavBtn,
+    NavBtnLink 
+} from './NavbarElements';
 
 const Navbar = () => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>Yuya</NavLogo>
+                    <NavLogo to='/'>Y</NavLogo>
                     <MobileIcon>
-                        <FaBars />
+                        <TiEquals />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
                             <NavLinks to='about'>About</NavLinks>
                         </NavItem>
+                        <NavItem>
+                            <NavLinks to='discover'>Discover</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to='services'>Services</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to='signup'>Sign Up</NavLinks>
+                        </NavItem>
                     </NavMenu>
+                    <NavBtn>
+                        <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+                    </NavBtn>
                 </NavbarContainer>
-            </Nav>
+            </Nav> 
         </>
     )
 }

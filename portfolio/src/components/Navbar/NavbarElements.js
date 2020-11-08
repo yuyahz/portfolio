@@ -4,9 +4,9 @@ import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
     background: #999;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
     height: 50px;
-    ${'' /* margin-top: -80px; */}
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     font-size: 1rem;

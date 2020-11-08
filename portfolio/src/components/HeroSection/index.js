@@ -4,7 +4,7 @@ import { Button } from '../ButtonElements';
 import { 
     HeroContainer, 
     HeroBg, 
-    VideoBg, 
+    // VideoBg, 
     HeroContent, 
     HeroH1, 
     HeroP, 

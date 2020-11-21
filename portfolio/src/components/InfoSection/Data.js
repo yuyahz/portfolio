@@ -10,7 +10,7 @@ export const home0bjOne = {
   buttonLabel: 'dummy Text',
   imgStart: 'false',
   img: require('../../images/svg-1.svg'),
-  alt: 'svg-1',
+  alt: '1',
   dark: true,
   primary: true,
   darkText: false,

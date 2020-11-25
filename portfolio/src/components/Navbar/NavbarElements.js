@@ -32,6 +32,7 @@ export const NavbarContainer = styled.div`
 export const NavLogo = styled(LinkR)`
     color: #fff;
     justify-self: flex-start;
+    cursor: pointer;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -50,6 +51,7 @@ export const MobileIcon = styled.div`
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.3rem;
+        cursor: pointer;
         color: #fff;
     }
 `;
@@ -77,9 +79,10 @@ export const NavLinks= styled(LinkS)`
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
+    cursor: pointer;
 
     &.active {
-        border-bottom: 2px solid #01bf71;
+        border-bottom: 10px solid #01bf71;
     }
 `;
 

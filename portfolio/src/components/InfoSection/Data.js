@@ -8,10 +8,10 @@ export const home0bjOne = {
   description:
     'dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text',
   buttonLabel: 'dummy Text',
-  imgStart: 'false',
+  imgStart: false,
   img: require('../../images/svg-1.svg'),
   alt: '1',
   dark: true,
   primary: true,
-  darkText: false,
+  darkText: false
 };

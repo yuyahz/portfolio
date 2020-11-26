@@ -10,7 +10,7 @@ export const Container = styled.div`
   top: 0;
   z-index: 0;
   overflow: hidden;
-  background: linear-gradient(180deg, #fff 0%, #444 100%);
+  background: linear-gradient (180deg, #fff 0%, #444 100%);
 `;
 
 export const FormWrap = styled.div`
@@ -54,7 +54,7 @@ export const Form = styled.form`
   max-width: 400px;
   height: auto;
   width: 100%;
-  z-index: 0;
+  z-index: 1;
   display: grid;
   margin: 0 auto;
   padding: 80px 32px;
@@ -68,7 +68,7 @@ export const Form = styled.form`
 
 export const FormH1 = styled.h1`
   margin-bottom: 40px;
-  color: #444;
+  color: #fff;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
@@ -77,7 +77,7 @@ export const FormH1 = styled.h1`
 export const FormLabel = styled.label`
   margin-bottom: 8px;
   font-size: 14px;
-  color: #444;
+  color: #fff;
 `;
 
 export const FormInput = styled.input`
@@ -88,11 +88,11 @@ export const FormInput = styled.input`
 `;
 
 export const FormButton = styled.button`
-  background: #444;
+  background: #999;
   padding: 16px 0;
   border: none;
   border-radius: 4px;
-  color: #444;
+  color: #fff;
   font-size: 20px;
   cursor: pointer;
 `;

@@ -69,7 +69,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  height: 30px;
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -82,7 +82,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 10px solid #01bf71;
+    border-bottom: 2px solid #444;
   }
 `;
 

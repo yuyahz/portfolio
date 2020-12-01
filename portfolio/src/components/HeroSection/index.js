@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // import Video from '../../videos/video.mp4';
-import { Button } from '../ButtonElements';
+import { Button } from "../ButtonElements";
 import {
   HeroContainer,
   HeroBg,
@@ -11,7 +11,7 @@ import {
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
-} from './HeroElements';
+} from "./HeroElements";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -22,12 +22,17 @@ const HeroSection = () => {
 
   return (
     <HeroContainer id="home">
-      <HeroBg>{/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}</HeroBg>
+      <HeroBg>
+        {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
+      </HeroBg>
       <HeroContent>
-        <HeroH1>Life is Beautiful</HeroH1>
+        <HeroH1>
+          I am Yuya Hashirizaki. I design & build digital products based in
+          Vancouver.
+        </HeroH1>
         <HeroP>
-          extra ordinary times are create your creativity otherwise you will not be anyone... Sing
-          up
+          I’m a passionate multi-talented human who comes from Japan with over
+          6+ years of experiences in wider field of design disciplines.
         </HeroP>
         <HeroBtnWrapper>
           <Button

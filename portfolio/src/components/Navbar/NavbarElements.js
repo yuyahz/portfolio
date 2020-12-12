@@ -3,11 +3,9 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "#bbb" : "transparent")};
-  /* left: ${({ sidebar }) => (sidebar ? "0" : "-100%")}; */
+  background: ${({ scrollNav }) => (scrollNav ? "#f7f7f7" : "transparent")};
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
-  /* margin-top: -80px; */
-  font-size: 1rem;
+  font-size: 0.8rem;
   width: 50px;
   height: 100vh;
   display: flex;
@@ -17,15 +15,16 @@ export const Nav = styled.nav`
   z-index: 10;
   transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 
-  @media screen and (max-width: 960px) {
-    transition: 0.6s cubic-bezier(0.65, 0, 0.16, 1);
+  @media screen and (max-width: 768px) {
+    background-color: transparent;
   }
 `;
 
 export const NavbarContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  height: 50px;
+  height: 100vh;
   z-index: 1;
   width: 100%;
   padding: 0 24px;
@@ -33,16 +32,21 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #fff;
+  color: #f7f7f7;
+  filter: drop-shadow(1px 1px 1px rgba(1, 1, 1, 0.3));
+  margin: 15px 0;
   justify-self: flex-start;
   flex-direction: column;
   cursor: pointer;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -56,7 +60,21 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.3rem;
     cursor: pointer;
-    color: #fff;
+    color: #f7f7f7;
+  }
+`;
+
+export const NavSNS = styled.div`
+  height: 150px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -66,7 +84,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -74,27 +91,29 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 30px;
+  height: 70px;
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: #f7f7f7;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  transform: rotate(0.75turn);
   text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
+  padding: 1rem 0.5rem;
   cursor: pointer;
 
   &.active {
-    border-bottom: 2px solid #444;
+    color: #838383;
+    border-bottom: solid 1px #838383;
   }
 `;
 
-export const NavBtn = styled.nav`
+export const NavMail = styled.div`
   display: flex;
   flex-direction: column;
+  font-size: 1.5rem;
+  cursor: pointer;
   align-items: center;
 
   @media screen and (max-width: 768px) {
@@ -102,22 +121,32 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
-  background: #999;
-  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
-  white-space: nowrap;
-  padding: 10px 22px;
-  color: #fff;
-  font-size: 10px;
-  outline: none;
-  border: none;
-  transition: cubic-bezier(0.65, 0, 0.16, 1);
-  text-decoration: none;
+// export const NavBtn = styled.nav`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
 
-  &:hover {
-    transition: 0.6s cubic-bezier(0.65, 0, 0.16, 1);
-    background: #999;
-    color: #fff;
-  }
-`;
+//   @media screen and (max-width: 768px) {
+//     display: none;
+//   }
+// `;
+
+// export const NavBtnLink = styled(LinkR)`
+//   border-radius: 50px;
+//   background: #999;
+//   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+//   white-space: nowrap;
+//   padding: 10px 22px;
+//   color: #fff;
+//   font-size: 10px;
+//   outline: none;
+//   border: none;
+//   transition: cubic-bezier(0.65, 0, 0.16, 1);
+//   text-decoration: none;
+
+//   &:hover {
+//     transition: 0.6s cubic-bezier(0.65, 0, 0.16, 1);
+//     background: #999;
+//     color: #fff;
+//   }
+// `;

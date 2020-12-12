@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { TiEquals } from 'react-icons/ti';
-import { IconContext } from 'react-icons/lib';
-import { animateScroll as scroll } from 'react-scroll';
+import React, { useState, useEffect } from "react";
+import { TiEquals } from "react-icons/ti";
+import { IconContext } from "react-icons/lib";
+import { animateScroll as scroll } from "react-scroll";
+import * as AiIcons from "react-icons/ai";
+import { HiMail } from "react-icons/hi";
 import {
   Nav,
   NavbarContainer,
@@ -10,9 +12,11 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavSNS,
+  NavMail,
   NavBtn,
   NavBtnLink,
-} from './NavbarElements';
+} from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -26,7 +30,7 @@ const Navbar = ({ toggle }) => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', changeNav);
+    window.addEventListener("scroll", changeNav);
   }, []);
 
   const toggleHome = () => {
@@ -35,15 +39,32 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: 'magenta' }}>
+      <IconContext.Provider value={{ color: "#838383" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              Y
+              Y H
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <TiEquals />
             </MobileIcon>
+            <NavSNS>
+              <a target="_blank" href="https://dribbble.com/Hashirizaki">
+                <AiIcons.AiOutlineDribbble />
+              </a>
+              <a target="_blank" href="https://www.behance.net/yuyahashirizaki">
+                <AiIcons.AiFillBehanceSquare />
+              </a>
+              <a target="_blank" href="https://github.com/Yuya61">
+                <AiIcons.AiFillGithub />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/yuya-hashirizaki-9b0065191/"
+              >
+                <AiIcons.AiFillLinkedin />
+              </a>
+            </NavSNS>
             <NavMenu>
               <NavItem>
                 <NavLinks
@@ -52,7 +73,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-40}
+                  offset={0}
                   activeClass="active"
                 >
                   About
@@ -65,7 +86,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-40}
+                  offset={0}
                   activeClass="active"
                 >
                   Discover
@@ -78,7 +99,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-40}
+                  offset={0}
                   activeClass="active"
                 >
                   Services
@@ -91,16 +112,21 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-40}
+                  offset={0}
                   activeClass="active"
                 >
-                  Sign Up
+                  Sign_Up
                 </NavLinks>
               </NavItem>
             </NavMenu>
-            <NavBtn>
+            <NavMail>
+              <a target="_blank" href="mailto:hashirizaki61@gmail.com">
+                <HiMail />
+              </a>
+            </NavMail>
+            {/* <NavBtn>
               <NavBtnLink to="/signin">Sign In</NavBtnLink>
-            </NavBtn>
+            </NavBtn> */}
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

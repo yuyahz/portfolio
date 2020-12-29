@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import Video from '../../videos/video.mp4';
-import { Button } from "../ButtonElements";
+// import { Button } from "../ButtonElements";
 import {
   HeroContainer,
   HeroBg,
@@ -34,7 +34,7 @@ const HeroSection = () => {
           I’m a passionate multi-talented human who comes from Japan with over
           6+ years of experiences in wider field of design disciplines.
         </HeroP>
-        <HeroBtnWrapper>
+        {/* <HeroBtnWrapper>
           <Button
             to="signup"
             onMouseEnter={onHover}
@@ -50,7 +50,7 @@ const HeroSection = () => {
           >
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
-        </HeroBtnWrapper>
+        </HeroBtnWrapper> */}
       </HeroContent>
     </HeroContainer>
   );

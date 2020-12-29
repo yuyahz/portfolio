@@ -2,18 +2,18 @@ import React, { useState } from "react";
 // import Video from '../../videos/video.mp4';
 // import { Button } from "../ButtonElements";
 import {
-  HeroContainer,
-  HeroBg,
+  TitleContainer,
+  TitleBg,
   // VideoBg,
-  HeroContent,
-  HeroH1,
-  HeroP,
-  HeroBtnWrapper,
+  TitleContent,
+  TitleH1,
+  TitleP,
+  TitleBtnWrapper,
   ArrowForward,
   ArrowRight,
-} from "./HeroElements";
+} from "./TitleElements";
 
-const HeroSection = () => {
+const TitleSection = () => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -21,20 +21,18 @@ const HeroSection = () => {
   };
 
   return (
-    <HeroContainer id="home">
-      <HeroBg>
+    <TitleContainer id="home">
+      <TitleBg>
         {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
-      </HeroBg>
-      <HeroContent>
-        <HeroH1>
-          I am Yuya Hashirizaki. I design & build digital products based in
-          Vancouver.
-        </HeroH1>
-        <HeroP>
+      </TitleBg>
+      <TitleContent>
+        <TitleH1>I am Yuya Hashirizaki.</TitleH1>
+        <TitleH1>I design & build digital products based in Vancouver.</TitleH1>
+        <TitleP>
           I’m a passionate multi-talented human who comes from Japan with over
           6+ years of experiences in wider field of design disciplines.
-        </HeroP>
-        {/* <HeroBtnWrapper>
+        </TitleP>
+        {/* <TitleBtnWrapper>
           <Button
             to="signup"
             onMouseEnter={onHover}
@@ -50,10 +48,10 @@ const HeroSection = () => {
           >
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
-        </HeroBtnWrapper> */}
-      </HeroContent>
-    </HeroContainer>
+        </TitleBtnWrapper> */}
+      </TitleContent>
+    </TitleContainer>
   );
 };
 
-export default HeroSection;
+export default TitleSection;

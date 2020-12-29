@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import TitleHiddenSection from "../components/TitleHiddenSection";
 import TitleSection from "../components/TitleSection";
 import InfoSection from "../components/InfoSection";
 import {
@@ -21,7 +20,6 @@ const Home = () => {
 
   return (
     <>
-      <TitleHiddenSection />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <TitleSection />

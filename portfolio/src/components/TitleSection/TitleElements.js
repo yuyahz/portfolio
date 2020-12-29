@@ -2,17 +2,22 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const TitleContainer = styled.div`
-  background: #0c0c0c;
+  background: rgb(42, 42, 42);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 42, 42, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 0px;
   height: 800px;
   position: relative;
   z-index: 1;
 
-  :before {
+  /* :before {
     content: "";
     position: absolute;
     top: 0;
@@ -21,12 +26,12 @@ export const TitleContainer = styled.div`
     bottom: 0;
     background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.2) 0%,
+        rgba(1, 0, 0, 0.2) 0%,
         rgba(0, 0, 0, 0.6) 100%
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
-  }
+  } */
 `;
 
 export const TitleBg = styled.div`
@@ -40,13 +45,13 @@ export const TitleBg = styled.div`
   overflow: hidden;
 `;
 
-export const VideoBg = styled.video`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #444;
-`;
+// export const VideoBg = styled.video`
+//   width: 100%;
+//   height: 100%;
+//   /* -o-object-fit: cover;
+//   object-fit: cover; */
+//   background: #444;
+// `;
 
 export const TitleContent = styled.div`
   z-index: 3;

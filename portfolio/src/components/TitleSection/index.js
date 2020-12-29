@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import {
   TitleContainer,
   TitleBg,
-  // VideoBg,
+  VideoBg,
   TitleContent,
   TitleH1,
   TitleP,
@@ -22,9 +22,9 @@ const TitleSection = () => {
 
   return (
     <TitleContainer id="home">
-      <TitleBg>
-        {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
-      </TitleBg>
+      {/* <TitleBg>
+        <VideoBg></VideoBg>
+      </TitleBg> */}
       <TitleContent>
         <TitleH1>I am Yuya Hashirizaki.</TitleH1>
         <TitleH1>I design & build digital products based in Vancouver.</TitleH1>

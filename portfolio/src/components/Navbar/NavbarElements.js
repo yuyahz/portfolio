@@ -4,7 +4,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#f7f7f7" : "transparent")};
-  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3)); */
   font-size: 0.8rem;
   width: 50px;
   height: 100vh;
@@ -65,6 +65,7 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavSNS = styled.div`
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
   height: 150px;
   font-size: 1.5rem;
   display: flex;
@@ -91,6 +92,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
   height: 70px;
 `;
 
@@ -110,6 +112,7 @@ export const NavLinks = styled(LinkS)`
 `;
 
 export const NavMail = styled.div`
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;

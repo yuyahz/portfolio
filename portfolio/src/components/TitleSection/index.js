@@ -1,20 +1,7 @@
 import React, { useState } from "react";
-// import Video from '../../videos/video.mp4';
-// import { Button } from "../ButtonElements";
-import {
-  TitleContainer,
-  TitleContent,
-  TitleH1,
-  TitleP,
-} from "./TitleElements";
+import { TitleContainer, TitleContent, TitleH1, TitleP } from "./TitleElements";
 
 const TitleSection = () => {
-  const [hover, setHover] = useState(false);
-
-  const onHover = () => {
-    setHover(!hover);
-  };
-
   return (
     <TitleContainer id="home">
       <TitleContent>

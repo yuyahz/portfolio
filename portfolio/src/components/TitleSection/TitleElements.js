@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const TitleContainer = styled.div`
   background: rgb(42, 42, 42);
@@ -16,63 +15,7 @@ export const TitleContainer = styled.div`
   height: 800px;
   position: relative;
   z-index: 1;
-
-  :before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    height: 800px;
-    background: white;
-    z-index: 3;
-
-    -moz-animation: 0s ease-in 5s forwards;
-    /* Firefox */
-    -webkit-animation: 0s ease-in 5s forwards;
-    /* Safari and Chrome */
-    -o-animation: fadeOut 0s ease-in 5s forwards;
-    /* Opera */
-    animation: cssAnimation 0s ease-in 5s forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-
-    @keyframes cssAnimation {
-      to {
-        width: 0;
-        height: 0;
-        overflow: hidden;
-      }
-    }
-    @-webkit-keyframes cssAnimation {
-      to {
-        width: 0;
-        height: 0;
-        visibility: hidden;
-      }
-    }
-  }
 `;
-
-export const TitleBg = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-`;
-
-// export const VideoBg = styled.video`
-//   width: 100%;
-//   height: 100%;
-//   /* -o-object-fit: cover;
-//   object-fit: cover; */
-//   background: #444;
-// `;
 
 export const TitleContent = styled.div`
   z-index: 2;
@@ -112,21 +55,4 @@ export const TitleP = styled.p`
   @media screen and (max-width: 480px) {
     font-size: 18px;
   }
-`;
-
-// export const TitleBtnWrapper = styled.div`
-//   margin-top: 32px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// `;
-
-export const ArrowForward = styled(MdArrowForward)`
-  margin-left: 8px;
-  font-size: 20px;
-`;
-
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-  margin-left: 8px;
-  font-size: 20px;
 `;

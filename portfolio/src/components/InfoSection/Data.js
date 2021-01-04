@@ -22,7 +22,7 @@ export const home0bjTwo = {
   lightText: false,
   loightTextDesc: false,
   topLine: 'dummy Text',
-  headline: 'dummy Text dummy Text dummy Text dummy Text',
+  headline: 'dummy Text dummy Text dummy Text',
   description:
     'dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text',
   buttonLabel: 'dummy Text',
@@ -40,7 +40,7 @@ export const home0bjThree = {
   lightText: false,
   loightTextDesc: false,
   topLine: 'dummy Text',
-  headline: 'dummy Text dummy Text dummy Text dummy Text',
+  headline: 'dummy Text dummy Text dummy Text',
   description:
     'dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text',
   buttonLabel: 'dummy Text',

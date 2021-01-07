@@ -6,7 +6,12 @@ export const Section = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(218, 218, 218, 1) 100%
+  );
 `;
 
 export const Container = styled.div`

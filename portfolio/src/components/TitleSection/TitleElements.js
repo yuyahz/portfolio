@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const TitleContainer = styled.div`
   background: rgb(42, 42, 42);
   background: linear-gradient(
-    180deg,
-    rgba(42, 42, 42, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
+    0deg,
+    rgba(1, 6, 6, 1) 0%,
+    rgba(218, 218, 218, 1) 100%
   );
   display: flex;
   justify-content: center;

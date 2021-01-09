@@ -62,27 +62,27 @@ export const ColumnRight = styled.div`
   position: relative;
 
   ${Image}:nth-child(1) {
-    top: 70px;
-    left: 10px;
+    top: 100px;
+    left: 100px;
   }
 
   ${Image}:nth-child(2) {
-    top: 170px;
-    right: 10px;
+    top: 200px;
+    right: 120px;
   }
 
   ${Image}:nth-child(3) {
-    top: 320px;
-    left: 90px;
+    top: 250px;
+    left: 250px;
   }
 
   ${Image}:nth-child(4) {
-    bottom: 100px;
-    right: 500px;
+    bottom: 200px;
+    left: 100px;
   }
 
   ${Image}:nth-child(5) {
-    bottom: 70px;
-    right: 100px;
+    bottom: 120px;
+    right: 150px;
   }
 `;

@@ -31,17 +31,53 @@ export const ColumnLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 5rem 2rem;
+  padding: 1rem 3rem;
 
   h1 {
+    font-weight: 900;
     margin-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 9rem;
+  }
+
+  h3 {
+    font-weight: 900;
+    margin: 2rem 0;
+    font-size: 7rem;
+    line-height: 0.9;
   }
 
   p {
+    font-weight: 100;
     margin: 2rem 0;
-    font-size: 4rem;
-    line-height: 1.1;
+    font-size: 1.2rem;
+    letter-spacing: 1.3rem;
+  }
+
+  /* for vertical Ipad pro */
+  @media screen and (max-width: 1024px) {
+    padding: 1rem 6rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    font-size: 7rem;
+  }
+
+  h3 {
+    font-weight: 900;
+    margin: 2rem 0;
+    font-size: 7rem;
+    line-height: 0.9;
+  }
+
+  p {
+    font-weight: 100;
+    margin: 2rem 0;
+    font-size: 1rem;
+    letter-spacing: 1.3rem;
+  }
   }
 `;
 

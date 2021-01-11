@@ -24,19 +24,28 @@ const OpeningSection = () => {
       <Container>
         <ColumnLeft>
           <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            Welcome to Space
-          </motion.h1>
-          <motion.p
             variants={fadeLeft}
             initial="hidden"
             animate="visible"
             transition={{ duration: 1 }}
           >
-            Journey to the unknown
+            Hello.
+          </motion.h1>
+          <motion.h3
+            variants={fadeLeft}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 3 }}
+          >
+            I am a Yuya
+          </motion.h3>
+          <motion.p
+            variants={fadeLeft}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 3 }}
+          >
+            UI UX Designer Frontend Developer
           </motion.p>
         </ColumnLeft>
         <ColumnRight>

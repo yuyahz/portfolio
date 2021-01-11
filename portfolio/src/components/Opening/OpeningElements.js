@@ -47,11 +47,16 @@ export const ColumnLeft = styled.div`
 
 export const Image = styled(motion.img)`
   position: absolute;
-  width: 100%;
-  height: 100%;
-  max-width: 100px;
-  max-height: 100px;
+  width: auto;
+  height: auto;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+
+  @media screen and (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 480px) {
+    max-width: 80%;
+  }
 `;
 
 export const ColumnRight = styled.div`

@@ -7,11 +7,11 @@ import {
   Image,
 } from "./OpeningElements";
 import { motion } from "framer-motion";
-import PlanetOne from "../../images/ZigZag_1.svg";
-import PlanetTwo from "../../images/ZigZag_2.svg";
-import PlanetThree from "../../images/ZigZag_3.svg";
-import PlanetFour from "../../images/ZigZag_4.svg";
-import PlanetFive from "../../images/ZigZag_5.svg";
+import PlanetOne from "../../images/ZigZag_111.svg";
+import PlanetTwo from "../../images/ZigZag_222.svg";
+import PlanetThree from "../../images/ZigZag_333.svg";
+import PlanetFour from "../../images/ZigZag_444.svg";
+import PlanetFive from "../../images/ZigZag_555.svg";
 
 const OpeningSection = () => {
   const fadeLeft = {

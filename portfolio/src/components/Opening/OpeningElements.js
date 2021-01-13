@@ -103,23 +103,23 @@ export const ColumnRight = styled.div`
   position: relative;
 
   ${Image}:nth-child(1) {
-    top: 80px;
+    top: 90px;
     right: 150px;
   }
 
   ${Image}:nth-child(2) {
-    top: 300px;
-    right: 10px;
+    top: 270px;
+    right: 80px;
   }
 
   ${Image}:nth-child(3) {
     top: 200px;
-    right: 350px;
+    right: 320px;
   }
 
   ${Image}:nth-child(4) {
-    top: 220px;
-    right: 180px;
+    top: 200px;
+    right: 200px;
   }
 
   ${Image}:nth-child(5) {

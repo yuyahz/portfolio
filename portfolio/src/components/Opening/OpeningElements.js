@@ -39,18 +39,18 @@ export const ColumnLeft = styled.div`
     font-size: 9rem;
   }
 
-  h3 {
+  h2 {
     font-weight: 900;
-    margin: 2rem 0;
+    margin: 2rem 0 3rem 0;
     font-size: 7rem;
     line-height: 0.9;
   }
 
   p {
     font-weight: 100;
-    margin: 2rem 0;
-    font-size: 1.2rem;
-    letter-spacing: 1.3rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.7rem;
   }
 
   /* for vertical Ipad pro */
@@ -60,24 +60,24 @@ export const ColumnLeft = styled.div`
 
   @media screen and (max-width: 480px) {
     h1 {
-    font-weight: 900;
-    margin-bottom: 0.5rem;
-    font-size: 7rem;
-  }
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+      font-size: 7rem;
+    }
 
-  h3 {
-    font-weight: 900;
-    margin: 2rem 0;
-    font-size: 7rem;
-    line-height: 0.9;
-  }
+    h2 {
+      font-weight: 900;
+      margin: 2rem 0;
+      font-size: 7rem;
+      line-height: 0.9;
+    }
 
-  p {
-    font-weight: 100;
-    margin: 2rem 0;
-    font-size: 1rem;
-    letter-spacing: 1.3rem;
-  }
+    p {
+      font-weight: 100;
+      margin: 2rem 0;
+      font-size: 1rem;
+      letter-spacing: 1.3rem;
+    }
   }
 `;
 
@@ -103,27 +103,27 @@ export const ColumnRight = styled.div`
   position: relative;
 
   ${Image}:nth-child(1) {
-    top: 100px;
-    left: 100px;
+    top: 80px;
+    right: 150px;
   }
 
   ${Image}:nth-child(2) {
-    top: 200px;
-    right: 120px;
+    top: 300px;
+    right: 10px;
   }
 
   ${Image}:nth-child(3) {
-    top: 250px;
-    left: 250px;
+    top: 200px;
+    right: 350px;
   }
 
   ${Image}:nth-child(4) {
-    bottom: 200px;
-    left: 100px;
+    top: 220px;
+    right: 180px;
   }
 
   ${Image}:nth-child(5) {
     bottom: 120px;
-    right: 150px;
+    right: 200px;
   }
 `;

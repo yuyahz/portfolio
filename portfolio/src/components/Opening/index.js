@@ -7,11 +7,11 @@ import {
   Image,
 } from "./OpeningElements";
 import { motion } from "framer-motion";
-import PlanetOne from "../../images/ZigZag_1.svg";
-import PlanetTwo from "../../images/ZigZag_2.svg";
-import PlanetThree from "../../images/ZigZag_3.svg";
-import PlanetFour from "../../images/ZigZag_4.svg";
-import PlanetFive from "../../images/ZigZag_5.svg";
+import FaceOne from "../../images/ZigZag_1.svg";
+import FaceTwo from "../../images/ZigZag_2.svg";
+import FaceThree from "../../images/ZigZag_3.svg";
+import FaceFour from "../../images/ZigZag_4.svg";
+import FaceFive from "../../images/ZigZag_5.svg";
 
 const OpeningSection = () => {
   const fadeLeft = {
@@ -31,68 +31,76 @@ const OpeningSection = () => {
           >
             Hello.
           </motion.h1>
-          <motion.h3
+          <motion.h2
             variants={fadeLeft}
             initial="hidden"
             animate="visible"
-            transition={{ duration: 3 }}
+            transition={{ duration: 1.5 }}
           >
             I am a Yuya
-          </motion.h3>
+          </motion.h2>
+          <motion.p
+            variants={fadeLeft}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 2.5 }}
+          >
+            UI UX Designer
+          </motion.p>
           <motion.p
             variants={fadeLeft}
             initial="hidden"
             animate="visible"
             transition={{ duration: 3 }}
           >
-            UI UX Designer Frontend Developer
+            Frontend Developer
           </motion.p>
         </ColumnLeft>
         <ColumnRight>
           <Image
-            src={PlanetOne}
-            alt="planet"
-            whileTap={{ scale: 0.9 }}
+            src={FaceOne}
+            alt="Face"
+            whileTap={{ scale: 0.95 }}
             drag={true}
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 50 }}
+            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
           />
           <Image
-            src={PlanetTwo}
-            alt="planet"
-            whileTap={{ scale: 0.9 }}
+            src={FaceTwo}
+            alt="Face"
+            whileTap={{ scale: 0.95 }}
             drag={true}
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 100 }}
+            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
             initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+            animate={{ opacity: 1, x: 0, transition: { duration: 1.5 } }}
           />
           <Image
-            src={PlanetThree}
-            alt="planet"
-            whileTap={{ scale: 0.8 }}
+            src={FaceThree}
+            alt="Face"
+            whileTap={{ scale: 0.95 }}
             drag={true}
-            dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
+            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
             initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+            animate={{ opacity: 1, x: 0, transition: { duration: 2 } }}
           />
           <Image
-            src={PlanetFour}
-            alt="planet"
-            whileTap={{ scale: 0.9 }}
+            src={FaceFour}
+            alt="Face"
+            whileTap={{ scale: 0.95 }}
             drag={true}
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
             initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 2.5 } }}
           />
           <Image
-            src={PlanetFive}
-            alt="planet"
-            whileTap={{ scale: 0.9 }}
+            src={FaceFive}
+            alt="Face"
+            whileTap={{ scale: 0.95 }}
             drag={true}
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
             initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 3 } }}
           />
         </ColumnRight>
       </Container>

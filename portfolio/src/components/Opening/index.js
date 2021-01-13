@@ -63,8 +63,20 @@ const OpeningSection = () => {
             whileTap={{ scale: 0.95 }}
             drag={true}
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+            //fade from y:-100
+            // initial={{ opacity: 0, y: -100 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              rotate: [0, 5, 10, -10, 0],
+            }}
+            transition={{
+              duration: 1.7,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              loop: Infinity,
+              repeatDelay: 1,
+            }}
           />
           <Image
             src={FaceTwo}
@@ -72,8 +84,20 @@ const OpeningSection = () => {
             whileTap={{ scale: 0.95 }}
             drag={true}
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0, transition: { duration: 1.5 } }}
+            // fade from x:100
+            // initial={{ opacity: 0, x: 100 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              rotate: [0, 5, 10, -10, 0],
+            }}
+            transition={{
+              duration: 2.2,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              loop: Infinity,
+              repeatDelay: 1.7,
+            }}
           />
           <Image
             src={FaceThree}
@@ -81,8 +105,20 @@ const OpeningSection = () => {
             whileTap={{ scale: 0.95 }}
             drag={true}
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0, transition: { duration: 2 } }}
+            // fade from x:-100
+            // initial={{ opacity: 0, x: -100 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              rotate: [0, 5, 10, -10, 0],
+            }}
+            transition={{
+              duration: 2.7,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              loop: Infinity,
+              repeatDelay: 2.3,
+            }}
           />
           <Image
             src={FaceFour}
@@ -90,8 +126,20 @@ const OpeningSection = () => {
             whileTap={{ scale: 0.95 }}
             drag={true}
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 2.5 } }}
+            // fade from x:100
+            // initial={{ opacity: 0, y: 100 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              rotate: [0, 5, 10, -10, 0],
+            }}
+            transition={{
+              duration: 3.3,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              loop: Infinity,
+              repeatDelay: 2.7,
+            }}
           />
           <Image
             src={FaceFive}
@@ -99,8 +147,20 @@ const OpeningSection = () => {
             whileTap={{ scale: 0.95 }}
             drag={true}
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 3 } }}
+            // fade from x:-100
+            // initial={{ opacity: 0, y: -100 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              rotate: [0, 5, 10, -10, 0],
+            }}
+            transition={{
+              duration: 3.6,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              loop: Infinity,
+              repeatDelay: 3.3,
+            }}
           />
         </ColumnRight>
       </Container>

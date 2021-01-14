@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ExperimentSection from "../components/Experiment";
 import OpeningSection from "../components/Opening";
 import TitleSection from "../components/TitleSection";
 import InfoSection from "../components/InfoSection";
@@ -23,6 +24,7 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
+      <ExperimentSection />
       <OpeningSection />
       <TitleSection />
       <InfoSection {...home0bjOne} />

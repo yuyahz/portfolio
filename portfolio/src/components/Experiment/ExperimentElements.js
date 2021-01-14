@@ -96,6 +96,7 @@ export const Image = styled(motion.img)`
 `;
 
 export const ColumnRight = styled.div`
+  background: linear-gradient(180deg, #9c1aff 0%, rgb(119, 0, 255) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,4 +127,15 @@ export const ColumnRight = styled.div`
     bottom: 120px;
     right: 200px;
   }
+`;
+
+export const DragArea = styled.div`
+  opacity: 3;
+  background: white;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 30px;
+  top: calc(50% - 250px);
+  left: calc(50% -250px);
 `;

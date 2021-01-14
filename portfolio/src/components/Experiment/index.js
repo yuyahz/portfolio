@@ -4,6 +4,7 @@ import {
   Container,
   ColumnLeft,
   ColumnRight,
+  DragArea,
   Image,
 } from "./ExperimentElements";
 import { motion } from "framer-motion";
@@ -57,6 +58,7 @@ const ExperimentSection = () => {
           </motion.p>
         </ColumnLeft>
         <ColumnRight>
+          <DragArea />
           <Image
             src={FaceOne}
             alt="Face"
@@ -70,13 +72,6 @@ const ExperimentSection = () => {
               rotate: [0, 5, 10, -10, 0],
               transition: { duration: 1 },
             }}
-            // transition={{
-            //   duration: 1.7,
-            //   ease: "easeInOut",
-            //   times: [0, 0.2, 0.5, 0.8, 1],
-            //   loop: Infinity,
-            //   repeatDelay: 1,
-            // }}
           />
           <Image
             src={FaceTwo}
@@ -91,13 +86,6 @@ const ExperimentSection = () => {
               rotate: [0, 5, 10, -10, 0],
               transition: { duration: 3 },
             }}
-            // transition={{
-            //   duration: 2.2,
-            //   ease: "easeInOut",
-            //   times: [0, 0.2, 0.5, 0.8, 1],
-            //   loop: Infinity,
-            //   repeatDelay: 1.7,
-            // }}
           />
           <Image
             src={FaceThree}
@@ -112,13 +100,6 @@ const ExperimentSection = () => {
               rotate: [0, 5, 10, -10, 0],
               transition: { duration: 1.5 },
             }}
-            // transition={{
-            //   duration: 2.7,
-            //   ease: "easeInOut",
-            //   times: [0, 0.2, 0.5, 0.8, 1],
-            //   loop: Infinity,
-            //   repeatDelay: 2.3,
-            // }}
           />
           <Image
             src={FaceFour}
@@ -133,13 +114,6 @@ const ExperimentSection = () => {
               rotate: [0, 5, 10, -10, 0],
               transition: { duration: 1 },
             }}
-            // transition={{
-            //   duration: 3,
-            //   ease: "easeInOut",
-            //   times: [0, 0.2, 0.5, 0.8, 1],
-            //   loop: Infinity,
-            //   repeatDelay: 2.7,
-            // }}
           />
           <Image
             src={FaceFive}
@@ -154,13 +128,6 @@ const ExperimentSection = () => {
               rotate: [0, 5, 10, -10, 0],
               transition: { duration: 2.5 },
             }}
-            // transition={{
-            //   duration: 2,
-            //   ease: "easeInOut",
-            //   times: [0, 0.2, 0.5, 0.8, 1],
-            //   loop: Infinity,
-            //   repeatDelay: 3.3,
-            // }}
           />
         </ColumnRight>
       </Container>

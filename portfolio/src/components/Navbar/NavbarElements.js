@@ -5,7 +5,7 @@ import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "transparent" : "transparent")};
   font-size: 0.8rem;
-  width: 40px;
+  width: 75px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -31,9 +31,12 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #f7f7f7;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
   filter: drop-shadow(1px 1px 1px rgba(1, 1, 1, 0.3));
-  margin: 15px 0;
+  margin-top: 15px;
   justify-self: flex-start;
   flex-direction: column;
   cursor: pointer;
@@ -64,8 +67,8 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavSNS = styled.div`
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
-  height: 150px;
+  /* filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2)); */
+  height: 200px;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -101,7 +104,7 @@ export const NavLinks = styled(LinkS)`
   flex-direction: column;
   transform: rotate(0.75turn);
   text-decoration: none;
-  padding: 0.5rem 0.5rem;
+  padding: 0.2rem 0.2rem;
   cursor: pointer;
 
   &.active {
@@ -117,6 +120,7 @@ export const NavMail = styled.div`
   font-size: 1.5rem;
   cursor: pointer;
   align-items: center;
+  padding-bottom: 1rem;
 
   @media screen and (max-width: 768px) {
     display: none;

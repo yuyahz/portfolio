@@ -102,29 +102,28 @@ export const ColumnRight = styled.div`
   padding: 2rem;
   position: relative;
 
-
   ${Image}:nth-child(1) {
-    top: 90px;
+    top: 150px;
     right: 150px;
   }
 
   ${Image}:nth-child(2) {
-    top: 270px;
-    right: 80px;
+    bottom: 200px;
+    right: 280px;
   }
 
   ${Image}:nth-child(3) {
-    top: 200px;
-    right: 320px;
+    top: 220px;
+    left: 160px;
   }
 
   ${Image}:nth-child(4) {
-    top: 200px;
-    right: 200px;
+    bottom: 310px;
+    left: 335px;
   }
 
   ${Image}:nth-child(5) {
-    bottom: 120px;
-    right: 200px;
+    bottom: 200px;
+    right: 120px;
   }
 `;

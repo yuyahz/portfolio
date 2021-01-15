@@ -129,7 +129,7 @@ export const ColumnRight = styled.div`
   }
 `;
 
-export const DragArea = styled(ColumnRight)`
+export const DragArea = styled.div`
   opacity: 2;
   background: white;
   position: absolute;

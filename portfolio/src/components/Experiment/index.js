@@ -61,7 +61,7 @@ const ExperimentSection = () => {
         </ColumnLeft>
         <ColumnRight>
           <motion.div drag dragConstraints={constraintsRef}>
-            <DragArea>
+            <DragArea ref={constraintsRef}>
               <Image
                 src={FaceOne}
                 alt="Face"

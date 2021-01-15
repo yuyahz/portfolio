@@ -102,6 +102,7 @@ export const ColumnRight = styled.div`
   padding: 2rem;
   position: relative;
 
+
   ${Image}:nth-child(1) {
     top: 90px;
     right: 150px;

@@ -129,13 +129,13 @@ export const ColumnRight = styled.div`
   }
 `;
 
-export const DragArea = styled.div`
-  opacity: 3;
+export const DragArea = styled(ColumnRight)`
+  opacity: 2;
   background: white;
   position: absolute;
   width: 500px;
   height: 500px;
   border-radius: 30px;
   top: calc(50% - 250px);
-  left: calc(50% -250px);
+  right: calc(50% - 250px);
 `;

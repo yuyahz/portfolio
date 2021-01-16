@@ -29,6 +29,7 @@ const Navbar = ({ toggle }) => {
     }
   };
 
+
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
   }, []);
@@ -45,7 +46,7 @@ const Navbar = ({ toggle }) => {
     return (
       <NavLogo
         to="/"
-        onClick={toggleHome}
+        addEventListener={toggleHome}
         animate={{
           scale: [0.7, 1.3, 1.3, 0.7, 0.7],
           rotate: [0, 0, 270, 270, 0],
@@ -65,17 +66,19 @@ const Navbar = ({ toggle }) => {
   function AnimateLogo(props) {
     const isClicked = props.isClicked;
     if (isClicked) {
+      return <NonClickedAnimateLogo />;
+    }
+    else {
       return <ClickedAnimateLogo />;
     }
-    return <NonClickedAnimateLogo />;
-  }
+  };
 
   return (
     <>
       <IconContext.Provider value={{ color: "#838383" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <AnimateLogo to="/" onClick={toggleHome} isClicked={true} />
+            <AnimateLogo to="/" onClick={toggleHome} isClicked={false} />
             <MobileIcon onClick={toggle}>
               <TiEquals />
             </MobileIcon>

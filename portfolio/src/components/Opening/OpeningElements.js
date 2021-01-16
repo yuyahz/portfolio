@@ -37,6 +37,12 @@ export const ColumnLeft = styled.div`
     font-weight: 900;
     margin-bottom: 0.5rem;
     font-size: 9rem;
+    z-index: 100;
+    -ms-user-select: none; /* IE 10+ */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
   }
 
   h2 {
@@ -44,6 +50,12 @@ export const ColumnLeft = styled.div`
     margin: 2rem 0 3rem 0;
     font-size: 7rem;
     line-height: 0.9;
+    z-index: 100;
+    -ms-user-select: none; /* IE 10+ */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
   }
 
   p {
@@ -51,6 +63,12 @@ export const ColumnLeft = styled.div`
     margin-top: 1rem;
     font-size: 1rem;
     letter-spacing: 0.7rem;
+    z-index: 100;
+    -ms-user-select: none; /* IE 10+ */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
   }
 
   /* for vertical Ipad pro */
@@ -114,16 +132,71 @@ export const ColumnRight = styled.div`
 
   ${Image}:nth-child(3) {
     top: 220px;
-    left: 160px;
+    right: 390px;
   }
 
   ${Image}:nth-child(4) {
     bottom: 310px;
-    left: 335px;
+    right: 220px;
   }
 
   ${Image}:nth-child(5) {
     bottom: 200px;
     right: 120px;
   }
+
+  /* for horizontal Ipad pro */
+  /* @media screen and (max-width: 1366px) {
+    ${Image}:nth-child(1) {
+    top: 280px;
+    right: 150px;
+  }
+
+  ${Image}:nth-child(2) {
+    bottom: 320px;
+    right: 280px;
+  }
+
+  ${Image}:nth-child(3) {
+    top: 380px;
+    right: 390px;
+  }
+
+  ${Image}:nth-child(4) {
+    bottom: 430px;
+    right: 220px;
+  }
+
+  ${Image}:nth-child(5) {
+    bottom: 300px;
+    right: 120px;
+  } */
+
+  /* for Vertical Ipad pro */
+  /* @media screen and (max-width: 1024px) {
+    ${Image}:nth-child(1) {
+      top: 450px;
+      right: 150px;
+    }
+
+    ${Image}:nth-child(2) {
+      bottom: 550px;
+      right: 280px;
+    }
+
+    ${Image}:nth-child(3) {
+      top: 520px;
+      right: 380px;
+    }
+
+    ${Image}:nth-child(4) {
+      bottom: 630px;
+      right: 220px;
+    }
+
+    ${Image}:nth-child(5) {
+      bottom: 500px;
+      right: 150px;
+    }
+  } */
 `;

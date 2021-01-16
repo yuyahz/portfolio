@@ -37,12 +37,45 @@ const Navbar = ({ toggle }) => {
     scroll.scrollToTop();
   };
 
+  function NonClickedAnimateLogo(props) {
+    return <NavLogo to="/" onClick={toggleHome} />;
+  }
+
+  function ClickedAnimateLogo(props) {
+    return (
+      <NavLogo
+        to="/"
+        onClick={toggleHome}
+        animate={{
+          scale: [0.7, 1.3, 1.3, 0.7, 0.7],
+          rotate: [0, 0, 270, 270, 0],
+          borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+        }}
+        transition={{
+          duration: 3,
+          ease: "easeInOut",
+          times: [0, 0.2, 0.5, 0.8, 1],
+          loop: Infinity,
+          repeatDelay: 1,
+        }}
+      />
+    );
+  }
+
+  function AnimateLogo(props) {
+    const isClicked = props.isClicked;
+    if (isClicked) {
+      return <ClickedAnimateLogo />;
+    }
+    return <NonClickedAnimateLogo />;
+  }
+
   return (
     <>
       <IconContext.Provider value={{ color: "#838383" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to="/" onClick={toggleHome}/>
+            <AnimateLogo to="/" onClick={toggleHome} isClicked={true} />
             <MobileIcon onClick={toggle}>
               <TiEquals />
             </MobileIcon>

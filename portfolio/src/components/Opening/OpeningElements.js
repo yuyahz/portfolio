@@ -30,6 +30,10 @@ export const Container = styled.div`
   /* padding: 3rem calc((100vw - 1300px) / 2); */
   padding: 3rem;
 
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 1fr;
+  }
+
   @media screen and (max-width: 520px) {
     grid-template-columns: 1fr;
   }
@@ -77,6 +81,10 @@ export const ColumnLeft = styled.div`
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+  }
+
+  @media screen and (max-width: 960px) {
+
   }
 
   @media screen and (max-width: 520px) {
@@ -138,6 +146,7 @@ export const ColumnRight = styled.div`
 
   /* for Tablet */
   @media screen and (max-width: 960px) {
+
     ${Image}:nth-child(1) {
       top: 150px;
       right: 120px;

@@ -31,7 +31,11 @@ export const Container = styled.div`
   padding: 3rem;
 
   @media screen and (max-width: 960px) {
+    display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
 
   @media screen and (max-width: 520px) {
@@ -84,7 +88,8 @@ export const ColumnLeft = styled.div`
   }
 
   @media screen and (max-width: 960px) {
-
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 1;
   }
 
   @media screen and (max-width: 520px) {
@@ -146,30 +151,32 @@ export const ColumnRight = styled.div`
 
   /* for Tablet */
   @media screen and (max-width: 960px) {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 2;
 
     ${Image}:nth-child(1) {
-      top: 150px;
-      right: 120px;
+      top: 280px;
+      right: 100px;
     }
 
     ${Image}:nth-child(2) {
-      bottom: 180px;
-      right: 250px;
+      top: 490px;
+      right:310px;
     }
 
     ${Image}:nth-child(3) {
-      top: 230px;
-      right: 350px;
+      top: 235px;
+      right: 360px;
     }
 
     ${Image}:nth-child(4) {
-      bottom: 300px;
-      right: 190px;
+      top: 420px;
+      right: 230px;
     }
 
     ${Image}:nth-child(5) {
-      bottom: 200px;
-      right: 90px;
+      top: 480px;
+      right: 100px;
     }
   }
 

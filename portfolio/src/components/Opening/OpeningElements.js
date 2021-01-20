@@ -25,36 +25,18 @@ export const Section = styled.section`
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  /* grid-template-columns: 1fr 1fr; */
   height: 100vh;
   /* padding: 3rem calc((100vw - 1300px) / 2); */
   padding: 3rem 3rem 3rem 7rem;
 
   /* My defaulft tablet is 970px but this exceptionl size for ipad and vertical ipad pro */
-   @media screen and (max-width: 1366px) {
+  @media screen and (max-width: 1366px) {
     height: 800px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-
-  @media screen and (max-width: 1024px) {
-    height: 800px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-
-  @media screen and (max-width: 960px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
   }
 
   @media screen and (max-width: 520px) {
@@ -64,6 +46,8 @@ export const Container = styled.div`
 
 export const ColumnLeft = styled.div`
   display: flex;
+  grid-area: 1 / 1 / 2 / 2;
+  z-index: 1;
   color: #444;
   flex-direction: column;
   justify-content: center;
@@ -106,21 +90,6 @@ export const ColumnLeft = styled.div`
     user-select: none;
   }
 
-  @media screen and (max-width: 1366px) {
-    grid-area: 1 / 1 / 2 / 2;
-    z-index: 1;
-  }
-
-  @media screen and (max-width: 1024px) {
-    grid-area: 1 / 1 / 2 / 2;
-    z-index: 1;
-  }
-
-  @media screen and (max-width: 960px) {
-    grid-area: 1 / 1 / 2 / 2;
-    z-index: 1;
-  }
-
   @media screen and (max-width: 520px) {
     grid-area: 1 / 1 / 2 / 2;
     z-index: 1;
@@ -150,6 +119,8 @@ export const Image = styled(motion.img)`
 
 export const ColumnRight = styled.div`
   display: flex;
+  grid-area: 1 / 1 / 2 / 2;
+  z-index: 2;
   justify-content: center;
   align-items: center;
   padding: 2rem;
@@ -157,67 +128,61 @@ export const ColumnRight = styled.div`
   /* background: pink; */
 
   ${Image}:nth-child(1) {
-    bottom: 350px;
-    right: 150px;
+    top: 50px;
+    right: 170px;
   }
 
   ${Image}:nth-child(2) {
-    bottom: 200px;
-    right: 280px;
+    top: 170px;
+    right: 260px;
   }
 
   ${Image}:nth-child(3) {
-    bottom: 250px;
-    right: 400px;
+    top: 240px;
+    right: 155px;
   }
 
   ${Image}:nth-child(4) {
-    bottom: 310px;
-    right: 220px;
+    top: 260px;
+    right: 370px;
   }
 
   ${Image}:nth-child(5) {
-    bottom: 200px;
-    right: 120px;
+    top: 180px;
+    right: 50px;
   }
 
   /* My defaulft tablet is 970px but this exceptionl size for ipad and ipad pro */
   @media screen and (max-width: 1366px) {
-    grid-area: 1 / 1 / 2 / 2;
-    z-index: 2;
-
     ${Image}:nth-child(1) {
-      top: 260px;
-      right: 100px;
+      top: 50px;
+      right: 170px;
     }
 
     ${Image}:nth-child(2) {
-      top: 490px;
-      right: 310px;
+      top: 190px;
+      right: 260px;
     }
 
     ${Image}:nth-child(3) {
-      top: 235px;
-      right: 360px;
+      top: 270px;
+      right: 150px;
     }
 
     ${Image}:nth-child(4) {
-      top: 400px;
-      right: 230px;
+      top: 280px;
+      right: 370px;
     }
 
     ${Image}:nth-child(5) {
-      top: 480px;
-      right: 100px;
+      top: 200px;
+      right: 50px;
     }
   }
 
   /* My defaulft tablet is 970px but this exceptionl size
    for ipad and vertical ipad pro */
   @media screen and (max-width: 1024px) {
-    grid-area: 1 / 1 / 2 / 2;
-    z-index: 2;
-
     ${Image}:nth-child(1) {
       top: 260px;
       right: 100px;
@@ -247,8 +212,6 @@ export const ColumnRight = styled.div`
   /* for Mobile */
   @media screen and (max-width: 520px) {
     padding: 0rem;
-    grid-area: 1 / 1 / 2 / 2;
-    z-index: 2;
 
     ${Image}:nth-child(1) {
       max-width: 30%;

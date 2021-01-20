@@ -184,28 +184,28 @@ export const ColumnRight = styled.div`
    for ipad and vertical ipad pro */
   @media screen and (max-width: 1024px) {
     ${Image}:nth-child(1) {
-      top: 260px;
-      right: 100px;
+      top: 50px;
+      right: 170px;
     }
 
     ${Image}:nth-child(2) {
-      top: 490px;
-      right: 310px;
+      top: 190px;
+      right: 260px;
     }
 
     ${Image}:nth-child(3) {
-      top: 235px;
-      right: 360px;
+      top: 270px;
+      right: 150px;
     }
 
     ${Image}:nth-child(4) {
-      top: 400px;
-      right: 230px;
+      top: 280px;
+      right: 370px;
     }
 
     ${Image}:nth-child(5) {
-      top: 480px;
-      right: 100px;
+      top: 200px;
+      right: 50px;
     }
   }
 
@@ -214,38 +214,38 @@ export const ColumnRight = styled.div`
     padding: 0rem;
 
     ${Image}:nth-child(1) {
-      max-width: 30%;
+      max-width: 45%;
       height: auto;
-      bottom: 300px;
-      right: 10px;
+      top: 130px;
+      right: 45px;
     }
 
     ${Image}:nth-child(2) {
-      max-width: 9%;
+      max-width: 15%;
       height: auto;
-      bottom: 0px;
-      right: 0px;
+      top: 245px;
+      right: 110px;
     }
 
     ${Image}:nth-child(3) {
-      max-width: 9%;
+      max-width: 18%;
       height: auto;
-      top: -180px;
-      right: 10px;
+      top: 280px;
+      right: 180px;
     }
 
     ${Image}:nth-child(4) {
-      max-width: 9%;
+      max-width: 15%;
       height: auto;
-      bottom: 320px;
-      right: 50px;
+      top: 320px;
+      right: 30px;
     }
 
     ${Image}:nth-child(5) {
-      max-width: 9%;
+      max-width: 17%;
       height: auto;
-      bottom: 230px;
-      right: 45px;
+      top: 380px;
+      right: 60px;
     }
   }
 `;

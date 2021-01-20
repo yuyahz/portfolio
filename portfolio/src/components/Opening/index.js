@@ -62,7 +62,7 @@ const OpeningSection = () => {
             alt="Face"
             whileTap={{ scale: 0.95 }}
             drag={true}
-            dragConstraints={{ left: -200, right: 150, top: -100, bottom: 300 }}
+            dragConstraints={{ left: -350, right: 300, top: -70, bottom: 450 }}
             initial={{ opacity: 0, y: -100 }}
             animate={{
               opacity: 1,
@@ -76,7 +76,7 @@ const OpeningSection = () => {
             alt="Face"
             whileTap={{ scale: 0.95 }}
             drag={true}
-            dragConstraints={{ left: -350, right: 150, top: -280, bottom: 180 }}
+            dragConstraints={{ left: -410, right: 390, top: -190, bottom: 380 }}
             initial={{ opacity: 0, x: -100 }}
             animate={{
               opacity: 1,
@@ -90,7 +90,7 @@ const OpeningSection = () => {
             alt="Face"
             whileTap={{ scale: 0.95 }}
             drag={true}
-            dragConstraints={{ left: -80, right: 400, top: -180, bottom: 220 }}
+            dragConstraints={{ left: -500, right: 280, top: -260, bottom: 250 }}
             initial={{ opacity: 0, x: -100 }}
             animate={{
               opacity: 1,
@@ -104,7 +104,7 @@ const OpeningSection = () => {
             alt="Face"
             whileTap={{ scale: 0.95 }}
             drag={true}
-            dragConstraints={{ left: -250, right: 250, top: -200, bottom: 290 }}
+            dragConstraints={{ left: -300, right: 500, top: -280, bottom: 340 }}
             initial={{ opacity: 0, y: 100 }}
             animate={{
               opacity: 1,
@@ -118,7 +118,7 @@ const OpeningSection = () => {
             alt="Face"
             whileTap={{ scale: 0.95 }}
             drag={true}
-            dragConstraints={{ left: -200, right: 280, top: -300, bottom: 160 }}
+            dragConstraints={{ left: -600, right: 180, top: -190, bottom: 370 }}
             initial={{ opacity: 0, y: 100 }}
             animate={{
               opacity: 1,

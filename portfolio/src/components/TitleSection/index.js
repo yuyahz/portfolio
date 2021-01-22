@@ -11,9 +11,8 @@ import MyPhoto from "../../images/MyPhoto.png";
 const TitleSection = () => {
   return (
     <TitleContainer id="home">
-      s
-      <Image src={MyPhoto.png} alt="profile" />
       <TitleContent>
+        <Image src={MyPhoto} />
         <TitleH1>I am Yuya Hashirizaki</TitleH1>
         <TitleH1>I design & build digital products based in Vancouver</TitleH1>
         <TitleP>

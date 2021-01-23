@@ -6,13 +6,13 @@ import {
   TitleP,
   Image,
 } from "./TitleElements";
-import MyPhoto from "../../images/MyPhoto.png";
+import HeadShot from "../../images/HeadShot.png";
 
 const TitleSection = () => {
   return (
     <TitleContainer id="home">
       <TitleContent>
-        <Image src={MyPhoto} />
+        <Image src={HeadShot} />
         <TitleH1>I am Yuya Hashirizaki</TitleH1>
         <TitleH1>I design & build digital products based in Vancouver</TitleH1>
         <TitleP>

@@ -58,6 +58,6 @@ export const TitleP = styled.p`
 `;
 
 export const Image = styled.img`
-  width: 100%;
+  width: 30%;
   height: auto;
 `;

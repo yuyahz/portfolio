@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import {
   TitleContainer,
   TitleContent,
+  ImageContent,
+  H1Content,
   TitleH1,
   TitleP,
   Image,
@@ -12,12 +14,20 @@ const TitleSection = () => {
   return (
     <TitleContainer id="home">
       <TitleContent>
-        <Image src={HeadShot} />
-        <TitleH1>I am Yuya Hashirizaki</TitleH1>
-        <TitleH1>I design & build digital products based in Vancouver</TitleH1>
+        <ImageContent>
+          <Image src={HeadShot} />
+        </ImageContent>
+        <H1Content>
+          <TitleH1>
+            I am Yuya Hashirizaki
+            <TitleH1 className="br">
+              design & build digital products based in Vancouver
+            </TitleH1>
+          </TitleH1>
+        </H1Content>
         <TitleP>
-          I’m a passionate multi-talented human who comes from Japan with over
-          6+ years of experiences in wider field of design disciplines
+            I’m a passionate multi-talented human who comes from Japan with over
+            6+ years of experiences in wider field of design disciplines
         </TitleP>
       </TitleContent>
     </TitleContainer>

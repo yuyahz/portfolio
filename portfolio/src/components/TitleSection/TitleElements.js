@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const TitleContainer = styled.div`
+  z-index: 1;
   background: rgb(42, 42, 42);
   background: linear-gradient(
     0deg,
@@ -14,7 +15,6 @@ export const TitleContainer = styled.div`
   padding: 0 10px;
   height: 800px;
   position: relative;
-  z-index: 1;
 `;
 
 export const TitleContent = styled.div`
@@ -58,6 +58,6 @@ export const TitleP = styled.p`
 `;
 
 export const Image = styled.img`
-  width: 15%;
-  height: auto;
+  z-index: 2;
+  justify-content: flex-start;
 `;

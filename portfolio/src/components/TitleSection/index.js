@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import * as FadeIn from "../FadeIn";
 import {
   TitleContainer,
   TitleContent,
@@ -15,20 +16,28 @@ const TitleSection = () => {
     <TitleContainer id="home">
       <TitleContent>
         <ImageContent>
-          <Image src={HeadShot} />
+          <FadeIn.Left>
+            <Image src={HeadShot} />
+          </FadeIn.Left>
         </ImageContent>
         <H1Content>
-          <TitleH1>
-            I am Yuya Hashirizaki
-            <TitleH1 className="br">
-              design & build digital products based in Vancouver
+          <FadeIn.Right>
+            <TitleH1>
+              I am Yuya Hashirizaki
+              <FadeIn.Right>
+                <TitleH1 className="br">
+                  design & build digital products based in Vancouver
+                </TitleH1>
+              </FadeIn.Right>
             </TitleH1>
-          </TitleH1>
+          </FadeIn.Right>
         </H1Content>
-        <TitleP>
+        <FadeIn.Right>
+          <TitleP>
             I’m a passionate multi-talented human who comes from Japan with over
             6+ years of experiences in wider field of design disciplines.
-        </TitleP>
+          </TitleP>
+        </FadeIn.Right>
       </TitleContent>
     </TitleContainer>
   );

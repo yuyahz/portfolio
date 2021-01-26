@@ -72,7 +72,7 @@ export const TitleH1 = styled.h1`
   color: #fff;
   font-size: 45px;
   text-align: left;
-  max-width: 1200px;
+  max-width: 1000px;
   letter-spacing: 0.1em;
   line-height: 1.5em;
 
@@ -93,7 +93,7 @@ export const TitleP = styled.p`
   color: #fff;
   font-size: 24px;
   text-align: left;
-  max-width: 580px;
+  max-width: 550px;
 
   @media screen and (max-width: 970px) {
     padding: 0 40px;

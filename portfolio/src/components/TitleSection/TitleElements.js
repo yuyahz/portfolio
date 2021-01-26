@@ -18,6 +18,14 @@ export const TitleContainer = styled.div`
   @media screen and (min-width: 1441px) {
     justify-content: center;
   }
+
+  @media screen and (max-width: 970px) {
+    height: 1100px;
+  }
+
+  @media screen and (max-width: 520px) {
+    height: 600px;
+  }
 `;
 
 export const TitleContent = styled.div`
@@ -49,16 +57,20 @@ export const Image = styled.img`
 `;
 
 export const H1Content = styled.div`
-  padding-top: 20px;
+  padding: 20px 40px;
 
   @media screen and (max-width: 970px) {
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
+  }
+
+  @media screen and (max-width: 520px) {
+    padding: 20px 40px 20px 40px;
   }
 `;
 
 export const TitleH1 = styled.h1`
   color: #fff;
-  font-size: 48px;
+  font-size: 45px;
   text-align: left;
   max-width: 1200px;
   letter-spacing: 0.1em;
@@ -69,11 +81,11 @@ export const TitleH1 = styled.h1`
   }
 
   @media screen and (max-width: 970px) {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   @media screen and (max-width: 520px) {
-    font-size: 32px;
+    font-size: 24px;
   }
 `;
 
@@ -81,13 +93,15 @@ export const TitleP = styled.p`
   color: #fff;
   font-size: 24px;
   text-align: left;
-  max-width: 600px;
+  max-width: 580px;
 
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
+  @media screen and (max-width: 970px) {
+    padding: 0 40px;
+    font-size: 16px;
   }
 
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
+  @media screen and (max-width: 520px) {
+    padding: 0 30px;
+    font-size: 14px;
   }
 `;

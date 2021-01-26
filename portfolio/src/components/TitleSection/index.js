@@ -27,7 +27,7 @@ const TitleSection = () => {
         </H1Content>
         <TitleP>
             I’m a passionate multi-talented human who comes from Japan with over
-            6+ years of experiences in wider field of design disciplines
+            6+ years of experiences in wider field of design disciplines.
         </TitleP>
       </TitleContent>
     </TitleContainer>

@@ -73,7 +73,7 @@ export const TitleH1 = styled.h1`
   font-size: 45px;
   text-align: left;
   max-width: 1000px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   line-height: 1.5em;
 
   .br {

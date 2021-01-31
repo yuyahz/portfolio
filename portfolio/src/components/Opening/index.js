@@ -15,12 +15,12 @@ import FaceFive from "../../images/ZigZag_5.svg";
 
 const OpeningSection = () => {
   const fadeLeft = {
-    hidden: { opacity: 0, x: -100 },
+    hidden: { opacity: 0, x: -200 },
     visible: { opacity: 1, x: 0 },
   };
 
   return (
-    <Section>
+    <Section id="home">
       <Container>
         <ColumnLeft>
           <motion.h1

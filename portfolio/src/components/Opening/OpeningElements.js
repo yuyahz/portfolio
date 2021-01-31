@@ -56,7 +56,7 @@ export const ColumnLeft = styled.div`
   /* background: skyblue; */
 
   h1 {
-    font-weight: 900;
+    font-weight: bold;
     margin-bottom: 0.5rem;
     font-size: 9rem;
     -ms-user-select: none; /* IE 10+ */
@@ -67,7 +67,7 @@ export const ColumnLeft = styled.div`
   }
 
   h2 {
-    font-weight: 900;
+    font-weight: bold;
     margin: 2rem 0 3rem 0;
     font-size: 7rem;
     line-height: 0.9;
@@ -79,7 +79,7 @@ export const ColumnLeft = styled.div`
   }
 
   p {
-    font-weight: 100;
+    font-weight: normal;
     margin-top: 1rem;
     font-size: 1rem;
     letter-spacing: 0.7rem;
@@ -128,23 +128,23 @@ export const ColumnRight = styled.div`
   /* background: pink; */
 
   ${Image}:nth-child(1) {
-    top: 50px;
-    right: 170px;
+    top: 40px;
+    right: 190px;
   }
 
   ${Image}:nth-child(2) {
-    top: 170px;
-    right: 260px;
+    top: 180px;
+    right: 310px;
   }
 
   ${Image}:nth-child(3) {
-    top: 240px;
-    right: 155px;
+    top: 250px;
+    right: 170px;
   }
 
   ${Image}:nth-child(4) {
-    top: 260px;
-    right: 370px;
+    top: 270px;
+    right: 420px;
   }
 
   ${Image}:nth-child(5) {

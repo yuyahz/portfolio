@@ -6,6 +6,7 @@ import {
   ImageContent,
   H1Content,
   TitleH1,
+  PContent,
   TitleP,
   Image,
 } from "./TitleElements";
@@ -13,7 +14,7 @@ import HeadShot from "../../images/HeadShot.png";
 
 const TitleSection = () => {
   return (
-    <TitleContainer id="home">
+    <TitleContainer>
       <TitleContent>
         <ImageContent>
           <FadeIn.Left>
@@ -32,12 +33,14 @@ const TitleSection = () => {
             </TitleH1>
           </FadeIn.Right>
         </H1Content>
-        <FadeIn.Right>
-          <TitleP>
-            I’m a passionate multi-talented human who comes from Japan with over
-            6+ years of experiences in wider field of design disciplines.
-          </TitleP>
-        </FadeIn.Right>
+        <PContent>
+          <FadeIn.Right>
+            <TitleP>
+              I’m a passionate multi-talented human who comes from Japan with
+              over 6+ years of experiences in wider field of design disciplines.
+            </TitleP>
+          </FadeIn.Right>
+        </PContent>
       </TitleContent>
     </TitleContainer>
   );

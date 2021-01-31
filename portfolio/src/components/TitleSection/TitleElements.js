@@ -2,12 +2,7 @@ import styled from "styled-components";
 
 export const TitleContainer = styled.div`
   z-index: 1;
-  background: rgb(42, 42, 42);
-  background: linear-gradient(
-    0deg,
-    rgba(1, 6, 6, 1) 0%,
-    rgba(218, 218, 218, 1) 100%
-  );
+  background: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +52,7 @@ export const Image = styled.img`
 `;
 
 export const H1Content = styled.div`
-  padding: 20px 40px;
+  padding: 25px 40px 0 25px;
 
   @media screen and (max-width: 970px) {
     padding: 20px 40px 20px 40px;
@@ -69,7 +64,8 @@ export const H1Content = styled.div`
 `;
 
 export const TitleH1 = styled.h1`
-  color: #fff;
+  color: #444;
+  font-weight: 900;
   font-size: 45px;
   text-align: left;
   max-width: 1000px;
@@ -89,19 +85,29 @@ export const TitleH1 = styled.h1`
   }
 `;
 
+export const PContent = styled.div`
+  padding: 0 70px;
+
+  @media screen and (max-width: 970px) {
+    padding: 0 40px;
+  }
+
+  @media screen and (max-width: 520px) {
+    padding: 0 40px;
+  }
+`;
+
 export const TitleP = styled.p`
-  color: #fff;
+  color: #444;
   font-size: 24px;
   text-align: left;
   max-width: 550px;
 
   @media screen and (max-width: 970px) {
-    padding: 0 40px;
     font-size: 16px;
   }
 
   @media screen and (max-width: 520px) {
-    padding: 0 30px;
     font-size: 14px;
   }
 `;

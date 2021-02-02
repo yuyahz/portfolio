@@ -1,6 +1,12 @@
-import React from 'react';
-import { animateScroll as scroll } from 'react-scroll';
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+import React from "react";
+import { animateScroll as scroll } from "react-scroll";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 
 import {
   FooterContainer,
@@ -16,7 +22,7 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
-} from './FooterElements';
+} from "./FooterElements";
 
 const Footer = () => {
   const toggleHome = () => {
@@ -30,10 +36,8 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About us</FooterLinkTitle>
-              <FooterLink to="/">How it works</FooterLink>
               <FooterLink to="/">Tstimonials</FooterLink>
               <FooterLink to="/">Careers</FooterLink>
-              <FooterLink to="/">Investors</FooterLink>
               <FooterLink to="/">Term of Service</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
@@ -41,14 +45,11 @@ const Footer = () => {
               <FooterLink to="/">Contact</FooterLink>
               <FooterLink to="/">Support</FooterLink>
               <FooterLink to="/">Destinations</FooterLink>
-              <FooterLink to="/">Suponsorships</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Videos</FooterLinkTitle>
-              <FooterLink to="/">Submmit Video</FooterLink>
-              <FooterLink to="/">Ambassadors</FooterLink>
               <FooterLink to="/">Agency</FooterLink>
               <FooterLink to="/">Investors</FooterLink>
               <FooterLink to="/">Influencer</FooterLink>

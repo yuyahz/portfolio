@@ -48,7 +48,6 @@ export const ColumnLeft = styled.div`
   display: flex;
   grid-area: 1 / 1 / 2 / 2;
   z-index: 1;
-  color: #444;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -56,7 +55,15 @@ export const ColumnLeft = styled.div`
   /* background: skyblue; */
 
   h1 {
-    font-weight: bold;
+    background: linear-gradient(
+      329deg,
+      rgba(68, 68, 68, 1) 60%,
+      rgba(47, 48, 48, 1) 85%,
+      rgba(1, 6, 6, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
     margin-bottom: 0.5rem;
     font-size: 9rem;
     -ms-user-select: none; /* IE 10+ */
@@ -67,7 +74,8 @@ export const ColumnLeft = styled.div`
   }
 
   h2 {
-    font-weight: bold;
+    color: #444;
+    font-weight: 700;
     margin: 2rem 0 3rem 0;
     font-size: 7rem;
     line-height: 0.9;
@@ -79,7 +87,7 @@ export const ColumnLeft = styled.div`
   }
 
   p {
-    font-weight: normal;
+    font-weight: 300;
     margin-top: 1rem;
     font-size: 1rem;
     letter-spacing: 0.7rem;

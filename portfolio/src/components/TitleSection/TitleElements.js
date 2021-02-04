@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const TitleContainer = styled.div`
   z-index: 1;
-  background: rgba(255, 255, 255, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(218, 218, 218, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,6 +104,7 @@ export const PContent = styled.div`
 export const TitleP = styled.p`
   color: #444;
   font-size: 24px;
+  font-weight: 100;
   text-align: left;
   max-width: 550px;
 

@@ -30,7 +30,6 @@ const InfoSection = ({
   alt,
   primary,
   dark,
-  dark2,
 }) => {
   return (
     <div>

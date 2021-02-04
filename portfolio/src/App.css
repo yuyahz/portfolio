@@ -2,21 +2,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: MyFont, Arial, sans-serif;
 }
 
 @font-face {
   font-family: "MyFont";
-  src: url(https://dl.dropboxusercontent.com/s/koez43ns8cbwhso/MyFont.woff?/MyFont.woff)
+  src: url(https://www.dropbox.com/s/akmjb9kr2y666z6/MyFont-Thin.woff)
     format("woff");
-  src: url(https://www.dropbox.com/s/akmjb9kr2y666z6/MyFont-Thin.woff?dl=0)
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url(https://www.dropbox.com/s/1wnhzivpiotkt8s/MyFont-Medium.woff)
     format("woff");
-  src: url(https://www.dropbox.com/s/f2aqssnp7hu8sgu/MyFont-Light.woff?dl=0)
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url(https://www.dropbox.com/s/3fmpf4oqz6uv0kr/MyFont-Bold.woff)
     format("woff");
-  src: url(https://www.dropbox.com/s/1wnhzivpiotkt8s/MyFont-Medium.woff?dl=0)
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url(https://www.dropbox.com/s/twocseom876r0mm/MyFont-ExtraBold.woff)
     format("woff");
-  src: url(https://www.dropbox.com/s/3fmpf4oqz6uv0kr/MyFont-Bold.woff?dl=0)
-    format("woff");
-  src: url(https://www.dropbox.com/s/twocseom876r0mm/MyFont-ExtraBold.woff?dl=0)
-    format("woff");
+  font-weight: 900;
 }

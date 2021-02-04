@@ -56,7 +56,7 @@ export const Image = styled.img`
 `;
 
 export const H1Content = styled.div`
-  padding: 25px 40px 0 25px;
+  padding: 30px 40px;
 
   @media screen and (max-width: 970px) {
     padding: 20px 40px 20px 40px;
@@ -68,12 +68,11 @@ export const H1Content = styled.div`
 `;
 
 export const TitleH1 = styled.h1`
-  color: #444;
+  color: #010606;
   font-weight: 900;
   font-size: 45px;
   text-align: left;
   max-width: 1000px;
-  letter-spacing: 0.05em;
   line-height: 1.5em;
 
   .br {
@@ -102,9 +101,10 @@ export const PContent = styled.div`
 `;
 
 export const TitleP = styled.p`
-  color: #444;
+  color: #010606;
+  letter-spacing: 0.05em;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: left;
   max-width: 550px;
 

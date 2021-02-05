@@ -73,7 +73,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={0}
+                  offset={200}
                   activeClass="active"
                 >
                   About

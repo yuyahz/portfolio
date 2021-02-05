@@ -14,7 +14,7 @@ import HeadShot from "../../images/HeadShot.png";
 
 const TitleSection = () => {
   return (
-    <TitleContainer>
+    <TitleContainer id="about">
       <TitleContent>
         <ImageContent>
           <FadeIn.Left>

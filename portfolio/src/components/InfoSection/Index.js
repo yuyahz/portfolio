@@ -1,4 +1,4 @@
-import { React, useState }  from "react";
+import { React}  from "react";
 import { Button } from "../ButtonElements";
 import {
   InfoContainer,
@@ -13,6 +13,8 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
+  ArrowForward,
+  ArrowRight,
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -42,7 +44,10 @@ const InfoSection = ({
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button
-                    to="home"
+                    
+                    // have to make sure how to jump to the webdevpage with ReactWebsite
+                    to="/webdev"
+
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -51,7 +56,7 @@ const InfoSection = ({
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                   >
-                    {buttonLabel}
+                    {buttonLabel} <ArrowRight />
                   </Button>
                 </BtnWrap>
               </TextWrapper>

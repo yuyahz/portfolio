@@ -70,10 +70,10 @@ export const H1Content = styled.div`
 export const TitleH1 = styled.h1`
   color: #010606;
   font-weight: 900;
-  font-size: 45px;
+  font-size: 60px;
   text-align: left;
   max-width: 1000px;
-  line-height: 1.5em;
+  
 
   .br {
     white-space: pre-wrap;

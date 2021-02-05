@@ -31,12 +31,17 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
-export const NavLogo = styled(motion.LinkR)`
+export const NavLogo = styled(LinkR)`
   width: 30px;
   height: 30px;
-  border-radius: 50%;
-  background-color: #f7f7f7;
-  filter: drop-shadow(1px 1px 1px rgba(1, 1, 1, 0.3));
+  background: linear-gradient(
+    329deg,
+    rgba(68, 68, 68, 1) 60%,
+    rgba(47, 48, 48, 1) 85%,
+    rgba(1, 6, 6, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-top: 15px;
   justify-self: flex-start;
   flex-direction: column;

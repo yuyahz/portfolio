@@ -22,13 +22,12 @@ const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 1) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
     }
   };
-
 
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
@@ -38,47 +37,14 @@ const Navbar = ({ toggle }) => {
     scroll.scrollToTop();
   };
 
-  function NonClickedAnimateLogo(props) {
-    return <NavLogo to="/" onClick={toggleHome} />;
-  }
-
-  function ClickedAnimateLogo(props) {
-    return (
-      <NavLogo
-        to="/"
-        addEventListener={toggleHome}
-        animate={{
-          scale: [0.7, 1.3, 1.3, 0.7, 0.7],
-          rotate: [0, 0, 270, 270, 0],
-          borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-        }}
-        transition={{
-          duration: 3,
-          ease: "easeInOut",
-          times: [0, 0.2, 0.5, 0.8, 1],
-          loop: Infinity,
-          repeatDelay: 1,
-        }}
-      />
-    );
-  }
-
-  function AnimateLogo(props) {
-    const isClicked = props.isClicked;
-    if (isClicked) {
-      return <NonClickedAnimateLogo />;
-    }
-    else {
-      return <ClickedAnimateLogo />;
-    }
-  };
-
   return (
     <>
       <IconContext.Provider value={{ color: "#838383" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <AnimateLogo to="/" onClick={toggleHome} isClicked={false} />
+            <NavLogo to="/" onClick={toggleHome} isClicked={false}>
+              Y
+            </NavLogo>
             <MobileIcon onClick={toggle}>
               <TiEquals />
             </MobileIcon>

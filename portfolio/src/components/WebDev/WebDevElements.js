@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const WebDevContainer = styled.div`
   height: 800px;
@@ -14,6 +15,20 @@ export const WebDevContainer = styled.div`
 
   @media screen and (max-width: 480px) {
     height: 1300px;
+  }
+`;
+
+export const WebDevIcon = styled(Link)`
+  margin-left: 32px;
+  margin-top: 32px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 700;
+  font-size: 32px;
+
+  @media screen and (max-width: 480px) {
+    margin-left: 16px;
+    margin-top: 8px;
   }
 `;
 
@@ -53,12 +68,6 @@ export const WebDevCard = styled.div`
     transition: 1s cubic-bezier(0.65, 0, 0.16, 1);
     cursor: pointer;
   }
-`;
-
-export const WebDevIcon = styled.img`
-  height: 160px;
-  width: 160px;
-  margin-bottom: 10px;
 `;
 
 export const WebDevH1 = styled.h1`

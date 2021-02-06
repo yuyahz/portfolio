@@ -2,10 +2,10 @@ import React from "react";
 
 import {
   WebDevContainer,
+  WebDevIcon,
   WebDevH1,
   WebDevWrapper,
   WebDevCard,
-  WebDevIcon,
   WebDevH2,
   WebDevP,
 } from "./WebDevElements";
@@ -13,6 +13,7 @@ import {
 const WebDev = () => {
   return (
     <WebDevContainer id="WebDev">
+      <WebDevIcon to="/">WebDev</WebDevIcon>
       <WebDevH1>Our WebDev</WebDevH1>
       <WebDevWrapper>
         <WebDevCard>

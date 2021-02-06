@@ -73,7 +73,6 @@ export const TitleH1 = styled.h1`
   font-size: 60px;
   text-align: left;
   max-width: 1000px;
-  
 
   .br {
     white-space: pre-wrap;

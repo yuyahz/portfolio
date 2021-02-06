@@ -1,4 +1,4 @@
-import { React}  from "react";
+import { React } from "react";
 import { Button } from "../ButtonElements";
 import {
   InfoContainer,
@@ -44,10 +44,7 @@ const InfoSection = ({
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button
-                    
-                    // have to make sure how to jump to the webdevpage with ReactWebsite
                     to="/webdev"
-
                     smooth={true}
                     duration={500}
                     spy={true}

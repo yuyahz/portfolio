@@ -68,7 +68,14 @@ export const H1Content = styled.div`
 `;
 
 export const TitleH1 = styled.h1`
-  color: #010606;
+  background: linear-gradient(
+    329deg,
+    rgba(68, 68, 68, 1) 60%,
+    rgba(47, 48, 48, 1) 85%,
+    rgba(1, 6, 6, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 900;
   font-size: 60px;
   text-align: left;

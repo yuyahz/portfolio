@@ -10,7 +10,7 @@ import {
   TitleP,
   Image,
 } from "./TitleElements";
-import HeadShot from "../../images/HeadShot.png";
+import HeadShot2 from "../../images/HeadShot2.png";
 
 const TitleSection = () => {
   return (
@@ -18,7 +18,7 @@ const TitleSection = () => {
       <TitleContent>
         <ImageContent>
           <FadeIn.Left>
-            <Image src={HeadShot} />
+            <Image src={HeadShot2} />
           </FadeIn.Left>
         </ImageContent>
         <H1Content>

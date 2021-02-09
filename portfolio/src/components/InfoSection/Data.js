@@ -1,5 +1,6 @@
 export const home0bjOne = {
   id: "larry",
+  to: "larryPage",
   lightBg: false,
   lightText: true,
   darkText: false,
@@ -18,6 +19,7 @@ export const home0bjOne = {
 
 export const home0bjTwo = {
   id: "vector",
+  to: "vectorPage",
   lightBg: true,
   lightText: false,
   darkText: true,
@@ -36,6 +38,7 @@ export const home0bjTwo = {
 
 export const home0bjThree = {
   id: "daruma",
+  to: "darumaPage",
   lightBg: true,
   lightText: false,
   darkText: true,

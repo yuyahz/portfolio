@@ -18,19 +18,20 @@ import {
 } from "./InfoElements";
 
 const InfoSection = ({
-  lightBg,
   id,
-  imgStart,
-  topLine,
+  to,
+  lightBg,
   lightText,
-  headline,
   darkText,
+  topLine,
+  headline,
   description,
   buttonLabel,
+  imgStart,
   img,
   alt,
-  primary,
   dark,
+  primary,
 }) => {
   return (
     <div>
@@ -44,7 +45,7 @@ const InfoSection = ({
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button
-                    to={'larryPage'}
+                    to={to}
                     smooth={true}
                     duration={500}
                     spy={true}

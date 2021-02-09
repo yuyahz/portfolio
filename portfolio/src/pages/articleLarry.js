@@ -1,14 +1,14 @@
 import React from "react";
 import ScrollToTop from "../components/ScrollTop";
-import WebDev from "../components/WebDev";
+import Article_Larry from "../components/Article_Larry";
 
-const WebDevPage = () => {
+const larryPage = () => {
   return (
     <>
       <ScrollToTop />
-      <WebDev />
+      <Article_Larry />
     </>
   );
 };
 
-export default WebDevPage;
+export default larryPage;

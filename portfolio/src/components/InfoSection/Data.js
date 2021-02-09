@@ -1,5 +1,5 @@
 export const home0bjOne = {
-  // id: "about",
+  id: "larry",
   lightBg: false,
   lightText: true,
   darkText: false,
@@ -17,7 +17,7 @@ export const home0bjOne = {
 };
 
 export const home0bjTwo = {
-  id: "discover",
+  id: "vector",
   lightBg: true,
   lightText: false,
   darkText: true,
@@ -35,7 +35,7 @@ export const home0bjTwo = {
 };
 
 export const home0bjThree = {
-  id: "signup",
+  id: "daruma",
   lightBg: true,
   lightText: false,
   darkText: true,

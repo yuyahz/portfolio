@@ -44,7 +44,7 @@ const InfoSection = ({
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button
-                    to={'webdev'}
+                    to={'larryPage'}
                     smooth={true}
                     duration={500}
                     spy={true}

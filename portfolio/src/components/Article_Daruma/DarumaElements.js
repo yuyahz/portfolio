@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
-export const WebDevContainer = styled.div`
+export const DarumaContainer = styled.div`
   height: 800px;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@ export const WebDevContainer = styled.div`
   }
 `;
 
-export const WebDevIcon = styled(Link)`
+export const DarumaIcon = styled(Link)`
   margin-left: 32px;
   margin-top: 32px;
   text-decoration: none;
@@ -32,7 +32,7 @@ export const WebDevIcon = styled(Link)`
   }
 `;
 
-export const WebDevWrapper = styled.div`
+export const DarumaWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -51,7 +51,7 @@ export const WebDevWrapper = styled.div`
   }
 `;
 
-export const WebDevCard = styled.div`
+export const DarumaCard = styled.div`
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,7 @@ export const WebDevCard = styled.div`
   }
 `;
 
-export const WebDevH1 = styled.h1`
+export const DarumaH1 = styled.h1`
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 64px;
@@ -80,12 +80,12 @@ export const WebDevH1 = styled.h1`
   }
 `;
 
-export const WebDevH2 = styled.h2`
+export const DarumaH2 = styled.h2`
   font-size: 1rem;
   margin-bottom: 10px;
 `;
 
-export const WebDevP = styled.p`
+export const DarumaP = styled.p`
   font-size: 1rem;
   text-align: center;
 `;

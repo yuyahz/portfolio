@@ -14,11 +14,11 @@ import HeadShot2 from "../../images/HeadShot2.png";
 
 const TitleSection = () => {
   return (
-    <TitleContainer id="about">
+    <TitleContainer>
       <TitleContent>
         <ImageContent>
           <FadeIn.Left>
-            <Image src={HeadShot2} />
+            <Image src={HeadShot2} id="about" />
           </FadeIn.Left>
         </ImageContent>
         <H1Content>

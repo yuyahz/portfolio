@@ -73,7 +73,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={200}
+                  offset={0}
                   activeClass="active"
                 >
                   About
@@ -81,7 +81,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="discover"
+                  to="larry"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -89,12 +89,12 @@ const Navbar = ({ toggle }) => {
                   offset={0}
                   activeClass="active"
                 >
-                  Discover
+                  Larry
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="services"
+                  to="vector"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -102,12 +102,12 @@ const Navbar = ({ toggle }) => {
                   offset={0}
                   activeClass="active"
                 >
-                  Services
+                  Vector
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="signup"
+                  to="dailyUi"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -115,7 +115,20 @@ const Navbar = ({ toggle }) => {
                   offset={0}
                   activeClass="active"
                 >
-                  Sign_Up
+                  DailyUI
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="daruma"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={0}
+                  activeClass="active"
+                >
+                  Daruma
                 </NavLinks>
               </NavItem>
             </NavMenu>

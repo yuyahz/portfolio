@@ -73,8 +73,7 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavSNS = styled.div`
-  /* filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2)); */
-  height: 200px;
+  height: 150px;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -101,7 +100,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
-  height: 70px;
+  height: 60px;
 `;
 
 export const NavLinks = styled(LinkS)`

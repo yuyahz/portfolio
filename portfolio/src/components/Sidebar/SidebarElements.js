@@ -8,7 +8,7 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #999;
+  background: #010606;
   display: grid;
   align-items: center;
   top: 0;
@@ -19,53 +19,71 @@ export const SidebarContainer = styled.aside`
 `;
 
 export const CloseIcon = styled(FaRegTimesCircle)`
-  color: #fff;
-  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  color: #cecece;
+  cursor: pointer;
 
   &:hover {
-    transition: 0.6s cubic-bezier(0.65, 0, 0.16, 1);
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
-    color: #444;
+    color: #fff;
+    transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
   }
 `;
 
 export const Icon = styled.div`
   position: absolute;
-  top: 1.2rem;
-  right: 1.5rem;
+  top: 1.5rem;
+  left: 1.5rem;
   background: transparent;
-  font-size: 2rem;
+  font-size: 1.7rem;
   outline: none;
 `;
 
-export const SidebarWrapper = styled.div`
+export const SidebarLogo = styled.div`
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+`;
+
+export const Logo = styled.div`
+  font-size: 10rem;
+  font-weight: 900;
+
   color: #fff;
+`;
+
+export const SidebarWrapper = styled.div`
+
 `;
 
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(3, 40px);
   text-align: center;
 
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(6, 60px);
+    grid-template-rows: repeat(3, 30px);
   }
 `;
 
 export const SidebarLink = styled(LinkS)`
   display: flex;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-decoration: none;
   list-style: none;
   transition: cubic-bezier(0.65, 0, 0.16, 1);
-  color: #fff;
+  color: #cecece;
 
   &:hover {
-    transition: 0.6s cubic-bezier(0.65, 0, 0.16, 1);
-    color: #444;
+    color: #fff;
+    filter: drop-shadow(0.5px 0.5px 7px #fff);
+    transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    cursor: pointer;
   }
 `;
 

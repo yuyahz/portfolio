@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
@@ -64,11 +64,10 @@ export const MobileIcon = styled.div`
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -10px;
     transform: translate(-100%, 60%);
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     cursor: pointer;
-    color: #f7f7f7;
   }
 `;
 
@@ -86,40 +85,56 @@ export const NavSNS = styled.div`
   }
 `;
 
-export const NavMenu = styled.ul`
+export const NavMenu = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style: none;
-  text-align: center;
 
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
-export const NavItem = styled.li`
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
-  height: 60px;
+export const NavItem = styled.div`
+  height: auto;
+
+  .aboutSec {
+    margin: 20px 0;
+  }
+
+  .larrySec {
+    margin: 20px 0;
+  }
+
+  .vectorSec {
+    margin: 20px 0;
+  }
+
+  .uiSec {
+    margin: 26px 0;
+  }
+
+  .darumaSec {
+    margin: 28px 0;
+  }
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #f7f7f7;
+  color: #cecece;
   display: flex;
-  flex-direction: column;
   transform: rotate(0.75turn);
   text-decoration: none;
   padding: 0.2rem 0.2rem;
   cursor: pointer;
 
   &.active {
-    color: #838383;
-    border-bottom: solid 0.5px #838383;
+    color: #010606;
+    border-bottom: solid 0.5px #010606;
+    transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
   }
 `;
 
 export const NavMail = styled.div`
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;

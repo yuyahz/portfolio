@@ -68,6 +68,7 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
               <NavItem>
                 <NavLinks
+                  className="aboutSec"
                   to="about"
                   smooth={true}
                   duration={500}
@@ -81,6 +82,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
+                  className="larrySec"
                   to="larry"
                   smooth={true}
                   duration={500}
@@ -94,6 +96,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
+                  className="vectorSec"
                   to="vector"
                   smooth={true}
                   duration={500}
@@ -107,6 +110,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
+                  className="uiSec"
                   to="dailyUi"
                   smooth={true}
                   duration={500}
@@ -120,6 +124,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
+                  className="darumaSec"
                   to="daruma"
                   smooth={true}
                   duration={500}

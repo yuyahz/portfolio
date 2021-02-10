@@ -87,6 +87,7 @@ export const ColumnLeft = styled.div`
   }
 
   p {
+    color: #444;
     font-weight: 300;
     margin-top: 1rem;
     font-size: 1rem;

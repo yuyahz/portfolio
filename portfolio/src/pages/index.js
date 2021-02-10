@@ -3,12 +3,14 @@ import OpeningSection from "../components/Opening";
 import TitleSection from "../components/TitleSection";
 import InfoSection from "../components/InfoSection";
 import {
-  home0bjOne,
-  home0bjTwo,
-  home0bjThree,
+  homeLarry,
+  homeVector,
+  homeDaruma,
 } from "../components/InfoSection/Data";
 import Navbar from "../components/Navbar";
-import Services from "../components/Services";
+import PicLarry from "../components/PicLarry";
+import PicVector from "../components/PicVector";
+import PicDaruma from "../components/PicDaruma";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 
@@ -25,10 +27,12 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <OpeningSection />
       <TitleSection />
-      <InfoSection {...home0bjOne} />
-      <InfoSection {...home0bjTwo} />
-      <Services />
-      <InfoSection {...home0bjThree} />
+      <PicLarry />
+      <InfoSection {...homeLarry} />
+      <PicVector />
+      <InfoSection {...homeVector} />
+      <PicDaruma />
+      <InfoSection {...homeDaruma} />
       <Footer />
     </>
   );

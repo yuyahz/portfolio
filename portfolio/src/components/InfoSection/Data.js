@@ -1,4 +1,4 @@
-export const home0bjOne = {
+export const homeLarry = {
   id: "larry",
   to: "larryPage",
   lightBg: false,
@@ -17,7 +17,7 @@ export const home0bjOne = {
   primary: true,
 };
 
-export const home0bjTwo = {
+export const homeVector = {
   id: "vector",
   to: "vectorPage",
   lightBg: true,
@@ -36,7 +36,7 @@ export const home0bjTwo = {
   primary: false,
 };
 
-export const home0bjThree = {
+export const homeDaruma = {
   id: "daruma",
   to: "darumaPage",
   lightBg: true,

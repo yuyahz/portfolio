@@ -10,6 +10,7 @@ import {
 import Navbar from "../components/Navbar";
 import PicLarry from "../components/PicLarry";
 import PicVector from "../components/PicVector";
+import PicDailyUi from "../components/PicDailyUI";
 import PicDaruma from "../components/PicDaruma";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
@@ -31,6 +32,7 @@ const Home = () => {
       <InfoSection {...homeLarry} />
       <PicVector />
       <InfoSection {...homeVector} />
+      <PicDailyUi />
       <PicDaruma />
       <InfoSection {...homeDaruma} />
       <Footer />

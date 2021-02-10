@@ -1,9 +1,9 @@
 export const homeLarry = {
-  id: "larry",
+  // id: "larry",
   to: "larryPage",
-  lightBg: false,
-  lightText: true,
-  darkText: false,
+  lightBg: true,
+  lightText: false,
+  darkText: true,
   // loightTextDesc: true,
   topLine: "top line",
   headline: "head line head line head line",
@@ -13,12 +13,12 @@ export const homeLarry = {
   // imgStart: false,
   // img: require('../../images/svg-1.svg'),
   alt: "1",
-  dark: true,
-  primary: true,
+  dark: false,
+  primary: false,
 };
 
 export const homeVector = {
-  id: "vector",
+  // id: "vector",
   to: "vectorPage",
   lightBg: true,
   lightText: false,
@@ -37,7 +37,7 @@ export const homeVector = {
 };
 
 export const homeDaruma = {
-  id: "daruma",
+  // id: "daruma",
   to: "darumaPage",
   lightBg: true,
   lightText: false,

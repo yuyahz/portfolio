@@ -11,7 +11,7 @@ import {
 
 const PicLarry = () => {
   return (
-    <PicLarryContainer id="dailyUi">
+    <PicLarryContainer id="larry">
       <PicLarryH1>Our PicLarry</PicLarryH1>
       <PicLarryWrapper>
         <PicLarryCard>

@@ -11,7 +11,7 @@ import {
 
 const PicVector = () => {
   return (
-    <PicVectorContainer id="dailyUi">
+    <PicVectorContainer id="vector">
       <PicVectorH1>Our PicVector</PicVectorH1>
       <PicVectorWrapper>
         <PicVectorCard>

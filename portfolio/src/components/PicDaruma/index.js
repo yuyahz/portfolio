@@ -11,7 +11,7 @@ import {
 
 const PicDaruma = () => {
   return (
-    <PicDarumaContainer id="dailyUi">
+    <PicDarumaContainer id="daruma">
       <PicDarumaH1>Our PicDaruma</PicDarumaH1>
       <PicDarumaWrapper>
         <PicDarumaCard>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const InfoContainer = styled.div`
@@ -86,7 +86,7 @@ export const Subtitle = styled.p`
 `;
 
 export const BtnWrap = styled.div`
-  display: flex;
+  display: ${props => props.primary ? "none" : "flex"};
   justify-content: flex-start;
 `;
 

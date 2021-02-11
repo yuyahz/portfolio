@@ -5,6 +5,7 @@ import InfoSection from "../components/InfoSection";
 import {
   homeLarry,
   homeVector,
+  homeUI,
   homeDaruma,
 } from "../components/InfoSection/Data";
 import Navbar from "../components/Navbar";
@@ -33,6 +34,7 @@ const Home = () => {
       <PicVector />
       <InfoSection {...homeVector} />
       <PicDailyUi />
+      <InfoSection {...homeUI} />
       <PicDaruma />
       <InfoSection {...homeDaruma} />
       <Footer />

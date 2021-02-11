@@ -32,6 +32,7 @@ const InfoSection = ({
   img,
   alt,
   dark,
+  btnColor,
   primary,
 }) => {
   return (
@@ -60,7 +61,7 @@ const InfoSection = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
+                <BtnWrap primary={primary ? 1 : 0}>
                   <Button
                     to={to}
                     smooth={true}
@@ -68,7 +69,7 @@ const InfoSection = ({
                     spy={true}
                     exact="true"
                     offset={-80}
-                    primary={primary ? 1 : 0}
+                    btnColor={btnColor ? 1 : 0}
                     dark={dark ? 1 : 0}
                   >
                     {buttonLabel} <ArrowRight />

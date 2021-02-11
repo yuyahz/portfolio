@@ -4,7 +4,7 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "transparent" : "transparent")};
+  /* background: ${({ scrollNav }) => (scrollNav ? "transparent" : "transparent")}; */
   font-size: 0.8rem;
   width: 75px;
   height: 100vh;

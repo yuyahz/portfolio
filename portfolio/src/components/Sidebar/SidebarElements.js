@@ -30,8 +30,8 @@ export const CloseIcon = styled(FaRegTimesCircle)`
 
 export const Icon = styled.div`
   position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
+  top: 1.3rem;
+  left: 1.9rem;
   background: transparent;
   font-size: 1.7rem;
   outline: none;

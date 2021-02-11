@@ -13,7 +13,7 @@ export const SidebarContainer = styled.aside`
   align-items: center;
   top: 0;
   left: 0;
-  transition: cubic-bezier(0.65, 0, 0.16, 1);
+  transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
@@ -52,9 +52,7 @@ export const Logo = styled.div`
   color: #fff;
 `;
 
-export const SidebarWrapper = styled.div`
-
-`;
+export const SidebarWrapper = styled.div``;
 
 export const SidebarMenu = styled.ul`
   display: grid;

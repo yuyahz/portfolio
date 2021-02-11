@@ -1,5 +1,6 @@
 import { React } from "react";
 import { Button } from "../ButtonElements";
+import { motion } from "framer-motion";
 import {
   InfoContainer,
   InfoWrapper,
@@ -34,8 +35,24 @@ const InfoSection = ({
   primary,
 }) => {
   return (
-    <div>
-      <InfoContainer lightBg={lightBg} id={id}>
+    <InfoContainer lightBg={lightBg} id={id}>
+      <motion.div
+        animate={{
+          x: 0,
+          opacity: 1,
+        }}
+        initial={{
+          x: 700,
+          opacity: 0,
+        }}
+        exit={{
+          x: -700,
+          opacity: 0,
+        }}
+        transition={{
+          duration: 0.5,
+        }}
+      >
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
@@ -66,8 +83,8 @@ const InfoSection = ({
             </Column2>
           </InfoRow>
         </InfoWrapper>
-      </InfoContainer>
-    </div>
+      </motion.div>
+    </InfoContainer>
   );
 };
 

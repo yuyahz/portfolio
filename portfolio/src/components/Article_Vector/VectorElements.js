@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const VectorContainer = styled.div`
   height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   background: rgb(219, 237, 242);
 
   @media screen and (max-width: 768px) {

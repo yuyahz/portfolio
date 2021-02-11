@@ -6,8 +6,8 @@ export const DarumaContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   background: rgb(219, 237, 242);
+  text-align: center;
 
   @media screen and (max-width: 768px) {
     height: 1100px;

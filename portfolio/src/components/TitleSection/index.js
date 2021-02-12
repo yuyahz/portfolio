@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Parallax } from "react-scroll-parallax";
 import * as FadeIn from "../FadeIn";
 import {
   TitleContainer,
@@ -22,24 +23,28 @@ const TitleSection = () => {
           </FadeIn.Left>
         </ImageContent>
         <H1Content>
-          <FadeIn.Right>
+          {/* <FadeIn.Right> */}
+          <Parallax x={[-300, 200]} tagOuter="figure">
             <TitleH1>
               I am Yuya Hashirizaki
-              <FadeIn.Right>
-                <TitleH1 className="br">
-                  design & build digital products based in Vancouver
-                </TitleH1>
-              </FadeIn.Right>
+              {/* <FadeIn.Right> */}
+              <TitleH1 className="br">
+                design & build digital products based in Vancouver
+              </TitleH1>
+              {/* </FadeIn.Right> */}
             </TitleH1>
-          </FadeIn.Right>
+          </Parallax>
+          {/* </FadeIn.Right> */}
         </H1Content>
         <PContent>
-          <FadeIn.Right>
+          {/* <FadeIn.Right> */}
+          <Parallax x={[150, -150]} tagOuter="figure">
             <TitleP>
               I’m a passionate multi-talented human who comes from Japan with
               over 6+ years of experiences in wider field of design disciplines.
             </TitleP>
-          </FadeIn.Right>
+          </Parallax>
+          {/* </FadeIn.Right> */}
         </PContent>
       </TitleContent>
     </TitleContainer>

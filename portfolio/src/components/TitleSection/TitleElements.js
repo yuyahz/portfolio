@@ -22,8 +22,8 @@ export const TitleContainer = styled.div`
     height: 1100px;
   }
 
-  @media screen and (max-width: 520px) {
-    height: 600px;
+  @media screen and (max-width: 540px) {
+    height: 100vh;
   }
 `;
 

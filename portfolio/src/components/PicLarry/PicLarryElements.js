@@ -8,12 +8,16 @@ export const PicLarryContainer = styled.div`
   align-items: center;
   background: rgb(219, 237, 242);
 
+  @media screen and (max-width: 480px) {
+    height: 1300px;
+  }
+
   @media screen and (max-width: 768px) {
     height: 1100px;
   }
-
-  @media screen and (max-width: 480px) {
-    height: 1300px;
+  
+  @media screen and (max-width: 540px) {
+    height: 100vh;
   }
 `;
 

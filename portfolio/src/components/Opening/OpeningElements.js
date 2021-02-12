@@ -15,6 +15,7 @@ export const Section = styled.section`
 
   /* for Surface duo to eliminate right space */
   @media screen and (max-width: 540px) {
+    height: 100vh;
     overflow: hidden;
   }
 
@@ -51,8 +52,8 @@ export const ColumnLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  text-align: left;
   padding: 1rem;
-  /* background: skyblue; */
 
   h1 {
     background: linear-gradient(
@@ -64,7 +65,6 @@ export const ColumnLeft = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
-    margin-bottom: 0.5rem;
     font-size: 9rem;
     -ms-user-select: none; /* IE 10+ */
     -moz-user-select: -moz-none;
@@ -76,7 +76,8 @@ export const ColumnLeft = styled.div`
   h2 {
     color: #444;
     font-weight: 700;
-    margin: 2rem 0 3rem 0;
+    padding-left: 0.2rem;
+    margin-bottom: 3rem;
     font-size: 7rem;
     line-height: 0.9;
     -ms-user-select: none; /* IE 10+ */
@@ -89,7 +90,7 @@ export const ColumnLeft = styled.div`
   p {
     color: #444;
     font-weight: 300;
-    margin-top: 1rem;
+    margin: 0.5rem 0 0 0.8rem;
     font-size: 1rem;
     letter-spacing: 0.7rem;
     -ms-user-select: none; /* IE 10+ */
@@ -104,17 +105,18 @@ export const ColumnLeft = styled.div`
     z-index: 1;
 
     h1 {
+      font-size: 6rem;
       margin-bottom: 0rem;
-      font-size: 8rem;
     }
     h2 {
-      margin: 0 0 1rem 0;
-      font-size: 5rem;
-      line-height: 0.9;
+      font-size: 3rem;
+      text-indent: 0.1em;
+      line-height: 1;
     }
     p {
       font-size: 0.7rem;
       letter-spacing: 0.5rem;
+      line-height: 1;
     }
   }
 `;
@@ -124,6 +126,13 @@ export const Image = styled(motion.img)`
   width: auto;
   height: auto;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+
+  .FaceOne {
+    display: none;
+  }
+
+  @media screen and (max-width: 520px) {
+  }
 `;
 
 export const ColumnRight = styled.div`
@@ -134,87 +143,142 @@ export const ColumnRight = styled.div`
   align-items: center;
   padding: 2rem;
   position: relative;
-  /* background: pink; */
 
   ${Image}:nth-child(1) {
-    top: 40px;
-    right: 190px;
+    top: 70px;
+    right: 240px;
   }
 
   ${Image}:nth-child(2) {
-    top: 180px;
-    right: 310px;
+    top: 215px;
+    right: 320px;
   }
 
   ${Image}:nth-child(3) {
-    top: 250px;
-    right: 170px;
+    top: 110px;
+    right: 130px;
   }
 
   ${Image}:nth-child(4) {
-    top: 270px;
-    right: 420px;
+    top: 380px;
+    right: 230px;
   }
 
   ${Image}:nth-child(5) {
-    top: 180px;
-    right: 50px;
+    top: 200px;
+    right: 20px;
+  }
+
+  @media screen and (min-width: 1441px) {
+    ${Image}:nth-child(1) {
+      top: 250px;
+      right: 240px;
+    }
+
+    ${Image}:nth-child(2) {
+      top: 395px;
+      right: 320px;
+    }
+
+    ${Image}:nth-child(3) {
+      top: 290px;
+      right: 130px;
+    }
+
+    ${Image}:nth-child(4) {
+      top: 560px;
+      right: 230px;
+    }
+
+    ${Image}:nth-child(5) {
+      top: 380px;
+      right: 20px;
+    }
   }
 
   /* My defaulft tablet is 970px but this exceptionl size for ipad and ipad pro */
   @media screen and (max-width: 1366px) {
     ${Image}:nth-child(1) {
-      top: 50px;
-      right: 170px;
+      top: 70px;
+      right: 240px;
     }
 
     ${Image}:nth-child(2) {
-      top: 190px;
-      right: 260px;
+      top: 215px;
+      right: 320px;
     }
 
     ${Image}:nth-child(3) {
-      top: 270px;
-      right: 150px;
+      top: 110px;
+      right: 130px;
     }
 
     ${Image}:nth-child(4) {
-      top: 280px;
-      right: 370px;
+      top: 380px;
+      right: 230px;
     }
 
     ${Image}:nth-child(5) {
       top: 200px;
-      right: 50px;
+      right: 20px;
     }
   }
 
   /* My defaulft tablet is 970px but this exceptionl size
-   for ipad and vertical ipad pro */
+   for vertical ipad pro */
   @media screen and (max-width: 1024px) {
     ${Image}:nth-child(1) {
-      top: 50px;
-      right: 170px;
+      top: 140px;
+      right: 240px;
     }
 
     ${Image}:nth-child(2) {
-      top: 190px;
-      right: 260px;
+      top: 285px;
+      right: 320px;
     }
 
     ${Image}:nth-child(3) {
-      top: 270px;
-      right: 150px;
+      top: 180px;
+      right: 130px;
     }
 
     ${Image}:nth-child(4) {
-      top: 280px;
-      right: 370px;
+      top: 450px;
+      right: 230px;
     }
 
     ${Image}:nth-child(5) {
-      top: 200px;
-      right: 50px;
+      top: 270px;
+      right: 20px;
+    }
+  }
+
+  /* My defaulft tablet is 970px but this exceptionl size
+   for vertical ipad */
+  @media screen and (max-width: 768px) {
+    ${Image}:nth-child(1) {
+      top: 70px;
+      right: 200px;
+    }
+
+    ${Image}:nth-child(2) {
+      top: 215px;
+      right: 280px;
+    }
+
+    ${Image}:nth-child(3) {
+      top: 100px;
+      right: 100px;
+    }
+
+    ${Image}:nth-child(4) {
+      top: 450px;
+      right: 240px;
+    }
+
+    ${Image}:nth-child(5) {
+      top: 320px;
+      right: 160px;
     }
   }
 
@@ -223,38 +287,33 @@ export const ColumnRight = styled.div`
     padding: 0rem;
 
     ${Image}:nth-child(1) {
-      max-width: 45%;
-      height: auto;
-      top: 130px;
-      right: 45px;
+      top: 185px;
+      right: 0px;
+      max-width: 50%;
     }
 
     ${Image}:nth-child(2) {
-      max-width: 15%;
-      height: auto;
-      top: 245px;
-      right: 110px;
+      top: 305px;
+      right: 80px;
+      max-width: 17%;
     }
 
     ${Image}:nth-child(3) {
-      max-width: 18%;
-      height: auto;
-      top: 280px;
-      right: 180px;
+      top: 265px;
+      right: 18px;
+      max-width: 20%;
     }
 
     ${Image}:nth-child(4) {
-      max-width: 15%;
-      height: auto;
-      top: 320px;
-      right: 30px;
+      top: 315px;
+      right: 195px;
+      max-width: 16%;
     }
 
     ${Image}:nth-child(5) {
-      max-width: 17%;
-      height: auto;
-      top: 380px;
-      right: 60px;
+      top: 370px;
+      right: 140px;
+      max-width: 18%;
     }
   }
 `;

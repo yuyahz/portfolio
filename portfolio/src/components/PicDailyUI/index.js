@@ -5,7 +5,7 @@ import UI from "../../images/UI.png";
 const PicDailyUi = () => {
   return (
     <PicDailyUiContainer id="dailyUi">
-      <Image src={UI} />
+        <Image src={UI} />
     </PicDailyUiContainer>
   );
 };

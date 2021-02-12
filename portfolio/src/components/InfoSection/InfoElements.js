@@ -9,12 +9,16 @@ export const InfoContainer = styled.div`
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
+
+  @media screen and (max-width: 540px) {
+    height: 100vh;
+  }
 `;
 
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 800px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -70,7 +74,7 @@ export const Heading = styled.h1`
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? "#444" : "#010606")};
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 540px) {
     font-size: 32px;
   }
 `;
@@ -86,7 +90,7 @@ export const Subtitle = styled.p`
 `;
 
 export const BtnWrap = styled.div`
-  display: ${props => props.primary ? "none" : "flex"};
+  display: ${(props) => (props.primary ? "none" : "flex")};
   justify-content: flex-start;
 `;
 

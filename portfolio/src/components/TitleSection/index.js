@@ -24,7 +24,7 @@ const TitleSection = () => {
         </ImageContent>
         <H1Content>
           {/* <FadeIn.Right> */}
-          <Parallax x={[-10, 0]} tagOuter="figure">
+          <Parallax x={[-10, 10]} tagOuter="figure">
             <TitleH1>
               I am Yuya Hashirizaki
               {/* <FadeIn.Right> */}
@@ -38,7 +38,7 @@ const TitleSection = () => {
         </H1Content>
         <PContent>
           {/* <FadeIn.Right> */}
-          <Parallax x={[0, -20]} tagOuter="figure">
+          <Parallax x={[5, -10]} tagOuter="figure">
             <TitleP>
               I’m a passionate multi-talented human who comes from Japan with
               over 6+ years of experiences in wider field of design disciplines.

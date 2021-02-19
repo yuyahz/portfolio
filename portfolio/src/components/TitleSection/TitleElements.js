@@ -106,7 +106,7 @@ export const PContent = styled.div`
 export const TitleP = styled.p`
   color: #010606;
   letter-spacing: 0.05em;
-  margin: 0 auto;
+  margin-left: auto;
   font-size: 24px;
   font-weight: 300;
   text-align: left;

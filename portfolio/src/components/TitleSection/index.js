@@ -24,7 +24,7 @@ const TitleSection = () => {
         </ImageContent>
         <H1Content>
           {/* <FadeIn.Right> */}
-          <Parallax x={[-10, 10]} tagOuter="figure">
+          <Parallax x={[-10, 5]} tagOuter="figure">
             <TitleH1>
               I am Yuya Hashirizaki
               {/* <FadeIn.Right> */}

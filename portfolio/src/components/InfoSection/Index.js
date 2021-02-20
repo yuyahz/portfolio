@@ -1,6 +1,6 @@
 import { React } from "react";
 import { Button } from "../ButtonElements";
-import { motion } from "framer-motion";
+import * as FadeIn from "../FadeIn";
 import {
   InfoContainer,
   InfoWrapper,
@@ -8,12 +8,16 @@ import {
   Column1,
   Column2,
   TextWrapper,
+  TextWrapperR,
   TopLine,
+  TopLineR,
+  TopLineR2,
   Heading,
+  Heading2,
+  TextR,
+  TextRBottom,
   Subtitle,
   BtnWrap,
-  ImgWrap,
-  Img,
   ArrowForward,
   ArrowRight,
 } from "./InfoElements";
@@ -26,41 +30,34 @@ const InfoSection = ({
   darkText,
   topLine,
   headline,
+  headline2,
   description,
   buttonLabel,
-  imgStart,
-  img,
-  alt,
+  textR,
+  textR2,
+  textR3,
+  textR4,
+  textR5,
+  textR6,
+  textR7,
+  textR8,
+  textR9,
+  textR10,
   dark,
   btnColor,
   primary,
 }) => {
   return (
     <InfoContainer lightBg={lightBg} id={id}>
-      <motion.div
-        animate={{
-          x: 0,
-          opacity: 1,
-        }}
-        initial={{
-          x: 700,
-          opacity: 0,
-        }}
-        exit={{
-          x: -700,
-          opacity: 0,
-        }}
-        transition={{
-          duration: 0.5,
-        }}
-      >
+      <FadeIn.Left>
         <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
+          <InfoRow>
             <Column1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <TopLine lightText={lightText}>{topLine}</TopLine>
+                <Heading darkText={darkText}>{headline}</Heading>
+                <Heading2 darkText={darkText}>{headline2}</Heading2>
+                <Subtitle lightText={lightText}>{description}</Subtitle>
                 <BtnWrap primary={primary ? 1 : 0}>
                   <Button
                     to={to}
@@ -78,13 +75,23 @@ const InfoSection = ({
               </TextWrapper>
             </Column1>
             <Column2>
-              <ImgWrap>
-                <Img src={img} alt={alt} />
-              </ImgWrap>
+              <TextWrapperR>
+                <TopLineR darkText={darkText}>Data</TopLineR>
+                <TextR lightText={lightText}>{textR}</TextR>
+                <TopLineR2 darkText={darkText}>{textR2}</TopLineR2>
+                <TextRBottom lightText={lightText}>{textR3}</TextRBottom>
+                <TextRBottom lightText={lightText}>{textR4}</TextRBottom>
+                <TextRBottom lightText={lightText}>{textR5}</TextRBottom>
+                <TextRBottom lightText={lightText}>{textR6}</TextRBottom>
+                <TextRBottom lightText={lightText}>{textR7}</TextRBottom>
+                <TextRBottom lightText={lightText}>{textR8}</TextRBottom>
+                <TextRBottom lightText={lightText}>{textR9}</TextRBottom>
+                <TextRBottom lightText={lightText}>{textR10}</TextRBottom>
+              </TextWrapperR>
             </Column2>
           </InfoRow>
         </InfoWrapper>
-      </motion.div>
+        </FadeIn.Left>
     </InfoContainer>
   );
 };

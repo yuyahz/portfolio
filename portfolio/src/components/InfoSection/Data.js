@@ -52,7 +52,7 @@ export const homeVector = {
 };
 
 export const homeUI = {
-  // id: "vdsilyUi",
+  // id: "dailyUi",
   lightBg: true,
   lightText: true,
   darkText: true,
@@ -74,9 +74,9 @@ export const homeDaruma = {
   // id: "daruma",
   to: "darumaPage",
   lightBg: true,
-  lightText: false,
+  lightText: true,
   darkText: true,
-  topLine: "top line",
+  topLine: "Individual client project / Website , Web Development ",
   headline: "head line head line head line",
   description:
     "description description description description description description description description description description description description",

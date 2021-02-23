@@ -40,27 +40,6 @@ const Footer = () => {
               <FooterLink to="/">Careers</FooterLink>
               <FooterLink to="/">Term of Service</FooterLink>
             </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Contact us</FooterLinkTitle>
-              <FooterLink to="/">Contact</FooterLink>
-              <FooterLink to="/">Support</FooterLink>
-              <FooterLink to="/">Destinations</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>Videos</FooterLinkTitle>
-              <FooterLink to="/">Agency</FooterLink>
-              <FooterLink to="/">Investors</FooterLink>
-              <FooterLink to="/">Influencer</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Social Media</FooterLinkTitle>
-              <FooterLink to="/">Instagram</FooterLink>
-              <FooterLink to="/">Facebook</FooterLink>
-              <FooterLink to="/">YouTube</FooterLink>
-              <FooterLink to="/">Twitter</FooterLink>
-            </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>

@@ -41,7 +41,8 @@ export const InfoRow = styled.div`
   }
 
   @media screen and (max-width: 520px) {
-    grid-template-columns: minmax(200px, 1fr) 190px;
+    grid-template-columns: minmax(150px, 1fr) 190px;
+    padding-left: 25px;
   }
 `;
 

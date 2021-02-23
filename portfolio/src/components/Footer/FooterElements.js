@@ -18,63 +18,40 @@ export const FooterWrap = styled.div`
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 800px;
+  }
+
+  @media screen and (max-width: 970px) {
+    max-width: 600px;
+  }
 `;
 
 export const FooterLinksContainer = styled.div`
   display: flex;
-  justify-content: center;
   max-width: 1000px;
   width: 100%;
-
-  @media screen and (max-width: 820px) {
-    padding-top: 32px;
-  }
-`;
-
-export const FooterLinksWrapper = styled.div`
-  display: flex;
-
-  @media screen and (max-width: 820px) {
-    flex-direction: column;
-  }
-`;
-
-export const FooterLinkItems = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 16px 16px 0 16px;
-  text-align: left;
-  width: 160px;
-  box-sizing: border-box;
-  color: #838383;
-
-  @media screen and (max-width: 420px) {
-    margin: 0;
-    padding: 10px;
-    width: 100%;
-  }
 `;
 
 export const FooterLinkTitle = styled.h1`
-  font-size: 14px;
-  margin-bottom: 16px;
-`;
-
-export const FooterLink = styled(Link)`
-  color: #838383;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-  font-size: 14px;
-
-  &:hover {
-    color: #444;
-    transition: 1s cubic-bezier(0.65, 0, 0.16, 1);
+  background: linear-gradient(
+    329deg,
+    rgba(68, 68, 68, 1) 60%,
+    rgba(47, 48, 48, 1) 85%,
+    rgba(1, 6, 6, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  margin-right: auto;
+  margin-bottom: 20px;
   }
 `;
 
 export const SocialMedia = styled.section`
   max-width: 1000px;
+  margin-bottom: 30px;
   width: 100%;
 `;
 
@@ -85,17 +62,17 @@ export const SocialMediaWrap = styled.div`
   max-width: 1100px;
   margin: 5px auto 0 auto;
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 970px) {
     flex-direction: column;
   }
 `;
 
 export const SocialLogo = styled(Link)`
   color: #838383;
-  justify-content: start;
+  justify-content: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 20px;
   display: flex;
   align-items: center;
   margin-bottom: 20px;

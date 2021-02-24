@@ -1,6 +1,7 @@
 import { React } from "react";
 import { Button } from "../ButtonElements";
 import * as FadeIn from "../FadeIn";
+import * as AiIcons from "react-icons/ai";
 import {
   InfoContainer,
   InfoWrapper,
@@ -18,6 +19,7 @@ import {
   TextRBottom,
   Subtitle,
   BtnWrap,
+  SnsWrap,
   ArrowForward,
   ArrowRight,
 } from "./InfoElements";
@@ -46,6 +48,7 @@ const InfoSection = ({
   dark,
   btnColor,
   primary,
+  primarySns,
 }) => {
   return (
     <InfoContainer lightBg={lightBg} id={id}>
@@ -72,6 +75,22 @@ const InfoSection = ({
                     {buttonLabel} <ArrowRight />
                   </Button>
                 </BtnWrap>
+                <SnsWrap primarySns={primarySns ? 1 : 0}>
+                  <a
+                    className="dribble"
+                    target="_blank"
+                    href="https://dribbble.com/Hashirizaki"
+                  >
+                    <AiIcons.AiOutlineDribbble />
+                  </a>
+                  <a
+                    className="behance"
+                    target="_blank"
+                    href="https://www.behance.net/yuyahashirizaki"
+                  >
+                    <AiIcons.AiFillBehanceSquare />
+                  </a>
+                </SnsWrap>
               </TextWrapper>
             </Column1>
             <Column2>
@@ -91,7 +110,7 @@ const InfoSection = ({
             </Column2>
           </InfoRow>
         </InfoWrapper>
-        </FadeIn.Left>
+      </FadeIn.Left>
     </InfoContainer>
   );
 };

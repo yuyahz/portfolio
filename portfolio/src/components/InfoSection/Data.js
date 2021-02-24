@@ -22,6 +22,7 @@ export const homeLarry = {
   dark: false,
   btnColor: false,
   primary: false,
+  primarySns: true,
 };
 
 export const homeVector = {
@@ -49,6 +50,7 @@ export const homeVector = {
   dark: false,
   btnColor: false,
   primary: false,
+  primarySns: true,
 };
 
 export const homeUI = {
@@ -68,6 +70,7 @@ export const homeUI = {
   dark: false,
   btnColor: false,
   primary: true,
+  primarySns: false,
 };
 
 export const homeDaruma = {
@@ -82,15 +85,17 @@ export const homeDaruma = {
     "Founded five decades ago, Daruma is a famous BBQ restaurant in my city. they needed to evolve the website, from ideation, design, and design management. And I dealt with all of what they require right away.",
   buttonLabel: "View Case Study",
   textR: "November 2020 – January 2021",
-  textR2: "DESIGN LEAD",
+  textR2: "WEB DEVELOPMENT",
   textR3: "User Interview",
-  textR4: "Presentation",
-  textR5: "Design Concept",
-  textR6: "Mock-Up",
-  textR7: "Prototyping",
-  textR8: "Coding",
-  textR9: "implementation",
+  textR4: "Overseer of all design",
+  textR5: "Prototyping",
+  textR6: "HTML , CSS",
+  textR7: "React.js",
+  textR8: "React Bootstrap",
+  textR9: "Styled components",
+  textR10: "Implementation",
   dark: false,
   btnColor: false,
   primary: false,
+  primarySns: true,
 };

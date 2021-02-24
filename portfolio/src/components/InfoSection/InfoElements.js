@@ -176,6 +176,34 @@ export const BtnWrap = styled.div`
   justify-content: flex-start;
 `;
 
+export const SnsWrap = styled.div`
+  display: ${(props) => (props.primarySns ? "none" : "flex")};
+  justify-content: flex-start;
+
+  a.dribble {
+    color: #ea4c89;
+    font-size: 5rem;
+    filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.24));
+    &:hover {
+      transform: translateY(-10px);
+      cursor: pointer;
+      transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
+  }
+
+  a.behance {
+    color: #053eff;
+    font-size: 5rem;
+    margin-left: 20px;
+    filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.24));
+    &:hover {
+      transform: translateY(-10px);
+      cursor: pointer;
+      transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
+  }
+`;
+
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
   font-size: 20px;

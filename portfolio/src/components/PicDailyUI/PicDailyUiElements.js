@@ -6,14 +6,6 @@ export const PicDailyUiContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: #f2dbe1 center top/cover no-repeat;
-
-  /* @media screen and (max-width: 768px) {
-    height: 1100px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 1300px;
-  } */
 `;
 
 export const Image = styled.img`

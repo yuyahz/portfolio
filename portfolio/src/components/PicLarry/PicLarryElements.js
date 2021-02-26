@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Image = styled.img`
+  width: 45%;
+`;
+
 export const PicLarryContainer = styled.div`
   height: 800px;
   display: flex;
@@ -8,30 +12,13 @@ export const PicLarryContainer = styled.div`
   align-items: center;
   background: linear-gradient(
     29deg,
-    #181c4c 0%,
-    #181c4c 50%,
-    #f37a1f 50%,
-    #f37a1f 100%
+    #2e3170 0%,
+    #2e3170 50%,
+    #ff8f3b 50%,
+    #ff8f3b 100%
   );
-
-  @media screen and (max-width: 480px) {
-    height: 1300px;
-  }
-
+  
   @media screen and (max-width: 768px) {
-    height: 1100px;
-  }
-
-  @media screen and (max-width: 540px) {
     height: 100vh;
   }
 `;
-
-export const Image = styled.img`
-  width: 50%;
-
-  /* @media screen and (min-width: 1440px) {
-    min-width: 1440px;
-  } */
-  }
-  `;

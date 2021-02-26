@@ -1,41 +1,14 @@
 import React from "react";
-
-import {
-  PicDarumaContainer,
-  PicDarumaH1,
-  PicDarumaWrapper,
-  PicDarumaCard,
-  PicDarumaH2,
-  PicDarumaP,
-} from "./PicDarumaElements";
+import { Parallax } from "react-scroll-parallax";
+import { PicDarumaContainer, Image } from "./PicDarumaElements";
+import Daruma from "../../images/Daruma.png";
 
 const PicDaruma = () => {
   return (
     <PicDarumaContainer id="daruma">
-      <PicDarumaH1>Our PicDaruma</PicDarumaH1>
-      <PicDarumaWrapper>
-        <PicDarumaCard>
-          <PicDarumaH2>dummy Text</PicDarumaH2>
-          <PicDarumaP>
-            dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
-            dummy Text dummy Text
-          </PicDarumaP>
-        </PicDarumaCard>
-        <PicDarumaCard>
-          <PicDarumaH2>dummy Text</PicDarumaH2>
-          <PicDarumaP>
-            dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
-            dummy Text dummy Text
-          </PicDarumaP>
-        </PicDarumaCard>
-        <PicDarumaCard>
-          <PicDarumaH2>dummy Text</PicDarumaH2>
-          <PicDarumaP>
-            dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
-            dummy Text dummy Text
-          </PicDarumaP>
-        </PicDarumaCard>
-      </PicDarumaWrapper>
+      {/* <Parallax y={[-40, 40]} tagOuter="figure"> */}
+        <Image src={Daruma} />
+      {/* </Parallax> */}
     </PicDarumaContainer>
   );
 };

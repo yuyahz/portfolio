@@ -26,6 +26,10 @@ export const FooterWrap = styled.div`
   @media screen and (max-width: 970px) {
     max-width: 600px;
   }
+
+  @media screen and (max-width: 520px) {
+    margin-top: 4rem;
+  }
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -46,6 +50,10 @@ export const FooterLinkTitle = styled.h1`
   font-size: 48px;
   margin-right: auto;
   margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 520px) {
+    font-size: 32px;
   }
 `;
 

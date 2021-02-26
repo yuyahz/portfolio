@@ -5,12 +5,6 @@ export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) =>
     lightBg ? "rgb(255, 255, 255)" : "rgba(218, 218, 218, 1)"};
-
-  @media screen and (max-width: 970px) {
-  }
-
-  @media screen and (max-width: 520px) {
-  }
 `;
 
 export const InfoWrapper = styled.div`
@@ -65,13 +59,11 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
 `;
 
 export const TextWrapperR = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
 `;
 
 export const TopLine = styled.p`

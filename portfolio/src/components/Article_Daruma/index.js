@@ -2,17 +2,19 @@ import React from "react";
 import { motion } from "framer-motion";
 import {
   DarumaContainer,
-  DarumaIcon,
-  DarumaH1,
+  DarumaTitle,
+  DarumaColumn,
   DarumaWrapper,
-  DarumaCard,
+  Icon,
+  IconWrapper,
+  DarumaH1,
   DarumaH2,
   DarumaP,
 } from "./DarumaElements";
 
 const Article_Daruma = () => {
   return (
-    <DarumaContainer id="Daruma">
+    <DarumaContainer id="daruma">
       <motion.div
         animate={{
           x: 0,
@@ -30,33 +32,18 @@ const Article_Daruma = () => {
           duration: 0.5,
         }}
       >
-        <DarumaIcon to="/">Daruma</DarumaIcon>
-        <DarumaH1>Our Daruma</DarumaH1>
+        <IconWrapper>
+          <Icon to="/">Yuya.Works</Icon>
+        </IconWrapper>
         <DarumaWrapper>
-          <DarumaCard>
-            {/* <DarumaIcon src={Icon1} /> */}
-            <DarumaH2>dummy Text</DarumaH2>
-            <DarumaP>
-              dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
-              dummy Text dummy Text
-            </DarumaP>
-          </DarumaCard>
-          <DarumaCard>
-            {/* <DarumaIcon src={Icon2} /> */}
-            <DarumaH2>dummy Text</DarumaH2>
-            <DarumaP>
-              dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
-              dummy Text dummy Text
-            </DarumaP>
-          </DarumaCard>
-          <DarumaCard>
-            {/* <DarumaIcon src={Icon3} /> */}
-            <DarumaH2>dummy Text</DarumaH2>
-            <DarumaP>
-              dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
-              dummy Text dummy Text
-            </DarumaP>
-          </DarumaCard>
+          <DarumaTitle>Living Your Most Authentic Life Possible</DarumaTitle>
+          <DarumaH1>Platform for Publications Introduction website</DarumaH1>
+          <DarumaColumn>
+            <DarumaP>1</DarumaP>
+            <DarumaP>2</DarumaP>
+            <DarumaP>3</DarumaP>
+            <DarumaP>4</DarumaP>
+          </DarumaColumn>
         </DarumaWrapper>
       </motion.div>
     </DarumaContainer>

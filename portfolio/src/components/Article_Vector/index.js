@@ -2,17 +2,19 @@ import React from "react";
 import { motion } from "framer-motion";
 import {
   VectorContainer,
-  VectorIcon,
-  VectorH1,
+  VectorTitle,
+  VectorColumn,
   VectorWrapper,
-  VectorCard,
+  Icon,
+  IconWrapper,
+  VectorH1,
   VectorH2,
   VectorP,
 } from "./VectorElements";
 
 const Article_Vector = () => {
   return (
-    <VectorContainer id="Vector">
+    <VectorContainer id="vector">
       <motion.div
         animate={{
           x: 0,
@@ -30,33 +32,18 @@ const Article_Vector = () => {
           duration: 0.5,
         }}
       >
-        <VectorIcon to="/">Vector</VectorIcon>
-        <VectorH1>Our Vector</VectorH1>
+        <IconWrapper>
+          <Icon to="/">Yuya.Works</Icon>
+        </IconWrapper>
         <VectorWrapper>
-          <VectorCard>
-            {/* <VectorIcon src={Icon1} /> */}
-            <VectorH2>dummy Text</VectorH2>
-            <VectorP>
-              dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
-              dummy Text dummy Text
-            </VectorP>
-          </VectorCard>
-          <VectorCard>
-            {/* <VectorIcon src={Icon2} /> */}
-            <VectorH2>dummy Text</VectorH2>
-            <VectorP>
-              dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
-              dummy Text dummy Text
-            </VectorP>
-          </VectorCard>
-          <VectorCard>
-            {/* <VectorIcon src={Icon3} /> */}
-            <VectorH2>dummy Text</VectorH2>
-            <VectorP>
-              dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
-              dummy Text dummy Text
-            </VectorP>
-          </VectorCard>
+          <VectorTitle>Living Your Most Authentic Life Possible</VectorTitle>
+          <VectorH1>Platform for Publications Introduction website</VectorH1>
+          <VectorColumn>
+            <VectorP>1</VectorP>
+            <VectorP>2</VectorP>
+            <VectorP>3</VectorP>
+            <VectorP>4</VectorP>
+          </VectorColumn>
         </VectorWrapper>
       </motion.div>
     </VectorContainer>

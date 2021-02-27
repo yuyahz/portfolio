@@ -37,7 +37,7 @@ const Article_Larry = () => {
         </IconWrapper>
         <LarryWrapper>
           <LarryTitle>Living Your Most Authentic Life Possible</LarryTitle>
-          <LarryH1>Living Your Most Authentic Life Possible</LarryH1>
+          <LarryH1>Platform for Publications Introduction website</LarryH1>
           <LarryColumn>
             <LarryP>1</LarryP>
             <LarryP>2</LarryP>

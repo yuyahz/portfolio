@@ -15,6 +15,16 @@ export const LarryWrapper = styled.div`
   margin: 0 auto;
   max-width: 1200px;
   padding: 10% 0;
+
+  @media screen and (max-width: 970px) {
+    max-width: 80%;
+    padding: 15% 0;
+  }
+
+  @media screen and (max-width: 520px) {
+    max-width: 85%;
+    padding: 20% 0;
+  }
 `;
 
 export const IconWrapper = styled.div`
@@ -46,6 +56,20 @@ export const Icon = styled(Link)`
   &:hover {
     transform: rotateZ(360deg);
   }
+
+  @media screen and (max-width: 970px) {
+    padding: 1rem 0.5rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  @media screen and (max-width: 520px) {
+    font-size: 17px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
 `;
 
 export const LarryTitle = styled.div`
@@ -71,6 +95,19 @@ export const LarryColumn = styled.div`
   align-items: left;
   max-width: 900px;
   margin: 0 auto;
+
+  @media screen and (max-width: 970px) {
+    grid-template-columns: 30% 1fr;
+    gap: 0.7rem;
+    align-items: left;
+    max-width: 85%;
+  }
+
+  @media screen and (max-width: 520px) {
+    grid-template-columns: 35% 1fr;
+    gap: 0.5rem;
+    max-width: 90%;
+  }
 `;
 
 export const LarryH1 = styled.h1`
@@ -81,6 +118,10 @@ export const LarryH1 = styled.h1`
   font-size: 20px;
   letter-spacing: 1.4px;
   margin-bottom: 5rem;
+
+  @media screen and (max-width: 520px) {
+    margin-bottom: 3.5rem;
+  }
 `;
 
 export const LarryH2 = styled.h2``;

@@ -2,90 +2,134 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const VectorContainer = styled.div`
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background: rgb(219, 237, 242);
+  height: auto;
+  background: rgb(255, 255, 255);
 
-  @media screen and (max-width: 768px) {
-    height: 1100px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 1300px;
-  }
-`;
-
-export const VectorIcon = styled(Link)`
-  margin-left: 32px;
-  margin-top: 32px;
-  text-decoration: none;
-  color: #444;
-  font-weight: 700;
-  font-size: 32px;
-
-  @media screen and (max-width: 480px) {
-    margin-left: 16px;
-    margin-top: 8px;
+  @media screen and (max-width: 960px) {
+    height: 100vh;
   }
 `;
 
 export const VectorWrapper = styled.div`
-  max-width: 1000px;
+  position: relative;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  grid-gap: 16px;
-  padding: 0 50px;
+  max-width: 1200px;
+  padding: 10% 0;
 
-  @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 970px) {
+    max-width: 80%;
+    padding: 15% 0;
   }
 
-  @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-    padding: 0 20px;
+  @media screen and (max-width: 520px) {
+    max-width: 85%;
+    padding: 20% 0;
   }
 `;
 
-export const VectorCard = styled.div`
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 10px;
-  max-height: 340px;
-  padding: 30px;
-  transition: 1s cubic-bezier(0.65, 0, 0.16, 1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+export const IconWrapper = styled.div`
+  position: relative;
+  z-index: 1;
+`;
+
+export const Icon = styled(Link)`
+  display: block;
+  background: linear-gradient(
+    329deg,
+    rgba(68, 68, 68, 1) 60%,
+    rgba(47, 48, 48, 1) 85%,
+    rgba(1, 6, 6, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  transition: all 1s linear 0s;
+  cursor: pointer;
 
   &:hover {
-    transform: scale(1.02);
-    transition: 1s cubic-bezier(0.65, 0, 0.16, 1);
-    cursor: pointer;
+    transform: rotateZ(360deg);
+  }
+
+  @media screen and (max-width: 970px) {
+    padding: 1rem 0.5rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  @media screen and (max-width: 520px) {
+    font-size: 17px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+`;
+
+export const VectorTitle = styled.div`
+  background: linear-gradient(
+    329deg,
+    rgba(68, 68, 68, 1) 60%,
+    rgba(47, 48, 48, 1) 85%,
+    rgba(1, 6, 6, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 66px;
+  margin-bottom: 1rem;
+`;
+
+export const VectorColumn = styled.div`
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 1rem;
+  align-items: left;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 970px) {
+    grid-template-columns: 30% 1fr;
+    gap: 0.7rem;
+    align-items: left;
+    max-width: 85%;
+  }
+
+  @media screen and (max-width: 520px) {
+    grid-template-columns: 35% 1fr;
+    gap: 0.5rem;
+    max-width: 90%;
   }
 `;
 
 export const VectorH1 = styled.h1`
-  font-size: 2.5rem;
-  color: #fff;
-  margin-bottom: 64px;
+  color: #010606;
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1.4px;
+  margin-bottom: 5rem;
 
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
+  @media screen and (max-width: 520px) {
+    margin-bottom: 3.5rem;
   }
 `;
 
-export const VectorH2 = styled.h2`
-  font-size: 1rem;
-  margin-bottom: 10px;
-`;
+export const VectorH2 = styled.h2``;
 
 export const VectorP = styled.p`
-  font-size: 1rem;
-  text-align: center;
+  color: #888888;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 1.4px;
 `;

@@ -1,18 +1,19 @@
 import React from "react";
+import { Parallaxr } from "react-scroll-parallax";
 import { motion } from "framer-motion";
+import Larry from "../../images/Larry.png";
 import {
   LarryContainer,
   LarryIcon,
   LarryH1,
   LarryWrapper,
-  LarryCard,
   LarryH2,
   LarryP,
 } from "./LarryElements";
 
 const Article_Larry = () => {
   return (
-    <LarryContainer id="Larry">
+    <LarryContainer id="larry">
       <motion.div
         animate={{
           x: 0,
@@ -30,33 +31,14 @@ const Article_Larry = () => {
           duration: 0.5,
         }}
       >
-        <LarryIcon to="/">Larry</LarryIcon>
+        <LarryIcon to="/">Home</LarryIcon>
         <LarryH1>Our Larry</LarryH1>
         <LarryWrapper>
-          <LarryCard>
-            {/* <LarryIcon src={Icon1} /> */}
-            <LarryH2>dummy Text</LarryH2>
-            <LarryP>
-              dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
-              dummy Text dummy Text
-            </LarryP>
-          </LarryCard>
-          <LarryCard>
-            {/* <LarryIcon src={Icon2} /> */}
-            <LarryH2>dummy Text</LarryH2>
-            <LarryP>
-              dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
-              dummy Text dummy Text
-            </LarryP>
-          </LarryCard>
-          <LarryCard>
-            {/* <LarryIcon src={Icon3} /> */}
-            <LarryH2>dummy Text</LarryH2>
-            <LarryP>
-              dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
-              dummy Text dummy Text
-            </LarryP>
-          </LarryCard>
+          <LarryH2>dummy Text</LarryH2>
+          <LarryP>
+            dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
+            dummy Text dummy Text
+          </LarryP>
         </LarryWrapper>
       </motion.div>
     </LarryContainer>

@@ -10,6 +10,13 @@ import {
   PContent,
   TitleP,
   Image,
+  SkillsColumn,
+  SkillsWrapRight,
+  SkillsWrapLeft,
+  SkillsTitle,
+  SkillsSubTitle,
+  Skills,
+  Tools,
 } from "./TitleElements";
 import HeadShot2 from "../../images/HeadShot2.png";
 
@@ -23,29 +30,53 @@ const TitleSection = () => {
           </FadeIn.Left>
         </ImageContent>
         <H1Content>
-          {/* <FadeIn.Right> */}
           <Parallax x={[-10, 5]} tagOuter="figure">
             <TitleH1>
               I am Yuya Hashirizaki
-              {/* <FadeIn.Right> */}
               <TitleH1 className="br">
                 design & build digital products based in Vancouver
               </TitleH1>
-              {/* </FadeIn.Right> */}
             </TitleH1>
           </Parallax>
-          {/* </FadeIn.Right> */}
         </H1Content>
         <PContent>
-          {/* <FadeIn.Right> */}
           <Parallax x={[5, -10]} tagOuter="figure">
             <TitleP>
               I’m a passionate multi-talented human who comes from Japan with
               over 6+ years of experiences in wider field of design disciplines.
             </TitleP>
           </Parallax>
-          {/* </FadeIn.Right> */}
         </PContent>
+        <SkillsColumn>
+          <SkillsWrapRight>
+            <SkillsTitle>Designer</SkillsTitle>
+            <SkillsSubTitle>Things I enjoy designing</SkillsSubTitle>
+            <Skills>UI, UX, Web, Apps, Logos, Branding</Skills>
+            <SkillsSubTitle>Design Tools</SkillsSubTitle>
+            <Tools>Illustrator</Tools>
+            <Tools>Photoshop</Tools>
+            <Tools>XD</Tools>
+            <Tools>Figma</Tools>
+            <Tools>Sketch</Tools>
+            <Tools>InVision</Tools>
+            <Tools>Wix</Tools>
+            <Tools>Miro</Tools>
+          </SkillsWrapRight>
+          <SkillsWrapLeft>
+            <SkillsTitle>Front-end Developer</SkillsTitle>
+            <SkillsSubTitle>Languages I speak</SkillsSubTitle>
+            <Skills>HTML, CSS, JS, React</Skills>
+            <SkillsSubTitle>Developer Tools</SkillsSubTitle>
+            <Tools>Styled Component</Tools>
+            <Tools>React Bootstrap</Tools>
+            <Tools>Bootstrap</Tools>
+            <Tools>Materialize</Tools>
+            <Tools>Wordpress</Tools>
+            <Tools>Sass</Tools>
+            <Tools>Terminal</Tools>
+            <Tools>Github</Tools>
+          </SkillsWrapLeft>
+        </SkillsColumn>
       </TitleContent>
     </TitleContainer>
   );

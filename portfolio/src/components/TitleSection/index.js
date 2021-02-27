@@ -47,36 +47,41 @@ const TitleSection = () => {
             </TitleP>
           </Parallax>
         </PContent>
+
         <SkillsColumn>
-          <SkillsWrapRight>
-            <SkillsTitle>Designer</SkillsTitle>
-            <SkillsSubTitle>Things I enjoy designing</SkillsSubTitle>
-            <Skills>UI, UX, Web, Apps, Logos, Branding</Skills>
-            <SkillsSubTitle>Design Tools</SkillsSubTitle>
-            <Tools>Illustrator</Tools>
-            <Tools>Photoshop</Tools>
-            <Tools>XD</Tools>
-            <Tools>Figma</Tools>
-            <Tools>Sketch</Tools>
-            <Tools>InVision</Tools>
-            <Tools>Wix</Tools>
-            <Tools>Miro</Tools>
-          </SkillsWrapRight>
-          <SkillsWrapLeft>
-            <SkillsTitle>Front-end Developer</SkillsTitle>
-            <SkillsSubTitle>Languages I speak</SkillsSubTitle>
-            <Skills>HTML, CSS, JS, React</Skills>
-            <SkillsSubTitle>Developer Tools</SkillsSubTitle>
-            <Tools>Styled Component</Tools>
-            <Tools>React Bootstrap</Tools>
-            <Tools>Bootstrap</Tools>
-            <Tools>Materialize</Tools>
-            <Tools>Wordpress</Tools>
-            <Tools>Sass</Tools>
-            <Tools>Terminal</Tools>
-            <Tools>Github</Tools>
-          </SkillsWrapLeft>
-        </SkillsColumn>
+                  <FadeIn.Up>
+            <SkillsWrapRight>
+              <SkillsTitle>Designer</SkillsTitle>
+              <SkillsSubTitle>Things I enjoy designing</SkillsSubTitle>
+              <Skills>UI, UX, Web, Apps, Logos, Branding</Skills>
+              <SkillsSubTitle>Design Tools</SkillsSubTitle>
+              <Tools>Illustrator</Tools>
+              <Tools>Photoshop</Tools>
+              <Tools>XD</Tools>
+              <Tools>Figma</Tools>
+              <Tools>Sketch</Tools>
+              <Tools>InVision</Tools>
+              <Tools>Wix</Tools>
+              <Tools>Miro</Tools>
+            </SkillsWrapRight>
+          </FadeIn.Up>
+          <FadeIn.Up>
+            <SkillsWrapLeft>
+              <SkillsTitle>Front-end Developer</SkillsTitle>
+              <SkillsSubTitle>Languages I speak</SkillsSubTitle>
+              <Skills>HTML, CSS, JS, React</Skills>
+              <SkillsSubTitle>Developer Tools</SkillsSubTitle>
+              <Tools>Styled Component</Tools>
+              <Tools>React Bootstrap</Tools>
+              <Tools>Bootstrap</Tools>
+              <Tools>Materialize</Tools>
+              <Tools>Wordpress</Tools>
+              <Tools>Sass</Tools>
+              <Tools>Terminal</Tools>
+              <Tools>Github</Tools>
+            </SkillsWrapLeft>
+            </FadeIn.Up>
+          </SkillsColumn>
       </TitleContent>
     </TitleContainer>
   );

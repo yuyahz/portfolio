@@ -45,6 +45,8 @@ const InfoSection = ({
   textR8,
   textR9,
   textR10,
+  textR11,
+  textR12,
   dark,
   btnColor,
   primary,
@@ -52,7 +54,7 @@ const InfoSection = ({
 }) => {
   return (
     <InfoContainer lightBg={lightBg} id={id}>
-      <FadeIn.Left>
+      <FadeIn.Up>
         <InfoWrapper>
           <InfoRow>
             <Column1>
@@ -106,11 +108,13 @@ const InfoSection = ({
                 <TextRBottom lightText={lightText}>{textR8}</TextRBottom>
                 <TextRBottom lightText={lightText}>{textR9}</TextRBottom>
                 <TextRBottom lightText={lightText}>{textR10}</TextRBottom>
+                <TextRBottom lightText={lightText}>{textR11}</TextRBottom>
+                <TextRBottom lightText={lightText}>{textR12}</TextRBottom>
               </TextWrapperR>
             </Column2>
           </InfoRow>
         </InfoWrapper>
-      </FadeIn.Left>
+      </FadeIn.Up>
     </InfoContainer>
   );
 };

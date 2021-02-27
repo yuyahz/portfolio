@@ -1,12 +1,13 @@
 import React from "react";
-import { Parallaxr } from "react-scroll-parallax";
 import { motion } from "framer-motion";
-import Larry from "../../images/Larry.png";
 import {
   LarryContainer,
-  LarryIcon,
-  LarryH1,
+  LarryTitle,
+  LarryColumn,
   LarryWrapper,
+  Icon,
+  IconWrapper,
+  LarryH1,
   LarryH2,
   LarryP,
 } from "./LarryElements";
@@ -31,14 +32,18 @@ const Article_Larry = () => {
           duration: 0.5,
         }}
       >
-        <LarryIcon to="/">Home</LarryIcon>
-        <LarryH1>Our Larry</LarryH1>
+        <IconWrapper>
+          <Icon to="/">Yuya.Works</Icon>
+        </IconWrapper>
         <LarryWrapper>
-          <LarryH2>dummy Text</LarryH2>
-          <LarryP>
-            dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
-            dummy Text dummy Text
-          </LarryP>
+          <LarryTitle>Living Your Most Authentic Life Possible</LarryTitle>
+          <LarryH1>Living Your Most Authentic Life Possible</LarryH1>
+          <LarryColumn>
+            <LarryP>1</LarryP>
+            <LarryP>2</LarryP>
+            <LarryP>3</LarryP>
+            <LarryP>4</LarryP>
+          </LarryColumn>
         </LarryWrapper>
       </motion.div>
     </LarryContainer>

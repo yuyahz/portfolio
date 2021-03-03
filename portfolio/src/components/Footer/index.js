@@ -1,20 +1,16 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaDribbble, FaBehance, FaLinkedinIn } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { IconContext } from "react-icons";
 
 import {
   FooterContainer,
   FooterWrap,
   FooterLinksContainer,
+  FooterClose,
   FooterLinksWrapper,
   FooterLinkItems,
-  FooterLinkTitle,
   FooterLink,
   SocialMedia,
   SocialMediaWrap,
@@ -33,7 +29,21 @@ const Footer = () => {
     <FooterContainer>
       <FooterWrap>
         <FooterLinksContainer>
-              <FooterLinkTitle>Thank you.</FooterLinkTitle>
+          <FooterClose>Thank you.</FooterClose>
+        </FooterLinksContainer>
+        <FooterLinksContainer>
+          <FooterClose className="bottom">
+            Get in touch via <a className="link" target="_blank" href="mailto:hashirizaki61@gmail.com">
+              email
+            </a> or <a
+              className="link"
+              target="_blank"
+              href="https://www.linkedin.com/in/yuya-hashirizaki-9b0065191/"
+            >
+              LinkedIn
+            </a>
+            , and let’s discuss how I can help you.
+          </FooterClose>
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
@@ -42,23 +52,34 @@ const Footer = () => {
             </SocialLogo>
             {/* <WebsiteRights>dolla © {new Data().getFullYear()}All Right reserved.</WebsiteRights> */}
             <SocialIcons>
-              <SocialIcons>
-                <SocialIconLink href="/" target="_blank" aria-label="Facebook">
-                  <FaFacebook />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" aria-label="Instagram">
-                  <FaInstagram />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" aria-label="Youtube">
-                  <FaYoutube />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" aria-label="Twitter">
-                  <FaTwitter />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
-                  <FaLinkedin />
-                </SocialIconLink>
-              </SocialIcons>
+              <SocialIconLink
+                href="https://dribbble.com/Hashirizaki"
+                target="_blank"
+                aria-label="dribbble"
+              >
+                <FaDribbble />
+              </SocialIconLink>
+              <SocialIconLink
+                href="https://www.behance.net/yuyahashirizaki"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <FaBehance />
+              </SocialIconLink>
+              <SocialIconLink
+                href="https://github.com/Yuya61"
+                target="_blank"
+                aria-label="github"
+              >
+                <FiGithub />
+              </SocialIconLink>
+              <SocialIconLink
+                href="https://www.linkedin.com/in/yuya-hashirizaki-9b0065191"
+                target="_blank"
+                aria-label="linkedIn"
+              >
+                <FaLinkedinIn />
+              </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>

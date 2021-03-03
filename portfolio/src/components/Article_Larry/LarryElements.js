@@ -84,7 +84,7 @@ export const LarryTitle = styled.div`
   max-width: 900px;
   margin: 0 auto;
   font-weight: 900;
-  font-size: 66px;
+  font-size: 48px;
   margin-bottom: 1rem;
 `;
 

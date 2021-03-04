@@ -48,7 +48,7 @@ export const Icon = styled(Link)`
   font-size: 20px;
   font-weight: 700;
   position: absolute;
-  top: 3rem;
+  top: 1.5rem;
   right: 3rem;
   transition: all 1s linear 0s;
   cursor: pointer;
@@ -116,19 +116,18 @@ export const LarryH1 = styled.h1`
   color: #010606;
   max-width: 900px;
   margin: 0 auto;
+  margin-bottom: 3rem;
   font-weight: 600;
   font-size: 32px;
-  margin-top: 5rem;
 `;
 
 export const LarryH2 = styled.h2`
-  color: #010606;
+  color: #888888;
   max-width: 900px;
   margin: 0 auto;
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 1.4px;
-  margin-bottom: 5rem;
 
   @media screen and (max-width: 520px) {
     margin-bottom: 3.5rem;
@@ -137,15 +136,27 @@ export const LarryH2 = styled.h2`
 
 export const LarryP = styled.p`
   color: #888888;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  max-width: 900px;
+  margin: 0 auto;
+  word-wrap: break-word;
+`;
+
+export const LarryCol = styled.p`
+  color: #888888;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2rem;
   letter-spacing: 1.4px;
 `;
 
 export const Image = styled.img`
   max-width: 75%;
   height: auto;
+  margin: 6rem 0 6rem 0;
 
   @media screen and (max-width: 970px) {
     max-width: 100%;

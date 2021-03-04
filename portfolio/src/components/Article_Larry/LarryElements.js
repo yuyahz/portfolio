@@ -95,6 +95,7 @@ export const LarryColumn = styled.div`
   align-items: left;
   max-width: 900px;
   margin: 0 auto;
+  margin-top: 3rem;
 
   @media screen and (max-width: 970px) {
     grid-template-columns: 30% 1fr;
@@ -107,10 +108,20 @@ export const LarryColumn = styled.div`
     grid-template-columns: 35% 1fr;
     gap: 0.5rem;
     max-width: 90%;
+    margin-top: 3.5rem;
   }
 `;
 
 export const LarryH1 = styled.h1`
+  color: #010606;
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 5rem;
+`;
+
+export const LarryH2 = styled.h2`
   color: #010606;
   max-width: 900px;
   margin: 0 auto;
@@ -124,12 +135,19 @@ export const LarryH1 = styled.h1`
   }
 `;
 
-export const LarryH2 = styled.h2``;
-
 export const LarryP = styled.p`
   color: #888888;
   font-size: 14px;
   font-weight: 300;
   line-height: 16px;
   letter-spacing: 1.4px;
+`;
+
+export const Image = styled.img`
+  max-width: 75%;
+  height: auto;
+
+  @media screen and (max-width: 970px) {
+    max-width: 100%;
+  }
 `;

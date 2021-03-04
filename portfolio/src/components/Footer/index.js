@@ -2,7 +2,6 @@ import React from "react";
 import { animateScroll as scroll } from "react-scroll";
 import { FaDribbble, FaBehance, FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
-import { IconContext } from "react-icons";
 
 import {
   FooterContainer,

@@ -12,11 +12,14 @@ import {
   LarryP,
   LarryCol,
   Image,
+  VideoBg,
 } from "./LarryElements";
 import LarryArticle_1 from "../../images/LarryArticle_1.png";
 import LarryArticle_2 from "../../images/LarryArticle_2.png";
 import LarryArticle_3 from "../../images/LarryArticle_3.png";
 import LarryArticle_4 from "../../images/LarryArticle_4.png";
+import LarryArticle_5 from "../../images/LarryArticle_5.png";
+import LarryMovie_1 from "../../videos/LarryMovie_1.mp4";
 
 const Article_Larry = () => {
   return (
@@ -101,16 +104,39 @@ const Article_Larry = () => {
             the goal of this project.
           </LarryP>
           <LarryP style={{ marginTop: "1.5rem" }}>
+            This way we could also achieve a more consistent user experience
+            across the different end-users.
+          </LarryP>
+          <LarryP style={{ marginTop: "1.5rem" }}>
             Design methods used during the project included journey mapping,
-            UI/UX design, and prototyping solutions.
+            UI/UX design, and prototyping solutions. During the project, I also
+            designed features needed for a wider launch.
           </LarryP>
           <div style={{ textAlign: "center" }}>
             <Image src={LarryArticle_3} id="3" />
             <Image style={{ margin: "0" }} src={LarryArticle_4} id="4" />
           </div>
           <LarryP style={{ marginTop: "5rem" }}>
-            De
+            Design and developer collaboration is a most challenging problem and
+            there are many opportunities how to sync each other. All of design
+            tooling that exists today isn't enforcing that behavior. All they do
+            is attempt to do similar things. Unless design to development all
+            share the same settings or agreed on setting, there is no real
+            "bridge” between developers and designers.
           </LarryP>
+          <div style={{ textAlign: "center" }}>
+            <Image src={LarryArticle_5} id="5" />
+          </div>
+          <LarryP>
+            While some developers were inexperienced, it was a little uneasy to
+            proceed with the project in a limited time to convey the first
+            instruction with the design tool. In order to get a better
+            understanding of the design, I created it myself without using XD
+            only at the beginning.
+          </LarryP>
+          <div style={{ textAlign: "center" }}>
+            <VideoBg autoPlay loop muted src={LarryMovie_1} type="video/mp4" />
+          </div>
           {/* <LarryColumn>
             <LarryCol>1</LarryCol>
             <LarryCol>2</LarryCol>

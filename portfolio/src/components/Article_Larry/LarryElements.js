@@ -162,3 +162,9 @@ export const Image = styled.img`
     max-width: 100%;
   }
 `;
+
+export const VideoBg = styled.video`
+  max-width: 20%;
+  object-fit: cover;
+  margin: 6rem 0 6rem 0;
+`;

@@ -88,7 +88,7 @@ export const LarryTitle = styled.div`
   margin-bottom: 1rem;
 `;
 
-export const LarryColumn = styled.div`
+export const LarryGrid = styled.div`
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 1rem;
@@ -164,7 +164,7 @@ export const Image = styled.img`
 `;
 
 export const VideoBg = styled.video`
-  max-width: 20%;
+  max-width: 100%;
   object-fit: cover;
   margin: 6rem 0 6rem 0;
 `;

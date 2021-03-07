@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import {
   LarryContainer,
   LarryTitle,
-  LarryColumn,
+  LarryGrid,
   LarryWrapper,
   Icon,
   IconWrapper,
@@ -19,7 +19,10 @@ import LarryArticle_2 from "../../images/LarryArticle_2.png";
 import LarryArticle_3 from "../../images/LarryArticle_3.png";
 import LarryArticle_4 from "../../images/LarryArticle_4.png";
 import LarryArticle_5 from "../../images/LarryArticle_5.png";
+import LarryArticle_6 from "../../images/LarryArticle_6.png";
+import LarryArticle_7 from "../../images/LarryArticle_7.png";
 import LarryMovie_1 from "../../videos/LarryMovie_1.mp4";
+import LarryMovie_2 from "../../videos/LarryMovie_2.mp4";
 
 const Article_Larry = () => {
   return (
@@ -72,8 +75,8 @@ const Article_Larry = () => {
             development team.
           </LarryP>
           <LarryP>
-            The image above is the landing page that I first proposed and gained
-            credibility.
+            The image above is the first prototype that I first proposed and
+            gained credibility.
           </LarryP>
           <LarryH1 style={{ marginTop: "5rem" }}>Challenge</LarryH1>
           <LarryP>
@@ -128,15 +131,81 @@ const Article_Larry = () => {
             <Image src={LarryArticle_5} id="5" />
           </div>
           <LarryP>
-            While some developers were inexperienced, it was a little uneasy to
-            proceed with the project in a limited time to convey the first
-            instruction with the design tool. In order to get a better
-            understanding of the design, I created it myself without using XD
-            only at the beginning.
+            While some developers were inexperienced, it was a uneasy to proceed
+            with the project in a limited time to convey the first instruction
+            with the design tool. In order to get a better understanding of the
+            design, I created it myself without using XD only at the beginning.
+          </LarryP>
+          <LarryP style={{ marginTop: "1.5rem" }}>
+            After a few meetings with Larry, I saw what he really needed, so I
+            decided to create a landing page and homepage to implement it
+            concretely. The most important thing in doing so was to create a
+            consistent design to get the most out of his brand.
           </LarryP>
           <div style={{ textAlign: "center" }}>
-            <VideoBg autoPlay loop muted src={LarryMovie_1} type="video/mp4" />
+            <Image src={LarryArticle_6} id="6" />
           </div>
+          <LarryP style={{ marginTop: "1.5rem" }}>
+            After a few meetings with Larry, I saw what he really needed, so I
+            decided to create a landing page and homepage to implement it
+            concretely. The most important thing in doing so was to create a
+            consistent design to get the most out of his brand.
+          </LarryP>
+          <LarryP style={{ marginTop: "1.5rem" }}>
+            The problem is that if we were able to communicate with the clients
+            deeper in terms of functionality during the meeting, I think the
+            project would have progressed a little faster. It's a problem with
+            every project, regardless of language or culture, but the challenge
+            is how to deal with it. I've learned a lot from this experience and
+            I'm ready to move on to the next stage.
+          </LarryP>
+          <LarryGrid style={{ paddingRight: "3.5rem" }}>
+            <LarryCol>
+              <div>
+                <VideoBg
+                  autoPlay
+                  loop
+                  muted
+                  src={LarryMovie_1}
+                  type="video/mp4"
+                />
+              </div>
+            </LarryCol>
+            <LarryCol>
+              <div>
+                <VideoBg
+                  autoPlay
+                  loop
+                  muted
+                  src={LarryMovie_2}
+                  type="video/mp4"
+                />
+              </div>
+              <LarryP style={{ textAlign: "right", fontSize: "14px" }}>
+                Motion prototypes
+              </LarryP>
+            </LarryCol>
+          </LarryGrid>
+          <LarryP style={{ marginTop: "2rem" }}>
+            At the beginning, I didn't plan to create blog content, but at the
+            time of the meeting, I received a request to create a blog section,
+            so I decided to do it in a hurry. At first, it was a key to create
+            individual blog article pages on the homepage, but since Larry
+            wanted to make the system simple to update and edit, end-users can
+            touch the outline of the article and assist clicking. I designed a
+            UI that possible to do it.
+          </LarryP>
+          <div style={{ textAlign: "center" }}>
+            <Image src={LarryArticle_7} id="7" />
+          </div>
+          <LarryH1>The outcome</LarryH1>
+          <LarryP>
+            The essential intention of this project is to make Larry's
+            experiences and books known to various people. Not to let people
+            know about their suffering, but to convey their hope. I was
+            convinced that at least my design would reach as many people as
+            possible.
+          </LarryP>
           {/* <LarryColumn>
             <LarryCol>1</LarryCol>
             <LarryCol>2</LarryCol>

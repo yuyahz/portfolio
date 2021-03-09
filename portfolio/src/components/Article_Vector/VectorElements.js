@@ -48,7 +48,7 @@ export const Icon = styled(Link)`
   font-size: 20px;
   font-weight: 700;
   position: absolute;
-  top: 3rem;
+  top: 1.5rem;
   right: 3rem;
   transition: all 1s linear 0s;
   cursor: pointer;
@@ -84,17 +84,18 @@ export const VectorTitle = styled.div`
   max-width: 900px;
   margin: 0 auto;
   font-weight: 900;
-  font-size: 66px;
+  font-size: 48px;
   margin-bottom: 1rem;
 `;
 
-export const VectorColumn = styled.div`
+export const VectorGrid = styled.div`
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 1rem;
   align-items: left;
   max-width: 900px;
   margin: 0 auto;
+  margin-top: 3rem;
 
   @media screen and (max-width: 970px) {
     grid-template-columns: 30% 1fr;
@@ -107,6 +108,7 @@ export const VectorColumn = styled.div`
     grid-template-columns: 35% 1fr;
     gap: 0.5rem;
     max-width: 90%;
+    margin-top: 3.5rem;
   }
 `;
 
@@ -114,22 +116,55 @@ export const VectorH1 = styled.h1`
   color: #010606;
   max-width: 900px;
   margin: 0 auto;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  font-size: 32px;
+`;
+
+export const VectorH2 = styled.h2`
+  color: #888888;
+  max-width: 900px;
+  margin: 0 auto;
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 1.4px;
-  margin-bottom: 5rem;
 
   @media screen and (max-width: 520px) {
     margin-bottom: 3.5rem;
   }
 `;
 
-export const VectorH2 = styled.h2``;
-
 export const VectorP = styled.p`
   color: #888888;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  max-width: 900px;
+  margin: 0 auto;
+  word-wrap: break-word;
+`;
+
+export const VectorCol = styled.p`
+  color: #888888;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2rem;
   letter-spacing: 1.4px;
+`;
+
+export const Image = styled.img`
+  max-width: 75%;
+  height: auto;
+  margin: 6rem 0 6rem 0;
+
+  @media screen and (max-width: 970px) {
+    max-width: 100%;
+  }
+`;
+
+export const VectorBg = styled.video`
+  max-width: 100%;
+  object-fit: cover;
+  margin: 6rem 0 6rem 0;
 `;

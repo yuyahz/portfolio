@@ -5,11 +5,11 @@ import Larry from "../../images/Larry.png";
 
 const PicLarry = () => {
   return (
-    <PicLarryContainer id="larry">
-      {/* <Parallax y={[-40, 40]} tagOuter="figure"> */}
+    <Parallax className="Container" id="larry" y={[-15, 15]} tagOuter="figure">
+      <PicLarryContainer>
         <Image src={Larry} />
-      {/* </Parallax> */}
-    </PicLarryContainer>
+      </PicLarryContainer>
+    </Parallax>
   );
 };
 

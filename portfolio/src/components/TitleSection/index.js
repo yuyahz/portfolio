@@ -47,9 +47,8 @@ const TitleSection = () => {
             </TitleP>
           </Parallax>
         </PContent>
-
         <SkillsColumn>
-                  <FadeIn.Up>
+          <FadeIn.Up>
             <SkillsWrapRight>
               <SkillsTitle>Designer</SkillsTitle>
               <SkillsSubTitle>Things I enjoy designing</SkillsSubTitle>
@@ -80,8 +79,8 @@ const TitleSection = () => {
               <Tools>Terminal</Tools>
               <Tools>Github</Tools>
             </SkillsWrapLeft>
-            </FadeIn.Up>
-          </SkillsColumn>
+          </FadeIn.Up>
+        </SkillsColumn>
       </TitleContent>
     </TitleContainer>
   );

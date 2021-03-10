@@ -21,6 +21,8 @@ import LarryArticle_4 from "../../images/LarryArticle_4.png";
 import LarryArticle_5 from "../../images/LarryArticle_5.png";
 import LarryArticle_6 from "../../images/LarryArticle_6.png";
 import LarryArticle_7 from "../../images/LarryArticle_7.png";
+import LarryArticle_8 from "../../images/LarryArticle_8.png";
+import LarryArticle_9 from "../../images/LarryArticle_9.png";
 import LarryMovie_1 from "../../videos/LarryMovie_1.mp4";
 import LarryMovie_2 from "../../videos/LarryMovie_2.mp4";
 
@@ -51,7 +53,7 @@ const Article_Larry = () => {
           <LarryTitle>Living Your Most Authentic Life Possible</LarryTitle>
           <LarryH2>Platform for Publications Introduction website</LarryH2>
           <div style={{ textAlign: "center" }}>
-            <Image src={LarryArticle_1} id="2" />
+            <Image src={LarryArticle_1} id="" />
           </div>
           <LarryH1>Background</LarryH1>
           <LarryP>
@@ -67,7 +69,7 @@ const Article_Larry = () => {
             selected from four groups and succeeded in winning his trust.
           </LarryP>
           <div style={{ textAlign: "center" }}>
-            <Image src={LarryArticle_2} id="2" />
+            <Image src={LarryArticle_2} id="" />
           </div>
           <LarryH1>My role</LarryH1>
           <LarryP>
@@ -116,8 +118,8 @@ const Article_Larry = () => {
             designed features needed for a wider launch.
           </LarryP>
           <div style={{ textAlign: "center" }}>
-            <Image src={LarryArticle_3} id="3" />
-            <Image style={{ margin: "0" }} src={LarryArticle_4} id="4" />
+            <Image src={LarryArticle_3} id="" />
+            <Image style={{ margin: "0" }} src={LarryArticle_4} id="" />
           </div>
           <LarryP style={{ marginTop: "5rem" }}>
             Design and developer collaboration is a most challenging problem and
@@ -128,7 +130,7 @@ const Article_Larry = () => {
             "bridge” between developers and designers.
           </LarryP>
           <div style={{ textAlign: "center" }}>
-            <Image src={LarryArticle_5} id="5" />
+            <Image src={LarryArticle_5} id="" />
           </div>
           <LarryP>
             While some developers were inexperienced, it was a uneasy to proceed
@@ -143,7 +145,7 @@ const Article_Larry = () => {
             consistent design to get the most out of his brand.
           </LarryP>
           <div style={{ textAlign: "center" }}>
-            <Image src={LarryArticle_6} id="6" />
+            <Image src={LarryArticle_6} id="" />
           </div>
           <LarryP style={{ marginTop: "1.5rem" }}>
             After a few meetings with Larry, I saw what he really needed, so I
@@ -196,7 +198,7 @@ const Article_Larry = () => {
             UI that possible to do it.
           </LarryP>
           <div style={{ textAlign: "center" }}>
-            <Image src={LarryArticle_7} id="7" />
+            <Image src={LarryArticle_7} id="" />
           </div>
           <LarryH1>The outcome</LarryH1>
           <LarryP>
@@ -206,12 +208,56 @@ const Article_Larry = () => {
             convinced that at least my design would reach as many people as
             possible.
           </LarryP>
-          {/* <LarryColumn>
-            <LarryCol>1</LarryCol>
-            <LarryCol>2</LarryCol>
-            <LarryCol>3</LarryCol>
-            <LarryCol>4</LarryCol>
-          </LarryColumn> */}
+          {/* feedback section */}
+          <div style={{ margin: "10rem 0 5rem 0" }}>
+            <div style={{ textAlign: "center" }}>
+              <Image
+                src={LarryArticle_8}
+                id=""
+                style={{ width: "4rem", marginBottom: "1rem" }}
+              />
+            </div>
+            <LarryH1 style={{ textAlign: "center" }}>
+              " The end product exceeded my expectations. Thanks to each member
+              of the team, the website captures my personality - it has a soul!!
+              "
+            </LarryH1>
+            <LarryP style={{ fontSize: "14px", lineHeight: "1.5" }}>
+              It’s one thing to design a website: With so many online resources
+              available to guide you - both free and subscription based - a
+              website can be uploaded and be functioning within hours. But, to
+              have a website designed that captures the wishes and personality
+              of the client is quite different. This presents a unique
+              challenge. It takes talent. It takes skill, and it takes patience.
+              I was fortunate to experience this with the students from
+              Cornerstone International Community College of Canada. Cornerstone
+              is a fully accredited college offering diploma programs in Web &
+              Mobile App Development, Network Solutions & System Specialist,
+              International Business Management, Digital Marketing Specialist,
+              Hospitality Management, and Advertising and Graphic Design, as
+              well as, English as Second Language training. Their high-quality
+              educational services and career counselling are delivered within a
+              positive team environment. It serves Canadian and international
+              students from over 20 countries, and is committed to assisting
+              their students obtain gainful employment in the shortest possible
+              time. A team consisting of final year students was assigned to
+              assist me with the design of a landing page and website to support
+              a book launch and my personal brand. The team comprised of: Ayaka
+              Tsubouchi Yuya Hashirizaki Anzu Nakayama Gabriel Sciacca Dias
+              Alexandre Bellini Dias Each team member was engaged and fully
+              invested in the project. Over a series of zoom calls, questions
+              were asked of me on what I was seeking to achieve. The end product
+              exceeded my expectations. Thanks to each member of the team, the
+              website captures my personality - it has a soul! I would encourage
+              any employer who may be looking to hire engaged, creative and
+              talented students to look no further than Cornerstone, and these
+              students.
+            </LarryP>
+            <div style={{ textAlign: "center" }}>
+              <Image src={LarryArticle_9} id="" style={{ width: "40rem" }} />
+            </div>
+          </div>
+          {/* feedback section */}
         </LarryWrapper>
       </motion.div>
     </LarryContainer>

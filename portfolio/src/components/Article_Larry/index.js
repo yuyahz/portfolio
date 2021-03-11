@@ -119,7 +119,11 @@ const Article_Larry = () => {
             designed features needed for a wider launch.
           </LarryP>
           <div style={{ textAlign: "center" }}>
-            <Image style={{ marginBottom: "1rem" }} src={LarryArticle_3} id="" />
+            <Image
+              style={{ marginBottom: "1rem" }}
+              src={LarryArticle_3}
+              id=""
+            />
             <Image style={{ marginTop: "1rem" }} src={LarryArticle_4} id="" />
           </div>
           <LarryP>

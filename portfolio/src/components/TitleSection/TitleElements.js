@@ -23,6 +23,11 @@ export const TitleContainer = styled.div`
     margin-bottom: 10rem;
   }
 
+  /* for vertical mobile */
+  @media screen and (max-width: 896px) and (max-height: 427px) {
+    height: 400vh;
+  }
+
   @media screen and (max-width: 540px) {
     height: 120vh;
     margin-bottom: 10rem;
@@ -213,6 +218,7 @@ export const Skills = styled.p`
 
   @media screen and (max-width: 520px) {
     font-size: 11px;
+    line-height: 1.5;
   }
 `;
 
@@ -224,6 +230,6 @@ export const Tools = styled.div`
 
   @media screen and (max-width: 520px) {
     font-size: 11px;
-    line-height: 1.1;
+    line-height: 1.5;
   }
 `;

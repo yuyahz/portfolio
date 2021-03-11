@@ -18,6 +18,11 @@ export const PicLarryContainer = styled.div`
     height: 80vh;
   }
 
+    /* for vertical mobile */
+    @media screen and (max-width: 896px) and (max-height: 427px) {
+    height: 100vh;
+  }
+
   @media screen and (max-width: 520px) {
     height: 70vh;
   }
@@ -27,14 +32,19 @@ export const Image = styled.img`
   width: 45%;
 
   @media screen and (min-width: 1441px) {
-    width: 33%;
+    width: 35%;
   }
 
   @media screen and (max-width: 970px) {
-    width: 65%;
+    width: 50%;
+  }
+
+  /* for vertical mobile */
+  @media screen and (max-width: 896px) and (max-height: 427px) {
+    width: 35%;
   }
 
   @media screen and (max-width: 520px) {
-    width: 75%;
+    width: 65%;
   }
 `;

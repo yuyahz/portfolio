@@ -13,6 +13,11 @@ export const Section = styled.section`
     rgba(218, 218, 218, 1) 100%
   );
 
+  /* for vertical mobile */
+  @media screen and (max-width: 896px) and (max-height: 427px) {
+    height: 100vh;
+  }
+
   /* for Surface duo to eliminate right space */
   @media screen and (max-width: 540px) {
     height: 100vh;
@@ -100,6 +105,18 @@ export const ColumnLeft = styled.div`
     user-select: none;
   }
 
+    /* for vertical mobile */
+    @media screen and (max-width: 896px) {
+      h1 {
+      font-size: 6rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 0.7rem;
+    }
+
   @media screen and (max-width: 520px) {
     grid-area: 1 / 1 / 2 / 2;
     z-index: 1;
@@ -131,7 +148,9 @@ export const Image = styled(motion.img)`
     display: none;
   }
 
-  @media screen and (max-width: 520px) {
+  /* for vertical mobile */
+  @media screen and (max-width: 896px) and (max-height: 427px) {
+    display: none;
   }
 `;
 

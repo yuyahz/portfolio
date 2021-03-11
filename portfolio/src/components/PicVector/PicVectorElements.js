@@ -12,6 +12,11 @@ export const PicVectorContainer = styled.div`
     height: 80vh;
   }
 
+  /* for vertical mobile */
+  @media screen and (max-width: 896px) and (max-height: 427px) {
+    height: 100vh;
+  }
+
   @media screen and (max-width: 520px) {
     height: 70vh;
   }
@@ -25,10 +30,15 @@ export const Image = styled.img`
   }
 
   @media screen and (max-width: 970px) {
-    width: 60%;
+    width: 40%;
+  }
+
+  /* for vertical mobile */
+  @media screen and (max-width: 896px) and (max-height: 427px) {
+    width: 25%;
   }
 
   @media screen and (max-width: 520px) {
-    width: 65%;
+    width: 50%;
   }
 `;

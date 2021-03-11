@@ -5,11 +5,9 @@ import Daruma from "../../images/Daruma.png";
 
 const PicDaruma = () => {
   return (
-    // <Parallax className="Container" id="larry" y={[-15, 15]} tagOuter="figure">
       <PicDarumaContainer id="daruma">
         <Image src={Daruma} />
       </PicDarumaContainer>
-    // </Parallax>
   );
 };
 

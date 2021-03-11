@@ -15,7 +15,7 @@ export const Nav = styled.nav`
   z-index: 10;
   transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 896px) {
     background-color: transparent;
   }
 `;
@@ -52,7 +52,7 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 896px) {
     display: none;
   }
 `;
@@ -60,7 +60,7 @@ export const NavLogo = styled(LinkR)`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 896px) {
     display: block;
     position: absolute;
     top: 0;
@@ -80,7 +80,7 @@ export const NavSNS = styled.div`
   cursor: pointer;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 896px) {
     display: none;
   }
 `;
@@ -90,7 +90,7 @@ export const NavMenu = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 896px) {
     display: none;
   }
 `;
@@ -142,7 +142,7 @@ export const NavMail = styled.div`
   align-items: center;
   padding-bottom: 1rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 896px) {
     display: none;
   }
 `;

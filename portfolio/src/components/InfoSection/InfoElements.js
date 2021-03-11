@@ -5,6 +5,7 @@ export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) =>
     lightBg ? "rgb(255, 255, 255)" : "rgba(218, 218, 218, 1)"};
+  -webkit-overflow-scrolling: touch;
 `;
 
 export const InfoWrapper = styled.div`
@@ -181,6 +182,14 @@ export const SnsWrap = styled.div`
       cursor: pointer;
       transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
+    /* for vertical mobile */
+    @media screen and (max-width: 896px) and (max-height: 427px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 520px) {
+      font-size: 3rem;
+    }
   }
 
   a.behance {
@@ -192,6 +201,13 @@ export const SnsWrap = styled.div`
       transform: translateY(-10px);
       cursor: pointer;
       transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
+    @media screen and (max-width: 896px) and (max-height: 427px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 520px) {
+      font-size: 3rem;
     }
   }
 `;

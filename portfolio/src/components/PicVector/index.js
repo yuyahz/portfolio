@@ -5,11 +5,9 @@ import Vector from "../../images/Vector.png";
 
 const PicVector = () => {
   return (
-    // <Parallax className="Container" y={[-15, 15]} tagOuter="figure">
-      <PicVectorContainer id="vector">
-        <Image src={Vector} />
-      </PicVectorContainer>
-    // </Parallax>
+    <PicVectorContainer id="vector">
+      <Image src={Vector} />
+    </PicVectorContainer>
   );
 };
 

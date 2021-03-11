@@ -48,8 +48,12 @@ export const SidebarLogo = styled.div`
 export const Logo = styled.div`
   font-size: 10rem;
   font-weight: 900;
-
   color: #fff;
+
+  /* for vertical mobile */
+  @media screen and (max-width: 896px) and (max-height: 427px) {
+    font-size: 1rem;
+  }
 `;
 
 export const SidebarWrapper = styled.div``;
@@ -69,6 +73,7 @@ export const SidebarLink = styled(LinkS)`
   display: flex;
   font-weight: 300;
   letter-spacing: 0.5rem;
+  text-indent: 0.5rem;
   align-items: center;
   justify-content: center;
   font-size: 0.9rem;

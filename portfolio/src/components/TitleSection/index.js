@@ -68,10 +68,10 @@ const TitleSection = () => {
               <SkillsSubTitle>Languages I speak</SkillsSubTitle>
               <Skills>HTML, CSS, JS, React</Skills>
               <SkillsSubTitle>Developer Tools</SkillsSubTitle>
-              <Tools>Styled Component</Tools>
-              <Tools>React Bootstrap</Tools>
-              <Tools>Bootstrap</Tools>
+              <Tools>'Styled Component'</Tools>
+              <Tools>'React Bootstrap'</Tools>
               <Tools>Materialize</Tools>
+              <Tools>Bootstrap</Tools>
               <Tools>Wordpress</Tools>
               <Tools>Sass</Tools>
               <Tools>Terminal</Tools>

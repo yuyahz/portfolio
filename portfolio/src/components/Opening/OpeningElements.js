@@ -143,15 +143,6 @@ export const Image = styled(motion.img)`
   width: auto;
   height: auto;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
-
-  .FaceOne {
-    display: none;
-  }
-
-  /* for vertical mobile */
-  @media screen and (max-width: 896px) and (max-height: 427px) {
-    display: none;
-  }
 `;
 
 export const ColumnRight = styled.div`
@@ -270,6 +261,38 @@ export const ColumnRight = styled.div`
       top: 270px;
       right: 20px;
     }
+  }
+
+  /* This is for a vertical mobile */
+  @media screen and (max-width: 896px) and (max-height: 427px) {
+    ${Image}:nth-child(1) {
+    top: 170px;
+    right: 70px;
+    width: 40%;
+  }
+
+  ${Image}:nth-child(2) {
+    top: 270px;
+    right: 130px;
+    width: 13%;
+  }
+
+  ${Image}:nth-child(3) {
+    top: 180px;
+    right: 15px;
+    width: 15%;
+  }
+
+  ${Image}:nth-child(4) {
+    top: 275px;
+    right: 245px;
+    width: 12%;
+  }
+
+  ${Image}:nth-child(5) {
+    top: 285px;
+    right: 45px;
+    width: 15%;
   }
 
   /* My defaulft tablet is 970px but this exceptionl size

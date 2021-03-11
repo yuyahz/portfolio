@@ -13,6 +13,7 @@ import {
   LarryCol,
   Image,
   VideoBg,
+  Feedback,
 } from "./LarryElements";
 import LarryArticle_1 from "../../images/LarryArticle_1.png";
 import LarryArticle_2 from "../../images/LarryArticle_2.png";
@@ -118,10 +119,10 @@ const Article_Larry = () => {
             designed features needed for a wider launch.
           </LarryP>
           <div style={{ textAlign: "center" }}>
-            <Image src={LarryArticle_3} id="" />
-            <Image style={{ margin: "0" }} src={LarryArticle_4} id="" />
+            <Image style={{ marginBottom: "1rem" }} src={LarryArticle_3} id="" />
+            <Image style={{ marginTop: "1rem" }} src={LarryArticle_4} id="" />
           </div>
-          <LarryP style={{ marginTop: "5rem" }}>
+          <LarryP>
             Design and developer collaboration is a most challenging problem and
             there are many opportunities how to sync each other. All of design
             tooling that exists today isn't enforcing that behavior. All they do
@@ -147,7 +148,7 @@ const Article_Larry = () => {
           <div style={{ textAlign: "center" }}>
             <Image src={LarryArticle_6} id="" />
           </div>
-          <LarryP style={{ marginTop: "1.5rem" }}>
+          <LarryP>
             After a few meetings with Larry, I saw what he really needed, so I
             decided to create a landing page and homepage to implement it
             concretely. The most important thing in doing so was to create a
@@ -166,6 +167,7 @@ const Article_Larry = () => {
               <div>
                 <VideoBg
                   autoPlay
+                  playsInline
                   loop
                   muted
                   src={LarryMovie_1}
@@ -176,7 +178,13 @@ const Article_Larry = () => {
             <LarryCol>
               <div>
                 <VideoBg
+                  style={{
+                    maxWidth: "100%",
+                    objectFit: "cover",
+                    margin: "6rem 0 6rem 0",
+                  }}
                   autoPlay
+                  playsInline
                   loop
                   muted
                   src={LarryMovie_2}
@@ -209,7 +217,7 @@ const Article_Larry = () => {
             possible.
           </LarryP>
           {/* feedback section */}
-          <div style={{ margin: "10rem 0 5rem 0" }}>
+          <Feedback>
             <div style={{ textAlign: "center" }}>
               <Image
                 src={LarryArticle_8}
@@ -217,7 +225,7 @@ const Article_Larry = () => {
                 style={{ width: "4rem", marginBottom: "1rem" }}
               />
             </div>
-            <LarryH1 style={{ textAlign: "center" }}>
+            <LarryH1 className="title">
               " The end product exceeded my expectations. Thanks to each member
               of the team, the website captures my personality - it has a soul!!
               "
@@ -256,7 +264,7 @@ const Article_Larry = () => {
             <div style={{ textAlign: "center" }}>
               <Image src={LarryArticle_9} id="" style={{ width: "40rem" }} />
             </div>
-          </div>
+          </Feedback>
           {/* feedback section */}
         </LarryWrapper>
       </motion.div>

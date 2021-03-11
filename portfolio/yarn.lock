@@ -9671,6 +9671,11 @@ react-scroll@^1.8.1:
     lodash.throttle "^4.1.1"
     prop-types "^15.7.2"
 
+react-video-tag@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/react-video-tag/-/react-video-tag-0.0.10.tgz#eace2386a77cd17351a9cac7497856aa7d4be25d"
+  integrity sha512-vwe5S9snuflOKjDv6nOFDxyeZ5gCZ5/g83rFp5x7BHmD+Y2mMuCMDVwFeeZWQwjgW5Nwmga870/J2Op0olBikg==
+
 react@^17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.1.tgz#6e0600416bd57574e3f86d92edba3d9008726127"

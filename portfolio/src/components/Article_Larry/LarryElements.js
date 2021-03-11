@@ -4,10 +4,6 @@ import { Link } from "react-router-dom";
 export const LarryContainer = styled.div`
   height: auto;
   background: rgb(255, 255, 255);
-
-  @media screen and (max-width: 960px) {
-    height: 100vh;
-  }
 `;
 
 export const LarryWrapper = styled.div`
@@ -128,10 +124,6 @@ export const LarryH2 = styled.h2`
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 1.4px;
-
-  @media screen and (max-width: 520px) {
-    margin-bottom: 3.5rem;
-  }
 `;
 
 export const LarryP = styled.p`
@@ -143,6 +135,11 @@ export const LarryP = styled.p`
   max-width: 900px;
   margin: 0 auto;
   word-wrap: break-word;
+
+  @media screen and (max-width: 520px) {
+    font-size: 16px;
+    line-height: 1.9rem;
+  }
 `;
 
 export const LarryCol = styled.p`
@@ -167,4 +164,16 @@ export const VideoBg = styled.video`
   max-width: 100%;
   object-fit: cover;
   margin: 6rem 0 6rem 0;
+`;
+
+export const Feedback = styled.div`
+  margin: 5rem 0 2.5rem 0;
+
+  .title {
+    text-align: center;
+
+    @media screen and (max-width: 520px) {
+      text-align: left;
+    }
+  }
 `;

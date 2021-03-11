@@ -43,7 +43,7 @@ const FadeIn = styled.div`
 
 const FadeInUp = styled(FadeIn)`
   opacity: 0;
-  transition: opacity 1s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 1s ease, transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translateY(60px);

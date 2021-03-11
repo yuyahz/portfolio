@@ -13,6 +13,7 @@ import {
   VectorCol,
   Image,
   VideoBg,
+  Feedback,
 } from "./VectorElements";
 
 const Article_Vector = () => {
@@ -157,6 +158,7 @@ const Article_Vector = () => {
                   autoPlay
                   loop
                   muted
+                  playsinline
                   src={VectorMovie_1}
                   type="video/mp4"
                 />

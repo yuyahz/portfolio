@@ -168,3 +168,21 @@ export const VectorBg = styled.video`
   object-fit: cover;
   margin: 6rem 0 6rem 0;
 `;
+
+export const VideoBg = styled.video`
+  max-width: 100%;
+  object-fit: cover;
+  margin: 6rem 0 6rem 0;
+`;
+
+export const Feedback = styled.div`
+  margin: 10rem 0 5rem 0;
+
+  .title {
+    text-align: center;
+
+    @media screen and (max-width: 520px) {
+      text-align: left;
+    }
+  }
+`;

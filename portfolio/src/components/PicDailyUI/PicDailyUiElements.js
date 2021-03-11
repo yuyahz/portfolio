@@ -9,7 +9,7 @@ export const PicDailyUiContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  min-width: 100%;
+  max-width: 100%;
   max-height: 800px;
 
   @media screen and (min-width: 1440px) {

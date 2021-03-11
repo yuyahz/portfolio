@@ -47,8 +47,8 @@ const TitleSection = () => {
             </TitleP>
           </Parallax>
         </PContent>
-        <SkillsColumn>
-          <FadeIn.Up>
+        <FadeIn.Up>
+          <SkillsColumn>
             <SkillsWrapRight>
               <SkillsTitle>Designer</SkillsTitle>
               <SkillsSubTitle>Things I enjoy designing</SkillsSubTitle>
@@ -63,8 +63,6 @@ const TitleSection = () => {
               <Tools>Wix</Tools>
               <Tools>Miro</Tools>
             </SkillsWrapRight>
-          </FadeIn.Up>
-          <FadeIn.Up>
             <SkillsWrapLeft>
               <SkillsTitle>Front-end Developer</SkillsTitle>
               <SkillsSubTitle>Languages I speak</SkillsSubTitle>
@@ -79,8 +77,8 @@ const TitleSection = () => {
               <Tools>Terminal</Tools>
               <Tools>Github</Tools>
             </SkillsWrapLeft>
-          </FadeIn.Up>
-        </SkillsColumn>
+          </SkillsColumn>
+        </FadeIn.Up>
       </TitleContent>
     </TitleContainer>
   );

@@ -143,6 +143,10 @@ export const Image = styled(motion.img)`
   width: auto;
   height: auto;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+
+  @media screen and (max-width: 896px) and (max-height: 427px) {
+    display: none;
+  }
 `;
 
 export const ColumnRight = styled.div`
@@ -264,36 +268,36 @@ export const ColumnRight = styled.div`
   }
 
   /* This is for a vertical mobile */
-  @media screen and (max-width: 896px) and (max-height: 427px) {
+  /* @media screen and (max-width: 896px) and (max-height: 427px) {
     ${Image}:nth-child(1) {
     top: 170px;
     right: 70px;
-    width: 40%;
+    width: 140px;
   }
 
   ${Image}:nth-child(2) {
     top: 270px;
     right: 130px;
-    width: 13%;
+    width: 46px;
   }
 
   ${Image}:nth-child(3) {
     top: 180px;
     right: 15px;
-    width: 15%;
+    width: 53px;
   }
 
   ${Image}:nth-child(4) {
     top: 275px;
     right: 245px;
-    width: 12%;
+    width: 45px;
   }
 
   ${Image}:nth-child(5) {
     top: 285px;
     right: 45px;
-    width: 15%;
-  }
+    width: 50px;
+  } */
 
   /* My defaulft tablet is 970px but this exceptionl size
    for vertical ipad */

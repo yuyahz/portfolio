@@ -41,19 +41,46 @@ const Article_Vector = () => {
           <Icon to="/">Yuya.Works</Icon>
         </IconWrapper>
         <VectorWrapper>
-          <VectorTitle>Title</VectorTitle>
-          <VectorH2>Sub</VectorH2>
+          <VectorTitle>Vector International Academy</VectorTitle>
+          <VectorH2>
+            Vector International Academy steered School through the creation of
+            a new website and brochure that unified the latest school portfolio.
+          </VectorH2>
           <div style={{ textAlign: "center" }}>
             <Image src={VectorArticle_1} id="" />
           </div>
           <VectorH1>Background</VectorH1>
-          <VectorP>article</VectorP>
-          <VectorP style={{ marginTop: "1.5rem" }}>article</VectorP>
+          <VectorP>
+            In 2020 I have been dedicated to my time to acquire new programming
+            skills. and one of my friends suggested to me to provide my design
+            for a vector international academy as a freelance designer. ​ After
+            few meetings, I was so pleased that my portfolio was accepted by
+            them so that I was trying to do dedicated to my expressions for
+            vector's requirements.
+          </VectorP>
+          <VectorP style={{ marginTop: "1.5rem" }}>
+            An idea that first seemed exciting and intriguing, and turned into a
+            journey full of excitement, surprises with lots of ups and downs.
+          </VectorP>
           {/* <div style={{ textAlign: "center" }}>
             <Image src={VectorArticle_2} id="2" />
           </div> */}
+          <VectorH1 style={{ marginTop: "6rem" }}>How it all started</VectorH1>
+          <VectorP>
+            The School had built an own website already. But they have wanted to
+            create a more intriguing website for new content. In the early days,
+            my primary process of an idea in order to proceed with this project
+            was to create several web design prototypes for building a website.
+            So that we needed to take several meetings to work smoothly and
+            facilitate communication. and to find the right problems I asked
+            myself what the previous site does intentionally or how service am I
+            building? I approached this project from these things.
+          </VectorP>
           <VectorH1>My role</VectorH1>
-          <VectorP>article</VectorP>
+          <VectorP>
+            I worked on the project as a UI/UX designer, together with a and the
+            development team.
+          </VectorP>
           <VectorP>article</VectorP>
           <VectorH1 style={{ marginTop: "5rem" }}>Challenge</VectorH1>
           <VectorP>article</VectorP>

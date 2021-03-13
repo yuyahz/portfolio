@@ -52,7 +52,10 @@ const Article_Larry = () => {
         </IconWrapper>
         <LarryWrapper>
           <LarryTitle>Living Your Most Authentic Life Possible</LarryTitle>
-          <LarryH2>Platform for Publications Introduction website</LarryH2>
+          <LarryH2>
+            Larry Linton was tasked with creating his own website, addressing
+            the unique needs for the publications introduction website.
+          </LarryH2>
           <div style={{ textAlign: "center" }}>
             <Image src={LarryArticle_1} id="" />
           </div>

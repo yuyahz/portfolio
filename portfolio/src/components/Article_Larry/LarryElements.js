@@ -138,7 +138,7 @@ export const LarryP = styled.p`
 
   @media screen and (max-width: 520px) {
     font-size: 16px;
-    line-height: 1.9rem;
+    line-height: 1.7rem;
   }
 `;
 

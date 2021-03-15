@@ -4,10 +4,6 @@ import { Link } from "react-router-dom";
 export const VectorContainer = styled.div`
   height: auto;
   background: rgb(255, 255, 255);
-
-  @media screen and (max-width: 960px) {
-    height: 100vh;
-  }
 `;
 
 export const VectorWrapper = styled.div`
@@ -112,6 +108,26 @@ export const VectorGrid = styled.div`
   }
 `;
 
+export const VectorGridHalf = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 970px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 520px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 6rem 0 6rem 0;
+  }
+`;
+
 export const VectorH1 = styled.h1`
   color: #010606;
   max-width: 900px;
@@ -128,10 +144,6 @@ export const VectorH2 = styled.h2`
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 1.4px;
-
-  @media screen and (max-width: 520px) {
-    margin-bottom: 3.5rem;
-  }
 `;
 
 export const VectorP = styled.p`
@@ -143,6 +155,11 @@ export const VectorP = styled.p`
   max-width: 900px;
   margin: 0 auto;
   word-wrap: break-word;
+
+  @media screen and (max-width: 520px) {
+    font-size: 16px;
+    line-height: 1.7rem;
+  }
 `;
 
 export const VectorCol = styled.p`
@@ -163,10 +180,18 @@ export const Image = styled.img`
   }
 `;
 
-export const VectorBg = styled.video`
-  max-width: 100%;
-  object-fit: cover;
+export const ImageGrid = styled.img`
+  max-width: 75%;
+  height: auto;
   margin: 6rem 0 6rem 0;
+
+  @media screen and (max-width: 970px) {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 520px) {
+    margin: 0.1rem 0 0.1rem 0;
+  }
 `;
 
 export const VideoBg = styled.video`
@@ -176,7 +201,7 @@ export const VideoBg = styled.video`
 `;
 
 export const Feedback = styled.div`
-  margin: 10rem 0 5rem 0;
+  margin: 5rem 0 2.5rem 0;
 
   .title {
     text-align: center;

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import {
   VectorContainer,
   VectorTitle,
-  VectorGrid,
+  VectorGridHalf,
   VectorWrapper,
   Icon,
   IconWrapper,
@@ -12,6 +12,7 @@ import {
   VectorP,
   VectorCol,
   Image,
+  ImageGrid,
   VideoBg,
   Feedback,
 } from "./VectorElements";
@@ -64,13 +65,15 @@ const Article_Vector = () => {
             An idea that first seemed exciting and intriguing, and turned into a
             journey full of excitement, surprises with lots of ups and downs.
           </VectorP>
-          <div style={{ textAlign: "center" }}>
-            <Image src={VectorArticle_2} id="" />
-          </div>
-          <div style={{ textAlign: "center" }}>
-            <Image src={VectorArticle_3} id="" />
-          </div>
-          <VectorH1 style={{ marginTop: "6rem" }}>How it all started</VectorH1>
+          <VectorGridHalf>
+            <div style={{ textAlign: "center" }}>
+              <ImageGrid style={{ maxWidth: "100%" }} src={VectorArticle_2} id="" />
+            </div>
+            <div style={{ textAlign: "center" }}>
+              <ImageGrid style={{ maxWidth: "100%" }} src={VectorArticle_3} id="" />
+            </div>
+          </VectorGridHalf>
+          <VectorH1>How it all started</VectorH1>
           <VectorP>
             The School had built an own website already. But they have wanted to
             create a more intriguing website for new content. In the early days,

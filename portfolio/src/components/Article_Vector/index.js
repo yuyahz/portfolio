@@ -16,6 +16,8 @@ import {
   Feedback,
 } from "./VectorElements";
 import VectorArticle_1 from "../../images/VectorArticle_1.png";
+import VectorArticle_2 from "../../images/VectorArticle_2.png";
+import VectorArticle_3 from "../../images/VectorArticle_3.png";
 
 const Article_Vector = () => {
   return (
@@ -62,9 +64,12 @@ const Article_Vector = () => {
             An idea that first seemed exciting and intriguing, and turned into a
             journey full of excitement, surprises with lots of ups and downs.
           </VectorP>
-          {/* <div style={{ textAlign: "center" }}>
-            <Image src={VectorArticle_2} id="2" />
-          </div> */}
+          <div style={{ textAlign: "center" }}>
+            <Image src={VectorArticle_2} id="" />
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <Image src={VectorArticle_3} id="" />
+          </div>
           <VectorH1 style={{ marginTop: "6rem" }}>How it all started</VectorH1>
           <VectorP>
             The School had built an own website already. But they have wanted to
@@ -76,7 +81,7 @@ const Article_Vector = () => {
             myself what the previous site does intentionally or how service am I
             building? I approached this project from these things.
           </VectorP>
-          <VectorH1>My role</VectorH1>
+          <VectorH1 style={{ marginTop: "6rem" }}>My role</VectorH1>
           <VectorP>
             I worked on the project as a UI/UX designer, together with a and the
             development team.

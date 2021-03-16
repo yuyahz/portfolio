@@ -80,8 +80,12 @@ export const VectorTitle = styled.div`
   max-width: 900px;
   margin: 0 auto;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 66px;
   margin-bottom: 1rem;
+
+  @media screen and (max-width: 520px) {
+    font-size: 59px;
+  }
 `;
 
 export const VectorGrid = styled.div`
@@ -132,7 +136,7 @@ export const VectorH1 = styled.h1`
   color: #010606;
   max-width: 900px;
   margin: 0 auto;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   font-weight: 600;
   font-size: 32px;
 `;
@@ -144,6 +148,11 @@ export const VectorH2 = styled.h2`
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 1.4px;
+
+  @media screen and (max-width: 520px) {
+    font-size: 14px;
+    line-height: 1.2rem;
+  }
 `;
 
 export const VectorP = styled.p`
@@ -174,6 +183,16 @@ export const Image = styled.img`
   max-width: 75%;
   height: auto;
   margin: 6rem 0 6rem 0;
+
+  @media screen and (max-width: 970px) {
+    max-width: 100%;
+  }
+`;
+
+export const ImageTop = styled.img`
+  max-width: 45%;
+  height: auto;
+  margin: 10rem 0 10rem 0;
 
   @media screen and (max-width: 970px) {
     max-width: 100%;

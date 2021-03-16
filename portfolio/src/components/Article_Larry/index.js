@@ -12,10 +12,11 @@ import {
   LarryP,
   LarryCol,
   Image,
+  ImageTop,
   VideoBg,
   Feedback,
 } from "./LarryElements";
-import LarryArticle_1 from "../../images/LarryArticle_1.png";
+import LarryArticle_11 from "../../images/LarryArticle_11.png";
 import LarryArticle_2 from "../../images/LarryArticle_2.png";
 import LarryArticle_3 from "../../images/LarryArticle_3.png";
 import LarryArticle_4 from "../../images/LarryArticle_4.png";
@@ -57,7 +58,7 @@ const Article_Larry = () => {
             the unique needs for the publications introduction website.
           </LarryH2>
           <div style={{ textAlign: "center" }}>
-            <Image src={LarryArticle_1} id="" />
+            <ImageTop src={LarryArticle_11} id="" />
           </div>
           <LarryH1>Background</LarryH1>
           <LarryP>

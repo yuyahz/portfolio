@@ -78,7 +78,7 @@ const Article_Larry = () => {
           </div>
           <LarryH1>My role</LarryH1>
           <LarryP>
-            I worked on the project as a UI/UX designer, together with a and the
+            I worked on the project as a UI/UX designer, together with the
             development team.
           </LarryP>
           <LarryP>

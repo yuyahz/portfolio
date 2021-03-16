@@ -17,11 +17,12 @@ import {
   VideoBg,
   Feedback,
 } from "./VectorElements";
-import VectorArticle_11 from "../../images/VectorArticle_11.png";
+import VectorArticle_1 from "../../images/VectorArticle_1.png";
 import VectorArticle_2 from "../../images/VectorArticle_2.png";
 import VectorArticle_3 from "../../images/VectorArticle_3.png";
 import VectorArticle_4 from "../../images/VectorArticle_4.png";
-
+import VectorArticle_5 from "../../images/VectorArticle_5.png";
+import VectorArticle_6 from "../../images/VectorArticle_6.png";
 const Article_Vector = () => {
   return (
     <VectorContainer id="Vector">
@@ -52,7 +53,7 @@ const Article_Vector = () => {
             a new website and brochure that unified the latest school portfolio.
           </VectorH2>
           <div style={{ textAlign: "center" }}>
-            <ImageTop src={VectorArticle_11} id="" />
+            <ImageTop src={VectorArticle_1} id="" />
           </div>
           <VectorH1>Background</VectorH1>
           <VectorP>
@@ -83,8 +84,10 @@ const Article_Vector = () => {
           </VectorP>
           <VectorH1 style={{ marginTop: "5rem" }}>My role</VectorH1>
           <VectorP>
-            I worked on the project as a UI/UX designer, together with a and the
-            development team.
+            I worked on multiple projects related to Vector as a UI/UX designer
+            together with the development team, including the main site and
+            brochure. In addition to those, I gave input regarding the as an
+            adviser for new contents.
           </VectorP>
           <VectorGridHalf>
             <div style={{ textAlign: "center" }}>
@@ -103,9 +106,40 @@ const Article_Vector = () => {
             </div>
           </VectorGridHalf>
           <VectorH1>Challenge</VectorH1>
-          <VectorP>article</VectorP>
-          <VectorH1 style={{ marginTop: "5rem" }}>Solution</VectorH1>
-          <VectorP>article</VectorP>
+          <VectorP>
+            The big challenge the client had was how to build accessible access
+            to reach the contents of testimonials easily, and create the
+            intriguing website even more powerful. After several meetings, I
+            heard about the challenges of this project and the concept of the
+            most useful site that the client feels, and then proposed the above
+            prototype.
+          </VectorP>
+          <VectorGridHalf>
+            <div style={{ textAlign: "center" }}>
+              <ImageGrid
+                style={{ maxWidth: "100%" }}
+                src={VectorArticle_5}
+                id=""
+              />
+            </div>
+            <div style={{ textAlign: "center" }}>
+              <ImageGrid
+                style={{ maxWidth: "100%" }}
+                src={VectorArticle_6}
+                id=""
+              />
+            </div>
+          </VectorGridHalf>
+          <VectorH1>Solution</VectorH1>
+          <VectorP>
+            Great emphasis was placed on content unification and adaptability to
+            the individual needs of customers. And how to incorporate dynamic
+            content such as slides that was not on the previous site. We wanted
+            to provide a smooth experience for customers who didn't want to be
+            students or who weren't very frequent. The content on this site is
+            designed to make it easy for all customer groups to find relevant
+            information.
+          </VectorP>
           <VectorP style={{ marginTop: "1.5rem" }}>article</VectorP>
           <VectorP style={{ marginTop: "1.5rem" }}>article</VectorP>
           <VectorP style={{ marginTop: "1.5rem" }}>article</VectorP>

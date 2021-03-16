@@ -115,7 +115,7 @@ export const VectorGrid = styled.div`
 export const VectorGridHalf = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 0.5rem;
   max-width: 900px;
   margin: 0 auto;
 

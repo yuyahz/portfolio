@@ -10,6 +10,7 @@ import {
   VectorH1,
   VectorH2,
   VectorP,
+  VectorCaption,
   VectorCol,
   Image,
   ImageTop,
@@ -105,14 +106,17 @@ const Article_Vector = () => {
               />
             </div>
           </VectorGridHalf>
+          <VectorCaption style={{ textAlign: "center" }}>
+            The prototype that was first proposed to the client.
+          </VectorCaption>
           <VectorH1>Challenge</VectorH1>
           <VectorP>
-            The big challenge the client had was how to build accessible access
-            to reach the contents of testimonials easily, and create the
-            intriguing website even more powerful. After several meetings, I
-            heard about the challenges of this project and the concept of the
-            most useful site that the client feels, and then proposed the above
-            prototype.
+            The big challenge the client had was how to build an accessible way
+            to reach the contents of testimonials or significant sections else
+            easily, and create an intriguing website even more powerful. After
+            several meetings, I heard about the challenges of this project and
+            the concept of the most useful site that the client feels, and then
+            proposed the above prototype.
           </VectorP>
           <VectorGridHalf>
             <div style={{ textAlign: "center" }}>
@@ -130,12 +134,15 @@ const Article_Vector = () => {
               />
             </div>
           </VectorGridHalf>
+          <VectorCaption style={{ textAlign: "center" }}>
+            The client suggested load the video when LapTop boot up.
+          </VectorCaption>
           <VectorH1>Solution</VectorH1>
           <VectorP>
             Great emphasis was placed on content unification and adaptability to
             the individual needs of customers. And how to incorporate dynamic
-            content such as slides that was not on the previous site. We wanted
-            to provide a smooth experience for customers who didn't want to be
+            content such as slides that were not on the previous site. We wanted
+            to provide a smooth experience for customers who even not aim to be
             students or who weren't very frequent. The content on this site is
             designed to make it easy for all customer groups to find relevant
             information.

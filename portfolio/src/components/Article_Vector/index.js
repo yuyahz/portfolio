@@ -24,6 +24,7 @@ import VectorArticle_3 from "../../images/VectorArticle_3.png";
 import VectorArticle_4 from "../../images/VectorArticle_4.png";
 import VectorArticle_5 from "../../images/VectorArticle_5.png";
 import VectorArticle_6 from "../../images/VectorArticle_6.png";
+import VectorArticle_7 from "../../images/VectorArticle_7.png";
 const Article_Vector = () => {
   return (
     <VectorContainer id="Vector">
@@ -134,8 +135,16 @@ const Article_Vector = () => {
               />
             </div>
           </VectorGridHalf>
-          <VectorCaption style={{ textAlign: "center" }}>
+          <VectorCaption
+            style={{ textAlign: "center", marginBottom: "2.5rem" }}
+          >
             The client suggested load the video when LapTop boot up.
+          </VectorCaption>
+          <div style={{ textAlign: "center", marginBottom: "1rem" }}>
+            <Image style={{ margin: "0" }} src={VectorArticle_7} id="" />
+          </div>
+          <VectorCaption style={{ textAlign: "center" }}>
+            Finalized top page design promoting the vector and its feature.
           </VectorCaption>
           <VectorH1>Solution</VectorH1>
           <VectorP>
@@ -147,52 +156,37 @@ const Article_Vector = () => {
             designed to make it easy for all customer groups to find relevant
             information.
           </VectorP>
-          <VectorP style={{ marginTop: "1.5rem" }}>article</VectorP>
-          <VectorP style={{ marginTop: "1.5rem" }}>article</VectorP>
-          <VectorP style={{ marginTop: "1.5rem" }}>article</VectorP>
-          <VectorP style={{ marginTop: "5rem" }}>article</VectorP>
-          <VectorP>article</VectorP>
-          <VectorP style={{ marginTop: "1.5rem" }}>article</VectorP>
-          {/* <VectorGrid style={{ paddingRight: "3.5rem" }}>
-            <VectorCol>
-              <div>
-                <VideoBg
-                  autoPlay
-                  loop
-                  muted
-                  playsinline
-                  src={VectorMovie_1}
-                  type="video/mp4"
-                />
-              </div>
-            </VectorCol>
-            <VectorCol>
-              <div>
-                <VideoBg
-                  autoPlay
-                  loop
-                  muted
-                  src={VectorMovie_2}
-                  type="video/mp4"
-                />
-              </div>
-              <VectorP style={{ textAlign: "right", fontSize: "14px" }}>
-                Motion prototypes
-              </VectorP>
-            </VectorCol>
-          </VectorGrid> */}
-          <VectorP style={{ marginTop: "2rem" }}>article</VectorP>
-          {/* <div style={{ textAlign: "center" }}>
-            <Image src={VectorArticle_7} id="7" />
-          </div> */}
+          <VectorH1 style={{ marginTop: "5rem" }}>Final thoughts</VectorH1>
+          <VectorP>
+            I think that the depth of involvement of designers and developers in
+            the project by the time it is completed will change depending on the
+            budget and period. What I thought about this project was to deeply
+            research the extensibility of the project. In fact, after the top
+            page was completed, the client's intentions changed and the content
+            increased. When that happens, it becomes difficult to modify the
+            work that has already been completed. For this project, where the
+            challenge was to have a consistent design, it was essential to have
+            adaptability to it. It was a great experience a project that
+            reminded me of what significance to search to find out the client's
+            core intention.
+          </VectorP>
           <VectorH1>The outcome</VectorH1>
-          <VectorP>article</VectorP>
-          {/* <VectorColumn>
-            <VectorCol>1</VectorCol>
-            <VectorCol>2</VectorCol>
-            <VectorCol>3</VectorCol>
-            <VectorCol>4</VectorCol>
-          </VectorColumn> */}
+          <VectorP>
+            Through this project, I have found out challenges gradually on each
+            stage and developed and designed the website to a stage that was
+            functional and valuable.
+          </VectorP>
+          <VectorP style={{ marginTop: "1.5rem" }}>
+            Looking back at it now I can surely say it's been quite a ride. A
+            hight valuable experience that has still left an impact on me and my
+            career today. It helps me better understand the working environment
+            as a web designer in different with own my country and opened my
+            eyes to the product creation process. The effort and sacrifices that
+            are required to send off a product into the world were beyond my
+            expectations. However, once the product lets it dive into the world
+            and turn into “alive” is the time when the real journey actually
+            launches. Now that I think about it, I am so excited.
+          </VectorP>
         </VectorWrapper>
       </motion.div>
     </VectorContainer>

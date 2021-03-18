@@ -128,7 +128,26 @@ export const VectorGridHalf = styled.div`
   @media screen and (max-width: 520px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    margin: 6rem 0 1rem 0;
+    margin-top: 6rem;
+  }
+`;
+
+export const VectorGridHalfBottom = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 970px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 520px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
   }
 `;
 
@@ -178,6 +197,7 @@ export const VectorCaption = styled.p`
   letter-spacing: 1px;
   max-width: 900px;
   margin: 0 auto;
+  margin-top: 0.5rem;
   margin-bottom: 6rem;
   word-wrap: break-word;
 
@@ -216,7 +236,7 @@ export const ImageTop = styled.img`
 export const ImageGrid = styled.img`
   max-width: 75%;
   height: auto;
-  margin: 6rem 0 1rem 0;
+  margin-top: 6rem;
 
   @media screen and (max-width: 970px) {
     max-width: 100%;

@@ -4,6 +4,7 @@ import {
   VectorContainer,
   VectorTitle,
   VectorGridHalf,
+  VectorGridHalfBottom,
   VectorWrapper,
   Icon,
   IconWrapper,
@@ -27,7 +28,11 @@ import VectorArticle_6 from "../../images/VectorArticle_6.png";
 import VectorArticle_7 from "../../images/VectorArticle_7.png";
 import VectorArticle_8 from "../../images/VectorArticle_8.png";
 import VectorArticle_9 from "../../images/VectorArticle_9.png";
+import VectorArticle_10 from "../../images/VectorArticle_10.png";
+import VectorArticle_11 from "../../images/VectorArticle_11.png";
 import VectorArticle_100 from "../../images/VectorArticle_100.png";
+import VectorArticle_101 from "../../images/VectorArticle_101.png";
+
 const Article_Vector = () => {
   return (
     <VectorContainer id="Vector">
@@ -143,7 +148,7 @@ const Article_Vector = () => {
           >
             The client suggested load the video when LapTop boot up.
           </VectorCaption>
-          <div style={{ textAlign: "center", marginBottom: "1rem" }}>
+          <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
             <Image style={{ margin: "0" }} src={VectorArticle_7} id="" />
           </div>
           <VectorCaption style={{ textAlign: "center" }}>
@@ -173,7 +178,7 @@ const Article_Vector = () => {
             reminded me of what significance to search to find out the client's
             core intention.
           </VectorP>
-          <div style={{ textAlign: "center", margin: "6rem 0 1rem 0" }}>
+          <div style={{ textAlign: "center", margin: "6rem 0 0.5rem 0" }}>
             <Image style={{ margin: "0" }} src={VectorArticle_8} id="" />
           </div>
           <VectorCaption
@@ -181,7 +186,7 @@ const Article_Vector = () => {
           >
             Phase one of the interactive activities page.
           </VectorCaption>
-          <div style={{ textAlign: "center", margin: "0 0 1rem 0" }}>
+          <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
             <Image style={{ margin: "0" }} src={VectorArticle_9} id="" />
           </div>
           <VectorCaption
@@ -189,12 +194,36 @@ const Article_Vector = () => {
           >
             Finalized interactive activities page and menu bar design.
           </VectorCaption>
-          <div style={{ textAlign: "center", margin: "0 0 1rem 0" }}>
+          <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
             <Image style={{ margin: "0" }} src={VectorArticle_100} id="" />
           </div>
-          <VectorCaption style={{ textAlign: "center" }}>
+          <VectorCaption
+            style={{ textAlign: "center", marginBottom: "2.5rem" }}
+          >
             Finalized remainning page design.
           </VectorCaption>
+          <VectorGridHalfBottom>
+            <div style={{ textAlign: "center" }}>
+              <ImageGrid
+                style={{ maxWidth: "100%", margin: "0" }}
+                src={VectorArticle_10}
+                id=""
+              />
+            </div>
+            <div style={{ textAlign: "center" }}>
+              <ImageGrid
+                style={{ maxWidth: "100%", margin: "0" }}
+                src={VectorArticle_11}
+                id=""
+              />
+            </div>
+          </VectorGridHalfBottom>
+          <VectorCaption style={{ textAlign: "center" }}>
+            Finalized brochure design for Japanese end-user.
+          </VectorCaption>
+          <div style={{ textAlign: "center", marginBottom: "6rem" }}>
+            <ImageTop style={{ margin: "0" }} src={VectorArticle_101} id="" />
+          </div>
           <VectorH1>The outcome</VectorH1>
           <VectorP>
             Through this project, I have found out challenges gradually on each

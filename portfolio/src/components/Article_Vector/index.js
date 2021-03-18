@@ -25,6 +25,9 @@ import VectorArticle_4 from "../../images/VectorArticle_4.png";
 import VectorArticle_5 from "../../images/VectorArticle_5.png";
 import VectorArticle_6 from "../../images/VectorArticle_6.png";
 import VectorArticle_7 from "../../images/VectorArticle_7.png";
+import VectorArticle_8 from "../../images/VectorArticle_8.png";
+import VectorArticle_9 from "../../images/VectorArticle_9.png";
+import VectorArticle_100 from "../../images/VectorArticle_100.png";
 const Article_Vector = () => {
   return (
     <VectorContainer id="Vector">
@@ -170,6 +173,28 @@ const Article_Vector = () => {
             reminded me of what significance to search to find out the client's
             core intention.
           </VectorP>
+          <div style={{ textAlign: "center", margin: "6rem 0 1rem 0" }}>
+            <Image style={{ margin: "0" }} src={VectorArticle_8} id="" />
+          </div>
+          <VectorCaption
+            style={{ textAlign: "center", marginBottom: "2.5rem" }}
+          >
+            Phase one of the interactive activities page.
+          </VectorCaption>
+          <div style={{ textAlign: "center", margin: "0 0 1rem 0" }}>
+            <Image style={{ margin: "0" }} src={VectorArticle_9} id="" />
+          </div>
+          <VectorCaption
+            style={{ textAlign: "center", marginBottom: "2.5rem" }}
+          >
+            Finalized interactive activities page and menu bar design.
+          </VectorCaption>
+          <div style={{ textAlign: "center", margin: "0 0 1rem 0" }}>
+            <Image style={{ margin: "0" }} src={VectorArticle_100} id="" />
+          </div>
+          <VectorCaption style={{ textAlign: "center" }}>
+            Finalized remainning page design.
+          </VectorCaption>
           <VectorH1>The outcome</VectorH1>
           <VectorP>
             Through this project, I have found out challenges gradually on each

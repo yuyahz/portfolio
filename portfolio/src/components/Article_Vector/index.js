@@ -37,7 +37,7 @@ import VectorMovie_1 from "../../videos/VectorMovie_1.mp4";
 
 const Article_Vector = () => {
   return (
-    <VectorContainer id="Vector">
+    <VectorContainer id="vector">
       <motion.div
         animate={{
           x: 0,
@@ -64,7 +64,7 @@ const Article_Vector = () => {
             Vector International Academy steered School through the creation of
             a new website and brochure that unified the latest school portfolio.
           </VectorH2>
-          <Parallax y={[-25, 15]} tagOuter="figure">
+          <Parallax y={[-20,20]} tagOuter="figure">
             <div style={{ textAlign: "center" }}>
               <ImageTop src={VectorArticle_1} id="" />
             </div>

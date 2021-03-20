@@ -59,7 +59,7 @@ const Article_Larry = () => {
             Larry Linton was tasked with creating his own website, addressing
             the unique needs for the publications introduction website.
           </LarryH2>
-          <Parallax y={[-20, 20]} tagOuter="figure">
+          <Parallax y={[-15, 15]} tagOuter="figure">
             <div style={{ textAlign: "center" }}>
               <ImageTop src={LarryArticle_11} id="" />
             </div>

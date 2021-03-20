@@ -4,10 +4,6 @@ import { Link } from "react-router-dom";
 export const DarumaContainer = styled.div`
   height: auto;
   background: rgb(255, 255, 255);
-
-  @media screen and (max-width: 960px) {
-    height: 100vh;
-  }
 `;
 
 export const DarumaWrapper = styled.div`
@@ -48,7 +44,7 @@ export const Icon = styled(Link)`
   font-size: 20px;
   font-weight: 700;
   position: absolute;
-  top: 3rem;
+  top: 1.5rem;
   right: 3rem;
   transition: all 1s linear 0s;
   cursor: pointer;
@@ -86,26 +82,72 @@ export const DarumaTitle = styled.div`
   font-weight: 900;
   font-size: 66px;
   margin-bottom: 1rem;
+
+  @media screen and (max-width: 520px) {
+    font-size: 59px;
+  }
 `;
 
-export const DarumaColumn = styled.div`
+export const VectorGrid = styled.div`
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 1rem;
   align-items: left;
   max-width: 900px;
   margin: 0 auto;
+  margin-top: 3rem;
 
   @media screen and (max-width: 970px) {
     grid-template-columns: 30% 1fr;
     gap: 0.7rem;
     align-items: left;
-    max-width: 100%;
+    max-width: 85%;
   }
 
   @media screen and (max-width: 520px) {
     grid-template-columns: 35% 1fr;
     gap: 0.5rem;
+    max-width: 90%;
+    margin-top: 3.5rem;
+  }
+`;
+
+export const DarumaGridHalf = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 970px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 520px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 6rem;
+  }
+`;
+
+export const DarumaGridHalfBottom = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 970px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 520px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
   }
 `;
 
@@ -113,22 +155,118 @@ export const DarumaH1 = styled.h1`
   color: #010606;
   max-width: 900px;
   margin: 0 auto;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 32px;
+`;
+
+export const DarumaH2 = styled.h2`
+  color: #888888;
+  max-width: 900px;
+  margin: 0 auto;
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 1.4px;
-  margin-bottom: 5rem;
 
   @media screen and (max-width: 520px) {
-    margin-bottom: 3.5rem;
+    font-size: 14px;
+    line-height: 1.2rem;
   }
 `;
 
-export const DarumaH2 = styled.h2``;
-
 export const DarumaP = styled.p`
   color: #888888;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  max-width: 900px;
+  margin: 0 auto;
+  word-wrap: break-word;
+
+  @media screen and (max-width: 520px) {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+`;
+
+export const DarumaCaption = styled.p`
+  color: #888888;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-bottom: 6rem;
+  word-wrap: break-word;
+
+  @media screen and (max-width: 520px) {
+    font-size: 10px;
+  }
+`;
+
+export const VectorCol = styled.p`
+  color: #888888;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2rem;
   letter-spacing: 1.4px;
+`;
+
+export const Image = styled.img`
+  max-width: 75%;
+  height: auto;
+  margin: 6rem 0 6rem 0;
+
+  @media screen and (max-width: 970px) {
+    max-width: 100%;
+  }
+`;
+
+export const ImageTop = styled.img`
+  max-width: 45%;
+  height: auto;
+  margin: 10rem 0 10rem 0;
+
+  @media screen and (max-width: 970px) {
+    max-width: 100%;
+  }
+`;
+
+export const ImageGrid = styled.img`
+  max-width: 75%;
+  height: auto;
+  margin-top: 6rem;
+
+  @media screen and (max-width: 970px) {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 520px) {
+    margin: 0;
+  }
+`;
+
+export const VideoBg = styled.video`
+  max-width: 30%;
+  object-fit: cover;
+  margin-top: 6rem;
+
+  @media screen and (max-width: 520px) {
+    max-width: 45%;
+  }
+`;
+
+export const Feedback = styled.div`
+  margin: 5rem 0 2.5rem 0;
+
+  .title {
+    text-align: center;
+
+    @media screen and (max-width: 520px) {
+      text-align: left;
+    }
+  }
 `;

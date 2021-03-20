@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Parallax } from "react-scroll-parallax";
 import {
   VectorContainer,
   VectorTitle,
@@ -30,8 +31,9 @@ import VectorArticle_8 from "../../images/VectorArticle_8.png";
 import VectorArticle_9 from "../../images/VectorArticle_9.png";
 import VectorArticle_10 from "../../images/VectorArticle_10.png";
 import VectorArticle_11 from "../../images/VectorArticle_11.png";
-import VectorArticle_100 from "../../images/VectorArticle_100.png";
-import VectorArticle_101 from "../../images/VectorArticle_101.png";
+import VectorArticle_12 from "../../images/VectorArticle_12.png";
+import VectorArticle_13 from "../../images/VectorArticle_13.png";
+import VectorMovie_1 from "../../videos/VectorMovie_1.mp4";
 
 const Article_Vector = () => {
   return (
@@ -62,9 +64,11 @@ const Article_Vector = () => {
             Vector International Academy steered School through the creation of
             a new website and brochure that unified the latest school portfolio.
           </VectorH2>
-          <div style={{ textAlign: "center" }}>
-            <ImageTop src={VectorArticle_1} id="" />
-          </div>
+          <Parallax y={[-25, 15]} tagOuter="figure">
+            <div style={{ textAlign: "center" }}>
+              <ImageTop src={VectorArticle_1} id="" />
+            </div>
+          </Parallax>
           <VectorH1>Background</VectorH1>
           <VectorP>
             In 2020 I have been dedicated to my time to acquire new programming
@@ -115,7 +119,7 @@ const Article_Vector = () => {
               />
             </div>
           </VectorGridHalf>
-          <VectorCaption style={{ textAlign: "center" }}>
+          <VectorCaption>
             The prototype that was first proposed to the client.
           </VectorCaption>
           <VectorH1>Challenge</VectorH1>
@@ -143,15 +147,13 @@ const Article_Vector = () => {
               />
             </div>
           </VectorGridHalf>
-          <VectorCaption
-            style={{ textAlign: "center", marginBottom: "2.5rem" }}
-          >
+          <VectorCaption style={{ marginBottom: "2.5rem" }}>
             The client suggested load the video when LapTop boot up.
           </VectorCaption>
           <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
             <Image style={{ margin: "0" }} src={VectorArticle_7} id="" />
           </div>
-          <VectorCaption style={{ textAlign: "center" }}>
+          <VectorCaption>
             Finalized top page design promoting the vector and its feature.
           </VectorCaption>
           <VectorH1>Solution</VectorH1>
@@ -181,35 +183,33 @@ const Article_Vector = () => {
           <div style={{ textAlign: "center", margin: "6rem 0 0.5rem 0" }}>
             <Image style={{ margin: "0" }} src={VectorArticle_8} id="" />
           </div>
-          <VectorCaption
-            style={{ textAlign: "center", marginBottom: "2.5rem" }}
-          >
+          <VectorCaption style={{ marginBottom: "2.5rem" }}>
             Phase one of the interactive activities page.
           </VectorCaption>
           <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
             <Image style={{ margin: "0" }} src={VectorArticle_9} id="" />
           </div>
-          <VectorCaption
-            style={{ textAlign: "center", marginBottom: "2.5rem" }}
-          >
+          <VectorCaption style={{ marginBottom: "2.5rem" }}>
             Finalized interactive activities page and menu bar design.
           </VectorCaption>
           <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
-            <Image style={{ margin: "0" }} src={VectorArticle_100} id="" />
+            <Image style={{ margin: "0" }} src={VectorArticle_10} id="" />
           </div>
-          <VectorCaption
-            style={{ textAlign: "center", marginBottom: "2.5rem" }}
-          >
+          <VectorCaption style={{ marginBottom: "0" }}>
             Finalized remainning page design.
           </VectorCaption>
+          <div style={{ textAlign: "center" }}>
+            <VideoBg
+              autoPlay
+              playsInline
+              loop
+              muted
+              src={VectorMovie_1}
+              type="video/mp4"
+            />
+          </div>
+          <VectorCaption>Contact form motion prototype</VectorCaption>
           <VectorGridHalfBottom>
-            <div style={{ textAlign: "center" }}>
-              <ImageGrid
-                style={{ maxWidth: "100%", margin: "0" }}
-                src={VectorArticle_10}
-                id=""
-              />
-            </div>
             <div style={{ textAlign: "center" }}>
               <ImageGrid
                 style={{ maxWidth: "100%", margin: "0" }}
@@ -217,13 +217,22 @@ const Article_Vector = () => {
                 id=""
               />
             </div>
+            <div style={{ textAlign: "center" }}>
+              <ImageGrid
+                style={{ maxWidth: "100%", margin: "0" }}
+                src={VectorArticle_12}
+                id=""
+              />
+            </div>
           </VectorGridHalfBottom>
-          <VectorCaption style={{ textAlign: "center" }}>
+          <VectorCaption>
             Finalized brochure design for Japanese end-user.
           </VectorCaption>
-          <div style={{ textAlign: "center", margin: "8rem 0 7rem 0" }}>
-            <ImageTop style={{ margin: "0" }} src={VectorArticle_101} id="" />
-          </div>
+          <Parallax y={[-20, 20]} tagOuter="figure">
+            <div style={{ textAlign: "center", margin: "8rem 0 7rem 0" }}>
+              <ImageTop style={{ margin: "0" }} src={VectorArticle_13} id="" />
+            </div>
+          </Parallax>
           <VectorH1>The outcome</VectorH1>
           <VectorP>
             Through this project, I have found out challenges gradually on each

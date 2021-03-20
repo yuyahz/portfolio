@@ -185,13 +185,14 @@ export const VectorP = styled.p`
   word-wrap: break-word;
 
   @media screen and (max-width: 520px) {
-    font-size: 16px;
-    line-height: 1.7rem;
+    font-size: 14px;
+    line-height: 1.5rem;
   }
 `;
 
 export const VectorCaption = styled.p`
   color: #888888;
+  text-align: center;
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -202,6 +203,7 @@ export const VectorCaption = styled.p`
   word-wrap: break-word;
 
   @media screen and (max-width: 520px) {
+    font-size: 10px;
   }
 `;
 
@@ -248,9 +250,13 @@ export const ImageGrid = styled.img`
 `;
 
 export const VideoBg = styled.video`
-  max-width: 100%;
+  max-width:30%;
   object-fit: cover;
-  margin: 6rem 0 6rem 0;
+  margin-top: 6rem;
+
+  @media screen and (max-width: 520px) {
+    max-width:45%;
+    }
 `;
 
 export const Feedback = styled.div`

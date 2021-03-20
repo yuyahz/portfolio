@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Parallax } from "react-scroll-parallax";
 import {
   LarryContainer,
   LarryTitle,
@@ -10,6 +11,7 @@ import {
   LarryH1,
   LarryH2,
   LarryP,
+  LarryCaption,
   LarryCol,
   Image,
   ImageTop,
@@ -57,9 +59,11 @@ const Article_Larry = () => {
             Larry Linton was tasked with creating his own website, addressing
             the unique needs for the publications introduction website.
           </LarryH2>
-          <div style={{ textAlign: "center" }}>
-            <ImageTop src={LarryArticle_11} id="" />
-          </div>
+          <Parallax y={[-20, 20]} tagOuter="figure">
+            <div style={{ textAlign: "center" }}>
+              <ImageTop src={LarryArticle_11} id="" />
+            </div>
+          </Parallax>
           <LarryH1>Background</LarryH1>
           <LarryP>
             Larry had just published a book about Parkin's disease, which he
@@ -186,11 +190,6 @@ const Article_Larry = () => {
             <LarryCol>
               <div>
                 <VideoBg
-                  style={{
-                    maxWidth: "100%",
-                    objectFit: "cover",
-                    margin: "6rem 0 6rem 0",
-                  }}
                   autoPlay
                   playsInline
                   loop
@@ -199,9 +198,7 @@ const Article_Larry = () => {
                   type="video/mp4"
                 />
               </div>
-              <LarryP style={{ textAlign: "right", fontSize: "14px" }}>
-                Motion prototypes
-              </LarryP>
+              <LarryCaption>Motion prototypes</LarryCaption>
             </LarryCol>
           </LarryGrid>
           <LarryP style={{ marginTop: "2rem" }}>

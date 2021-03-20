@@ -142,8 +142,22 @@ export const LarryP = styled.p`
   word-wrap: break-word;
 
   @media screen and (max-width: 520px) {
-    font-size: 16px;
-    line-height: 1.7rem;
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+  }
+`;
+
+export const LarryCaption = styled.p`
+  color: #888888;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 520px) {
+    font-size: 10px;
   }
 `;
 
@@ -178,7 +192,11 @@ export const ImageTop = styled.img`
 export const VideoBg = styled.video`
   max-width: 100%;
   object-fit: cover;
-  margin: 6rem 0 6rem 0;
+  margin: 5rem 0 5rem 0;
+
+  @media screen and (max-width: 520px) {
+    max-width: 130%;
+  }
 `;
 
 export const Feedback = styled.div`

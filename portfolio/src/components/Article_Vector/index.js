@@ -221,7 +221,7 @@ const Article_Vector = () => {
           <VectorCaption style={{ textAlign: "center" }}>
             Finalized brochure design for Japanese end-user.
           </VectorCaption>
-          <div style={{ textAlign: "center", marginBottom: "6rem" }}>
+          <div style={{ textAlign: "center", margin: "8rem 0 7rem 0" }}>
             <ImageTop style={{ margin: "0" }} src={VectorArticle_101} id="" />
           </div>
           <VectorH1>The outcome</VectorH1>

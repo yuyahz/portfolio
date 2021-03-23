@@ -21,7 +21,7 @@ import {
   Feedback,
 } from "./DarumaElements";
 import DarumaArticle_1 from "../../images/DarumaArticle_1.png";
-import VectorArticle_2 from "../../images/VectorArticle_2.png";
+import DarumaArticle_2 from "../../images/DarumaArticle_2.png";
 import VectorArticle_3 from "../../images/VectorArticle_3.png";
 import VectorArticle_4 from "../../images/VectorArticle_4.png";
 import VectorArticle_5 from "../../images/VectorArticle_5.png";
@@ -69,7 +69,7 @@ const Article_Daruma = () => {
             responsibility it for all by myself in order to build a website from
             scratch.
           </DarumaH2>
-          <Parallax y={[-20, 20]} tagOuter="figure">
+          <Parallax y={[-15, 15]} tagOuter="figure">
             <div style={{ textAlign: "center" }}>
               <ImageTop src={DarumaArticle_1} id="" />
             </div>
@@ -88,7 +88,7 @@ const Article_Daruma = () => {
             journey full of excitement, surprises with lots of ups and downs.
           </DarumaP>
           <div style={{ textAlign: "center" }}>
-            <Image src={VectorArticle_2} id="" />
+            <Image src={DarumaArticle_2} id="" />
           </div>
           <DarumaH1>How it all started</DarumaH1>
           <DarumaP>

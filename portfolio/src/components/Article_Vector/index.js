@@ -64,7 +64,7 @@ const Article_Vector = () => {
             Vector International Academy steered School through the creation of
             a new website and brochure that unified the latest school portfolio.
           </VectorH2>
-          <Parallax y={[-20,20]} tagOuter="figure">
+          <Parallax y={[-15,15]} tagOuter="figure">
             <div style={{ textAlign: "center" }}>
               <ImageTop src={VectorArticle_1} id="" />
             </div>

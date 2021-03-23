@@ -59,12 +59,14 @@ const Article_Vector = () => {
           <Icon to="/">Yuya.Works</Icon>
         </IconWrapper>
         <VectorWrapper>
-          <VectorTitle>Vector International Academy</VectorTitle>
+          <VectorTitle>
+            Design lead for Vector International Academy
+          </VectorTitle>
           <VectorH2>
             Vector International Academy steered School through the creation of
             a new website and brochure that unified the latest school portfolio.
           </VectorH2>
-          <Parallax y={[-15,15]} tagOuter="figure">
+          <Parallax y={[-15, 15]} tagOuter="figure">
             <div style={{ textAlign: "center" }}>
               <ImageTop src={VectorArticle_1} id="" />
             </div>
@@ -228,7 +230,7 @@ const Article_Vector = () => {
           <VectorCaption>
             Finalized brochure design for Japanese end-user.
           </VectorCaption>
-          <Parallax y={[-20, 20]} tagOuter="figure">
+          <Parallax y={[-15, 10]} tagOuter="figure">
             <div style={{ textAlign: "center", margin: "8rem 0 7rem 0" }}>
               <ImageTop style={{ margin: "0" }} src={VectorArticle_13} id="" />
             </div>

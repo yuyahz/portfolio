@@ -63,7 +63,7 @@ export const Icon = styled(Link)`
   @media screen and (max-width: 520px) {
     font-size: 17px;
     position: absolute;
-    top: 1rem;
+    top: 4rem;
     right: 1rem;
   }
 `;
@@ -84,6 +84,7 @@ export const VectorTitle = styled.div`
   margin-bottom: 1rem;
 
   @media screen and (max-width: 520px) {
+    margin-top: 7rem;
     font-size: 59px;
   }
 `;
@@ -250,13 +251,13 @@ export const ImageGrid = styled.img`
 `;
 
 export const VideoBg = styled.video`
-  max-width:30%;
+  max-width: 30%;
   object-fit: cover;
   margin-top: 6rem;
 
   @media screen and (max-width: 520px) {
-    max-width:45%;
-    }
+    max-width: 45%;
+  }
 `;
 
 export const Feedback = styled.div`

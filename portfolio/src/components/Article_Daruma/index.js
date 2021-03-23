@@ -233,7 +233,7 @@ const Article_Daruma = () => {
           <DarumaCaption>
             Finalized brochure design for Japanese end-user.
           </DarumaCaption>
-          <Parallax y={[-20, 20]} tagOuter="figure">
+          <Parallax y={[-15, 10]} tagOuter="figure">
             <div style={{ textAlign: "center", margin: "8rem 0 7rem 0" }}>
               <ImageTop style={{ margin: "0" }} src={VectorArticle_13} id="" />
             </div>

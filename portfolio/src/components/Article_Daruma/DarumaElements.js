@@ -63,7 +63,7 @@ export const Icon = styled(Link)`
   @media screen and (max-width: 520px) {
     font-size: 17px;
     position: absolute;
-    top: 1rem;
+    top: 4rem;
     right: 1rem;
   }
 `;
@@ -84,6 +84,7 @@ export const DarumaTitle = styled.div`
   margin-bottom: 1rem;
 
   @media screen and (max-width: 520px) {
+    margin-top: 7rem;
     font-size: 59px;
   }
 `;

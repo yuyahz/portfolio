@@ -43,7 +43,7 @@ export const Icon = styled(Link)`
   padding: 2rem 1rem;
   font-size: 20px;
   font-weight: 700;
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   right: 3rem;
   transition: all 1s linear 0s;
@@ -55,14 +55,13 @@ export const Icon = styled(Link)`
 
   @media screen and (max-width: 970px) {
     padding: 1rem 0.5rem;
-    position: absolute;
+    position: fixed;
     top: 2rem;
     right: 2rem;
   }
 
   @media screen and (max-width: 520px) {
     font-size: 17px;
-    position: absolute;
     top: 4rem;
     right: 1rem;
   }

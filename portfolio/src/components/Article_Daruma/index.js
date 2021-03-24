@@ -76,184 +76,91 @@ const Article_Daruma = () => {
           </Parallax>
           <DarumaH1>Background</DarumaH1>
           <DarumaP>
-            In 2020 I have been dedicated to my time to acquire new programming
-            skills. and one of my friends suggested to me to provide my design
-            for a vector international academy as a freelance designer. ​ After
-            few meetings, I was so pleased that my portfolio was accepted by
-            them so that I was trying to do dedicated to my expressions for
-            vector's requirements.
+            The restaurant wanted to refresh the website, a website that serves
+            customers in Japan and someone else who comes to Japan.
           </DarumaP>
           <DarumaP style={{ marginTop: "1.5rem" }}>
-            An idea that first seemed exciting and intriguing, and turned into a
-            journey full of excitement, surprises with lots of ups and downs.
+            Daruma had made a strategic choice to bring all of their offerings
+            and new service under one website. Previously web site had had very
+            ancient designs and services which made it harder to utilize
+            synergies between services by design and ultimately made it
+            difficult for customers to find the relevant information to them.
+          </DarumaP>
+          <DarumaP style={{ marginTop: "1.5rem" }}>
+            They had that those painful therefore Daruma asked me to create a
+            renovated website have through my connection.
           </DarumaP>
           <div style={{ textAlign: "center" }}>
             <Image src={DarumaArticle_2} id="" />
           </div>
-          <DarumaH1>How it all started</DarumaH1>
+          <DarumaH1>The Goal</DarumaH1>
           <DarumaP>
-            The School had built an own website already. But they have wanted to
-            create a more intriguing website for new content. In the early days,
-            my primary process of an idea in order to proceed with this project
-            was to create several web design prototypes for building a website.
-            So that we needed to take several meetings to work smoothly and
-            facilitate communication. and to find the right problems I asked
-            myself what the previous site does intentionally or how service am I
-            building? I approached this project from these things.
+            The primary website idea is to allow users to easily create, share.
+            Whether it immediately needs to reserve or just a night out with
+            someone in this restaurant. There are many similar websites already
+            on the market, however, most of them provide very complexly and
+            similar.
+          </DarumaP>
+          <DarumaP style={{ marginTop: "1.5rem" }}>
+            The restaurant's main requirement has always been to keep the
+            website usable, reliable, and functional. Aesthetically minimal,
+            simple, and clean. There are no ads and also no tricks, but there is
+            a consistent and intuitive user experience, providing value to our
+            users, keeping them satisfied and engaged. And the client wanted to
+            me create the website quickly.
           </DarumaP>
           <DarumaH1 style={{ marginTop: "5rem" }}>My role</DarumaH1>
           <DarumaP>
-            I worked on multiple projects related to Vector as a UI/UX designer
-            together with the development team, including the main site and
-            brochure. In addition to those, I gave input regarding the as an
-            adviser for new contents.
+            I worked on this project as a UI/UX designer and developer as well.
+            In addition to those, I gave input regarding the as an adviser for
+            all of the website and I have in charge of that position as an
+            administrator for this website.
           </DarumaP>
-          <DarumaGridHalf>
-            <div style={{ textAlign: "center" }}>
-              <ImageGrid
-                style={{ maxWidth: "100%" }}
-                src={VectorArticle_3}
-                id=""
-              />
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <ImageGrid
-                style={{ maxWidth: "100%" }}
-                src={VectorArticle_4}
-                id=""
-              />
-            </div>
-          </DarumaGridHalf>
-          <DarumaCaption>
-            The prototype that was first proposed to the client.
-          </DarumaCaption>
-          <DarumaH1>Challenge</DarumaH1>
+          <DarumaH1 style={{ marginTop: "5rem" }}>Challenge</DarumaH1>
           <DarumaP>
-            The big challenge the client had was how to build an accessible way
-            to reach the contents of testimonials or significant sections else
-            easily, and create an intriguing website even more powerful. After
-            several meetings, I heard about the challenges of this project and
-            the concept of the most useful site that the client feels, and then
-            proposed the above prototype.
+            As outlined above, I have had to everything to design and develop
+            for this project with my own skills, so that it was the most
+            significant requirement to give this finalized product as soon as
+            possible by following the client proposed demand.
           </DarumaP>
-          <DarumaGridHalf>
-            <div style={{ textAlign: "center" }}>
-              <ImageGrid
-                style={{ maxWidth: "100%" }}
-                src={VectorArticle_5}
-                id=""
-              />
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <ImageGrid
-                style={{ maxWidth: "100%" }}
-                src={VectorArticle_6}
-                id=""
-              />
-            </div>
-          </DarumaGridHalf>
-          <DarumaCaption style={{ marginBottom: "2.5rem" }}>
-            The client suggested load the video when LapTop boot up.
-          </DarumaCaption>
-          <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
-            <Image style={{ margin: "0" }} src={VectorArticle_7} id="" />
-          </div>
-          <DarumaCaption>
-            Finalized top page design promoting the vector and its feature.
-          </DarumaCaption>
-          <DarumaH1>Solution</DarumaH1>
+          <DarumaH1 style={{ marginTop: "5rem" }}>Solution</DarumaH1>
           <DarumaP>
-            Great emphasis was placed on content unification and adaptability to
-            the individual needs of customers. And how to incorporate dynamic
-            content such as slides that were not on the previous site. We wanted
-            to provide a smooth experience for customers who even not aim to be
-            students or who weren't very frequent. The content on this site is
-            designed to make it easy for all customer groups to find relevant
-            information.
+            It was necessary to consider both of these perspectives about
+            designer and developer are notable points and I wanted to treat both
+            they deserve. And I have felt that is important to keep both
+            perspectives in careful consideration before decided to dive into
+            coding. I approached to do design to secure what clients propose.
+            Aesthetically minimal, simple, clean, and move ahead at a fast pace,
+            those things were the highest priority for this project. First of
+            all, as a result of those requirements, I thought to "React" was the
+            most fits library for this project in terms of overall sights
+            multi-directionally. from sights of trend (but not only reason for
+            trend, React has several logical advantages), end-users who will
+            have feelings that loading speed speedily, and my proficiency this
+            language. And, I also have chosen "React Bootstrap" as a reliable
+            framework that will be able to address those pain points for quick
+            development mainly to achieve a consistent design.
           </DarumaP>
           <DarumaH1 style={{ marginTop: "5rem" }}>Final thoughts</DarumaH1>
           <DarumaP>
-            I think that the depth of involvement of designers and developers in
-            the project by the time it is completed will change depending on the
-            budget and period. What I thought about this project was to deeply
-            research the extensibility of the project. In fact, after the top
-            page was completed, the client's intentions changed and the content
-            increased. When that happens, it becomes difficult to modify the
-            work that has already been completed. For this project, where the
-            challenge was to have a consistent design, it was essential to have
-            adaptability to it. It was a great experience a project that
-            reminded me of what significance to search to find out the client's
-            core intention.
+            While I was in this project, it has become clear about few issues
+            about mainly by Bootstrup. That framework wasn't frexible more than
+            I have known, I will address future issues and problems from the
+            standpoint of circumstances of this project. I wouldn't see it was
+            just problems. I would like to it became productive, future issues.
+            I had to create an efficient configuration that in order to the
+            possibility for something happen future carefully. Especially if I
+            have to involve the project longer. This project gave me the
+            significances to become more proficient as a digital creator.{" "}
           </DarumaP>
-          <div style={{ textAlign: "center", margin: "6rem 0 0.5rem 0" }}>
-            <Image style={{ margin: "0" }} src={VectorArticle_8} id="" />
-          </div>
-          <DarumaCaption style={{ marginBottom: "2.5rem" }}>
-            Phase one of the interactive activities page.
-          </DarumaCaption>
-          <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
-            <Image style={{ margin: "0" }} src={VectorArticle_9} id="" />
-          </div>
-          <DarumaCaption style={{ marginBottom: "2.5rem" }}>
-            Finalized interactive activities page and menu bar design.
-          </DarumaCaption>
-          <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
-            <Image style={{ margin: "0" }} src={VectorArticle_10} id="" />
-          </div>
-          <DarumaCaption style={{ marginBottom: "0" }}>
-            Finalized remainning page design.
-          </DarumaCaption>
-          <div style={{ textAlign: "center" }}>
-            <VideoBg
-              autoPlay
-              playsInline
-              loop
-              muted
-              src={VectorMovie_1}
-              type="video/mp4"
-            />
-          </div>
-          <DarumaCaption>Contact form motion prototype</DarumaCaption>
-          <DarumaGridHalfBottom>
-            <div style={{ textAlign: "center" }}>
-              <ImageGrid
-                style={{ maxWidth: "100%", margin: "0" }}
-                src={VectorArticle_11}
-                id=""
-              />
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <ImageGrid
-                style={{ maxWidth: "100%", margin: "0" }}
-                src={VectorArticle_12}
-                id=""
-              />
-            </div>
-          </DarumaGridHalfBottom>
-          <DarumaCaption>
-            Finalized brochure design for Japanese end-user.
-          </DarumaCaption>
-          <Parallax y={[-15, 10]} tagOuter="figure">
-            <div style={{ textAlign: "center", margin: "8rem 0 7rem 0" }}>
-              <ImageTop style={{ margin: "0" }} src={VectorArticle_13} id="" />
-            </div>
-          </Parallax>
-          <DarumaH1>The outcome</DarumaH1>
+          <DarumaH1 style={{ marginTop: "5rem" }}>The outcome</DarumaH1>
           <DarumaP>
-            Through this project, I have found out challenges gradually on each
-            stage and developed and designed the website to a stage that was
-            functional and valuable.
-          </DarumaP>
-          <DarumaP style={{ marginTop: "1.5rem" }}>
-            Looking back at it now I can surely say it's been quite a ride. A
-            hight valuable experience that has still left an impact on me and my
-            career today. It helps me better understand the working environment
-            as a web designer in different with own my country and opened my
-            eyes to the product creation process. The effort and sacrifices that
-            are required to send off a product into the world were beyond my
-            expectations. However, once the product lets it dive into the world
-            and turn into “alive” is the time when the real journey actually
-            launches. Now that I think about it, I am so excited.
+            Through this project, And, Looking back at it now I can surely say
+            the very quick project I had ever. However, I could deliver a
+            valuable website for my client. To have both perspectives is high
+            practice for my career but it was revealed have to put effort more
+            but at the same time, I could understand the value of both required
+            contents to increase good teamwork.
           </DarumaP>
         </DarumaWrapper>
       </motion.div>

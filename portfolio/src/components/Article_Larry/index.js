@@ -78,8 +78,9 @@ const Article_Larry = () => {
             selected from four groups and succeeded in winning his trust.
           </LarryP>
           <div style={{ textAlign: "center" }}>
-            <Image src={LarryArticle_2} id="" />
+            <Image style={{ marginBottom: "0" }} src={LarryArticle_2} id="" />
           </div>
+          <LarryCaption>Winning designs for final project.</LarryCaption>
           <LarryH1>My role</LarryH1>
           <LarryP>
             I worked on the project as a UI/UX designer, together with the
@@ -128,12 +129,22 @@ const Article_Larry = () => {
           </LarryP>
           <div style={{ textAlign: "center" }}>
             <Image
-              style={{ marginBottom: "1rem" }}
+              style={{ marginBottom: "0rem" }}
               src={LarryArticle_3}
               id=""
             />
-            <Image style={{ marginTop: "1rem" }} src={LarryArticle_4} id="" />
+            <LarryCaption style={{ marginBottom: "1rem" }}>
+              Flow sheet.
+            </LarryCaption>
+            <Image
+              style={{ margin: "1rem 0 0 0" }}
+              src={LarryArticle_4}
+              id=""
+            />
           </div>
+          <LarryCaption>
+            First color combinations and instruction for developers.
+          </LarryCaption>
           <LarryP>
             Design and developer collaboration is a most challenging problem and
             there are many opportunities how to sync each other. All of design
@@ -143,8 +154,9 @@ const Article_Larry = () => {
             "bridge” between developers and designers.
           </LarryP>
           <div style={{ textAlign: "center" }}>
-            <Image src={LarryArticle_5} id="" />
+            <Image style={{ marginBottom: "0" }} src={LarryArticle_5} id="" />
           </div>
+          <LarryCaption>First design instructions for developers.</LarryCaption>
           <LarryP>
             While some developers were inexperienced, it was a uneasy to proceed
             with the project in a limited time to convey the first instruction
@@ -158,8 +170,9 @@ const Article_Larry = () => {
             consistent design to get the most out of his brand.
           </LarryP>
           <div style={{ textAlign: "center" }}>
-            <Image src={LarryArticle_6} id="" />
+            <Image style={{ marginBottom: "0" }} src={LarryArticle_6} id="" />
           </div>
+          <LarryCaption>Overall art board view.</LarryCaption>
           <LarryP>
             After a few meetings with Larry, I saw what he really needed, so I
             decided to create a landing page and homepage to implement it
@@ -198,10 +211,12 @@ const Article_Larry = () => {
                   type="video/mp4"
                 />
               </div>
-              <LarryCaption>Motion prototypes</LarryCaption>
+              <LarryCaption style={{ textAlign: "right" }}>
+                Motion prototypes
+              </LarryCaption>
             </LarryCol>
           </LarryGrid>
-          <LarryP style={{ marginTop: "2rem" }}>
+          <LarryP style={{ marginTop: " 3rem" }}>
             At the beginning, I didn't plan to create blog content, but at the
             time of the meeting, I received a request to create a blog section,
             so I decided to do it in a hurry. At first, it was a key to create
@@ -211,8 +226,11 @@ const Article_Larry = () => {
             UI that possible to do it.
           </LarryP>
           <div style={{ textAlign: "center" }}>
-            <Image src={LarryArticle_7} id="" />
+            <Image style={{ marginBottom: "0" }} src={LarryArticle_7} id="" />
           </div>
+          <LarryCaption>
+            Finalized design images.
+          </LarryCaption>
           <LarryH1>The outcome</LarryH1>
           <LarryP>
             The essential intention of this project is to make Larry's

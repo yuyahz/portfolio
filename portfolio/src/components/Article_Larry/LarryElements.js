@@ -112,6 +112,45 @@ export const LarryGrid = styled.div`
   }
 `;
 
+export const LarryGridHalf = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 970px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 520px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 6rem;
+  }
+`;
+
+export const LarryGridHalfBottom = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 970px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 520px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+`;
+
 export const LarryH1 = styled.h1`
   color: #010606;
   max-width: 900px;
@@ -149,16 +188,19 @@ export const LarryP = styled.p`
     font-size: 14px;
     line-height: 1.5rem;
   }
-  }
 `;
 
 export const LarryCaption = styled.p`
   color: #888888;
-  text-align: right;
-  font-size: 14px;
+  text-align: center;
+  font-size: 12px;
   font-weight: 300;
   letter-spacing: 1px;
+  max-width: 900px;
   margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-bottom: 6rem;
+  word-wrap: break-word;
 
   @media screen and (max-width: 520px) {
     font-size: 10px;
@@ -193,10 +235,24 @@ export const ImageTop = styled.img`
   }
 `;
 
+export const ImageGrid = styled.img`
+  max-width: 75%;
+  height: auto;
+  margin-top: 6rem;
+
+  @media screen and (max-width: 970px) {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 520px) {
+    margin: 0;
+  }
+`;
+
 export const VideoBg = styled.video`
   max-width: 100%;
   object-fit: cover;
-  margin: 5rem 0 5rem 0;
+  margin: 3rem 0 3rem 0;
 
   @media screen and (max-width: 520px) {
     max-width: 130%;

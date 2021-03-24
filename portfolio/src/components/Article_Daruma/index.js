@@ -22,18 +22,9 @@ import {
 } from "./DarumaElements";
 import DarumaArticle_1 from "../../images/DarumaArticle_1.png";
 import DarumaArticle_2 from "../../images/DarumaArticle_2.png";
-import VectorArticle_3 from "../../images/VectorArticle_3.png";
-import VectorArticle_4 from "../../images/VectorArticle_4.png";
-import VectorArticle_5 from "../../images/VectorArticle_5.png";
-import VectorArticle_6 from "../../images/VectorArticle_6.png";
-import VectorArticle_7 from "../../images/VectorArticle_7.png";
-import VectorArticle_8 from "../../images/VectorArticle_8.png";
-import VectorArticle_9 from "../../images/VectorArticle_9.png";
-import VectorArticle_10 from "../../images/VectorArticle_10.png";
-import VectorArticle_11 from "../../images/VectorArticle_11.png";
-import VectorArticle_12 from "../../images/VectorArticle_12.png";
-import VectorArticle_13 from "../../images/VectorArticle_13.png";
-import VectorMovie_1 from "../../videos/VectorMovie_1.mp4";
+import DarumaArticle_3 from "../../images/DarumaArticle_3.png";
+import DarumaArticle_4 from "../../images/DarumaArticle_4.png";
+import DarumaArticle_5 from "../../images/DarumaArticle_5.png";
 
 const Article_Daruma = () => {
   return (
@@ -109,7 +100,13 @@ const Article_Daruma = () => {
             users, keeping them satisfied and engaged. And the client wanted to
             me create the website quickly.
           </DarumaP>
-          <DarumaH1 style={{ marginTop: "5rem" }}>My role</DarumaH1>
+          <div style={{ textAlign: "center" }}>
+            <Image src={DarumaArticle_3} id="" />
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <Image src={DarumaArticle_4} id="" />
+          </div>
+          <DarumaH1>My role</DarumaH1>
           <DarumaP>
             I worked on this project as a UI/UX designer and developer as well.
             In addition to those, I gave input regarding the as an adviser for
@@ -141,7 +138,10 @@ const Article_Daruma = () => {
             framework that will be able to address those pain points for quick
             development mainly to achieve a consistent design.
           </DarumaP>
-          <DarumaH1 style={{ marginTop: "5rem" }}>Final thoughts</DarumaH1>
+          <div style={{ textAlign: "center" }}>
+            <Image src={DarumaArticle_5} id="" />
+          </div>
+          <DarumaH1>Final thoughts</DarumaH1>
           <DarumaP>
             While I was in this project, it has become clear about few issues
             about mainly by Bootstrup. That framework wasn't frexible more than

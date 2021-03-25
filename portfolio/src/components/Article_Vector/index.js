@@ -85,8 +85,9 @@ const Article_Vector = () => {
             journey full of excitement, surprises with lots of ups and downs.
           </VectorP>
           <div style={{ textAlign: "center" }}>
-            <Image src={VectorArticle_2} id="" />
+            <Image style={{ marginBottom: "0" }} src={VectorArticle_2} id="" />
           </div>
+          <VectorCaption>Flow sheet</VectorCaption>
           <VectorH1>How it all started</VectorH1>
           <VectorP>
             The School had built an own website already. But they have wanted to

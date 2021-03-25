@@ -4,8 +4,6 @@ import { Parallax } from "react-scroll-parallax";
 import {
   DarumaContainer,
   DarumaTitle,
-  DarumaGridHalf,
-  DarumaGridHalfBottom,
   DarumaWrapper,
   Icon,
   IconWrapper,
@@ -13,11 +11,9 @@ import {
   DarumaH2,
   DarumaP,
   DarumaCaption,
-  DarumaCol,
   Image,
   ImageTop,
-  ImageGrid,
-  VideoBg,
+  ImageDown,
   Feedback,
 } from "./DarumaElements";
 import DarumaArticle_1 from "../../images/DarumaArticle_1.png";
@@ -25,6 +21,7 @@ import DarumaArticle_2 from "../../images/DarumaArticle_2.png";
 import DarumaArticle_3 from "../../images/DarumaArticle_3.png";
 import DarumaArticle_4 from "../../images/DarumaArticle_4.png";
 import DarumaArticle_5 from "../../images/DarumaArticle_5.png";
+import DarumaArticle_6 from "../../images/DarumaArticle_6.png";
 
 const Article_Daruma = () => {
   return (
@@ -82,8 +79,9 @@ const Article_Daruma = () => {
             renovated website have through my connection.
           </DarumaP>
           <div style={{ textAlign: "center" }}>
-            <Image src={DarumaArticle_2} id="" />
+            <Image style={{ marginBottom: "0" }} src={DarumaArticle_2} id="" />
           </div>
+          <DarumaCaption>Flow sheet.</DarumaCaption>
           <DarumaH1>The Goal</DarumaH1>
           <DarumaP>
             The primary website idea is to allow users to easily create, share.
@@ -101,11 +99,23 @@ const Article_Daruma = () => {
             me create the website quickly.
           </DarumaP>
           <div style={{ textAlign: "center" }}>
-            <Image src={DarumaArticle_3} id="" />
+            <Image
+              style={{ marginBottom: "1rem" }}
+              src={DarumaArticle_3}
+              id=""
+            />
           </div>
+          <DarumaCaption style={{ marginBottom: "3rem" }}>
+            Images for wireframe.
+          </DarumaCaption>
           <div style={{ textAlign: "center" }}>
-            <Image src={DarumaArticle_4} id="" />
+            <Image
+              style={{ margin: "0 0 1rem 0" }}
+              src={DarumaArticle_4}
+              id=""
+            />
           </div>
+          <DarumaCaption>Images for website journey map.</DarumaCaption>
           <DarumaH1>My role</DarumaH1>
           <DarumaP>
             I worked on this project as a UI/UX designer and developer as well.
@@ -138,10 +148,7 @@ const Article_Daruma = () => {
             framework that will be able to address those pain points for quick
             development mainly to achieve a consistent design.
           </DarumaP>
-          <div style={{ textAlign: "center" }}>
-            <Image src={DarumaArticle_5} id="" />
-          </div>
-          <DarumaH1>Final thoughts</DarumaH1>
+          <DarumaH1 style={{ marginTop: "5rem" }}>Final thoughts</DarumaH1>
           <DarumaP>
             While I was in this project, it has become clear about few issues
             about mainly by Bootstrup. That framework wasn't frexible more than
@@ -153,6 +160,15 @@ const Article_Daruma = () => {
             have to involve the project longer. This project gave me the
             significances to become more proficient as a digital creator.{" "}
           </DarumaP>
+          <div style={{ textAlign: "center" }}>
+            <Image style={{ marginBottom: "0" }} src={DarumaArticle_5} id="" />
+          </div>
+          <DarumaCaption>Finalized mobile images.</DarumaCaption>
+          <Parallax y={[-25, 20]} tagOuter="figure">
+            <div style={{ textAlign: "center" }}>
+              <ImageDown src={DarumaArticle_6} id="" />
+            </div>
+          </Parallax>
           <DarumaH1 style={{ marginTop: "5rem" }}>The outcome</DarumaH1>
           <DarumaP>
             Through this project, And, Looking back at it now I can surely say

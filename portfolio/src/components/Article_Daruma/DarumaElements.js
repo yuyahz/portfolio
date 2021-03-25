@@ -112,45 +112,6 @@ export const VectorGrid = styled.div`
   }
 `;
 
-export const DarumaGridHalf = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
-  max-width: 900px;
-  margin: 0 auto;
-
-  @media screen and (max-width: 970px) {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.7rem;
-    max-width: 100%;
-  }
-
-  @media screen and (max-width: 520px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    margin-top: 6rem;
-  }
-`;
-
-export const DarumaGridHalfBottom = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
-  max-width: 900px;
-  margin: 0 auto;
-
-  @media screen and (max-width: 970px) {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.7rem;
-    max-width: 100%;
-  }
-
-  @media screen and (max-width: 520px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-  }
-`;
-
 export const DarumaH1 = styled.h1`
   color: #010606;
   max-width: 900px;
@@ -207,14 +168,6 @@ export const DarumaCaption = styled.p`
   }
 `;
 
-export const VectorCol = styled.p`
-  color: #888888;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 2rem;
-  letter-spacing: 1.4px;
-`;
-
 export const Image = styled.img`
   max-width: 75%;
   height: auto;
@@ -233,31 +186,18 @@ export const ImageTop = styled.img`
   @media screen and (max-width: 970px) {
     max-width: 100%;
   }
-`;
+`
 
-export const ImageGrid = styled.img`
+export const ImageDown = styled.img`
   max-width: 75%;
   height: auto;
-  margin-top: 6rem;
+  margin: 12rem 0 12rem 0;
 
   @media screen and (max-width: 970px) {
     max-width: 100%;
+    margin: 2rem 0 2rem 0;
   }
-
-  @media screen and (max-width: 520px) {
-    margin: 0;
-  }
-`;
-
-export const VideoBg = styled.video`
-  max-width: 30%;
-  object-fit: cover;
-  margin-top: 6rem;
-
-  @media screen and (max-width: 520px) {
-    max-width: 45%;
-  }
-`;
+`
 
 export const Feedback = styled.div`
   margin: 5rem 0 2.5rem 0;

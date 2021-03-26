@@ -207,14 +207,6 @@ export const VectorCaption = styled.p`
   }
 `;
 
-export const VectorCol = styled.p`
-  color: #888888;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 2rem;
-  letter-spacing: 1.4px;
-`;
-
 export const Image = styled.img`
   max-width: 75%;
   height: auto;
@@ -260,7 +252,7 @@ export const VideoBg = styled.video`
 `;
 
 export const Feedback = styled.div`
-  margin: 5rem 0 2.5rem 0;
+  margin: 5rem 0 5rem 0;
 
   .title {
     text-align: center;

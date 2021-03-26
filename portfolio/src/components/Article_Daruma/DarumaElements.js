@@ -200,7 +200,7 @@ export const ImageDown = styled.img`
 `
 
 export const Feedback = styled.div`
-  margin: 5rem 0 2.5rem 0;
+  margin: 5rem 0 5rem 0;
 
   .title {
     text-align: center;

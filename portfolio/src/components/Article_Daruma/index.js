@@ -189,40 +189,38 @@ const Article_Daruma = () => {
               />
             </div>
             <DarumaH1 className="title">
-              " The end product exceeded my expectations. Thanks to each member
-              of the team, the website captures my personality - it has a soul!!
-              "
+              " The outstanding product created by talented web supecialist by
+              Yuya Hashirizaki that the product is very content even though I
+              couldn't make to him enough time to build up for our desiable web
+              site. "
             </DarumaH1>
             <DarumaP style={{ fontSize: "14px", lineHeight: "1.5" }}>
-              It’s one thing to design a website: With so many online resources
-              available to guide you - both free and subscription based - a
-              website can be uploaded and be functioning within hours. But, to
-              have a website designed that captures the wishes and personality
-              of the client is quite different. This presents a unique
-              challenge. It takes talent. It takes skill, and it takes patience.
-              I was fortunate to experience this with the students from
-              Cornerstone International Community College of Canada. Cornerstone
-              is a fully accredited college offering diploma programs in Web &
-              Mobile App Development, Network Solutions & System Specialist,
-              International Business Management, Digital Marketing Specialist,
-              Hospitality Management, and Advertising and Graphic Design, as
-              well as, English as Second Language training. Their high-quality
-              educational services and career counselling are delivered within a
-              positive team environment. It serves Canadian and international
-              students from over 20 countries, and is committed to assisting
-              their students obtain gainful employment in the shortest possible
-              time. A team consisting of final year students was assigned to
-              assist me with the design of a landing page and website to support
-              a book launch and my personal brand. The team comprised of: Ayaka
-              Tsubouchi Yuya Hashirizaki Anzu Nakayama Gabriel Sciacca Dias
-              Alexandre Bellini Dias Each team member was engaged and fully
-              invested in the project. Over a series of zoom calls, questions
-              were asked of me on what I was seeking to achieve. The end product
-              exceeded my expectations. Thanks to each member of the team, the
-              website captures my personality - it has a soul! I would encourage
-              any employer who may be looking to hire engaged, creative and
-              talented students to look no further than Cornerstone, and these
-              students.
+              I am pleased to be able to write this letter of recommendation for
+              Yuya Hashirizaki. In my opinion, Yuya is a hard-working
+              self-starter who invariably understands exactly what a project is
+              all about. That those skills were required especially in this
+              project. Our thoughts of the previous website were had had old
+              fashion style. So that we couldn't understand about why have to
+              renovate it until gets complain about ours, regular customers. But
+              we couldn't much spend money to renovate for a new web site. I was
+              just about to start to search how do I find the proper person and,
+              my coworker found out dependable web specialist among a lot of
+              candidate in IT industry, I was asking him to helps to find the
+              opportunity. There was no room for discussion to hire him for our
+              project. He consistently produced high-quality work in a timely
+              fashion so far invariably. After started the project with him,
+              first of all, We have made meetings frequently to reduce pain
+              points for the future. It was a necessary thing because we
+              couldn't invest much in this project so that, we had to reduce the
+              possibility generate misunderstandings for each other to avoid
+              modifying after finalized. The only area of weakness that I ever
+              noted in Yuya’s performance was If I have to choose a word, should
+              have proposed a little bit more about prototypes. But I know it
+              seems impossible in terms of this project term and his heavy
+              workload. And I trust that he will tweak for each deferent works.
+              I so much respect Yuya's attitude toward his work. so that, I am
+              therefore very pleased to be able to recommend Yuya for future
+              one's positions.
             </DarumaP>
           </Feedback>
           {/* feedback section */}

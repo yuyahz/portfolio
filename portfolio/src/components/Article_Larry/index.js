@@ -228,7 +228,9 @@ const Article_Larry = () => {
           <div style={{ textAlign: "center" }}>
             <Image style={{ marginBottom: "0" }} src={LarryArticle_7} id="" />
           </div>
-          <LarryCaption>Finalized design images.</LarryCaption>
+          <LarryCaption>
+            Finalized design images.
+          </LarryCaption>
           <LarryH1>The outcome</LarryH1>
           <LarryP>
             The essential intention of this project is to make Larry's
@@ -247,22 +249,40 @@ const Article_Larry = () => {
               />
             </div>
             <LarryH1 className="title">
-              " lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum "
+              " The end product exceeded my expectations. Thanks to each member
+              of the team, the website captures my personality - it has a soul!!
+              "
             </LarryH1>
             <LarryP style={{ fontSize: "14px", lineHeight: "1.5" }}>
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum.
+              It’s one thing to design a website: With so many online resources
+              available to guide you - both free and subscription based - a
+              website can be uploaded and be functioning within hours. But, to
+              have a website designed that captures the wishes and personality
+              of the client is quite different. This presents a unique
+              challenge. It takes talent. It takes skill, and it takes patience.
+              I was fortunate to experience this with the students from
+              Cornerstone International Community College of Canada. Cornerstone
+              is a fully accredited college offering diploma programs in Web &
+              Mobile App Development, Network Solutions & System Specialist,
+              International Business Management, Digital Marketing Specialist,
+              Hospitality Management, and Advertising and Graphic Design, as
+              well as, English as Second Language training. Their high-quality
+              educational services and career counselling are delivered within a
+              positive team environment. It serves Canadian and international
+              students from over 20 countries, and is committed to assisting
+              their students obtain gainful employment in the shortest possible
+              time. A team consisting of final year students was assigned to
+              assist me with the design of a landing page and website to support
+              a book launch and my personal brand. The team comprised of: Ayaka
+              Tsubouchi Yuya Hashirizaki Anzu Nakayama Gabriel Sciacca Dias
+              Alexandre Bellini Dias Each team member was engaged and fully
+              invested in the project. Over a series of zoom calls, questions
+              were asked of me on what I was seeking to achieve. The end product
+              exceeded my expectations. Thanks to each member of the team, the
+              website captures my personality - it has a soul! I would encourage
+              any employer who may be looking to hire engaged, creative and
+              talented students to look no further than Cornerstone, and these
+              students.
             </LarryP>
             <div style={{ textAlign: "center" }}>
               <Image src={LarryArticle_9} id="" style={{ width: "40rem" }} />

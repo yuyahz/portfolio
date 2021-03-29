@@ -60,7 +60,7 @@ const Navbar = ({ toggle }) => {
               </a>
               <a
                 target="_blank"
-                href="https://www.linkedin.com/in/yuya-hashirizaki-9b0065191/"
+                href="https://www.linkedin.com/in/yuya-hashirizaki/"
               >
                 <AiIcons.AiFillLinkedin />
               </a>

@@ -66,9 +66,9 @@ const Article_Larry = () => {
           </Parallax>
           <LarryH1>Background</LarryH1>
           <LarryP>
-            Larry had just published a book about Parkin's disease, which he
+            Larry had just published a book about Parkinson’s disease, which he
             also suffers from, and was trying to create a website to spread the
-            book around the world. He then contacted the school through Ribpen
+            book around the world. He then contacted the school through Riipen
             and started the project with us because he met the final project
             recruitment requirements.
           </LarryP>
@@ -147,21 +147,22 @@ const Article_Larry = () => {
           </LarryCaption>
           <LarryP>
             Design and developer collaboration is a most challenging problem and
-            there are many opportunities how to sync each other. All of design
-            tooling that exists today isn't enforcing that behavior. All they do
-            is attempt to do similar things. Unless design to development all
-            share the same settings or agreed on setting, there is no real
-            "bridge” between developers and designers.
+            there are many opportunities how to sync each other. All the design
+            tools that exist today isn't enforcing that behavior. All they do is
+            attempt to do similar things. Unless design to development all share
+            the same settings or agreed on setting, there is no real "bridge”
+            between developers and designers.
           </LarryP>
           <div style={{ textAlign: "center" }}>
             <Image style={{ marginBottom: "0" }} src={LarryArticle_5} id="" />
           </div>
           <LarryCaption>First design instructions for developers.</LarryCaption>
           <LarryP>
-            While some developers were inexperienced, it was a uneasy to proceed
-            with the project in a limited time to convey the first instruction
-            with the design tool. In order to get a better understanding of the
-            design, I created it myself without using XD only at the beginning.
+            While some developers were inexperienced, it was a difficult to
+            proceed with the project in a limited time to convey the first
+            instruction with the design tool. In order to get a better
+            understanding of the design, I created it myself without using Adobe
+            XD only at the beginning.
           </LarryP>
           <LarryP style={{ marginTop: "1.5rem" }}>
             After a few meetings with Larry, I saw what he really needed, so I
@@ -228,14 +229,12 @@ const Article_Larry = () => {
           <div style={{ textAlign: "center" }}>
             <Image style={{ marginBottom: "0" }} src={LarryArticle_7} id="" />
           </div>
-          <LarryCaption>
-            Finalized design images.
-          </LarryCaption>
+          <LarryCaption>Finalized design images.</LarryCaption>
           <LarryH1>The outcome</LarryH1>
           <LarryP>
             The essential intention of this project is to make Larry's
-            experiences and books known to various people. Not to let people
-            know about their suffering, but to convey their hope. I was
+            experiences and books known to people all over the world. Not to let
+            people know about their suffering, but to convey their hope. I was
             convinced that at least my design would reach as many people as
             possible.
           </LarryP>

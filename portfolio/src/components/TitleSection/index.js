@@ -43,7 +43,7 @@ const TitleSection = () => {
           <Parallax x={[5, -10]} tagOuter="figure">
             <TitleP>
               I’m a passionate multi-talented human who comes from Japan with
-              over 6+ years of experiences in wider field of design disciplines.
+              over 6+ years of experience with a wide array of design skills.
             </TitleP>
           </Parallax>
         </PContent>

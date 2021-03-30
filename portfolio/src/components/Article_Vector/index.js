@@ -63,8 +63,9 @@ const Article_Vector = () => {
             Design lead for Vector International Academy
           </VectorTitle>
           <VectorH2>
-            Vector International Academy steered School through the creation of
-            a new website and brochure that unified the latest school portfolio.
+            I was hired by Vector Internationa Academy to recreate and modernize
+            their websites. I have applied design innovation to their website
+            and brochure.
           </VectorH2>
           <Parallax y={[-15, 15]} tagOuter="figure">
             <div style={{ textAlign: "center" }}>
@@ -73,12 +74,12 @@ const Article_Vector = () => {
           </Parallax>
           <VectorH1>Background</VectorH1>
           <VectorP>
-            In 2020 I have been dedicated to my time to acquire new programming
-            skills. and one of my friends suggested to me to provide my design
-            for a vector international academy as a freelance designer. ​ After
-            few meetings, I was so pleased that my portfolio was accepted by
-            them so that I was trying to do dedicated to my expressions for
-            vector's requirements.
+            In 2020 I have dedicated my time to acquire new programming skills.
+            and one of my friends suggested to me to provide my design for a
+            vector international academy as a freelance designer. ​ After few
+            meetings, I was so pleased that my portfolio was accepted by them so
+            that I was trying to do dedicated to my expressions for vector's
+            requirements.
           </VectorP>
           <VectorP style={{ marginTop: "1.5rem" }}>
             An idea that first seemed exciting and intriguing, and turned into a
@@ -96,15 +97,14 @@ const Article_Vector = () => {
             was to create several web design prototypes for building a website.
             So that we needed to take several meetings to work smoothly and
             facilitate communication. and to find the right problems I asked
-            myself what the previous site does intentionally or how service am I
-            building? I approached this project from these things.
+            myself what the previous site does intentionally or what service am
+            I building? I approached this project from these things.
           </VectorP>
           <VectorH1 style={{ marginTop: "5rem" }}>My role</VectorH1>
           <VectorP>
             I worked on multiple projects related to Vector as a UI/UX designer
             together with the development team, including the main site and
-            brochure. In addition to those, I gave input regarding the as an
-            adviser for new contents.
+            brochure. In addition to those, I gave input about the content.
           </VectorP>
           <VectorGridHalf>
             <div style={{ textAlign: "center" }}>
@@ -128,11 +128,11 @@ const Article_Vector = () => {
           <VectorH1>Challenge</VectorH1>
           <VectorP>
             The big challenge the client had was how to build an accessible way
-            to reach the contents of testimonials or significant sections else
-            easily, and create an intriguing website even more powerful. After
+            to reach the contents of testimonials or significant sections
+            easily, and create an intriguing and more powerful website. After
             several meetings, I heard about the challenges of this project and
-            the concept of the most useful site that the client feels, and then
-            proposed the above prototype.
+            the concept of the most useful site that the client requires, and
+            then proposed the above prototype.
           </VectorP>
           <VectorGridHalf>
             <div style={{ textAlign: "center" }}>
@@ -164,24 +164,23 @@ const Article_Vector = () => {
             Great emphasis was placed on content unification and adaptability to
             the individual needs of customers. And how to incorporate dynamic
             content such as slides that were not on the previous site. We wanted
-            to provide a smooth experience for customers who even not aim to be
-            students or who weren't very frequent. The content on this site is
-            designed to make it easy for all customer groups to find relevant
-            information.
+            to provide a smooth experience for customers who did not aim to be
+            students or who weren't very frequent visitors. The content on this
+            site is designed to make it easy for all customer groups to find
+            relevant information.
           </VectorP>
           <VectorH1 style={{ marginTop: "5rem" }}>Final thoughts</VectorH1>
           <VectorP>
-            I think that the depth of involvement of designers and developers in
-            the project by the time it is completed will change depending on the
-            budget and period. What I thought about this project was to deeply
-            research the extensibility of the project. In fact, after the top
-            page was completed, the client's intentions changed and the content
-            increased. When that happens, it becomes difficult to modify the
-            work that has already been completed. For this project, where the
-            challenge was to have a consistent design, it was essential to have
-            adaptability to it. It was a great experience a project that
-            reminded me of what significance to search to find out the client's
-            core intention.
+            I thought that the depth of involvement of designers and developers
+            in the project by the time it is completed will change depending on
+            the budget and period. What I thought about this project was to
+            deeply research the scalability of the project. In fact, after the
+            top page was completed, the client's intentions changed and the
+            content increased. When that happens, it becomes difficult to modify
+            the work that has already been completed. For this project, where
+            the challenge was to have a consistent design, it was essential to
+            have adaptability to it. It was a great experience, a project that
+            reminded me of how to find out the client's core intention.
           </VectorP>
           <div style={{ textAlign: "center", margin: "6rem 0 0.5rem 0" }}>
             <Image style={{ margin: "0" }} src={VectorArticle_8} id="" />
@@ -244,14 +243,14 @@ const Article_Vector = () => {
           </VectorP>
           <VectorP style={{ marginTop: "1.5rem" }}>
             Looking back at it now I can surely say it's been quite a ride. A
-            hight valuable experience that has still left an impact on me and my
-            career today. It helps me better understand the working environment
-            as a web designer in different with own my country and opened my
-            eyes to the product creation process. The effort and sacrifices that
-            are required to send off a product into the world were beyond my
-            expectations. However, once the product lets it dive into the world
-            and turn into “alive” is the time when the real journey actually
-            launches. Now that I think about it, I am so excited.
+            hightly valuable experience that has still left an impact on me and
+            my career today. It helps me better understand the working
+            environment as a web designer and opened my eyes to the product
+            creation process. The effort and sacrifices that are required to
+            send off a product into the world were beyond my expectations.
+            However, once the product lets it dive into the world and turn into
+            “alive” is the time when the real journey actually launches. Now
+            that I think about it, I am so excited.
           </VectorP>
           {/* feedback section */}
           <Feedback>

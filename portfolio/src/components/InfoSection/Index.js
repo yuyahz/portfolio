@@ -97,7 +97,7 @@ const InfoSection = ({
             </Column1>
             <Column2>
               <TextWrapperR>
-                <TopLineR darkText={darkText}>Data</TopLineR>
+                <TopLineR darkText={darkText}>Date</TopLineR>
                 <TextR lightText={lightText}>{textR}</TextR>
                 <TopLineR2 darkText={darkText}>{textR2}</TopLineR2>
                 <TextRBottom lightText={lightText}>{textR3}</TextRBottom>

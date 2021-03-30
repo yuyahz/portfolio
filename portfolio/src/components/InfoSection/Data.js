@@ -8,7 +8,7 @@ export const homeLarry = {
   headline: "Linton Wellness :",
   headline2: "Living Your Most Authentic Life Possible",
   description:
-    "Larry asked to design and build an affordable website that will rank well in search engines and that can scale with the business as I grow.",
+    "Larry asked to design and build an affordable website that will rank well in search engines and that can scale with the business as it grows.",
   buttonLabel: "View Case Study",
   textR: "June – September 2020",
   textR2: "DESIGN LEAD",
@@ -35,7 +35,7 @@ export const homeVector = {
   headline:
     "Providing corporate site and Brochure for Vector International Academy",
   description:
-    "Vector International Academy stepped school through the creation of a new innovated website and brochure that to clear intention what they provide.",
+    "I was hired by Vector Internationa Academy to recreate and modernize their websites. I have applied design innovation to their website and brochure.",
   buttonLabel: "View Case Study",
   textR: "October 2019 – February 2021",
   textR2: "DESIGN LEAD",
@@ -59,9 +59,9 @@ export const homeUI = {
   lightText: true,
   darkText: true,
   topLine: "UI UX",
-  headline: "Project of disciplining my creativity",
+  headline: "100-day design challenge : Self-commitment to design every day",
   description:
-    "Daily UI is a project I was in order to acquire UI UX skills as part of the training as a daily routine.",
+    "I tried to hone my design skills by adhering to a daily self-challenge to design and create.",
   buttonLabel: "View Case Study",
   textR: "April – July 2020",
   textR2: "UI UX design",
@@ -80,9 +80,9 @@ export const homeDaruma = {
   lightText: true,
   darkText: true,
   topLine: "Self-employed project / Website , Web Development ",
-  headline: "The proposition creates a refined website for a BBQ restaurant",
+  headline: "The offer to create a refined website for a BBQ restaurant",
   description:
-    "Founded five decades ago, Daruma is a famous BBQ restaurant in my city. they needed to evolve the website, from ideation, design, and design management. And I dealt with all of what they require right away.",
+    "Founded five decades ago, Daruma is a famous BBQ restaurant in my city. Their website needed improvements from the concept stage to the final content management stage. I delivered best results in the shortest amount of time and my clients were extremely satisfied.",
   buttonLabel: "View Case Study",
   textR: "November 2020 – January 2021",
   textR2: "WEB DEVELOPMENT",

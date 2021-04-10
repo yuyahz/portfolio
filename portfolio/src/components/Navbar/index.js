@@ -14,9 +14,9 @@ import {
   NavLinks,
   NavSNS,
   NavMail,
-  NavBtn,
-  NavBtnLink,
+  Image,
 } from "./NavbarElements";
+import logo from "../../images/logo.png";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -43,7 +43,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome} isClicked={false}>
-              Y
+              <Image src={logo} id="" />
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <TiEquals />

@@ -32,7 +32,7 @@ import VectorArticle_10 from "../../images/VectorArticle_10.png";
 import VectorArticle_11 from "../../images/VectorArticle_11.png";
 import VectorArticle_12 from "../../images/VectorArticle_12.png";
 import VectorArticle_13 from "../../images/VectorArticle_13.png";
-import VectorArticle_14 from "../../images/VectorArticle_14.png";
+import mari from "../../images/mari.png";
 import VectorMovie_1 from "../../videos/VectorMovie_1.mp4";
 
 const Article_Vector = () => {
@@ -256,28 +256,25 @@ const Article_Vector = () => {
           <Feedback>
             <div style={{ textAlign: "center" }}>
               <Image
-                src={VectorArticle_14}
+                src={mari}
                 id=""
                 style={{ width: "4rem", marginBottom: "1rem" }}
               />
             </div>
             <VectorH1 className="title">
-              " lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum "
+              " He is a versatile designer who creates a wide range from modern
+              to traditional. I believe his patience with a string of requests
+              and revisions from me eventually enabled my website to be born. "
             </VectorH1>
             <VectorP style={{ fontSize: "14px", lineHeight: "1.5" }}>
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum.
+              His design first caught my eyes when I had been spending long time
+              looking for a way to embody the unique feature of my school
+              business. His astute sense of identifying the perfect colors,
+              shapes, and space usage helped my website convey what we are at a
+              glance. I believe his patience with a string of requests and
+              revisions from me eventually enabled my website to be born. He is
+              a versatile designer who creates a wide range from modern to
+              traditional.
             </VectorP>
           </Feedback>
           {/* feedback section */}

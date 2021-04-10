@@ -90,27 +90,7 @@ export const SidebarLink = styled(LinkS)`
   }
 `;
 
-// export const SideBtnWrap = styled.div`
-//     display: flex;
-//     justify-content: center;
-// `;
+export const Image = styled.img`
+  width: 200px;
+`;
 
-// export const SidebarRoute = styled(LinkR)`
-//     border-radius: 50px;
-//     background: #444;
-//     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.3));
-//     white-space: nowrap;
-//     padding: 16px 64px;
-//     color: #fff;
-//     font-size: 16px;
-//     outline: none;
-//     border: none;
-//     transition: cubic-bezier(.65,0,.16,1);
-//     text-decoration: none;
-
-//     &:hover {
-//         transition: 0.6s cubic-bezier(.65,0,.16,1);
-//         background: #fff;
-//         color: #444;
-//     }
-// `;

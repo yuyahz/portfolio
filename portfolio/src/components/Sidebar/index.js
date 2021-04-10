@@ -8,7 +8,9 @@ import {
   SidebarLink,
   SidebarLogo,
   Logo,
+  Image,
 } from "./SidebarElements";
+import logoSide from "../../images/logoSide.png";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -30,7 +32,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         </SidebarMenu>
       </SidebarWrapper>
       <SidebarLogo>
-        <Logo>Y</Logo>
+      <Image src={logoSide} id="" />
       </SidebarLogo>
       <SidebarWrapper>
         <SidebarMenu>

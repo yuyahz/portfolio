@@ -33,24 +33,7 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled(LinkR)`
   width: 30px;
-  height: 30px;
-  background: linear-gradient(
-    329deg,
-    rgba(68, 68, 68, 1) 60%,
-    rgba(47, 48, 48, 1) 85%,
-    rgba(1, 6, 6, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-top: 15px;
-  justify-self: flex-start;
-  flex-direction: column;
-  cursor: pointer;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  text-decoration: none;
+  height: 55px;
 
   @media screen and (max-width: 896px) {
     display: none;
@@ -72,8 +55,8 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavSNS = styled.div`
-  height: 150px;
-  font-size: 1.5rem;
+  height: 140px;
+  font-size: 1.3rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -124,7 +107,7 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   transform: rotate(0.75turn);
   text-decoration: none;
-  padding: 0.2rem 0.2rem;
+  padding: 0.1rem 0.1rem;
   cursor: pointer;
 
   &.active {
@@ -147,32 +130,7 @@ export const NavMail = styled.div`
   }
 `;
 
-// export const NavBtn = styled.nav`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-
-//   @media screen and (max-width: 768px) {
-//     display: none;
-//   }
-// `;
-
-// export const NavBtnLink = styled(LinkR)`
-//   border-radius: 50px;
-//   background: #999;
-//   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
-//   white-space: nowrap;
-//   padding: 10px 22px;
-//   color: #fff;
-//   font-size: 10px;
-//   outline: none;
-//   border: none;
-//   transition: cubic-bezier(0.65, 0, 0.16, 1);
-//   text-decoration: none;
-
-//   &:hover {
-//     transition: 0.6s cubic-bezier(0.65, 0, 0.16, 1);
-//     background: #999;
-//     color: #fff;
-//   }
-// `;
+export const Image = styled.img`
+  max-width: 100%;
+  padding-top: 1.5rem;
+`;

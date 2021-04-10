@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { motion, transform } from "framer-motion";
 
 export const Section = styled.section`
   height: 800px;
@@ -26,6 +26,34 @@ export const Section = styled.section`
 
   @media screen and (max-width: 520px) {
     overflow: hidden;
+  }
+`;
+
+export const Text = styled.div`
+  color: #444;
+  text-align: right;
+  font-weight: 300;
+  font-size: 9px;
+  letter-spacing: 0.2rem;
+  line-height: 1.2rem;
+  -ms-user-select: none; /* IE 10+ */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  position: absolute;
+  right: 3%;
+  top: 3%;
+
+  .br_ {
+    content: "\A";
+    white-space: pre;
+  }
+
+  @media screen and (max-width: 896px) {
+    font-size: 8px;
+    line-height: 0.8rem;
+    right: 6%;
   }
 `;
 
@@ -107,7 +135,7 @@ export const ColumnLeft = styled.div`
 
     /* for vertical mobile */
     @media screen and (max-width: 896px) {
-      h1 {
+    h1 {
       font-size: 6rem;
     }
     h2 {
@@ -267,40 +295,6 @@ export const ColumnRight = styled.div`
     }
   }
 
-  /* This is for a vertical mobile */
-  /* @media screen and (max-width: 896px) and (max-height: 427px) {
-    ${Image}:nth-child(1) {
-    top: 170px;
-    right: 70px;
-    width: 140px;
-  }
-
-  ${Image}:nth-child(2) {
-    top: 270px;
-    right: 130px;
-    width: 46px;
-  }
-
-  ${Image}:nth-child(3) {
-    top: 180px;
-    right: 15px;
-    width: 53px;
-  }
-
-  ${Image}:nth-child(4) {
-    top: 275px;
-    right: 245px;
-    width: 45px;
-  }
-
-  ${Image}:nth-child(5) {
-    top: 285px;
-    right: 45px;
-    width: 50px;
-  } */
-
-  /* My defaulft tablet is 970px but this exceptionl size
-   for vertical ipad */
   @media screen and (max-width: 768px) {
     ${Image}:nth-child(1) {
       top: 70px;

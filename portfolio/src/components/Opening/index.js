@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
 import FaceOne from "../../images/ZigZag_1.svg";
@@ -8,6 +9,7 @@ import FaceFour from "../../images/ZigZag_4.svg";
 import FaceFive from "../../images/ZigZag_5.svg";
 import {
   Section,
+  Text,
   Container,
   ColumnLeft,
   ColumnRight,
@@ -20,8 +22,37 @@ const OpeningSection = () => {
     visible: { opacity: 1, x: 0 },
   };
 
+  const rotate = keyframes`
+  0% {
+        transform: translate(0%,0);
+    }
+    25% {
+        transform: translate(10%,0)
+    }
+    50% {
+        transform: translate(15%,0)
+    }
+    75% {
+        transform: translate(10%,0)
+    }
+    100% {
+        transform: translate(0%,0)
+    }
+`;
+
+  const Rotate = styled.div`
+    display: inline-block;
+    animation: ${rotate} 2s linear infinite;
+  `;
+
   return (
     <Section id="home">
+      <Text>
+        <Rotate>
+          Let you create my face<div className="br_">creatively with</div>
+          <div className="br_">drag or tap!!</div>
+        </Rotate>
+      </Text>
       <Container>
         <ColumnLeft>
           <Parallax y={[-40, 40]} tagOuter="figure">

@@ -120,7 +120,7 @@ export const NavLinks = styled(LinkS)`
 export const NavMail = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   cursor: pointer;
   align-items: center;
   padding-bottom: 1rem;

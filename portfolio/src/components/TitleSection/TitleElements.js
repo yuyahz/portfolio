@@ -11,7 +11,7 @@ export const TitleContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 10px;
-  height: 2200px;
+  height: 2000px;
   position: relative;
 
   @media screen and (min-width: 1441px) {
@@ -66,7 +66,7 @@ export const Image = styled.img`
 `;
 
 export const H1Content = styled.div`
-  padding: 30px 40px;
+  padding: 70px 70px;
 
   @media screen and (max-width: 970px) {
     padding: 20px 40px 20px 40px;
@@ -112,20 +112,16 @@ export const PContent = styled.div`
   @media screen and (max-width: 970px) {
     padding: 0 40px;
   }
-
-  @media screen and (max-width: 520px) {
-    padding: 0 40px;
-  }
 `;
 
 export const TitleP = styled.p`
   color: #888888;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   margin-left: auto;
   font-size: 24px;
   font-weight: 300;
   text-align: left;
-  max-width: 500px;
+  max-width: 520px;
 
   @media screen and (max-width: 970px) {
     font-size: 16px;
@@ -142,7 +138,7 @@ export const SkillsColumn = styled.div`
   display: grid;
   position: relative;
   grid-template-columns: 1fr 1fr;
-  padding: 20% 20% 0 20%;
+  padding: 15% 25% 0 25%;
 
   @media screen and (max-width: 970px) {
     padding: 30% 20% 0;

@@ -78,9 +78,9 @@ export const DarumaTitle = styled.div`
   -webkit-text-fill-color: transparent;
   max-width: 900px;
   margin: 0 auto;
+  margin-bottom: 1rem;
   font-weight: 900;
   font-size: 66px;
-  margin-bottom: 1rem;
 
   @media screen and (max-width: 520px) {
     margin-top: 7rem;
@@ -186,7 +186,7 @@ export const ImageTop = styled.img`
   @media screen and (max-width: 970px) {
     max-width: 100%;
   }
-`
+`;
 
 export const ImageDown = styled.img`
   max-width: 75%;
@@ -197,7 +197,7 @@ export const ImageDown = styled.img`
     max-width: 100%;
     margin: 2rem 0 2rem 0;
   }
-`
+`;
 
 export const Feedback = styled.div`
   margin: 5rem 0 5rem 0;

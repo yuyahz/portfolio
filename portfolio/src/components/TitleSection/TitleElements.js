@@ -19,8 +19,7 @@ export const TitleContainer = styled.div`
   }
 
   @media screen and (max-width: 970px) {
-    height: 130vh;
-    margin-bottom: 10rem;
+    height: 150vh;
   }
 
   /* for vertical mobile */
@@ -29,8 +28,8 @@ export const TitleContainer = styled.div`
   }
 
   @media screen and (max-width: 540px) {
-    height: 120vh;
-    margin-bottom: 10rem;
+    height: 170vh;
+    margin-bottom: initial;
   }
 `;
 
@@ -42,17 +41,14 @@ export const TitleContent = styled.div`
 `;
 
 export const ImageContent = styled.div`
-  /* z-index: 2; */
   padding: 0 15%;
-  /* display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  &:first-child {
-    margin-right: auto;
-  } */
+
+  @media screen and (max-width: 970px) {
+    padding: 0 20% 0 5%;
+  }
 
   @media screen and (max-width: 520px) {
-    text-align: center;
+    padding: 0 20% 0 5%;
   }
 `;
 
@@ -65,19 +61,19 @@ export const Image = styled.img`
   }
 
   @media screen and (max-width: 520px) {
-    max-width: 100%;
+    max-width: 80%;
   }
 `;
 
 export const H1Content = styled.div`
-  padding: 70px 70px;
+  padding: 70px 70px 40px 70px;
 
   @media screen and (max-width: 970px) {
-    padding: 20px 40px 20px 40px;
+    padding: 50px 50px 20px 50px;
   }
 
   @media screen and (max-width: 520px) {
-    padding: 20px 40px 20px 40px;
+    padding: 30px 30px 20px 30px;
   }
 `;
 
@@ -111,10 +107,14 @@ export const TitleH1 = styled.h1`
 `;
 
 export const PContent = styled.div`
-  padding: 0 70px;
+  padding: 0 150px;
 
   @media screen and (max-width: 970px) {
-    padding: 0 40px;
+    padding: 0 70px;
+  }
+
+  @media screen and (max-width: 520px) {
+    padding: 0 20px;
   }
 `;
 
@@ -134,7 +134,7 @@ export const TitleP = styled.p`
 
   @media screen and (max-width: 520px) {
     font-size: 14px;
-    max-width: 190px;
+    max-width: 220px;
   }
 `;
 
@@ -145,11 +145,11 @@ export const SkillsColumn = styled.div`
   padding: 15% 25% 0 25%;
 
   @media screen and (max-width: 970px) {
-    padding: 30% 20% 0;
+    padding: 30% 20%;
   }
 
   @media screen and (max-width: 520px) {
-    padding: 50% 20% 15%;
+    padding: 50% 20% 50%;
   }
 `;
 

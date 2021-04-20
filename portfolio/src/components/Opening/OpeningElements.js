@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion, transform } from "framer-motion";
 
 export const Section = styled.section`
-  height: 800px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,21 +12,25 @@ export const Section = styled.section`
     rgba(255, 255, 255, 1) 0%,
     rgba(218, 218, 218, 1) 100%
   );
+  /* 
+  @media screen and (max-width: 1024px) {
+    height: 100vh;
+  } */
+
+  /* @media screen and (max-width: 970px) {
+    height: 100vh;
+  } */
 
   /* for vertical mobile */
-  @media screen and (max-width: 896px) and (max-height: 427px) {
+  /* @media screen and (max-width: 896px) and (max-height: 427px) {
     height: 100vh;
-  }
+  } */
 
   /* for Surface duo to eliminate right space */
-  @media screen and (max-width: 540px) {
-    height: 100vh;
-    overflow: hidden;
-  }
 
-  @media screen and (max-width: 520px) {
+  /* @media screen and (max-width: 520px) {
     overflow: hidden;
-  }
+  } */
 `;
 
 export const Text = styled.div`
@@ -133,8 +137,8 @@ export const ColumnLeft = styled.div`
     user-select: none;
   }
 
-    /* for vertical mobile */
-    @media screen and (max-width: 896px) {
+  /* for vertical mobile */
+  @media screen and (max-width: 896px) {
     h1 {
       font-size: 6rem;
     }
@@ -144,6 +148,7 @@ export const ColumnLeft = styled.div`
     p {
       font-size: 0.7rem;
     }
+  }
 
   @media screen and (max-width: 520px) {
     grid-area: 1 / 1 / 2 / 2;

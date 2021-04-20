@@ -9,10 +9,9 @@ export const PicDailyUiContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  max-width: 100%;
-  max-height: 800px;
+  width: 100%;
 
   @media screen and (min-width: 1440px) {
-    min-width: 1440px;
+    max-width: 1440px;
   }
 `;

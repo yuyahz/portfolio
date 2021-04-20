@@ -18,7 +18,7 @@ import {
   Skills,
   Tools,
 } from "./TitleElements";
-import HeadShot2 from "../../images/HeadShot2.png";
+import HeadShot from "../../images/HeadShot.png";
 
 const TitleSection = () => {
   return (
@@ -26,7 +26,7 @@ const TitleSection = () => {
       <TitleContent>
         <ImageContent>
           <FadeIn.Left>
-            <Image src={HeadShot2} id="about" />
+            <Image src={HeadShot} id="about" />
           </FadeIn.Left>
         </ImageContent>
         <H1Content>

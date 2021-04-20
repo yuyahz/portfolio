@@ -42,18 +42,22 @@ export const TitleContent = styled.div`
 `;
 
 export const ImageContent = styled.div`
-  z-index: 2;
-  padding: 0 3%;
-  display: flex;
+  /* z-index: 2; */
+  padding: 0 15%;
+  /* display: flex;
   justify-content: flex-start;
   flex-direction: column;
   &:first-child {
     margin-right: auto;
+  } */
+
+  @media screen and (max-width: 520px) {
+    text-align: center;
   }
 `;
 
 export const Image = styled.img`
-  max-width: 70%;
+  max-width: 60%;
   height: auto;
 
   @media screen and (max-width: 970px) {
@@ -61,7 +65,7 @@ export const Image = styled.img`
   }
 
   @media screen and (max-width: 520px) {
-    max-width: 85%;
+    max-width: 100%;
   }
 `;
 

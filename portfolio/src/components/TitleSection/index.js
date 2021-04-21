@@ -4,6 +4,8 @@ import * as FadeIn from "../FadeIn";
 import {
   TitleContainer,
   TitleContent,
+  Deco,
+  DecoOb,
   ImageContent,
   H1Content,
   TitleH1,
@@ -24,6 +26,18 @@ const TitleSection = () => {
   return (
     <TitleContainer>
       <TitleContent>
+        <Deco>
+          <DecoOb>
+            <Parallax y={[-40, 20]} tagOuter="figure">
+              Design
+            </Parallax>
+          </DecoOb>
+          <DecoOb>
+            <Parallax y={[30, -40]} tagOuter="figure">
+              Coding
+            </Parallax>
+          </DecoOb>
+        </Deco>
         <ImageContent>
           <FadeIn.Left>
             <Image src={HeadShot} id="about" />

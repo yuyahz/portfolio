@@ -18,11 +18,11 @@ export const TitleContainer = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-    height: 120vh;
+    height: 250vh;
   }
 
   @media screen and (max-width: 970px) {
-    height: 150vh;
+    height: 265vh;
   }
 
   /* for vertical mobile */
@@ -31,7 +31,7 @@ export const TitleContainer = styled.div`
   }
 
   @media screen and (max-width: 540px) {
-    height: 230vh;
+    height: 265vh;
     margin-bottom: initial;
   }
 `;
@@ -41,6 +41,36 @@ export const TitleContent = styled.div`
   width: 100%;
   max-width: 1440px;
   display: block;
+`;
+
+export const Deco = styled.div`
+  text-align: left;
+  padding: 0 7% 0 0;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 3% 0 0;
+  }
+
+  @media screen and (max-width: 520px) {
+    padding: 0 10% 0 0;
+  }
+`;
+
+export const DecoOb = styled.div`
+  font-size: 10rem;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  line-height: 1.1;
+  color: black;
+  float: right;
+  writing-mode: vertical-rl;
+  &:first-child {
+    color: white;
+  }
+
+  @media screen and (max-width: 520px) {
+    font-size: 5rem;
+  }
 `;
 
 export const ImageContent = styled.div`
@@ -73,7 +103,7 @@ export const H1Content = styled.div`
 
   @media screen and (max-width: 520px) {
     padding: 5% 5% 4% 5%;
-  } 
+  }
 `;
 
 export const TitleH1 = styled.h1`
@@ -219,7 +249,6 @@ export const SkillsSubTitle = styled.p`
   @media screen and (max-width: 520px) {
     font-size: 8px;
   }
-
 `;
 
 export const Skills = styled.p`

@@ -18,6 +18,10 @@ export const InfoWrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
+
+  @media screen and (max-width: 320px) {
+    height: 130vh;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -41,8 +45,12 @@ export const InfoRow = styled.div`
   }
 
   @media screen and (max-width: 520px) {
-    grid-template-columns: minmax(150px, 1fr) 190px;
-    padding-left: 25px;
+    grid-template-columns: minmax(180px, 1fr) 130px;
+    padding: 0 5%;
+  }
+
+  @media screen and (max-width: 320px) {
+    grid-template-columns: minmax(150px, 1fr) 110px;
   }
 `;
 
@@ -54,11 +62,7 @@ export const Column2 = styled.div`
   grid-area: col2;
 
   @media screen and (max-width: 970px) {
-    margin-left: 20px;
-  }
-
-  @media screen and (max-width: 520px) {
-    margin-left: 20px;
+    margin-left: 20%;
   }
 `;
 
@@ -70,6 +74,10 @@ export const TextWrapper = styled.div`
 export const TextWrapperR = styled.div`
   max-width: 540px;
   padding-top: 0;
+
+  @media screen and (max-width: 320px) {
+    margin-right: 20px;
+  }
 `;
 
 export const TopLine = styled.p`

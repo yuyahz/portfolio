@@ -12,25 +12,11 @@ export const Section = styled.section`
     rgba(255, 255, 255, 1) 0%,
     rgba(218, 218, 218, 1) 100%
   );
-  /* 
-  @media screen and (max-width: 1024px) {
-    height: 100vh;
-  } */
 
-  /* @media screen and (max-width: 970px) {
-    height: 100vh;
-  } */
-
-  /* for vertical mobile */
-  /* @media screen and (max-width: 896px) and (max-height: 427px) {
-    height: 100vh;
-  } */
-
-  /* for Surface duo to eliminate right space */
-
-  /* @media screen and (max-width: 520px) {
-    overflow: hidden;
-  } */
+  /* for iphone se */
+  @media screen and (max-width: 320px) {
+    height: 110vh;
+  }
 `;
 
 export const Text = styled.div`

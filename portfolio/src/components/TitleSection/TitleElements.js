@@ -12,10 +12,13 @@ export const TitleContainer = styled.div`
   align-items: center;
   padding: 0 10px;
   height: 2000px;
-  position: relative;
 
   @media screen and (min-width: 1441px) {
     justify-content: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 120vh;
   }
 
   @media screen and (max-width: 970px) {
@@ -28,7 +31,7 @@ export const TitleContainer = styled.div`
   }
 
   @media screen and (max-width: 540px) {
-    height: 170vh;
+    height: 230vh;
     margin-bottom: initial;
   }
 `;
@@ -61,20 +64,16 @@ export const Image = styled.img`
   }
 
   @media screen and (max-width: 520px) {
-    max-width: 80%;
+    max-width: 95%;
   }
 `;
 
 export const H1Content = styled.div`
-  padding: 70px 70px 40px 70px;
-
-  @media screen and (max-width: 970px) {
-    padding: 50px 50px 20px 50px;
-  }
+  padding: 4% 4% 2% 4%;
 
   @media screen and (max-width: 520px) {
-    padding: 30px 30px 20px 30px;
-  }
+    padding: 5% 5% 4% 5%;
+  } 
 `;
 
 export const TitleH1 = styled.h1`
@@ -97,12 +96,13 @@ export const TitleH1 = styled.h1`
   }
 
   @media screen and (max-width: 970px) {
-    font-size: 32px;
+    font-size: 45px;
     max-width: 480px;
   }
 
-  @media screen and (max-width: 520px) {
-    font-size: 24px;
+  @media screen and (max-width: 320px) {
+    font-size: 32px;
+    max-width: 480px;
   }
 `;
 
@@ -123,17 +123,16 @@ export const TitleP = styled.p`
   letter-spacing: 0.1rem;
   margin-left: auto;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 200;
   text-align: left;
   max-width: 520px;
 
   @media screen and (max-width: 970px) {
-    font-size: 16px;
+    font-size: 20px;
     max-width: 285px;
   }
 
   @media screen and (max-width: 520px) {
-    font-size: 14px;
     max-width: 220px;
   }
 `;
@@ -149,7 +148,11 @@ export const SkillsColumn = styled.div`
   }
 
   @media screen and (max-width: 520px) {
-    padding: 50% 20% 50%;
+    padding: 50% 20% 0%;
+  }
+
+  @media screen and (max-width: 320px) {
+    padding: 35% 16% 0%;
   }
 `;
 
@@ -162,15 +165,23 @@ export const SkillsWrapRight = styled.div`
   @media screen and (max-width: 520px) {
     padding: 0 10px;
   }
+
+  @media screen and (max-width: 320px) {
+    padding: initial;
+  }
 `;
 
 export const SkillsWrapLeft = styled.div`
   text-align: center;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.4px;
   border-right: 1px solid #dfdfdf;
 
   @media screen and (max-width: 520px) {
     padding: 0 10px;
+  }
+
+  @media screen and (max-width: 320px) {
+    padding: initial;
   }
 `;
 
@@ -208,6 +219,7 @@ export const SkillsSubTitle = styled.p`
   @media screen and (max-width: 520px) {
     font-size: 8px;
   }
+
 `;
 
 export const Skills = styled.p`

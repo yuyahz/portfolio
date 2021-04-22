@@ -164,7 +164,7 @@ const Article_Daruma = () => {
             <Image style={{ marginBottom: "0" }} src={DarumaArticle_5} id="" />
           </div>
           <DarumaCaption>Finalized mobile images.</DarumaCaption>
-          <Parallax y={[-25, 20]} tagOuter="figure">
+          <Parallax y={[-20, 20]} tagOuter="figure">
             <div style={{ textAlign: "center" }}>
               <ImageDown src={DarumaArticle_6} id="" />
             </div>

@@ -8,7 +8,7 @@ import darumaPage from "./pages/articleDaruma";
 
 function App() {
   return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/larryPage" component={larryPage} exact />

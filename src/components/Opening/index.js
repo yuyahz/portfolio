@@ -13,6 +13,7 @@ import {
   Container,
   ColumnLeft,
   ColumnRight,
+  ColumnMobile,
   Image,
 } from "./OpeningElements";
 
@@ -162,6 +163,78 @@ const OpeningSection = () => {
             }}
           />
         </ColumnRight>
+        <ColumnMobile>
+          <Image
+            src={FaceOne}
+            alt="Face"
+            whileTap={{ scale: 0.95 }}
+            drag={true}
+            dragConstraints={{ left: -160, right: 30, top: -30, bottom: 320 }}
+            initial={{ opacity: 0, y: -200 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              rotate: [0, 5, 10, -10, 0],
+              transition: { duration: 1 },
+            }}
+          />
+          <Image
+            src={FaceTwo}
+            alt="Face"
+            whileTap={{ scale: 0.95 }}
+            drag={true}
+            dragConstraints={{ left: -175, right: 110, top: -145, bottom: 230 }}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{
+              opacity: 1,
+              x: 0,
+              rotate: [0, 5, 10, -10, 0],
+              transition: { duration: 3 },
+            }}
+          />
+          <Image
+            src={FaceThree}
+            alt="Face"
+            whileTap={{ scale: 0.95 }}
+            drag={true}
+            dragConstraints={{ left: -240, right: 45, top: -110, bottom: 225 }}
+            initial={{ opacity: 0, y: -100 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              rotate: [0, 5, 10, -10, 0],
+              transition: { duration: 1.5 },
+            }}
+          />
+          <Image
+            src={FaceFour}
+            alt="Face"
+            whileTap={{ scale: 0.95 }}
+            drag={true}
+            dragConstraints={{ left: -70, right: 220, top: -160, bottom: 255 }}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              rotate: [0, 5, 10, -10, 0],
+              transition: { duration: 1 },
+            }}
+          />
+          <Image
+            src={FaceFive}
+            alt="Face"
+            whileTap={{ scale: 0.95 }}
+            drag={true}
+            dragConstraints={{ left: -115, right: 165, top: -210, bottom: 165 }}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{
+              opacity: 1,
+              x: 0,
+              rotate: [0, 5, 10, -10, 0],
+              transition: { duration: 2.5 },
+            }}
+          />
+        </ColumnMobile>
       </Container>
     </Section>
   );

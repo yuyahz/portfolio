@@ -17,6 +17,10 @@ export const Section = styled.section`
   @media screen and (max-width: 320px) {
     height: 110vh;
   }
+
+  @media screen and (max-width: 320px) {
+    overflow: hidden;
+  }
 `;
 
 export const Text = styled.div`
@@ -315,36 +319,49 @@ export const ColumnRight = styled.div`
 
   /* for Mobile */
   @media screen and (max-width: 520px) {
-    padding: 0rem;
+    display: none;
+  }
+`;
 
-    ${Image}:nth-child(1) {
-      top: 185px;
-      right: 0px;
-      max-width: 50%;
-    }
+export const ColumnMobile = styled.div`
+  display: flex;
+  grid-area: 1 / 1 / 2 / 2;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
-    ${Image}:nth-child(2) {
-      top: 305px;
-      right: 80px;
-      max-width: 17%;
-    }
+  ${Image}:nth-child(1) {
+    top: 185px;
+    right: 0px;
+    max-width: 50%;
+  }
 
-    ${Image}:nth-child(3) {
-      top: 265px;
-      right: 18px;
-      max-width: 20%;
-    }
+  ${Image}:nth-child(2) {
+    top: 305px;
+    right: 80px;
+    max-width: 17%;
+  }
 
-    ${Image}:nth-child(4) {
-      top: 315px;
-      right: 195px;
-      max-width: 16%;
-    }
+  ${Image}:nth-child(3) {
+    top: 265px;
+    right: 18px;
+    max-width: 20%;
+  }
 
-    ${Image}:nth-child(5) {
-      top: 370px;
-      right: 140px;
-      max-width: 18%;
-    }
+  ${Image}:nth-child(4) {
+    top: 315px;
+    right: 195px;
+    max-width: 16%;
+  }
+
+  ${Image}:nth-child(5) {
+    top: 370px;
+    right: 140px;
+    max-width: 18%;
+  }
+
+  @media screen and (min-width: 521px) {
+    display: none;
   }
 `;

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { ParallaxProvider } from "react-scroll-parallax";
 import OpeningSection from "../components/Opening";
 import TitleSection from "../components/TitleSection";
 import InfoSection from "../components/InfoSection";
@@ -25,7 +24,7 @@ const Home = () => {
   };
 
   return (
-    <ParallaxProvider>
+    <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <OpeningSection />
@@ -39,7 +38,7 @@ const Home = () => {
       <PicDaruma />
       <InfoSection {...homeDaruma} />
       <Footer />
-    </ParallaxProvider>
+    </>
   );
 };
 

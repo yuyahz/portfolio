@@ -5,7 +5,7 @@ import Daruma from "../../images/Daruma.png";
 
 const PicDaruma = () => {
   return (
-      <PicDarumaContainer id="daruma">
+      <PicDarumaContainer>
         <Image src={Daruma} />
       </PicDarumaContainer>
   );

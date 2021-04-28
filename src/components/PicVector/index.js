@@ -5,7 +5,7 @@ import Vector from "../../images/Vector.png";
 
 const PicVector = () => {
   return (
-    <PicVectorContainer id="vector">
+    <PicVectorContainer>
       <Image src={Vector} />
     </PicVectorContainer>
   );

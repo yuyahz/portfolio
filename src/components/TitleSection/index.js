@@ -24,7 +24,7 @@ import HeadShot from "../../images/HeadShot.png";
 
 const TitleSection = () => {
   return (
-    <TitleContainer>
+    <TitleContainer id="about">
       <TitleContent>
         <Deco>
           <DecoOb>
@@ -40,7 +40,7 @@ const TitleSection = () => {
         </Deco>
         <ImageContent>
           <FadeIn.Left>
-            <Image src={HeadShot} id="about" />
+            <Image src={HeadShot}/>
           </FadeIn.Left>
         </ImageContent>
         <H1Content>

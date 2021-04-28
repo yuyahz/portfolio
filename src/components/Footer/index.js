@@ -32,9 +32,16 @@ const Footer = () => {
         </FooterLinksContainer>
         <FooterLinksContainer>
           <FooterClose className="bottom">
-            Get in touch via <a className="link" target="_blank" href="mailto:hashirizaki61@gmail.com">
+            Let's get in touch via
+            <a
+              className="link"
+              target="_blank"
+              href="mailto:hashirizaki61@gmail.com"
+            >
               email
-            </a> or <a
+            </a>{" "}
+            or{" "}
+            <a
               className="link"
               target="_blank"
               href="https://www.linkedin.com/in/yuya-hashirizaki-9b0065191/"

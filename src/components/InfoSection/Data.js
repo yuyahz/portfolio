@@ -1,5 +1,5 @@
 export const homeLarry = {
-  // id: "larry",
+  id: "larry",
   to: "larryPage",
   lightBg: true,
   lightText: true,
@@ -26,7 +26,7 @@ export const homeLarry = {
 };
 
 export const homeVector = {
-  // id: "vector",
+  id: "vector",
   to: "vectorPage",
   lightBg: true,
   lightText: true,
@@ -54,7 +54,7 @@ export const homeVector = {
 };
 
 export const homeUI = {
-  // id: "dailyUi",
+  id: "dailyUi",
   lightBg: true,
   lightText: true,
   darkText: true,
@@ -74,7 +74,7 @@ export const homeUI = {
 };
 
 export const homeDaruma = {
-  // id: "daruma",
+  id: "daruma",
   to: "darumaPage",
   lightBg: true,
   lightText: true,

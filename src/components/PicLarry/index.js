@@ -5,7 +5,7 @@ import Larry from "../../images/Larry.png";
 
 const PicLarry = () => {
   return (
-      <PicLarryContainer id="larry">
+      <PicLarryContainer>
         <Image src={Larry} />
       </PicLarryContainer>
   );

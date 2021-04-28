@@ -48,7 +48,7 @@ const Navbar = ({ toggle }) => {
             <MobileIcon onClick={toggle}>
               <TiEquals />
             </MobileIcon>
-            <NavSNS>
+            {/* <NavSNS>
               <a target="_blank" href="https://dribbble.com/Hashirizaki">
                 <AiIcons.AiOutlineDribbble />
               </a>
@@ -64,7 +64,7 @@ const Navbar = ({ toggle }) => {
               >
                 <AiIcons.AiFillLinkedin />
               </a>
-            </NavSNS>
+            </NavSNS> */}
             <NavMenu>
               <NavItem>
                 <NavLinks
@@ -136,12 +136,26 @@ const Navbar = ({ toggle }) => {
                   Daruma
                 </NavLinks>
               </NavItem>
+              <NavItem>
+                <NavLinks
+                  className="contactSec"
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={0}
+                  activeClass="active"
+                >
+                  Contact
+                </NavLinks>
+              </NavItem>
             </NavMenu>
-            <NavMail>
+            {/* <NavMail>
               <a target="_blank" href="mailto:hashirizaki61@gmail.com">
                 <HiMail />
               </a>
-            </NavMail>
+            </NavMail> */}
             {/* <NavBtn>
               <NavBtnLink to="/signin">Sign In</NavBtnLink>
             </NavBtn> */}

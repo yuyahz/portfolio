@@ -4,7 +4,8 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  /* background: ${({ scrollNav }) => (scrollNav ? "transparent" : "transparent")}; */
+  /* background: ${({ scrollNav }) =>
+    scrollNav ? "transparent" : "transparent"}; */
   font-size: 0.8rem;
   width: 75px;
   height: 100vh;
@@ -20,24 +21,28 @@ export const Nav = styled.nav`
   }
 `;
 
-export const NavbarContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  z-index: 1;
-  width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
-`;
-
 export const NavLogo = styled(LinkR)`
+  position: fixed;
+  top: 0;
+  left: 10;
   width: 30px;
   height: 55px;
 
   @media screen and (max-width: 896px) {
     display: none;
   }
+`;
+
+export const NavbarContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1100px;
 `;
 
 export const MobileIcon = styled.div`
@@ -100,10 +105,14 @@ export const NavItem = styled.div`
   .darumaSec {
     margin: 28px 0;
   }
+
+  .contactSec {
+    margin: 28px 0;
+  }
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #cecece;
+  color: #010606;
   display: flex;
   transform: rotate(0.75turn);
   text-decoration: none;

@@ -32,7 +32,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         </SidebarMenu>
       </SidebarWrapper>
       <SidebarLogo>
-      <Image src={logoSide} id="" />
+        <Image src={logoSide} id="" />
       </SidebarLogo>
       <SidebarWrapper>
         <SidebarMenu>

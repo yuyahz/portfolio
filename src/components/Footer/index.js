@@ -30,27 +30,11 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterClose>Thank you.</FooterClose>
         </FooterLinksContainer>
-        <FooterLinksContainer>
+        {/* <FooterLinksContainer>
           <FooterClose className="bottom">
-            Let's get in touch via
-            <a
-              className="link"
-              target="_blank"
-              href="mailto:hashirizaki61@gmail.com"
-            >
-              email
-            </a>{" "}
-            or{" "}
-            <a
-              className="link"
-              target="_blank"
-              href="https://www.linkedin.com/in/yuya-hashirizaki-9b0065191/"
-            >
-              LinkedIn
-            </a>
-            , and let’s discuss how I can help you.
+            Let's get in touch via and let’s discuss how I can help you.
           </FooterClose>
-        </FooterLinksContainer>
+        </FooterLinksContainer> */}
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggleHome}>

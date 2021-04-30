@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  height: 100vh;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,9 +9,7 @@ export const ContactContainer = styled.div`
   overflow: hidden;
 `;
 
-export const ContactInner = styled.div`
-  height: 100vh;
-  width: 100%;
+export const ContactIconFrame = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +21,11 @@ export const ContactText = styled.div`
   font-weight: 300;
   letter-spacing: 1.4px;
   padding: 5% 0 3% 0;
+
+  @media screen and (max-width: 520px) {
+    font-size: 14px;
+    padding: 11%;
+  }
 `;
 
 export const ContactText1 = styled.div`
@@ -30,6 +33,7 @@ export const ContactText1 = styled.div`
   font-weight: 900;
   letter-spacing: 0.1rem;
   text-decoration: none;
+  white-space: nowrap;
   background: linear-gradient(
     329deg,
     rgba(68, 68, 68, 1) 60%,
@@ -49,9 +53,17 @@ export const ContactText1 = styled.div`
   animation : flowing1 10s linear infinite;
 }
 @keyframes flowing1{
-0% { transform: translateX(-100%)}
-100% { transform: translateX(100%)}
+0% { transform: translateX(100%)}
+100% { transform: translateX(-100%)}
 }
+
+@media screen and (max-width: 896px) and (max-height: 427px) {
+      font-size: 5rem;
+    }
+
+    @media screen and (max-width: 520px) {
+      font-size: 5rem;
+    }
 `;
 
 export const ContactText2 = styled.div`
@@ -59,6 +71,7 @@ export const ContactText2 = styled.div`
   font-weight: 900;
   letter-spacing: 0.1rem;
   text-decoration: none;
+  white-space: nowrap;
   background: linear-gradient(
     329deg,
     rgba(68, 68, 68, 1) 60%,
@@ -81,6 +94,14 @@ export const ContactText2 = styled.div`
 0% { transform: translateX(100%)}
 100% { transform: translateX(-100%)}
 }
+
+@media screen and (max-width: 896px) and (max-height: 427px) {
+      font-size: 5rem;
+    }
+
+    @media screen and (max-width: 520px) {
+      font-size: 5rem;
+    }
 `;
 
 export const ContactText3 = styled.div`
@@ -88,6 +109,7 @@ export const ContactText3 = styled.div`
   font-weight: 900;
   letter-spacing: 0.1rem;
   text-decoration: none;
+  white-space: nowrap;
   background: linear-gradient(
     329deg,
     rgba(68, 68, 68, 1) 60%,
@@ -104,21 +126,26 @@ export const ContactText3 = styled.div`
   -webkit-user-select: none;
   user-select: none;
 
-  animation : flowing3 17s linear infinite;
+  animation : flowing3 20s linear infinite;
 }
 @keyframes flowing3{
-0% { transform: translateX(-100%)}
-100% { transform: translateX(100%)}
+0% { transform: translateX(100%)}
+100% { transform: translateX(-100%)}
 }
+
+@media screen and (max-width: 896px) and (max-height: 427px) {
+      font-size: 5rem;
+    }
+
+    @media screen and (max-width: 520px) {
+      font-size: 5rem;
+    }
 `;
 
 export const ContactEmail = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 10%;
-  margin-left: 15%;
 
   &:hover {
     transform: translateY(-30px);
@@ -128,8 +155,17 @@ export const ContactEmail = styled.div`
 
   .link {
     text-decoration: none;
-    color: #888888;
-    font-size: 6rem;
+    color: #ffff;
+    font-size: 5rem;
+    filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.24));
+
+    @media screen and (max-width: 896px) and (max-height: 427px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 520px) {
+      font-size: 3rem;
+    }
   }
 `;
 
@@ -137,11 +173,7 @@ export const ContactLinkedIn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 10%;
-  margin-left: 1%;
-  margin-right: 15%;
-  border-radius: 50%;
+  margin-left: 20px;
 
   &:hover {
     transform: translateY(-30px);
@@ -151,7 +183,16 @@ export const ContactLinkedIn = styled.div`
 
   .link {
     text-decoration: none;
-    color: #888888;
-    font-size: 6rem;
+    color: #0e76a8;
+    font-size: 5rem;
+    filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.24));
+
+    @media screen and (max-width: 896px) and (max-height: 427px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 520px) {
+      font-size: 3rem;
+    }
   }
 `;

@@ -2,7 +2,7 @@ import React from "react";
 // import { Parallax } from "react-scroll-parallax";
 import {
   ContactContainer,
-  ContactInner,
+  ContactIconFrame,
   ContactText,
   ContactText1,
   ContactText2,
@@ -24,7 +24,7 @@ const Contact = () => {
       <ContactText>
         Let's get in touch via and let’s discuss how I can help you.
       </ContactText>
-      <ContactInner>
+      <ContactIconFrame>
         <ContactEmail>
           <a target="_blank" href="mailto:hashirizaki61@gmail.com">
             <HiMail className="link" />
@@ -38,7 +38,7 @@ const Contact = () => {
             <AiIcons.AiFillLinkedin className="link" />
           </a>
         </ContactLinkedIn>
-      </ContactInner>
+      </ContactIconFrame>
     </ContactContainer>
   );
 };

@@ -45,7 +45,7 @@ export const FooterLinksContainer = styled.div`
     letter-spacing: 1.4px;
     margin-right: auto;
     margin-bottom: 7%;
-    margin-top:2%;
+    margin-top: 2%;
 
     .link {
       text-decoration: none;
@@ -65,6 +65,9 @@ export const FooterClose = styled.h1`
   font-size: 48px;
   margin-right: auto;
 
+  @media screen and (max-width: 970px) {
+    margin: 0 auto;
+  }
 
   @media screen and (max-width: 520px) {
     font-size: 32px;

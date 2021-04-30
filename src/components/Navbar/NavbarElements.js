@@ -59,19 +59,19 @@ export const MobileIcon = styled.div`
   }
 `;
 
-export const NavSNS = styled.div`
-  height: 140px;
-  font-size: 1.3rem;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  cursor: pointer;
-  align-items: center;
+// export const NavSNS = styled.div`
+//   height: 140px;
+//   font-size: 1.3rem;
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: column;
+//   cursor: pointer;
+//   align-items: center;
 
-  @media screen and (max-width: 896px) {
-    display: none;
-  }
-`;
+//   @media screen and (max-width: 896px) {
+//     display: none;
+//   }
+// `;
 
 export const NavMenu = styled.div`
   display: flex;

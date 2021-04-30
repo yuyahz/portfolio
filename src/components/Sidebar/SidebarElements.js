@@ -21,10 +21,11 @@ export const SidebarContainer = styled.aside`
 export const CloseIcon = styled(FaRegTimesCircle)`
   color: #cecece;
   cursor: pointer;
+  transition: 0.5s;
 
   &:hover {
     color: #fff;
-    transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: 1s cubic-bezier(0.33, 1, 0.68, 1);
   }
 `;
 
@@ -37,18 +38,33 @@ export const Icon = styled.div`
   outline: none;
 `;
 
+export const SidebarLogoMobile = styled.div`
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -100;
+
+  @media screen and (min-width: 520px) {
+    display: none;
+  }
+`;
+
 export const SidebarLogo = styled.div`
   text-align: center;
   position: absolute;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  z-index: -100;
+
+  @media screen and (max-width: 520px) {
+    display: none;
+  }
 `;
 
 export const Logo = styled.div`
   font-size: 10rem;
   font-weight: 900;
-  color: #fff;
 
   /* for vertical mobile */
   @media screen and (max-width: 896px) and (max-height: 427px) {
@@ -56,22 +72,23 @@ export const Logo = styled.div`
   }
 `;
 
-export const SidebarWrapper = styled.div``;
-
-export const SidebarMenu = styled.ul`
+export const SidebarMenuTop = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 40px);
+  grid-template-rows: repeat(8, 40px);
   text-align: center;
+`;
 
-  @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(3, 40px);
-  }
+export const SidebarMenuBottom = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 40px);
+  text-align: center;
 `;
 
 export const SidebarLink = styled(LinkS)`
   display: flex;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 0.5rem;
   text-indent: 0.5rem;
   align-items: center;
@@ -81,16 +98,20 @@ export const SidebarLink = styled(LinkS)`
   list-style: none;
   transition: cubic-bezier(0.65, 0, 0.16, 1);
   color: #cecece;
+  transition: 0.5s;
 
   &:hover {
     color: #fff;
     filter: drop-shadow(0.5px 0.5px 7px #fff);
-    transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: 1s cubic-bezier(0.33, 1, 0.68, 1);
     cursor: pointer;
   }
 `;
 
 export const Image = styled.img`
   width: 200px;
-`;
 
+  @media screen and (max-width: 520px) {
+    width: 350px;
+  }
+`;

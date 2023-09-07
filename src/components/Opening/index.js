@@ -48,12 +48,12 @@ const OpeningSection = () => {
 
   return (
     <Section id="home">
-      <Text>
+      {/* <Text>
         <Rotate>
           Let you create my face<div className="br_">creatively with</div>
           <div className="br_">drag or tap!!</div>
         </Rotate>
-      </Text>
+      </Text> */}
       <Container>
         <ColumnLeft>
           <Parallax y={[-40, 40]} tagOuter="figure">

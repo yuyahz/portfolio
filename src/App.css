@@ -52,3 +52,9 @@
       format("eot");
   font-weight: 900;
 }
+
+@font-face {
+  font-family: "GT";
+  src: url(../src/fonts/GT-Ultra-Fine-Thin-Italic.woff) format("woff"),
+    url(../src/fonts/GT-Ultra-Fine-Thin-Italic.eot) format("eot");
+}

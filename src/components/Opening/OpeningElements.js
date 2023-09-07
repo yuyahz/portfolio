@@ -6,13 +6,7 @@ export const Section = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(218, 218, 218, 1) 100%
-  );
-
+  background: #faf8f6;
   /* for iphone se */
   @media screen and (max-width: 320px) {
     height: 110vh;
@@ -83,12 +77,13 @@ export const ColumnLeft = styled.div`
   padding: 1rem;
 
   h1 {
-    background: linear-gradient(
+    /* background: linear-gradient(
       329deg,
       rgba(68, 68, 68, 1) 60%,
       rgba(47, 48, 48, 1) 85%,
       rgba(1, 6, 6, 1) 100%
-    );
+    ); */
+    color: #fe0000;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
@@ -101,9 +96,10 @@ export const ColumnLeft = styled.div`
   }
 
   h2 {
-    color: #444;
+    color: #fe0000;
+    font-family: "GT";
     font-weight: 700;
-    padding-left: 0.2rem;
+    padding-left: 2rem;
     margin-bottom: 3rem;
     font-size: 7rem;
     line-height: 0.9;
@@ -115,7 +111,7 @@ export const ColumnLeft = styled.div`
   }
 
   p {
-    color: #444;
+    color: #fe0000;
     font-weight: 300;
     margin: 0.5rem 0 0 0.8rem;
     font-size: 1rem;

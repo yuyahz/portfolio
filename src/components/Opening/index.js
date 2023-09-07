@@ -63,7 +63,7 @@ const OpeningSection = () => {
               animate="visible"
               transition={{ duration: 1 }}
             >
-              Hello.
+              Yello.
             </motion.h1>
             <motion.h2
               variants={fadeLeft}

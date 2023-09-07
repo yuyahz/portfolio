@@ -5,7 +5,7 @@ export const PicDailyUiContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f2dbe1 center top/cover no-repeat;
+  background: #ea4c89 center top/cover no-repeat;
 `;
 
 export const Image = styled.img`

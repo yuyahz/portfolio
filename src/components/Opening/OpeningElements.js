@@ -77,13 +77,7 @@ export const ColumnLeft = styled.div`
   padding: 1rem;
 
   h1 {
-    /* background: linear-gradient(
-      329deg,
-      rgba(68, 68, 68, 1) 60%,
-      rgba(47, 48, 48, 1) 85%,
-      rgba(1, 6, 6, 1) 100%
-    ); */
-    color: #fe0000;
+    background: #fe0000;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;

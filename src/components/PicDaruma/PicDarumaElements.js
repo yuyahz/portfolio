@@ -6,7 +6,7 @@ export const PicDarumaContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #47a0ff;
+  background: #006fe6;
 `;
 
 export const Image = styled.img`

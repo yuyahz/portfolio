@@ -6,8 +6,8 @@ import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
   /* background: ${({ scrollNav }) =>
     scrollNav ? "transparent" : "transparent"}; */
-  font-size: 0.8rem;
-  width: 75px;
+  font-size: 1.3rem;
+  width: 100px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -87,32 +87,32 @@ export const NavItem = styled.div`
   height: auto;
 
   .aboutSec {
-    margin: 20px 0;
+    margin: 34px 0;
   }
 
   .larrySec {
-    margin: 20px 0;
+    margin: 34px 0;
   }
 
   .vectorSec {
-    margin: 20px 0;
+    margin: 34px 0;
   }
 
   .uiSec {
-    margin: 26px 0;
+    margin: 44px 0;
   }
 
   .darumaSec {
-    margin: 28px 0;
+    margin: 44px 0;
   }
 
   .contactSec {
-    margin: 28px 0;
+    margin: 44px 0;
   }
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #010606;
+  color: #fe0000;
   display: flex;
   transform: rotate(0.75turn);
   text-decoration: none;
@@ -120,9 +120,34 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    color: #010606;
-    border-bottom: solid 0.5px #010606;
-    transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    font-weight: 900;
+    padding: 10px;
+    border: solid 1px #fe0000;
+    background-color: white;
+    border-radius: 34px;
+    transition: 1s cubic-bezier(0.33, 1, 0.68, 1);
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    transform: rotate(0.87turn);
+
+    @keyframes shake {
+      90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+
+      80% {
+        transform: translate3d(2px, 0, 0);
+      }
+
+      70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+
+      60% {
+        transform: translate3d(4px, 0, 0);
+      }
+    }
   }
 `;
 

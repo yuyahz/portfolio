@@ -2,11 +2,7 @@ import styled from "styled-components";
 
 export const TitleContainer = styled.div`
   z-index: 1;
-  background: linear-gradient(
-    180deg,
-    rgba(218, 218, 218, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: #faf8f6;
   display: flex;
   justify-content: center;
   align-items: center;

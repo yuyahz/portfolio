@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PicVectorContainer = styled.div`
   height: 100vh;
-  background: #ffd96e;
+  background: #fbbc08;
   display: flex;
   flex-direction: column;
   justify-content: center;

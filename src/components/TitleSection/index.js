@@ -40,24 +40,22 @@ const TitleSection = () => {
         </Deco>
         <ImageContent>
           <FadeIn.Left>
-            <Image src={HeadShot}/>
+            <Image src={HeadShot} />
           </FadeIn.Left>
         </ImageContent>
         <H1Content>
           <Parallax x={[0, 5]} tagOuter="figure">
             <TitleH1>
               I am Yuya Hashirizaki
-              <TitleH1 className="br">
-                design & build digital products based in Vancouver
-              </TitleH1>
+              <TitleH1 className="br">Vancouver-based UI / UX designer</TitleH1>
             </TitleH1>
           </Parallax>
         </H1Content>
         <PContent>
           <Parallax x={[3, 0]} tagOuter="figure">
             <TitleP>
-              I’m a passionate multi-talented human who comes from Japan with
-              over 6+ years of experience with a wide array of design skills.
+              challenging the status quo and creating an inclusive experience
+              through research and empathy.
             </TitleP>
           </Parallax>
         </PContent>

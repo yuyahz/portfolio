@@ -7,6 +7,7 @@ export const ContactContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background: #faf8f6;
 `;
 
 export const ContactIconFrame = styled.div`

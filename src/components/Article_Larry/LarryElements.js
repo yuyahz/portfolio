@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const LarryContainer = styled.div`
   height: auto;
-  background: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 300);
 `;
 
 export const LarryWrapper = styled.div`
@@ -11,7 +11,6 @@ export const LarryWrapper = styled.div`
   margin: 0 auto;
   max-width: 1200px;
   padding: 10% 0;
-
   @media screen and (max-width: 970px) {
     max-width: 80%;
     padding: 15% 0;

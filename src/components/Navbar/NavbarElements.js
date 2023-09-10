@@ -25,8 +25,8 @@ export const NavLogo = styled(LinkR)`
   position: fixed;
   top: 0;
   left: 10;
-  width: 30px;
-  height: 55px;
+  width: 50px;
+  height: auto;
 
   @media screen and (max-width: 896px) {
     display: none;

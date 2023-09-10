@@ -70,7 +70,7 @@ export const DecoOb = styled.div`
 `;
 
 export const ImageContent = styled.div`
-  padding: 0 15%;
+  padding: 0 7%;
 
   @media screen and (max-width: 970px) {
     padding: 0 20% 0 5%;
@@ -115,7 +115,7 @@ export const TitleH1 = styled.h1`
   font-weight: 900;
   font-size: 60px;
   text-align: left;
-  max-width: 870px;
+  /* max-width: 870px; */
 
   .br {
     white-space: pre-wrap;
@@ -151,7 +151,7 @@ export const TitleP = styled.p`
   font-size: 24px;
   font-weight: 200;
   text-align: left;
-  max-width: 520px;
+  max-width: 787px;
 
   @media screen and (max-width: 970px) {
     font-size: 20px;

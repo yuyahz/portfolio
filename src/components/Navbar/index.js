@@ -16,7 +16,7 @@ import {
   NavMail,
   Image,
 } from "./NavbarElements";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo.svg";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -42,9 +42,9 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: "#838383" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            {/* <NavLogo to="/" onClick={toggleHome} isClicked={false}>
+            <NavLogo to="/" onClick={toggleHome} isClicked={false}>
               <Image src={logo} id="" />
-            </NavLogo> */}
+            </NavLogo>
             <MobileIcon onClick={toggle}>
               <TiEquals />
             </MobileIcon>

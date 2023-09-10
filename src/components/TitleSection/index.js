@@ -46,7 +46,7 @@ const TitleSection = () => {
         <H1Content>
           <Parallax x={[0, 5]} tagOuter="figure">
             <TitleH1>
-              I am Yuya Hashirizaki
+              Yuya Hashirizaki
               <TitleH1 className="br">Vancouver-based UI / UX designer</TitleH1>
             </TitleH1>
           </Parallax>

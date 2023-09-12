@@ -4,10 +4,8 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  /* background: ${({ scrollNav }) =>
-    scrollNav ? "transparent" : "transparent"}; */
   font-size: 1.3rem;
-  width: 100px;
+  width: 120px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,7 +14,7 @@ export const Nav = styled.nav`
   z-index: 10;
   transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 
-  @media screen and (max-width: 896px) {
+  @media screen and (max-width: 960px) {
     background-color: transparent;
   }
 `;
@@ -25,11 +23,13 @@ export const NavLogo = styled(LinkR)`
   position: fixed;
   top: 0;
   left: 10;
-  width: 50px;
+  margin: 20px 0 0 200px;
+  width: 70px;
   height: auto;
 
-  @media screen and (max-width: 896px) {
-    display: none;
+  @media screen and (max-width: 959.99px) {
+    margin: 10px 0 0 10px;
+    width: 60px;
   }
 `;
 
@@ -42,22 +42,23 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 960px;
 `;
 
-export const MobileIcon = styled.div`
-  display: none;
+// export const MobileIcon = styled.div`
+//   display: none;
 
-  @media screen and (max-width: 896px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: -10px;
-    transform: translate(-100%, 60%);
-    font-size: 1.7rem;
-    cursor: pointer;
-  }
-`;
+//   @media screen and (max-width: 959.99px) {
+//     color: #fe0000;
+//     display: block;
+//     position: absolute;
+//     top: 40px;
+//     right: 15px;
+//     transform: translate(-100%, 60%);
+//     font-size: 1.7rem;
+//     cursor: pointer;
+//   }
+// `;
 
 // export const NavSNS = styled.div`
 //   height: 140px;
@@ -78,7 +79,7 @@ export const NavMenu = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 896px) {
+  @media screen and (max-width: 960px) {
     display: none;
   }
 `;
@@ -87,27 +88,31 @@ export const NavItem = styled.div`
   height: auto;
 
   .aboutSec {
-    margin: 34px 0;
+    margin: 30px 0;
   }
 
   .larrySec {
-    margin: 34px 0;
+    margin: 30px 0;
   }
 
   .vectorSec {
-    margin: 34px 0;
+    margin: 30px 0;
   }
 
   .uiSec {
-    margin: 44px 0;
+    margin: 40px 0;
   }
 
   .darumaSec {
-    margin: 44px 0;
+    margin: 40px 0;
+  }
+
+  .worksSec {
+    margin: 30px 0;
   }
 
   .contactSec {
-    margin: 44px 0;
+    margin: 40px 0;
   }
 `;
 
@@ -122,7 +127,7 @@ export const NavLinks = styled(LinkS)`
   &.active {
     font-weight: 900;
     padding: 10px;
-    border: solid 1px #fe0000;
+    border: solid 2px #fe0000;
     background-color: white;
     border-radius: 34px;
     transition: 1s cubic-bezier(0.33, 1, 0.68, 1);

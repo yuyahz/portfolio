@@ -101,3 +101,8 @@ export const homeDaruma = {
   primary: false,
   primarySns: true,
 };
+
+export const burger = {
+  id: "burger-menu",
+  darkBurger: true,
+};

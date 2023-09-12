@@ -12,7 +12,7 @@ export const InfoWrapper = styled.div`
   display: grid;
   position: relative;
   z-index: 1;
-  height: 100vh;
+  height: 60vh;
   width: 100%;
   max-width: 1500px;
   margin-right: auto;
@@ -33,7 +33,7 @@ export const InfoRow = styled.div`
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  -webkit- transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
 
   @media screen and (max-width: 970px) {
     grid-template-columns: minmax(400px, 1fr) 190px;

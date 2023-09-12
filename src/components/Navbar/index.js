@@ -8,7 +8,7 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
-  MobileIcon,
+  // MobileIcon,
   NavMenu,
   NavItem,
   NavLinks,
@@ -39,16 +39,16 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#838383" }}>
-        <Nav scrollNav={scrollNav}>
-          <NavbarContainer>
-            <NavLogo to="/" onClick={toggleHome} isClicked={false}>
-              <Image src={logo} id="" />
-            </NavLogo>
-            <MobileIcon onClick={toggle}>
-              <TiEquals />
-            </MobileIcon>
-            {/* <NavSNS>
+      {/* <IconContext.Provider value={{ color: "#fe0000" }}> */}
+      <Nav scrollNav={scrollNav}>
+        <NavbarContainer>
+          <NavLogo to="/" onClick={toggleHome} isClicked={false}>
+            <Image src={logo} id="" />
+          </NavLogo>
+          {/* <MobileIcon onClick={toggle}>
+              <TiEquals size={40} />
+            </MobileIcon> */}
+          {/* <NavSNS>
               <a target="_blank" href="https://dribbble.com/Hashirizaki">
                 <AiIcons.AiOutlineDribbble />
               </a>
@@ -65,103 +65,117 @@ const Navbar = ({ toggle }) => {
                 <AiIcons.AiFillLinkedin />
               </a>
             </NavSNS> */}
-            <NavMenu>
-              <NavItem>
-                <NavLinks
-                  className="aboutSec"
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={0}
-                  activeClass="active"
-                >
-                  About
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  className="larrySec"
-                  to="larry"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={0}
-                  activeClass="active"
-                >
-                  Larry
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  className="vectorSec"
-                  to="vector"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={0}
-                  activeClass="active"
-                >
-                  Vector
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  className="uiSec"
-                  to="dailyUi"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={0}
-                  activeClass="active"
-                >
-                  DailyUI
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  className="darumaSec"
-                  to="daruma"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={0}
-                  activeClass="active"
-                >
-                  Daruma
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  className="contactSec"
-                  to="contact"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={0}
-                  activeClass="active"
-                >
-                  Contact
-                </NavLinks>
-              </NavItem>
-            </NavMenu>
-            {/* <NavMail>
+          <NavMenu>
+            <NavItem>
+              <NavLinks
+                className="aboutSec"
+                to="about"
+                smooth={true}
+                duration={700}
+                spy={true}
+                exact="true"
+                offset={0}
+                activeClass="active"
+              >
+                About
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                className="larrySec"
+                to="larry-pic"
+                smooth={true}
+                duration={700}
+                spy={true}
+                exact="true"
+                offset={0}
+                activeClass="active"
+              >
+                Larry
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                className="vectorSec"
+                to="vector-pic"
+                smooth={true}
+                duration={700}
+                spy={true}
+                exact="true"
+                offset={0}
+                activeClass="active"
+              >
+                Vector
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                className="uiSec"
+                to="ui-pic"
+                smooth={true}
+                duration={700}
+                spy={true}
+                exact="true"
+                offset={0}
+                activeClass="active"
+              >
+                DailyUI
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                className="darumaSec"
+                to="daruma-pic"
+                smooth={true}
+                duration={700}
+                spy={true}
+                exact="true"
+                offset={0}
+                activeClass="active"
+              >
+                Daruma
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                className="worksSec"
+                to="works"
+                smooth={true}
+                duration={700}
+                spy={true}
+                exact="true"
+                offset={0}
+                activeClass="active"
+              >
+                Works
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                className="contactSec"
+                to="contact"
+                smooth={true}
+                duration={700}
+                spy={true}
+                exact="true"
+                offset={0}
+                activeClass="active"
+              >
+                Contact
+              </NavLinks>
+            </NavItem>
+          </NavMenu>
+          {/* <NavMail>
               <a target="_blank" href="mailto:hashirizaki61@gmail.com">
                 <HiMail />
               </a>
             </NavMail> */}
-            {/* <NavBtn>
+          {/* <NavBtn>
               <NavBtnLink to="/signin">Sign In</NavBtnLink>
             </NavBtn> */}
-          </NavbarContainer>
-        </Nav>
-      </IconContext.Provider>
+        </NavbarContainer>
+      </Nav>
+      {/* </IconContext.Provider> */}
     </>
   );
 };

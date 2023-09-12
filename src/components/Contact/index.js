@@ -4,13 +4,12 @@ import {
   ContactContainer,
   ContactIconFrame,
   ContactText,
-  ContactText1,
-  ContactText2,
-  ContactText3,
+  // ContactTickerTape,
+  // ContactText1,
+  // ContactText2,
+  // ContactText3,
   ContactEmail,
   ContactLinkedIn,
-  NavMail,
-  Image,
 } from "./ContactElements";
 import { HiMail } from "react-icons/hi";
 import * as AiIcons from "react-icons/ai";
@@ -18,12 +17,7 @@ import * as AiIcons from "react-icons/ai";
 const Contact = () => {
   return (
     <ContactContainer id="contact">
-      <ContactText1>Let's get in touch</ContactText1>
-      <ContactText2>via and let’s discuss</ContactText2>
-      <ContactText3>how I can help you.</ContactText3>
-      <ContactText>
-        Let's get in touch via and let’s discuss how I can help you.
-      </ContactText>
+      <ContactText>let’s discuss how I can help you.</ContactText>
       <ContactIconFrame>
         <ContactEmail>
           <a target="_blank" href="mailto:hashirizaki61@gmail.com">

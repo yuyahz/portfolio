@@ -82,7 +82,7 @@ export const ImageContent = styled.div`
 `;
 
 export const Image = styled.img`
-  max-width: 60%;
+  max-width: 65%;
   height: auto;
 
   @media screen and (max-width: 970px) {

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PicLarryContainer = styled.div`
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

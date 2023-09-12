@@ -21,17 +21,13 @@ export const FooterWrap = styled.div`
   @media screen and (max-width: 970px) {
     max-width: 600px;
   }
-
-  @media screen and (max-width: 520px) {
-    margin-top: 4rem;
-  }
 `;
 
 export const FooterLinksContainer = styled.div`
   display: flex;
   max-width: 1000px;
   width: 100%;
-  padding: 10% 0 3% 0;
+  padding: 13% 0 3% 0;
 
   .bottom {
     color: #010606;
@@ -56,7 +52,8 @@ export const FooterLinksContainer = styled.div`
 `;
 
 export const FooterClose = styled.h1`
-  color: #010606;
+  color: #fe0000;
+  font-family: "GT";
   font-size: 48px;
   margin-right: auto;
 
@@ -88,7 +85,8 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled(Link)`
-  color: #838383;
+  color: #fe0000;
+  font-family: "GT";
   justify-content: flex-start;
   cursor: pointer;
   text-decoration: none;

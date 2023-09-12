@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PicVectorContainer = styled.div`
+export const WorksContainer = styled.div`
   height: 50vh;
   background: #fbbc08;
   display: flex;

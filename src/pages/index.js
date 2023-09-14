@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 // import AboutParallax from "../components/AboutParallax";
 import About from "../components/About";
-import Ticker from "../components/Ticker";
+import Looper from "../components/Looper";
 import Contents from "../components/Contents";
 import {
   homeLarry,
@@ -35,7 +35,7 @@ const Index = () => {
       <Home />
       {/* <AboutParallax /> */}
       <About />
-      <Ticker />
+      <Looper />
       <PicLarry />
       <Contents {...homeLarry} />
       <PicVector />

@@ -47,10 +47,19 @@ const About = () => {
                 <h2>UI / UX </h2>
                 <h2 className="fancy-font">designer</h2>
               </div>
-              <h4>
-                challenging the status quo and creating an inclusive experience
-                through research and empathy.
-              </h4>
+              <div>
+                <h4>
+                  challenging the status quo and creating an inclusive
+                  experience through research and empathy.
+                </h4>
+              </div>
+              <div>
+                <h4>
+                  I believe that is supportive work culture is built on strong
+                  communication and relationships between the whole team
+                  through, and I am committed to that.
+                </h4>
+              </div>
             </AboutInnerWrapper>
           </FadeIn.Up>
         </Parallax>

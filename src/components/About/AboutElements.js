@@ -52,12 +52,18 @@ export const AboutInnerWrapper = styled.div`
   div {
     display: flex;
     &:nth-child(3) {
+      margin-bottom: 2.5rem;
+    }
+    &:nth-child(4) {
       margin-bottom: 2rem;
     }
 
     @media only screen and (max-width: 960px) {
       &:nth-child(3) {
         margin-bottom: 2.33vw;
+      }
+      &:nth-child(4) {
+        margin-bottom: 2vw;
       }
     }
 

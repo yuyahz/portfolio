@@ -36,14 +36,14 @@ export const Right = ({ children, delay, margin = "-50%" }) => (
 
 const FadeIn = styled.div`
   opacity: 0;
-  transition: opacity 1s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.6s ease, transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
 `;
 
 const FadeInUp = styled(FadeIn)`
   opacity: 0;
-  transition: opacity 1s ease, transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.6s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translateY(60px);
@@ -52,7 +52,7 @@ const FadeInUp = styled(FadeIn)`
 
 const FadeInDown = styled(FadeIn)`
   opacity: 0;
-  transition: 4s opacity 0.5s ease, transform 3s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 1s opacity 0.6s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translateY(-60px);
@@ -61,7 +61,7 @@ const FadeInDown = styled(FadeIn)`
 
 const FadeInLeft = styled(FadeIn)`
   opacity: 0;
-  transition: opacity 1s ease, transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.6s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translateX(-60px);
@@ -70,7 +70,7 @@ const FadeInLeft = styled(FadeIn)`
 
 const FadeInRight = styled(FadeIn)`
   opacity: 0;
-  transition: opacity 1s ease, transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.6s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translateX(60px);

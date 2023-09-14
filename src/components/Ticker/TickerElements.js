@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const TickerIndex = styled.div`
+  background-color: aqua;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const TickerContainer = styled.div`
   * {
     box-sizing: border-box;
@@ -59,8 +67,16 @@ export const TickerWrapper = styled.div`
 `;
 
 export const TickerItem = styled.div`
-  display: inline-block;
-  font-size: 4.5rem;
-  font-weight: 900;
+  /* display: inline-block; */
   color: #fe0000;
+  font-weight: 700;
+  font-size: 7rem;
+  -ms-user-select: none; /* IE 10+ */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  @media only screen and (max-width: 960px) {
+    font-size: 11.11vw;
+  }
 `;

@@ -8,6 +8,41 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  font-size: 16px;
+}
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  /* margin-bottom: 0.5em; */
+}
+h2 {
+  font-size: 2em;
+  /* margin-bottom: 0.75em; */
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  /* margin-bottom: 1em; */
+}
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  /* margin-bottom: 1.25em; */
+}
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  /* margin-bottom: 1.5em; */
+}
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+p {
+  margin: 0 0 1.5em;
+}
+
 @font-face {
   font-family: "MyCase";
   src: url(https://www.dropbox.com/s/x3vr0gwwxw6oq0d/Larsseit-Thin.woff)
@@ -57,4 +92,12 @@
   font-family: "GT";
   src: url(../src/fonts/GT-Ultra-Fine-Thin-Italic.woff) format("woff"),
     url(../src/fonts/GT-Ultra-Fine-Thin-Italic.eot) format("eot");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "GT";
+  src: url(../src/fonts//GT-Ultra-Fine-Regular-Italic.woff) format("woff"),
+    url(../src/fonts/GT-Ultra-Fine-Regular-Italic.eot) format("eot");
+  font-weight: 500;
 }

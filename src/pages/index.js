@@ -1,26 +1,27 @@
 import React, { useState } from "react";
-import OpeningSection from "../components/Opening";
-import TitleSection from "../components/TitleSection";
-import InfoSection from "../components/InfoSection";
+import Home from "../components/Home";
+import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
+// import AboutParallax from "../components/AboutParallax";
+import About from "../components/About";
+import Ticker from "../components/Ticker";
+import Contents from "../components/Contents";
 import {
   homeLarry,
   homeVector,
   homeUI,
   homeDaruma,
   burger,
-} from "../components/InfoSection/Data";
-import Navbar from "../components/Navbar";
+} from "../components/Contents/Data";
 import PicLarry from "../components/PicLarry";
 import PicVector from "../components/PicVector";
 import PicDailyUi from "../components/PicDailyUI";
 import PicDaruma from "../components/PicDaruma";
-import Ticker from "../components/Ticker";
 import Works from "../components/Works";
 import Contact from "../components/Contact";
-import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 
-const Home = () => {
+const Index = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -31,17 +32,18 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} {...burger} />
       <Navbar toggle={toggle} />
-      <OpeningSection />
-      <TitleSection />
-      <PicLarry />
-      <InfoSection {...homeLarry} />
-      <PicVector />
-      <InfoSection {...homeVector} />
-      <PicDailyUi />
-      <InfoSection {...homeUI} />
-      <PicDaruma />
-      <InfoSection {...homeDaruma} />
+      <Home />
+      {/* <AboutParallax /> */}
+      <About />
       <Ticker />
+      <PicLarry />
+      <Contents {...homeLarry} />
+      <PicVector />
+      <Contents {...homeVector} />
+      <PicDailyUi />
+      <Contents {...homeUI} />
+      <PicDaruma />
+      <Contents {...homeDaruma} />
       <Works />
       <Contact />
       <Footer />
@@ -49,4 +51,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Index;

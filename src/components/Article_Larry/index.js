@@ -30,7 +30,7 @@ import LarryArticle_9 from "../../images/LarryArticle_9.png";
 import LarryMovie_1 from "../../videos/LarryMovie_1.mp4";
 import LarryMovie_2 from "../../videos/LarryMovie_2.mp4";
 
-const Article_Larry = () => {
+const Article_Larry = (props) => {
   return (
     <LarryContainer id="larry">
       <motion.div

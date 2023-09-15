@@ -10,7 +10,14 @@ export const AboutContainer = styled.div`
 export const AboutWrapper = styled.div`
   width: 100%;
   max-width: 1140px;
-  margin: 0 30px 0 30px;
+
+  @media only screen and (max-width: 1280px) {
+    margin: 0 30px 0 110px;
+  }
+
+  @media only screen and (max-width: 960px) {
+    margin: 0 30px 0 30px;
+  }
 
   h2 {
     color: #fe0000;
@@ -43,10 +50,10 @@ export const AboutWrapper = styled.div`
 `;
 
 export const AboutInnerWrapper = styled.div`
-  margin-bottom: 30rem;
+  margin-bottom: 17rem;
 
   @media only screen and (max-width: 960px) {
-    margin-bottom: 33.33vw;
+    margin-bottom: 26.33vw;
   }
 
   div {

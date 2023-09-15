@@ -1,12 +1,126 @@
-import React from "react";
-// import { Parallax } from "react-scroll-parallax";
-import { WorksContainer, Image } from "./WorksElements";
-// import Vector from "../../images/Vector.png";
+import { React } from "react";
+import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
+import styled, { keyframes } from "styled-components";
+import * as FadeIn from "../FadeIn";
+import { Button } from "../ButtonElements";
+import {
+  WorksContainer,
+  WorksWrapper,
+  WorksInnerWrapper,
+  WorksTitle,
+  BtnWrap,
+} from "./WorksElements";
 
-const Works = () => {
+const Works = ({ id, to, dark, btnColor, primary, title }) => {
+  const fadeLeft = {
+    hidden: { opacity: 0, x: -200 },
+    visible: { opacity: 1, x: 0 },
+  };
+
+  const rotate = keyframes`
+  0% {
+        transform: translate(0%,0);
+    }
+    25% {
+        transform: translate(10%,0)
+    }
+    50% {
+        transform: translate(15%,0)
+    }
+    75% {
+        transform: translate(10%,0)
+    }
+    100% {
+        transform: translate(0%,0)
+    }
+`;
   return (
-    <WorksContainer id="works">{/* <Image src={Vector} /> */}</WorksContainer>
+    <WorksContainer id={id}>
+      <FadeIn.Down>
+        <WorksWrapper>
+          <WorksInnerWrapper>
+            <WorksTitle to={to}>{title}</WorksTitle>
+          </WorksInnerWrapper>
+        </WorksWrapper>
+      </FadeIn.Down>
+    </WorksContainer>
   );
 };
 
 export default Works;
+
+// import React from "react";
+// import { BrowserRouter, Link, Switch, Route, NavLink } from "react-router-dom";
+// import Article_Larry from "../Article_Larry";
+// import styled, { keyframes } from "styled-components";
+// import { motion } from "framer-motion";
+// import * as FadeIn from "../FadeIn";
+// import { WorksContainer, WorksWrapper } from "./WorksElements";
+// import { TiTag } from "react-icons/ti";
+
+// const Works = () => {
+//   const fadeLeft = {
+//     hidden: { opacity: 0, x: -200 },
+//     visible: { opacity: 1, x: 0 },
+//   };
+
+//   const rotate = keyframes`
+//   0% {
+//         transform: translate(0%,0);
+//     }
+//     25% {
+//         transform: translate(10%,0)
+//     }
+//     50% {
+//         transform: translate(15%,0)
+//     }
+//     75% {
+//         transform: translate(10%,0)
+//     }
+//     100% {
+//         transform: translate(0%,0)
+//     }
+// `;
+
+//   return (
+//     <BrowserRouter>
+//       <WorksContainer>
+//         <WorksWrapper>
+//           <div>
+//             <Link to="/Article_Larry">Larry</Link>
+//           </div>
+//           <Switch>
+//             <Route path="/Article_Larry">
+//               <Article_Larry />
+//             </Route>
+//           </Switch>
+//         </WorksWrapper>
+//       </WorksContainer>
+//     </BrowserRouter>
+//   );
+//   //   <BrowserRouter>
+//   //     <WorksContainer>
+//   //       <WorksWrapper>
+//   //         <Link to={larryPage}>LAry</Link>
+//   //       </WorksWrapper>
+//   //     </WorksContainer>
+//   //   </BrowserRouter>
+//   // );
+// };
+
+// export default Works;
+
+// // hover effect for a tag
+
+// // <a href="#">Hover this link</a>
+
+// // /* Presentational Styles */
+// // body {
+// // 	display: grid;
+// //   font-family: 'Poppins', sans-serif;
+// //   font-size: 27px;
+// //   font-weight: 700;
+// //   height: 100vh;
+// // 	place-items: center;
+// // }

@@ -13,6 +13,12 @@ import {
   homeDaruma,
   burger,
 } from "../components/Contents/Data";
+import {
+  worksLarry,
+  worksVector,
+  worksDaruma,
+  worksArtDirections,
+} from "../components/Works/Data";
 import PicLarry from "../components/PicLarry";
 import PicVector from "../components/PicVector";
 import PicDailyUi from "../components/PicDailyUI";
@@ -44,7 +50,10 @@ const Index = () => {
       <Contents {...homeUI} />
       <PicDaruma />
       <Contents {...homeDaruma} />
-      <Works />
+      <Works {...worksLarry} />
+      <Works {...worksVector} />
+      <Works {...worksDaruma} />
+      <Works {...worksArtDirections} />
       <Contact />
       <Footer />
     </>

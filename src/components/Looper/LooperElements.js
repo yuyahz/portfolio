@@ -33,7 +33,7 @@ export const LooperContainer = styled.div`
     line-height: 1.5;
 
     @media only screen and (max-width: 960px) {
-      font-size: 6.6vw;
+      font-size: 6.62vw;
     }
   }
 

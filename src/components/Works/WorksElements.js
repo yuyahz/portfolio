@@ -27,6 +27,20 @@ export const WorksInnerWrapper = styled.div`
   }
 `;
 
+export const WorksNumber = styled.div`
+  color: #fe0000;
+  font-family: "GT";
+  font-weight: 500;
+  font-size: 2.5rem;
+  text-decoration: none;
+  padding-top: 1.5rem;
+
+  @media only screen and (max-width: 960px) {
+    font-size: 5.56vw;
+    padding-top: 2.5vw;
+  }
+`;
+
 export const WorksTitle = styled(Link)`
   color: #fe0000;
   position: relative;

@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import ScrollToTop from "../components/ScrollTop";
 import Article_Daruma from "../components/Article_Daruma";
 import Footer from "../components/Footer";
 
-const darumaPage = () => {
+const DarumaPage = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-      <>
-        <ScrollToTop />
-        <Article_Daruma />
-        <Footer />
-      </>
+    <>
+      <ScrollToTop />
+      <Article_Daruma />
+      <Footer />
+    </>
   );
 };
 
-export default darumaPage;
+export default DarumaPage;

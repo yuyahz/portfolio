@@ -17,6 +17,7 @@ import {
   worksLarry,
   worksVector,
   worksDaruma,
+  worksDailyUi,
   worksArtDirections,
 } from "../components/Works/Data";
 import PicLarry from "../components/PicLarry";
@@ -53,6 +54,7 @@ const Index = () => {
       <Works {...worksLarry} />
       <Works {...worksVector} />
       <Works {...worksDaruma} />
+      <Works {...worksDailyUi} />
       <Works {...worksArtDirections} />
       <Contact />
       <Footer />

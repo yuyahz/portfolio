@@ -1,24 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Parallax } from "react-scroll-parallax";
 import {
-  VectorContainer,
-  VectorTitle,
-  VectorGridHalf,
-  VectorGridHalfBottom,
-  VectorWrapper,
+  ArticleContainer,
+  ArticleTitle,
+  ArticleGridHalf,
+  ArticleGridHalfBottom,
+  ArticleWrapper,
   Icon,
   IconWrapper,
-  VectorH1,
-  VectorH2,
-  VectorP,
-  VectorCaption,
+  Article_h3,
+  Article_p,
+  ArticleCaption,
   Image,
   ImageTop,
   ImageGrid,
   VideoBg,
   Feedback,
-} from "./VectorElements";
+} from "./ArticleElements";
 import VectorArticle_1 from "../../images/VectorArticle_1.png";
 import VectorArticle_2 from "../../images/VectorArticle_2.png";
 import VectorArticle_3 from "../../images/VectorArticle_3.png";
@@ -37,7 +35,7 @@ import VectorMovie_1 from "../../videos/VectorMovie_1.mp4";
 
 const Article_Vector = () => {
   return (
-    <VectorContainer id="vector">
+    <ArticleContainer id="vector">
       <motion.div
         animate={{
           x: 0,
@@ -56,41 +54,39 @@ const Article_Vector = () => {
         }}
       >
         <IconWrapper>
-          <Icon to="/">Yuya.Works</Icon>
+          <Icon to="/">Home</Icon>
         </IconWrapper>
-        <VectorWrapper>
-          <VectorTitle>
+        <ArticleWrapper>
+          <ArticleTitle>
             Design lead for Vector International Academy
-          </VectorTitle>
-          <VectorH2>
+          </ArticleTitle>
+          <Article_p>
             I was hired by Vector Internationa Academy to recreate and modernize
             their websites. I have applied design innovation to their website
             and brochure.
-          </VectorH2>
-          <Parallax y={[-15, 15]} tagOuter="figure">
-            <div style={{ textAlign: "center" }}>
-              <ImageTop src={VectorArticle_1} id="" />
-            </div>
-          </Parallax>
-          <VectorH1>Background</VectorH1>
-          <VectorP>
+          </Article_p>
+          <div style={{ textAlign: "center" }}>
+            <ImageTop src={VectorArticle_1} id="" />
+          </div>
+          <Article_h3>Background</Article_h3>
+          <Article_p>
             In 2020 I have dedicated my time to acquire new programming skills.
             and one of my friends suggested to me to provide my design for a
             vector international academy as a freelance designer. ​ After few
             meetings, I was so pleased that my portfolio was accepted by them so
             that I was trying to do dedicated to my expressions for vector's
             requirements.
-          </VectorP>
-          <VectorP style={{ marginTop: "1.5rem" }}>
+          </Article_p>
+          <Article_p style={{ marginTop: "1.5rem" }}>
             An idea that first seemed exciting and intriguing, and turned into a
             journey full of excitement, surprises with lots of ups and downs.
-          </VectorP>
+          </Article_p>
           <div style={{ textAlign: "center" }}>
             <Image style={{ marginBottom: "0" }} src={VectorArticle_2} id="" />
           </div>
-          <VectorCaption>Flow sheet</VectorCaption>
-          <VectorH1>How it all started</VectorH1>
-          <VectorP>
+          <ArticleCaption>Flow sheet</ArticleCaption>
+          <Article_h3>How it all started</Article_h3>
+          <Article_p>
             The School had built an own website already. But they have wanted to
             create a more intriguing website for new content. In the early days,
             my primary process of an idea in order to proceed with this project
@@ -99,14 +95,14 @@ const Article_Vector = () => {
             facilitate communication. and to find the right problems I asked
             myself what the previous site does intentionally or what service am
             I building? I approached this project from these things.
-          </VectorP>
-          <VectorH1 style={{ marginTop: "5rem" }}>My role</VectorH1>
-          <VectorP>
+          </Article_p>
+          <Article_h3 style={{ marginTop: "5rem" }}>My role</Article_h3>
+          <Article_p>
             I worked on multiple projects related to Vector as a UI/UX designer
             together with the development team, including the main site and
             brochure. In addition to those, I gave input about the content.
-          </VectorP>
-          <VectorGridHalf>
+          </Article_p>
+          <ArticleGridHalf>
             <div style={{ textAlign: "center" }}>
               <ImageGrid
                 style={{ maxWidth: "100%" }}
@@ -121,20 +117,20 @@ const Article_Vector = () => {
                 id=""
               />
             </div>
-          </VectorGridHalf>
-          <VectorCaption>
+          </ArticleGridHalf>
+          <ArticleCaption>
             The prototype that was first proposed to the client.
-          </VectorCaption>
-          <VectorH1>Challenge</VectorH1>
-          <VectorP>
+          </ArticleCaption>
+          <Article_h3>Challenge</Article_h3>
+          <Article_p>
             The big challenge the client had was how to build an accessible way
             to reach the contents of testimonials or significant sections
             easily, and create an intriguing and more powerful website. After
             several meetings, I heard about the challenges of this project and
             the concept of the most useful site that the client requires, and
             then proposed the above prototype.
-          </VectorP>
-          <VectorGridHalf>
+          </Article_p>
+          <ArticleGridHalf>
             <div style={{ textAlign: "center" }}>
               <ImageGrid
                 style={{ maxWidth: "100%" }}
@@ -149,18 +145,18 @@ const Article_Vector = () => {
                 id=""
               />
             </div>
-          </VectorGridHalf>
-          <VectorCaption style={{ marginBottom: "2.5rem" }}>
+          </ArticleGridHalf>
+          <ArticleCaption style={{ marginBottom: "2.5rem" }}>
             The client suggested load the video when LapTop boot up.
-          </VectorCaption>
+          </ArticleCaption>
           <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
             <Image style={{ margin: "0" }} src={VectorArticle_7} id="" />
           </div>
-          <VectorCaption>
+          <ArticleCaption>
             Finalized top page design promoting the vector and its feature.
-          </VectorCaption>
-          <VectorH1>Solution</VectorH1>
-          <VectorP>
+          </ArticleCaption>
+          <Article_h3>Solution</Article_h3>
+          <Article_p>
             Great emphasis was placed on content unification and adaptability to
             the individual needs of customers. And how to incorporate dynamic
             content such as slides that were not on the previous site. We wanted
@@ -168,9 +164,9 @@ const Article_Vector = () => {
             students or who weren't very frequent visitors. The content on this
             site is designed to make it easy for all customer groups to find
             relevant information.
-          </VectorP>
-          <VectorH1 style={{ marginTop: "5rem" }}>Final thoughts</VectorH1>
-          <VectorP>
+          </Article_p>
+          <Article_h3 style={{ marginTop: "5rem" }}>Final thoughts</Article_h3>
+          <Article_p>
             I thought that the depth of involvement of designers and developers
             in the project by the time it is completed will change depending on
             the budget and period. What I thought about this project was to
@@ -181,25 +177,25 @@ const Article_Vector = () => {
             the challenge was to have a consistent design, it was essential to
             have adaptability to it. It was a great experience, a project that
             reminded me of how to find out the client's core intention.
-          </VectorP>
+          </Article_p>
           <div style={{ textAlign: "center", margin: "6rem 0 0.5rem 0" }}>
             <Image style={{ margin: "0" }} src={VectorArticle_8} id="" />
           </div>
-          <VectorCaption style={{ marginBottom: "2.5rem" }}>
+          <ArticleCaption style={{ marginBottom: "2.5rem" }}>
             Phase one of the interactive activities page.
-          </VectorCaption>
+          </ArticleCaption>
           <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
             <Image style={{ margin: "0" }} src={VectorArticle_9} id="" />
           </div>
-          <VectorCaption style={{ marginBottom: "2.5rem" }}>
+          <ArticleCaption style={{ marginBottom: "2.5rem" }}>
             Finalized interactive activities page and menu bar design.
-          </VectorCaption>
+          </ArticleCaption>
           <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
             <Image style={{ margin: "0" }} src={VectorArticle_10} id="" />
           </div>
-          <VectorCaption style={{ marginBottom: "0" }}>
+          <ArticleCaption style={{ marginBottom: "0" }}>
             Finalized remainning page design.
-          </VectorCaption>
+          </ArticleCaption>
           <div style={{ textAlign: "center" }}>
             <VideoBg
               autoPlay
@@ -210,8 +206,8 @@ const Article_Vector = () => {
               type="video/mp4"
             />
           </div>
-          <VectorCaption>Contact form motion prototype</VectorCaption>
-          <VectorGridHalfBottom>
+          <ArticleCaption>Contact form motion prototype</ArticleCaption>
+          <ArticleGridHalfBottom>
             <div style={{ textAlign: "center" }}>
               <ImageGrid
                 style={{ maxWidth: "100%", margin: "0" }}
@@ -226,22 +222,20 @@ const Article_Vector = () => {
                 id=""
               />
             </div>
-          </VectorGridHalfBottom>
-          <VectorCaption>
+          </ArticleGridHalfBottom>
+          <ArticleCaption>
             Finalized brochure design for Japanese end-user.
-          </VectorCaption>
-          <Parallax y={[-15, 10]} tagOuter="figure">
-            <div style={{ textAlign: "center", margin: "8rem 0 7rem 0" }}>
-              <ImageTop style={{ margin: "0" }} src={VectorArticle_13} id="" />
-            </div>
-          </Parallax>
-          <VectorH1>The outcome</VectorH1>
-          <VectorP>
+          </ArticleCaption>
+          <div style={{ textAlign: "center", margin: "8rem 0 7rem 0" }}>
+            <ImageTop style={{ margin: "0" }} src={VectorArticle_13} id="" />
+          </div>
+          <Article_h3>The outcome</Article_h3>
+          <Article_p>
             Through this project, I have found out challenges gradually on each
             stage and developed and designed the website to a stage that was
             functional and valuable.
-          </VectorP>
-          <VectorP style={{ marginTop: "1.5rem" }}>
+          </Article_p>
+          <Article_p style={{ marginTop: "1.5rem" }}>
             Looking back at it now I can surely say it's been quite a ride. A
             hightly valuable experience that has still left an impact on me and
             my career today. It helps me better understand the working
@@ -251,7 +245,7 @@ const Article_Vector = () => {
             However, once the product lets it dive into the world and turn into
             “alive” is the time when the real journey actually launches. Now
             that I think about it, I am so excited.
-          </VectorP>
+          </Article_p>
           {/* feedback section */}
           <Feedback>
             <div style={{ textAlign: "center" }}>
@@ -261,12 +255,12 @@ const Article_Vector = () => {
                 style={{ width: "4rem", marginBottom: "1rem" }}
               />
             </div>
-            <VectorH1 className="title">
+            <Article_h3 className="title">
               " He is a versatile designer who creates a wide range from modern
               to traditional. I believe his patience with a string of requests
               and revisions from me eventually enabled my website to be born. "
-            </VectorH1>
-            <VectorP style={{ fontSize: "14px", lineHeight: "1.5" }}>
+            </Article_h3>
+            <Article_p style={{ fontSize: "14px", lineHeight: "1.5" }}>
               His design first caught my eyes when I had been spending long time
               looking for a way to embody the unique feature of my school
               business. His astute sense of identifying the perfect colors,
@@ -275,12 +269,12 @@ const Article_Vector = () => {
               revisions from me eventually enabled my website to be born. He is
               a versatile designer who creates a wide range from modern to
               traditional.
-            </VectorP>
+            </Article_p>
           </Feedback>
           {/* feedback section */}
-        </VectorWrapper>
+        </ArticleWrapper>
       </motion.div>
-    </VectorContainer>
+    </ArticleContainer>
   );
 };
 

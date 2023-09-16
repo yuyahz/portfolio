@@ -5,18 +5,15 @@ import { FiGithub } from "react-icons/fi";
 
 import {
   FooterContainer,
-  FooterWrap,
-  FooterLinksContainer,
-  FooterClose,
+  FooterWrapper,
   FooterLinksWrapper,
-  FooterLinkItems,
-  FooterLink,
+  FootertText,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
-  WebsiteRights,
   SocialIcons,
   SocialIconLink,
+  // WebsiteRights,
 } from "./FooterElements";
 
 const Footer = () => {
@@ -26,15 +23,10 @@ const Footer = () => {
 
   return (
     <FooterContainer>
-      <FooterWrap>
-        <FooterLinksContainer>
-          <FooterClose>Thank you.</FooterClose>
-        </FooterLinksContainer>
-        {/* <FooterLinksContainer>
-          <FooterClose className="bottom">
-            Let's get in touch via and let’s discuss how I can help you.
-          </FooterClose>
-        </FooterLinksContainer> */}
+      <FooterWrapper>
+        <FooterLinksWrapper>
+          <FootertText>Thank you.</FootertText>
+        </FooterLinksWrapper>
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggleHome}>
@@ -73,7 +65,7 @@ const Footer = () => {
             </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>
-      </FooterWrap>
+      </FooterWrapper>
     </FooterContainer>
   );
 };

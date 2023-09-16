@@ -8,11 +8,12 @@ import {
   WorksContainer,
   WorksWrapper,
   WorksInnerWrapper,
+  WorksNumber,
   WorksTitle,
   BtnWrap,
 } from "./WorksElements";
 
-const Works = ({ id, to, dark, btnColor, primary, title }) => {
+const Works = ({ id, to, title, number }) => {
   const fadeLeft = {
     hidden: { opacity: 0, x: -200 },
     visible: { opacity: 1, x: 0 },
@@ -40,6 +41,7 @@ const Works = ({ id, to, dark, btnColor, primary, title }) => {
       <FadeIn.Down>
         <WorksWrapper>
           <WorksInnerWrapper>
+            <WorksNumber>{number}</WorksNumber>
             <WorksTitle to={to}>{title}</WorksTitle>
           </WorksInnerWrapper>
         </WorksWrapper>
@@ -108,19 +110,3 @@ export default Works;
 //   //   </BrowserRouter>
 //   // );
 // };
-
-// export default Works;
-
-// // hover effect for a tag
-
-// // <a href="#">Hover this link</a>
-
-// // /* Presentational Styles */
-// // body {
-// // 	display: grid;
-// //   font-family: 'Poppins', sans-serif;
-// //   font-size: 27px;
-// //   font-weight: 700;
-// //   height: 100vh;
-// // 	place-items: center;
-// // }

@@ -2,7 +2,7 @@ import React from "react";
 // import { Parallax } from "react-scroll-parallax";
 import {
   ContactContainer,
-  ContactIconFrame,
+  ContactIconWrapper,
   ContactText,
   // ContactTickerTape,
   // ContactText1,
@@ -17,8 +17,9 @@ import * as AiIcons from "react-icons/ai";
 const Contact = () => {
   return (
     <ContactContainer id="contact">
-      <ContactText>let’s discuss how I can help you.</ContactText>
-      <ContactIconFrame>
+      <ContactText>Let’s discuss</ContactText>
+      <ContactText>How I can help you :)</ContactText>
+      <ContactIconWrapper>
         <ContactEmail>
           <a target="_blank" href="mailto:hashirizaki61@gmail.com">
             <HiMail className="link" />
@@ -32,7 +33,7 @@ const Contact = () => {
             <AiIcons.AiFillLinkedin className="link" />
           </a>
         </ContactLinkedIn>
-      </ContactIconFrame>
+      </ContactIconWrapper>
     </ContactContainer>
   );
 };

@@ -5,7 +5,7 @@ export const FooterContainer = styled.footer`
   background: #faf8f6;
 `;
 
-export const FooterWrap = styled.div`
+export const FooterWrapper = styled.div`
   padding: 0 24px;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ export const FooterWrap = styled.div`
   }
 `;
 
-export const FooterLinksContainer = styled.div`
+export const FooterLinksWrapper = styled.div`
   display: flex;
   max-width: 1000px;
   width: 100%;
@@ -51,7 +51,7 @@ export const FooterLinksContainer = styled.div`
   }
 `;
 
-export const FooterClose = styled.h1`
+export const FootertText = styled.h1`
   color: #fe0000;
   font-family: "GT";
   font-size: 48px;

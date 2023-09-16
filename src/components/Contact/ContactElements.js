@@ -1,17 +1,20 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  /* max-width: 1500px; */
-  height: 50vh;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   background: #faf8f6;
+
+  @media only screen and (max-width: 960px) {
+    height: 62.5vw;
+  }
 `;
 
-export const ContactIconFrame = styled.div`
+export const ContactIconWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,19 +22,20 @@ export const ContactIconFrame = styled.div`
 
 export const ContactText = styled.div`
   color: #010606;
-  font-size: 44px;
-  font-weight: 600;
-  letter-spacing: 1.4px;
-  padding: 5% 15px 3% 15px;
+  font-size: 3rem;
+  font-weight: 300;
   text-align: center;
 
-  @media screen and (max-width: 960px) and (min-width: 520.99px) {
-    font-size: 34px;
+  &:nth-child(2) {
+    margin: 0.5rem 0 3rem 0;
   }
 
-  @media screen and (max-width: 520px) {
-    font-size: 24px;
-    padding-bottom: 10%;
+  @media only screen and (max-width: 960px) {
+    font-size: 4.44vw;
+
+    &:nth-child(2) {
+      margin: 0.5rem 0 3.33vw 0;
+    }
   }
 `;
 

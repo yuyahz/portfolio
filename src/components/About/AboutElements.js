@@ -8,6 +8,7 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutWrapper = styled.div`
+  background: #faf8f6;
   width: 100%;
   max-width: 1140px;
 
@@ -50,8 +51,8 @@ export const AboutWrapper = styled.div`
 `;
 
 export const AboutInnerWrapper = styled.div`
+  background: #faf8f6;
   margin-bottom: 17rem;
-
   @media only screen and (max-width: 960px) {
     margin-bottom: 26.33vw;
   }
@@ -85,6 +86,10 @@ export const AboutInnerWrapper = styled.div`
       }
     }
   }
+`;
+
+export const AboutImageWrapper = styled.div`
+  padding: 1px;
 `;
 
 export const AboutImage = styled.img`

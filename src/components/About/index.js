@@ -5,6 +5,7 @@ import {
   AboutContainer,
   AboutWrapper,
   AboutInnerWrapper,
+  AboutImageWrapper,
   AboutImage,
   // Deco,
   // DecoOb,
@@ -30,7 +31,9 @@ const About = () => {
       <AboutWrapper>
         <Parallax y={[10, -10]}>
           <FadeIn.Up>
-            <AboutImage src={HeadShot} />
+            <AboutImageWrapper>
+              <AboutImage src={HeadShot} />
+            </AboutImageWrapper>
           </FadeIn.Up>
         </Parallax>
         <Parallax y={[-5, 5]}>

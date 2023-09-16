@@ -1,21 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Parallax } from "react-scroll-parallax";
 import {
-  DarumaContainer,
-  DarumaTitle,
-  DarumaWrapper,
+  ArticleContainer,
+  ArticleTitle,
+  ArticleWrapper,
   Icon,
   IconWrapper,
-  DarumaH1,
-  DarumaH2,
-  DarumaP,
-  DarumaCaption,
+  Article_h3,
+  Article_p,
+  ArticleCaption,
   Image,
   ImageTop,
   ImageDown,
   Feedback,
-} from "./DarumaElements";
+} from "./ArticleElements";
 import DarumaArticle_1 from "../../images/DarumaArticle_1.png";
 import DarumaArticle_2 from "../../images/DarumaArticle_2.png";
 import DarumaArticle_3 from "../../images/DarumaArticle_3.png";
@@ -26,7 +24,7 @@ import DarumaArticle_7 from "../../images/DarumaArticle_7.png";
 
 const Article_Daruma = () => {
   return (
-    <DarumaContainer id="daruma">
+    <ArticleContainer id="daruma">
       <motion.div
         animate={{
           x: 0,
@@ -45,58 +43,56 @@ const Article_Daruma = () => {
         }}
       >
         <IconWrapper>
-          <Icon to="/">Yuya.Works</Icon>
+          <Icon to="/">Home</Icon>
         </IconWrapper>
-        <DarumaWrapper>
-          <DarumaTitle>
+        <ArticleWrapper>
+          <ArticleTitle>
             Integrated building website project for specialty Korean cuisine and
             BBQ restaurant
-          </DarumaTitle>
-          <DarumaH2>
+          </ArticleTitle>
+          <Article_p>
             The restaurant asked me to create a new concept, rethinking to build
             a more smooth accessible site for customers. I took the
             responsibility to build a website from scratch.
-          </DarumaH2>
-          <Parallax y={[-15, 15]} tagOuter="figure">
-            <div style={{ textAlign: "center" }}>
-              <ImageTop src={DarumaArticle_1} id="" />
-            </div>
-          </Parallax>
-          <DarumaH1>Background</DarumaH1>
-          <DarumaP>
+          </Article_p>
+          <div style={{ textAlign: "center" }}>
+            <ImageTop src={DarumaArticle_1} id="" />
+          </div>
+          <Article_h3>Background</Article_h3>
+          <Article_p>
             The restaurant wanted to renew the website, a website that serves
             customers in Japan and people who come to Japan.
-          </DarumaP>
-          <DarumaP style={{ marginTop: "1.5rem" }}>
+          </Article_p>
+          <Article_p style={{ marginTop: "1.5rem" }}>
             Daruma had made a strategic choice to bring all of their offerings
             and new service under one website. Previously, The website had very
             ancient designs and made it difficult for clients to navigate the
             website and reach services offered.
-          </DarumaP>
-          {/* <DarumaP style={{ marginTop: "1.5rem" }}>
+          </Article_p>
+          {/* <Article_p style={{ marginTop: "1.5rem" }}>
             They had that those painful therefore Daruma asked me to create a
             renovated website have through my connection.
-          </DarumaP> */}
+          </Article_p> */}
           <div style={{ textAlign: "center" }}>
             <Image style={{ marginBottom: "0" }} src={DarumaArticle_2} id="" />
           </div>
-          <DarumaCaption>Flow sheet.</DarumaCaption>
-          <DarumaH1>The Goal</DarumaH1>
-          <DarumaP>
+          <ArticleCaption>Flow sheet.</ArticleCaption>
+          <Article_h3>The Goal</Article_h3>
+          <Article_p>
             The primary website idea is to allow users to easily create, share.
             Whether it immediately needs to reserve or just a night out with
             friends and familly in this restaurant. There are many similar
             websites already on the market, however, most of them provide very
             complexly and similar.
-          </DarumaP>
-          <DarumaP style={{ marginTop: "1.5rem" }}>
+          </Article_p>
+          <Article_p style={{ marginTop: "1.5rem" }}>
             The restaurant's main requirement has always been to keep the
             website usable, reliable, and functional. Aesthetically minimal,
             simple, and clean. There are no ads and also no tricks, but there is
             a consistent and intuitive user experience, providing value to our
             users, keeping them satisfied and engaged. And the client wanted to
             me create the website quickly.
-          </DarumaP>
+          </Article_p>
           <div style={{ textAlign: "center" }}>
             <Image
               style={{ marginBottom: "1rem" }}
@@ -104,9 +100,9 @@ const Article_Daruma = () => {
               id=""
             />
           </div>
-          <DarumaCaption style={{ marginBottom: "3rem" }}>
+          <ArticleCaption style={{ marginBottom: "3rem" }}>
             Images for wireframe.
-          </DarumaCaption>
+          </ArticleCaption>
           <div style={{ textAlign: "center" }}>
             <Image
               style={{ margin: "0 0 1rem 0" }}
@@ -114,23 +110,23 @@ const Article_Daruma = () => {
               id=""
             />
           </div>
-          <DarumaCaption>Images for website journey map.</DarumaCaption>
-          <DarumaH1>My role</DarumaH1>
-          <DarumaP>
+          <ArticleCaption>Images for website journey map.</ArticleCaption>
+          <Article_h3>My role</Article_h3>
+          <Article_p>
             I worked on this project as a UI/UX designer and developer as well.
             In addition to those, I gave input as an adviser for all of the
             website and I have in charge of that position as an administrator
             for this website.
-          </DarumaP>
-          <DarumaH1 style={{ marginTop: "5rem" }}>Challenge</DarumaH1>
-          <DarumaP>
+          </Article_p>
+          <Article_h3 style={{ marginTop: "5rem" }}>Challenge</Article_h3>
+          <Article_p>
             As outlined above, I have had to do everything to design and develop
             for this project with my own skills, so that it was the most
             significant requirement to give this finalized product as soon as
             possible.
-          </DarumaP>
-          <DarumaH1 style={{ marginTop: "5rem" }}>Solution</DarumaH1>
-          <DarumaP>
+          </Article_p>
+          <Article_h3 style={{ marginTop: "5rem" }}>Solution</Article_h3>
+          <Article_p>
             It was necessary to consider both of these perspectives about
             designer and developer are notable points and I wanted to treat both
             skills equally. I have felt that it is important to keep both
@@ -147,9 +143,9 @@ const Article_Daruma = () => {
             Bootstrap" as a reliable framework that will be able to address
             those pain points for quick development mainly to achieve a
             consistent design.
-          </DarumaP>
-          <DarumaH1 style={{ marginTop: "5rem" }}>Final thoughts</DarumaH1>
-          <DarumaP>
+          </Article_p>
+          <Article_h3 style={{ marginTop: "5rem" }}>Final thoughts</Article_h3>
+          <Article_p>
             While I was in this project, few issues have become clear about
             Bootstrap. That framework wasn't flexible more than I have imagined,
             I will address future issues and problems from the standpoint of
@@ -159,25 +155,23 @@ const Article_Daruma = () => {
             problems. Especially if I have to work on the project longer. This
             project gave me the significance to become more proficient as a
             digital creator.
-          </DarumaP>
+          </Article_p>
           <div style={{ textAlign: "center" }}>
             <Image style={{ marginBottom: "0" }} src={DarumaArticle_5} id="" />
           </div>
-          <DarumaCaption>Finalized mobile images.</DarumaCaption>
-          <Parallax y={[-20, 20]} tagOuter="figure">
-            <div style={{ textAlign: "center" }}>
-              <ImageDown src={DarumaArticle_6} id="" />
-            </div>
-          </Parallax>
-          <DarumaH1 style={{ marginTop: "5rem" }}>The outcome</DarumaH1>
-          <DarumaP>
+          <ArticleCaption>Finalized mobile images.</ArticleCaption>
+          <div style={{ textAlign: "center" }}>
+            <ImageDown src={DarumaArticle_6} id="" />
+          </div>
+          <Article_h3 style={{ marginTop: "5rem" }}>The outcome</Article_h3>
+          <Article_p>
             Through this project, and, looking back at it now I can surely say
             it was the quickest project I had ever done. However, I could
             deliver a valuable website for my client. To have both perspectives
             is an important practice for my career but I learned that more
             effort and time is needed, I could understand the value of both
             required elements to increase good teamwork.
-          </DarumaP>
+          </Article_p>
           {/* feedback section */}
           <Feedback>
             <div style={{ textAlign: "center" }}>
@@ -187,13 +181,13 @@ const Article_Daruma = () => {
                 style={{ width: "4rem", marginBottom: "1rem" }}
               />
             </div>
-            <DarumaH1 className="title">
+            <Article_h3 className="title">
               " The outstanding product created by talented web specialist by
               Yuya Hashirizaki that the product is very content even though I
               couldn't make to him enough time to build up for our desirable web
               site. "
-            </DarumaH1>
-            <DarumaP style={{ fontSize: "14px", lineHeight: "1.5" }}>
+            </Article_h3>
+            <Article_p style={{ fontSize: "14px", lineHeight: "1.5" }}>
               I am pleased to be able to write this letter of recommendation for
               Yuya Hashirizaki. In my opinion, Yuya is a hard-working
               self-starter who invariably understands exactly what a project is
@@ -213,12 +207,12 @@ const Article_Daruma = () => {
               other to avoid changes after finalized. I so much respect Yuya’s
               attitude toward his work. I am therefore very pleased to be able
               to recommend Yuya for future positions.
-            </DarumaP>
+            </Article_p>
           </Feedback>
           {/* feedback section */}
-        </DarumaWrapper>
+        </ArticleWrapper>
       </motion.div>
-    </DarumaContainer>
+    </ArticleContainer>
   );
 };
 

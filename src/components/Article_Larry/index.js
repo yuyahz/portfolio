@@ -228,7 +228,14 @@ const Article_Larry = (props) => {
             <Image style={{ marginBottom: "0" }} src={LarryArticle_7} id="" />
           </div>
           <ArticleCaption>Finalized design images.</ArticleCaption>
-          <Article_h3>The outcome</Article_h3>
+          <Article_h3 style={{ marginTop: "5rem" }}>
+            Responsibilities
+          </Article_h3>
+          <Article_p>
+            User Interview • Presentation • Design Concept • Wireframe • Mock-Up
+            • Prototyping • Motion Prototyping
+          </Article_p>
+          <Article_h3 style={{ marginTop: "5rem" }}>The outcome</Article_h3>
           <Article_p>
             The essential intention of this project is to make Larry's
             experiences and books known to people all over the world. Not to let

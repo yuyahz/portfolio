@@ -163,6 +163,14 @@ const Article_Daruma = () => {
           <div style={{ textAlign: "center" }}>
             <ImageDown src={DarumaArticle_6} id="" />
           </div>
+          <Article_h3 style={{ marginTop: "1.5rem" }}>
+            Responsibilities
+          </Article_h3>
+          <Article_p>
+            Direction and Management • Arrange Photographer • Overseer of all
+            Design • User Interview • Prototyping • HTML , CSS • React.js •
+            React Bootstrap • Styled components • Implementation
+          </Article_p>
           <Article_h3 style={{ marginTop: "5rem" }}>The outcome</Article_h3>
           <Article_p>
             Through this project, and, looking back at it now I can surely say

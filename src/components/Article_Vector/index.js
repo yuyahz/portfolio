@@ -229,7 +229,12 @@ const Article_Vector = () => {
           <div style={{ textAlign: "center", margin: "8rem 0 7rem 0" }}>
             <ImageTop style={{ margin: "0" }} src={VectorArticle_13} id="" />
           </div>
-          <Article_h3>The outcome</Article_h3>
+          <Article_h3>Responsibilities</Article_h3>
+          <Article_p>
+            User Interview • Presentation • Design Concept • Wireframe • Mock-Up
+            • Prototyping • Motion Prototyping
+          </Article_p>
+          <Article_h3 style={{ marginTop: "5rem" }}>The outcome</Article_h3>
           <Article_p>
             Through this project, I have found out challenges gradually on each
             stage and developed and designed the website to a stage that was

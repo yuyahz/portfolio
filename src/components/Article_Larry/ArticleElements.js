@@ -186,6 +186,7 @@ export const ArticleCaption = styled.p`
 
   @media screen and (max-width: 540px) {
     font-size: 10px;
+    margin-bottom: 3rem;
   }
 `;
 

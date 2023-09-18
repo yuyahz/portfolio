@@ -7,10 +7,23 @@ export const AboutContainer = styled.div`
   align-items: center;
 `;
 
+export const AboutImageWrapper = styled.div`
+  padding: 1px;
+`;
+
+export const AboutImage = styled.img`
+  width: 100%;
+  display: block;
+  height: auto;
+  border: solid 2px #fe0000;
+  border-radius: 15px;
+`;
+
 export const AboutWrapper = styled.div`
   background: #faf8f6;
   width: 100%;
   max-width: 1140px;
+  display: block;
 
   @media only screen and (max-width: 1280px) {
     margin: 0 30px 0 110px;
@@ -57,47 +70,70 @@ export const AboutInnerWrapper = styled.div`
     margin-bottom: 26.33vw;
   }
 
+  .dropdown-vertical {
+    display: block;
+  }
+
+  /* .dropdown-border {
+    border-bottom: solid 2px #fe0000;
+    margin-bottom: 1rem;
+
+    @media only screen and (max-width: 960px) {
+      margin-bottom: 1.55vw;
+    }
+  } */
+
+  .fancy-font {
+    font-family: "GT";
+    font-weight: 500;
+    &:nth-child(1) {
+      padding-right: 2vw;
+    }
+    &:nth-child(2) {
+      padding-left: 2vw;
+    }
+  }
+
   div {
     display: flex;
     &:nth-child(3) {
-      margin-bottom: 2.5rem;
+      /* margin-bottom: 2.5rem; */
     }
     &:nth-child(4) {
       margin-bottom: 2rem;
     }
+    &:nth-child(5) {
+      margin-bottom: 2.5rem;
+    }
 
     @media only screen and (max-width: 960px) {
-      &:nth-child(3) {
+      /* &:nth-child(3) {
         margin-bottom: 2.33vw;
-      }
+      } */
       &:nth-child(4) {
         margin-bottom: 2vw;
       }
-    }
-
-    .fancy-font {
-      font-family: GT;
-      font-weight: 500;
-      &:nth-child(1) {
-        padding-right: 2vw;
-      }
-      &:nth-child(2) {
-        padding-left: 2vw;
+      &:nth-child(5) {
+        margin-bottom: 4.55vw;
       }
     }
   }
 `;
 
-export const AboutImageWrapper = styled.div`
-  padding: 1px;
-`;
+export const AboutDropdown = styled.div`
+  .dropdown-container {
+    display: inline-block !important ;
+  }
 
-export const AboutImage = styled.img`
-  width: 100%;
-  display: block;
-  height: auto;
-  border: solid 2px #fe0000;
-  border-radius: 15px;
+  .dropdown-trigger {
+    color: #fe0000;
+    font-weight: 100;
+    font-size: 3rem;
+
+    @media only screen and (max-width: 960px) {
+      font-size: 4.44vw;
+    }
+  }
 `;
 
 // Archive 22021

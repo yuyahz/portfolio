@@ -1,51 +1,24 @@
 import { React } from "react";
-import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
-import styled, { keyframes } from "styled-components";
 import * as FadeIn from "../FadeIn";
-import { Button } from "../ButtonElements";
 import {
   WorksContainer,
   WorksWrapper,
   WorksInnerWrapper,
   WorksNumber,
   WorksTitle,
-  BtnWrap,
 } from "./WorksElements";
 
 const Works = ({ id, to, title, number }) => {
-  const fadeLeft = {
-    hidden: { opacity: 0, x: -200 },
-    visible: { opacity: 1, x: 0 },
-  };
-
-  const rotate = keyframes`
-  0% {
-        transform: translate(0%,0);
-    }
-    25% {
-        transform: translate(10%,0)
-    }
-    50% {
-        transform: translate(15%,0)
-    }
-    75% {
-        transform: translate(10%,0)
-    }
-    100% {
-        transform: translate(0%,0)
-    }
-`;
   return (
     <WorksContainer id={id}>
-      <FadeIn.Down>
+      <FadeIn.Left>
         <WorksWrapper>
           <WorksInnerWrapper>
             <WorksNumber>{number}</WorksNumber>
             <WorksTitle to={to}>{title}</WorksTitle>
           </WorksInnerWrapper>
         </WorksWrapper>
-      </FadeIn.Down>
+      </FadeIn.Left>
     </WorksContainer>
   );
 };

@@ -7,6 +7,7 @@ import { HiMail } from "react-icons/hi";
 import {
   Nav,
   NavbarContainer,
+  NavLogoSm,
   NavLogo,
   // MobileIcon,
   NavMenu,
@@ -40,6 +41,9 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       {/* <IconContext.Provider value={{ color: "#fe0000" }}> */}
+      <NavLogoSm to="/" onClick={toggleHome} isClicked={false}>
+        <Image src={logo} id="" />
+      </NavLogoSm>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome} isClicked={false}>

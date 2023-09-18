@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Parallax } from "react-scroll-parallax";
 import * as FadeIn from "../FadeIn";
+import DropdownEducation from "../DropdownEducation";
+import DropdownDiscipline from "../DropdownDiscipline";
+import DropdownSoftware from "../DropdownSoftware";
+import DropdownLanguage from "../DropdownLanguage";
 import {
   AboutContainer,
   AboutWrapper,
@@ -26,6 +30,8 @@ import {
 import HeadShot from "../../images/headshot2023.png";
 
 const About = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <AboutContainer id="about">
       <AboutWrapper>
@@ -52,7 +58,7 @@ const About = () => {
               </div>
               <div>
                 <h4>
-                  challenging the status quo and creating an inclusive
+                  Challenging the status quo and creating an inclusive
                   experience through research and empathy.
                 </h4>
               </div>
@@ -62,6 +68,20 @@ const About = () => {
                   communication and relationships between the whole team
                   through, and I am committed to that.
                 </h4>
+              </div>
+              <div className="dropdown-vertical">
+                <div className="dropdown-border">
+                  <DropdownEducation></DropdownEducation>
+                </div>
+                <div className="dropdown-border">
+                  <DropdownDiscipline></DropdownDiscipline>
+                </div>
+                <div className="dropdown-border">
+                  <DropdownSoftware></DropdownSoftware>
+                </div>
+                <div className="dropdown-border">
+                  <DropdownLanguage></DropdownLanguage>
+                </div>
               </div>
             </AboutInnerWrapper>
           </FadeIn.Up>

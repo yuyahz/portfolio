@@ -15,7 +15,26 @@ export const Nav = styled.nav`
   transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 
   @media screen and (max-width: 960px) {
-    background-color: transparent;
+    display: none;
+  }
+`;
+
+export const NavLogoSm = styled(LinkR)`
+  position: fixed;
+  margin: 36px 0 0 6.25vw;
+  width: 70px;
+  height: auto;
+
+  @media screen and (min-width: 960px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 960px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 430px) {
+    margin: 36px 0 0 8.5vw;
   }
 `;
 
@@ -27,7 +46,7 @@ export const NavLogo = styled(LinkR)`
   width: 70px;
   height: auto;
 
-  @media screen and (max-width: 959.99px) {
+  @media screen and (max-width: 960px) {
     margin: 10px 0 0 10px;
     width: 60px;
   }
@@ -172,4 +191,10 @@ export const NavMail = styled.div`
 export const Image = styled.img`
   max-width: 100%;
   padding-top: 1.5rem;
+
+  @media screen and (max-width: 960px) {
+    max-width: 90%;
+    padding-top: 1.5rem;
+    padding-top: 0;
+  }
 `;

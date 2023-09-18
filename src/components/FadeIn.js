@@ -26,6 +26,14 @@ export const Left = ({ children, delay, margin = "-50%" }) => (
   </InViewMonitor>
 );
 
+export const LeftWorks = ({ children, delay, margin = "-50%" }) => (
+  <InViewMonitor childPropsInView={{ isActive: true }} intoViewMargin={margin}>
+    <FadeInLeftWorks isActive={false} delay={delay}>
+      {children}
+    </FadeInLeftWorks>
+  </InViewMonitor>
+);
+
 export const Right = ({ children, delay, margin = "-50%" }) => (
   <InViewMonitor childPropsInView={{ isActive: true }} intoViewMargin={margin}>
     <FadeInRight isActive={false} delay={delay}>
@@ -62,6 +70,15 @@ const FadeInDown = styled(FadeIn)`
 const FadeInLeft = styled(FadeIn)`
   opacity: 0;
   transition: opacity 0.6s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  ${({ isActive }) => isActive && `opacity: 1;`}
+  ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
+  transform: translateX(-60px);
+  ${({ isActive }) => isActive && `transform: translateX(0px);`}
+`;
+
+const FadeInLeftWorks = styled(FadeIn)`
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translateX(-60px);

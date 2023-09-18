@@ -1,5 +1,13 @@
 * {
-  font-family: MyCase, sans-serif;
+  --primaly-bg: #faf8f6;
+  --secondary-bg: #fe0000;
+  --primary-txt-color: #fe0000;
+  --secondary-txt-color: #010606;
+  --third-txt-color: #888888;
+  --border-radius: 15px;
+  --speed: 500m;
+
+  font-family: "MyCase", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -39,9 +47,9 @@ h6 {
   font-size: 1em;
   font-weight: bold;
 }
-p {
+/* p {
   margin: 0 0 1.5em;
-}
+} */
 
 @font-face {
   font-family: "MyCase";

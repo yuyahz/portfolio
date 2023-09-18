@@ -46,6 +46,7 @@ export const DropdownInnerWrapper = styled.div`
   }
 
   .dropdown-contents {
+    width: 100%;
     padding: 0 1.5rem;
     background: var(--primaly-bg);
     border: solid 2px #fe0000;
@@ -61,7 +62,7 @@ export const DropdownInnerWrapper = styled.div`
   }
 
   .dropdown-contents.active {
-    width: auto;
+    width: 100%;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);

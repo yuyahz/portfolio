@@ -8,6 +8,7 @@ import DropdownLanguage from "../DropdownLanguage";
 import {
   AboutContainer,
   AboutWrapper,
+  AboutTitleWrapper,
   AboutInnerWrapper,
   AboutImageWrapper,
   AboutImage,
@@ -30,62 +31,66 @@ import {
 import HeadShot from "../../images/headshot2023.png";
 
 const About = () => {
-  const [open, setOpen] = useState(false);
-
   return (
     <AboutContainer id="about">
       <AboutWrapper>
-        <Parallax y={[10, -10]}>
-          <FadeIn.Up>
-            <AboutImageWrapper>
-              <AboutImage src={HeadShot} />
-            </AboutImageWrapper>
-          </FadeIn.Up>
-        </Parallax>
-        <Parallax y={[-5, 5]}>
-          <FadeIn.Up>
-            <AboutInnerWrapper>
-              <div>
-                <h2 className="fancy-font">Yuya</h2>
-                <h2>Hashirizaki</h2>
-              </div>
-              <div>
-                <h2>Vancouver-based</h2>
-              </div>
-              <div>
-                <h2>UI / UX </h2>
-                <h2 className="fancy-font">designer</h2>
-              </div>
-              <div>
-                <h4>
-                  Challenging the status quo and creating an inclusive
-                  experience through research and empathy.
-                </h4>
-              </div>
-              <div>
-                <h4>
-                  I believe that is supportive work culture is built on strong
-                  communication and relationships between the whole team
-                  through, and I am committed to that.
-                </h4>
-              </div>
-              <div className="dropdown-vertical">
-                <div className="dropdown-border">
-                  <DropdownEducation></DropdownEducation>
-                </div>
-                <div className="dropdown-border">
-                  <DropdownDiscipline></DropdownDiscipline>
-                </div>
-                <div className="dropdown-border">
-                  <DropdownSoftware></DropdownSoftware>
-                </div>
-                <div className="dropdown-border">
-                  <DropdownLanguage></DropdownLanguage>
-                </div>
-              </div>
-            </AboutInnerWrapper>
-          </FadeIn.Up>
-        </Parallax>
+        {/* <Parallax y={[10, -10]}> */}
+        <FadeIn.Right>
+          <AboutTitleWrapper>
+            <div>
+              <h2>A little about</h2>
+              <h2 className="fancy-font"> ----- Me</h2>
+            </div>
+          </AboutTitleWrapper>
+        </FadeIn.Right>
+        <FadeIn.Left>
+          <AboutImageWrapper>
+            <AboutImage src={HeadShot} />
+          </AboutImageWrapper>
+        </FadeIn.Left>
+        {/* </Parallax> */}
+        {/* <Parallax y={[-5, 5]}> */}
+        <FadeIn.Right>
+          <AboutInnerWrapper>
+            <div>
+              <h2 className="fancy-font">Yuya</h2>
+              <h2>Hashirizaki</h2>
+            </div>
+            <div>
+              <h2>Vancouver-based</h2>
+            </div>
+            <div className="end-cap">
+              <h2>UI / UX </h2>
+              <h2 className="fancy-font">designer</h2>
+            </div>
+            <div>
+              <h4>
+                Challenging the status quo and creating an inclusive experience
+                through research and empathy.
+              </h4>
+            </div>
+            <div>
+              <h4>
+                I believe that is supportive work culture is built on strong
+                communication and relationships between the whole team through,
+                and I am committed to that.
+              </h4>
+            </div>
+            <FadeIn.Left>
+              <DropdownEducation></DropdownEducation>
+            </FadeIn.Left>
+            <FadeIn.Right>
+              <DropdownDiscipline></DropdownDiscipline>
+            </FadeIn.Right>
+            <FadeIn.Left>
+              <DropdownSoftware></DropdownSoftware>
+            </FadeIn.Left>
+            <FadeIn.Right>
+              <DropdownLanguage></DropdownLanguage>
+            </FadeIn.Right>
+          </AboutInnerWrapper>
+        </FadeIn.Right>
+        {/* </Parallax> */}
       </AboutWrapper>
     </AboutContainer>
 

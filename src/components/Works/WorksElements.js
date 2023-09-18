@@ -11,8 +11,7 @@ export const WorksContainer = styled.div`
 
 export const WorksWrapper = styled.div`
   max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 `;
 
 export const WorksInnerWrapper = styled.div`

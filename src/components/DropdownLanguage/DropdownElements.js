@@ -40,7 +40,7 @@ export const DropdownInnerWrapper = styled.div`
       }
 
       @media only screen and (max-width: 960px) {
-        padding-left: 10rem;
+        padding-left: 3.33vw;
         font-size: 4.44vw;
       }
     }

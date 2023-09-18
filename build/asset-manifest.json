@@ -1,15 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ed228c29.css",
-    "main.js": "/portfolio/static/js/main.f00f5dc8.js",
-    "static/media/ZigZag_5.svg": "/portfolio/static/media/ZigZag_5.d9dfee94d15f86b7f64650ba132d13ab.svg",
+    "main.css": "/portfolio/static/css/main.ae0bc1b3.css",
+    "main.js": "/portfolio/static/js/main.ff7f521e.js",
     "static/media/LarryMovie_2.mp4": "/portfolio/static/media/LarryMovie_2.98a1cffc69829417c5d2.mp4",
-    "static/media/ZigZag_2.svg": "/portfolio/static/media/ZigZag_2.2dcd18aa0cf6a21179a55beb18a7bb87.svg",
-    "static/media/ZigZag_3.svg": "/portfolio/static/media/ZigZag_3.70af30c0d01c0923cda641c50520da27.svg",
     "static/media/LarryMovie_1.mp4": "/portfolio/static/media/LarryMovie_1.f5d97d2b58120911d2bd.mp4",
-    "static/media/ZigZag_4.svg": "/portfolio/static/media/ZigZag_4.1ceb32f90de059416067b9d27a0825be.svg",
-    "static/media/ZigZag_1.svg": "/portfolio/static/media/ZigZag_1.4604a8aadad33bda817d12668c383d55.svg",
-    "static/media/HeadShot.png": "/portfolio/static/media/HeadShot.ac55ee993217be8e112e.png",
     "static/media/UI.png": "/portfolio/static/media/UI.638f42b60d785e460a64.png",
     "static/media/VectorMovie_1.mp4": "/portfolio/static/media/VectorMovie_1.5f0e7ba9884d325351f6.mp4",
     "static/media/VectorArticle_11.png": "/portfolio/static/media/VectorArticle_11.cc9aa830f0b15ccc2cae.png",
@@ -21,6 +15,7 @@
     "static/media/DarumaArticle_5.png": "/portfolio/static/media/DarumaArticle_5.9b5f10fcc4edd8213d95.png",
     "static/media/VectorArticle_13.png": "/portfolio/static/media/VectorArticle_13.78fb89279f9384eb2d69.png",
     "static/media/DarumaArticle_6.png": "/portfolio/static/media/DarumaArticle_6.a47d95aebf0fd6cffde4.png",
+    "static/media/headshot2023.png": "/portfolio/static/media/headshot2023.a1503ae0a119f9d64104.png",
     "static/media/VectorArticle_1.png": "/portfolio/static/media/VectorArticle_1.8ae7ba38100cf7996f96.png",
     "static/media/LarryArticle_11.png": "/portfolio/static/media/LarryArticle_11.bd6d8cd09e612f48f51c.png",
     "static/media/VectorArticle_5.png": "/portfolio/static/media/VectorArticle_5.46314cd4b26cc93097e1.png",
@@ -42,20 +37,20 @@
     "static/media/DarumaArticle_4.png": "/portfolio/static/media/DarumaArticle_4.fea728c1b7dca2d3e855.png",
     "static/media/LarryArticle_3.png": "/portfolio/static/media/LarryArticle_3.03d4b4ccf203847887aa.png",
     "static/media/DarumaArticle_3.png": "/portfolio/static/media/DarumaArticle_3.4de0e784eb72efbfe90f.png",
-    "static/media/logo.png": "/portfolio/static/media/logo.6255afedd8c32d17f028.png",
     "static/media/GT-Ultra-Fine-Thin-Italic.eot": "/portfolio/static/media/GT-Ultra-Fine-Thin-Italic.d73e5cbf397e7cae9a4d.eot",
+    "static/media/GT-Ultra-Fine-Regular-Italic.eot": "/portfolio/static/media/GT-Ultra-Fine-Regular-Italic.9aa91a932829d4b1b655.eot",
     "static/media/mari.png": "/portfolio/static/media/mari.627df66b8e7be0e5a205.png",
     "static/media/DarumaArticle_7.png": "/portfolio/static/media/DarumaArticle_7.298cd435e539754ef202.png",
     "static/media/LarryArticle_8.png": "/portfolio/static/media/LarryArticle_8.60d756cff6244b1b0851.png",
-    "static/media/logoSide.png": "/portfolio/static/media/logoSide.97a9b93c8c40401ba8eb.png",
-    "static/media/logoSide2.png": "/portfolio/static/media/logoSide2.9f736b31adc306480a5a.png",
+    "static/media/GT-Ultra-Fine-Regular-Italic.woff": "/portfolio/static/media/GT-Ultra-Fine-Regular-Italic.cacfb4c5ff4e57762f7d.woff",
     "static/media/GT-Ultra-Fine-Thin-Italic.woff": "/portfolio/static/media/GT-Ultra-Fine-Thin-Italic.9060a189cb76cade53a4.woff",
+    "static/media/logo.svg": "/portfolio/static/media/logo.215608270b0f1bb0037ac9a136635d0c.svg",
     "index.html": "/portfolio/index.html",
-    "main.ed228c29.css.map": "/portfolio/static/css/main.ed228c29.css.map",
-    "main.f00f5dc8.js.map": "/portfolio/static/js/main.f00f5dc8.js.map"
+    "main.ae0bc1b3.css.map": "/portfolio/static/css/main.ae0bc1b3.css.map",
+    "main.ff7f521e.js.map": "/portfolio/static/js/main.ff7f521e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed228c29.css",
-    "static/js/main.f00f5dc8.js"
+    "static/css/main.ae0bc1b3.css",
+    "static/js/main.ff7f521e.js"
   ]
 }

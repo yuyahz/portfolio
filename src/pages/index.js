@@ -7,23 +7,26 @@ import About from "../components/About";
 import Looper from "../components/Looper";
 import Contents from "../components/Contents";
 import {
-  homeLarry,
-  homeVector,
-  homeUI,
-  homeDaruma,
+  // homeLarry,
+  // homeVector,
+  // homeUI,
+  // homeDaruma,
   burger,
 } from "../components/Contents/Data";
 import {
+  worksRv,
+  worksMp,
   worksLarry,
   worksVector,
   worksDaruma,
   worksDailyUi,
   worksArtDirections,
 } from "../components/Works/Data";
-import PicLarry from "../components/PicLarry";
-import PicVector from "../components/PicVector";
-import PicDailyUi from "../components/PicDailyUI";
-import PicDaruma from "../components/PicDaruma";
+// import PicLarry from "../components/PicLarry";
+// import PicVector from "../components/PicVector";
+// import PicDailyUi from "../components/PicDailyUI";
+// import PicDaruma from "../components/PicDaruma";
+import Case_1 from "../components/Case_1";
 import Works from "../components/Works";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -43,14 +46,17 @@ const Index = () => {
       {/* <AboutParallax /> */}
       <About />
       <Looper />
-      <PicLarry />
+      {/* <PicLarry />
       <Contents {...homeLarry} />
       <PicVector />
       <Contents {...homeVector} />
       <PicDailyUi />
       <Contents {...homeUI} />
       <PicDaruma />
-      <Contents {...homeDaruma} />
+      <Contents {...homeDaruma} /> */}
+      <Case_1 />
+      <Works {...worksRv} />
+      <Works {...worksMp} />
       <Works {...worksLarry} />
       <Works {...worksVector} />
       <Works {...worksDaruma} />

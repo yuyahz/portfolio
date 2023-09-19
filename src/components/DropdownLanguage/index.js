@@ -4,7 +4,7 @@ import {
   DropdownWrapper,
   DropdownInnerWrapper,
   DropdownComponent,
-} from "./DropdownElements";
+} from "../DropdownElements";
 
 const DropdownSoftware = () => {
   const [open, setOpen] = useState(false);
@@ -37,8 +37,8 @@ const DropdownSoftware = () => {
                 setOpen(!open);
               }}
             >
-              <div>Language</div>
-              <div>+</div>
+              <span>Language</span>
+              <span>+</span>
             </div>
             <div
               className={`dropdown-contents ${open ? "active" : "inactive"}`}

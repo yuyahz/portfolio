@@ -9,10 +9,10 @@ export const AboutContainer = styled.div`
 
 export const AboutTitleWrapper = styled.div`
   background: #faf8f6;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 
   @media only screen and (max-width: 960px) {
-    margin-bottom: 2vw;
+    padding-bottom: 2vw;
   }
 
   h2 {
@@ -32,11 +32,11 @@ export const AboutTitleWrapper = styled.div`
 `;
 
 export const AboutImageWrapper = styled.div`
-  padding: 1px;
-  margin-bottom: 2rem;
+  background: #faf8f6;
+  padding-bottom: 2rem;
 
   @media only screen and (max-width: 960px) {
-    margin-bottom: 2vw;
+    padding-bottom: 2vw;
   }
 `;
 
@@ -94,11 +94,6 @@ export const AboutWrapper = styled.div`
 
 export const AboutInnerWrapper = styled.div`
   background: #faf8f6;
-  margin-bottom: 17rem;
-
-  @media only screen and (max-width: 960px) {
-    margin-bottom: 26.33vw;
-  }
 
   .fancy-font {
     font-family: "GT";
@@ -112,30 +107,39 @@ export const AboutInnerWrapper = styled.div`
   }
 
   .end-cap {
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 
     @media only screen and (max-width: 960px) {
-      margin-bottom: 2vw;
+      padding-bottom: 2vw;
     }
   }
 
   div {
     display: flex;
     &:nth-child(4) {
-      margin-bottom: 2rem;
+      padding-bottom: 2rem;
     }
     &:nth-child(5) {
-      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
     }
 
     @media only screen and (max-width: 960px) {
       &:nth-child(4) {
-        margin-bottom: 2vw;
+        padding-bottom: 2vw;
       }
       &:nth-child(5) {
-        margin-bottom: 4.55vw;
+        padding-bottom: 4.55vw;
       }
     }
+  }
+`;
+
+export const AboutDropdownWrapper = styled.div`
+  background: #faf8f6;
+  padding-bottom: 17rem;
+
+  @media only screen and (max-width: 960px) {
+    padding-bottom: 26.33vw;
   }
 `;
 

@@ -110,7 +110,7 @@ export const NavItem = styled.div`
     margin: 30px 0;
   }
 
-  .larrySec {
+  .case1Sec {
     margin: 30px 0;
   }
 
@@ -144,11 +144,13 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
+    text-align: center;
     font-weight: 900;
     padding: 10px;
-    border: solid 2px #fe0000;
+    border-bottom: solid 2px #fe0000;
+    /* border: solid 2px #fe0000;
     background-color: white;
-    border-radius: 34px;
+    border-radius: 50px; */
     transition: 1s cubic-bezier(0.33, 1, 0.68, 1);
     animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
     transform: translate3d(0, 0, 0);

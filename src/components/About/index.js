@@ -11,6 +11,7 @@ import {
   AboutTitleWrapper,
   AboutInnerWrapper,
   AboutImageWrapper,
+  AboutDropdownWrapper,
   AboutImage,
   // Deco,
   // DecoOb,
@@ -76,20 +77,16 @@ const About = () => {
                 and I am committed to that.
               </h4>
             </div>
-            <FadeIn.Left>
-              <DropdownEducation></DropdownEducation>
-            </FadeIn.Left>
-            <FadeIn.Right>
-              <DropdownDiscipline></DropdownDiscipline>
-            </FadeIn.Right>
-            <FadeIn.Left>
-              <DropdownSoftware></DropdownSoftware>
-            </FadeIn.Left>
-            <FadeIn.Right>
-              <DropdownLanguage></DropdownLanguage>
-            </FadeIn.Right>
           </AboutInnerWrapper>
         </FadeIn.Right>
+        <FadeIn.Left>
+          <AboutDropdownWrapper>
+            <DropdownEducation></DropdownEducation>
+            <DropdownDiscipline></DropdownDiscipline>
+            <DropdownSoftware></DropdownSoftware>
+            <DropdownLanguage></DropdownLanguage>
+          </AboutDropdownWrapper>
+        </FadeIn.Left>
         {/* </Parallax> */}
       </AboutWrapper>
     </AboutContainer>

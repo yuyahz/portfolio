@@ -8,13 +8,21 @@ export const LooperContainer = styled.div`
   -khtml-user-select: none;
   -webkit-user-select: none;
 
+  border-top: solid 2px #fe0000;
+  border-bottom: solid 2px #fe0000;
+  padding: 0.5rem 0;
+
+  @media only screen and (max-width: 960px) {
+    padding: 0.833vw 0;
+  }
+
   .looper-t {
     position: relative;
     height: 95px;
     overflow: hidden;
 
     @media only screen and (max-width: 960px) {
-      height: 11vw;
+      height: 9vw;
     }
   }
 
@@ -28,6 +36,7 @@ export const LooperContainer = styled.div`
     text-align: center;
     z-index: 1;
     color: #fe0000;
+    background: #faf8f6;
     font-weight: 700;
     font-size: 4rem;
     line-height: 1.5;
@@ -60,6 +69,7 @@ export const LooperContainer = styled.div`
     position: relative;
     height: 95px;
     overflow: hidden;
+    border-top: solid 2px #fe0000;
 
     @media only screen and (max-width: 960px) {
       height: 11vw;

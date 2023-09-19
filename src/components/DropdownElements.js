@@ -12,52 +12,52 @@ export const DropdownWrapper = styled.div`
 
 export const DropdownInnerWrapper = styled.div`
   .dropdown-container {
-    display: inline-block;
+    max-width: 1140px;
   }
 
   .dropdown-trigger {
     color: var(--primary-txt-color);
     font-weight: 500;
     font-size: 3rem;
-    margin-bottom: 1rem;
+    padding: 1rem 0 1rem 0;
 
     @media only screen and (max-width: 960px) {
       font-size: 4.44vw;
-      margin-bottom: 1.55vw;
+      padding: 2vw 0 2vw 0;
     }
 
-    div {
+    span {
       color: var(--primary-txt-color);
       font-weight: 500;
       font-size: 3rem;
-      text-align: right;
 
       &:last-child {
         color: var(--secondary-txt-color);
-        padding-left: 2rem;
-        margin-left: auto;
+        margin-left: 1.5rem;
+        /* display: flex;
+        justify-content: end; */
       }
 
       @media only screen and (max-width: 960px) {
-        padding-left: 3.33vw;
+        /* padding-left: 3.33vw; */
         font-size: 4.44vw;
       }
     }
   }
 
   .dropdown-contents {
-    width: 100%;
-    padding: 0 1.5rem;
+    padding: 2rem 3rem;
     background: var(--primaly-bg);
     border: solid 2px #fe0000;
     border-radius: 15px;
 
     @media only screen and (max-width: 960px) {
-      padding: 0 2.5vw;
+      padding: 2.5vw 5vw;
     }
 
     @media only screen and (max-width: 540px) {
       border: solid 1.5px #fe0000;
+      padding: 3vw 6vw;
     }
   }
 
@@ -67,15 +67,14 @@ export const DropdownInnerWrapper = styled.div`
     visibility: visible;
     transform: translateY(0);
     transition: 0.5s ease;
-    margin-bottom: 2rem;
 
     @media only screen and (max-width: 960px) {
       font-size: 4.44vw;
-      margin-bottom: 3.33vw;
     }
   }
 
   .dropdown-contents.inactive {
+    width: 100%;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-20px);
@@ -126,6 +125,12 @@ export const DropdownInnerWrapper = styled.div`
       font-size: 3.33vw !important;
     }
   }
+
+  /* p span {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #010606;
+  } */
 
   .dropdown-contents ul li {
     border-top: 2px solid #fe0000;

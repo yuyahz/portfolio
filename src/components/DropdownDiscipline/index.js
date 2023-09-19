@@ -4,7 +4,7 @@ import {
   DropdownWrapper,
   DropdownInnerWrapper,
   DropdownComponent,
-} from "./DropdownElements";
+} from "../DropdownElements";
 
 const DropdownDiscipline = () => {
   const [open, setOpen] = useState(false);
@@ -37,8 +37,8 @@ const DropdownDiscipline = () => {
                 setOpen(!open);
               }}
             >
-              <div>Discipline</div>
-              <div>+</div>
+              <span>Discipline</span>
+              <span>+</span>
             </div>
             <div
               className={`dropdown-contents ${open ? "active" : "inactive"}`}
@@ -79,7 +79,7 @@ const DropdownDiscipline = () => {
                   textTag={"Design / Analysis / Coding"}
                 />
                 <DropdownItem
-                  textTitle={"Brand development"}
+                  textTitle={"Brand Development"}
                   textTag={"Branding"}
                 />
                 <DropdownItem

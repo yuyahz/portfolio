@@ -52,7 +52,7 @@ export const WorksTitle = styled(Link)`
   ::before {
     content: "Check this out!!";
     position: absolute;
-    width: 800px;
+    width: 840px;
     height: 130px;
     background-color: #faf8f6;
     top: 0;

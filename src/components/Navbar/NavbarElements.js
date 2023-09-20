@@ -114,7 +114,15 @@ export const NavItem = styled.div`
     margin: 30px 0;
   }
 
-  .vectorSec {
+  .case2Sec {
+    margin: 30px 0;
+  }
+
+  .case3Sec {
+    margin: 30px 0;
+  }
+
+  /* .vectorSec {
     margin: 30px 0;
   }
 
@@ -124,7 +132,7 @@ export const NavItem = styled.div`
 
   .darumaSec {
     margin: 40px 0;
-  }
+  } */
 
   .worksSec {
     margin: 30px 0;

@@ -98,6 +98,34 @@ const Navbar = ({ toggle }) => {
                 Case Study 1
               </NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks
+                className="case2Sec"
+                to="case-2"
+                smooth={true}
+                duration={700}
+                spy={true}
+                exact="true"
+                offset={0}
+                activeClass="active"
+              >
+                Case Study 2
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                className="case3Sec"
+                to="case-3"
+                smooth={true}
+                duration={700}
+                spy={true}
+                exact="true"
+                offset={0}
+                activeClass="active"
+              >
+                Case Study 3
+              </NavLinks>
+            </NavItem>
             {/* <NavItem>
               <NavLinks
                 className="larrySec"
@@ -153,11 +181,11 @@ const Navbar = ({ toggle }) => {
               >
                 Daruma
               </NavLinks>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLinks
                 className="worksSec"
-                to="works"
+                to="rv"
                 smooth={true}
                 duration={700}
                 spy={true}
@@ -167,7 +195,7 @@ const Navbar = ({ toggle }) => {
               >
                 Works
               </NavLinks>
-            </NavItem> */}
+            </NavItem>
             <NavItem>
               <NavLinks
                 className="contactSec"

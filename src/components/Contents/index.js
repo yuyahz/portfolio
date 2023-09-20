@@ -53,7 +53,7 @@ const Contents = ({
   primarySns,
 }) => {
   return (
-    <ContentsContainer lightBg={lightBg} id={id}>
+    <ContentsContainer id={id} lightBg={lightBg}>
       <FadeIn.Up>
         <ContentsWrapper>
           <ContentsRow>

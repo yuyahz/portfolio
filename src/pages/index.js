@@ -13,6 +13,7 @@ import {
   // homeDaruma,
   burger,
 } from "../components/Contents/Data";
+import { case1, case2, case3 } from "../components/Case/Data";
 import {
   worksRv,
   worksMp,
@@ -26,7 +27,7 @@ import {
 // import PicVector from "../components/PicVector";
 // import PicDailyUi from "../components/PicDailyUI";
 // import PicDaruma from "../components/PicDaruma";
-import Case_1 from "../components/Case_1";
+import Case from "../components/Case";
 import Works from "../components/Works";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -54,7 +55,9 @@ const Index = () => {
       <Contents {...homeUI} />
       <PicDaruma />
       <Contents {...homeDaruma} /> */}
-      <Case_1 />
+      <Case {...case1} />
+      <Case {...case2} />
+      <Case {...case3} />
       <Works {...worksRv} />
       <Works {...worksMp} />
       <Works {...worksLarry} />

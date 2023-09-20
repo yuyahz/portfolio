@@ -18,7 +18,7 @@ export const WorksInnerWrapper = styled.div`
   text-align: left;
 
   @media only screen and (max-width: 1280px) {
-    margin: 0 30px 0 110px;
+    margin: 0 30px 0 130px;
   }
 
   @media only screen and (max-width: 960px) {

@@ -30,13 +30,14 @@ const Case = ({
   paddingEnd,
 }) => {
   return (
-    <CaseContainer id={id}>
+    <CaseContainer>
       <CaseWrapper
         imageLeft={imageLeft}
         paddingStart={paddingStart}
         paddingEnd={paddingEnd}
       >
         <CaseContentsImg
+          id={id}
           imageSpaceLeft={imageSpaceLeft}
           imageSpaceRight={imageSpaceRight}
         >

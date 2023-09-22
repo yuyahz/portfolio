@@ -87,12 +87,12 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 className="case1Sec"
-                to="case-1"
+                to="case_1"
                 smooth={true}
                 duration={700}
                 spy={true}
                 exact="true"
-                offset={0}
+                offset={-120}
                 activeClass="active"
               >
                 Case Study 1
@@ -101,12 +101,12 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 className="case2Sec"
-                to="case-2"
+                to="case_2"
                 smooth={true}
                 duration={700}
                 spy={true}
                 exact="true"
-                offset={0}
+                offset={-120}
                 activeClass="active"
               >
                 Case Study 2
@@ -115,12 +115,12 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 className="case3Sec"
-                to="case-3"
+                to="case_3"
                 smooth={true}
                 duration={700}
                 spy={true}
                 exact="true"
-                offset={0}
+                offset={-120}
                 activeClass="active"
               >
                 Case Study 3

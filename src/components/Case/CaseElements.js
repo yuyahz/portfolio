@@ -32,8 +32,8 @@ export const CaseWrapper = styled.div`
 
 export const CaseContentsImg = styled.div`
   width: 100%;
-  padding-left: ${({ imageSpaceLeft }) => (imageSpaceLeft ? "5vw" : "0")};
-  padding-right: ${({ imageSpaceRight }) => (imageSpaceRight ? "5vw" : "0")};
+  padding-left: ${({ imageSpaceLeft }) => (imageSpaceLeft ? "2vw" : "0")};
+  padding-right: ${({ imageSpaceRight }) => (imageSpaceRight ? "2vw" : "0")};
 
   @media only screen and (max-width: 960px) {
     padding-left: 0;

@@ -35,17 +35,17 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
           <SidebarLink to="about" onClick={toggle}>
             About
           </SidebarLink>
-          <SidebarLink to="larry" onClick={toggle}>
-            Larry
+          <SidebarLink to="case_1" onClick={toggle}>
+            Case Study 1
           </SidebarLink>
-          <SidebarLink to="vector" onClick={toggle}>
-            Vector
+          <SidebarLink to="case_2" onClick={toggle}>
+            Case Study 2
           </SidebarLink>
-          <SidebarLink to="dailyUi" onClick={toggle}>
-            DailyUI
+          <SidebarLink to="case_3" onClick={toggle}>
+            Case Study 3
           </SidebarLink>
-          <SidebarLink to="daruma" onClick={toggle}>
-            Daruma
+          <SidebarLink to="mp" onClick={toggle}>
+            Work
           </SidebarLink>
           <SidebarLink to="contact" onClick={toggle}>
             Contact

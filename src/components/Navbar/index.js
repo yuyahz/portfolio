@@ -185,7 +185,7 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 className="worksSec"
-                to="rv"
+                to="mp"
                 smooth={true}
                 duration={700}
                 spy={true}

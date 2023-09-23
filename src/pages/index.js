@@ -15,7 +15,7 @@ import {
 } from "../components/Contents/Data";
 import { case1, case2, case3 } from "../components/Case/Data";
 import {
-  worksRv,
+  // worksRv,
   worksMp,
   worksLarry,
   worksVector,
@@ -58,7 +58,7 @@ const Index = () => {
       <Case {...case1} />
       <Case {...case2} />
       <Case {...case3} />
-      <Works {...worksRv} />
+      {/* <Works {...worksRv} /> */}
       <Works {...worksMp} />
       <Works {...worksLarry} />
       <Works {...worksVector} />

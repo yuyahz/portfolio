@@ -32,12 +32,16 @@ export const CaseWrapper = styled.div`
 
 export const CaseContentsImg = styled.div`
   width: 100%;
-  padding-left: ${({ imageSpaceLeft }) => (imageSpaceLeft ? "2vw" : "0")};
-  padding-right: ${({ imageSpaceRight }) => (imageSpaceRight ? "2vw" : "0")};
+  padding-left: ${({ imageSpaceLeft }) => (imageSpaceLeft ? "5vw" : "0")};
+  padding-right: ${({ imageSpaceRight }) => (imageSpaceRight ? "5vw" : "0")};
+
+  @media only screen and (max-width: 1280px) {
+    padding-left: ${({ imageSpaceLeft }) => (imageSpaceLeft ? "2vw" : "0")};
+    padding-right: ${({ imageSpaceRight }) => (imageSpaceRight ? "2vw" : "0")};
+  }
 
   @media only screen and (max-width: 960px) {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 10vw 0 10vw;
   }
 
   @media only screen and (min-width: 960px) {

@@ -53,7 +53,7 @@ export const ContactWrapper = styled.div`
 
   h2 {
     color: #fe0000;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 4rem;
     -ms-user-select: none; /* IE 10+ */
     -moz-user-select: -moz-none;
@@ -177,8 +177,8 @@ export const ContactEmail = styled.div`
 
   .link {
     text-decoration: none;
-    color: #ffff;
-    font-size: 5rem;
+    color: #ecedf0;
+    font-size: 9rem;
     filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.24));
 
     /* @media screen and (max-width: 896px) and (max-height: 427px) {
@@ -188,6 +188,10 @@ export const ContactEmail = styled.div`
     @media screen and (max-width: 520px) {
       font-size: 3rem;
     } */
+
+    @media only screen and (max-width: 576px) {
+      font-size: 5rem;
+    }
   }
 `;
 
@@ -195,7 +199,7 @@ export const ContactLinkedIn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 2.292vw;
 
   &:hover {
     transform: translateY(-15px);
@@ -206,7 +210,7 @@ export const ContactLinkedIn = styled.div`
   .link {
     text-decoration: none;
     color: #0e76a8;
-    font-size: 5rem;
+    font-size: 8rem;
     filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.24));
 
     /* @media screen and (max-width: 896px) and (max-height: 427px) {
@@ -216,5 +220,9 @@ export const ContactLinkedIn = styled.div`
     @media screen and (max-width: 520px) {
       font-size: 3rem;
     } */
+
+    @media only screen and (max-width: 576px) {
+      font-size: 5rem;
+    }
   }
 `;

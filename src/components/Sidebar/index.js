@@ -3,26 +3,23 @@ import {
   SidebarContainer,
   SidebarWrapper,
   Icon,
-  // CloseIcon,
   SidebarMenu,
   SidebarLink,
 } from "./SidebarElements";
-// import logoSideMobile from "../../images/logoSide.png";
-// import logoSide from "../../images/logoSide2.png";
 
 const Sidebar = ({ isOpen, toggle, darkBurger }) => {
   return (
     <SidebarContainer>
       <Icon onClick={toggle} darkBurger={darkBurger}>
-        <div id="burger-menu" class="burger-menu">
+        <div id="burger-menu">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </Icon>
       <SidebarWrapper isOpen={isOpen} onClick={toggle} ontouchstart="">
-        <Icon onClick={toggle}>
-          <div class="burger-menu">
+        <Icon onClick={toggle} darkBurger={darkBurger}>
+          <div id="burger-menu" className="open">
             <span></span>
             <span></span>
             <span></span>

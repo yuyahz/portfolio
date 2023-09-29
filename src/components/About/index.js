@@ -72,6 +72,28 @@ const About = () => {
             </div>
             <div>
               <h4>
+                "I have consistently centered my efforts on three core
+                frameworks for crafting compelling deliverables that engage
+                customers:
+                <span className="fancy-font-body">
+                  {" "}
+                  Design and Technology,{" "}
+                </span>
+                <span className="fancy-font-body">Branding and Websites, </span>
+                <span className="fancy-font-body">
+                  Simplicity and Sophistication
+                </span>
+                ."
+              </h4>
+            </div>
+            <div>
+              <h4>
+                I am committed to approaching these elements with flexibility
+                for every project and client.
+              </h4>
+            </div>
+            <div>
+              <h4>
                 I believe that is supportive work culture is built on strong
                 communication and relationships between the whole team through,
                 and I am committed to that.

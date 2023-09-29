@@ -7,6 +7,30 @@ export const CaseContainer = styled.div`
   background: #faf8f6;
 `;
 
+export const CaseTitleWrapper = styled.div`
+  background: #faf8f6;
+  padding-bottom: 2rem;
+
+  @media only screen and (max-width: 960px) {
+    padding-bottom: 2vw;
+  }
+
+  h2 {
+    font-weight: 300 !important;
+  }
+
+  .fancy-font {
+    font-family: "GT";
+    font-weight: 500;
+    text-align: right;
+    padding-left: 5.5rem;
+  }
+
+  div {
+    display: flex;
+  }
+`;
+
 export const CaseWrapper = styled.div`
   max-width: 2560px;
   margin: 0 30px 0 130px;
@@ -65,7 +89,7 @@ export const CaseContentsTxt = styled.div`
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 
     @media only screen and (max-width: 960px) {
       font-size: 11.11vw;

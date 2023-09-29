@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 import {
   SidebarContainer,
   SidebarWrapper,
@@ -8,6 +9,24 @@ import {
 } from "./SidebarElements";
 
 const Sidebar = ({ isOpen, toggle, darkBurger }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 1) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <SidebarContainer>
       <Icon onClick={toggle} darkBurger={darkBurger}>
@@ -26,25 +45,88 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
           </div>
         </Icon>
         <SidebarMenu>
-          <SidebarLink to="home" onClick={toggle}>
+          <SidebarLink
+            to="home"
+            onClick={toggle}
+            smooth={true}
+            duration={700}
+            spy={true}
+            exact="true"
+            offset={0}
+            activeClass="active"
+          >
             Home
           </SidebarLink>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink
+            to="about"
+            onClick={toggle}
+            smooth={true}
+            duration={700}
+            spy={true}
+            exact="true"
+            offset={0}
+            activeClass="active"
+          >
             About
           </SidebarLink>
-          <SidebarLink to="case_1" onClick={toggle}>
+          <SidebarLink
+            to="case_1"
+            onClick={toggle}
+            smooth={true}
+            duration={700}
+            spy={true}
+            exact="true"
+            offset={0}
+            activeClass="active"
+          >
             Case Study 1
           </SidebarLink>
-          <SidebarLink to="case_2" onClick={toggle}>
+          <SidebarLink
+            to="case_2"
+            onClick={toggle}
+            smooth={true}
+            duration={700}
+            spy={true}
+            exact="true"
+            offset={0}
+            activeClass="active"
+          >
             Case Study 2
           </SidebarLink>
-          <SidebarLink to="case_3" onClick={toggle}>
+          <SidebarLink
+            to="case_3"
+            onClick={toggle}
+            smooth={true}
+            duration={700}
+            spy={true}
+            exact="true"
+            offset={0}
+            activeClass="active"
+          >
             Case Study 3
           </SidebarLink>
-          <SidebarLink to="mp" onClick={toggle}>
+          <SidebarLink
+            to="mp"
+            onClick={toggle}
+            smooth={true}
+            duration={700}
+            spy={true}
+            exact="true"
+            offset={0}
+            activeClass="active"
+          >
             Work
           </SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>
+          <SidebarLink
+            to="contact"
+            onClick={toggle}
+            smooth={true}
+            duration={700}
+            spy={true}
+            exact="true"
+            offset={0}
+            activeClass="active"
+          >
             Contact
           </SidebarLink>
         </SidebarMenu>

@@ -6,6 +6,7 @@ import {
 } from "react-router-dom/cjs/react-router-dom.min";
 import * as FadeIn from "../FadeIn";
 import {
+  CaseTitleWrapper,
   CaseContainer,
   CaseWrapper,
   CaseContentsImg,
@@ -32,12 +33,12 @@ const Case = ({
   return (
     <CaseContainer>
       <CaseWrapper
+        id={id}
         imageLeft={imageLeft}
         paddingStart={paddingStart}
         paddingEnd={paddingEnd}
       >
         <CaseContentsImg
-          id={id}
           imageSpaceLeft={imageSpaceLeft}
           imageSpaceRight={imageSpaceRight}
         >
@@ -55,7 +56,7 @@ const Case = ({
               duration={500}
               spy={true}
               exact="true"
-              offset={-80}
+              offset={0}
             >
               {buttonLabel}
             </Button>

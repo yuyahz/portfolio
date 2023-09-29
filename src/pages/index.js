@@ -13,6 +13,7 @@ import {
   // homeDaruma,
   burger,
 } from "../components/Contents/Data";
+import Case_Title from "../components/Case_Title";
 import { case1, case2, case3 } from "../components/Case/Data";
 import {
   // worksRv,
@@ -55,6 +56,7 @@ const Index = () => {
       <Contents {...homeUI} />
       <PicDaruma />
       <Contents {...homeDaruma} /> */}
+      <Case_Title />
       <Case {...case1} />
       <Case {...case2} />
       <Case {...case3} />

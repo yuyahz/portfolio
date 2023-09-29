@@ -8,7 +8,7 @@ export const case1 = {
   imageSpaceLeft: true,
   imageSpaceRight: false,
   body: "it's me again",
-  paddingStart: true,
+  paddingStart: false,
   paddingEnd: false,
   buttonLabel: "View Study",
 };

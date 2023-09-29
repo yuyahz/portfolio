@@ -92,7 +92,7 @@ const Navbar = ({ toggle }) => {
                 duration={700}
                 spy={true}
                 exact="true"
-                offset={-120}
+                offset={0}
                 activeClass="active"
               >
                 Case Study 1
@@ -106,7 +106,7 @@ const Navbar = ({ toggle }) => {
                 duration={700}
                 spy={true}
                 exact="true"
-                offset={-120}
+                offset={0}
                 activeClass="active"
               >
                 Case Study 2
@@ -120,7 +120,7 @@ const Navbar = ({ toggle }) => {
                 duration={700}
                 spy={true}
                 exact="true"
-                offset={-120}
+                offset={0}
                 activeClass="active"
               >
                 Case Study 3

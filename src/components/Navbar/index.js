@@ -87,7 +87,7 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 className="case1Sec"
-                to="case_1"
+                to="case1"
                 smooth={true}
                 duration={700}
                 spy={true}
@@ -101,7 +101,7 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 className="case2Sec"
-                to="case_2"
+                to="case2"
                 smooth={true}
                 duration={700}
                 spy={true}
@@ -115,7 +115,7 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 className="case3Sec"
-                to="case_3"
+                to="case3"
                 smooth={true}
                 duration={700}
                 spy={true}

@@ -1,6 +1,6 @@
 export const case1 = {
-  id: "case_1",
-  to: "darumaPage",
+  id: "case1",
+  to: "case1Page",
   title: "yo",
   img: require("../../images/case_1.png"),
   alt: "Image",
@@ -14,7 +14,7 @@ export const case1 = {
 };
 
 export const case2 = {
-  id: "case_2",
+  id: "case2",
   to: "darumaPage",
   title: "yoo",
   img: require("../../images/case_2.png"),
@@ -29,7 +29,7 @@ export const case2 = {
 };
 
 export const case3 = {
-  id: "case_3",
+  id: "case3",
   to: "darumaPage",
   title: "yooo",
   img: require("../../images/case_3.png"),

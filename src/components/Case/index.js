@@ -43,7 +43,9 @@ const Case = ({
           imageSpaceRight={imageSpaceRight}
         >
           <div>
-            <CaseImage src={img} alt={alt}></CaseImage>
+            <FadeIn.Left>
+              <CaseImage src={img} alt={alt}></CaseImage>
+            </FadeIn.Left>
           </div>
         </CaseContentsImg>
         <CaseContentsTxt>

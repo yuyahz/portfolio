@@ -1,34 +1,13 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const CaseContainer = styled.div`
-  height: auto;
-  overflow: hidden;
-`;
-
-export const CaseWrapper = styled.div`
+///// home button /////
+export const HomeIconWrapper = styled.div`
   position: relative;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 10% 0;
-
-  @media screen and (max-width: 960px) {
-    max-width: 80%;
-    padding: 15% 0;
-  }
-
-  @media screen and (max-width: 540px) {
-    max-width: 85%;
-    padding: 20% 0;
-  }
+  z-index: 999;
 `;
 
-export const IconWrapper = styled.div`
-  position: relative;
-  z-index: 1;
-`;
-
-export const Icon = styled(Link)`
+export const HomeIcon = styled(Link)`
   font-family: GT;
   font-size: 3rem;
   font-weight: 500;
@@ -53,151 +32,196 @@ export const Icon = styled(Link)`
     font-size: 5.5vw;
     padding: 0.5rem;
     position: fixed;
-    top: 2rem;
+    top: 1.5rem;
     right: 2rem;
   }
 
   @media screen and (max-width: 540px) {
     font-size: 17px;
-    top: 2rem;
-    right: 1rem;
+    top: 1rem;
+    right: 1.5rem;
   }
 `;
 
-export const VectorGrid = styled.div`
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 1rem;
-  align-items: left;
-  max-width: 900px;
-  margin: 0 auto;
-  margin-top: 3rem;
+///// foudation /////
+export const CaseContainer = styled.div`
+  background: #faf8f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+`;
 
-  @media screen and (max-width: 960px) {
-    grid-template-columns: 30% 1fr;
-    gap: 0.7rem;
-    align-items: left;
-    max-width: 85%;
-  }
+export const CaseWrapper = styled.div`
+  max-width: 2560px;
+  margin: 0 30px 0 30px;
+  overflow: hidden;
 
-  @media screen and (max-width: 540px) {
-    grid-template-columns: 35% 1fr;
-    gap: 0.5rem;
-    max-width: 90%;
-    margin-top: 3.5rem;
+  @media only screen and (max-width: 960px) {
+    margin: 0 15px 0 15px;
   }
 `;
 
-export const CaseTitle = styled.h2`
-  color: #010606;
-  font-weight: 900;
-  font-size: 66px;
-  max-width: 900px;
-  margin: 0 auto;
-  margin-bottom: 1.5rem;
-  line-height: 1.25;
+///// hero image /////
+export const ImageWrapper = styled.div`
+  margin: 30px 0 60px 0;
 
-  @media screen and (max-width: 720px) {
-    font-size: 52px;
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 24px;
   }
 
-  @media screen and (max-width: 540px) {
-    margin-top: 2rem;
-    font-size: 44px;
-    line-height: 1.2;
+  @media only screen and (max-width: 960px) {
+    margin-top: 15px;
   }
-`;
 
-export const Case_h3 = styled.h3`
-  color: #010606;
-  max-width: 900px;
-  margin: 0 auto;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-  font-size: 32px;
-`;
-
-export const Case_p = styled.p`
-  color: #888888;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 2rem;
-  letter-spacing: 1px;
-  max-width: 900px;
-  margin: 0 auto;
-  word-wrap: break-word;
-
-  @media screen and (max-width: 540px) {
-    font-size: 14px;
-    line-height: 1.5rem;
-  }
-`;
-
-export const CaseCaption = styled.p`
-  color: #888888;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  max-width: 900px;
-  margin: 0 auto;
-  margin-top: 0.5rem;
-  margin-bottom: 6rem;
-  word-wrap: break-word;
-
-  @media screen and (max-width: 540px) {
-    font-size: 10px;
-    margin-bottom: 3rem;
+  @media only screen and (max-width: 540px) {
+    margin-bottom: 16px;
   }
 `;
 
 export const Image = styled.img`
-  max-width: 75%;
-  height: auto;
-  margin: 6rem 0 6rem 0;
+  width: 100%;
+  border: solid 2px #fe0000;
+  border-radius: 15px;
 
-  @media screen and (max-width: 960px) {
-    max-width: 100%;
-  }
-
-  @media screen and (max-width: 720px) {
-    margin: 16vw 0 16vw 0;
+  @media only screen and (max-width: 960px) {
+    border-radius: 10px;
   }
 `;
 
-export const ImageTop = styled.img`
-  max-width: 50%;
-  height: auto;
-  margin: 10rem 0 10rem 0;
-
-  @media screen and (max-width: 960px) {
-    max-width: 100%;
-  }
-
-  @media screen and (max-width: 720px) {
-    margin: 16vw 0 16vw 0;
-  }
+///// title /////
+export const TitleContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;
 
-export const ImageDown = styled.img`
-  max-width: 75%;
-  height: auto;
-  margin: 12rem 0 12rem 0;
+export const TitleColumn = styled.div`
+  /// md sm center ///
+  width: 100%;
 
-  @media screen and (max-width: 960px) {
-    max-width: 100%;
-    margin: 2rem 0 2rem 0;
-  }
-`;
-
-export const Feedback = styled.div`
-  margin: 5rem 0 5rem 0;
-
-  .title {
-    text-align: center;
-
-    @media screen and (max-width: 540px) {
-      text-align: left;
+  /// lg left ///
+  :first-child {
+    @media (min-width: 1024px) {
+      width: calc(100% - 290px);
+      padding-right: 24px;
     }
+  }
+  /// lg right ///
+  :last-child {
+    @media (min-width: 1024px) {
+      width: 290px;
+    }
+  }
+`;
+
+export const TitleWrapper = styled.div`
+  max-width: 1756px;
+`;
+
+export const Title = styled.h1`
+  font-size: 7rem;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #fe0000;
+  -ms-user-select: none; /* IE 10+ */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  @media only screen and (max-width: 1280px) {
+    font-size: 7.656vw;
+  }
+
+  @media only screen and (max-width: 960px) {
+    font-size: 11.11vw;
+  }
+`;
+
+export const TagWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 16px;
+  }
+
+  @media only screen and (max-width: 960px) {
+    margin-bottom: 6px;
+  }
+`;
+
+export const Tag = styled.div`
+  width: fit-content;
+  border-radius: 50px;
+  background: #fe0000;
+  margin: 0 16px 9px 0;
+  padding: 6px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: #faf8f6;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  @media only screen and (max-width: 540px) {
+    margin: 0 9px 6px 0;
+    padding: 4px 12px;
+
+    p {
+      font-size: 9px;
+      font-weight: 500;
+    }
+  }
+`;
+
+export const CreditWrapper = styled.div`
+  color: #fe0000;
+  font-size: 18px;
+  font-weight: 700;
+
+  @media only screen and (max-width: 1024px) {
+    margin-top: 44px;
+    width: fit-content;
+    margin-left: auto;
+  }
+
+  @media only screen and (max-width: 960px) {
+    font-size: 16px;
+  }
+
+  @media only screen and (max-width: 540px) {
+    font-size: 2.963vw;
+  }
+`;
+
+export const CreditTitle = styled.p`
+  margin-bottom: 24px;
+
+  @media only screen and (max-width: 540px) {
+    margin-bottom: 16px;
+  }
+`;
+
+export const CreditBody = styled.p`
+  margin-bottom: 6px;
+
+  @media only screen and (max-width: 540px) {
+    margin-bottom: 3px;
+  }
+`;
+
+///// closing image /////
+export const ClosingWrapper = styled.div`
+  margin-bottom: 30px;
+
+  @media only screen and (max-width: 960px) {
+    margin-bottom: 15px;
   }
 `;

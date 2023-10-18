@@ -44,7 +44,7 @@ export const AboutImage = styled.img`
   width: 100%;
   display: block;
   height: auto;
-  border: solid 2px #fe0000;
+  border: thick double #fe0000;
   border-radius: 15px;
 `;
 

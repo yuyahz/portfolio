@@ -70,7 +70,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             About
           </SidebarLink>
           <SidebarLink
-            to="case_1"
+            to="case1"
             onClick={toggle}
             smooth={true}
             duration={700}
@@ -82,7 +82,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             Case Study 1
           </SidebarLink>
           <SidebarLink
-            to="case_2"
+            to="case2"
             onClick={toggle}
             smooth={true}
             duration={700}
@@ -94,7 +94,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             Case Study 2
           </SidebarLink>
           <SidebarLink
-            to="case_3"
+            to="case3"
             onClick={toggle}
             smooth={true}
             duration={700}

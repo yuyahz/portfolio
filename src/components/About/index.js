@@ -101,14 +101,21 @@ const About = () => {
             </div>
           </AboutInnerWrapper>
         </FadeIn.Right>
-        <FadeIn.Left>
-          <AboutDropdownWrapper>
+
+        <AboutDropdownWrapper>
+          <FadeIn.Left>
             <DropdownEducation></DropdownEducation>
+          </FadeIn.Left>
+          <FadeIn.Left>
             <DropdownDiscipline></DropdownDiscipline>
+          </FadeIn.Left>
+          <FadeIn.Left>
             <DropdownSoftware></DropdownSoftware>
+          </FadeIn.Left>
+          <FadeIn.Left>
             <DropdownLanguage></DropdownLanguage>
-          </AboutDropdownWrapper>
-        </FadeIn.Left>
+          </FadeIn.Left>
+        </AboutDropdownWrapper>
         {/* </Parallax> */}
       </AboutWrapper>
     </AboutContainer>

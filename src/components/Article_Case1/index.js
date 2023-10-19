@@ -16,6 +16,8 @@ import {
   CreditWrapper,
   CreditTitle,
   CreditBody,
+  IntroContainer,
+  IntroWrapper,
   ClosingWrapper,
 } from "./CaseElements";
 import case1_hero from "../../images/case1_hero.png";
@@ -99,6 +101,66 @@ const Article_Case1 = () => {
               </CreditWrapper>
             </TitleColumn>
           </TitleContainer>
+          <IntroContainer>
+            <IntroWrapper>
+              <div>
+                <p>
+                  Riversol was established by board-certified dermatologist Dr.
+                  Jason Rivers, following over 20 years of clinical dermatology
+                  experience, to provide a safe skincare solution.
+                </p>
+              </div>
+              <div>
+                <p>
+                  This specializes in providing anti-aging solutions for
+                  individuals with sensitive skin and is committed to assisting
+                  anyone with skin-related concerns through its product
+                  offerings.
+                </p>
+              </div>
+              <div>
+                <p>
+                  The company’s primary method for expanding its business has
+                  been a commitment to providing free products to individuals
+                  who may potentially become our customers through our free
+                  sample program. This initiative is aimed at introducing
+                  dependable, high-quality products and showcasing the value of
+                  the company to those in need of support.
+                </p>
+              </div>
+              <div>
+                <p>
+                  My assigned responsibility involves enhancing the quality of
+                  the website and all digital platforms associated with the free
+                  sample program to contribute to the company’s overall
+                  profitability.
+                </p>
+              </div>
+              <div>
+                <p>
+                  To start, I’ve strived to identify essential factors for
+                  enhancing the performance of our website and all digital
+                  platforms while fostering seamless communication within the
+                  team.
+                </p>
+              </div>
+              <div>
+                <p>
+                  It has been challenging to maintain a consistent UI, as it
+                  often requires a significant amount of time to establish and
+                  implement rules. Additionally, we have yet to define clear
+                  goals for guiding our teams toward our primary objectives.
+                </p>
+              </div>
+              <div>
+                <p>
+                  Thoroughly clarifying every aspect, I created a robust
+                  foundational design system, integrating comprehensive UI/UX
+                  principles.
+                </p>
+              </div>
+            </IntroWrapper>
+          </IntroContainer>
           <ClosingWrapper>
             <Image src={case1_closing} id="" />
           </ClosingWrapper>

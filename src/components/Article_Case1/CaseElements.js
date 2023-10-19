@@ -69,11 +69,9 @@ export const ImageWrapper = styled.div`
   @media only screen and (max-width: 1024px) {
     margin-bottom: 24px;
   }
-
   @media only screen and (max-width: 960px) {
     margin-top: 15px;
   }
-
   @media only screen and (max-width: 540px) {
     margin-bottom: 16px;
   }
@@ -132,7 +130,6 @@ export const Title = styled.h1`
   @media only screen and (max-width: 1280px) {
     font-size: 7.656vw;
   }
-
   @media only screen and (max-width: 960px) {
     font-size: 11.11vw;
   }
@@ -146,7 +143,6 @@ export const TagWrapper = styled.div`
   @media only screen and (max-width: 1024px) {
     margin-bottom: 16px;
   }
-
   @media only screen and (max-width: 960px) {
     margin-bottom: 6px;
   }
@@ -191,11 +187,9 @@ export const CreditWrapper = styled.div`
     width: fit-content;
     margin-left: auto;
   }
-
   @media only screen and (max-width: 960px) {
     font-size: 16px;
   }
-
   @media only screen and (max-width: 540px) {
     font-size: 2.963vw;
   }
@@ -214,6 +208,52 @@ export const CreditBody = styled.p`
 
   @media only screen and (max-width: 540px) {
     margin-bottom: 3px;
+  }
+`;
+
+///// intro /////
+export const IntroContainer = styled.div`
+  padding: 110px 0;
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: 960px) {
+    padding-bottom: 11.5vw;
+  }
+  @media only screen and (max-width: 540px) {
+    padding-top: 7.4vw;
+  }
+`;
+
+export const IntroWrapper = styled.div`
+  max-width: 1140px;
+
+  div {
+    margin-top: 100px;
+
+    :first-child {
+      margin-top: 0px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      margin-top: 7.8vw;
+    }
+    @media only screen and (max-width: 960px) {
+      margin-top: 7.3vw;
+    }
+    @media only screen and (max-width: 540px) {
+      margin-top: 6.3vw;
+    }
+  }
+
+  p {
+    color: #fe0000;
+    font-weight: 100;
+    font-size: 3rem;
+
+    @media only screen and (max-width: 960px) {
+      font-size: 4.44vw;
+    }
   }
 `;
 

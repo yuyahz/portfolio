@@ -50,6 +50,70 @@ export const CaseContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+  h1 {
+    font-size: 7rem;
+    font-weight: 100;
+    line-height: 1.2;
+    color: #fe0000;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    @media only screen and (max-width: 1280px) {
+      font-size: 7.656vw;
+    }
+    @media only screen and (max-width: 960px) {
+      font-size: 11.11vw;
+    }
+  }
+
+  h2 {
+    color: #010606;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1.25;
+
+    @media only screen and (max-width: 1920px) {
+      font-size: 3rem;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 2.5rem;
+    }
+    @media only screen and (max-width: 540px) {
+      font-size: 7.45vw;
+    }
+  }
+
+  h3 {
+    color: #fe0000;
+    font-weight: 100;
+    font-size: 3rem;
+    line-height: 1.3;
+
+    @media only screen and (max-width: 960px) {
+      font-size: 4.44vw;
+    }
+  }
+
+  p {
+    color: #fe0000;
+    font-weight: 100;
+    font-size: 3rem;
+    line-height: 1.2;
+
+    @media only screen and (max-width: 1920px) {
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (max-width: 540px) {
+      font-size: 4.44vw;
+    }
+  }
 `;
 
 export const CaseWrapper = styled.div`
@@ -93,45 +157,26 @@ export const TitleContainer = styled.div`
   flex-wrap: wrap;
 `;
 
+export const TitleWrapper = styled.div`
+  max-width: 1756px;
+`;
+
 export const TitleColumn = styled.div`
-  /// md sm center ///
+  // md sm center //
   width: 100%;
 
-  /// lg left ///
+  // lg left //
   :first-child {
     @media (min-width: 1024px) {
       width: calc(100% - 290px);
       padding-right: 24px;
     }
   }
-  /// lg right ///
+  // lg right //
   :last-child {
     @media (min-width: 1024px) {
       width: 290px;
     }
-  }
-`;
-
-export const TitleWrapper = styled.div`
-  max-width: 1756px;
-`;
-
-export const Title = styled.h1`
-  font-size: 7rem;
-  font-weight: 100;
-  line-height: 1.2;
-  color: #fe0000;
-  -ms-user-select: none; /* IE 10+ */
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-
-  @media only screen and (max-width: 1280px) {
-    font-size: 7.656vw;
-  }
-  @media only screen and (max-width: 960px) {
-    font-size: 11.11vw;
   }
 `;
 
@@ -161,7 +206,7 @@ export const Tag = styled.div`
   p {
     color: #faf8f6;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 500;
     text-decoration: none;
     white-space: nowrap;
   }
@@ -172,26 +217,31 @@ export const Tag = styled.div`
 
     p {
       font-size: 9px;
-      font-weight: 500;
     }
   }
 `;
 
 export const CreditWrapper = styled.div`
-  color: #fe0000;
-  font-size: 18px;
-  font-weight: 700;
+  p {
+    color: #fe0000;
+    font-size: 18px;
+    font-weight: 700;
+
+    @media only screen and (max-width: 960px) {
+      font-size: 16px;
+    }
+    @media only screen and (max-width: 540px) {
+      font-size: 2.9vw;
+    }
+  }
 
   @media only screen and (max-width: 1024px) {
-    margin-top: 44px;
+    margin-top: 34px;
     width: fit-content;
     margin-left: auto;
   }
-  @media only screen and (max-width: 960px) {
-    font-size: 16px;
-  }
   @media only screen and (max-width: 540px) {
-    font-size: 2.963vw;
+    padding-bottom: 7.4vw;
   }
 `;
 
@@ -199,7 +249,7 @@ export const CreditTitle = styled.p`
   margin-bottom: 24px;
 
   @media only screen and (max-width: 540px) {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 `;
 
@@ -245,16 +295,6 @@ export const IntroWrapper = styled.div`
       margin-top: 6.3vw;
     }
   }
-
-  p {
-    color: #fe0000;
-    font-weight: 100;
-    font-size: 3rem;
-
-    @media only screen and (max-width: 960px) {
-      font-size: 4.44vw;
-    }
-  }
 `;
 
 ///// Research /////
@@ -276,16 +316,13 @@ export const ResearchWrapper = styled.div`
 `;
 
 export const ResearchColumn = styled.div`
-  /// md sm center ///
+  // md sm center //
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  :last-child {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /// lg ///
+  // lg //
   @media (min-width: 1024px) {
     width: 50%;
   }
@@ -299,39 +336,66 @@ export const ContentWrapper = styled.div`
     padding: 7.2vw 6.3vw 0 6.3vw;
   }
 
-  h3 {
-    color: #010606;
-    font-weight: 600;
-    font-size: 4rem;
-
-    @media only screen and (max-width: 1920px) {
-      font-size: 3rem;
-    }
-    @media only screen and (max-width: 1024px) {
-      font-size: 2.5rem;
-    }
-    @media only screen and (max-width: 540px) {
-      font-size: 7.45vw;
-    }
-  }
-
   p {
-    color: #fe0000;
-    font-weight: 100;
-    font-size: 3rem;
-    margin-top: 60px;
+    :first-child {
+      margin-top: 60px;
+    }
+
+    margin-top: 44px;
 
     @media only screen and (max-width: 1920px) {
-      font-size: 2rem;
+      :first-child {
+        margin-top: 44px;
+      }
       margin-top: 34px;
     }
     @media only screen and (max-width: 1024px) {
-      font-size: 1.5rem;
+      :first-child {
+        margin-top: 34px;
+      }
       margin-top: 24px;
     }
     @media only screen and (max-width: 540px) {
-      margin-top: 6.3vw;
-      font-size: 4.44vw;
+      :first-child {
+        margin-top: 5vw;
+      }
+      margin-top: 5.5vw;
+    }
+  }
+`;
+
+export const ResearchInsight = styled.div`
+  width: 50%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 540px) {
+    padding: 0 6.3vw;
+  }
+
+  p {
+    :first-child {
+      color: #010606;
+      font-weight: 600;
+      margin-top: 60px;
+      padding-bottom: 3px;
+    }
+    @media only screen and (max-width: 1920px) {
+      :first-child {
+        margin-top: 44px;
+      }
+    }
+    @media only screen and (max-width: 1024px) {
+      :first-child {
+        margin-top: 34px;
+      }
+    }
+    @media only screen and (max-width: 540px) {
+      :first-child {
+        margin-top: 5vw;
+      }
     }
   }
 `;

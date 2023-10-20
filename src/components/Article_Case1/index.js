@@ -10,7 +10,6 @@ import {
   TitleContainer,
   TitleColumn,
   TitleWrapper,
-  Title,
   TagWrapper,
   Tag,
   CreditWrapper,
@@ -21,6 +20,7 @@ import {
   ResearchContainer,
   ResearchWrapper,
   ResearchColumn,
+  ResearchInsight,
   ContentWrapper,
   ClosingWrapper,
 } from "./CaseElements";
@@ -51,6 +51,7 @@ const Article_Case1 = () => {
         <HomeIconWrapper>
           <HomeIcon to="/">Home</HomeIcon>
         </HomeIconWrapper>
+
         <CaseWrapper>
           <ImageWrapper>
             <Image src={case1_hero} id="" />
@@ -90,82 +91,94 @@ const Article_Case1 = () => {
                     <p>Brand Development</p>
                   </Tag>
                 </TagWrapper>
-                <Title>
-                  I’ve been dedicated to problem-solving for RMDY, which
-                  comprises two brands Riversol Skin Care Solutions and Midnight
-                  Paloma.
-                </Title>
+                <div>
+                  <h1>
+                    I’ve been dedicated to problem-solving for RMDY, which
+                    comprises two brands Riversol Skin Care Solutions and
+                    Midnight Paloma.
+                  </h1>
+                </div>
               </TitleWrapper>
             </TitleColumn>
             <TitleColumn>
               <CreditWrapper>
-                <CreditTitle>CREDITS</CreditTitle>
-                <CreditBody>Design Lead: Yuya Hashirizaki</CreditBody>
-                <CreditBody>Development: Aaron Johnson</CreditBody>
-                <CreditBody>Project Manager: Ed Rushton</CreditBody>
+                <CreditTitle>
+                  <p>CREDITS</p>
+                </CreditTitle>
+                <CreditBody>
+                  <p>Design Lead: Yuya Hashirizaki</p>
+                </CreditBody>
+                <CreditBody>
+                  <p>Development: Aaron Johnson</p>
+                </CreditBody>
+                <CreditBody>
+                  <p>Project Manager: Ed Rushton</p>
+                </CreditBody>
               </CreditWrapper>
             </TitleColumn>
           </TitleContainer>
+
           <IntroContainer>
             <IntroWrapper>
               <div>
-                <p>
+                <h3>
                   Riversol was established by board-certified dermatologist Dr.
                   Jason Rivers, following over 20 years of clinical dermatology
                   experience, to provide a safe skincare solution.
-                </p>
+                </h3>
               </div>
               <div>
-                <p>
+                <h3>
                   This specializes in providing anti-aging solutions for
                   individuals with sensitive skin and is committed to assisting
                   anyone with skin-related concerns through its product
                   offerings.
-                </p>
+                </h3>
               </div>
               <div>
-                <p>
+                <h3>
                   The company’s primary method for expanding its business has
                   been a commitment to providing free products to individuals
                   who may potentially become our customers through our free
                   sample program. This initiative is aimed at introducing
                   dependable, high-quality products and showcasing the value of
                   the company to those in need of support.
-                </p>
+                </h3>
               </div>
               <div>
-                <p>
+                <h3>
                   My assigned responsibility involves enhancing the quality of
                   the website and all digital platforms associated with the free
                   sample program to contribute to the company’s overall
                   profitability.
-                </p>
+                </h3>
               </div>
               <div>
-                <p>
+                <h3>
                   To start, I’ve strived to identify essential factors for
                   enhancing the performance of our website and all digital
                   platforms while fostering seamless communication within the
                   team.
-                </p>
+                </h3>
               </div>
               <div>
-                <p>
+                <h3>
                   It has been challenging to maintain a consistent UI, as it
                   often requires a significant amount of time to establish and
                   implement rules. Additionally, we have yet to define clear
                   goals for guiding our teams toward our primary objectives.
-                </p>
+                </h3>
               </div>
               <div>
-                <p>
+                <h3>
                   Thoroughly clarifying every aspect, I created a robust
                   foundational design system, integrating comprehensive UI/UX
                   principles.
-                </p>
+                </h3>
               </div>
             </IntroWrapper>
           </IntroContainer>
+
           <ResearchContainer>
             <ResearchWrapper>
               <ResearchColumn>
@@ -174,7 +187,7 @@ const Article_Case1 = () => {
               <ResearchColumn>
                 <ContentWrapper>
                   <div>
-                    <h3>User Research</h3>
+                    <h2>User Research</h2>
                   </div>
                   <div>
                     <p>
@@ -194,7 +207,22 @@ const Article_Case1 = () => {
                 </ContentWrapper>
               </ResearchColumn>
             </ResearchWrapper>
+            <ResearchInsight>
+              <div>
+                <p>Insights:</p>
+                <p>
+                  The survey proved invaluable in gaining a profound
+                  understanding of our users, pinpointing their primary pain
+                  points and aspirations. It allowed me to quantify the
+                  proportion of users exhibiting genuine interest in our
+                  products. Analyzing the daily skincare challenges faced by
+                  these users served as a wellspring of inspiration, propelling
+                  me to ideate and devise optimal design solutions.
+                </p>
+              </div>
+            </ResearchInsight>
           </ResearchContainer>
+
           <ClosingWrapper>
             <Image src={case1_closing} id="" />
           </ClosingWrapper>

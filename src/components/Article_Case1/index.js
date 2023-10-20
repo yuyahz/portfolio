@@ -18,10 +18,15 @@ import {
   CreditBody,
   IntroContainer,
   IntroWrapper,
+  ResearchContainer,
+  ResearchWrapper,
+  ResearchColumn,
+  ContentWrapper,
   ClosingWrapper,
 } from "./CaseElements";
 import case1_hero from "../../images/case1_hero.png";
 import case1_closing from "../../images/case1_closing.png";
+import case1_research from "../../images/case1_research.png";
 
 const Article_Case1 = () => {
   return (
@@ -161,6 +166,35 @@ const Article_Case1 = () => {
               </div>
             </IntroWrapper>
           </IntroContainer>
+          <ResearchContainer>
+            <ResearchWrapper>
+              <ResearchColumn>
+                <Image src={case1_research} id="" />
+              </ResearchColumn>
+              <ResearchColumn>
+                <ContentWrapper>
+                  <div>
+                    <h3>User Research</h3>
+                  </div>
+                  <div>
+                    <p>
+                      In our pursuit of designing user-centric experiences, I
+                      prioritize User Research, which involves delving into user
+                      behaviors, uncovering their needs, and analyzing their
+                      motivations through various observations, task analysis,
+                      and valuable feedback methodologies.
+                    </p>
+                    <p>
+                      Our collaboration with SplitBase has enabled us to conduct
+                      a comprehensive survey, and in our qualitative analysis
+                      phase, we engaged in insightful interviews with numerous
+                      consumers who have made purchases of our products.
+                    </p>
+                  </div>
+                </ContentWrapper>
+              </ResearchColumn>
+            </ResearchWrapper>
+          </ResearchContainer>
           <ClosingWrapper>
             <Image src={case1_closing} id="" />
           </ClosingWrapper>

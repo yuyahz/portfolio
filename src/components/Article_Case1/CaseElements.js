@@ -257,6 +257,85 @@ export const IntroWrapper = styled.div`
   }
 `;
 
+///// Research /////
+export const ResearchContainer = styled.div`
+  padding: 110px 0;
+  justify-content: center;
+
+  @media only screen and (max-width: 960px) {
+    padding-bottom: 11.5vw;
+  }
+  @media only screen and (max-width: 540px) {
+    padding-top: 7.4vw;
+  }
+`;
+
+export const ResearchWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const ResearchColumn = styled.div`
+  /// md sm center ///
+  width: 100%;
+
+  :last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /// lg ///
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+`;
+
+export const ContentWrapper = styled.div`
+  max-width: 1160px;
+  padding: 34px;
+
+  @media only screen and (max-width: 540px) {
+    padding: 7.2vw 6.3vw 0 6.3vw;
+  }
+
+  h3 {
+    color: #010606;
+    font-weight: 600;
+    font-size: 4rem;
+
+    @media only screen and (max-width: 1920px) {
+      font-size: 3rem;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 2.5rem;
+    }
+    @media only screen and (max-width: 540px) {
+      font-size: 7.45vw;
+    }
+  }
+
+  p {
+    color: #fe0000;
+    font-weight: 100;
+    font-size: 3rem;
+    margin-top: 60px;
+
+    @media only screen and (max-width: 1920px) {
+      font-size: 2rem;
+      margin-top: 34px;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 1.5rem;
+      margin-top: 24px;
+    }
+    @media only screen and (max-width: 540px) {
+      margin-top: 6.3vw;
+      font-size: 4.44vw;
+    }
+  }
+`;
+
 ///// closing image /////
 export const ClosingWrapper = styled.div`
   margin-bottom: 30px;

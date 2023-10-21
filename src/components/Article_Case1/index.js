@@ -3,11 +3,15 @@ import { motion } from "framer-motion";
 import {
   HomeIconWrapper,
   HomeIcon,
+  ColumnLg,
+  ColumnSm,
+  ColumnContentLg,
+  ColumnContentSm,
+  Image,
+  ImageSm,
   CaseContainer,
   CaseWrapper,
-  ImageWrapper,
-  Image,
-  ImageColumn,
+  HeroImageWrapper,
   TitleContainer,
   TitleColumn,
   TitleWrapper,
@@ -20,13 +24,11 @@ import {
   IntroWrapper,
   ResearchContainer,
   ResearchWrapper,
-  ResearchColumn,
   ResearchInsight,
   PersonaContainer,
   PersonaWrapper,
-  PersonaColumn,
-  ContentWrapperLg,
-  ContentWrapperSm,
+  EmpathyContainer,
+  EmpathyWrapper,
   ClosingWrapper,
 } from "./CaseElements";
 import case1_hero from "../../images/case1_hero.png";
@@ -60,9 +62,9 @@ const Article_Case1 = () => {
         </HomeIconWrapper>
 
         <CaseWrapper>
-          <ImageWrapper>
+          <HeroImageWrapper>
             <Image src={case1_hero} id="" />
-          </ImageWrapper>
+          </HeroImageWrapper>
           <TitleContainer>
             <TitleColumn>
               <TitleWrapper>
@@ -188,11 +190,11 @@ const Article_Case1 = () => {
 
           <ResearchContainer>
             <ResearchWrapper>
-              <ResearchColumn>
+              <ColumnLg>
                 <Image src={case1_research} id="" />
-              </ResearchColumn>
-              <ResearchColumn>
-                <ContentWrapperLg>
+              </ColumnLg>
+              <ColumnLg>
+                <ColumnContentLg>
                   <div>
                     <h2>User Research</h2>
                   </div>
@@ -211,30 +213,32 @@ const Article_Case1 = () => {
                       consumers who have made purchases of our products.
                     </p>
                   </div>
-                </ContentWrapperLg>
-              </ResearchColumn>
+                </ColumnContentLg>
+              </ColumnLg>
             </ResearchWrapper>
             <ResearchInsight>
-              <div>
-                <p>Insights:</p>
-                <p>
-                  The survey proved invaluable in gaining a profound
-                  understanding of our users, pinpointing their primary pain
-                  points and aspirations. It allowed me to quantify the
-                  proportion of users exhibiting genuine interest in our
-                  products.
-                </p>
-                <p>
-                  Analyzing the daily skincare challenges faced by these users
-                  served as a wellspring of inspiration, propelling me to ideate
-                  and devise optimal design solutions.
-                </p>
-              </div>
+              <ColumnContentSm>
+                <div>
+                  <p>Insights:</p>
+                  <p>
+                    The survey proved invaluable in gaining a profound
+                    understanding of our users, pinpointing their primary pain
+                    points and aspirations. It allowed me to quantify the
+                    proportion of users exhibiting genuine interest in our
+                    products.
+                  </p>
+                  <p>
+                    Analyzing the daily skincare challenges faced by these users
+                    served as a wellspring of inspiration, propelling me to
+                    ideate and devise optimal design solutions.
+                  </p>
+                </div>
+              </ColumnContentSm>
             </ResearchInsight>
           </ResearchContainer>
 
           <PersonaContainer>
-            <ContentWrapperLg>
+            <ColumnContentLg>
               <div>
                 <h2>User Personas</h2>
                 <p>
@@ -246,13 +250,13 @@ const Article_Case1 = () => {
                   the foundation for the project ahead.
                 </p>
               </div>
-            </ContentWrapperLg>
+            </ColumnContentLg>
             <PersonaWrapper>
-              <PersonaColumn>
-                <ImageColumn src={case1_cathy} id="" />
-              </PersonaColumn>
-              <PersonaColumn>
-                <ContentWrapperSm>
+              <ColumnSm>
+                <ImageSm src={case1_cathy} id="" />
+              </ColumnSm>
+              <ColumnSm>
+                <ColumnContentSm>
                   <div>
                     <h2>Cathy - 60 year old with sensitive skin</h2>
                   </div>
@@ -269,12 +273,12 @@ const Article_Case1 = () => {
                       graveyard of skincare that didn’t work.
                     </p>
                   </div>
-                </ContentWrapperSm>
-              </PersonaColumn>
+                </ColumnContentSm>
+              </ColumnSm>
             </PersonaWrapper>
             <PersonaWrapper>
-              <PersonaColumn>
-                <ContentWrapperSm>
+              <ColumnSm>
+                <ColumnContentSm>
                   <div>
                     <h2>
                       Allison - 70 year old who wants to look as young as she
@@ -297,13 +301,54 @@ const Article_Case1 = () => {
                       hooked.
                     </p>
                   </div>
-                </ContentWrapperSm>
-              </PersonaColumn>
-              <PersonaColumn>
-                <ImageColumn src={case1_allison} id="" />
-              </PersonaColumn>
+                </ColumnContentSm>
+              </ColumnSm>
+              <ColumnSm>
+                <ImageSm src={case1_allison} id="" />
+              </ColumnSm>
             </PersonaWrapper>
           </PersonaContainer>
+
+          <EmpathyContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>User Personas</h2>
+                <p>
+                  I utilized the survey findings to craft user personas, laying
+                  the foundation for the project ahead.
+                </p>
+                <p>
+                  I utilized the survey findings to craft user personas, laying
+                  the foundation for the project ahead.
+                </p>
+              </div>
+            </ColumnContentLg>
+            <EmpathyWrapper>
+              <ColumnSm>
+                <ImageSm src={case1_cathy} id="" />
+              </ColumnSm>
+              <ColumnSm>
+                <ColumnContentSm>
+                  <div>
+                    <h2>Cathy - 60 year old with sensitive skin</h2>
+                  </div>
+                  <div>
+                    <p>
+                      Cathy has had sensitive skin all her life, forcing her
+                      into having to understand good skincare at a very early
+                      age. Finding products that work without a reaction to her
+                      dry, reactive skin has been a difficult process – but
+                      something she’s come to terms with, trying every product
+                      in every price range. Since finding Riversol, she’s
+                      narrowed down her routine, and has freed up storage space
+                      in her bathroom because she no longer holds onto the
+                      graveyard of skincare that didn’t work.
+                    </p>
+                  </div>
+                </ColumnContentSm>
+              </ColumnSm>
+            </EmpathyWrapper>
+          </EmpathyContainer>
 
           <ClosingWrapper>
             <Image src={case1_closing} id="" />

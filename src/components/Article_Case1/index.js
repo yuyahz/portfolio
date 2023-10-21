@@ -312,41 +312,94 @@ const Article_Case1 = () => {
           <EmpathyContainer>
             <ColumnContentLg>
               <div>
-                <h2>User Personas</h2>
+                <h2>Empathy Map</h2>
                 <p>
-                  I utilized the survey findings to craft user personas, laying
-                  the foundation for the project ahead.
-                </p>
-                <p>
-                  I utilized the survey findings to craft user personas, laying
-                  the foundation for the project ahead.
+                  The empathy map serves as a collaborative tool that allows
+                  design teams to cultivate a deeper understanding of their
+                  customers. It is particularly useful for representing and
+                  empathizing with distinct user groups or customer segments.
                 </p>
               </div>
             </ColumnContentLg>
             <EmpathyWrapper>
-              <ColumnSm>
-                <ImageSm src={case1_cathy} id="" />
-              </ColumnSm>
-              <ColumnSm>
+              <div className="box">
                 <ColumnContentSm>
-                  <div>
-                    <h2>Cathy - 60 year old with sensitive skin</h2>
-                  </div>
-                  <div>
-                    <p>
-                      Cathy has had sensitive skin all her life, forcing her
-                      into having to understand good skincare at a very early
-                      age. Finding products that work without a reaction to her
-                      dry, reactive skin has been a difficult process – but
-                      something she’s come to terms with, trying every product
-                      in every price range. Since finding Riversol, she’s
-                      narrowed down her routine, and has freed up storage space
-                      in her bathroom because she no longer holds onto the
-                      graveyard of skincare that didn’t work.
+                  <div className="empathy-border">
+                    <p className="text">Says:</p>
+                    <p className="text">
+                      • I’m always having trouble with my skin
+                    </p>
+                    <p className="text">• My daily routine is unstable</p>
+                    <p className="text">
+                      • I don’t have time to go to the store
+                    </p>
+                    <p className="text">
+                      • I don’t know how to take care of my skin
+                    </p>
+                    <p className="text">
+                      • My sensitivities and allergies prevent buying products
                     </p>
                   </div>
                 </ColumnContentSm>
-              </ColumnSm>
+              </div>
+              <div className="box">
+                <ColumnContentSm>
+                  <div className="empathy-border">
+                    <p className="text">Thinks:</p>
+                    <p className="text">• I should try skincare products</p>
+                    <p className="text">
+                      • I should prevent factor of skincare troubles
+                    </p>
+                    <p className="text">• I should take care of my lifestyle</p>
+                    <p className="text">• I should have a better routine</p>
+                    <p className="text">
+                      • I should go to the skincare workshop
+                    </p>
+                  </div>
+                </ColumnContentSm>
+              </div>
+              <div className="box">
+                <ColumnContentSm>
+                  <div className="empathy-border">
+                    <p className="text">Does:</p>
+                    <p className="text">
+                      • I’m always having trouble with my skin
+                    </p>
+                    <p className="text">
+                      • I try to see a recurring dermatologist
+                    </p>
+                    <p className="text">
+                      • Pays for a subscription to find solutions but not help
+                    </p>
+                    <p className="text">• I always buy different products</p>
+                    <p className="text">
+                      • I try to ask products reputation people who are familiar
+                      with it
+                    </p>
+                  </div>
+                </ColumnContentSm>
+              </div>
+              <div className="box">
+                <ColumnContentSm>
+                  <div className="empathy-border">
+                    <p className="text">Feels:</p>
+                    <p className="text">• Drained due to bad overall factors</p>
+                    <p className="text">
+                      • I gave up finding a product due to sensitivities and
+                      allergies
+                    </p>
+                    <p className="text">
+                      • I frustrated for finding all the things consuming time
+                    </p>
+                    <p className="text">
+                      • Never seen ideal products for anti-aging
+                    </p>
+                    <p className="text">
+                      • Sensitive skin products make more trouble my skin
+                    </p>
+                  </div>
+                </ColumnContentSm>
+              </div>
             </EmpathyWrapper>
           </EmpathyContainer>
 

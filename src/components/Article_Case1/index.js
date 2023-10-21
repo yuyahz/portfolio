@@ -7,6 +7,7 @@ import {
   CaseWrapper,
   ImageWrapper,
   Image,
+  ImageColumn,
   TitleContainer,
   TitleColumn,
   TitleWrapper,
@@ -21,12 +22,18 @@ import {
   ResearchWrapper,
   ResearchColumn,
   ResearchInsight,
-  ContentWrapper,
+  PersonaContainer,
+  PersonaWrapper,
+  PersonaColumn,
+  ContentWrapperLg,
+  ContentWrapperSm,
   ClosingWrapper,
 } from "./CaseElements";
 import case1_hero from "../../images/case1_hero.png";
 import case1_closing from "../../images/case1_closing.png";
 import case1_research from "../../images/case1_research.png";
+import case1_cathy from "../../images/Cathy.png";
+import case1_allison from "../../images/Allison.png";
 
 const Article_Case1 = () => {
   return (
@@ -185,7 +192,7 @@ const Article_Case1 = () => {
                 <Image src={case1_research} id="" />
               </ResearchColumn>
               <ResearchColumn>
-                <ContentWrapper>
+                <ContentWrapperLg>
                   <div>
                     <h2>User Research</h2>
                   </div>
@@ -204,7 +211,7 @@ const Article_Case1 = () => {
                       consumers who have made purchases of our products.
                     </p>
                   </div>
-                </ContentWrapper>
+                </ContentWrapperLg>
               </ResearchColumn>
             </ResearchWrapper>
             <ResearchInsight>
@@ -215,13 +222,88 @@ const Article_Case1 = () => {
                   understanding of our users, pinpointing their primary pain
                   points and aspirations. It allowed me to quantify the
                   proportion of users exhibiting genuine interest in our
-                  products. Analyzing the daily skincare challenges faced by
-                  these users served as a wellspring of inspiration, propelling
-                  me to ideate and devise optimal design solutions.
+                  products.
+                </p>
+                <p>
+                  Analyzing the daily skincare challenges faced by these users
+                  served as a wellspring of inspiration, propelling me to ideate
+                  and devise optimal design solutions.
                 </p>
               </div>
             </ResearchInsight>
           </ResearchContainer>
+
+          <PersonaContainer>
+            <ContentWrapperLg>
+              <div>
+                <h2>User Personas</h2>
+                <p>
+                  I utilized the survey findings to craft user personas, laying
+                  the foundation for the project ahead.
+                </p>
+                <p>
+                  I utilized the survey findings to craft user personas, laying
+                  the foundation for the project ahead.
+                </p>
+              </div>
+            </ContentWrapperLg>
+            <PersonaWrapper>
+              <PersonaColumn>
+                <ImageColumn src={case1_cathy} id="" />
+              </PersonaColumn>
+              <PersonaColumn>
+                <ContentWrapperSm>
+                  <div>
+                    <h2>Cathy - 60 year old with sensitive skin</h2>
+                  </div>
+                  <div>
+                    <p>
+                      Cathy has had sensitive skin all her life, forcing her
+                      into having to understand good skincare at a very early
+                      age. Finding products that work without a reaction to her
+                      dry, reactive skin has been a difficult process – but
+                      something she’s come to terms with, trying every product
+                      in every price range. Since finding Riversol, she’s
+                      narrowed down her routine, and has freed up storage space
+                      in her bathroom because she no longer holds onto the
+                      graveyard of skincare that didn’t work.
+                    </p>
+                  </div>
+                </ContentWrapperSm>
+              </PersonaColumn>
+            </PersonaWrapper>
+            <PersonaWrapper>
+              <PersonaColumn>
+                <ContentWrapperSm>
+                  <div>
+                    <h2>
+                      Allison - 70 year old who wants to look as young as she
+                      feels
+                    </h2>
+                  </div>
+                  <div>
+                    <p>
+                      Allison is no stranger to the cliché of wanting to look
+                      younger than she feels. She’s a relatively active and
+                      healthy person – but just wishes the lines on her face and
+                      neck never had to happen. Allison spent a lot of her
+                      younger years sunbathing and is now looking to correct the
+                      damage caused. Dark spots, lines, and general aging has
+                      her feeling less confident than usual. Her best friend is
+                      a breast cancer survivor who discovered Riversol through
+                      necessity – the only products that would help her skin
+                      after chemotherapy – and as soon as she told Allison about
+                      the sampler, she had to try it. Since then, she’s been
+                      hooked.
+                    </p>
+                  </div>
+                </ContentWrapperSm>
+              </PersonaColumn>
+              <PersonaColumn>
+                <ImageColumn src={case1_allison} id="" />
+              </PersonaColumn>
+            </PersonaWrapper>
+          </PersonaContainer>
 
           <ClosingWrapper>
             <Image src={case1_closing} id="" />

@@ -322,13 +322,17 @@ export const ResearchColumn = styled.div`
   align-items: center;
   justify-content: center;
 
+  :first-child {
+    margin-top: 34px;
+  }
+
   // lg //
   @media (min-width: 1024px) {
     width: 50%;
   }
 `;
 
-export const ContentWrapper = styled.div`
+export const ContentWrapperLg = styled.div`
   max-width: 1160px;
   padding: 34px;
 
@@ -337,29 +341,28 @@ export const ContentWrapper = styled.div`
   }
 
   p {
+    margin-top: 44px;
     :first-child {
       margin-top: 60px;
     }
 
-    margin-top: 44px;
-
     @media only screen and (max-width: 1920px) {
+      margin-top: 34px;
       :first-child {
         margin-top: 44px;
       }
-      margin-top: 34px;
     }
     @media only screen and (max-width: 1024px) {
+      margin-top: 24px;
       :first-child {
         margin-top: 34px;
       }
-      margin-top: 24px;
     }
     @media only screen and (max-width: 540px) {
+      margin-top: 5.5vw;
       :first-child {
         margin-top: 5vw;
       }
-      margin-top: 5.5vw;
     }
   }
 `;
@@ -369,13 +372,16 @@ export const ResearchInsight = styled.div`
 
   @media (max-width: 1024px) {
     width: 100%;
+    padding: 0 34px;
   }
 
   @media only screen and (max-width: 540px) {
-    padding: 0 6.3vw;
+    padding: 6.3vw 6.3vw 0 6.3vw;
   }
 
   p {
+    margin-top: 44px;
+
     :first-child {
       color: #010606;
       font-weight: 600;
@@ -383,19 +389,126 @@ export const ResearchInsight = styled.div`
       padding-bottom: 3px;
     }
     @media only screen and (max-width: 1920px) {
+      margin-top: 34px;
       :first-child {
         margin-top: 44px;
       }
     }
     @media only screen and (max-width: 1024px) {
+      margin-top: 24px;
       :first-child {
         margin-top: 34px;
       }
     }
     @media only screen and (max-width: 540px) {
+      margin-top: 5.5vw;
       :first-child {
         margin-top: 5vw;
       }
+    }
+  }
+`;
+
+///// Persoan /////
+export const PersonaContainer = styled.div`
+  max-width: 1400px;
+  padding: 110px 0;
+  justify-content: center;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 960px) {
+    padding-bottom: 11.5vw;
+  }
+  @media only screen and (max-width: 540px) {
+    padding-top: 7.4vw;
+  }
+`;
+
+export const PersonaWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 1024px) {
+    :last-child {
+      flex-direction: column-reverse;
+    }
+  }
+`;
+
+export const PersonaColumn = styled.div`
+  // md sm center //
+  width: 100%;
+
+  // lg //
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: auto;
+  // centering contents //
+  /* @media (max-width: 1920px) {
+
+  } */
+`;
+
+export const ImageColumn = styled.img`
+  max-width: 80%;
+  margin-top: 34px;
+  border: solid 2px #fe0000;
+  border-radius: 15px;
+
+  @media only screen and (max-width: 1024px) {
+    max-width: 40%;
+  }
+  @media only screen and (max-width: 960px) {
+    border-radius: 10px;
+  }
+  @media only screen and (max-width: 540px) {
+    max-width: 60%;
+    border-radius: 10px;
+  }
+`;
+
+export const ContentWrapperSm = styled.div`
+  padding: 34px;
+
+  @media only screen and (max-width: 540px) {
+    padding: 7.2vw 6.3vw 0 6.3vw;
+  }
+
+  h2 {
+    font-size: 44px;
+    color: #fe0000;
+
+    @media only screen and (max-width: 1920px) {
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (max-width: 540px) {
+      font-size: 6.3vw;
+    }
+  }
+
+  p {
+    font-size: 34px;
+    margin-top: 34px;
+
+    @media only screen and (max-width: 1920px) {
+      font-size: 1.5rem;
+      margin-top: 24px;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 1.35rem;
+      margin-top: 16px;
+    }
+    @media only screen and (max-width: 540px) {
+      font-size: 4vw;
+      margin-top: 5vw;
     }
   }
 `;

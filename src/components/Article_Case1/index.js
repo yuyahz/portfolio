@@ -34,6 +34,8 @@ import {
   CompetitorImageWrapper,
   InsertContainer,
   InsertWrapper,
+  InsertImageContainer,
+  InsertImageWrapper,
   ClosingWrapper,
 } from "./CaseElements";
 import case1_hero from "../../images/case1_hero.png";
@@ -46,6 +48,7 @@ import compatitor_neostrata from "../../images/Compatitor_NEOSTRATA.png";
 import compatitor_perblle from "../../images/Compatitor_PERBLLE.png";
 import compatitor_solvaderm from "../../images/Compatitor_SOLVADERM.png";
 import compatitor_city from "../../images/Compatitor_City_Beauty.png";
+import case1_insert from "../../images/case1_insert.png";
 
 const Article_Case1 = () => {
   return (
@@ -449,6 +452,19 @@ const Article_Case1 = () => {
               </div>
             </InsertWrapper>
           </InsertContainer>
+
+          <InsertImageContainer>
+            <InsertImageWrapper>
+              <ImageSm src={case1_insert} id="" />
+            </InsertImageWrapper>
+            <ColumnContentLg>
+              <p>
+                Building on the insights gained from our research, I identified
+                critical factors that compelled us to adopt a different
+                approach, allowing us to continue progressing with the project.
+              </p>
+            </ColumnContentLg>
+          </InsertImageContainer>
 
           <ClosingWrapper>
             <Image src={case1_closing} id="" />

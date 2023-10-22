@@ -9,6 +9,7 @@ import {
   ColumnContentSm,
   Image,
   ImageSm,
+  ImageCircle,
   CaseContainer,
   CaseWrapper,
   HeroImageWrapper,
@@ -29,6 +30,10 @@ import {
   PersonaWrapper,
   EmpathyContainer,
   EmpathyWrapper,
+  CompetitorContainer,
+  CompetitorImageWrapper,
+  InsertContainer,
+  InsertWrapper,
   ClosingWrapper,
 } from "./CaseElements";
 import case1_hero from "../../images/case1_hero.png";
@@ -36,6 +41,11 @@ import case1_closing from "../../images/case1_closing.png";
 import case1_research from "../../images/case1_research.png";
 import case1_cathy from "../../images/Cathy.png";
 import case1_allison from "../../images/Allison.png";
+import compatitor_laroche from "../../images/Compatitor_LA_ROCHE_POSAY.png";
+import compatitor_neostrata from "../../images/Compatitor_NEOSTRATA.png";
+import compatitor_perblle from "../../images/Compatitor_PERBLLE.png";
+import compatitor_solvaderm from "../../images/Compatitor_SOLVADERM.png";
+import compatitor_city from "../../images/Compatitor_City_Beauty.png";
 
 const Article_Case1 = () => {
   return (
@@ -325,18 +335,12 @@ const Article_Case1 = () => {
               <div className="box">
                 <ColumnContentSm>
                   <div className="empathy-border">
-                    <p className="text">Says:</p>
-                    <p className="text">
-                      • I’m always having trouble with my skin
-                    </p>
-                    <p className="text">• My daily routine is unstable</p>
-                    <p className="text">
-                      • I don’t have time to go to the store
-                    </p>
-                    <p className="text">
-                      • I don’t know how to take care of my skin
-                    </p>
-                    <p className="text">
+                    <p>Says:</p>
+                    <p>• I’m always having trouble with my skin</p>
+                    <p>• My daily routine is unstable</p>
+                    <p>• I don’t have time to go to the store</p>
+                    <p>• I don’t know how to take care of my skin</p>
+                    <p>
                       • My sensitivities and allergies prevent buying products
                     </p>
                   </div>
@@ -345,34 +349,26 @@ const Article_Case1 = () => {
               <div className="box">
                 <ColumnContentSm>
                   <div className="empathy-border">
-                    <p className="text">Thinks:</p>
-                    <p className="text">• I should try skincare products</p>
-                    <p className="text">
-                      • I should prevent factor of skincare troubles
-                    </p>
-                    <p className="text">• I should take care of my lifestyle</p>
-                    <p className="text">• I should have a better routine</p>
-                    <p className="text">
-                      • I should go to the skincare workshop
-                    </p>
+                    <p>Thinks:</p>
+                    <p>• I should try skincare products</p>
+                    <p>• I should prevent factor of skincare troubles</p>
+                    <p>• I should take care of my lifestyle</p>
+                    <p>• I should have a better routine</p>
+                    <p>• I should go to the skincare workshop</p>
                   </div>
                 </ColumnContentSm>
               </div>
               <div className="box">
                 <ColumnContentSm>
                   <div className="empathy-border">
-                    <p className="text">Does:</p>
-                    <p className="text">
-                      • I’m always having trouble with my skin
-                    </p>
-                    <p className="text">
-                      • I try to see a recurring dermatologist
-                    </p>
-                    <p className="text">
+                    <p>Does:</p>
+                    <p>• I’m always having trouble with my skin</p>
+                    <p>• I try to see a recurring dermatologist</p>
+                    <p>
                       • Pays for a subscription to find solutions but not help
                     </p>
-                    <p className="text">• I always buy different products</p>
-                    <p className="text">
+                    <p>• I always buy different products</p>
+                    <p>
                       • I try to ask products reputation people who are familiar
                       with it
                     </p>
@@ -382,26 +378,77 @@ const Article_Case1 = () => {
               <div className="box">
                 <ColumnContentSm>
                   <div className="empathy-border">
-                    <p className="text">Feels:</p>
-                    <p className="text">• Drained due to bad overall factors</p>
-                    <p className="text">
+                    <p>Feels:</p>
+                    <p>• Drained due to bad overall factors</p>
+                    <p>
                       • I gave up finding a product due to sensitivities and
                       allergies
                     </p>
-                    <p className="text">
+                    <p>
                       • I frustrated for finding all the things consuming time
                     </p>
-                    <p className="text">
-                      • Never seen ideal products for anti-aging
-                    </p>
-                    <p className="text">
-                      • Sensitive skin products make more trouble my skin
-                    </p>
+                    <p>• Never seen ideal products for anti-aging</p>
+                    <p>• Sensitive skin products make more trouble my skin</p>
                   </div>
                 </ColumnContentSm>
               </div>
             </EmpathyWrapper>
           </EmpathyContainer>
+
+          <CompetitorContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>Competitor Analysis</h2>
+                <CompetitorImageWrapper>
+                  <div className="image">
+                    <ImageCircle src={compatitor_laroche} id="" />
+                  </div>
+                  <div className="image">
+                    <ImageCircle src={compatitor_neostrata} id="" />
+                  </div>
+                  <div className="image">
+                    <ImageCircle src={compatitor_perblle} id="" />
+                  </div>
+                  <div className="image">
+                    <ImageCircle src={compatitor_solvaderm} id="" />
+                  </div>
+                  <div className="image">
+                    <ImageCircle src={compatitor_city} id="" />
+                  </div>
+                </CompetitorImageWrapper>
+                <p>
+                  Through hands-on exploration of our competitors’ websites and
+                  apps and an extensive review of Google feedback, I identified
+                  significant challenges and uncovered prevalent user issues.
+                </p>
+                <div className="analysis-lists">
+                  <p>• clutter UI</p>
+                  <p>• difficult to find the customer’s type of issue</p>
+                  <p>• overwhelming visuals</p>
+                  <p>• confusing content placement</p>
+                  <p>
+                    • being hard to discover products along with your needs{" "}
+                  </p>
+                  <p>• products user guide issue</p>
+                  <p>• complication of applying reward</p>
+                  <p>• unclear method to apply seasonal rewards</p>
+                  <p>• cart problems when combined with your rewards</p>
+                  <p>• basic payment anxiety caused by unclear steps</p>
+                </div>
+              </div>
+            </ColumnContentLg>
+          </CompetitorContainer>
+
+          <InsertContainer>
+            <InsertWrapper>
+              <div>
+                <span>
+                  In-depth research is essential because it forms the foundation
+                  of informed design decisions.
+                </span>
+              </div>
+            </InsertWrapper>
+          </InsertContainer>
 
           <ClosingWrapper>
             <Image src={case1_closing} id="" />

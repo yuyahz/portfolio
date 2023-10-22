@@ -633,6 +633,28 @@ export const InsertWrapper = styled.div`
   }
 `;
 
+///// insert image /////
+export const InsertImageContainer = styled.div`
+  max-width: 1400px;
+  padding: 110px 0;
+  justify-content: center;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 960px) {
+    padding-bottom: 11.5vw;
+  }
+  @media only screen and (max-width: 540px) {
+    padding-top: 7.4vw;
+  }
+`;
+
+export const InsertImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 700px;
+`;
+
 ///// closing image /////
 export const ClosingWrapper = styled.div`
   margin-bottom: 30px;

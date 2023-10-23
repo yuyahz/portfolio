@@ -126,6 +126,29 @@ export const CaseWrapper = styled.div`
   }
 `;
 
+export const FullWidthContainer = styled.div`
+  padding: 110px 0;
+  justify-content: center;
+
+  @media only screen and (max-width: 960px) {
+    padding-bottom: 11.5vw;
+  }
+  @media only screen and (max-width: 540px) {
+    padding-top: 7.4vw;
+  }
+`;
+
+export const FullWidthWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const FullWidthFlipWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+`;
+
 export const ColumnLg = styled.div`
   display: flex;
   align-items: center;
@@ -435,23 +458,6 @@ export const IntroWrapper = styled.div`
 `;
 
 ///// research /////
-export const ResearchContainer = styled.div`
-  padding: 110px 0;
-  justify-content: center;
-
-  @media only screen and (max-width: 960px) {
-    padding-bottom: 11.5vw;
-  }
-  @media only screen and (max-width: 540px) {
-    padding-top: 7.4vw;
-  }
-`;
-
-export const ResearchWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
 export const ResearchInsight = styled.div`
   width: 50%;
 
@@ -652,12 +658,17 @@ export const InsertImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  max-width: 700px;
+  width: 50%;
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 ///// closing image /////
 export const ClosingWrapper = styled.div`
   margin-bottom: 30px;
+  padding-top: 110px;
 
   @media only screen and (max-width: 960px) {
     margin-bottom: 15px;

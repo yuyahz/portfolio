@@ -55,7 +55,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            Home
+            <p>• Home</p>
           </SidebarLink>
           <SidebarLink
             to="about"
@@ -67,7 +67,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            About
+            <p>• About</p>
           </SidebarLink>
           <SidebarLink
             to="case1"
@@ -79,7 +79,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            Case Study 1
+            <p>• Case Study 1</p>
           </SidebarLink>
           <SidebarLink
             to="case2"
@@ -91,7 +91,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            Case Study 2
+            <p>• Case Study 2</p>
           </SidebarLink>
           <SidebarLink
             to="case3"
@@ -103,7 +103,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            Case Study 3
+            <p>• Case Study 3</p>
           </SidebarLink>
           <SidebarLink
             to="mp"
@@ -115,7 +115,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            Midnight Paloma
+            <p>• Midnight Paloma</p>
           </SidebarLink>
           <SidebarLink
             to="larry"
@@ -127,7 +127,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            Work
+            <p>• Work</p>
           </SidebarLink>
           <SidebarLink
             to="contact"
@@ -139,7 +139,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            Contact
+            <p>• Contact</p>
           </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>

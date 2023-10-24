@@ -2,33 +2,42 @@ import styled from "styled-components";
 // import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from "react-scroll";
 
+///// bar setting /////
 export const SidebarContainer = styled.aside`
   position: fixed;
-  z-index: 99;
+  z-index: 22147483638;
 `;
 
 export const SidebarWrapper = styled.aside`
   position: fixed;
-  z-index: 999;
-  width: max(30%, 230px);
-  height: calc(100% - 6rem);
+  top: 0;
+  right: 0;
+  z-index: 2147483638;
+  max-width: 260px;
   margin: 1rem 1rem 0 0;
   border: thick double #fe0000;
   border-radius: 10px;
   background: #fffbf4;
-  display: grid;
-  align-items: center;
-  top: 0;
-  right: 0;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+`;
 
-  @media screen and (max-height: 490px) {
-    min-height: 396px;
+export const SidebarMenu = styled.div`
+  padding: 84px 0 44px 0;
+`;
+
+export const SidebarLink = styled(LinkS)`
+  div,
+  p {
+    color: #fe0000;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 12px 16px;
   }
 `;
 
+///// icon /////
 export const Icon = styled.div`
   display: none;
 
@@ -105,25 +114,4 @@ export const Icon = styled.div`
       transform: rotate(-135deg);
     }
   }
-`;
-
-export const SidebarMenu = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(9, 58px);
-  text-align: center;
-`;
-
-export const SidebarLink = styled(LinkS)`
-  color: #fe0000;
-  font-family: "GT";
-  font-weight: 600;
-  display: flex;
-  padding: 0 16px;
-  font-size: 24px;
-  text-decoration: none;
-  /* align-items: center;
-  justify-content: center; */
-  transition: cubic-bezier(0.65, 0, 0.16, 1);
-  transition: 1s;
 `;

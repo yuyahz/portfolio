@@ -67,7 +67,7 @@ const Index = () => {
       <Works {...worksVector} />
       <Works {...worksDaruma} />
       <Works {...worksDailyUi} />
-      <Works {...worksArtDirections} />
+      {/* <Works {...worksArtDirections} /> */}
       <Contact />
       <Footer />
     </>

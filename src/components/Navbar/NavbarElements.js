@@ -122,6 +122,10 @@ export const NavItem = styled.div`
     margin: 30px 0;
   }
 
+  .mpSec {
+    margin: 30px 0;
+  }
+
   /* .vectorSec {
     margin: 30px 0;
   }

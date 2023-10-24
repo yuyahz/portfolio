@@ -126,6 +126,20 @@ const Navbar = ({ toggle }) => {
                 Case Study 3
               </NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks
+                className="mpSec"
+                to="mp"
+                smooth={true}
+                duration={700}
+                spy={true}
+                exact="true"
+                offset={0}
+                activeClass="active"
+              >
+                Midnight Paloma
+              </NavLinks>
+            </NavItem>
             {/* <NavItem>
               <NavLinks
                 className="larrySec"
@@ -185,7 +199,7 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 className="worksSec"
-                to="mp"
+                to="larry"
                 smooth={true}
                 duration={700}
                 spy={true}

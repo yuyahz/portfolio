@@ -24,7 +24,7 @@ export const SidebarWrapper = styled.aside`
 `;
 
 export const SidebarMenu = styled.div`
-  padding: 84px 0 44px 0;
+  padding: 64px 0 24px 0;
 `;
 
 export const SidebarLink = styled(LinkS)`
@@ -33,7 +33,7 @@ export const SidebarLink = styled(LinkS)`
     color: #fe0000;
     font-size: 24px;
     font-weight: 500;
-    padding: 12px 16px;
+    padding: 10px 16px;
   }
 `;
 

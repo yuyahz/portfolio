@@ -60,7 +60,7 @@ export const ContactWrapper = styled.div`
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    z-index: 998;
+    /* z-index: 898; */
     animation: pulse1 3s ease infinite alternate;
     @keyframes pulse1 {
       0%,
@@ -117,7 +117,7 @@ export const ContactWrapper = styled.div`
     height: 23.438vw;
     line-height: 23.438vw;
     text-align: center;
-    z-index: 999;
+    /* z-index: 899; */
     animation: pulse 3s ease infinite alternate,
       nudge 5s linear infinite alternate;
     border-radius: 100%;

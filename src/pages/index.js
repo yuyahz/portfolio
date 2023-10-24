@@ -14,10 +14,10 @@ import {
   burger,
 } from "../components/Contents/Data";
 import Case_Title from "../components/Case_Title";
-import { case1, case2, case3 } from "../components/Case/Data";
+import { case1, case2, case3, mp } from "../components/Case/Data";
 import {
   // worksRv,
-  worksMp,
+  // worksMp,
   worksLarry,
   worksVector,
   worksDaruma,
@@ -60,8 +60,9 @@ const Index = () => {
       <Case {...case1} />
       <Case {...case2} />
       <Case {...case3} />
+      <Case {...mp} />
       {/* <Works {...worksRv} /> */}
-      <Works {...worksMp} />
+      {/* <Works {...worksMp} /> */}
       <Works {...worksLarry} />
       <Works {...worksVector} />
       <Works {...worksDaruma} />

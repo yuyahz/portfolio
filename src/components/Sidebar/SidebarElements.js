@@ -9,11 +9,11 @@ export const SidebarContainer = styled.aside`
 
 export const SidebarWrapper = styled.aside`
   position: fixed;
-  z-index: 99;
-  width: max(30%, 190px);
+  z-index: 999;
+  width: max(30%, 230px);
   height: calc(100% - 6rem);
   margin: 1rem 1rem 0 0;
-  border: solid 2px #fe0000;
+  border: thick double #fe0000;
   border-radius: 10px;
   background: #fffbf4;
   display: grid;
@@ -110,16 +110,16 @@ export const Icon = styled.div`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 60px);
+  grid-template-rows: repeat(9, 58px);
   text-align: center;
 `;
 
 export const SidebarLink = styled(LinkS)`
   color: #fe0000;
   font-family: "GT";
-  font-weight: 300;
+  font-weight: 600;
   display: flex;
-  padding: 0 24px;
+  padding: 0 16px;
   font-size: 24px;
   text-decoration: none;
   /* align-items: center;

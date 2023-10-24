@@ -115,6 +115,18 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
+            Midnight Paloma
+          </SidebarLink>
+          <SidebarLink
+            to="larry"
+            onClick={toggle}
+            smooth={true}
+            duration={700}
+            spy={true}
+            exact="true"
+            offset={0}
+            activeClass="active"
+          >
             Work
           </SidebarLink>
           <SidebarLink

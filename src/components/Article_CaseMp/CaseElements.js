@@ -313,7 +313,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const TitleWrapper = styled.div`
-  max-width: 1756px;
+  max-width: 1901px;
 `;
 
 export const TitleColumn = styled.div`

@@ -103,13 +103,7 @@ const Article_CaseMp = () => {
                     <p>Usability Testing</p>
                   </Tag>
                   <Tag>
-                    <p>Data - Analysis</p>
-                  </Tag>
-                  <Tag>
                     <p>Design identity systems</p>
-                  </Tag>
-                  <Tag>
-                    <p>Information Architecture</p>
                   </Tag>
                   <Tag>
                     <p>E-commerce Optimization</p>
@@ -117,12 +111,18 @@ const Article_CaseMp = () => {
                   <Tag>
                     <p>Brand Development</p>
                   </Tag>
+                  <Tag>
+                    <p>Agile Development</p>
+                  </Tag>
+                  <Tag>
+                    <p>Vector - illustration</p>
+                  </Tag>
                 </TagWrapper>
                 <div>
                   <h1>
-                    I’ve been dedicated to problem-solving for RMDY, which
-                    comprises two brands Riversol Skin Care Solutions and
-                    Midnight Paloma.
+                    It was crucial to improve the website's usability, which had
+                    previously missed out on significant potential, within a
+                    limited timeframe.
                   </h1>
                 </div>
               </TitleWrapper>
@@ -139,7 +139,7 @@ const Article_CaseMp = () => {
                   <p>Development: Aaron Johnson</p>
                 </CreditBody>
                 <CreditBody>
-                  <p>Project Manager: Ed Rushton</p>
+                  <p>Project Manager: Taylor Rogers</p>
                 </CreditBody>
               </CreditWrapper>
             </TitleColumn>
@@ -149,58 +149,45 @@ const Article_CaseMp = () => {
             <IntroWrapper>
               <div>
                 <h3>
-                  Riversol was established by board-certified dermatologist Dr.
-                  Jason Rivers, following over 20 years of clinical dermatology
-                  experience, to provide a safe skincare solution.
+                  Midnight Paloma is committed to the concept of clean beauty,
+                  using all-natural ingredients to craft signature formulas that
+                  align with eco-conscious living.
                 </h3>
               </div>
               <div>
                 <h3>
-                  This specializes in providing anti-aging solutions for
-                  individuals with sensitive skin and is committed to assisting
-                  anyone with skin-related concerns through its product
-                  offerings.
+                  Founder Tayler Rogers, drawing from 12 years of retail
+                  experience, has carefully curated and developed Midnight
+                  Paloma into a brand that embodies modern design, clean
+                  ingredients, and self-care rituals, including the use of skin
+                  tools.
                 </h3>
               </div>
               <div>
                 <h3>
-                  The company’s primary method for expanding its business has
-                  been a commitment to providing free products to individuals
-                  who may potentially become our customers through our free
-                  sample program. This initiative is aimed at introducing
-                  dependable, high-quality products and showcasing the value of
-                  the company to those in need of support.
+                  We have devoted ourselves to maintaining the stunning appeal
+                  of our brands. However, our primary source of profit has
+                  traditionally been through retail, with less focus on our
+                  e-commerce platform.
                 </h3>
               </div>
               <div>
                 <h3>
-                  My assigned responsibility involves enhancing the quality of
-                  the website and all digital platforms associated with the free
-                  sample program to contribute to the company’s overall
-                  profitability.
+                  Nonetheless, we've come to recognize the significant untapped
+                  potential that Midnight Paloma holds in the online market.
                 </h3>
               </div>
               <div>
                 <h3>
-                  To start, I’ve strived to identify essential factors for
-                  enhancing the performance of our website and all digital
-                  platforms while fostering seamless communication within the
-                  team.
+                  My responsibility was to completely overhaul the website
+                  within a tight timeframe.
                 </h3>
               </div>
               <div>
                 <h3>
-                  It has been challenging to maintain a consistent UI, as it
-                  often requires a significant amount of time to establish and
-                  implement rules. Additionally, we have yet to define clear
-                  goals for guiding our teams toward our primary objectives.
-                </h3>
-              </div>
-              <div>
-                <h3>
-                  Thoroughly clarifying every aspect, I created a robust
-                  foundational design system, integrating comprehensive UI/UX
-                  principles.
+                  My team had well-defined ideas and inspiration in place,
+                  allowing me to dedicate my efforts to shaping these ideas into
+                  tangible creations.
                 </h3>
               </div>
             </IntroWrapper>

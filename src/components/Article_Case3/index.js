@@ -21,11 +21,14 @@ import {
   CreditWrapper,
   CreditTitle,
   CreditBody,
-  IntroContainer,
-  IntroWrapper,
   FullWidthContainer,
   FullWidthWrapper,
   FullWidthFlipWrapper,
+  ClosingWrapper,
+} from "../CaseElements";
+import {
+  IntroContainer,
+  IntroWrapper,
   ResearchInsight,
   PersonaContainer,
   PersonaWrapper,
@@ -37,8 +40,7 @@ import {
   InsertWrapper,
   InsertImageContainer,
   InsertImageWrapper,
-  ClosingWrapper,
-} from "./CaseElements";
+} from "./Case3_Elements";
 import case1_hero from "../../images/case1_hero.png";
 import case1_closing from "../../images/case1_closing.png";
 import case1_research from "../../images/case1_research.png";
@@ -55,9 +57,9 @@ import case1_architecture from "../../images/case1_architecture.png";
 import case1_flow from "../../images/case1_flow.png";
 import case1_overview from "../../images/case1_overview.png";
 
-const Article_Case3 = () => {
+const Article_Case1 = () => {
   return (
-    <CaseContainer id="case3">
+    <CaseContainer id="case1">
       <motion.div
         animate={{
           x: 0,
@@ -584,4 +586,4 @@ const Article_Case3 = () => {
   );
 };
 
-export default Article_Case3;
+export default Article_Case1;

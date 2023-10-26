@@ -47,38 +47,26 @@ export const NavLogo = styled(LinkR)`
   height: auto;
 
   img:hover {
-      /* Start the shake animation and make the animation last for 0.5 seconds */
-      animation: tilt-n-move-shaking 0.3s;
+    animation: tilt-n-move-shaking 0.3s;
+    animation-iteration-count: infinite;
+  }
 
-      /* When the animation is finished, start again */
-      animation-iteration-count: infinite;
+  @keyframes tilt-n-move-shaking {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
     }
-
-    @keyframes tilt-n-move-shaking {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(5px, 5px) rotate(5deg); }
-  50% { transform: translate(0, 0) rotate(0eg); }
-  75% { transform: translate(-5px, 5px) rotate(-5deg); }
-  100% { transform: translate(0, 0) rotate(0deg); }
-}
-    /* animation: shake 0.5s;
-    @keyframes shake {
-      0% {
-        transform: translate(0, 0) rotate(0deg);
-      }
-      25% {
-        transform: translate(5px, 5px) rotate(5deg);
-      }
-      50% {
-        transform: translate(0, 0) rotate(0eg);
-      }
-      75% {
-        transform: translate(-5px, 5px) rotate(-5deg);
-      }
-      100% {
-        transform: translate(0, 0) rotate(0deg);
-      }
-    } */
+    25% {
+      transform: translate(5px, 5px) rotate(5deg);
+    }
+    50% {
+      transform: translate(0, 0) rotate(0eg);
+    }
+    75% {
+      transform: translate(-5px, 5px) rotate(-5deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
   }
 
   @media screen and (max-width: 960px) {

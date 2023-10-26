@@ -21,11 +21,14 @@ import {
   CreditWrapper,
   CreditTitle,
   CreditBody,
-  IntroContainer,
-  IntroWrapper,
   FullWidthContainer,
   FullWidthWrapper,
   FullWidthFlipWrapper,
+  ClosingWrapper,
+} from "../CaseElements";
+import {
+  IntroContainer,
+  IntroWrapper,
   ResearchInsight,
   PersonaContainer,
   PersonaWrapper,
@@ -37,8 +40,7 @@ import {
   InsertWrapper,
   InsertImageContainer,
   InsertImageWrapper,
-  ClosingWrapper,
-} from "./CaseElements";
+} from "./Case1_Elements";
 import case1_hero from "../../images/case1_hero.png";
 import case1_closing from "../../images/case1_closing.png";
 import case1_research from "../../images/case1_research.png";

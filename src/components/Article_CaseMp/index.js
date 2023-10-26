@@ -4,12 +4,8 @@ import {
   HomeIconWrapper,
   HomeIcon,
   ColumnLg,
-  ColumnSm,
   ColumnContentLg,
-  ColumnContentSm,
   Image,
-  ImageSm,
-  ImageCircle,
   CaseContainer,
   CaseWrapper,
   HeroImageWrapper,
@@ -21,39 +17,23 @@ import {
   CreditWrapper,
   CreditTitle,
   CreditBody,
-  IntroContainer,
-  IntroWrapper,
   FullWidthContainer,
   FullWidthWrapper,
   FullWidthFlipWrapper,
-  ResearchInsight,
-  PersonaContainer,
-  PersonaWrapper,
-  EmpathyContainer,
-  EmpathyWrapper,
-  CompetitorContainer,
-  CompetitorImageWrapper,
+  ClosingWrapper,
+} from "../CaseElements";
+import {
+  IntroContainer,
+  IntroWrapper,
   InsertContainer,
   InsertWrapper,
-  InsertImageContainer,
-  InsertImageWrapper,
-  ClosingWrapper,
-} from "./CaseElements";
+  InsightsContainer,
+} from "./CaseMp_Elements";
 import caseMp_hero from "../../images/caseMp_hero.png";
 import caseMp_closing from "../../images/caseMp_closing.png";
-import case1_research from "../../images/case1_research.png";
-import case1_cathy from "../../images/Cathy.png";
-import case1_allison from "../../images/Allison.png";
-import compatitor_laroche from "../../images/Compatitor_LA_ROCHE_POSAY.png";
-import compatitor_neostrata from "../../images/Compatitor_NEOSTRATA.png";
-import compatitor_perblle from "../../images/Compatitor_PERBLLE.png";
-import compatitor_solvaderm from "../../images/Compatitor_SOLVADERM.png";
-import compatitor_city from "../../images/Compatitor_City_Beauty.png";
-import case1_insert from "../../images/case1_insert.png";
-import case1_journey from "../../images/case1_journey.png";
-import case1_architecture from "../../images/case1_architecture.png";
-import case1_flow from "../../images/case1_flow.png";
-import case1_overview from "../../images/case1_overview.png";
+import caseMp_credibility from "../../images/caseMp_credibility.png";
+import caseMp_consistency from "../../images/caseMp_consistency.png";
+import caseMp_reuseable from "../../images/caseMp_reuseable.png";
 
 const Article_CaseMp = () => {
   return (
@@ -193,289 +173,65 @@ const Article_CaseMp = () => {
             </IntroWrapper>
           </IntroContainer>
 
-          <FullWidthContainer>
-            <FullWidthWrapper>
-              <ColumnLg>
-                <Image src={case1_research} id="" />
-              </ColumnLg>
-              <ColumnLg>
-                <ColumnContentLg>
-                  <div>
-                    <h2>User Research</h2>
-                  </div>
-                  <div>
-                    <p>
-                      In our pursuit of designing user-centric experiences, I
-                      prioritize User Research, which involves delving into user
-                      behaviors, uncovering their needs, and analyzing their
-                      motivations through various observations, task analysis,
-                      and valuable feedback methodologies.
-                    </p>
-                    <p>
-                      Our collaboration with SplitBase has enabled us to conduct
-                      a comprehensive survey, and in our qualitative analysis
-                      phase, we engaged in insightful interviews with numerous
-                      consumers who have made purchases of our products.
-                    </p>
-                  </div>
-                </ColumnContentLg>
-              </ColumnLg>
-            </FullWidthWrapper>
-            <ResearchInsight>
-              <ColumnContentSm>
-                <div>
-                  <p>Insights:</p>
-                  <p>
-                    The survey proved invaluable in gaining a profound
-                    understanding of our users, pinpointing their primary pain
-                    points and aspirations. It allowed me to quantify the
-                    proportion of users exhibiting genuine interest in our
-                    products.
-                  </p>
-                  <p>
-                    Analyzing the daily skincare challenges faced by these users
-                    served as a wellspring of inspiration, propelling me to
-                    ideate and devise optimal design solutions.
-                  </p>
-                </div>
-              </ColumnContentSm>
-            </ResearchInsight>
-          </FullWidthContainer>
-
-          <PersonaContainer>
-            <ColumnContentLg>
-              <div>
-                <h2>User Personas</h2>
-                <p>
-                  I utilized the survey findings to craft user personas, laying
-                  the foundation for the project ahead.
-                </p>
-                <p>
-                  I utilized the survey findings to craft user personas, laying
-                  the foundation for the project ahead.
-                </p>
-              </div>
-            </ColumnContentLg>
-            <PersonaWrapper>
-              <ColumnSm>
-                <ImageSm src={case1_cathy} id="" />
-              </ColumnSm>
-              <ColumnSm>
-                <ColumnContentSm>
-                  <div>
-                    <h2>Cathy - 60 year old with sensitive skin</h2>
-                  </div>
-                  <div>
-                    <p>
-                      Cathy has had sensitive skin all her life, forcing her
-                      into having to understand good skincare at a very early
-                      age. Finding products that work without a reaction to her
-                      dry, reactive skin has been a difficult process – but
-                      something she’s come to terms with, trying every product
-                      in every price range. Since finding Riversol, she’s
-                      narrowed down her routine, and has freed up storage space
-                      in her bathroom because she no longer holds onto the
-                      graveyard of skincare that didn’t work.
-                    </p>
-                  </div>
-                </ColumnContentSm>
-              </ColumnSm>
-            </PersonaWrapper>
-            <PersonaWrapper>
-              <ColumnSm>
-                <ColumnContentSm>
-                  <div>
-                    <h2>
-                      Allison - 70 year old who wants to look as young as she
-                      feels
-                    </h2>
-                  </div>
-                  <div>
-                    <p>
-                      Allison is no stranger to the cliché of wanting to look
-                      younger than she feels. She’s a relatively active and
-                      healthy person – but just wishes the lines on her face and
-                      neck never had to happen. Allison spent a lot of her
-                      younger years sunbathing and is now looking to correct the
-                      damage caused. Dark spots, lines, and general aging has
-                      her feeling less confident than usual. Her best friend is
-                      a breast cancer survivor who discovered Riversol through
-                      necessity – the only products that would help her skin
-                      after chemotherapy – and as soon as she told Allison about
-                      the sampler, she had to try it. Since then, she’s been
-                      hooked.
-                    </p>
-                  </div>
-                </ColumnContentSm>
-              </ColumnSm>
-              <ColumnSm>
-                <ImageSm src={case1_allison} id="" />
-              </ColumnSm>
-            </PersonaWrapper>
-          </PersonaContainer>
-
-          <EmpathyContainer>
-            <ColumnContentLg>
-              <div>
-                <h2>Empathy Map</h2>
-                <p>
-                  The empathy map serves as a collaborative tool that allows
-                  design teams to cultivate a deeper understanding of their
-                  customers. It is particularly useful for representing and
-                  empathizing with distinct user groups or customer segments.
-                </p>
-              </div>
-            </ColumnContentLg>
-            <EmpathyWrapper>
-              <div className="box">
-                <ColumnContentSm>
-                  <div className="empathy-border">
-                    <p>Says:</p>
-                    <p>• I’m always having trouble with my skin</p>
-                    <p>• My daily routine is unstable</p>
-                    <p>• I don’t have time to go to the store</p>
-                    <p>• I don’t know how to take care of my skin</p>
-                    <p>
-                      • My sensitivities and allergies prevent buying products
-                    </p>
-                  </div>
-                </ColumnContentSm>
-              </div>
-              <div className="box">
-                <ColumnContentSm>
-                  <div className="empathy-border">
-                    <p>Thinks:</p>
-                    <p>• I should try skincare products</p>
-                    <p>• I should prevent factor of skincare troubles</p>
-                    <p>• I should take care of my lifestyle</p>
-                    <p>• I should have a better routine</p>
-                    <p>• I should go to the skincare workshop</p>
-                  </div>
-                </ColumnContentSm>
-              </div>
-              <div className="box">
-                <ColumnContentSm>
-                  <div className="empathy-border">
-                    <p>Does:</p>
-                    <p>• I’m always having trouble with my skin</p>
-                    <p>• I try to see a recurring dermatologist</p>
-                    <p>
-                      • Pays for a subscription to find solutions but not help
-                    </p>
-                    <p>• I always buy different products</p>
-                    <p>
-                      • I try to ask products reputation people who are familiar
-                      with it
-                    </p>
-                  </div>
-                </ColumnContentSm>
-              </div>
-              <div className="box">
-                <ColumnContentSm>
-                  <div className="empathy-border">
-                    <p>Feels:</p>
-                    <p>• Drained due to bad overall factors</p>
-                    <p>
-                      • I gave up finding a product due to sensitivities and
-                      allergies
-                    </p>
-                    <p>
-                      • I frustrated for finding all the things consuming time
-                    </p>
-                    <p>• Never seen ideal products for anti-aging</p>
-                    <p>• Sensitive skin products make more trouble my skin</p>
-                  </div>
-                </ColumnContentSm>
-              </div>
-            </EmpathyWrapper>
-          </EmpathyContainer>
-
-          <CompetitorContainer>
-            <ColumnContentLg>
-              <div>
-                <h2>Competitor Analysis</h2>
-                <CompetitorImageWrapper>
-                  <div className="image">
-                    <ImageCircle src={compatitor_laroche} id="" />
-                  </div>
-                  <div className="image">
-                    <ImageCircle src={compatitor_neostrata} id="" />
-                  </div>
-                  <div className="image">
-                    <ImageCircle src={compatitor_perblle} id="" />
-                  </div>
-                  <div className="image">
-                    <ImageCircle src={compatitor_solvaderm} id="" />
-                  </div>
-                  <div className="image">
-                    <ImageCircle src={compatitor_city} id="" />
-                  </div>
-                </CompetitorImageWrapper>
-                <p>
-                  Through hands-on exploration of our competitors’ websites and
-                  apps and an extensive review of Google feedback, I identified
-                  significant challenges and uncovered prevalent user issues.
-                </p>
-                <div className="analysis-lists">
-                  <p>• clutter UI</p>
-                  <p>• difficult to find the customer’s type of issue</p>
-                  <p>• overwhelming visuals</p>
-                  <p>• confusing content placement</p>
-                  <p>
-                    • being hard to discover products along with your needs{" "}
-                  </p>
-                  <p>• products user guide issue</p>
-                  <p>• complication of applying reward</p>
-                  <p>• unclear method to apply seasonal rewards</p>
-                  <p>• cart problems when combined with your rewards</p>
-                  <p>• basic payment anxiety caused by unclear steps</p>
-                </div>
-              </div>
-            </ColumnContentLg>
-          </CompetitorContainer>
-
           <InsertContainer>
             <InsertWrapper>
               <div>
                 <span>
-                  In-depth research is essential because it forms the foundation
-                  of informed design decisions.
+                  I believe that aligning everyone’s perspective on the design
+                  would saves time across all projects.
                 </span>
               </div>
             </InsertWrapper>
           </InsertContainer>
 
-          <InsertImageContainer>
-            <InsertImageWrapper>
-              <ImageSm src={case1_insert} id="" />
-            </InsertImageWrapper>
+          <InsightsContainer>
             <ColumnContentLg>
-              <p>
-                Building on the insights gained from our research, I identified
-                critical factors that compelled us to adopt a different
-                approach, allowing us to continue progressing with the project.
-              </p>
+              <div>
+                <h2>insights:</h2>
+                <p>
+                  As we conducted our analysis, we uncovered multiple factors
+                  for enhancing usability in both the User Interface and User
+                  Experience.
+                </p>
+                <div className="insights-lists">
+                  <p>• clutter UI</p>
+                  <p>• difficulty in locating the products users needed</p>
+                  <p>
+                    • the interface lacks alignment with the brand’s customer
+                    demographic
+                  </p>
+                  <p>
+                    • the design does not give priority to aligning with brand
+                    directions and customer expectations
+                  </p>
+                  <p>
+                    • updating for promotional purposes takes an excessive
+                    amount of time
+                  </p>
+                </div>
+              </div>
             </ColumnContentLg>
-          </InsertImageContainer>
+          </InsightsContainer>
 
           <FullWidthContainer>
             <FullWidthWrapper>
               <ColumnLg>
-                <Image src={case1_journey} id="" />
+                <Image src={caseMp_credibility} id="" />
               </ColumnLg>
               <ColumnLg>
                 <ColumnContentLg>
                   <div>
-                    <h2>User Journey</h2>
+                    <h2>Credibility in Design</h2>
                   </div>
                   <div>
                     <p>
-                      The user journey, often represented through a visual
-                      journey map, illustrates the sequential path a person
-                      takes while interacting with a product, service, or brand.
-                      It encompasses the stages of discovery, the
-                      decision-making process regarding whether to make a
-                      purchase.
+                      Based on my research and experience, the Aesthetic
+                      Usability Effect proves to be a powerful tool. Users tend
+                      to perceive aesthetically pleasing products as more
+                      usable. Therefore, we concentrated on enhancing our design
+                      by incorporating the results of our analysis, leading us
+                      to introduce a two-column design in the hero section and a
+                      grid-based layout.
                     </p>
                   </div>
                 </ColumnContentLg>
@@ -486,26 +242,24 @@ const Article_CaseMp = () => {
           <FullWidthContainer>
             <FullWidthFlipWrapper>
               <ColumnLg>
-                <Image src={case1_architecture} id="" />
+                <Image src={caseMp_consistency} id="" />
               </ColumnLg>
               <ColumnLg>
                 <ColumnContentLg>
                   <div>
-                    <h2>Information Architecture</h2>
+                    <h2>Consistency in UI design</h2>
                   </div>
                   <div>
                     <p>
-                      Effective design, when executed, seamlessly integrates
-                      with the user experience, becoming invisible. It’s only in
-                      cases of poor design that its presence becomes noticeable.
-                      Information architecture plays a crucial role in ensuring
-                      a smooth and user-friendly experience.
-                    </p>
-                    <p>
-                      This not only enhances the user experience but also
-                      minimizes the risk of costly redesigns and ensures that
-                      our product or interface is more likely to succeed in the
-                      market.
+                      In every project, aligning the concept with users’ needs
+                      while maintaining credibility is essential. One
+                      fundamental principle in UI design is consistency, as it
+                      serves to reduce cognitive load. Consistency simplifies
+                      the user’s understanding of how to use the product,
+                      diminishing the mental effort required to learn and
+                      navigate the interface. I am dedicated to upholding this
+                      principle in the development of collections and product
+                      pages.
                     </p>
                   </div>
                 </ColumnContentLg>
@@ -516,50 +270,27 @@ const Article_CaseMp = () => {
           <FullWidthContainer>
             <FullWidthWrapper>
               <ColumnLg>
-                <Image src={case1_flow} id="" />
+                <Image src={caseMp_reuseable} id="" />
               </ColumnLg>
               <ColumnLg>
                 <ColumnContentLg>
                   <div>
-                    <h2>User Flow</h2>
+                    <h2>Reusable User Interfaces</h2>
                   </div>
                   <div>
                     <p>
-                      The user flow outlines the journey a user takes from the
-                      moment they launch the application to exploring all
-                      website functionalities and performing various actions.
+                      Addressing the challenge of consistently updating the
+                      website for promotions and blogs, involving multiple team
+                      members, required the implementation of a reusable
+                      component design system. This approach not only supported
+                      rapid updates but also ensured consistency. Effective
+                      communication with a developer became indispensable for
+                      the success of this project.
                     </p>
                   </div>
                 </ColumnContentLg>
               </ColumnLg>
             </FullWidthWrapper>
-          </FullWidthContainer>
-
-          <FullWidthContainer>
-            <FullWidthFlipWrapper>
-              <ColumnLg>
-                <Image src={case1_overview} id="" />
-              </ColumnLg>
-              <ColumnLg>
-                <ColumnContentLg>
-                  <div>
-                    <h2>Branding Style Guide</h2>
-                  </div>
-                  <div>
-                    <p>
-                      A brand style guide dictates the composition, design
-                      principles, and overall visual identity of a company’s
-                      branding.
-                    </p>
-                    <p>
-                      My role, which primarily centers on digital product
-                      design, played a pivotal role in unifying and enhancing
-                      the UI/UX understanding across teams.
-                    </p>
-                  </div>
-                </ColumnContentLg>
-              </ColumnLg>
-            </FullWidthFlipWrapper>
           </FullWidthContainer>
 
           <ClosingWrapper>

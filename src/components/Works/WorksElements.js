@@ -50,7 +50,7 @@ export const WorksTitle = styled(Link)`
   text-decoration: none;
 
   ::before {
-    content: "Check this out!!";
+    content: "Read more";
     position: absolute;
     width: 840px;
     height: 130px;

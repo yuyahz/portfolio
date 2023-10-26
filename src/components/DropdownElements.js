@@ -66,7 +66,8 @@ export const DropdownInnerWrapper = styled.div`
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-    transition: 0.5s ease;
+    transition: 0.5s;
+    transition-delay: calc(60ms * var(--delay));
 
     @media only screen and (max-width: 960px) {
       font-size: 4.44vw;
@@ -77,8 +78,6 @@ export const DropdownInnerWrapper = styled.div`
     width: 100%;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-20px);
-    transition: 0.5s ease;
     position: absolute;
   }
 

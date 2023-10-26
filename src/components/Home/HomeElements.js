@@ -126,6 +126,26 @@ export const ImageWin = styled(motion.img)`
   height: auto;
   filter: drop-shadow(0 1px 7px #0000001a) drop-shadow(0 2px 3px #00000014)
     drop-shadow(0 4px 7px #00000029);
+  animation: tilt-n-move-shaking 0.2s;
+  animation-iteration-count: 15;
+
+  @keyframes tilt-n-move-shaking {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(-5px, 5px) rotate(-5deg);
+    }
+    50% {
+      transform: translate(0, 0) rotate(0eg);
+    }
+    75% {
+      transform: translate(5px, 5px) rotate(5deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+  }
 
   @media only screen and (max-width: 1919px) {
     width: 100px;
@@ -151,6 +171,26 @@ export const ImageMac = styled(motion.img)`
   padding-bottom: 24px;
   filter: drop-shadow(0 1px 7px #0000001a) drop-shadow(0 2px 3px #00000014)
     drop-shadow(0 4px 7px #00000029);
+  animation: tilt-n-move-shaking 0.2s;
+  animation-iteration-count: 15;
+
+  @keyframes tilt-n-move-shaking {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(5px, 5px) rotate(5deg);
+    }
+    50% {
+      transform: translate(0, 0) rotate(0eg);
+    }
+    75% {
+      transform: translate(-5px, 5px) rotate(-5deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+  }
 
   @media only screen and (max-width: 1919px) {
     width: 95px;

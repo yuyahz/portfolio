@@ -98,7 +98,7 @@ const Navbar = ({ toggle }) => {
                 Case Study 1
               </NavLinks>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLinks
                 className="case2Sec"
                 to="case2"
@@ -111,8 +111,8 @@ const Navbar = ({ toggle }) => {
               >
                 Case Study 2
               </NavLinks>
-            </NavItem>
-            <NavItem>
+            </NavItem> */}
+            {/* <NavItem>
               <NavLinks
                 className="case3Sec"
                 to="case3"
@@ -125,7 +125,7 @@ const Navbar = ({ toggle }) => {
               >
                 Case Study 3
               </NavLinks>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLinks
                 className="mpSec"

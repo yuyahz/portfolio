@@ -58,8 +58,8 @@ const Index = () => {
       <Contents {...homeDaruma} /> */}
       <Case_Title />
       <Case {...case1} />
-      <Case {...case2} />
-      <Case {...case3} />
+      {/* <Case {...case2} />
+      <Case {...case3} /> */}
       <Case {...mp} />
       {/* <Works {...worksRv} /> */}
       {/* <Works {...worksMp} /> */}

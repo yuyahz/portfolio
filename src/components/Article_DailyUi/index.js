@@ -24,7 +24,8 @@ import {
   InsertContainer,
   InsertWrapper,
 } from "./CaseUi_Elements";
-import { Button } from "../ButtonCaseElements";
+import { ButtonExternal } from "../ButtonCaseElements";
+import { FaDribbble } from "react-icons/fa";
 import caseUi_hero from "../../images/caseUi_hero.png";
 
 const Article_DailyUi = () => {
@@ -134,7 +135,14 @@ const Article_DailyUi = () => {
               </div>
               <ColumnContentLg>
                 <div className="centering">
-                  <Button>Read more</Button>
+                  <ButtonExternal
+                    href="https://dribbble.com/Hashirizaki"
+                    target="_blank"
+                    aria-label="dribbble"
+                  >
+                    <FaDribbble />
+                    Read more
+                  </ButtonExternal>
                 </div>
               </ColumnContentLg>
             </IntroWrapper>

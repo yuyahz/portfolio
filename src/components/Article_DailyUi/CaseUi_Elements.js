@@ -24,6 +24,9 @@ export const IntroWrapper = styled.div`
     a {
       width: 100%;
     }
+    svg {
+      margin-right: 6px;
+    }
   }
 
   div {

@@ -35,7 +35,7 @@ export const worksDaruma = {
 
 export const worksDailyUi = {
   id: "ui",
-  to: "darumaPage",
+  to: "dailyUiPage",
   title: "Daily UI",
   number: "04",
 };

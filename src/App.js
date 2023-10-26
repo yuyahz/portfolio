@@ -9,6 +9,7 @@ import caseMpPage from "./pages/articleCaseMp";
 import larryPage from "./pages/articleLarry";
 import vectorPage from "./pages/articleVector";
 import darumaPage from "./pages/articleDaruma";
+import dailyUiPage from "./pages/articleDailyUi";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/larryPage" component={larryPage} exact />
         <Route path="/vectorPage" component={vectorPage} exact />
         <Route path="/darumaPage" component={darumaPage} exact />
+        <Route path="/dailyUiPage" component={dailyUiPage} exact />
       </Switch>
     </Router>
   );

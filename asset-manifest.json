@@ -1,15 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ae0bc1b3.css",
-    "main.js": "/portfolio/static/js/main.feeae293.js",
+    "main.js": "/portfolio/static/js/main.ec7afa94.js",
+    "static/media/caseMp_closing.png": "/portfolio/static/media/caseMp_closing.6a04b2dac72e7bba15ef.png",
+    "static/media/caseMp_hero.png": "/portfolio/static/media/caseMp_hero.7669da0629fb52cfcf9d.png",
     "static/media/case1_closing.png": "/portfolio/static/media/case1_closing.3cc4aed0b930417c30de.png",
     "static/media/LarryMovie_2.mp4": "/portfolio/static/media/LarryMovie_2.98a1cffc69829417c5d2.mp4",
     "static/media/LarryMovie_1.mp4": "/portfolio/static/media/LarryMovie_1.f5d97d2b58120911d2bd.mp4",
+    "static/media/caseUi_hero.png": "/portfolio/static/media/caseUi_hero.638f42b60d785e460a64.png",
     "static/media/VectorMovie_1.mp4": "/portfolio/static/media/VectorMovie_1.5f0e7ba9884d325351f6.mp4",
     "static/media/case1_hero.png": "/portfolio/static/media/case1_hero.8b83a9ddc909a05c7968.png",
+    "static/media/case_Mp_v2.png": "/portfolio/static/media/case_Mp_v2.ab6c44a6e669d67ef4f7.png",
+    "static/media/case_1_v2.png": "/portfolio/static/media/case_1_v2.9b0dc1916ecef2362bd1.png",
+    "static/media/caseMp_credibility.png": "/portfolio/static/media/caseMp_credibility.a46691f8565df3292f16.png",
     "static/media/Cathy.png": "/portfolio/static/media/Cathy.214a54490147d44fa818.png",
     "static/media/Allison.png": "/portfolio/static/media/Allison.1fbd9514418faaf10868.png",
-    "static/media/case1_insert.png": "/portfolio/static/media/case1_insert.b9ce2b65e289d923888d.png",
+    "static/media/caseMp_reuseable.png": "/portfolio/static/media/caseMp_reuseable.a7aaed80061edd3f2951.png",
+    "static/media/case1_insert.png": "/portfolio/static/media/case1_insert.f904f6d455ecb20713f1.png",
+    "static/media/caseMp_consistency.png": "/portfolio/static/media/caseMp_consistency.92e2eb4f15045f708ebb.png",
     "static/media/VectorArticle_11.png": "/portfolio/static/media/VectorArticle_11.cc9aa830f0b15ccc2cae.png",
     "static/media/VectorArticle_8.png": "/portfolio/static/media/VectorArticle_8.5d6c8b6305fb94937e2e.png",
     "static/media/VectorArticle_4.png": "/portfolio/static/media/VectorArticle_4.3a8221a4323ab0e086ea.png",
@@ -38,7 +46,6 @@
     "static/media/LarryArticle_6.png": "/portfolio/static/media/LarryArticle_6.50355c7e0bd638576ef2.png",
     "static/media/LarryArticle_4.png": "/portfolio/static/media/LarryArticle_4.0c2e668bbefc54efb637.png",
     "static/media/case_3.png": "/portfolio/static/media/case_3.81bfc25e9e1287489710.png",
-    "static/media/case_1.png": "/portfolio/static/media/case_1.49ec72c320f7c9221851.png",
     "static/media/VectorArticle_2.png": "/portfolio/static/media/VectorArticle_2.30a3d6cfdae677c50ed8.png",
     "static/media/DarumaArticle_1.png": "/portfolio/static/media/DarumaArticle_1.0ae7edfd51287b3ee5b7.png",
     "static/media/DarumaArticle_2.png": "/portfolio/static/media/DarumaArticle_2.f1a2dd83adbe5af814c3.png",
@@ -61,10 +68,10 @@
     "static/media/logo.svg": "/portfolio/static/media/logo.215608270b0f1bb0037ac9a136635d0c.svg",
     "index.html": "/portfolio/index.html",
     "main.ae0bc1b3.css.map": "/portfolio/static/css/main.ae0bc1b3.css.map",
-    "main.feeae293.js.map": "/portfolio/static/js/main.feeae293.js.map"
+    "main.ec7afa94.js.map": "/portfolio/static/js/main.ec7afa94.js.map"
   },
   "entrypoints": [
     "static/css/main.ae0bc1b3.css",
-    "static/js/main.feeae293.js"
+    "static/js/main.ec7afa94.js"
   ]
 }

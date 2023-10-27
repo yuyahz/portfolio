@@ -14,7 +14,7 @@ import {
   burger,
 } from "../components/Contents/Data";
 import Case_Title from "../components/Case_Title";
-import { case1, case2, case3, mp } from "../components/Case/Data";
+import { case1, case2, case3, caseMp } from "../components/Case/Data";
 import {
   // worksRv,
   // worksMp,
@@ -23,6 +23,7 @@ import {
   worksDaruma,
   worksDailyUi,
   worksArtDirections,
+  worksPortfolio,
 } from "../components/Works/Data";
 // import PicLarry from "../components/PicLarry";
 // import PicVector from "../components/PicVector";
@@ -60,7 +61,7 @@ const Index = () => {
       <Case {...case1} />
       {/* <Case {...case2} />
       <Case {...case3} /> */}
-      <Case {...mp} />
+      <Case {...caseMp} />
       {/* <Works {...worksRv} /> */}
       {/* <Works {...worksMp} /> */}
       <Works {...worksLarry} />
@@ -68,6 +69,7 @@ const Index = () => {
       <Works {...worksDaruma} />
       <Works {...worksDailyUi} />
       {/* <Works {...worksArtDirections} /> */}
+      <Works {...worksPortfolio} />
       <Contact />
       <Footer />
     </>

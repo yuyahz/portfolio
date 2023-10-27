@@ -10,6 +10,7 @@ import larryPage from "./pages/articleLarry";
 import vectorPage from "./pages/articleVector";
 import darumaPage from "./pages/articleDaruma";
 import dailyUiPage from "./pages/articleDailyUi";
+import portfolioPage from "./pages/articlePortfolio";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/vectorPage" component={vectorPage} exact />
         <Route path="/darumaPage" component={darumaPage} exact />
         <Route path="/dailyUiPage" component={dailyUiPage} exact />
+        <Route path="/portfolioPage" component={portfolioPage} exact />
       </Switch>
     </Router>
   );

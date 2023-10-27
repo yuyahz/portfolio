@@ -46,3 +46,10 @@ export const worksArtDirections = {
   title: "Art Directions",
   number: "05",
 };
+
+export const worksPortfolio = {
+  id: "art",
+  to: "portfolioPage",
+  title: "Portfolio",
+  number: "05",
+};

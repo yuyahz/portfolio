@@ -37,7 +37,7 @@ export const case3 = {
   buttonLabel: "View Study",
 };
 
-export const mp = {
+export const caseMp = {
   id: "mp",
   to: "caseMpPage",
   body: "Midnight Paloma website was a long overdue revamp but has committed to completing it within a tight timeframe.",

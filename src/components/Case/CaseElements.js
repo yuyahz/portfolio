@@ -17,7 +17,7 @@ export const FullWidthWrapper = styled.div`
   padding-bottom: ${({ paddingEnd }) => (paddingEnd ? "17rem" : "4rem")};
 
   @media only screen and (max-width: 1570px) {
-    margin: 0 30px 0 100px;
+    margin: 0 30px 0 110px;
   }
 
   @media only screen and (max-width: 960px) {
@@ -27,6 +27,74 @@ export const FullWidthWrapper = styled.div`
 
   @media only screen and (max-width: 960px) {
     margin: 0 30px 0 30px;
+  }
+`;
+
+export const ColumnLgImg1 = styled.div`
+  width: 100%;
+  padding: 24px;
+  display: ${({ imageActivate1 }) => (imageActivate1 ? "flex" : "none")};
+  align-items: center;
+  justify-content: center;
+
+  // md sm center //
+  width: 100%;
+
+  // lg //
+  @media (min-width: 1024px) {
+    width: 50%;
+    padding: 44px;
+  }
+`;
+
+export const ColumnLgImg2 = styled.div`
+  width: 100%;
+  padding: 24px;
+  display: ${({ imageActivate2 }) => (imageActivate2 ? "flex" : "none")};
+  align-items: center;
+  justify-content: center;
+
+  // md sm center //
+  width: 100%;
+
+  // lg //
+  @media (min-width: 1024px) {
+    width: 50%;
+    padding: 44px;
+  }
+`;
+
+export const ColumnLgImg3 = styled.div`
+  width: 100%;
+  padding: 24px;
+  display: ${({ imageActivate3 }) => (imageActivate3 ? "flex" : "none")};
+  align-items: center;
+  justify-content: center;
+
+  // md sm center //
+  width: 100%;
+
+  // lg //
+  @media (min-width: 1024px) {
+    width: 50%;
+    padding: 44px;
+  }
+`;
+
+export const ColumnLgImg4 = styled.div`
+  width: 100%;
+  padding: 24px;
+  display: ${({ imageActivate4 }) => (imageActivate4 ? "flex" : "none")};
+  align-items: center;
+  justify-content: center;
+
+  // md sm center //
+  width: 100%;
+
+  // lg //
+  @media (min-width: 1024px) {
+    width: 50%;
+    padding: 44px;
   }
 `;
 

@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   justify-content: center;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 22147483638;
   transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 
   @media screen and (max-width: 960px) {
@@ -24,6 +24,7 @@ export const NavLogoSm = styled(LinkR)`
   margin: 36px 0 0 6.25vw;
   width: 70px;
   height: auto;
+  z-index: 22147483638;
 
   @media screen and (min-width: 960px) {
     display: none;

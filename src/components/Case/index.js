@@ -5,22 +5,38 @@ import {
   Route,
 } from "react-router-dom/cjs/react-router-dom.min";
 import * as FadeIn from "../FadeIn";
+import { Button } from "../ButtonCaseElements";
 import {
   CaseContainer,
-  Image,
+  // Image,
   FullWidthWrapper,
+  ColumnLgImg1,
+  ColumnLgImg2,
+  ColumnLgImg3,
+  ColumnLgImg4,
   ColumnLg,
   ColumnContentLg,
 } from "./CaseElements";
-import { Button } from "../ButtonCaseElements";
+import ImageSlider1 from "../ImageSlider/Slider1";
+import ImageSlider2 from "../ImageSlider/Slider2";
+import ImageSlider3 from "../ImageSlider/Slider3";
+import ImageSlider4 from "../ImageSlider/Slider4";
+import { SliderData1 } from "../ImageSlider/SliderData1";
+import { SliderData2 } from "../ImageSlider/SliderData2";
+import { SliderData3 } from "../ImageSlider/SliderData3";
+import { SliderData4 } from "../ImageSlider/SliderData4";
 
 const Case = ({
   id,
   to,
-  img,
-  alt,
+  // img,
+  // alt,
   title,
   body,
+  imageActivate1,
+  imageActivate2,
+  imageActivate3,
+  imageActivate4,
   imageLeft,
   buttonLabel,
   paddingStart,
@@ -34,11 +50,31 @@ const Case = ({
         paddingEnd={paddingEnd}
         imageLeft={imageLeft}
       >
-        <ColumnLg>
+        <ColumnLgImg1 imageActivate1={imageActivate1}>
           <FadeIn.Left>
-            <Image src={img} alt={alt} id="" />
+            <ImageSlider1 slides={SliderData1} />
+            {/* <Image src={img} alt={alt} id="" /> */}
           </FadeIn.Left>
-        </ColumnLg>
+        </ColumnLgImg1>
+
+        <ColumnLgImg2 imageActivate2={imageActivate2}>
+          <FadeIn.Left>
+            <ImageSlider2 slides={SliderData2} />
+          </FadeIn.Left>
+        </ColumnLgImg2>
+
+        <ColumnLgImg3 imageActivate3={imageActivate3}>
+          <FadeIn.Left>
+            <ImageSlider3 slides={SliderData3} />
+          </FadeIn.Left>
+        </ColumnLgImg3>
+
+        <ColumnLgImg4 imageActivate4={imageActivate4}>
+          <FadeIn.Left>
+            <ImageSlider4 slides={SliderData4} />
+          </FadeIn.Left>
+        </ColumnLgImg4>
+
         <ColumnLg>
           <ColumnContentLg>
             <div>

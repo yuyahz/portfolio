@@ -81,7 +81,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
           >
             <p>• Case Study 1</p>
           </SidebarLink>
-          {/* <SidebarLink
+          <SidebarLink
             to="case2"
             onClick={toggle}
             smooth={true}
@@ -104,7 +104,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             activeClass="active"
           >
             <p>• Case Study 3</p>
-          </SidebarLink> */}
+          </SidebarLink>
           <SidebarLink
             to="mp"
             onClick={toggle}

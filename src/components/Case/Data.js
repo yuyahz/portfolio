@@ -58,7 +58,7 @@ export const caseMp = {
   imageActivate2: false,
   imageActivate3: false,
   imageActivate4: true,
-  img: require("../../images/case_Mp_v2.png"),
+  img: require("../../images/case_mp.png"),
   alt: "Image",
   imageLeft: false,
   paddingStart: false,

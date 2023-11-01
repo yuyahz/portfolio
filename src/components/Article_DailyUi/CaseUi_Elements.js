@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+///// title /////
+export const TitleWrapper = styled.div`
+  max-width: 1370px;
+`;
+
 ///// intro /////
 export const IntroContainer = styled.div`
   padding: 110px 0;

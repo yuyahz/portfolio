@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import {
   HomeIconWrapper,
   HomeIcon,
-  ColumnLg,
   ColumnContentLg,
   Image,
   CaseContainer,
@@ -11,7 +10,6 @@ import {
   HeroImageWrapper,
   TitleContainer,
   TitleColumn,
-  TitleWrapper,
   TagWrapper,
   Tag,
   CreditWrapper,
@@ -19,6 +17,7 @@ import {
   CreditBody,
 } from "../CaseElements";
 import {
+  TitleWrapper,
   IntroContainer,
   IntroWrapper,
   InsertContainer,
@@ -26,7 +25,7 @@ import {
 } from "./CaseUi_Elements";
 import { ButtonExternal } from "../ButtonCaseElements";
 import { FaDribbble } from "react-icons/fa";
-import caseUi_hero from "../../images/caseUi_hero.png";
+import caseUi_hero_v2 from "../../images/caseUi_hero_v2.png";
 
 const Article_DailyUi = () => {
   return (
@@ -54,7 +53,7 @@ const Article_DailyUi = () => {
 
         <CaseWrapper>
           <HeroImageWrapper>
-            <Image src={caseUi_hero} id="" />
+            <Image src={caseUi_hero_v2} id="" />
           </HeroImageWrapper>
           <TitleContainer>
             <TitleColumn>
@@ -72,8 +71,8 @@ const Article_DailyUi = () => {
                 </TagWrapper>
                 <div>
                   <h1>
-                    100-day design challenge : Self-commitment to design every
-                    day
+                    100-day design challenge : <br></br>Self-commitment to
+                    design every day
                   </h1>
                 </div>
               </TitleWrapper>

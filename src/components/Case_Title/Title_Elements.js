@@ -9,10 +9,14 @@ export const CaseContainer = styled.div`
 
 export const CaseTitleWrapper = styled.div`
   background: #faf8f6;
-  padding-bottom: 2rem;
+  padding-bottom: 6rem;
 
   @media only screen and (max-width: 960px) {
-    padding-bottom: 2vw;
+    padding-bottom: 10vw;
+  }
+
+  @media only screen and (max-width: 540px) {
+    padding-bottom: 7vw;
   }
 
   h2 {
@@ -23,7 +27,6 @@ export const CaseTitleWrapper = styled.div`
     font-family: "GT";
     font-weight: 500;
     text-align: right;
-    padding-left: 5.5rem;
   }
 
   div {
@@ -44,7 +47,7 @@ export const CaseWrapper = styled.div`
 
   @media only screen and (max-width: 960px) {
     padding-top: 26.33vw;
-    margin: 0 30px 0 30px;
+    margin: 0 30px;
   }
 
   h2 {

@@ -13,16 +13,16 @@ export const FullWidthWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: ${({ imageLeft }) => (imageLeft ? "none" : "row-reverse")};
-  padding-top: ${({ paddingStart }) => (paddingStart ? "17rem" : "4rem")};
-  padding-bottom: ${({ paddingEnd }) => (paddingEnd ? "17rem" : "4rem")};
+  padding-top: ${({ paddingStart }) => (paddingStart ? "8rem" : "0")};
+  padding-bottom: ${({ paddingEnd }) => (paddingEnd ? "17rem" : "0")};
 
   @media only screen and (max-width: 1570px) {
     margin: 0 30px 0 110px;
   }
 
   @media only screen and (max-width: 960px) {
-    padding-top: ${({ paddingStart }) => (paddingStart ? "26.33vw;" : "3rem")};
-    padding-bottom: ${({ paddingEnd }) => (paddingEnd ? "26.33vw;" : "3rem")};
+    padding-top: ${({ paddingStart }) => (paddingStart ? "26.33vw;" : "0")};
+    padding-bottom: ${({ paddingEnd }) => (paddingEnd ? "26.33vw;" : "0")};
   }
 
   @media only screen and (max-width: 960px) {

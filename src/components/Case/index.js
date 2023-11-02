@@ -43,9 +43,8 @@ const Case = ({
   paddingEnd,
 }) => {
   return (
-    <CaseContainer>
+    <CaseContainer id={id}>
       <FullWidthWrapper
-        id={id}
         paddingStart={paddingStart}
         paddingEnd={paddingEnd}
         imageLeft={imageLeft}

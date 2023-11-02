@@ -85,6 +85,7 @@ const Article_Case1 = () => {
           <HeroImageWrapper>
             <Image src={case1_hero} id="" />
           </HeroImageWrapper>
+
           <TitleContainer>
             <TitleColumn>
               <TitleWrapper>
@@ -129,6 +130,7 @@ const Article_Case1 = () => {
                 </div>
               </TitleWrapper>
             </TitleColumn>
+
             <TitleColumn>
               <CreditWrapper>
                 <CreditTitle>
@@ -208,6 +210,18 @@ const Article_Case1 = () => {
             </IntroWrapper>
           </IntroContainer>
 
+          <InsertContainer>
+            <InsertWrapper>
+              <div>
+                <span>
+                  If I were given just one hour to address a problem, I'd invest
+                  as much as two-thirds of that time in thoroughly understanding
+                  and defining the problem.
+                </span>
+              </div>
+            </InsertWrapper>
+          </InsertContainer>
+
           <FullWidthContainer>
             <FullWidthWrapper>
               <ColumnLg>
@@ -236,6 +250,7 @@ const Article_Case1 = () => {
                 </ColumnContentLg>
               </ColumnLg>
             </FullWidthWrapper>
+
             <ResearchInsight>
               <ColumnContentSm>
                 <div>
@@ -271,6 +286,7 @@ const Article_Case1 = () => {
                 </p>
               </div>
             </ColumnContentLg>
+
             <PersonaWrapper>
               <ColumnSm>
                 <ImageSm src={case1_cathy} id="" />
@@ -296,6 +312,7 @@ const Article_Case1 = () => {
                 </ColumnContentSm>
               </ColumnSm>
             </PersonaWrapper>
+
             <PersonaWrapper>
               <ColumnSm>
                 <ColumnContentSm>
@@ -323,6 +340,7 @@ const Article_Case1 = () => {
                   </div>
                 </ColumnContentSm>
               </ColumnSm>
+
               <ColumnSm>
                 <ImageSm src={case1_allison} id="" />
               </ColumnSm>
@@ -341,6 +359,7 @@ const Article_Case1 = () => {
                 </p>
               </div>
             </ColumnContentLg>
+
             <EmpathyWrapper>
               <div className="box">
                 <ColumnContentSm>

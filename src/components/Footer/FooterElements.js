@@ -18,7 +18,7 @@ export const FooterWrapper = styled.div`
     max-width: 800px;
   }
 
-  @media screen and (max-width: 970px) {
+  @media screen and (max-width: 960px) {
     max-width: 600px;
   }
 `;
@@ -57,7 +57,7 @@ export const FootertText = styled.h1`
   font-size: 48px;
   margin-right: auto;
 
-  @media screen and (max-width: 970px) {
+  @media screen and (max-width: 960px) {
     margin: 0 auto;
   }
 
@@ -79,7 +79,7 @@ export const SocialMediaWrap = styled.div`
   max-width: 1100px;
   margin: 5px auto 0 auto;
 
-  @media screen and (max-width: 970px) {
+  @media screen and (max-width: 960px) {
     flex-direction: column;
   }
 `;
@@ -104,13 +104,27 @@ export const WebsiteRights = styled.small`
 `;
 
 export const SocialIcons = styled.div`
+  width: 240px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+
+  @media screen and (max-width: 960px) {
+    width: auto;
+    max-width: 240px;
+    margin-top: 24px;
+  }
 `;
 
 export const SocialIconLink = styled.a`
   color: #838383;
   font-size: 24px;
+
+  @media screen and (max-width: 960px) {
+    padding-left: 6vw;
+
+    :first-child {
+      padding-left: 0;
+    }
+  }
 `;

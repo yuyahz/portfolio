@@ -85,7 +85,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             to="case2"
             onClick={toggle}
             smooth={true}
-            duration={700}
+            duration={800}
             spy={true}
             exact="true"
             offset={0}

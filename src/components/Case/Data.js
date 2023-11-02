@@ -1,7 +1,7 @@
 export const case1 = {
   id: "case1",
   to: "case1Page",
-  title: "Enhancing Website Profitability",
+  title: "Cultivating Core User Empathy",
   body: "Analyzing the factors that enhance user experience is a critical process. This case study represents my initial focus on this essential task.",
   imageActivate1: true,
   imageActivate2: false,
@@ -18,8 +18,8 @@ export const case1 = {
 export const case2 = {
   id: "case2",
   to: "case2Page",
-  title: "Enhancing Website Profitability",
-  body: "Analyzing the factors that enhance user experience is a critical process. This case study represents my initial focus on this essential task",
+  title: "Resolving Design Challenges",
+  body: "Challenges are ever-present. The case study illustrates how I've tackled problem-solving techniques in proficient design to comprehensively address complex challenges.",
   imageActivate1: false,
   imageActivate2: true,
   imageActivate3: false,
@@ -27,7 +27,7 @@ export const case2 = {
   img: require("../../images/case_2.png"),
   alt: "Image",
   imageLeft: false,
-  paddingStart: false,
+  paddingStart: true,
   paddingEnd: false,
   buttonLabel: "View Study",
 };
@@ -35,8 +35,8 @@ export const case2 = {
 export const case3 = {
   id: "case3",
   to: "case3Page",
-  title: "yooo",
-  body: "it's me againnn",
+  title: "Enhancing Website Profitability",
+  body: "The primary role of designers is to enhance product appeal and profitability, achieved through continuous improvements and ongoing analysis. This practice has been illustrated through practical case studies.",
   imageActivate1: false,
   imageActivate2: false,
   imageActivate3: true,
@@ -44,7 +44,7 @@ export const case3 = {
   img: require("../../images/case_3.png"),
   alt: "Image",
   imageLeft: true,
-  paddingStart: false,
+  paddingStart: true,
   paddingEnd: false,
   buttonLabel: "View Study",
 };
@@ -61,7 +61,7 @@ export const caseMp = {
   img: require("../../images/case_mp.png"),
   alt: "Image",
   imageLeft: false,
-  paddingStart: false,
+  paddingStart: true,
   paddingEnd: true,
   buttonLabel: "View Study",
 };

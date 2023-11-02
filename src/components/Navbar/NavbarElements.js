@@ -187,7 +187,7 @@ export const NavLinks = styled(LinkS)`
     /* border: solid 2px #fe0000;
     background-color: white;
     border-radius: 50px; */
-    transition: 1s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: 0.2 cubic-bezier(0.33, 1, 0.68, 1);
     animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
@@ -198,15 +198,15 @@ export const NavLinks = styled(LinkS)`
         transform: translate3d(-1px, 0, 0);
       }
 
-      80% {
+      70% {
         transform: translate3d(2px, 0, 0);
       }
 
-      70% {
+      40% {
         transform: translate3d(-4px, 0, 0);
       }
 
-      60% {
+      0% {
         transform: translate3d(4px, 0, 0);
       }
     }

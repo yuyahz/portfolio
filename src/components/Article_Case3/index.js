@@ -41,8 +41,8 @@ import {
   InsertImageContainer,
   InsertImageWrapper,
 } from "./Case3_Elements";
-import case1_hero from "../../images/case1_hero.png";
-import case1_closing from "../../images/case1_closing.png";
+import case3_hero from "../../images/case3_hero.png";
+import case3_closing from "../../images/case3_closing.png";
 import case1_research from "../../images/case1_research.png";
 import case1_cathy from "../../images/Cathy.png";
 import case1_allison from "../../images/Allison.png";
@@ -83,7 +83,7 @@ const Article_Case1 = () => {
 
         <CaseWrapper>
           <HeroImageWrapper>
-            <Image src={case1_hero} id="" />
+            <Image src={case3_hero} id="" />
           </HeroImageWrapper>
           <TitleContainer>
             <TitleColumn>
@@ -578,7 +578,7 @@ const Article_Case1 = () => {
           </FullWidthContainer>
 
           <ClosingWrapper>
-            <Image src={case1_closing} id="" />
+            <Image src={case3_closing} id="" />
           </ClosingWrapper>
         </CaseWrapper>
       </motion.div>

@@ -109,10 +109,10 @@ const Article_Portfolio = () => {
                   <p>CREDITS</p>
                 </CreditTitle>
                 <CreditBody>
-                  <p>Design Lead: Yuya Hashirizaki</p>
+                  <p>Designer: Yuya Hashirizaki</p>
                 </CreditBody>
                 <CreditBody>
-                  <p>Development: Yuya Hashirizaki</p>
+                  <p>Developer: Yuya Hashirizaki</p>
                 </CreditBody>
               </CreditWrapper>
             </TitleColumn>

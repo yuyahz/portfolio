@@ -102,10 +102,10 @@ const Article_Case1 = () => {
                     <p>Prototyping</p>
                   </Tag>
                   <Tag>
-                    <p>Usability Testing</p>
+                    <p>Motion Prototype</p>
                   </Tag>
                   <Tag>
-                    <p>Data - Analysis</p>
+                    <p>Usability Testing</p>
                   </Tag>
                   <Tag>
                     <p>Design identity systems</p>
@@ -119,12 +119,21 @@ const Article_Case1 = () => {
                   <Tag>
                     <p>Brand Development</p>
                   </Tag>
+                  <Tag>
+                    <p>Agile Development</p>
+                  </Tag>
+                  <Tag>
+                    <p>Vector - illustration</p>
+                  </Tag>
+                  <Tag>
+                    <p>Logo Design</p>
+                  </Tag>
                 </TagWrapper>
                 <div>
                   <h1>
-                    I’ve been dedicated to problem-solving for RMDY, which
-                    comprises two brands Riversol Skin Care Solutions and
-                    Midnight Paloma.
+                    Challenges are persistent, and recurring issues have been a
+                    concern. I've been dedicated to proactively addressing these
+                    factors.
                   </h1>
                 </div>
               </TitleWrapper>
@@ -135,13 +144,22 @@ const Article_Case1 = () => {
                   <p>CREDITS</p>
                 </CreditTitle>
                 <CreditBody>
-                  <p>Design Lead: Yuya Hashirizaki</p>
+                  <p>Lead Designer: Yuya Hashirizaki</p>
                 </CreditBody>
                 <CreditBody>
-                  <p>Development: Aaron Johnson</p>
+                  <p>Lead Developer: Aaron Johnson</p>
                 </CreditBody>
                 <CreditBody>
-                  <p>Project Manager: Ed Rushton</p>
+                  <p>Developer: Tomás Leiva</p>
+                </CreditBody>
+                <CreditBody>
+                  <p>Developer: Yuya Hashirizaki</p>
+                </CreditBody>
+                <CreditBody>
+                  <p>Project Manager: Ali Huynh</p>
+                </CreditBody>
+                <CreditBody>
+                  <p>Manager: Ed Rushton</p>
                 </CreditBody>
               </CreditWrapper>
             </TitleColumn>
@@ -151,58 +169,35 @@ const Article_Case1 = () => {
             <IntroWrapper>
               <div>
                 <h3>
-                  Riversol was established by board-certified dermatologist Dr.
-                  Jason Rivers, following over 20 years of clinical dermatology
-                  experience, to provide a safe skincare solution.
+                  The website faced several issues during my early stages of
+                  work.
                 </h3>
               </div>
               <div>
                 <h3>
-                  This specializes in providing anti-aging solutions for
-                  individuals with sensitive skin and is committed to assisting
-                  anyone with skin-related concerns through its product
-                  offerings.
+                  I came to understand that website maintenance is more than
+                  just enhancing product appeal based on my experience.
                 </h3>
               </div>
               <div>
                 <h3>
-                  The company’s primary method for expanding its business has
-                  been a commitment to providing free products to individuals
-                  who may potentially become our customers through our free
-                  sample program. This initiative is aimed at introducing
-                  dependable, high-quality products and showcasing the value of
-                  the company to those in need of support.
+                  When encountering an issue, I make a conscious effort to delve
+                  deeper beyond the apparent factors, resulting in a robust
+                  solution that can be implemented permanently.
                 </h3>
               </div>
               <div>
                 <h3>
-                  My assigned responsibility involves enhancing the quality of
-                  the website and all digital platforms associated with the free
-                  sample program to contribute to the company’s overall
-                  profitability.
+                  I applied these concepts to tackle challenges. The crucial
+                  element is to thoroughly examine the interrelated factors, and
+                  understand their origins and connections.
                 </h3>
               </div>
               <div>
                 <h3>
-                  To start, I’ve strived to identify essential factors for
-                  enhancing the performance of our website and all digital
-                  platforms while fostering seamless communication within the
-                  team.
-                </h3>
-              </div>
-              <div>
-                <h3>
-                  It has been challenging to maintain a consistent UI, as it
-                  often requires a significant amount of time to establish and
-                  implement rules. Additionally, we have yet to define clear
-                  goals for guiding our teams toward our primary objectives.
-                </h3>
-              </div>
-              <div>
-                <h3>
-                  Thoroughly clarifying every aspect, I created a robust
-                  foundational design system, integrating comprehensive UI/UX
-                  principles.
+                  It was necessary to approach challenges with flexibility,
+                  providing solutions that could offer long-lasting support as
+                  needed.
                 </h3>
               </div>
             </IntroWrapper>

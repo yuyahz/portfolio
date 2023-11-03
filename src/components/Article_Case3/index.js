@@ -111,20 +111,18 @@ const Article_Case1 = () => {
                     <p>Design identity systems</p>
                   </Tag>
                   <Tag>
-                    <p>Information Architecture</p>
-                  </Tag>
-                  <Tag>
                     <p>E-commerce Optimization</p>
                   </Tag>
                   <Tag>
-                    <p>Brand Development</p>
+                    <p>Agile Development</p>
                   </Tag>
                 </TagWrapper>
                 <div>
                   <h1>
-                    I’ve been dedicated to problem-solving for RMDY, which
-                    comprises two brands Riversol Skin Care Solutions and
-                    Midnight Paloma.
+                    Supporting the continuous analysis and improvement of
+                    comprehensive products is a crucial process for driving
+                    company profitability. My role is dedicated to this
+                    endeavor.
                   </h1>
                 </div>
               </TitleWrapper>
@@ -135,13 +133,22 @@ const Article_Case1 = () => {
                   <p>CREDITS</p>
                 </CreditTitle>
                 <CreditBody>
-                  <p>Design Lead: Yuya Hashirizaki</p>
+                  <p>Lead Designer: Yuya Hashirizaki</p>
                 </CreditBody>
                 <CreditBody>
-                  <p>Development: Aaron Johnson</p>
+                  <p>Lead Developer: Aaron Johnson</p>
                 </CreditBody>
                 <CreditBody>
-                  <p>Project Manager: Ed Rushton</p>
+                  <p>Developer: Tomás Leiva</p>
+                </CreditBody>
+                <CreditBody>
+                  <p>Developer: Yuya Hashirizaki</p>
+                </CreditBody>
+                <CreditBody>
+                  <p>Project Manager: Ali Huynh</p>
+                </CreditBody>
+                <CreditBody>
+                  <p>Manager: Ed Rushton</p>
                 </CreditBody>
               </CreditWrapper>
             </TitleColumn>
@@ -151,58 +158,57 @@ const Article_Case1 = () => {
             <IntroWrapper>
               <div>
                 <h3>
-                  Riversol was established by board-certified dermatologist Dr.
-                  Jason Rivers, following over 20 years of clinical dermatology
-                  experience, to provide a safe skincare solution.
+                  People understand that the success of web products doesn't
+                  conclude upon their initial launch.
                 </h3>
               </div>
               <div>
                 <h3>
-                  This specializes in providing anti-aging solutions for
-                  individuals with sensitive skin and is committed to assisting
-                  anyone with skin-related concerns through its product
-                  offerings.
+                  What carries you for a strategy towards goals will require you
+                  to keep your eyes open to find out the pain points that users
+                  are feeling uncomfortable using and being unclear for
+                  enhancing appeal.
                 </h3>
               </div>
               <div>
                 <h3>
-                  The company’s primary method for expanding its business has
-                  been a commitment to providing free products to individuals
-                  who may potentially become our customers through our free
-                  sample program. This initiative is aimed at introducing
-                  dependable, high-quality products and showcasing the value of
-                  the company to those in need of support.
+                  Strategizing for your goals involves a keen focus on
+                  identifying and addressing user discomfort and uncertainties,
+                  all aimed at improving the product's appeal.
                 </h3>
               </div>
               <div>
                 <h3>
-                  My assigned responsibility involves enhancing the quality of
-                  the website and all digital platforms associated with the free
-                  sample program to contribute to the company’s overall
-                  profitability.
+                  From that perspective, it signifies the initiation of a new
+                  project phase following the product launch.
                 </h3>
               </div>
               <div>
                 <h3>
-                  To start, I’ve strived to identify essential factors for
-                  enhancing the performance of our website and all digital
-                  platforms while fostering seamless communication within the
-                  team.
+                  Iterative testing is a prevalent method to improve product
+                  value, but it necessitates understanding the root causes
+                  behind user demands.
                 </h3>
               </div>
               <div>
                 <h3>
-                  It has been challenging to maintain a consistent UI, as it
-                  often requires a significant amount of time to establish and
-                  implement rules. Additionally, we have yet to define clear
-                  goals for guiding our teams toward our primary objectives.
+                  Identifying the crucial factors that end users require is a
+                  challenging task; nevertheless, I've used various tools and
+                  applications to clarify these points.
                 </h3>
               </div>
               <div>
                 <h3>
-                  Thoroughly clarifying every aspect, I created a robust
-                  foundational design system, integrating comprehensive UI/UX
-                  principles.
+                  This is a very exciting process, moving us closer to elevating
+                  the product to the next level.
+                </h3>
+              </div>
+              <div>
+                <h3>
+                  While users often associate aesthetically pleasing design with
+                  enhanced usability, it's important to recognize that
+                  real-world outcomes aren't solely determined by the
+                  Aesthetic-Usability Effect.
                 </h3>
               </div>
             </IntroWrapper>

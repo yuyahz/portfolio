@@ -137,13 +137,16 @@ const Article_Case1 = () => {
                   <p>CREDITS</p>
                 </CreditTitle>
                 <CreditBody>
-                  <p>Design Lead: Yuya Hashirizaki</p>
+                  <p>Lead Designer: Yuya Hashirizaki</p>
                 </CreditBody>
                 <CreditBody>
-                  <p>Development: Aaron Johnson</p>
+                  <p>Lead Developer: Aaron Johnson</p>
                 </CreditBody>
                 <CreditBody>
-                  <p>Project Manager: Ed Rushton</p>
+                  <p>Project Manager: Ali Huynh</p>
+                </CreditBody>
+                <CreditBody>
+                  <p>Manager: Ed Rushton</p>
                 </CreditBody>
               </CreditWrapper>
             </TitleColumn>

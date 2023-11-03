@@ -113,13 +113,13 @@ const Article_CaseMp = () => {
                   <p>CREDITS</p>
                 </CreditTitle>
                 <CreditBody>
-                  <p>Design Lead: Yuya Hashirizaki</p>
+                  <p>Lead Designer: Yuya Hashirizaki</p>
                 </CreditBody>
                 <CreditBody>
-                  <p>Development: Aaron Johnson</p>
+                  <p>Lead Developer: Aaron Johnson</p>
                 </CreditBody>
                 <CreditBody>
-                  <p>Project Manager: Taylor Rogers</p>
+                  <p>Manager: Taylor Rogers</p>
                 </CreditBody>
               </CreditWrapper>
             </TitleColumn>

@@ -215,6 +215,50 @@ export const ColumnContentLg = styled.div`
   }
 `;
 
+export const ColumnInsertContent = styled.div`
+  padding: 34px;
+
+  @media only screen and (max-width: 1920px) {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 960px) {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 540px) {
+    padding: 7.2vw 6.3vw 0 6.3vw;
+  }
+
+  p {
+    margin-top: 44px;
+    :first-child {
+      margin-top: 60px;
+    }
+
+    @media only screen and (max-width: 1920px) {
+      margin-top: 34px;
+      :first-child {
+        margin-top: 44px;
+      }
+    }
+    @media only screen and (max-width: 1024px) {
+      margin-top: 24px;
+      :first-child {
+        margin-top: 34px;
+      }
+    }
+    @media only screen and (max-width: 540px) {
+      margin-top: 5.5vw;
+      :first-child {
+        margin-top: 5vw;
+      }
+    }
+  }
+`;
+
 export const ColumnSm = styled.div`
   display: flex;
   align-items: center;

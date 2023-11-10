@@ -7,6 +7,7 @@ import {
   ColumnSm,
   ColumnContentLg,
   ColumnContentSm,
+  ColumnInsertContent,
   Image,
   ImageSm,
   ImageCircle,
@@ -454,18 +455,18 @@ const Article_Case1 = () => {
                   significant challenges and uncovered prevalent user issues.
                 </p>
                 <div className="analysis-lists">
-                  <p>• clutter UI</p>
-                  <p>• difficult to find the customer’s type of issue</p>
-                  <p>• overwhelming visuals</p>
-                  <p>• confusing content placement</p>
+                  <p>• Clutter UI</p>
+                  <p>• Difficult to find the customer’s type of issue</p>
+                  <p>• Overwhelming visuals</p>
+                  <p>• Confusing content placement</p>
                   <p>
-                    • being hard to discover products along with your needs{" "}
+                    • Being hard to discover products along with your needs{" "}
                   </p>
-                  <p>• products user guide issue</p>
-                  <p>• complication of applying reward</p>
-                  <p>• unclear method to apply seasonal rewards</p>
-                  <p>• cart problems when combined with your rewards</p>
-                  <p>• basic payment anxiety caused by unclear steps</p>
+                  <p>• Products user guide issue</p>
+                  <p>• Complication of applying reward</p>
+                  <p>• Unclear method to apply seasonal rewards</p>
+                  <p>• Cart problems when combined with your rewards</p>
+                  <p>• Basic payment anxiety caused by unclear steps</p>
                 </div>
               </div>
             </ColumnContentLg>
@@ -486,13 +487,13 @@ const Article_Case1 = () => {
             <InsertImageWrapper>
               <ImageSm src={case1_insert} id="" />
             </InsertImageWrapper>
-            <ColumnContentLg>
+            <ColumnInsertContent>
               <p>
                 Building on the insights gained from our research, I identified
                 critical factors that compelled us to adopt a different
                 approach, allowing us to continue progressing with the project.
               </p>
-            </ColumnContentLg>
+            </ColumnInsertContent>
           </InsertImageContainer>
 
           <FullWidthContainer>

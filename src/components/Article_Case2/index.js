@@ -4,7 +4,9 @@ import {
   HomeIconWrapper,
   HomeIcon,
   ColumnLg,
+  ColumnContentLgMd,
   ColumnContentLg,
+  ColumnContentMd,
   ColumnContentSm,
   ColumnInsertContent,
   Image,
@@ -690,7 +692,7 @@ const Article_Case1 = () => {
                 <Image src={case2_about_customerbase} id="" />
               </ColumnLg>
               <ColumnLg>
-                <ColumnContentLg>
+                <ColumnContentLgMd>
                   <div>
                     <h2>Expanding the Potential Customer Base</h2>
                   </div>
@@ -711,12 +713,12 @@ const Article_Case1 = () => {
                       collection pages based on their selected categories.
                     </p>
                   </div>
-                </ColumnContentLg>
+                </ColumnContentLgMd>
               </ColumnLg>
             </FullWidthWrapper>
 
             <ResearchInsight>
-              <ColumnContentLg>
+              <ColumnContentMd>
                 <div>
                   <p>
                     I generated many user interface ideas, with a focus on
@@ -735,7 +737,7 @@ const Article_Case1 = () => {
                     creating components for the business section.
                   </p>
                 </div>
-              </ColumnContentLg>
+              </ColumnContentMd>
             </ResearchInsight>
           </FullWidthContainer>
 

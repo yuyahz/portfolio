@@ -215,6 +215,82 @@ export const ColumnContentLg = styled.div`
   }
 `;
 
+export const ColumnContentLgMd = styled.div`
+  padding: 34px;
+
+  @media only screen and (max-width: 1024px) {
+    padding: 34px 34px 0 34px;
+  }
+
+  @media only screen and (max-width: 540px) {
+    padding: 7.2vw 6.3vw 0 6.3vw;
+  }
+
+  p {
+    margin-top: 44px;
+    :first-child {
+      margin-top: 60px;
+    }
+
+    @media only screen and (max-width: 1920px) {
+      margin-top: 34px;
+      :first-child {
+        margin-top: 44px;
+      }
+    }
+    @media only screen and (max-width: 1024px) {
+      margin-top: 24px;
+      :first-child {
+        margin-top: 34px;
+      }
+    }
+    @media only screen and (max-width: 540px) {
+      margin-top: 5.5vw;
+      :first-child {
+        margin-top: 5vw;
+      }
+    }
+  }
+`;
+
+export const ColumnContentMd = styled.div`
+  padding: 34px;
+
+  @media only screen and (max-width: 1024px) {
+    padding: 0 34px 34px 34px;
+  }
+
+  @media only screen and (max-width: 540px) {
+    padding: 0 6.3vw 0 6.3vw;
+  }
+
+  p {
+    margin-top: 44px;
+    :first-child {
+      margin-top: 60px;
+    }
+
+    @media only screen and (max-width: 1920px) {
+      margin-top: 34px;
+      :first-child {
+        margin-top: 44px;
+      }
+    }
+    @media only screen and (max-width: 1024px) {
+      margin-top: 24px;
+      :first-child {
+        margin-top: 24px;
+      }
+    }
+    @media only screen and (max-width: 540px) {
+      margin-top: 5.5vw;
+      :first-child {
+        margin-top: 5.5vw;
+      }
+    }
+  }
+`;
+
 export const ColumnInsertContent = styled.div`
   padding: 34px;
 
@@ -320,6 +396,7 @@ export const Image = styled.img`
   width: 100%;
   border: solid 2px #fe0000;
   border-radius: 15px;
+  margin-bottom: auto;
 
   @media only screen and (max-width: 960px) {
     border-radius: 10px;

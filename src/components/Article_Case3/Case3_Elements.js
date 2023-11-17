@@ -40,15 +40,23 @@ export const IntroWrapper = styled.div`
 export const ResearchInsight = styled.div`
   width: 50%;
 
+  div .text-bold {
+    margin-top: 0px;
+    color: #010606;
+    font-weight: 600;
+
+    @media (max-width: 540px) {
+      margin-top: 16px;
+    }
+  }
+
   p {
     :first-child {
       margin-top: 0px;
-      color: #010606;
-      font-weight: 600;
-
+      /* 
       @media (max-width: 540px) {
         margin-top: 16px;
-      }
+      } */
     }
   }
 
@@ -57,48 +65,8 @@ export const ResearchInsight = styled.div`
   }
 `;
 
-///// persoan /////
-export const PersonaContainer = styled.div`
-  max-width: 1400px;
-  padding: 110px 0;
-  justify-content: center;
-  margin: 0 auto;
-
-  @media only screen and (max-width: 960px) {
-    padding-bottom: 11.5vw;
-  }
-  @media only screen and (max-width: 540px) {
-    padding-top: 7.4vw;
-  }
-`;
-
-export const PersonaWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-
-  @media (max-width: 1024px) {
-    :last-child {
-      flex-direction: column-reverse;
-    }
-  }
-`;
-
-///// empathy /////
-export const EmpathyContainer = styled.div`
-  max-width: 1400px;
-  padding: 110px 0;
-  justify-content: center;
-  margin: 0 auto;
-
-  @media only screen and (max-width: 960px) {
-    padding-bottom: 11.5vw;
-  }
-  @media only screen and (max-width: 540px) {
-    padding-top: 7.4vw;
-  }
-`;
-
-export const EmpathyWrapper = styled.div`
+///// box /////
+export const BoxWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
 
@@ -115,7 +83,7 @@ export const EmpathyWrapper = styled.div`
       width: 50%;
     }
   }
-  .empathy-border {
+  .box-border {
     padding: 24px;
     border: solid 2px #fe0000;
     border-radius: 15px;
@@ -134,8 +102,43 @@ export const EmpathyWrapper = styled.div`
   }
 `;
 
-///// competitor /////
-export const CompetitorContainer = styled.div`
+///// content title /////
+export const ContentTitleContainer = styled.div`
+  padding-top: 110px;
+
+  /* @media only screen and (max-width: 960px) {
+    padding-bottom: 11.5vw;
+  } */
+  /* @media only screen and (max-width: 540px) {
+    padding-top: 7.4vw;
+  } */
+`;
+
+export const ContentTitleWrapper = styled.div`
+  max-width: 1756px;
+
+  span {
+    font-size: 7rem;
+    font-weight: 100;
+    line-height: 1.2;
+    color: var(--secondary-txt-color);
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    @media only screen and (max-width: 1280px) {
+      font-size: 7.656vw;
+    }
+    @media only screen and (max-width: 960px) {
+      font-size: 11.11vw;
+    }
+  }
+`;
+
+///// content info /////
+export const ContentInfoContainer = styled.div`
   max-width: 1400px;
   padding: 110px 0;
   justify-content: center;
@@ -148,72 +151,51 @@ export const CompetitorContainer = styled.div`
     padding-top: 7.4vw;
   }
 
-  .analysis-lists {
-    padding-left: 0.7em;
-    text-indent: -0.7em;
+  .caption {
+    color: #010606;
+    font-weight: 600;
+  }
+
+  .caption-inner {
+    color: #010606;
+    font-weight: 500;
+  }
+
+  .list {
+    padding-left: 2.2em;
+    text-indent: -2.2em;
+
+    @media only screen and (max-width: 1920px) {
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+    @media only screen and (max-width: 1024px) {
+      padding-left: 1.2em;
+      text-indent: -1.2em;
+      @media only screen and (max-width: 540px) {
+        padding-left: 1em;
+        text-indent: -1em;
+      }
+      @media only screen and (max-width: 400px) {
+        padding-left: 0.8em;
+        text-indent: -0.8em;
+      }
+      @media only screen and (max-width: 330px) {
+        padding-left: 0.75em;
+        text-indent: -0.75em;
+      }
+      @media only screen and (max-width: 330px) {
+        padding-left: 0.6em;
+        text-indent: -0.6em;
+      }
+    }
+
+    p:first-child {
+      margin-top: 0.5em;
+    }
 
     p:not(:first-child) {
       margin-top: 6px;
-    }
-  }
-`;
-
-export const CompetitorImageWrapper = styled.div`
-  display: flex;
-  padding: 0 5%;
-  margin-top: 44px;
-
-  @media only screen and (max-width: 1920px) {
-    margin-top: 34px;
-  }
-  @media only screen and (max-width: 1024px) {
-    margin-top: 24px;
-  }
-  @media only screen and (max-width: 540px) {
-    margin-top: 5.5vw;
-  }
-
-  .image {
-    width: 17%;
-    margin-right: auto;
-
-    :last-child {
-      margin-right: 0px;
-    }
-  }
-`;
-
-///// insert /////
-export const InsertContainer = styled.div`
-  padding: 110px 0;
-
-  @media only screen and (max-width: 960px) {
-    padding-bottom: 11.5vw;
-  }
-  @media only screen and (max-width: 540px) {
-    padding-top: 7.4vw;
-  }
-`;
-
-export const InsertWrapper = styled.div`
-  max-width: 1756px;
-
-  span {
-    font-size: 7rem;
-    font-weight: 100;
-    line-height: 1.2;
-    color: #fe0000;
-    -ms-user-select: none;
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-
-    @media only screen and (max-width: 1280px) {
-      font-size: 7.656vw;
-    }
-    @media only screen and (max-width: 960px) {
-      font-size: 11.11vw;
     }
   }
 `;

@@ -4,12 +4,11 @@ import {
   HomeIconWrapper,
   HomeIcon,
   ColumnLg,
-  ColumnSm,
+  ColumnContentLgMd,
   ColumnContentLg,
+  ColumnContentMd,
   ColumnContentSm,
   Image,
-  ImageSm,
-  ImageCircle,
   CaseContainer,
   CaseWrapper,
   HeroImageWrapper,
@@ -23,39 +22,31 @@ import {
   CreditBody,
   FullWidthContainer,
   FullWidthWrapper,
-  FullWidthFlipWrapper,
   ClosingWrapper,
 } from "../CaseElements";
 import {
   IntroContainer,
   IntroWrapper,
   ResearchInsight,
-  PersonaContainer,
-  PersonaWrapper,
-  EmpathyContainer,
-  EmpathyWrapper,
-  CompetitorContainer,
-  CompetitorImageWrapper,
-  InsertContainer,
-  InsertWrapper,
-  InsertImageContainer,
-  InsertImageWrapper,
+  ContentInfoContainer,
+  ContentTitleContainer,
+  ContentTitleWrapper,
 } from "./Case3_Elements";
 import case3_hero from "../../images/case3_hero.png";
+import case3_snackbar_ensure from "../../images/case3_snackbar_ensure.png";
+import case3_snackbar_responsive from "../../images/case3_snackbar_responsive.png";
+import case3_snackbar_result from "../../images/case3_snackbar_result.png";
+import case3_sales_integrating from "../../images/case3_sales_integrating.png";
+import case3_sales_components from "../../images/case3_sales_components.png";
+import case3_sales_consistency from "../../images/case3_sales_consistency.png";
+import case3_sales_result from "../../images/case2_about_result.png";
+import case3_pdp_integrating from "../../images/case3_pdp_integrating.png";
+import case3_pdp_usability from "../../images/case3_pdp_usability.png";
+import case3_pdp_engagement from "../../images/case3_pdp_engagement.png";
+import case3_pdp_additional from "../../images/case3_pdp_additional.png";
+import case3_pdp_altenative from "../../images/case3_pdp_alternative.png";
+import case3_pdp_result from "../../images/case3_pdp_result.png";
 import case3_closing from "../../images/case3_closing.png";
-import case1_research from "../../images/case1_research.png";
-import case1_cathy from "../../images/Cathy.png";
-import case1_allison from "../../images/Allison.png";
-import compatitor_laroche from "../../images/Compatitor_LA_ROCHE_POSAY.png";
-import compatitor_neostrata from "../../images/Compatitor_NEOSTRATA.png";
-import compatitor_perblle from "../../images/Compatitor_PERBLLE.png";
-import compatitor_solvaderm from "../../images/Compatitor_SOLVADERM.png";
-import compatitor_city from "../../images/Compatitor_City_Beauty.png";
-import case1_insert from "../../images/case1_insert.png";
-import case1_journey from "../../images/case1_journey.png";
-import case1_architecture from "../../images/case1_architecture.png";
-import case1_flow from "../../images/case1_flow.png";
-import case1_overview from "../../images/case1_overview.png";
 
 const Article_Case1 = () => {
   return (
@@ -214,374 +205,731 @@ const Article_Case1 = () => {
             </IntroWrapper>
           </IntroContainer>
 
+          {/* Snackbar */}
+          <ContentTitleContainer>
+            <ContentTitleWrapper>
+              <div>
+                <span>
+                  Create a component for running sales promotions between
+                  regular terms
+                </span>
+              </div>
+            </ContentTitleWrapper>
+          </ContentTitleContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>Snackbar</h2>
+                <p>
+                  The marketing team suggested the implementation of a new
+                  purchasing function to boost profitability. In alignment with
+                  their requirements, I initiated the project.
+                </p>
+                <p className="caption">
+                  Project Requirements and Responsibilities:
+                </p>
+                <div className="list">
+                  <p>
+                    • Develop a component that provides users with a sense of
+                    benefit
+                  </p>
+                  <p>
+                    • Ensure that the presence of the component doesn’t disrupt
+                    the user experience
+                  </p>
+                  <p>
+                    • Integrate it with other components for seamless
+                    functionality
+                  </p>
+                  <p>• Enhance the conversion rate through a deliverable</p>
+                </div>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
           <FullWidthContainer>
             <FullWidthWrapper>
               <ColumnLg>
-                <Image src={case1_research} id="" />
+                <Image src={case3_snackbar_ensure} id="" />
               </ColumnLg>
               <ColumnLg>
                 <ColumnContentLg>
                   <div>
-                    <h2>User Research</h2>
+                    <h2>Ensure and attempte</h2>
                   </div>
                   <div>
                     <p>
-                      In our pursuit of designing user-centric experiences, I
-                      prioritize User Research, which involves delving into user
-                      behaviors, uncovering their needs, and analyzing their
-                      motivations through various observations, task analysis,
-                      and valuable feedback methodologies.
+                      To prevent issues from becoming permanent, it’s crucial to
+                      start by exploring the layout and space to meet the
+                      necessary requirements. This involves brainstorming ideas,
+                      implementing them, and then analyzing them with teams or
+                      collaborators to identify any unclear factors.
                     </p>
                     <p>
-                      Our collaboration with SplitBase has enabled us to conduct
-                      a comprehensive survey, and in our qualitative analysis
-                      phase, we engaged in insightful interviews with numerous
-                      consumers who have made purchases of our products.
+                      Indeed, the iterative process I practiced helped uncover
+                      and address potential problems. It’s a proactive approach
+                      to identifying issues and finding solutions to them,
+                      ensuring a smoother and more effective project
+                      development.
                     </p>
                   </div>
                 </ColumnContentLg>
               </ColumnLg>
             </FullWidthWrapper>
+          </FullWidthContainer>
+
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnLg>
+                <Image src={case3_snackbar_responsive} id="" />
+              </ColumnLg>
+              <ColumnLg>
+                <ColumnContentLg>
+                  <div>
+                    <h2>Responsive Design and Attention to Detail</h2>
+                  </div>
+                  <div>
+                    <p>
+                      Absolutely, ensuring responsible design and paying
+                      attention to details play a crucial role in maintaining
+                      the consistency of branding and leveraging the
+                      Aesthetic-Usability Effect.
+                    </p>
+                    <p>
+                      Meeting requirements within limited spaces can be a
+                      challenge, but effective collaboration with a copywriter
+                      through mutual discussion can help address this challenge.
+                    </p>
+                  </div>
+                </ColumnContentLg>
+              </ColumnLg>
+            </FullWidthWrapper>
+          </FullWidthContainer>
+
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnLg>
+                <Image src={case3_snackbar_result} id="" />
+              </ColumnLg>
+              <ColumnLg>
+                <ColumnContentLg>
+                  <div>
+                    <h2>Result</h2>
+                  </div>
+                  <div>
+                    <p>
+                      After the iterative process, the clarification of various
+                      factors greatly contributed to our decision-making.
+                    </p>
+                    <p>
+                      The final product transformed into an interactive
+                      component, effectively addressing limited spacing while
+                      engaging users through non-disruptive animations.
+                    </p>
+                    <p>
+                      Additionally, the introduction of a dedicated tag to
+                      associate this function with product pages and collections
+                      became a crucial necessity and also, The analysis of
+                      Snackbar results demonstrated a consistent increase in the
+                      conversion rate, as indicated in monthly reports.
+                    </p>
+                  </div>
+                </ColumnContentLg>
+              </ColumnLg>
+            </FullWidthWrapper>
+
             <ResearchInsight>
               <ColumnContentSm>
                 <div>
-                  <p>Insights:</p>
+                  <p className="text-bold">Insights:</p>
                   <p>
-                    The survey proved invaluable in gaining a profound
-                    understanding of our users, pinpointing their primary pain
-                    points and aspirations. It allowed me to quantify the
-                    proportion of users exhibiting genuine interest in our
-                    products.
+                    The website had previously assigned a modal window to notify
+                    customers who hadn’t subscribed.
                   </p>
                   <p>
-                    Analyzing the daily skincare challenges faced by these users
-                    served as a wellspring of inspiration, propelling me to
-                    ideate and devise optimal design solutions.
+                    Initially, when I proposed the first ideas of modal windows
+                    used in this project, there was concern about whether this
+                    was too inhibited when had proposed the first ideas of modal
+                    windows used in this project.
+                  </p>
+                  <p>
+                    However, after considering various options, I decided to
+                    incorporate static animations that could be used flexibly.
+                    While creative implementation is essential and enjoyable, it
+                    must also account for the limits and requirements of the
+                    project, and balancing creative implementation with
+                    limitations and requirements is essential, and I am always
+                    dedicated to approaching this with empathy.
                   </p>
                 </div>
               </ColumnContentSm>
             </ResearchInsight>
           </FullWidthContainer>
 
-          <PersonaContainer>
+          {/* Cross-sell */}
+          <ContentTitleContainer>
+            <ContentTitleWrapper>
+              <div>
+                <span>
+                  Implemented user-friendly upselling and cross-selling for an
+                  enhanced customer experience.
+                </span>
+              </div>
+            </ContentTitleWrapper>
+          </ContentTitleContainer>
+
+          <ContentInfoContainer>
             <ColumnContentLg>
               <div>
-                <h2>User Personas</h2>
+                <h2>
+                  Component-based Design & Content for Cross-sell and Upsell
+                </h2>
                 <p>
-                  I utilized the survey findings to craft user personas, laying
-                  the foundation for the project ahead.
+                  Refined the user interface and user experience for upselling
+                  and cross-selling based on our analysis, aiming for increased
+                  engagement and ultimately driving customer purchases.
+                </p>
+                <p className="caption">
+                  Project Requirements and Responsibilities:
+                </p>
+                <div className="list">
+                  <p>
+                    • Explored strategies to enhance product attraction within
+                    limited space
+                  </p>
+                  <p>• Ensured consistent UI design across all product</p>
+                  <p>• Contributed to enhancing user engagement</p>
+                  <p>
+                    • Creating designs that support intuitive user interactions
+                    and usability
+                  </p>
+                </div>
+                <p className="caption">
+                  Project Clarification: Ensuring Understanding and Effective
+                  Execution
                 </p>
                 <p>
-                  I utilized the survey findings to craft user personas, laying
-                  the foundation for the project ahead.
+                  <p className="caption-inner">Upselling</p>Upselling is a
+                  strategy where a seller encourages a customer to buy
+                  additional items or upgrades that may be more expensive,
+                  ultimately aiming to increase the overall sale value.
+                </p>
+                <p>
+                  <p className="caption-inner">Cross-selling</p>Cross-selling is
+                  a sales technique to get the customer to spend more money by
+                  adding more products from other categories than the product
+                  being viewed or purchased.
+                </p>
+                <p>
+                  *This case study primarily focuses on cross-selling
+                  strategies.
                 </p>
               </div>
             </ColumnContentLg>
-            <PersonaWrapper>
-              <ColumnSm>
-                <ImageSm src={case1_cathy} id="" />
-              </ColumnSm>
-              <ColumnSm>
-                <ColumnContentSm>
-                  <div>
-                    <h2>Cathy - 60 year old with sensitive skin</h2>
-                  </div>
-                  <div>
-                    <p>
-                      Cathy has had sensitive skin all her life, forcing her
-                      into having to understand good skincare at a very early
-                      age. Finding products that work without a reaction to her
-                      dry, reactive skin has been a difficult process – but
-                      something she’s come to terms with, trying every product
-                      in every price range. Since finding Riversol, she’s
-                      narrowed down her routine, and has freed up storage space
-                      in her bathroom because she no longer holds onto the
-                      graveyard of skincare that didn’t work.
-                    </p>
-                  </div>
-                </ColumnContentSm>
-              </ColumnSm>
-            </PersonaWrapper>
-            <PersonaWrapper>
-              <ColumnSm>
-                <ColumnContentSm>
+          </ContentInfoContainer>
+
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnLg>
+                <Image src={case3_sales_integrating} id="" />
+              </ColumnLg>
+              <ColumnLg>
+                <ColumnContentLg>
                   <div>
                     <h2>
-                      Allison - 70 year old who wants to look as young as she
-                      feels
+                      Integrating design elements for a logical user experience
                     </h2>
                   </div>
                   <div>
                     <p>
-                      Allison is no stranger to the cliché of wanting to look
-                      younger than she feels. She’s a relatively active and
-                      healthy person – but just wishes the lines on her face and
-                      neck never had to happen. Allison spent a lot of her
-                      younger years sunbathing and is now looking to correct the
-                      damage caused. Dark spots, lines, and general aging has
-                      her feeling less confident than usual. Her best friend is
-                      a breast cancer survivor who discovered Riversol through
-                      necessity – the only products that would help her skin
-                      after chemotherapy – and as soon as she told Allison about
-                      the sampler, she had to try it. Since then, she’s been
-                      hooked.
+                      The project required an effective and intuitive component
+                      to support profitability so, to increase engagement, I
+                      applied pricing psychology and designed fundamental
+                      components in a logical manner.
+                    </p>
+                    <p>
+                      Psychology alone may not solve all problems, but
+                      integrating psychological concepts can guide effective A/B
+                      testing to enhance a product.
                     </p>
                   </div>
-                </ColumnContentSm>
-              </ColumnSm>
-              <ColumnSm>
-                <ImageSm src={case1_allison} id="" />
-              </ColumnSm>
-            </PersonaWrapper>
-          </PersonaContainer>
+                </ColumnContentLg>
+              </ColumnLg>
+            </FullWidthWrapper>
+          </FullWidthContainer>
 
-          <EmpathyContainer>
-            <ColumnContentLg>
-              <div>
-                <h2>Empathy Map</h2>
-                <p>
-                  The empathy map serves as a collaborative tool that allows
-                  design teams to cultivate a deeper understanding of their
-                  customers. It is particularly useful for representing and
-                  empathizing with distinct user groups or customer segments.
-                </p>
-              </div>
-            </ColumnContentLg>
-            <EmpathyWrapper>
-              <div className="box">
-                <ColumnContentSm>
-                  <div className="empathy-border">
-                    <p>Says:</p>
-                    <p>• I’m always having trouble with my skin</p>
-                    <p>• My daily routine is unstable</p>
-                    <p>• I don’t have time to go to the store</p>
-                    <p>• I don’t know how to take care of my skin</p>
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnLg>
+                <Image src={case3_sales_components} id="" />
+              </ColumnLg>
+              <ColumnLg>
+                <ColumnContentLg>
+                  <div>
+                    <h2>
+                      Creating interactive components with a seamless user
+                      experience
+                    </h2>
+                  </div>
+                  <div>
                     <p>
-                      • My sensitivities and allergies prevent buying products
+                      The static version before the user selects is indicated
+                      right-side picture. After selecting, the frame will be
+                      filled gradually with a blue color as indicated left side.
+                    </p>
+                    <p>
+                      In this project, addressing the constraints of design
+                      space has primarily involved incorporating animation,
+                      which, in turn, enhances intuitive user interaction.
+                    </p>
+                    <p>
+                      Additionally, products are added only when the user
+                      selects “add to cart,” regardless of when they added them.
+                      This ensures that the user stays on the page, providing a
+                      seamless user experience.
                     </p>
                   </div>
-                </ColumnContentSm>
-              </div>
-              <div className="box">
-                <ColumnContentSm>
-                  <div className="empathy-border">
-                    <p>Thinks:</p>
-                    <p>• I should try skincare products</p>
-                    <p>• I should prevent factor of skincare troubles</p>
-                    <p>• I should take care of my lifestyle</p>
-                    <p>• I should have a better routine</p>
-                    <p>• I should go to the skincare workshop</p>
-                  </div>
-                </ColumnContentSm>
-              </div>
-              <div className="box">
-                <ColumnContentSm>
-                  <div className="empathy-border">
-                    <p>Does:</p>
-                    <p>• I’m always having trouble with my skin</p>
-                    <p>• I try to see a recurring dermatologist</p>
-                    <p>
-                      • Pays for a subscription to find solutions but not help
-                    </p>
-                    <p>• I always buy different products</p>
-                    <p>
-                      • I try to ask products reputation people who are familiar
-                      with it
-                    </p>
-                  </div>
-                </ColumnContentSm>
-              </div>
-              <div className="box">
-                <ColumnContentSm>
-                  <div className="empathy-border">
-                    <p>Feels:</p>
-                    <p>• Drained due to bad overall factors</p>
-                    <p>
-                      • I gave up finding a product due to sensitivities and
-                      allergies
-                    </p>
-                    <p>
-                      • I frustrated for finding all the things consuming time
-                    </p>
-                    <p>• Never seen ideal products for anti-aging</p>
-                    <p>• Sensitive skin products make more trouble my skin</p>
-                  </div>
-                </ColumnContentSm>
-              </div>
-            </EmpathyWrapper>
-          </EmpathyContainer>
+                </ColumnContentLg>
+              </ColumnLg>
+            </FullWidthWrapper>
+          </FullWidthContainer>
 
-          <CompetitorContainer>
-            <ColumnContentLg>
-              <div>
-                <h2>Competitor Analysis</h2>
-                <CompetitorImageWrapper>
-                  <div className="image">
-                    <ImageCircle src={compatitor_laroche} id="" />
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnLg>
+                <Image src={case3_sales_consistency} id="" />
+              </ColumnLg>
+              <ColumnLg>
+                <ColumnContentLg>
+                  <div>
+                    <h2>
+                      Maintaining consistency through an agile style guide
+                    </h2>
                   </div>
-                  <div className="image">
-                    <ImageCircle src={compatitor_neostrata} id="" />
+                  <div>
+                    <p>
+                      Meeting requirements within limited spaces can be a
+                      challenge, but effective collaboration with a copywriter
+                      through mutual discussion can help address this challenge.
+                    </p>
                   </div>
-                  <div className="image">
-                    <ImageCircle src={compatitor_perblle} id="" />
+                </ColumnContentLg>
+              </ColumnLg>
+            </FullWidthWrapper>
+          </FullWidthContainer>
+
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnLg>
+                <Image src={case3_sales_result} id="" />
+              </ColumnLg>
+              <ColumnLg>
+                <ColumnContentLg>
+                  <div>
+                    <h2>Result</h2>
                   </div>
-                  <div className="image">
-                    <ImageCircle src={compatitor_solvaderm} id="" />
+                  <div>
+                    <p>
+                      In conclusion, addressing challenges comprehensively was a
+                      crucial process in this project. The outcome contributed
+                      to improving key metrics, particularly in terms of
+                      profitability.
+                    </p>
+                    <p>
+                      Implementing a component design is crucial for ensuring
+                      easy maintenance post-deployment, a key priority for
+                      cutting-edge digital products. This approach facilitates
+                      optimization after the analysis process.
+                    </p>
+                    <p>
+                      Indeed, considering ease of optimization post-analysis is
+                      crucial for efficient time management and overall project
+                      success.
+                    </p>
                   </div>
-                  <div className="image">
-                    <ImageCircle src={compatitor_city} id="" />
-                  </div>
-                </CompetitorImageWrapper>
-                <p>
-                  Through hands-on exploration of our competitors’ websites and
-                  apps and an extensive review of Google feedback, I identified
-                  significant challenges and uncovered prevalent user issues.
-                </p>
-                <div className="analysis-lists">
-                  <p>• clutter UI</p>
-                  <p>• difficult to find the customer’s type of issue</p>
-                  <p>• overwhelming visuals</p>
-                  <p>• confusing content placement</p>
+                </ColumnContentLg>
+              </ColumnLg>
+            </FullWidthWrapper>
+
+            <ResearchInsight>
+              <ColumnContentSm>
+                <div>
+                  <p className="text-bold">Insights:</p>
                   <p>
-                    • being hard to discover products along with your needs{" "}
+                    Absolutely, considering the user’s perspective and
+                    preferences is key to creating effective upselling and
+                    cross-selling strategies. Avoiding obnoxious and intrusive
+                    approaches and aligning with user expectations can
+                    significantly enhance the success of such techniques.
                   </p>
-                  <p>• products user guide issue</p>
-                  <p>• complication of applying reward</p>
-                  <p>• unclear method to apply seasonal rewards</p>
-                  <p>• cart problems when combined with your rewards</p>
-                  <p>• basic payment anxiety caused by unclear steps</p>
+                  <p>
+                    It’s essential to pre-make decisions based on user needs and
+                    wants before moving forward with the implementation. Through
+                    a systematic approach, I am confident that the products will
+                    be robust and cater to our specific requirements.
+                  </p>
+                </div>
+              </ColumnContentSm>
+            </ResearchInsight>
+          </FullWidthContainer>
+
+          {/* PDP */}
+          <ContentTitleContainer>
+            <ContentTitleWrapper>
+              <div>
+                <span>
+                  Enhancing the Product Page for Maximum Engagement and
+                  Conversion with Crafting Seamless User Journeys
+                </span>
+              </div>
+            </ContentTitleWrapper>
+          </ContentTitleContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>Optimizing Product Pages</h2>
+                <p>
+                  Analyzing metrics over time, my teams identified opportunities
+                  to enhance customer lifetime value. The analysis highlighted
+                  areas for improvement on product pages, prompting me to
+                  conceptualize ways to unlock their fundamental potential.
+                </p>
+                <p>
+                  Outstanding product pages can not make the risk of profit
+                  loss, even when serving as landing pages without extensive
+                  preparation. A well-designed page has sufficient space to
+                  effectively communicate product value and benefits to
+                  customers so The key lies in the designer’s ability to create
+                  a thoughtful and considerate page that takes various factors
+                  into account.
+                </p>
+                <p>
+                  Based on the identified factors, we made the decision to
+                  proceed with this project.
+                </p>
+                <p className="caption">
+                  Project Requirements and Responsibilities:
+                </p>
+                <div className="list">
+                  <p>
+                    • Enhanced the overall design based on collaborative
+                    analysis with team members
+                  </p>
+                  <p>
+                    • Consciously integrate profitable elements and an aesthetic
+                    focus
+                  </p>
+                  <p>
+                    • Integrating a section to PDP page with high enhancement
+                    opportunities
+                  </p>
+                  <p>
+                    • Presenting prototypes to incorporate new ideas discovered
+                    during the project’s progression
+                  </p>
                 </div>
               </div>
             </ColumnContentLg>
-          </CompetitorContainer>
+          </ContentInfoContainer>
 
-          <InsertContainer>
-            <InsertWrapper>
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnLg>
+                <Image src={case3_pdp_integrating} id="" />
+              </ColumnLg>
+              <ColumnLg>
+                <ColumnContentLgMd>
+                  <div>
+                    <h2>Integrating requirements seamlessly into the design</h2>
+                  </div>
+                  <div>
+                    <p>
+                      Following the team’s analysis, a decision was reached
+                      regarding the elements to be incorporated into the hero
+                      section, following these guidelines, three prototypes were
+                      created.
+                    </p>
+                    <p>
+                      <p style={{ color: "#010606" }}>Video:</p>I incorporated
+                      the video in the hero section, keeping in mind our
+                      discussion about the importance of exercising caution for
+                      appropriateness, preserving a seamless user experience
+                      with clear guidelines based on requirements, and through
+                      that, recognizing the importance of conveying information
+                      about the product.
+                    </p>
+                  </div>
+                </ColumnContentLgMd>
+              </ColumnLg>
+            </FullWidthWrapper>
+
+            <ResearchInsight>
+              <ColumnContentMd>
+                <div>
+                  <p>
+                    <p style={{ color: "#010606" }}>Promotion offer:</p>
+                    There’s no reason to exclude benefits; the key is finding
+                    the right way to seamlessly integrate valuable information
+                    with visually compelling material to make it stand out
+                    effectively.
+                  </p>
+                  <p>
+                    <p style={{ color: "#010606" }}>
+                      Simplify info with make it effective:
+                    </p>
+                    Analyzing abandonment and bounce rates revealed an
+                    inappropriate layout affecting user experience. Considering
+                    the analysis, replacing organic text with icons and a
+                    thoughtful redesign have clarified and addressed these
+                    issues.
+                  </p>
+                </div>
+              </ColumnContentMd>
+            </ResearchInsight>
+          </FullWidthContainer>
+
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnLg>
+                <Image src={case3_pdp_usability} id="" />
+              </ColumnLg>
+              <ColumnLg>
+                <ColumnContentLg>
+                  <div>
+                    <h2>Enhancing interactive usability</h2>
+                  </div>
+                  <div>
+                    <p>
+                      Resolved the prior issue of a cluttered and
+                      non-communicative UI by incorporating and adjusting CSS
+                      animations, collapses, drop-downs, and icons. This
+                      maintained consistency with the defined design, resulting
+                      in improved communication with customers.
+                    </p>
+                  </div>
+                </ColumnContentLg>
+              </ColumnLg>
+            </FullWidthWrapper>
+          </FullWidthContainer>
+
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnLg>
+                <Image src={case3_pdp_engagement} id="" />
+              </ColumnLg>
+              <ColumnLg>
+                <ColumnContentLg>
+                  <div>
+                    <h2>Organize to maintain user engagement</h2>
+                  </div>
+                  <div>
+                    <p>
+                      These design components were assigned based on the I
+                      created in the previous steps, resulting in a more
+                      aesthetic and improved usability. However, for analysis
+                      purposes, we took to hide the reviews section and overlay
+                      it, deviating from the theoretical approach.
+                    </p>
+                  </div>
+                </ColumnContentLg>
+              </ColumnLg>
+            </FullWidthWrapper>
+          </FullWidthContainer>
+
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnLg>
+                <Image src={case3_pdp_additional} id="" />
+              </ColumnLg>
+              <ColumnLg>
+                <ColumnContentLgMd>
+                  <div>
+                    <h2>Explore additional opportunities</h2>
+                  </div>
+                  <div>
+                    <p>
+                      I identified opportunities to integrate new functions,
+                      providing additional avenues for product purchases. We’ve
+                      been implementing a website function to help users
+                      determine their skin type, a significant contributor to
+                      enhancing user engagement.
+                    </p>
+                    <p>
+                      Additionally, the Product Detail Page (PDP) features the
+                      same function, although it was not initially optimized for
+                      a seamless user experience tied to the purchase and
+                      enhancement of increase rate. I have since made
+                      adjustments to enhance its usability.
+                    </p>
+                  </div>
+                </ColumnContentLgMd>
+              </ColumnLg>
+            </FullWidthWrapper>
+
+            <ResearchInsight>
+              <ColumnContentMd>
+                <div>
+                  <p>
+                    Ensure alignment with UI design standards, incorporate clear
+                    call-to-action (CTA) elements, and display the included
+                    products prominently within the modal window components.
+                  </p>
+                </div>
+              </ColumnContentMd>
+            </ResearchInsight>
+          </FullWidthContainer>
+
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnLg>
+                <Image src={case3_pdp_altenative} id="" />
+              </ColumnLg>
+              <ColumnLg>
+                <ColumnContentLg>
+                  <div>
+                    <h2>
+                      Explore alternative perspectives and leverage ideas from
+                      different angles
+                    </h2>
+                  </div>
+                  <div>
+                    <p>
+                      Apart from this project, I’ve been contemplating the use
+                      of sticky components to enhance the user experience and
+                      potentially boost profitability. Recognizing the need for
+                      a valid reason, I meticulously crafted this component for
+                      proposing to the team as it could present another valuable
+                      opportunity.
+                    </p>
+                  </div>
+                </ColumnContentLg>
+              </ColumnLg>
+            </FullWidthWrapper>
+          </FullWidthContainer>
+
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnLg>
+                <Image src={case3_pdp_result} id="" />
+              </ColumnLg>
+              <ColumnLg>
+                <ColumnContentLg>
+                  <div>
+                    <h2>Result</h2>
+                  </div>
+                  <div>
+                    <p>
+                      In the final decision, we opted to integrate a sticky CTA
+                      that smoothly hides when it’s not in focus on essential
+                      elements. Additionally, the CTA has been transformed into
+                      a distinct section, enhancing the navigation of the eye
+                      trajectory.
+                    </p>
+                    <p>
+                      Product pages in any industry have the potential to be
+                      both the first and last page a visitor interacts with.
+                      Therefore, it is essential that these pages are designed
+                      to independently meet and support the diverse needs of
+                      customers.
+                    </p>
+                  </div>
+                </ColumnContentLg>
+              </ColumnLg>
+            </FullWidthWrapper>
+
+            <ResearchInsight>
+              <ColumnContentMd>
+                <div>
+                  <p>
+                    The quality of products will be evaluated through the PDP,
+                    which directly links to the purchase. This will occur if the
+                    page or app fulfills crystal-clear conditions, enclosing all
+                    relevant factors.
+                  </p>
+                </div>
+              </ColumnContentMd>
+            </ResearchInsight>
+
+            <ResearchInsight>
+              <ColumnContentSm>
+                <div>
+                  <p className="text-bold">Insigns:</p>
+                  <p>
+                    Through this project, I’ve acquired valuable knowledge and
+                    gained insight into iterative analysis. Continuously
+                    analyzing these pages is crucial for contributing to the
+                    growth of the company.
+                  </p>
+                </div>
+              </ColumnContentSm>
+            </ResearchInsight>
+          </FullWidthContainer>
+
+          {/* KPI */}
+          <ContentTitleContainer>
+            <ContentTitleWrapper>
               <div>
                 <span>
-                  In-depth research is essential because it forms the foundation
-                  of informed design decisions.
+                  Optimizing Conversion Acquisition that A User-Centric KPI
+                  Strategy for Seamless Product Navigation and Profitability
                 </span>
               </div>
-            </InsertWrapper>
-          </InsertContainer>
+            </ContentTitleWrapper>
+          </ContentTitleContainer>
 
-          <InsertImageContainer>
-            <InsertImageWrapper>
-              <ImageSm src={case1_insert} id="" />
-            </InsertImageWrapper>
+          <ContentInfoContainer>
             <ColumnContentLg>
-              <p>
-                Building on the insights gained from our research, I identified
-                critical factors that compelled us to adopt a different
-                approach, allowing us to continue progressing with the project.
-              </p>
+              <div>
+                <h2>My strategy of KPI</h2>
+                <p>
+                  The KPI strategy I’ve dedicated to revolves around optimizing
+                  conversion acquisition, ensuring every step aligns with
+                  user-centric design principles, and employing a systematic
+                  approach to refine and enhance the overall user experience.
+                </p>
+                <p className="caption">
+                  Revitalizing User Engagement and Conversion Acquisition: Key
+                  Responsibilities of the Project
+                </p>
+                <p style={{ color: "#010606" }}>Primary priorities of KPI</p>
+                <div className="list">
+                  <p>• Organic traffic</p>
+                  <p>• Pages per session</p>
+                  <p>• Click rate</p>
+                  <p>• Cart abandonment rate</p>
+                  <p>• Bounce rate</p>
+                  <p>• Promotion page conversion rates</p>
+                  <p>• Product pages conversion rates</p>
+                  <p>• Landing Page Samples conversion rate</p>
+                </div>
+                <p style={{ color: "#010606" }}>Secondary priorities of KPI </p>
+                <div className="list">
+                  <p>• Customer Acquisition Cost</p>
+                  <p>• Customer Lifetime Value</p>
+                  <p>• Marketing Return on Investment</p>
+                  <p>• Churn Rate</p>
+                  <p>• Full Product</p>
+                </div>
+                <p>
+                  This involves iterative design practices, incorporating
+                  pricing psychology, and utilizing A/B testing for continuous
+                  improvement. The goal is to maximize engagement, support
+                  profitability, and provide a seamless, intuitive experience
+                  for users navigating the products and making purchase
+                  decisions.
+                </p>
+                <p>
+                  Frequently, exercising patience is crucial to achieving
+                  meaningful contributions. The secure and experiential process
+                  not only forms the foundation for results but also brings
+                  expansive joy to my work through the satisfaction of
+                  accomplishments.
+                </p>
+              </div>
             </ColumnContentLg>
-          </InsertImageContainer>
-
-          <FullWidthContainer>
-            <FullWidthWrapper>
-              <ColumnLg>
-                <Image src={case1_journey} id="" />
-              </ColumnLg>
-              <ColumnLg>
-                <ColumnContentLg>
-                  <div>
-                    <h2>User Journey</h2>
-                  </div>
-                  <div>
-                    <p>
-                      The user journey, often represented through a visual
-                      journey map, illustrates the sequential path a person
-                      takes while interacting with a product, service, or brand.
-                      It encompasses the stages of discovery, the
-                      decision-making process regarding whether to make a
-                      purchase.
-                    </p>
-                  </div>
-                </ColumnContentLg>
-              </ColumnLg>
-            </FullWidthWrapper>
-          </FullWidthContainer>
-
-          <FullWidthContainer>
-            <FullWidthFlipWrapper>
-              <ColumnLg>
-                <Image src={case1_architecture} id="" />
-              </ColumnLg>
-              <ColumnLg>
-                <ColumnContentLg>
-                  <div>
-                    <h2>Information Architecture</h2>
-                  </div>
-                  <div>
-                    <p>
-                      Effective design, when executed, seamlessly integrates
-                      with the user experience, becoming invisible. It’s only in
-                      cases of poor design that its presence becomes noticeable.
-                      Information architecture plays a crucial role in ensuring
-                      a smooth and user-friendly experience.
-                    </p>
-                    <p>
-                      This not only enhances the user experience but also
-                      minimizes the risk of costly redesigns and ensures that
-                      our product or interface is more likely to succeed in the
-                      market.
-                    </p>
-                  </div>
-                </ColumnContentLg>
-              </ColumnLg>
-            </FullWidthFlipWrapper>
-          </FullWidthContainer>
-
-          <FullWidthContainer>
-            <FullWidthWrapper>
-              <ColumnLg>
-                <Image src={case1_flow} id="" />
-              </ColumnLg>
-              <ColumnLg>
-                <ColumnContentLg>
-                  <div>
-                    <h2>User Flow</h2>
-                  </div>
-                  <div>
-                    <p>
-                      The user flow outlines the journey a user takes from the
-                      moment they launch the application to exploring all
-                      website functionalities and performing various actions.
-                    </p>
-                  </div>
-                </ColumnContentLg>
-              </ColumnLg>
-            </FullWidthWrapper>
-          </FullWidthContainer>
-
-          <FullWidthContainer>
-            <FullWidthFlipWrapper>
-              <ColumnLg>
-                <Image src={case1_overview} id="" />
-              </ColumnLg>
-              <ColumnLg>
-                <ColumnContentLg>
-                  <div>
-                    <h2>Branding Style Guide</h2>
-                  </div>
-                  <div>
-                    <p>
-                      A brand style guide dictates the composition, design
-                      principles, and overall visual identity of a company’s
-                      branding.
-                    </p>
-                    <p>
-                      My role, which primarily centers on digital product
-                      design, played a pivotal role in unifying and enhancing
-                      the UI/UX understanding across teams.
-                    </p>
-                  </div>
-                </ColumnContentLg>
-              </ColumnLg>
-            </FullWidthFlipWrapper>
-          </FullWidthContainer>
+          </ContentInfoContainer>
 
           <ClosingWrapper>
             <Image src={case3_closing} id="" />

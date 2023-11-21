@@ -37,8 +37,10 @@ const DropdownSoftware = () => {
                 setOpen(!open);
               }}
             >
-              <span>Software</span>
-              <span>+</span>
+              <span className={`dropdown-chip ${open ? "active" : "inactive"}`}>
+                Software&nbsp;
+              </span>
+              {/* <span>+</span> */}
             </div>
             <div
               className={`dropdown-contents ${open ? "active" : "inactive"}`}

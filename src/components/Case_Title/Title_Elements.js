@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const CaseContainer = styled.div`
-  background: #faf8f6;
+  background: var(--primaly-bg);
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 export const CaseTitleWrapper = styled.div`
-  background: #faf8f6;
   padding-bottom: 6rem;
 
   @media only screen and (max-width: 960px) {

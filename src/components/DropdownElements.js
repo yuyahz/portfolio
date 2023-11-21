@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DropdownContainer = styled.div`
-  background: var(--primaly-bg);
+  /* background: var(--primaly-bg); */
   width: 100%;
   max-width: 1140px;
 `;
@@ -19,11 +19,14 @@ export const DropdownInnerWrapper = styled.div`
     color: var(--primary-txt-color);
     font-weight: 500;
     font-size: 3rem;
-    padding: 1rem 0 1rem 0;
+    padding: 16px 0;
+
+    @media only screen and (max-width: 1024px) {
+      padding: 1.57vw 0;
+    }
 
     @media only screen and (max-width: 960px) {
       font-size: 4.44vw;
-      padding: 2vw 0 2vw 0;
     }
 
     span {
@@ -31,23 +34,71 @@ export const DropdownInnerWrapper = styled.div`
       font-weight: 500;
       font-size: 3rem;
 
-      &:last-child {
-        color: var(--secondary-txt-color);
-        margin-left: 1.5rem;
-        /* display: flex;
-        justify-content: end; */
-      }
-
       @media only screen and (max-width: 960px) {
         /* padding-left: 3.33vw; */
         font-size: 4.44vw;
       }
     }
+
+    //// Chips /////
+    .dropdown-chip.inactive {
+      display: inline-block;
+      transition: 0.7s;
+      transform: rotate(-360deg);
+      transition-timing-function: ease-in-out;
+      border-radius: 50px;
+      border: solid 2px #fe0000;
+      background: #faf8f6;
+      white-space: nowrap;
+      padding: 10px 25px;
+    }
+
+    .dropdown-chip.inactive::after {
+      content: "+";
+      font-weight: 100;
+      transform: translateX(4rem);
+      transition-delay: calc(250ms * var(--delay));
+      transition-timing-function: ease-in-out;
+      transition-duration: 500ms;
+    }
+
+    .dropdown-chip.active {
+      position: absolute;
+      margin-left: 24px;
+      transition: 0.5s;
+      transform: rotate(-3deg);
+      transition-timing-function: ease-in-out;
+      border-radius: 50px;
+      border: solid 2px #fe0000;
+      background: #fe0000;
+      color: var(--inversed-txt-color);
+      white-space: nowrap;
+      padding: 10px 20%;
+
+      @media only screen and (max-width: 768px) {
+        margin-left: 16px;
+      }
+      @media only screen and (max-width: 540px) {
+        margin-left: 6px;
+        border: solid 1.5px #fe0000;
+      }
+    }
+
+    .dropdown-chip.active::after {
+      content: "+";
+      position: absolute;
+      font-weight: 100;
+      transition: 0.5s;
+      transform: rotate(-45deg);
+      transition-timing-function: ease-in-out;
+      color: var(--inversed-txt-color);
+    }
   }
 
+  //// Contents of chips /////
   .dropdown-contents {
     padding: 2rem 3rem;
-    background: var(--primaly-bg);
+    /* background: var(--primaly-bg); */
     border: solid 2px #fe0000;
     border-radius: 15px;
 
@@ -61,24 +112,38 @@ export const DropdownInnerWrapper = styled.div`
     }
   }
 
+  .dropdown-contents.inactive {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    /* background-color: #fe0000; */
+    visibility: hidden;
+    transform: translateX(4rem);
+    transition-delay: calc(200ms * var(--delay));
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+  }
+
   .dropdown-contents.active {
     width: 100%;
+    margin: 3rem 0 6rem 0;
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    /* transform: translateX(1rem); */
     transition: 0.5s;
-    transition-delay: calc(60ms * var(--delay));
+    /* transition-delay: calc(250ms * var(--delay)); */
+    transition-timing-function: ease-in-out;
 
     @media only screen and (max-width: 960px) {
       font-size: 4.44vw;
+      margin: 2.5rem 0 5.5rem 0;
     }
-  }
-
-  .dropdown-contents.inactive {
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
+    @media only screen and (max-width: 768px) {
+      margin: 2rem 0 4.5rem 0;
+    }
+    @media only screen and (max-width: 540px) {
+      margin: 1.75rem 0 2.75rem 0;
+    }
   }
 
   p {

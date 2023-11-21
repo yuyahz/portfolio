@@ -57,9 +57,9 @@ const Case = ({
         </ColumnLgImg1>
 
         <ColumnLgImg2 imageActivate2={imageActivate2}>
-          <FadeIn.Left>
+          <FadeIn.Right>
             <ImageSlider2 slides={SliderData2} />
-          </FadeIn.Left>
+          </FadeIn.Right>
         </ColumnLgImg2>
 
         <ColumnLgImg3 imageActivate3={imageActivate3}>
@@ -69,9 +69,9 @@ const Case = ({
         </ColumnLgImg3>
 
         <ColumnLgImg4 imageActivate4={imageActivate4}>
-          <FadeIn.Left>
+          <FadeIn.Right>
             <ImageSlider4 slides={SliderData4} />
-          </FadeIn.Left>
+          </FadeIn.Right>
         </ColumnLgImg4>
 
         <ColumnLg>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const LooperContainer = styled.div`
   width: 100%;
-  background: #faf8f6;
+  background: var(--primaly-bg);
   -ms-user-select: none; /* IE 10+ */
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
@@ -83,7 +83,6 @@ export const LooperContainer = styled.div`
     height: auto;
     position: absolute;
     top: 0;
-    background: #faf8f6;
     text-align: center;
     z-index: 1;
     color: #fe0000;

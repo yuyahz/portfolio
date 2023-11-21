@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages";
 import case1Page from "./pages/articleCase1";
 import case2Page from "./pages/articleCase2";
@@ -14,7 +14,7 @@ import portfolioPage from "./pages/articlePortfolio";
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL + "/"}>
+    <HashRouter basename={process.env.PUBLIC_URL + "/"}>
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/case1Page" component={case1Page} exact />
@@ -27,7 +27,7 @@ function App() {
         <Route path="/dailyUiPage" component={dailyUiPage} exact />
         <Route path="/portfolioPage" component={portfolioPage} exact />
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 

@@ -279,7 +279,7 @@ export const ColumnContentMd = styled.div`
     @media only screen and (max-width: 1024px) {
       margin-top: 24px;
       :first-child {
-        margin-top: 24px;
+        margin-top: 24px !important;
       }
     }
     @media only screen and (max-width: 540px) {

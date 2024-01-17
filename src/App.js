@@ -15,7 +15,7 @@ import portfolioPage from "./pages/articlePortfolio";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
+    <HashRouter basename={process.env.PUBLIC_URL + "/"}>
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/case1Page" component={case1Page} exact />
@@ -29,7 +29,7 @@ function App() {
         <Route path="/dailyUiPage" component={dailyUiPage} exact />
         <Route path="/portfolioPage" component={portfolioPage} exact />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

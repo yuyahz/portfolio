@@ -14,7 +14,7 @@ export const FullWidthWrapper = styled.div`
   flex-wrap: wrap;
   flex-direction: ${({ imageLeft }) => (imageLeft ? "none" : "row-reverse")};
   padding-top: ${({ paddingStart }) => (paddingStart ? "8rem" : "0")};
-  padding-bottom: ${({ paddingEnd }) => (paddingEnd ? "17rem" : "0")};
+  padding-bottom: ${({ paddingEnd }) => (paddingEnd ? "8rem" : "0")};
 
   @media only screen and (max-width: 1570px) {
     margin: 0 30px 0 110px;

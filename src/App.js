@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages";
 import case1Page from "./pages/articleCase1";
+import rv1 from "./pages/articleRv1";
 import case2Page from "./pages/articleCase2";
 import case3Page from "./pages/articleCase3";
 import caseMpPage from "./pages/articleCaseMp";
@@ -14,10 +15,11 @@ import portfolioPage from "./pages/articlePortfolio";
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL + "/"}>
+    <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/case1Page" component={case1Page} exact />
+        <Route path="/rv1" component={rv1} exact />
         <Route path="/case2Page" component={case2Page} exact />
         <Route path="/case3Page" component={case3Page} exact />
         <Route path="/caseMpPage" component={caseMpPage} exact />
@@ -27,7 +29,7 @@ function App() {
         <Route path="/dailyUiPage" component={dailyUiPage} exact />
         <Route path="/portfolioPage" component={portfolioPage} exact />
       </Switch>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Button } from "../ButtonCaseElements";
 import {
   HomeIconWrapper,
   HomeIcon,
@@ -59,6 +60,53 @@ import case1_flow from "../../images/case1_flow.png";
 import case1_overview from "../../images/case1_overview.png";
 
 const Article_Case1 = () => {
+  // ref
+  // const [toggle, setToggle] = useState(true);
+  // const handleClick = () => {
+  //   setToggle(!toggle);
+  // };
+
+  // const [inputValue, setInputValue] = useState("");
+  // const [inputError, setInputError] = useState(null);
+  // const handleClick = () => {
+  //   setInputValue(!inputValue);
+  // };
+
+  // function handleInputChange(event) {
+  //   const value = event.target.value;
+  //   setInputValue(value);
+
+  //   if (value.length < 10) {
+  //     setInputError("???");
+  //   } else {
+  //     setInputError(null);
+  //   }
+  // }
+
+  // function handleSubmit(event) {
+  //   event.preventDefault();
+  //   if (inputValue.length >= 10) {
+  //     // submit form
+  //   } else {
+  //     setInputError("Please try again");
+  //   }
+  // }
+
+  const [userInput, setUserInput] = useState("");
+  const handleGate = () => {
+    // Simulating prompt with a simple input field
+    const userInput = prompt("Please enter password");
+
+    // check
+    if (/^\W+$/.test(userInput)) {
+      // error if type other than half size
+      alert("Invalid input. Please enter a valid password.");
+    } else if (userInput !== null) {
+      // success
+      window.location.href = `${userInput}`;
+    }
+  };
+
   return (
     <CaseContainer id="case1">
       <motion.div
@@ -214,6 +262,18 @@ const Article_Case1 = () => {
             </IntroWrapper>
           </IntroContainer>
 
+          <Button
+            style={{ margin: "0 auto" }}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={0}
+            onClick={handleGate}
+          >
+            Passward
+          </Button>
+
           <InsertContainer>
             <InsertWrapper>
               <div>
@@ -225,6 +285,38 @@ const Article_Case1 = () => {
               </div>
             </InsertWrapper>
           </InsertContainer>
+
+          {/* <button
+            style={{ display: toggle ? "block" : "none" }}
+            onClick={handleClick}
+          >
+            Toggle State
+          </button> */}
+
+          {/* <form onSubmit={handleSubmit}>
+            <label>
+              Fruit:
+              <input
+                type="text"
+                value={inputValue}
+                onChange={handleInputChange}
+              />
+            </label>
+            {inputError && <div style={{ color: "red" }}>{inputError}</div>}
+            <button type="submit">Submit</button>
+          </form> */}
+
+          {/* <div style={{ filter: inputValue ? "blur(12px)" : "none" }}> */}
+
+          {/* <div>
+            <p>
+              <input
+                type="button"
+                value="パスワードを入力して秘密のページへアクセスする"
+                onClick={handleGate}
+              />
+            </p>
+          </div> */}
 
           <FullWidthContainer>
             <FullWidthWrapper>
@@ -599,7 +691,7 @@ const Article_Case1 = () => {
               </ColumnLg>
             </FullWidthFlipWrapper>
           </FullWidthContainer>
-
+          {/* </div> */}
           <ClosingWrapper>
             <Image src={case1_closing} id="" />
           </ClosingWrapper>

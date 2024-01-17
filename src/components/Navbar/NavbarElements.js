@@ -84,7 +84,7 @@ export const NavbarContainer = styled.div`
   height: 100vh;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
+  padding: 24px;
   max-width: 960px;
 `;
 
@@ -132,22 +132,42 @@ export const NavItem = styled.div`
 
   .aboutSec {
     margin: 30px 0;
+
+    @media screen and (max-height: 720px) {
+      margin: 3.472vh 0;
+    }
   }
 
   .case1Sec {
     margin: 30px 0;
+
+    @media screen and (max-height: 720px) {
+      margin: 3.472vh 0;
+    }
   }
 
   .case2Sec {
     margin: 30px 0;
+
+    @media screen and (max-height: 720px) {
+      margin: 3.472vh 0;
+    }
   }
 
   .case3Sec {
     margin: 30px 0;
+
+    @media screen and (max-height: 720px) {
+      margin: 3.472vh 0;
+    }
   }
 
   .mpSec {
     margin: 30px 0;
+
+    @media screen and (max-height: 720px) {
+      margin: 4.861vh 0;
+    }
   }
 
   /* .vectorSec {
@@ -164,10 +184,18 @@ export const NavItem = styled.div`
 
   .worksSec {
     margin: 30px 0;
+
+    @media screen and (max-height: 720px) {
+      margin: 4.861vh 0;
+    }
   }
 
   .contactSec {
     margin: 40px 0;
+
+    @media screen and (max-height: 720px) {
+      margin: 4.861vh 0;
+    }
   }
 `;
 
@@ -179,10 +207,14 @@ export const NavLinks = styled(LinkS)`
   padding: 0.1rem 0.1rem;
   cursor: pointer;
 
+  @media screen and (max-height: 720px) {
+    font-size: 2.22vh;
+  }
+
   &.active {
     text-align: center;
     font-weight: 900;
-    padding: 10px;
+    padding-bottom: 10px;
     border-bottom: solid 2px #fe0000;
     /* border: solid 2px #fe0000;
     background-color: white;

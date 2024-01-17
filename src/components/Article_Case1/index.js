@@ -103,7 +103,7 @@ const Article_Case1 = () => {
       alert("Invalid input. Please enter a valid password.");
     } else if (userInput !== null) {
       // success
-      window.location.href = `${userInput}`;
+      window.location.href = `${userInput + ".html"}`;
     }
   };
 

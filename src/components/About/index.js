@@ -88,15 +88,17 @@ const About = () => {
             </div>
             <div>
               <h4>
-                I am committed to approaching these elements with flexibility
-                for every project and client.
+                Iterations are crucial for shaping the customer base, and
+                ensuring products are functional, visually appealing, and
+                catered to the end user needs, and to facilitate this, I am
+                committed to attempting to supportive work culture built on
+                strong communication and transparency across the whole team.
               </h4>
             </div>
             <div>
               <h4>
-                I believe that is supportive work culture is built on strong
-                communication and relationships between the whole team through,
-                and I am committed to that.
+                I am committed to approaching these elements with flexibility
+                for every project and client.
               </h4>
             </div>
           </AboutInnerWrapper>

@@ -2,15 +2,12 @@ import styled from "styled-components";
 
 export const LooperContainer = styled.div`
   width: 100%;
-  background: var(--primaly-bg);
+  background: var(--primly-bg);
+  color: var(--inversed-txt-color);
   -ms-user-select: none; /* IE 10+ */
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
-
-  border-top: solid 2px #fe0000;
-  border-bottom: solid 2px #fe0000;
-  padding: 0.5rem 0;
 
   @media only screen and (max-width: 960px) {
     padding: 0.833vw 0;
@@ -20,29 +17,31 @@ export const LooperContainer = styled.div`
     position: relative;
     height: 95px;
     overflow: hidden;
+    margin-bottom: 4rem;
+    background: var(--secondary-bg);
 
-    @media only screen and (max-width: 960px) {
-      height: 9vw;
+    @media only screen and (max-width: 2300px) {
+      height: 4.13vw;
+      margin-bottom: 2.783vw;
     }
   }
 
   .looper-t::before,
   .looper-t::after {
-    content: "☺︎ ☹︎ User Experience Design";
+    content: "☺︎ Designing without research is like hopping into a taxi and just saying, 'Drive' ☹︎";
     width: 100%;
     height: auto;
     position: absolute;
     top: 0;
     text-align: center;
     z-index: 1;
-    color: #fe0000;
-    background: #faf8f6;
-    font-weight: 700;
+    font-family: GT;
+    font-weight: 500;
     font-size: 4rem;
     line-height: 1.5;
 
-    @media only screen and (max-width: 960px) {
-      font-size: 6.62vw;
+    @media only screen and (max-width: 2300px) {
+      font-size: 2.783vw;
     }
   }
 
@@ -69,29 +68,28 @@ export const LooperContainer = styled.div`
     position: relative;
     height: 95px;
     overflow: hidden;
-    border-top: solid 2px #fe0000;
+    background: var(--secondary-bg);
 
-    @media only screen and (max-width: 960px) {
-      height: 11vw;
+    @media only screen and (max-width: 2300px) {
+      height: 4.13vw;
     }
   }
 
   .looper-b::before,
   .looper-b::after {
-    content: "☹︎ ☺︎ User Interface Design";
+    content: "☹︎ Once you reach your destination, settle in and kick off the iterative process ☺︎ ";
     width: 100%;
     height: auto;
     position: absolute;
     top: 0;
     text-align: center;
     z-index: 1;
-    color: #fe0000;
-    font-weight: 700;
+    font-family: GT;
     font-size: 4rem;
     line-height: 1.5;
 
-    @media only screen and (max-width: 960px) {
-      font-size: 7.2vw;
+    @media only screen and (max-width: 2300px) {
+      font-size: 2.783vw;
     }
   }
 

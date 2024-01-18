@@ -95,7 +95,7 @@ const Navbar = ({ toggle }) => {
                 offset={0}
                 activeClass="active"
               >
-                Case Study 1
+                Riversol Hop
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -109,7 +109,7 @@ const Navbar = ({ toggle }) => {
                 offset={0}
                 activeClass="active"
               >
-                Case Study 2
+                Riversol Step
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -123,7 +123,7 @@ const Navbar = ({ toggle }) => {
                 offset={0}
                 activeClass="active"
               >
-                Case Study 3
+                Riversol Jump
               </NavLinks>
             </NavItem>
             <NavItem>

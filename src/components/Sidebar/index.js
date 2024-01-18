@@ -55,7 +55,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            <p>• Home</p>
+            <p>Home</p>
           </SidebarLink>
           <SidebarLink
             to="about"
@@ -67,7 +67,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            <p>• About</p>
+            <p>About</p>
           </SidebarLink>
           <SidebarLink
             to="case1"
@@ -79,7 +79,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            <p>• Case Study 1</p>
+            <p>Riversol Hop</p>
           </SidebarLink>
           <SidebarLink
             to="case2"
@@ -91,7 +91,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            <p>• Case Study 2</p>
+            <p>Riversol Step</p>
           </SidebarLink>
           <SidebarLink
             to="case3"
@@ -103,7 +103,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            <p>• Case Study 3</p>
+            <p>RIversol Jump</p>
           </SidebarLink>
           <SidebarLink
             to="mp"
@@ -115,7 +115,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            <p>• Midnight Paloma</p>
+            <p>Midnight Paloma</p>
           </SidebarLink>
           <SidebarLink
             to="larry"
@@ -127,7 +127,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            <p>• Work</p>
+            <p>Work</p>
           </SidebarLink>
           <SidebarLink
             to="contact"
@@ -139,7 +139,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            <p>• Contact</p>
+            <p>Contact</p>
           </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>

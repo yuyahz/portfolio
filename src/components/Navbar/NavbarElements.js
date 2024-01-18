@@ -4,7 +4,8 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  font-size: 1.3rem;
+  font-size: 1rem;
+  color: #fe0000;
   width: 120px;
   height: 100vh;
   display: flex;
@@ -16,6 +17,10 @@ export const Nav = styled.nav`
 
   @media screen and (max-width: 960px) {
     display: none;
+  }
+
+  @media screen and (max-height: 720px) {
+    font-size: 2.22vh;
   }
 `;
 
@@ -48,11 +53,11 @@ export const NavLogo = styled(LinkR)`
   height: auto;
 
   img:hover {
-    animation: tilt-n-move-shaking 0.3s;
+    animation: tilt-move-shaking 0.3s;
     animation-iteration-count: infinite;
   }
 
-  @keyframes tilt-n-move-shaking {
+  @keyframes tilt-move-shaking {
     0% {
       transform: translate(0, 0) rotate(0deg);
     }
@@ -60,7 +65,7 @@ export const NavLogo = styled(LinkR)`
       transform: translate(5px, 5px) rotate(5deg);
     }
     50% {
-      transform: translate(0, 0) rotate(0eg);
+      transform: translate(0, 0) rotate(0deg);
     }
     75% {
       transform: translate(-5px, 5px) rotate(-5deg);
@@ -129,6 +134,33 @@ export const NavMenu = styled.div`
 
 export const NavItem = styled.div`
   height: auto;
+
+  a:hover {
+    animation: nav-move-shaking 0.3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes nav-move-shaking {
+    0% {
+      transform: translate(0, 0) rotate(270deg);
+    }
+    25% {
+      transform: translate(5px, 5px) rotate(270deg);
+    }
+    50% {
+      transform: translate(0, 0) rotate(270deg);
+    }
+    75% {
+      transform: translate(-5px, 5px) rotate(270deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(270deg);
+    }
+  }
+
+  @media screen and (max-height: 720px) {
+    max-width: 30px;
+  }
 
   .aboutSec {
     margin: 30px 0;
@@ -200,22 +232,18 @@ export const NavItem = styled.div`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fe0000;
   display: flex;
   transform: rotate(0.75turn);
   text-decoration: none;
   padding: 0.1rem 0.1rem;
   cursor: pointer;
 
-  @media screen and (max-height: 720px) {
-    font-size: 2.22vh;
-  }
-
   &.active {
-    text-align: center;
-    font-weight: 900;
-    padding-bottom: 10px;
-    border-bottom: solid 2px #fe0000;
+    /* text-align: center; */
+    font-family: GT;
+    font-weight: 700;
+    padding-bottom: 6px;
+    border-bottom: double 5px #fe0000;
     /* border: solid 2px #fe0000;
     background-color: white;
     border-radius: 50px; */

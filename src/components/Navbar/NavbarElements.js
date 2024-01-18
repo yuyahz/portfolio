@@ -242,6 +242,7 @@ export const NavLinks = styled(LinkS)`
     /* text-align: center; */
     font-family: GT;
     font-weight: 700;
+    font-size: 1.3rem;
     padding-bottom: 6px;
     border-bottom: double 5px #fe0000;
     /* border: solid 2px #fe0000;

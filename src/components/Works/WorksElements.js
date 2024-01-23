@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const WorksContainer = styled.div`
   width: 100%;
-  background: #faf8f6;
+  background: var(--primaly-bg);
   display: block;
   padding: 0.5rem;
   border-bottom: 2px solid red;
@@ -27,7 +27,7 @@ export const WorksInnerWrapper = styled.div`
 `;
 
 export const WorksNumber = styled.div`
-  color: #fe0000;
+  color: var(--primary-txt-color);
   font-family: "GT";
   font-weight: 500;
   font-size: 2.5rem;
@@ -41,7 +41,7 @@ export const WorksNumber = styled.div`
 `;
 
 export const WorksTitle = styled(Link)`
-  color: #fe0000;
+  color: var(--primary-txt-color);
   position: relative;
   z-index: 0;
   font-family: "GT";
@@ -54,7 +54,7 @@ export const WorksTitle = styled(Link)`
     position: absolute;
     width: 840px;
     height: 130px;
-    background-color: #faf8f6;
+    background-color: var(--primaly-bg);
     top: 0;
     left: 0;
     transform-origin: right;

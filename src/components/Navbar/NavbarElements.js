@@ -5,7 +5,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   font-size: 1rem;
-  color: #fe0000;
+  color: var(--primary-txt-color);
   width: 120px;
   height: 100vh;
   display: flex;
@@ -97,7 +97,7 @@ export const NavbarContainer = styled.div`
 //   display: none;
 
 //   @media screen and (max-width: 959.99px) {
-//     color: #fe0000;
+//     color: var(--primary-txt-color);;
 //     display: block;
 //     position: absolute;
 //     top: 40px;
@@ -244,8 +244,8 @@ export const NavLinks = styled(LinkS)`
     font-weight: 700;
     font-size: 1.3rem;
     padding-bottom: 6px;
-    border-bottom: double 5px #fe0000;
-    /* border: solid 2px #fe0000;
+    border-bottom: double 5px var(--secondary-bg);
+    /* border: solid 2px var(--secondary-bg);;
     background-color: white;
     border-radius: 50px; */
     transition: 0.2 cubic-bezier(0.33, 1, 0.68, 1);

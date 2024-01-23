@@ -43,7 +43,7 @@ export const ResearchInsight = styled.div`
   p {
     :first-child {
       margin-top: 0px;
-      color: #010606;
+      color: var(--secondary-txt-color);
       font-weight: 600;
 
       @media (max-width: 540px) {
@@ -117,7 +117,7 @@ export const EmpathyWrapper = styled.div`
   }
   .empathy-border {
     padding: 24px;
-    border: solid 2px #fe0000;
+    border: solid 2px var(--secondary-bg);
     border-radius: 15px;
 
     p {
@@ -127,7 +127,7 @@ export const EmpathyWrapper = styled.div`
 
       :first-child {
         margin-top: 0;
-        color: #010606;
+        color: var(--secondary-txt-color);
         font-weight: 600;
       }
     }
@@ -202,7 +202,7 @@ export const InsertWrapper = styled.div`
     font-size: 7rem;
     font-weight: 100;
     line-height: 1.2;
-    color: #fe0000;
+    color: var(--primary-txt-color);
     -ms-user-select: none;
     -moz-user-select: -moz-none;
     -khtml-user-select: none;

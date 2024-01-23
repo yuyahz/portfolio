@@ -50,7 +50,7 @@ export const CaseWrapper = styled.div`
   }
 
   h2 {
-    color: #fe0000;
+    color: var(--primary-txt-color);
     font-weight: 700;
     font-size: 7rem;
     -ms-user-select: none; /* IE 10+ */

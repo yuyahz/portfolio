@@ -16,7 +16,7 @@ export const SliderContainer = styled.div`
 
   .image {
     width: 100%;
-    border: solid 2px #fe0000;
+    border: solid 2px var(--secondary-bg);
     border-radius: 15px;
 
     @media only screen and (max-width: 960px) {
@@ -44,7 +44,7 @@ export const SliderContainer = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  border: solid 2px #fe0000;
+  border: solid 2px var(--secondary-bg);
   border-radius: 15px;
 
   @media only screen and (max-width: 1024px) {
@@ -73,7 +73,7 @@ export const ArrowWrapper = styled.div`
     color: #000;
     z-index: 10;
     cursor: pointer;
-    color: #fe0000;
+    color: var(--primary-txt-color);;
   } */
 
   .left-arrow {
@@ -84,7 +84,7 @@ export const ArrowWrapper = styled.div`
     color: #000;
     z-index: 10;
     cursor: pointer;
-    color: #fe0000;
+    color: var(--primary-txt-color);
     margin: 24px 24px 0 0;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 

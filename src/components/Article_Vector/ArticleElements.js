@@ -33,7 +33,7 @@ export const Icon = styled(Link)`
   font-size: 3rem;
   font-weight: 500;
   display: block;
-  background: #fe0000;
+  background-color: var(--secondary-bg);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   max-width: 900px;
@@ -147,7 +147,7 @@ export const ArticleGridHalfBottom = styled.div`
 `;
 
 export const ArticleTitle = styled.h2`
-  color: #010606;
+  color: var(--secondary-txt-color);
   font-weight: 900;
   font-size: 66px;
   max-width: 900px;
@@ -167,7 +167,7 @@ export const ArticleTitle = styled.h2`
 `;
 
 export const Article_h3 = styled.h3`
-  color: #010606;
+  color: var(--secondary-txt-color);
   max-width: 900px;
   margin: 0 auto;
   margin-bottom: 1.5rem;
@@ -176,7 +176,7 @@ export const Article_h3 = styled.h3`
 `;
 
 export const Article_p = styled.p`
-  color: #888888;
+  color: var(--third-txt-color);
   font-size: 20px;
   font-weight: 300;
   line-height: 2rem;
@@ -192,7 +192,7 @@ export const Article_p = styled.p`
 `;
 
 export const ArticleCaption = styled.p`
-  color: #888888;
+  color: var(--third-txt-color);
   text-align: center;
   font-size: 12px;
   font-weight: 300;

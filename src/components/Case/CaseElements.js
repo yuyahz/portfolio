@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CaseContainer = styled.div`
   width: 100%;
-  background: #faf8f6;
+  background: var(--primaly-bg);
   display: flex;
   justify-content: center;
 `;
@@ -117,7 +117,7 @@ export const ColumnLg = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  border: solid 2px #fe0000;
+  border: solid 2px var(--secondary-bg);
   border-radius: 15px;
 
   @media only screen and (max-width: 1024px) {
@@ -137,7 +137,7 @@ export const ColumnContentLg = styled.div`
   /* padding: 34px; */
 
   h2 {
-    color: #fe0000;
+    color: var(--primary-txt-color);
     font-weight: 700;
     font-size: 7rem;
     margin: 1rem 0;
@@ -155,7 +155,7 @@ export const ColumnContentLg = styled.div`
   }
 
   p {
-    color: #fe0000;
+    color: var(--primary-txt-color);
     font-weight: 100;
     font-size: 3rem;
     margin-bottom: 3rem;

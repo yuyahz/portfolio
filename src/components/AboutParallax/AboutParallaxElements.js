@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutParallaxContainer = styled.div`
-  background: #faf8f6;
+  background: var(--primaly-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,6 @@ export const AboutParallaxImage = styled.img`
   width: 100%;
   display: block;
   height: auto;
-  border: solid 2px #fe0000;
+  border: solid 2px var(--secondary-bg);
   border-radius: 15px;
 `;

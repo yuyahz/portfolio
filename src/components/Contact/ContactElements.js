@@ -6,7 +6,7 @@ export const ContactContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background: #faf8f6;
+  background: var(--primaly-bg);
   padding: 17rem 0;
 
   @media only screen and (max-width: 960px) {
@@ -34,7 +34,7 @@ export const ContactWrapper = styled.div`
     margin: 0 auto !important;
     width: 300px;
     height: 150px;
-    border: solid 4px #fe0000;
+    border: solid 4px var(--secondary-bg);
     border-radius: 0 0 150px 150px;
     border-top: 0;
 
@@ -52,7 +52,7 @@ export const ContactWrapper = styled.div`
   }
 
   h2 {
-    color: #fe0000;
+    color: var(--primary-txt-color);
     font-weight: 600;
     font-size: 4rem;
     -ms-user-select: none; /* IE 10+ */
@@ -65,12 +65,12 @@ export const ContactWrapper = styled.div`
     @keyframes pulse1 {
       0%,
       100% {
-        background-color: #faf8f6;
-        color: #fe0000;
+        background-color: var(--primaly-bg);
+        color: var(--primary-txt-color);
       }
       50% {
-        background-color: #faf8f6;
-        color: #faf8f6;
+        background-color: var(--primaly-bg);
+        color: var(--primaly-bg);
       }
     }
 
@@ -80,12 +80,12 @@ export const ContactWrapper = styled.div`
     @keyframes pulse1 {
       0%,
       100% {
-        background-color: #faf8f6;
-        color: #fe0000;
+        background-color:   var(--primaly-bg);
+        color: var(--primary-txt-color);;
       }
       50% {
-        background-color: #faf8f6;
-        color: #faf8f6;
+        background-color:   var(--primaly-bg);
+        color:   var(--primaly-bg);
       }
     }
 
@@ -136,12 +136,12 @@ export const ContactWrapper = styled.div`
   @keyframes pulse {
     0%,
     100% {
-      background-color: #fe0000;
-      color: #faf8f6;
+      background-color: var(--primary-txt-color);
+      color: var(--primaly-bg);
     }
     50% {
-      background-color: #faf8f6;
-      color: #fe0000;
+      background-color: var(--primaly-bg);
+      color: var(--primary-txt-color);
     }
   }
 
@@ -190,7 +190,7 @@ export const ContactIconWrapper = styled.div`
 `;
 
 export const ContactText = styled.div`
-  color: #010606;
+  color: var(--secondary-txt-color);
   font-size: 3rem;
   font-weight: 300;
   text-align: center;

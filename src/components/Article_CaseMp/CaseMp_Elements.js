@@ -55,7 +55,7 @@ export const InsertWrapper = styled.div`
     font-size: 7rem;
     font-weight: 100;
     line-height: 1.2;
-    color: #fe0000;
+    color: var(--primary-txt-color);
     -ms-user-select: none;
     -moz-user-select: -moz-none;
     -khtml-user-select: none;

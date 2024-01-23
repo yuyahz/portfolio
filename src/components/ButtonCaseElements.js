@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 export const Button = styled(Link)`
   max-width: 200px;
   border-radius: 50px;
-  border: solid 2px #fe0000;
-  background: #faf8f6;
+  border: solid 2px var(--secondary-bg);
+  background: var(--primaly-bg);
   white-space: nowrap;
   padding: 10px 25px;
-  color: #fe0000;
+  color: var(--primary-txt-color);
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
@@ -19,8 +19,8 @@ export const Button = styled(Link)`
 
   &:hover {
     transition: 0.2s cubic-bezier(0.65, 0, 0.16, 1);
-    background: #fe0000;
-    color: #faf8f6;
+    background-color: var(--secondary-bg);
+    color: var(--primaly-bg);
   }
 
   @media only screen and (max-width: 960px) {
@@ -31,11 +31,11 @@ export const Button = styled(Link)`
 export const ButtonExternal = styled.a`
   max-width: 200px;
   border-radius: 50px;
-  border: solid 2px #fe0000;
-  background: #faf8f6;
+  border: solid 2px var(--secondary-bg);
+  background: var(--primaly-bg);
   white-space: nowrap;
   padding: 10px 25px;
-  color: #fe0000;
+  color: var(--primary-txt-color);
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
@@ -46,8 +46,8 @@ export const ButtonExternal = styled.a`
 
   &:hover {
     transition: 0.2s cubic-bezier(0.65, 0, 0.16, 1);
-    background: #fe0000;
-    color: #faf8f6;
+    background-color: var(--secondary-bg);
+    color: var(--primaly-bg);
   }
 
   @media only screen and (max-width: 960px) {

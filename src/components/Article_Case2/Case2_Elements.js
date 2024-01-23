@@ -42,7 +42,7 @@ export const ResearchInsight = styled.div`
 
   div .text-bold {
     margin-top: 0px;
-    color: #010606;
+    color: var(--secondary-txt-color);
     font-weight: 600;
 
     @media (max-width: 540px) {
@@ -85,7 +85,7 @@ export const BoxWrapper = styled.div`
   }
   .box-border {
     padding: 24px;
-    border: solid 2px #fe0000;
+    border: solid 2px var(--secondary-bg);
     border-radius: 15px;
 
     p {
@@ -95,7 +95,7 @@ export const BoxWrapper = styled.div`
 
       :first-child {
         margin-top: 0;
-        color: #010606;
+        color: var(--secondary-txt-color);
         font-weight: 600;
       }
     }
@@ -152,7 +152,7 @@ export const ContentInfoContainer = styled.div`
   }
 
   .caption {
-    color: #010606;
+    color: var(--secondary-txt-color);
     font-weight: 600;
   }
 

@@ -6,7 +6,7 @@ export const HomeContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #faf8f6;
+  background: var(--primaly-bg);
 
   @media only screen and (max-width: 540px) {
     height: 183vw;
@@ -17,7 +17,7 @@ export const HomeWrapper = styled.div`
   /* align-items: flex-start; */
   text-align: left;
   white-space: nowrap;
-  color: #fe0000;
+  color: var(--primary-txt-color);
   margin: 30px;
 
   div {
@@ -29,7 +29,7 @@ export const HomeWrapper = styled.div`
   }
 
   h1 {
-    color: #fe0000;
+    color: var(--primary-txt-color);
     font-weight: 700;
     font-size: 9.9vw;
     margin-bottom: 6px;
@@ -215,7 +215,7 @@ export const ImageMac = styled(motion.img)`
 //   display: flex;
 //   justify-content: center;
 //   align-items: center;
-//   background: #faf8f6;
+//   background:   var(--primaly-bg);
 //   /* for iphone se */
 //   @media screen and (max-width: 320px) {
 //     height: 110vh;
@@ -258,7 +258,7 @@ export const ImageMac = styled(motion.img)`
 //   padding: 1rem;
 
 //   h1 {
-//     background: #fe0000;
+//     background-color: var(--secondary-bg);;
 //     -webkit-background-clip: text;
 //     -webkit-text-fill-color: transparent;
 //     font-weight: 700;
@@ -271,7 +271,7 @@ export const ImageMac = styled(motion.img)`
 //   }
 
 //   h2 {
-//     color: #fe0000;
+//     color: var(--primary-txt-color);;
 //     font-family: "GT";
 //     font-weight: 700;
 //     padding-left: 2rem;
@@ -286,7 +286,7 @@ export const ImageMac = styled(motion.img)`
 //   }
 
 //   p {
-//     color: #fe0000;
+//     color: var(--primary-txt-color);;
 //     font-weight: 300;
 //     margin: 0.5rem 0 0 0.8rem;
 //     font-size: 1rem;
@@ -343,7 +343,7 @@ export const ImageMac = styled(motion.img)`
 // //   padding: 1rem;
 
 // //   h1 {
-// //     background: #fe0000;
+// //     background-color: var(--secondary-bg);;
 // //     -webkit-background-clip: text;
 // //     -webkit-text-fill-color: transparent;
 // //     font-weight: 700;
@@ -356,7 +356,7 @@ export const ImageMac = styled(motion.img)`
 // //   }
 
 // //   h2 {
-// //     color: #fe0000;
+// //     color: var(--primary-txt-color);;
 // //     font-family: "GT";
 // //     font-weight: 700;
 // //     padding-left: 2rem;
@@ -371,7 +371,7 @@ export const ImageMac = styled(motion.img)`
 // //   }
 
 // //   p {
-// //     color: #fe0000;
+// //     color: var(--primary-txt-color);;
 // //     font-weight: 300;
 // //     margin: 0.5rem 0 0 0.8rem;
 // //     font-size: 1rem;

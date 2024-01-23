@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      {/* <IconContext.Provider value={{ color: "#fe0000" }}> */}
+      {/* <IconContext.Provider value={{ color: "var(--secondary-bg);" }}> */}
       <NavLogoSm to="/" onClick={toggleHome} isClicked={false}>
         <Image className="logo" src={logo} id="" />
       </NavLogoSm>

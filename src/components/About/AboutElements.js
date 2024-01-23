@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  background: #faf8f6;
+  background: var(--primaly-bg);
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 export const AboutTitleWrapper = styled.div`
-  background: #faf8f6;
+  background: var(--primaly-bg);
   padding-bottom: 2rem;
 
   @media only screen and (max-width: 960px) {
@@ -32,7 +32,7 @@ export const AboutTitleWrapper = styled.div`
 `;
 
 export const AboutImageWrapper = styled.div`
-  background: #faf8f6;
+  background: var(--primaly-bg);
   padding-bottom: 2rem;
 
   @media only screen and (max-width: 960px) {
@@ -44,12 +44,12 @@ export const AboutImage = styled.img`
   width: 100%;
   display: block;
   height: auto;
-  border: thick double #fe0000;
+  border: thick double var(--secondary-bg);
   border-radius: 15px;
 `;
 
 export const AboutWrapper = styled.div`
-  background: #faf8f6;
+  background: var(--primaly-bg);
   width: 100%;
   max-width: 1140px;
   display: block;
@@ -63,7 +63,7 @@ export const AboutWrapper = styled.div`
   }
 
   h2 {
-    color: #fe0000;
+    color: var(--primary-txt-color);
     font-weight: 700;
     font-size: 7rem;
     -ms-user-select: none; /* IE 10+ */
@@ -82,7 +82,7 @@ export const AboutWrapper = styled.div`
   }
 
   h4 {
-    color: #fe0000;
+    color: var(--primary-txt-color);
     font-weight: 100;
     font-size: 3rem;
 
@@ -93,7 +93,7 @@ export const AboutWrapper = styled.div`
 `;
 
 export const AboutInnerWrapper = styled.div`
-  background: #faf8f6;
+  background: var(--primaly-bg);
 
   .fancy-font {
     font-family: "GT";
@@ -154,7 +154,7 @@ export const AboutInnerWrapper = styled.div`
 `;
 
 export const AboutDropdownWrapper = styled.div`
-  background: #faf8f6;
+  background: var(--primaly-bg);
   padding-bottom: 17rem;
 
   @media only screen and (max-width: 960px) {
@@ -168,7 +168,7 @@ export const AboutDropdown = styled.div`
   }
 
   .dropdown-trigger {
-    color: #fe0000;
+    color: var(--primary-txt-color);
     font-weight: 100;
     font-size: 3rem;
 
@@ -181,7 +181,7 @@ export const AboutDropdown = styled.div`
 // Archive 22021
 // export const AboutContainer = styled.div`
 //   z-index: 1;
-//   background: #faf8f6;
+//   background:   var(--primaly-bg);
 //   display: flex;
 //   justify-content: center;
 //   align-items: center;
@@ -263,7 +263,7 @@ export const AboutDropdown = styled.div`
 // export const Image = styled.img`
 //   max-width: 80%;
 //   height: auto;
-//   border: solid 2px #fe0000;
+//   border: solid 2px var(--secondary-bg);;
 //   border-radius: 20px;
 
 //   @media screen and (max-width: 970px) {
@@ -326,7 +326,7 @@ export const AboutDropdown = styled.div`
 // `;
 
 // export const AboutP = styled.p`
-//   color: #888888;
+//   color: var(--third-txt-color);
 //   letter-spacing: 0.1rem;
 //   margin-left: auto;
 //   font-size: 24px;
@@ -429,7 +429,7 @@ export const AboutDropdown = styled.div`
 // `;
 
 // export const Skills = styled.p`
-//   color: #888888;
+//   color: var(--third-txt-color);
 //   font-size: 16px;
 //   font-weight: 300;
 //   padding: 0 25px 20px;
@@ -441,7 +441,7 @@ export const AboutDropdown = styled.div`
 // `;
 
 // export const Tools = styled.div`
-//   color: #888888;
+//   color: var(--third-txt-color);
 //   font-size: 16px;
 //   font-weight: 300;
 //   line-height: 1.5;

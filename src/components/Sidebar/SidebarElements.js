@@ -15,7 +15,7 @@ export const SidebarWrapper = styled.aside`
   z-index: 2147483638;
   max-width: 260px;
   margin: 1rem 1rem 0 0;
-  border: thick double #fe0000;
+  border: thick double var(--secondary-bg);
   border-radius: 10px;
   background: #fffbf4;
   transition: 0.3s ease-in-out;
@@ -30,7 +30,7 @@ export const SidebarMenu = styled.div`
 export const SidebarLink = styled(LinkS)`
   div,
   p {
-    color: #fe0000;
+    color: var(--primary-txt-color);
     font-size: 24px;
     font-weight: 500;
     padding: 10px 16px;
@@ -66,7 +66,8 @@ export const Icon = styled.div`
       position: absolute;
       height: 6px;
       width: 100%;
-      background: ${({ darkBurger }) => (darkBurger ? "#fe0000" : "#ffffff")};
+      background: ${({ darkBurger }) =>
+        darkBurger ? "var(--secondary-bg);" : "#ffffff"};
       z-index: ${({ isOpen }) => (isOpen ? "100" : "0")};
       border-radius: 9px;
       opacity: 1;

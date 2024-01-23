@@ -47,8 +47,8 @@ export const DropdownInnerWrapper = styled.div`
       transform: rotate(-360deg);
       transition-timing-function: ease-in-out;
       border-radius: 50px;
-      border: solid 2px #fe0000;
-      background: #faf8f6;
+      border: solid 2px var(--secondary-bg);
+      background: var(--primaly-bg);
       white-space: nowrap;
       padding: 10px 25px;
     }
@@ -69,8 +69,8 @@ export const DropdownInnerWrapper = styled.div`
       transform: rotate(-3deg);
       transition-timing-function: ease-in-out;
       border-radius: 50px;
-      border: solid 2px #fe0000;
-      background: #fe0000;
+      border: solid 2px var(--secondary-bg);
+      background-color: var(--secondary-bg);
       color: var(--inversed-txt-color);
       white-space: nowrap;
       padding: 10px 20%;
@@ -80,7 +80,7 @@ export const DropdownInnerWrapper = styled.div`
       }
       @media only screen and (max-width: 540px) {
         margin-left: 6px;
-        border: solid 1.5px #fe0000;
+        border: solid 1.5px var(--secondary-bg);
       }
     }
 
@@ -99,7 +99,7 @@ export const DropdownInnerWrapper = styled.div`
   .dropdown-contents {
     padding: 2rem 3rem;
     /* background: var(--primaly-bg); */
-    border: solid 2px #fe0000;
+    border: solid 2px var(--secondary-bg);
     border-radius: 15px;
 
     @media only screen and (max-width: 960px) {
@@ -107,7 +107,7 @@ export const DropdownInnerWrapper = styled.div`
     }
 
     @media only screen and (max-width: 540px) {
-      border: solid 1.5px #fe0000;
+      border: solid 1.5px var(--secondary-bg);
       padding: 3vw 6vw;
     }
   }
@@ -116,7 +116,7 @@ export const DropdownInnerWrapper = styled.div`
     width: 100%;
     position: absolute;
     opacity: 0;
-    /* background-color: #fe0000; */
+    /* background-color: var(--primary-txt-color);; */
     visibility: hidden;
     transform: translateX(4rem);
     transition-delay: calc(200ms * var(--delay));
@@ -193,11 +193,11 @@ export const DropdownInnerWrapper = styled.div`
   /* p span {
     font-size: 2rem;
     font-weight: 300;
-    color: #010606;
+    color: var(--secondary-txt-color);
   } */
 
   .dropdown-contents ul li {
-    border-top: 2px solid #fe0000;
+    border-top: 2px solid var(--secondary-bg);
     list-style: none;
     padding: 20px 0;
 
@@ -210,7 +210,7 @@ export const DropdownInnerWrapper = styled.div`
     }
 
     @media only screen and (max-width: 540px) {
-      border-top: 1.5px solid #fe0000;
+      border-top: 1.5px solid var(--secondary-bg);
     }
   }
 

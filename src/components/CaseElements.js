@@ -8,11 +8,12 @@ export const HomeIconWrapper = styled.div`
 `;
 
 export const HomeIcon = styled(Link)`
+  text-decoration: none;
   font-family: GT;
   font-size: 3rem;
   font-weight: 500;
   display: block;
-  background: #fe0000;
+  background-color: var(--secondary-bg);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   max-width: 900px;
@@ -64,7 +65,7 @@ export const HomeIcon = styled(Link)`
 
 ///// global /////
 export const CaseContainer = styled.div`
-  background: #faf8f6;
+  background: var(--primaly-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +75,7 @@ export const CaseContainer = styled.div`
     font-size: 7rem;
     font-weight: 100;
     line-height: 1.2;
-    color: #fe0000;
+    color: var(--primary-txt-color);
 
     @media only screen and (max-width: 1280px) {
       font-size: 7.656vw;
@@ -85,7 +86,7 @@ export const CaseContainer = styled.div`
   }
 
   h2 {
-    color: #010606;
+    color: var(--secondary-txt-color);
     font-weight: 600;
     font-size: 4rem;
     line-height: 1.25;
@@ -102,7 +103,7 @@ export const CaseContainer = styled.div`
   }
 
   h3 {
-    color: #fe0000;
+    color: var(--primary-txt-color);
     font-weight: 100;
     font-size: 3rem;
     line-height: 1.3;
@@ -113,7 +114,7 @@ export const CaseContainer = styled.div`
   }
 
   p {
-    color: #fe0000;
+    color: var(--primary-txt-color);
     font-weight: 100;
     font-size: 3rem;
     line-height: 1.2;
@@ -360,7 +361,7 @@ export const ColumnContentSm = styled.div`
 
   h2 {
     font-size: 44px;
-    color: #fe0000;
+    color: var(--primary-txt-color);
 
     @media only screen and (max-width: 1920px) {
       font-size: 2rem;
@@ -394,7 +395,7 @@ export const ColumnContentSm = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  border: solid 2px #fe0000;
+  border: solid 2px var(--secondary-bg);
   border-radius: 15px;
   margin-bottom: auto;
 
@@ -406,7 +407,7 @@ export const Image = styled.img`
 export const ImageSm = styled.img`
   max-width: 80%;
   margin-top: 34px;
-  border: solid 2px #fe0000;
+  border: solid 2px var(--secondary-bg);
   border-radius: 15px;
 
   @media only screen and (max-width: 1024px) {
@@ -423,11 +424,11 @@ export const ImageSm = styled.img`
 
 export const ImageCircle = styled.img`
   width: 100%;
-  border: solid 2px #fe0000;
+  border: solid 2px var(--secondary-bg);
   border-radius: 50%;
 
   @media only screen and (max-width: 960px) {
-    border: solid 1.5px #fe0000;
+    border: solid 1.5px var(--secondary-bg);
   }
 `;
 
@@ -491,7 +492,7 @@ export const TagWrapper = styled.div`
 export const Tag = styled.div`
   width: fit-content;
   border-radius: 50px;
-  background: #fe0000;
+  background-color: var(--secondary-bg);
   margin: 0 16px 9px 0;
   padding: 6px 14px;
   display: flex;
@@ -499,7 +500,7 @@ export const Tag = styled.div`
   align-items: center;
 
   p {
-    color: #faf8f6;
+    color: var(--primaly-bg);
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
@@ -518,7 +519,7 @@ export const Tag = styled.div`
 
 export const CreditWrapper = styled.div`
   p {
-    color: #fe0000;
+    color: var(--primary-txt-color);
     font-size: 18px;
     font-weight: 700;
 

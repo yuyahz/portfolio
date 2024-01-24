@@ -22,7 +22,7 @@ import {
   worksVector,
   worksDaruma,
   worksDailyUi,
-  worksArtDirections,
+  // worksArtDirections,
   worksPortfolio,
 } from "../components/Works/Data";
 // import PicLarry from "../components/PicLarry";

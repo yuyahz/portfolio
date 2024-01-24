@@ -108,7 +108,7 @@ export const AboutInnerWrapper = styled.div`
 
   .fancy-font-body {
     font-family: "GT";
-    font-weight: 300;
+    font-weight: 500;
     color: var(--secondary-txt-color);
     /* padding-left: 0.3rem; */
   }

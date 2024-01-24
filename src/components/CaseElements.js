@@ -566,3 +566,9 @@ export const ClosingWrapper = styled.div`
     margin-bottom: 15px;
   }
 `;
+
+///// hide /////
+export const Hide = styled.div`
+  filter: blur(1.5rem);
+  padding: 5%;
+`;

@@ -5,7 +5,9 @@ import Home from "./pages";
 import case1Page from "./pages/articleCase1";
 import rv1 from "./pages/articleRv1";
 import case2Page from "./pages/articleCase2";
+import rv2 from "./pages/articleRv2";
 import case3Page from "./pages/articleCase3";
+import rv3 from "./pages/articleRv3";
 import caseMpPage from "./pages/articleCaseMp";
 import larryPage from "./pages/articleLarry";
 import vectorPage from "./pages/articleVector";
@@ -21,7 +23,9 @@ function App() {
         <Route path="/case1Page" component={case1Page} exact />
         <Route path="/rv1" component={rv1} exact />
         <Route path="/case2Page" component={case2Page} exact />
+        <Route path="/rv2" component={rv2} exact />
         <Route path="/case3Page" component={case3Page} exact />
+        <Route path="/rv3" component={rv3} exact />
         <Route path="/caseMpPage" component={caseMpPage} exact />
         <Route path="/larryPage" component={larryPage} exact />
         <Route path="/vectorPage" component={vectorPage} exact />

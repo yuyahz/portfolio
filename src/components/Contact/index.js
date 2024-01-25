@@ -1,47 +1,57 @@
 import React from "react";
-// import { Parallax } from "react-scroll-parallax";
+import { Parallax } from "react-scroll-parallax";
 import {
   ContactContainer,
   ContactWrapper,
-  ContactIconWrapper,
-  ContactText,
-  // ContactTickerTape,
-  // ContactText1,
-  // ContactText2,
-  // ContactText3,
-  ContactEmail,
-  ContactLinkedIn,
+  ContactContentsLg,
+  ContactContentsSm,
 } from "./ContactElements";
-import { HiMail } from "react-icons/hi";
-import * as AiIcons from "react-icons/ai";
 
 const Contact = () => {
   return (
     <ContactContainer id="contact">
       <ContactWrapper>
-        <ContactText>Ready to start a project?</ContactText>
-        <div className="pr-text">
-          <h2>Let's</h2>
-          <h2 className="fancy-font">make</h2>
-          <h2>something</h2>
-          <h2 className="fancy-font">Amazing</h2>
-        </div>
-        <section className="smile"></section>
-        <ContactIconWrapper>
-          <ContactEmail>
+        <ContactContentsLg>
+          <p>
+            <img src="https://win98icons.alexmeub.com/icons/png/network_internet_pcs_installer-2.png"></img>
+            Ready to start a project?
+          </p>
+          <div>
             <a target="_blank" href="mailto:hashirizaki61@gmail.com">
-              <HiMail className="link" />
+              <p className="contact">Contact</p>
             </a>
-          </ContactEmail>
-          <ContactLinkedIn>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/yuya-hashirizaki/"
             >
-              <AiIcons.AiFillLinkedin className="link" />
+              <p className="contact">Linkedin</p>
             </a>
-          </ContactLinkedIn>
-        </ContactIconWrapper>
+          </div>
+        </ContactContentsLg>
+        <ContactContentsSm>
+          <img src="https://win98icons.alexmeub.com/icons/png/network_internet_pcs_installer-2.png"></img>
+          <p>Ready to start a project?</p>
+          <div>
+            <a target="_blank" href="mailto:hashirizaki61@gmail.com">
+              <p className="contact">Contact</p>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/yuya-hashirizaki/"
+            >
+              <p className="contact">Linkedin</p>
+            </a>
+          </div>
+        </ContactContentsSm>
+        <Parallax x={[5, -5]}>
+          <p>Let's make</p>
+        </Parallax>
+        <Parallax x={[-5, 10]}>
+          <p>Something</p>
+        </Parallax>
+        <Parallax x={[10, -10]}>
+          <p>Amazing</p>
+        </Parallax>
       </ContactWrapper>
     </ContactContainer>
   );

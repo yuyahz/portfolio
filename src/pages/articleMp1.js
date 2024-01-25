@@ -1,18 +1,18 @@
 import React from "react";
 import ScrollToTop from "../components/ScrollTop";
-import Article_Case3 from "../components/Article_Case3";
+import Article_CaseMp_visible from "../components/Article_CaseMp_visible";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-const case3Page = () => {
+const mp1 = () => {
   return (
     <>
       <ScrollToTop />
-      <Article_Case3 />
+      <Article_CaseMp_visible />
       <Contact />
       <Footer />
     </>
   );
 };
 
-export default case3Page;
+export default mp1;

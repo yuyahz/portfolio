@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const LooperContainer = styled.div`
   width: 100%;
   background: var(--primly-bg);
-  color: var(--inversed-txt-color);
+  color: var(--fourth-txt-color);
   -ms-user-select: none; /* IE 10+ */
   -moz-user-select: -moz-none;
   -khtml-user-select: none;

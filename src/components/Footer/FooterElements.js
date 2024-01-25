@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
-  background: var(--primaly-bg);
+  background-color: var(--secondary-bg);
 `;
 
 export const FooterWrapper = styled.div`
@@ -52,9 +52,10 @@ export const FooterLinksWrapper = styled.div`
 `;
 
 export const FootertText = styled.h1`
-  color: var(--primary-txt-color);
+  color: var(--inversed-txt-color);
   font-family: "GT";
   font-size: 48px;
+  font-weight: 500;
   margin-right: auto;
 
   @media screen and (max-width: 960px) {
@@ -85,16 +86,21 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled(Link)`
-  color: var(--primary-txt-color);
+  display: flex;
+  margin-bottom: 20px;
   font-family: "GT";
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: var(--inversed-txt-color);
   justify-content: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 20px;
-  display: flex;
   align-items: center;
-  margin-bottom: 20px;
-  font-weight: bold;
+
+  @media screen and (max-width: 520px) {
+    font-size: 16px;
+  }
 `;
 
 export const WebsiteRights = styled.small`
@@ -117,8 +123,13 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-  color: #838383;
+  color: var(--primaly-bg);
   font-size: 24px;
+  transition: 0.3s ease;
+
+  &:hover {
+    padding: 0 0 16px 0;
+  }
 
   @media screen and (max-width: 960px) {
     padding-left: 6vw;

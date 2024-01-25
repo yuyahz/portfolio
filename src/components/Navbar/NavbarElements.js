@@ -126,6 +126,9 @@ export const NavMenu = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--primaly-bg);
+  border-radius: 50px;
+  padding: 30px 10px 30px 0;
 
   @media screen and (max-width: 960px) {
     display: none;
@@ -159,11 +162,11 @@ export const NavItem = styled.div`
   }
 
   @media screen and (max-height: 720px) {
-    max-width: 30px;
+    max-width: 60px;
   }
 
   .aboutSec {
-    margin: 30px 0;
+    margin: 40px 0;
 
     @media screen and (max-height: 720px) {
       margin: 3.472vh 0;
@@ -171,7 +174,7 @@ export const NavItem = styled.div`
   }
 
   .case1Sec {
-    margin: 30px 0;
+    margin: 40px 0;
 
     @media screen and (max-height: 720px) {
       margin: 3.472vh 0;
@@ -179,7 +182,7 @@ export const NavItem = styled.div`
   }
 
   .case2Sec {
-    margin: 30px 0;
+    margin: 40px 0;
 
     @media screen and (max-height: 720px) {
       margin: 3.472vh 0;
@@ -187,7 +190,7 @@ export const NavItem = styled.div`
   }
 
   .case3Sec {
-    margin: 30px 0;
+    margin: 40px 0;
 
     @media screen and (max-height: 720px) {
       margin: 3.472vh 0;
@@ -195,10 +198,10 @@ export const NavItem = styled.div`
   }
 
   .mpSec {
-    margin: 30px 0;
+    margin: 40px 0;
 
     @media screen and (max-height: 720px) {
-      margin: 4.861vh 0;
+      margin: 3.472vh 0;
     }
   }
 
@@ -215,10 +218,10 @@ export const NavItem = styled.div`
   } */
 
   .worksSec {
-    margin: 30px 0;
+    margin: 40px 0;
 
     @media screen and (max-height: 720px) {
-      margin: 4.861vh 0;
+      margin: 3.472vh 0;
     }
   }
 
@@ -226,7 +229,7 @@ export const NavItem = styled.div`
     margin: 40px 0;
 
     @media screen and (max-height: 720px) {
-      margin: 4.861vh 0;
+      margin: 3.472vh 0;
     }
   }
 `;
@@ -244,15 +247,12 @@ export const NavLinks = styled(LinkS)`
     font-weight: 700;
     font-size: 1.3rem;
     padding-bottom: 6px;
-    border-bottom: double 5px var(--secondary-bg);
-    /* border: solid 2px var(--secondary-bg);;
-    background-color: white;
-    border-radius: 50px; */
+    border-bottom: double 3px var(--secondary-bg);
     transition: 0.2 cubic-bezier(0.33, 1, 0.68, 1);
     animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
-    transform: rotate(0.87turn);
+    transform: rotate(0.9turn);
 
     @keyframes shake {
       90% {
@@ -270,6 +270,10 @@ export const NavLinks = styled(LinkS)`
       0% {
         transform: translate3d(4px, 0, 0);
       }
+    }
+
+    @media screen and (max-height: 720px) {
+      font-size: 2.22vh;
     }
   }
 `;

@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollToTop from "../components/ScrollTop";
 import Article_Case1 from "../components/Article_Case1";
+import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 const case1Page = () => {
@@ -8,6 +9,7 @@ const case1Page = () => {
     <>
       <ScrollToTop />
       <Article_Case1 />
+      <Contact />
       <Footer />
     </>
   );

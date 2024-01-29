@@ -140,15 +140,15 @@ export const ContentTitleWrapper = styled.div`
 ///// content info /////
 export const ContentInfoContainer = styled.div`
   max-width: 1400px;
-  padding: 110px 0;
+  padding: 44px 0;
   justify-content: center;
   margin: 0 auto;
 
   @media only screen and (max-width: 960px) {
-    padding-bottom: 11.5vw;
+    padding: 34px 0 11.5vw 0;
   }
   @media only screen and (max-width: 540px) {
-    padding-top: 7.4vw;
+    padding-top: 6px;
   }
 
   .caption {

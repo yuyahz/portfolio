@@ -74,7 +74,7 @@ export const CaseContainer = styled.div`
   h1 {
     font-size: 7rem;
     font-weight: 100;
-    line-height: 1.2;
+    line-height: 1.1;
     color: var(--primary-txt-color);
 
     @media only screen and (max-width: 1280px) {
@@ -158,10 +158,52 @@ export const FullWidthWrapper = styled.div`
   flex-wrap: wrap;
 `;
 
+export const FullWidthSmWrapper = styled.div`
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+`;
+
 export const FullWidthFlipWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
+`;
+
+export const SingleColumnContainer = styled.div`
+  padding: 110px 0;
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: 960px) {
+    padding-bottom: 11.5vw;
+  }
+  @media only screen and (max-width: 540px) {
+    padding-top: 7.4vw;
+  }
+`;
+
+export const SingleColumnWrapper = styled.div`
+  max-width: 1400px;
+
+  div {
+    /* margin-top: 100px;
+
+    :first-child {
+      margin-top: 0px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      margin-top: 7.8vw;
+    }
+    @media only screen and (max-width: 960px) {
+      margin-top: 7.3vw;
+    }
+    @media only screen and (max-width: 540px) {
+      margin-top: 6.3vw;
+    } */
+  }
 `;
 
 export const ColumnLg = styled.div`
@@ -184,6 +226,14 @@ export const ColumnLg = styled.div`
 
 export const ColumnContentLg = styled.div`
   padding: 34px;
+
+  .feedback {
+    margin-bottom: 60px;
+
+    @media only screen and (max-width: 540px) {
+      margin-bottom: 34px;
+    }
+  }
 
   @media only screen and (max-width: 540px) {
     padding: 7.2vw 6.3vw 0 6.3vw;
@@ -250,6 +300,33 @@ export const ColumnContentLgMd = styled.div`
       :first-child {
         margin-top: 5vw;
       }
+    }
+  }
+`;
+
+export const ColumnContentLgTxt = styled.div`
+  max-width: 1140px;
+  padding: 34px;
+  margin: auto;
+
+  @media only screen and (max-width: 540px) {
+    padding: 7.2vw 6.3vw 0 6.3vw;
+  }
+
+  p {
+    margin-top: 44px;
+    :first-child {
+      margin-top: 0;
+    }
+
+    @media only screen and (max-width: 1920px) {
+      margin-top: 34px;
+    }
+    @media only screen and (max-width: 1024px) {
+      margin-top: 24px;
+    }
+    @media only screen and (max-width: 540px) {
+      margin-top: 5.5vw;
     }
   }
 `;
@@ -564,6 +641,60 @@ export const ClosingWrapper = styled.div`
 
   @media only screen and (max-width: 960px) {
     margin-bottom: 15px;
+  }
+`;
+
+///// video /////
+export const Video = styled.video`
+  display: block;
+  line-height: 100%;
+  width: 100%;
+  object-fit: fit;
+  /* border: solid 2px var(--secondary-bg);
+  border-radius: 15px; */
+
+  @media only screen and (max-width: 1024px) {
+    max-height: 800px;
+  }
+`;
+
+///// video bottom /////
+export const VideoBottom = styled.video`
+  display: block;
+  line-height: 100%;
+  width: 100%;
+  object-fit: fit;
+  /* border: solid 2px var(--secondary-bg);
+  border-radius: 15px; */
+
+  @media only screen and (max-width: 1024px) {
+    max-height: 300px;
+    padding-top: 3rem;
+  }
+`;
+
+///// captions /////
+export const Captions = styled.div`
+  max-width: 1400px;
+  margin: auto;
+
+  p {
+    color: var(--secondary-txt-color);
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-top: 0px;
+    text-align: center;
+    padding: 16px 0 84px 0;
+
+    @media only screen and (max-width: 540px) {
+      padding: 6px 0 6.3vw 0;
+      font-size: 2.96vw;
+    }
+  }
+
+  .lastCaption {
+    padding-bottom: 0;
   }
 `;
 

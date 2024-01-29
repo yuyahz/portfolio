@@ -1,5 +1,21 @@
 import styled from "styled-components";
 
+///// hero /////
+export const HeroImage = styled.img`
+  max-width: 50%;
+  margin: auto;
+  padding: 10rem 0 5rem 0;
+  display: block;
+
+  @media screen and (max-width: 960px) {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 720px) {
+    padding: 16vw 0 8vw 0;
+  }
+`;
+
 ///// intro /////
 export const IntroContainer = styled.div`
   padding: 110px 0;
@@ -32,72 +48,6 @@ export const IntroWrapper = styled.div`
     }
     @media only screen and (max-width: 540px) {
       margin-top: 6.3vw;
-    }
-  }
-`;
-
-///// research /////
-export const ResearchInsight = styled.div`
-  width: 50%;
-
-  div .text-bold {
-    margin-top: 0px;
-    color: var(--secondary-txt-color);
-    font-weight: 600;
-
-    @media (max-width: 540px) {
-      margin-top: 16px;
-    }
-  }
-
-  p {
-    :first-child {
-      margin-top: 0px;
-      /* 
-      @media (max-width: 540px) {
-        margin-top: 16px;
-      } */
-    }
-  }
-
-  @media (max-width: 1024px) {
-    width: 100%;
-  }
-`;
-
-///// box /////
-export const BoxWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-
-  .box {
-    display: flex;
-    justify-content: center;
-    vertical-align: auto;
-
-    // md sm center //
-    width: 100%;
-
-    // lg //
-    @media (min-width: 1024px) {
-      width: 50%;
-    }
-  }
-  .box-border {
-    padding: 24px;
-    border: solid 2px var(--secondary-bg);
-    border-radius: 15px;
-
-    p {
-      margin-top: 16px;
-      padding-left: 0.7em;
-      text-indent: -0.7em;
-
-      :first-child {
-        margin-top: 0;
-        color: var(--secondary-txt-color);
-        font-weight: 600;
-      }
     }
   }
 `;
@@ -156,11 +106,6 @@ export const ContentInfoContainer = styled.div`
     font-weight: 600;
   }
 
-  .caption-inner {
-    color: var(--secondary-txt-color);
-    font-weight: 500;
-  }
-
   .list {
     padding-left: 2.2em;
     text-indent: -2.2em;
@@ -197,31 +142,5 @@ export const ContentInfoContainer = styled.div`
     p:not(:first-child) {
       margin-top: 6px;
     }
-  }
-`;
-
-///// insert image /////
-export const InsertImageContainer = styled.div`
-  max-width: 1400px;
-  padding: 110px 0;
-  justify-content: center;
-  margin: 0 auto;
-
-  @media only screen and (max-width: 960px) {
-    padding-bottom: 11.5vw;
-  }
-  @media only screen and (max-width: 540px) {
-    padding-top: 7.4vw;
-  }
-`;
-
-export const InsertImageWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 50%;
-
-  @media only screen and (max-width: 1024px) {
-    width: 100%;
   }
 `;

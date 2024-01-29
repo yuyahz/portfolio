@@ -50,7 +50,7 @@ import case3_pdp_altenative from "../../images/case3_pdp_alternative.png";
 import case3_pdp_result from "../../images/case3_pdp_result.png";
 import case3_closing from "../../images/case3_closing.png";
 
-const Article_Case1 = () => {
+const Article_Case3 = () => {
   return (
     <CaseContainer id="case1">
       <motion.div
@@ -960,4 +960,4 @@ const Article_Case1 = () => {
   );
 };
 
-export default Article_Case1;
+export default Article_Case3;

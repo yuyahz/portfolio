@@ -56,7 +56,7 @@ import case2_about_insert from "../../images/case2_about_insert.png";
 import case2_about_result from "../../images/case2_about_result.png";
 import case2_closing from "../../images/case2_closing.png";
 
-const Article_Case1 = () => {
+const Article_Case2 = () => {
   return (
     <CaseContainer id="case1">
       <motion.div
@@ -866,4 +866,4 @@ const Article_Case1 = () => {
   );
 };
 
-export default Article_Case1;
+export default Article_Case2;

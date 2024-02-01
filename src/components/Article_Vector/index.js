@@ -1,22 +1,40 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  ArticleContainer,
-  ArticleTitle,
-  ArticleGridHalf,
-  ArticleGridHalfBottom,
-  ArticleWrapper,
-  Icon,
-  IconWrapper,
-  Article_h3,
-  Article_p,
-  ArticleCaption,
+  HomeIconWrapper,
+  HomeIcon,
+  FullWidthContainer,
+  FullWidthImageContainer,
+  FullWidthWrapper,
+  ColumnImage,
+  ColumnContentLg,
+  SingleColumnContainer,
+  SingleColumnWrapper,
   Image,
-  ImageTop,
-  ImageGrid,
-  VideoBg,
-  Feedback,
-} from "./ArticleElements";
+  ImageNoBorder,
+  ImageCircleFb,
+  Video,
+  CaseContainer,
+  CaseWrapper,
+  HeroImageWrapper,
+  TitleContainer,
+  TitleColumn,
+  TitleWrapper,
+  TagWrapper,
+  Tag,
+  Captions,
+  CreditWrapper,
+  CreditTitle,
+  CreditBody,
+} from "../CaseElements";
+import {
+  HeroImage,
+  IntroContainer,
+  IntroWrapper,
+  ContentInfoContainer,
+  ContentTitleContainer,
+  ContentTitleWrapper,
+} from "./VectorElements";
 import VectorArticle_1 from "../../images/VectorArticle_1.png";
 import VectorArticle_2 from "../../images/VectorArticle_2.png";
 import VectorArticle_3 from "../../images/VectorArticle_3.png";
@@ -35,7 +53,7 @@ import VectorMovie_1 from "../../videos/VectorMovie_1.mp4";
 
 const Article_Vector = () => {
   return (
-    <ArticleContainer id="vector">
+    <CaseContainer id="vector" style={{ background: "white" }}>
       <motion.div
         animate={{
           x: 0,
@@ -53,233 +71,407 @@ const Article_Vector = () => {
           duration: 0.5,
         }}
       >
-        <IconWrapper>
-          <Icon to="/">Home</Icon>
-        </IconWrapper>
-        <ArticleWrapper>
-          <ArticleTitle>
-            Design lead for Vector International Academy
-          </ArticleTitle>
-          <Article_p>
-            I was hired by Vector Internationa Academy to recreate and modernize
-            their websites. I have applied design innovation to their website
-            and brochure.
-          </Article_p>
-          <div style={{ textAlign: "center" }}>
-            <ImageTop src={VectorArticle_1} id="" />
-          </div>
-          <Article_h3>Background</Article_h3>
-          <Article_p>
-            In 2020 I have dedicated my time to acquire new programming skills.
-            and one of my friends suggested to me to provide my design for a
-            vector international academy as a freelance designer. ​ After few
-            meetings, I was so pleased that my portfolio was accepted by them so
-            that I was trying to do dedicated to my expressions for vector's
-            requirements.
-          </Article_p>
-          <Article_p style={{ marginTop: "1.5rem" }}>
-            An idea that first seemed exciting and intriguing, and turned into a
-            journey full of excitement, surprises with lots of ups and downs.
-          </Article_p>
-          <div style={{ textAlign: "center" }}>
-            <Image style={{ marginBottom: "0" }} src={VectorArticle_2} id="" />
-          </div>
-          <ArticleCaption>Flow sheet</ArticleCaption>
-          <Article_h3>How it all started</Article_h3>
-          <Article_p>
-            The School had built an own website already. But they have wanted to
-            create a more intriguing website for new content. In the early days,
-            my primary process of an idea in order to proceed with this project
-            was to create several web design prototypes for building a website.
-            So that we needed to take several meetings to work smoothly and
-            facilitate communication. and to find the right problems I asked
-            myself what the previous site does intentionally or what service am
-            I building? I approached this project from these things.
-          </Article_p>
-          <Article_h3 style={{ marginTop: "5rem" }}>My role</Article_h3>
-          <Article_p>
-            I worked on multiple projects related to Vector as a UI/UX designer
-            together with the development team, including the main site and
-            brochure. In addition to those, I gave input about the content.
-          </Article_p>
-          <ArticleGridHalf>
-            <div style={{ textAlign: "center" }}>
-              <ImageGrid
-                style={{ maxWidth: "100%" }}
-                src={VectorArticle_3}
-                id=""
+        <HomeIconWrapper>
+          <HomeIcon to="/">Home</HomeIcon>
+        </HomeIconWrapper>
+
+        <CaseWrapper>
+          <HeroImageWrapper>
+            <HeroImage src={VectorArticle_1} id="" />
+          </HeroImageWrapper>
+          <TitleContainer>
+            <TitleColumn>
+              <TitleWrapper>
+                <TagWrapper>
+                  <Tag>
+                    <p>User Interface Design</p>
+                  </Tag>
+                  <Tag>
+                    <p>User Experience Design</p>
+                  </Tag>
+                  <Tag>
+                    <p>User Interview</p>
+                  </Tag>
+                  <Tag>
+                    <p>Wireframing</p>
+                  </Tag>
+                  <Tag>
+                    <p>Prototyping</p>
+                  </Tag>
+                  <Tag>
+                    <p>Motion Prototype</p>
+                  </Tag>
+                  <Tag>
+                    <p>Information Architecture</p>
+                  </Tag>
+                  <Tag>
+                    <p>Desing System</p>
+                  </Tag>
+                  <Tag>
+                    <p>Agile Development</p>
+                  </Tag>
+                  <Tag>
+                    <p>Vector - illustration</p>
+                  </Tag>
+                </TagWrapper>
+                <div>
+                  <h1>
+                    Hired by Vector International Academy, I modernized websites
+                    and brochures with innovative design, gaining valuable
+                    insights.
+                  </h1>
+                </div>
+              </TitleWrapper>
+            </TitleColumn>
+            <TitleColumn>
+              <CreditWrapper>
+                <CreditTitle>
+                  <p>CREDITS</p>
+                </CreditTitle>
+                <CreditBody>
+                  <p>Lead Designer: Yuya Hashirizaki</p>
+                </CreditBody>
+                <CreditBody>
+                  <p>Developer: Yuya Hashirizaki</p>
+                </CreditBody>
+              </CreditWrapper>
+            </TitleColumn>
+          </TitleContainer>
+
+          <IntroContainer>
+            <IntroWrapper>
+              <div>
+                <h3>
+                  Suggested by a friend, I offered my design services on a
+                  project basis for Vector International Academy. After a few
+                  meetings, my portfolio was accepted, and I dedicated myself to
+                  meeting Vector's requirements.
+                </h3>
+              </div>
+              <div>
+                <h3>
+                  An idea that first seemed exciting and intriguing, and turned
+                  into a journey full of excitement, surprises with lots of ups
+                  and downs.
+                </h3>
+              </div>
+            </IntroWrapper>
+          </IntroContainer>
+
+          <ContentTitleContainer>
+            <ContentTitleWrapper>
+              <div>
+                <span>Design lead for Vector International Academy</span>
+              </div>
+            </ContentTitleWrapper>
+          </ContentTitleContainer>
+
+          <SingleColumnContainer>
+            <SingleColumnWrapper>
+              <Image src={VectorArticle_2} />
+              <Captions>
+                <div>
+                  <p className="lastCaption">Agile Workflow</p>
+                </div>
+              </Captions>
+            </SingleColumnWrapper>
+          </SingleColumnContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>How it all started</h2>
+              </div>
+              <div>
+                <p>
+                  The school had already built its own website, but they wanted
+                  to create a more intriguing platform for new content.
+                </p>
+                <p>
+                  In the early days, my primary approach to shaping the idea and
+                  progressing with this project was to craft multiple web design
+                  prototypes for the website's construction.
+                </p>
+                <p>
+                  We held several meetings to ensure smooth collaboration and
+                  facilitate communication.
+                </p>
+                <p>
+                  To pinpoint the right problems, I asked myself what the
+                  previous site intentionally did or what service I was
+                  building.
+                </p>
+                <p>These considerations guided my approach to the project.</p>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>My role</h2>
+                <p>
+                  As a UI/UX designer, I collaborated with the development team
+                  on multiple projects for Vector, including the main site and
+                  brochure. Additionally, I provided input on content
+                </p>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
+          <FullWidthImageContainer>
+            <FullWidthWrapper>
+              <ColumnImage>
+                <Image src={VectorArticle_3} />
+              </ColumnImage>
+              <ColumnImage>
+                <Image src={VectorArticle_4} />
+              </ColumnImage>
+              <Captions>
+                <div>
+                  <p className="lastCaption">
+                    The initial prototype presented to the client
+                  </p>
+                </div>
+              </Captions>
+            </FullWidthWrapper>
+          </FullWidthImageContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>Challenge</h2>
+                <p>
+                  The significant challenge faced by the client was establishing
+                  an accessible means to navigate testimonials and essential
+                  sections effortlessly while creating an engaging and powerful
+                  website.
+                </p>
+                <p>
+                  Following multiple meetings, I grasped the project's
+                  challenges and the client's vision for the most effective
+                  site, leading to the proposal of the aforementioned prototype.
+                </p>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnImage>
+                <Image src={VectorArticle_5} />
+              </ColumnImage>
+              <ColumnImage>
+                <Image src={VectorArticle_6} />
+              </ColumnImage>
+              <Captions>
+                <div>
+                  <p className="lastCaption">
+                    The client proposed loading the video upon laptop startup
+                  </p>
+                </div>
+              </Captions>
+            </FullWidthWrapper>
+          </FullWidthContainer>
+
+          <SingleColumnContainer>
+            <SingleColumnWrapper>
+              <Image src={VectorArticle_7} />
+              <Captions>
+                <div>
+                  <p className="lastCaption">
+                    Completed the home page design, showcasing Vector and its
+                    features
+                  </p>
+                </div>
+              </Captions>
+            </SingleColumnWrapper>
+          </SingleColumnContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>Solution</h2>
+                <p>
+                  We prioritized content unification and adaptability to
+                  individual customer needs. Incorporating dynamic content, like
+                  slides absent from the previous site, was a focus.
+                </p>
+                <p>
+                  The goal was to offer a seamless experience for diverse
+                  customer groups, catering to both non-students and infrequent
+                  visitors, ensuring easy access to relevant information.
+                </p>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>Final thoughts</h2>
+                <p>
+                  I anticipated that the level of involvement from designers and
+                  developers in the project's completion would be contingent on
+                  the budget and timeline. My approach to this project was
+                  centered on thoroughly researching its scalability.
+                </p>
+                <p>
+                  Post the completion of the home page, the client's intentions
+                  changed, leading to an increased content load. This posed
+                  challenges in modifying previously completed work.
+                </p>
+                <p>
+                  In a project emphasizing consistent design, adaptability
+                  proved crucial. It was a valuable experience, underscoring the
+                  importance of understanding the client's core intentions.
+                </p>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
+          <SingleColumnContainer>
+            <SingleColumnWrapper>
+              <Image src={VectorArticle_8} />
+              <Captions>
+                <div>
+                  <p>
+                    Initiation of Phase One for the Interactive Activities Page
+                  </p>
+                </div>
+              </Captions>
+
+              <Image src={VectorArticle_9} />
+              <Captions>
+                <div>
+                  <p>
+                    Completed the design for the Interactive Activities Page and
+                    menu bar
+                  </p>
+                </div>
+              </Captions>
+
+              <Image src={VectorArticle_10} />
+              <Captions>
+                <div>
+                  <p className="lastCaption">
+                    Completed the design for the remaining pages
+                  </p>
+                </div>
+              </Captions>
+            </SingleColumnWrapper>
+          </SingleColumnContainer>
+
+          <SingleColumnContainer>
+            <SingleColumnWrapper>
+              <Video
+                autoPlay
+                playsInline
+                loop
+                muted
+                src={VectorMovie_1}
+                type="video/mp4"
               />
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <ImageGrid
-                style={{ maxWidth: "100%" }}
-                src={VectorArticle_4}
-                id=""
-              />
-            </div>
-          </ArticleGridHalf>
-          <ArticleCaption>
-            The prototype that was first proposed to the client.
-          </ArticleCaption>
-          <Article_h3>Challenge</Article_h3>
-          <Article_p>
-            The big challenge the client had was how to build an accessible way
-            to reach the contents of testimonials or significant sections
-            easily, and create an intriguing and more powerful website. After
-            several meetings, I heard about the challenges of this project and
-            the concept of the most useful site that the client requires, and
-            then proposed the above prototype.
-          </Article_p>
-          <ArticleGridHalf>
-            <div style={{ textAlign: "center" }}>
-              <ImageGrid
-                style={{ maxWidth: "100%" }}
-                src={VectorArticle_5}
-                id=""
-              />
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <ImageGrid
-                style={{ maxWidth: "100%" }}
-                src={VectorArticle_6}
-                id=""
-              />
-            </div>
-          </ArticleGridHalf>
-          <ArticleCaption style={{ marginBottom: "2.5rem" }}>
-            The client suggested load the video when LapTop boot up.
-          </ArticleCaption>
-          <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
-            <Image style={{ margin: "0" }} src={VectorArticle_7} id="" />
-          </div>
-          <ArticleCaption>
-            Finalized top page design promoting the vector and its feature.
-          </ArticleCaption>
-          <Article_h3>Solution</Article_h3>
-          <Article_p>
-            Great emphasis was placed on content unification and adaptability to
-            the individual needs of customers. And how to incorporate dynamic
-            content such as slides that were not on the previous site. We wanted
-            to provide a smooth experience for customers who did not aim to be
-            students or who weren't very frequent visitors. The content on this
-            site is designed to make it easy for all customer groups to find
-            relevant information.
-          </Article_p>
-          <Article_h3 style={{ marginTop: "5rem" }}>Final thoughts</Article_h3>
-          <Article_p>
-            I thought that the depth of involvement of designers and developers
-            in the project by the time it is completed will change depending on
-            the budget and period. What I thought about this project was to
-            deeply research the scalability of the project. In fact, after the
-            top page was completed, the client's intentions changed and the
-            content increased. When that happens, it becomes difficult to modify
-            the work that has already been completed. For this project, where
-            the challenge was to have a consistent design, it was essential to
-            have adaptability to it. It was a great experience, a project that
-            reminded me of how to find out the client's core intention.
-          </Article_p>
-          <div style={{ textAlign: "center", margin: "6rem 0 0.5rem 0" }}>
-            <Image style={{ margin: "0" }} src={VectorArticle_8} id="" />
-          </div>
-          <ArticleCaption style={{ marginBottom: "2.5rem" }}>
-            Phase one of the interactive activities page.
-          </ArticleCaption>
-          <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
-            <Image style={{ margin: "0" }} src={VectorArticle_9} id="" />
-          </div>
-          <ArticleCaption style={{ marginBottom: "2.5rem" }}>
-            Finalized interactive activities page and menu bar design.
-          </ArticleCaption>
-          <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>
-            <Image style={{ margin: "0" }} src={VectorArticle_10} id="" />
-          </div>
-          <ArticleCaption style={{ marginBottom: "0" }}>
-            Finalized remainning page design.
-          </ArticleCaption>
-          <div style={{ textAlign: "center" }}>
-            <VideoBg
-              autoPlay
-              playsInline
-              loop
-              muted
-              src={VectorMovie_1}
-              type="video/mp4"
-            />
-          </div>
-          <ArticleCaption>Contact form motion prototype</ArticleCaption>
-          <ArticleGridHalfBottom>
-            <div style={{ textAlign: "center" }}>
-              <ImageGrid
-                style={{ maxWidth: "100%", margin: "0" }}
-                src={VectorArticle_11}
-                id=""
-              />
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <ImageGrid
-                style={{ maxWidth: "100%", margin: "0" }}
-                src={VectorArticle_12}
-                id=""
-              />
-            </div>
-          </ArticleGridHalfBottom>
-          <ArticleCaption>
-            Finalized brochure design for Japanese end-user.
-          </ArticleCaption>
-          <div style={{ textAlign: "center", margin: "8rem 0 7rem 0" }}>
-            <ImageTop style={{ margin: "0" }} src={VectorArticle_13} id="" />
-          </div>
-          <Article_h3>Responsibilities</Article_h3>
-          <Article_p>
-            User Interview • Presentation • Design Concept • Wireframe • Mock-Up
-            • Prototyping • Motion Prototyping
-          </Article_p>
-          <Article_h3 style={{ marginTop: "5rem" }}>The outcome</Article_h3>
-          <Article_p>
-            Through this project, I have found out challenges gradually on each
-            stage and developed and designed the website to a stage that was
-            functional and valuable.
-          </Article_p>
-          <Article_p style={{ marginTop: "1.5rem" }}>
-            Looking back at it now I can surely say it's been quite a ride. A
-            hightly valuable experience that has still left an impact on me and
-            my career today. It helps me better understand the working
-            environment as a web designer and opened my eyes to the product
-            creation process. The effort and sacrifices that are required to
-            send off a product into the world were beyond my expectations.
-            However, once the product lets it dive into the world and turn into
-            “alive” is the time when the real journey actually launches. Now
-            that I think about it, I am so excited.
-          </Article_p>
-          {/* feedback section */}
-          <Feedback>
-            <div style={{ textAlign: "center" }}>
-              <Image
-                src={mari}
-                id=""
-                style={{ width: "4rem", marginBottom: "1rem" }}
-              />
-            </div>
-            <Article_h3 className="title">
-              " He is a versatile designer who creates a wide range from modern
-              to traditional. I believe his patience with a string of requests
-              and revisions from me eventually enabled my website to be born. "
-            </Article_h3>
-            <Article_p style={{ fontSize: "14px", lineHeight: "1.5" }}>
-              His design first caught my eyes when I had been spending long time
-              looking for a way to embody the unique feature of my school
-              business. His astute sense of identifying the perfect colors,
-              shapes, and space usage helped my website convey what we are at a
-              glance. I believe his patience with a string of requests and
-              revisions from me eventually enabled my website to be born. He is
-              a versatile designer who creates a wide range from modern to
-              traditional.
-            </Article_p>
-          </Feedback>
-          {/* feedback section */}
-        </ArticleWrapper>
+              <Captions>
+                <div>
+                  <p className="lastCaption">
+                    Developed a motion prototype for the contact form
+                  </p>
+                </div>
+              </Captions>
+            </SingleColumnWrapper>
+          </SingleColumnContainer>
+
+          <FullWidthContainer>
+            <FullWidthWrapper>
+              <ColumnImage>
+                <Image src={VectorArticle_11} />
+              </ColumnImage>
+              <ColumnImage>
+                <Image src={VectorArticle_12} />
+              </ColumnImage>
+              <Captions>
+                <div>
+                  <p className="lastCaption">
+                    Completed the brochure design tailored for the Japanese
+                    customer
+                  </p>
+                </div>
+              </Captions>
+            </FullWidthWrapper>
+          </FullWidthContainer>
+
+          <SingleColumnContainer>
+            <SingleColumnWrapper>
+              <ImageNoBorder src={VectorArticle_13} />
+            </SingleColumnWrapper>
+          </SingleColumnContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>The Outcome</h2>
+              </div>
+              <div>
+                <p>
+                  Throughout this project, I encountered challenges at each
+                  stage, gradually developing and designing the website to a
+                  functional and valuable state.
+                </p>
+                <p>
+                  Looking back, it has been quite a ride. This highly valuable
+                  experience continues to impact my career today, providing a
+                  better understanding of the web design working environment and
+                  opening my eyes to the product creation process. The effort
+                  and sacrifices required to launch a product into the world
+                  exceeded my expectations.
+                </p>
+                <p>
+                  However, once the product takes its dive and comes 'alive,'
+                  the real journey begins. Reflecting on it now, I am genuinely
+                  excited.
+                </p>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div style={{ maxWidth: "1140px", margin: "auto" }}>
+                <div style={{ textAlign: "center", maxWidth: "1140px" }}>
+                  <ImageCircleFb src={mari} />
+                </div>
+                <div style={{ textAlign: "center" }}>
+                  <h2>
+                    " He is a versatile designer who creates a wide range from
+                    modern to traditional. I believe his patience with a string
+                    of requests and revisions from me eventually enabled my
+                    website to be born. "
+                  </h2>
+                </div>
+                <div className="feedback">
+                  <p>
+                    His design first caught my eyes when I had been spending
+                    long time looking for a way to embody the unique feature of
+                    my school business. His astute sense of identifying the
+                    perfect colors, shapes, and space usage helped my website
+                    convey what we are at a glance. I believe his patience with
+                    a string of requests and revisions from me eventually
+                    enabled my website to be born. He is a versatile designer
+                    who creates a wide range from modern to traditional.
+                  </p>
+                </div>
+                {/* <Image src={} /> */}
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
+          {/* <ClosingWrapper>
+            <Image src={LarryArticle_9} />
+          </ClosingWrapper> */}
+        </CaseWrapper>
       </motion.div>
-    </ArticleContainer>
+    </CaseContainer>
   );
 };
 

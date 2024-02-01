@@ -11,6 +11,7 @@ import {
   SingleColumnContainer,
   SingleColumnWrapper,
   Image,
+  ImageCircleFb,
   Video,
   VideoBottom,
   CaseContainer,
@@ -45,7 +46,6 @@ import LarryArticle_8 from "../../images/LarryArticle_8.png";
 import LarryArticle_9 from "../../images/LarryArticle_9.png";
 import LarryMovie_1 from "../../videos/LarryMovie_1.mp4";
 import LarryMovie_2 from "../../videos/LarryMovie_2.mp4";
-import case2_closing from "../../images/case2_closing.png";
 
 const Article_Larry = () => {
   return (
@@ -464,14 +464,7 @@ const Article_Larry = () => {
             <ColumnContentLg>
               <div style={{ maxWidth: "1140px", margin: "auto" }}>
                 <div style={{ textAlign: "center", maxWidth: "1140px" }}>
-                  <Image
-                    src={LarryArticle_8}
-                    style={{
-                      width: "6rem",
-                      marginBottom: "2rem",
-                      borderRadius: "50%",
-                    }}
-                  ></Image>
+                  <ImageCircleFb src={LarryArticle_8} />
                 </div>
                 <div style={{ textAlign: "center" }}>
                   <h2>

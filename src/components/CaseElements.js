@@ -153,6 +153,18 @@ export const FullWidthContainer = styled.div`
   }
 `;
 
+export const FullWidthImageContainer = styled.div`
+  padding: 110px 0;
+  justify-content: center;
+
+  @media only screen and (max-width: 960px) {
+    padding: 0 0 11.5vw 0;
+  }
+  /* @media only screen and (max-width: 540px) {
+    padding-top: 7.4vw;
+  } */
+`;
+
 export const FullWidthWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -470,42 +482,23 @@ export const ColumnContentSm = styled.div`
   }
 `;
 
-export const Image = styled.img`
+export const ColumnImage = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: auto;
+  padding: 0 6px;
+
+  // md sm center //
   width: 100%;
-  border: solid 2px var(--secondary-bg);
-  border-radius: 15px;
-  margin-bottom: auto;
 
-  @media only screen and (max-width: 960px) {
-    border-radius: 10px;
+  // lg //
+  @media (min-width: 1024px) {
+    width: 50%;
   }
-`;
 
-export const ImageSm = styled.img`
-  max-width: 80%;
-  margin-top: 34px;
-  border: solid 2px var(--secondary-bg);
-  border-radius: 15px;
-
-  @media only screen and (max-width: 1024px) {
-    max-width: 40%;
-  }
-  @media only screen and (max-width: 960px) {
-    border-radius: 10px;
-  }
-  @media only screen and (max-width: 540px) {
-    max-width: 60%;
-    border-radius: 10px;
-  }
-`;
-
-export const ImageCircle = styled.img`
-  width: 100%;
-  border: solid 2px var(--secondary-bg);
-  border-radius: 50%;
-
-  @media only screen and (max-width: 960px) {
-    border: solid 1.5px var(--secondary-bg);
+  @media (max-width: 1024px) {
+    padding: 0.88vw 0;
   }
 `;
 
@@ -634,6 +627,76 @@ export const CreditBody = styled.p`
   }
 `;
 
+export const Image = styled.img`
+  width: 100%;
+  border: solid 2px var(--secondary-bg);
+  border-radius: 15px;
+  margin-bottom: auto;
+
+  @media only screen and (max-width: 1024px) {
+    border: solid 1px var(--secondary-bg);
+  }
+  @media only screen and (max-width: 960px) {
+    border-radius: 10px;
+  }
+  @media only screen and (max-width: 540px) {
+    border: solid 0.5px var(--secondary-bg);
+    border-radius: 6px;
+  }
+`;
+
+export const ImageSm = styled.img`
+  max-width: 80%;
+  margin-top: 34px;
+  border: solid 2px var(--secondary-bg);
+  border-radius: 15px;
+
+  @media only screen and (max-width: 1024px) {
+    max-width: 40%;
+    border: solid 1px var(--secondary-bg);
+  }
+  @media only screen and (max-width: 960px) {
+    border-radius: 10px;
+  }
+  @media only screen and (max-width: 540px) {
+    max-width: 60%;
+    border: solid 0.5px var(--secondary-bg);
+    border-radius: 10px;
+  }
+`;
+
+export const ImageCircle = styled.img`
+  width: 100%;
+  border: solid 2px var(--secondary-bg);
+  border-radius: 50%;
+
+  @media only screen and (max-width: 1024px) {
+    border: solid 1px var(--secondary-bg);
+  }
+  @media only screen and (max-width: 540px) {
+    border: solid 0.5px var(--secondary-bg);
+  }
+`;
+
+export const ImageCircleFb = styled.img`
+  width: clamp(45px, 20%, 130px);
+  margin-bottom: 1.45vw;
+  border-radius: 50%;
+  border: solid 2px var(--secondary-bg);
+
+  @media only screen and (max-width: 1024px) {
+    border: solid 1px var(--secondary-bg);
+  }
+  @media only screen and (max-width: 540px) {
+    border: solid 0.5px var(--secondary-bg);
+  }
+`;
+
+export const ImageNoBorder = styled.img`
+  width: 100%;
+  border-radius: 50%;
+`;
+
 ///// closing image /////
 export const ClosingWrapper = styled.div`
   margin-bottom: 30px;
@@ -646,6 +709,7 @@ export const ClosingWrapper = styled.div`
 
 ///// video /////
 export const Video = styled.video`
+  max-width: 960px;
   display: block;
   line-height: 100%;
   width: 100%;

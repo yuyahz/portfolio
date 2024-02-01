@@ -1,19 +1,35 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  ArticleContainer,
-  ArticleTitle,
-  ArticleWrapper,
-  Icon,
-  IconWrapper,
-  Article_h3,
-  Article_p,
-  ArticleCaption,
+  HomeIconWrapper,
+  HomeIcon,
+  ColumnContentLgTxt,
+  ColumnContentLg,
+  SingleColumnContainer,
+  SingleColumnWrapper,
   Image,
-  ImageTop,
-  ImageDown,
-  Feedback,
-} from "./ArticleElements";
+  ImageCircleFb,
+  CaseContainer,
+  CaseWrapper,
+  HeroImageWrapper,
+  TitleContainer,
+  TitleColumn,
+  TitleWrapper,
+  TagWrapper,
+  Tag,
+  Captions,
+  CreditWrapper,
+  CreditTitle,
+  CreditBody,
+} from "../CaseElements";
+import {
+  HeroImage,
+  IntroContainer,
+  IntroWrapper,
+  ContentInfoContainer,
+  ContentTitleContainer,
+  ContentTitleWrapper,
+} from "./DarumaElements";
 import DarumaArticle_1 from "../../images/DarumaArticle_1.png";
 import DarumaArticle_2 from "../../images/DarumaArticle_2.png";
 import DarumaArticle_3 from "../../images/DarumaArticle_3.png";
@@ -24,7 +40,7 @@ import DarumaArticle_7 from "../../images/DarumaArticle_7.png";
 
 const Article_Daruma = () => {
   return (
-    <ArticleContainer id="daruma">
+    <CaseContainer id="daruma" style={{ background: "white" }}>
       <motion.div
         animate={{
           x: 0,
@@ -42,185 +58,402 @@ const Article_Daruma = () => {
           duration: 0.5,
         }}
       >
-        <IconWrapper>
-          <Icon to="/">Home</Icon>
-        </IconWrapper>
-        <ArticleWrapper>
-          <ArticleTitle>
-            Integrated building website project for specialty Korean cuisine and
-            BBQ restaurant
-          </ArticleTitle>
-          <Article_p>
-            The restaurant asked me to create a new concept, rethinking to build
-            a more smooth accessible site for customers. I took the
-            responsibility to build a website from scratch.
-          </Article_p>
-          <div style={{ textAlign: "center" }}>
-            <ImageTop src={DarumaArticle_1} id="" />
-          </div>
-          <Article_h3>Background</Article_h3>
-          <Article_p>
-            The restaurant wanted to renew the website, a website that serves
-            customers in Japan and people who come to Japan.
-          </Article_p>
-          <Article_p style={{ marginTop: "1.5rem" }}>
-            Daruma had made a strategic choice to bring all of their offerings
-            and new service under one website. Previously, The website had very
-            ancient designs and made it difficult for clients to navigate the
-            website and reach services offered.
-          </Article_p>
-          {/* <Article_p style={{ marginTop: "1.5rem" }}>
-            They had that those painful therefore Daruma asked me to create a
-            renovated website have through my connection.
-          </Article_p> */}
-          <div style={{ textAlign: "center" }}>
-            <Image style={{ marginBottom: "0" }} src={DarumaArticle_2} id="" />
-          </div>
-          <ArticleCaption>Flow sheet.</ArticleCaption>
-          <Article_h3>The Goal</Article_h3>
-          <Article_p>
-            The primary website idea is to allow users to easily create, share.
-            Whether it immediately needs to reserve or just a night out with
-            friends and familly in this restaurant. There are many similar
-            websites already on the market, however, most of them provide very
-            complexly and similar.
-          </Article_p>
-          <Article_p style={{ marginTop: "1.5rem" }}>
-            The restaurant's main requirement has always been to keep the
-            website usable, reliable, and functional. Aesthetically minimal,
-            simple, and clean. There are no ads and also no tricks, but there is
-            a consistent and intuitive user experience, providing value to our
-            users, keeping them satisfied and engaged. And the client wanted to
-            me create the website quickly.
-          </Article_p>
-          <div style={{ textAlign: "center" }}>
-            <Image
-              style={{ marginBottom: "1rem" }}
-              src={DarumaArticle_3}
-              id=""
-            />
-          </div>
-          <ArticleCaption style={{ marginBottom: "3rem" }}>
-            Images for wireframe.
-          </ArticleCaption>
-          <div style={{ textAlign: "center" }}>
-            <Image
-              style={{ margin: "0 0 1rem 0" }}
-              src={DarumaArticle_4}
-              id=""
-            />
-          </div>
-          <ArticleCaption>Images for website journey map.</ArticleCaption>
-          <Article_h3>My role</Article_h3>
-          <Article_p>
-            I worked on this project as a UI/UX designer and developer as well.
-            In addition to those, I gave input as an adviser for all of the
-            website and I have in charge of that position as an administrator
-            for this website.
-          </Article_p>
-          <Article_h3 style={{ marginTop: "5rem" }}>Challenge</Article_h3>
-          <Article_p>
-            As outlined above, I have had to do everything to design and develop
-            for this project with my own skills, so that it was the most
-            significant requirement to give this finalized product as soon as
-            possible.
-          </Article_p>
-          <Article_h3 style={{ marginTop: "5rem" }}>Solution</Article_h3>
-          <Article_p>
-            It was necessary to consider both of these perspectives about
-            designer and developer are notable points and I wanted to treat both
-            skills equally. I have felt that it is important to keep both
-            perspectives in careful consideration before deciding to dive into
-            coding. I approached to do design to secure what clients proposed.
-            Aesthetically minimal, simple, clean, and move ahead at a fast pace,
-            those things were the highest priority for this project. First of
-            all, as a result of those requirements, I thought "React" was the
-            best fitting library for this project in terms of overall sights
-            multi-directionally. From sights of trend (but not only reason for
-            trend, React has several logical advantages), end-users who will
-            have feelings that loading speed is fast, and because of my
-            proficiency in this language. And, I also have chosen "React
-            Bootstrap" as a reliable framework that will be able to address
-            those pain points for quick development mainly to achieve a
-            consistent design.
-          </Article_p>
-          <Article_h3 style={{ marginTop: "5rem" }}>Final thoughts</Article_h3>
-          <Article_p>
-            While I was in this project, few issues have become clear about
-            Bootstrap. That framework wasn't flexible more than I have imagined,
-            I will address future issues and problems from the standpoint of
-            circumstances of this project. I wouldn't see it as just problems, I
-            would like it to turn into productive, future outcomes. I had to
-            create an efficient configuration that in order to avoid future
-            problems. Especially if I have to work on the project longer. This
-            project gave me the significance to become more proficient as a
-            digital creator.
-          </Article_p>
-          <div style={{ textAlign: "center" }}>
-            <Image style={{ marginBottom: "0" }} src={DarumaArticle_5} id="" />
-          </div>
-          <ArticleCaption>Finalized mobile images.</ArticleCaption>
-          <div style={{ textAlign: "center" }}>
-            <ImageDown src={DarumaArticle_6} id="" />
-          </div>
-          <Article_h3 style={{ marginTop: "1.5rem" }}>
-            Responsibilities
-          </Article_h3>
-          <Article_p>
-            Direction and Management • Arrange Photographer • Overseer of all
-            Design • User Interview • Prototyping • HTML , CSS • React.js •
-            React Bootstrap • Styled components • Implementation
-          </Article_p>
-          <Article_h3 style={{ marginTop: "5rem" }}>The outcome</Article_h3>
-          <Article_p>
-            Through this project, and, looking back at it now I can surely say
-            it was the quickest project I had ever done. However, I could
-            deliver a valuable website for my client. To have both perspectives
-            is an important practice for my career but I learned that more
-            effort and time is needed, I could understand the value of both
-            required elements to increase good teamwork.
-          </Article_p>
-          {/* feedback section */}
-          <Feedback>
-            <div style={{ textAlign: "center" }}>
+        <HomeIconWrapper>
+          <HomeIcon to="/">Home</HomeIcon>
+        </HomeIconWrapper>
+
+        <CaseWrapper>
+          <HeroImageWrapper>
+            <HeroImage src={DarumaArticle_1} id="" />
+          </HeroImageWrapper>
+          <TitleContainer>
+            <TitleColumn>
+              <TitleWrapper>
+                <TagWrapper>
+                  <Tag>
+                    <p>User Interface Design</p>
+                  </Tag>
+                  <Tag>
+                    <p>User Experience Design</p>
+                  </Tag>
+                  <Tag>
+                    <p>User Interview</p>
+                  </Tag>
+                  <Tag>
+                    <p>Wireframing</p>
+                  </Tag>
+                  <Tag>
+                    <p>Prototyping</p>
+                  </Tag>
+                  <Tag>
+                    <p>Information Architecture</p>
+                  </Tag>
+                  <Tag>
+                    <p>Desing System</p>
+                  </Tag>
+                  <Tag>
+                    <p>Agile Development</p>
+                  </Tag>
+                  <Tag>
+                    <p>Vector - illustration</p>
+                  </Tag>
+                  <Tag>
+                    <p>Arrange Photographer</p>
+                  </Tag>
+                  <Tag>
+                    <p>Web Management</p>
+                  </Tag>
+                  <Tag>
+                    <p>Website Maintenance</p>
+                  </Tag>
+                </TagWrapper>
+                <div>
+                  <h1>
+                    The restaurant requested a new concept, aiming for a
+                    smoother and more accessible website for customers.
+                  </h1>
+                </div>
+              </TitleWrapper>
+            </TitleColumn>
+            <TitleColumn>
+              <CreditWrapper>
+                <CreditTitle>
+                  <p>CREDITS</p>
+                </CreditTitle>
+                <CreditBody>
+                  <p>Lead Designer: Yuya Hashirizaki</p>
+                </CreditBody>
+                <CreditBody>
+                  <p>Developer: Yuya Hashirizaki</p>
+                </CreditBody>
+              </CreditWrapper>
+            </TitleColumn>
+          </TitleContainer>
+
+          <IntroContainer>
+            <IntroWrapper>
+              <div>
+                <h3>
+                  The restaurant aimed to revamp its website, catering to
+                  customers in Japan and those visiting the country.
+                </h3>
+              </div>
+              <div>
+                <h3>
+                  The website previously featured outdated designs, making it
+                  challenging for clients to navigate and access the offered
+                  services.
+                </h3>
+              </div>
+              <div>
+                <h3>
+                  Daruma had made a strategic choice to bring all of their
+                  offerings and new service under one website.
+                </h3>
+              </div>
+            </IntroWrapper>
+          </IntroContainer>
+
+          <ContentTitleContainer>
+            <ContentTitleWrapper>
+              <div>
+                <span>
+                  I took on the responsibility of building the website project
+                  for a specialty Korean cuisine and BBQ restaurant, gaining
+                  magnificent experience in the process.
+                </span>
+              </div>
+            </ContentTitleWrapper>
+          </ContentTitleContainer>
+
+          <SingleColumnContainer>
+            <SingleColumnWrapper>
+              <Image src={DarumaArticle_2} />
+              <Captions>
+                <div>
+                  <p className="lastCaption">Agile Workflow</p>
+                </div>
+              </Captions>
+            </SingleColumnWrapper>
+          </SingleColumnContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>The Goal</h2>
+              </div>
+              <div>
+                <p>
+                  The primary idea for the website is to enable users to easily
+                  create and share reservations for a night out with friends and
+                  family at the restaurant.
+                </p>
+                <p>
+                  While there are many similar websites on the market, most of
+                  them are complex and similar in functionality.
+                </p>
+                <p>
+                  The restaurant's main requirement has always been to keep the
+                  website usable, reliable, and functional with an aesthetic
+                  that is minimal, simple, and clean.
+                </p>
+                <p>
+                  No ads or tricks, just a consistent and intuitive user
+                  experience aimed at providing value and keeping users
+                  satisfied and engaged.
+                </p>
+                <p>
+                  The client emphasized agile work to deliver the product
+                  efficiently.
+                </p>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
+          <SingleColumnContainer>
+            <SingleColumnWrapper>
               <Image
-                src={DarumaArticle_7}
-                id=""
-                style={{ width: "4rem", marginBottom: "1rem" }}
+                style={{ padding: "clamp(15px, 10%, 140px)" }}
+                src={DarumaArticle_3}
               />
-            </div>
-            <Article_h3 className="title">
-              " The outstanding product created by talented web specialist by
-              Yuya Hashirizaki that the product is very content even though I
-              couldn't make to him enough time to build up for our desirable web
-              site. "
-            </Article_h3>
-            <Article_p style={{ fontSize: "14px", lineHeight: "1.5" }}>
-              I am pleased to be able to write this letter of recommendation for
-              Yuya Hashirizaki. In my opinion, Yuya is a hard-working
-              self-starter who invariably understands exactly what a project is
-              all about. That those skills were required especially in this
-              project. Our thoughts of the previous website were that it had old
-              fashioned style. So that we couldn’t understand why we have to
-              renew it until we get complaints from our regular customers. But
-              we couldn’t spend money to renovate for a new web site. I was just
-              about to start to search how do I find the proper person and, my
-              co-worker found out dependable web specialist among a lot of
-              candidates in IT industry. He consistently produced high-quality
-              work in a timely fashion so far invariably. After starting the
-              project with him, first of all, we have made meetings frequently
-              to reduce pain points for the future. It was a necessary thing
-              because we couldn’t invest much in this project so that, we had to
-              reduce the possibility to generate misunderstandings for each
-              other to avoid changes after finalized. I so much respect Yuya’s
-              attitude toward his work. I am therefore very pleased to be able
-              to recommend Yuya for future positions.
-            </Article_p>
-          </Feedback>
-          {/* feedback section */}
-        </ArticleWrapper>
+              <Captions>
+                <div>
+                  <p>Images for wireframe</p>
+                </div>
+              </Captions>
+
+              <Image
+                style={{ padding: "clamp(15px, 10%, 140px)" }}
+                src={DarumaArticle_4}
+              />
+              <Captions>
+                <div>
+                  <p className="lastCaption">Images for user journey map</p>
+                </div>
+              </Captions>
+            </SingleColumnWrapper>
+          </SingleColumnContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>My role</h2>
+                <p>
+                  In this project, I served as a versatile UI/UX designer and
+                  developer, providing advisory input for the website.
+                </p>
+                <p>
+                  Moreover, I held the position of an administrator, overseeing
+                  the project's overall management.
+                </p>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>Challenge</h2>
+                <p>
+                  As mentioned earlier, I undertook the entire design and
+                  development process for this project using my skills.
+                </p>
+                <p>
+                  Timely delivery was a critical requirement, making it
+                  imperative to present the finalized product quickly.
+                </p>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>Solution</h2>
+                <p>
+                  It was essential to balance the perspectives of both a
+                  designer and developer, and I aimed to treat both skill sets
+                  with equal importance.
+                </p>
+                <p>
+                  Considering the client's requirements for an aesthetically
+                  minimal, simple, and clean design, coupled with the need for a
+                  swift development pace, I found "React" to be the most
+                  suitable library.
+                </p>
+                <p>
+                  This decision was driven by its alignment with current trends,
+                  its logical advantages, the perception of fast loading speed
+                  by end-users, and my proficiency in the language.
+                </p>
+                <p>
+                  Additionally, I chose for "React Bootstrap" as a reliable
+                  framework to facilitate quick development and achieve a
+                  consistent design.
+                </p>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>Final thoughts</h2>
+                <p>
+                  During this project, I encountered some limitations with
+                  Bootstrap, which led me to consider future issues and find
+                  solutions based on the context of this project.
+                </p>
+                <p>
+                  Rather than viewing them as problems, I saw them as
+                  opportunities for productive outcomes.
+                </p>
+                <p>
+                  I established an efficient configuration to prevent potential
+                  challenges, particularly for long-term project involvement.
+                </p>
+                <p>
+                  This experience emphasized the importance of enhancing my
+                  proficiency as a digital creator.
+                </p>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
+          <SingleColumnContainer>
+            <SingleColumnWrapper>
+              <Image src={DarumaArticle_5} />
+              <Captions>
+                <div>
+                  <p>Finalized mobile images</p>
+                </div>
+              </Captions>
+
+              <Image src={DarumaArticle_6} />
+            </SingleColumnWrapper>
+          </SingleColumnContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLgTxt>
+              <div>
+                <p>
+                  Design and developer collaboration is a most challenging
+                  problem and there are many opportunities how to sync each
+                  other.
+                </p>
+                <p>
+                  All the design tools that exist today isn't enforcing that
+                  behavior.
+                </p>
+                <p>
+                  All they do is attempt to do similar things. Unless design to
+                  development all share the same settings or agreed on setting,
+                  there is no real "bridge” between developers and designers.
+                </p>
+              </div>
+            </ColumnContentLgTxt>
+          </ContentInfoContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLgTxt>
+              <div>
+                <p>
+                  While some developers were inexperienced, it was a difficult
+                  to proceed with the project in a limited time to convey the
+                  first instruction with the design tool.
+                </p>
+                <p>
+                  In order to get a better understanding of the design, I
+                  created it myself without using Adobe XD only at the
+                  beginning.
+                </p>
+                <p>
+                  After a few meetings with Larry, I saw what he really needed,
+                  so I decided to create a landing page and homepage to
+                  implement it concretely.
+                </p>
+                <p>
+                  The most important thing in doing so was to create a
+                  consistent design to get the most out of his brand.
+                </p>
+              </div>
+            </ColumnContentLgTxt>
+          </ContentInfoContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div>
+                <h2>The Outcome</h2>
+              </div>
+              <div>
+                <p>
+                  Navigating through this project, and reflecting on it now, it
+                  was undoubtedly the most fast-paced project I've ever
+                  undertaken, emphasizing the necessity to deliver the product
+                  quickly.
+                </p>
+                <p>
+                  Despite the tight timeline, I successfully delivered a
+                  valuable website for my client.
+                </p>
+                <p>
+                  In my career at that time, I recognized Balancing both design
+                  and development perspectives was crucial for my career growth.
+                </p>
+                <p>
+                  This experience taught me the importance of investing more
+                  effort and time, emphasizing the value of both elements to
+                  foster effective teamwork.
+                </p>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+
+          <ContentInfoContainer>
+            <ColumnContentLg>
+              <div style={{ maxWidth: "1140px", margin: "auto" }}>
+                <div style={{ textAlign: "center", maxWidth: "1140px" }}>
+                  <ImageCircleFb src={DarumaArticle_7} />
+                </div>
+                <div style={{ textAlign: "center" }}>
+                  <h2>
+                    " The outstanding product created by talented web specialist
+                    by Yuya Hashirizaki that the product is very content even
+                    though I couldn't make to him enough time to build up for
+                    our desirable web site. "
+                  </h2>
+                </div>
+                <div className="feedback">
+                  <p>
+                    I am pleased to be able to write this letter of
+                    recommendation for Yuya Hashirizaki. In my opinion, Yuya is
+                    a hard-working self-starter who invariably understands
+                    exactly what a project is all about. That those skills were
+                    required especially in this project. Our thoughts of the
+                    previous website were that it had old fashioned style. So
+                    that we couldn’t understand why we have to renew it until we
+                    get complaints from our regular customers. But we couldn’t
+                    spend money to renovate for a new web site. I was just about
+                    to start to search how do I find the proper person and, my
+                    co-worker found out dependable web specialist among a lot of
+                    candidates in IT industry. He consistently produced
+                    high-quality work in a timely fashion so far invariably.
+                    After starting the project with him, first of all, we have
+                    made meetings frequently to reduce pain points for the
+                    future. It was a necessary thing because we couldn’t invest
+                    much in this project so that, we had to reduce the
+                    possibility to generate misunderstandings for each other to
+                    avoid changes after finalized. I so much respect Yuya’s
+                    attitude toward his work. I am therefore very pleased to be
+                    able to recommend Yuya for future positions.
+                  </p>
+                </div>
+              </div>
+            </ColumnContentLg>
+          </ContentInfoContainer>
+        </CaseWrapper>
       </motion.div>
-    </ArticleContainer>
+    </CaseContainer>
   );
 };
 

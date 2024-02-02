@@ -10,6 +10,7 @@ import {
   ColumnContentSm,
   ColumnInsertContent,
   Image,
+  ImageCs,
   ImageSm,
   CaseContainer,
   CaseWrapper,
@@ -80,7 +81,7 @@ const Article_Case2 = () => {
 
         <CaseWrapper>
           <HeroImageWrapper>
-            <Image src={case2_hero} id="" />
+            <ImageCs src={case2_hero} id="" />
           </HeroImageWrapper>
           <TitleContainer>
             <TitleColumn>

@@ -4,7 +4,7 @@ import {
   HomeIconWrapper,
   HomeIcon,
   ColumnContentLg,
-  Image,
+  ImageCs,
   CaseContainer,
   CaseWrapper,
   HeroImageWrapper,
@@ -53,7 +53,7 @@ const Article_DailyUi = () => {
 
         <CaseWrapper>
           <HeroImageWrapper>
-            <Image src={caseUi_hero_v2} id="" />
+            <ImageCs src={caseUi_hero_v2} id="" />
           </HeroImageWrapper>
           <TitleContainer>
             <TitleColumn>

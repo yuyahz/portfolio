@@ -645,6 +645,28 @@ export const Image = styled.img`
   }
 `;
 
+export const ImageCs = styled.img`
+  width: 100%;
+  border: solid 2px var(--secondary-bg);
+  border-radius: 15px;
+  margin-bottom: auto;
+
+  @media only screen and (max-width: 1024px) {
+    border: solid 1px var(--secondary-bg);
+  }
+  @media only screen and (max-width: 960px) {
+    border-radius: 10px;
+  }
+  @media only screen and (max-width: 767px) {
+    min-height: 270px;
+    object-fit: cover;
+  }
+  @media only screen and (max-width: 540px) {
+    border: solid 0.5px var(--secondary-bg);
+    border-radius: 6px;
+  }
+`;
+
 export const ImageSm = styled.img`
   max-width: 80%;
   margin-top: 34px;

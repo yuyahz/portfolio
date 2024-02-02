@@ -7,6 +7,7 @@ import {
   ColumnLg,
   ColumnContentLg,
   Image,
+  ImageCs,
   CaseContainer,
   CaseWrapper,
   HeroImageWrapper,
@@ -63,7 +64,7 @@ const Article_CaseMp = () => {
 
         <CaseWrapper>
           <HeroImageWrapper>
-            <Image src={caseMp_hero} id="" />
+            <ImageCs src={caseMp_hero} id="" />
           </HeroImageWrapper>
           <TitleContainer>
             <TitleColumn>

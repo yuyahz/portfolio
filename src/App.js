@@ -15,6 +15,8 @@ import vectorPage from "./pages/articleVector";
 import darumaPage from "./pages/articleDaruma";
 import dailyUiPage from "./pages/articleDailyUi";
 import portfolioPage from "./pages/articlePortfolio";
+import NoMatch from "./components/NoMatch";
+import TouchStartListener from "./components/TouchStartListener";
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
         <Route path="/darumaPage" component={darumaPage} exact />
         <Route path="/dailyUiPage" component={dailyUiPage} exact />
         <Route path="/portfolioPage" component={portfolioPage} exact />
+        <Route path="*" component={NoMatch} />
+        <TouchStartListener />
       </Switch>
     </BrowserRouter>
   );

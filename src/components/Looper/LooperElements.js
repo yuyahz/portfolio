@@ -35,7 +35,7 @@ export const LooperContainer = styled.div`
     top: 0;
     text-align: center;
     z-index: 1;
-    font-family: GT;
+    font-family: "GT";
     font-weight: 500;
     font-size: 4rem;
     line-height: 1.5;
@@ -84,7 +84,7 @@ export const LooperContainer = styled.div`
     top: 0;
     text-align: center;
     z-index: 1;
-    font-family: GT;
+    font-family: "GT";
     font-size: 4rem;
     line-height: 1.5;
 

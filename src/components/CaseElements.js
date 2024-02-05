@@ -9,7 +9,7 @@ export const HomeIconWrapper = styled.div`
 
 export const HomeIcon = styled(Link)`
   text-decoration: none;
-  font-family: GT;
+  font-family: "GT";
   font-size: 3rem;
   font-weight: 500;
   display: block;
@@ -726,6 +726,9 @@ export const ClosingWrapper = styled.div`
 
   @media only screen and (max-width: 960px) {
     margin-bottom: 15px;
+  }
+  @media only screen and (max-width: 540px) {
+    padding-top: 14.8vw;
   }
 `;
 

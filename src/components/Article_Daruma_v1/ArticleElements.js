@@ -29,7 +29,7 @@ export const IconWrapper = styled.div`
 `;
 
 export const Icon = styled(Link)`
-  font-family: GT;
+  font-family: "GT";
   font-size: 3rem;
   font-weight: 500;
   display: block;

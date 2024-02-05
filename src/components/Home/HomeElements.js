@@ -272,7 +272,7 @@ export const ImageMac = styled(motion.img)`
 
 //   h2 {
 //     color: var(--primary-txt-color);;
-//     font-family: "GT";
+//     font-family: 'GT', serif;
 //     font-weight: 700;
 //     padding-left: 2rem;
 //     margin-bottom: 3rem;
@@ -357,7 +357,7 @@ export const ImageMac = styled(motion.img)`
 
 // //   h2 {
 // //     color: var(--primary-txt-color);;
-// //     font-family: "GT";
+// //     font-family: 'GT', serif;
 // //     font-weight: 700;
 // //     padding-left: 2rem;
 // //     margin-bottom: 3rem;

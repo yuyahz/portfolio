@@ -243,7 +243,7 @@ export const NavLinks = styled(LinkS)`
 
   &.active {
     /* text-align: center; */
-    font-family: GT;
+    font-family: "GT";
     font-weight: 700;
     font-size: 1.3rem;
     padding-bottom: 6px;

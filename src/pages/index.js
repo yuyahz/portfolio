@@ -32,6 +32,7 @@ import {
 import Case from "../components/Case";
 import Works from "../components/Works";
 import Contact from "../components/Contact";
+import ParallaxComponent from "../components/PrallaxComponent";
 import Footer from "../components/Footer";
 
 const Index = () => {
@@ -71,6 +72,7 @@ const Index = () => {
       {/* <Works {...worksArtDirections} /> */}
       <Works {...worksPortfolio} />
       <Contact />
+      <ParallaxComponent />
       <Footer />
     </>
   );

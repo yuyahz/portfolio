@@ -125,7 +125,7 @@ const Home = () => {
             </motion.h2>
           </div>
         </Parallax>
-        <Parallax x={[20, -20]}>
+        <Parallax y={[-130, 130]}>
           <div className="home-subtitle">
             <motion.p
               variants={fadeLeft}

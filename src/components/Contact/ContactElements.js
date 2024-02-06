@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   overflow: hidden;
   background-color: var(--secondary-bg);
 `;
 
 export const ContactWrapper = styled.div`
-  margin: 0 0 16rem 70px;
+  margin: 0 0 4rem 70px;
 
   @media only screen and (max-width: 960px) {
-    margin: 0 15px 28vw 15px;
+    margin: 0 15px 0 15px;
   }
 
   p {
@@ -37,7 +37,7 @@ export const ContactWrapper = styled.div`
 `;
 
 export const ContactContentsLg = styled.div`
-  padding: 6rem 0 16rem 0;
+  padding: 6rem 0 0 3.5rem;
 
   @media only screen and (max-width: 960px) {
     display: none;
@@ -75,7 +75,7 @@ export const ContactContentsLg = styled.div`
 `;
 
 export const ContactContentsSm = styled.div`
-  padding: 10vw 0 26.667vw 38px;
+  padding: 10vw 0 24px 23px;
 
   @media only screen and (min-width: 960.999px) {
     display: none;

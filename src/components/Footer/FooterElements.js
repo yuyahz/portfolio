@@ -52,7 +52,7 @@ export const FooterLinksWrapper = styled.div`
 `;
 
 export const FootertText = styled.h1`
-  color: var(--inversed-txt-color);
+  color: var(--fourth-txt-color);
   font-family: "GT";
   font-size: 48px;
   font-weight: 500;
@@ -92,7 +92,7 @@ export const SocialLogo = styled(Link)`
   font-weight: 300;
   font-size: 24px;
   letter-spacing: 1px;
-  color: var(--inversed-txt-color);
+  color: var(--fourth-txt-color);
   justify-content: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -104,7 +104,7 @@ export const SocialLogo = styled(Link)`
 `;
 
 export const WebsiteRights = styled.small`
-  color: #838383;
+  color: var(--fourth-txt-color);
   justify-content: start;
   margin-bottom: 16px;
 `;

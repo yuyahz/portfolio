@@ -1,5 +1,5 @@
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
+// import { Parallax } from "react-scroll-parallax";
 import {
   ContactContainer,
   ContactWrapper,
@@ -43,7 +43,7 @@ const Contact = () => {
             </a>
           </div>
         </ContactContentsSm>
-        <Parallax x={[5, -5]}>
+        {/* <Parallax x={[5, -5]}>
           <p>Let's make</p>
         </Parallax>
         <Parallax x={[-5, 10]}>
@@ -51,7 +51,7 @@ const Contact = () => {
         </Parallax>
         <Parallax x={[10, -10]}>
           <p>Amazing</p>
-        </Parallax>
+        </Parallax> */}
       </ContactWrapper>
     </ContactContainer>
   );

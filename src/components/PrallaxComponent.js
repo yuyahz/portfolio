@@ -50,7 +50,7 @@ export const ParallaxContainer = styled.div`
   }
   @media only screen and (max-width: 470px) {
     .parallax-wrapper {
-      height: 670;
+      height: 670px;
       border-radius: 50%;
       border: solid 1px var(--primaly-bg);
     }

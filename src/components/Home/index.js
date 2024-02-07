@@ -90,7 +90,7 @@ const Home = () => {
             </motion.h1>
           </div>
         </Parallax>
-        <Parallax y={[-30, 30]}>
+        <Parallax y={[-15, 15]}>
           <div>
             <motion.h2
               variants={fadeLeft}
@@ -125,7 +125,8 @@ const Home = () => {
             </motion.h2>
           </div>
         </Parallax>
-        <Parallax y={[-130, 130]}>
+        {/* <Parallax y={[-130, 130]}> */}
+        <div>
           <div className="home-subtitle">
             <motion.p
               variants={fadeLeft}
@@ -144,7 +145,8 @@ const Home = () => {
               Frontend Developer
             </motion.p>
           </div>
-        </Parallax>
+        </div>
+        {/* </Parallax> */}
       </HomeWrapper>
     </HomeContainer>
   );

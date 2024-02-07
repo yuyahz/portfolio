@@ -71,8 +71,8 @@ const Index = () => {
       <Works {...worksDailyUi} />
       {/* <Works {...worksArtDirections} /> */}
       <Works {...worksPortfolio} />
-      <Contact />
       <ParallaxComponent />
+      <Contact />
       <Footer />
     </>
   );

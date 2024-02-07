@@ -10,7 +10,7 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactWrapper = styled.div`
-  margin: 0 0 4rem 70px;
+  margin: 0 0 110px 100px;
 
   @media only screen and (max-width: 960px) {
     margin: 0 15px 0 15px;
@@ -37,7 +37,7 @@ export const ContactWrapper = styled.div`
 `;
 
 export const ContactContentsLg = styled.div`
-  padding: 6rem 0 0 3.5rem;
+  padding: 6rem 3.5rem 6rem 3.5rem;
 
   @media only screen and (max-width: 960px) {
     display: none;
@@ -75,7 +75,7 @@ export const ContactContentsLg = styled.div`
 `;
 
 export const ContactContentsSm = styled.div`
-  padding: 10vw 0 24px 23px;
+  padding: 23px 23px 10vw 23px;
 
   @media only screen and (min-width: 960.999px) {
     display: none;

@@ -28,7 +28,7 @@ export const ParallaxContainer = styled.div`
     border-radius: 10% 10% 50% 50%;
     overflow-x: hidden;
     perspective: 1px;
-    padding: 100px;
+    scroll-behavior: smooth;
   }
 
   @media only screen and (max-width: 1920px) {
@@ -264,24 +264,24 @@ export const ParallaxContainer = styled.div`
 
   @media only screen and (max-width: 470px) {
     .parallax-layer.layer1 {
-      top: 17rem;
+      top: 14rem;
       height: 25rem;
     }
     .parallax-layer.layer2 {
-      top: 42rem;
+      top: 48rem;
       height: 45rem;
     }
     .parallax-layer.layer3 {
-      top: 39rem;
+      top: 48rem;
       height: 24rem;
     }
     .parallax-layer.layer4 {
-      top: 56rem;
-      height: 34rem;
+      top: 60rem;
+      height: 25rem;
     }
   }
 
-  @media only screen and (max-width: 390px) {
+  /* @media only screen and (max-width: 390px) {
     .parallax-layer.layer1 {
       top: 20rem;
       height: 43rem;
@@ -298,7 +298,7 @@ export const ParallaxContainer = styled.div`
       top: 110rem;
       height: 34rem;
     }
-  }
+  } */
 `;
 
 const ParallaxComponent = () => {

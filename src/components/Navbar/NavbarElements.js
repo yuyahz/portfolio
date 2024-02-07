@@ -19,7 +19,7 @@ export const Nav = styled.nav`
     display: none;
   }
 
-  @media screen and (max-height: 720px) {
+  @media screen and (max-height: 768px) {
     font-size: 2.22vh;
   }
 `;
@@ -161,14 +161,17 @@ export const NavItem = styled.div`
     }
   }
 
-  @media screen and (max-height: 720px) {
+  @media screen and (max-height: 768px) {
     max-width: 60px;
+  }
+  @media screen and (max-height: 466px) {
+    max-width: 30px;
   }
 
   .aboutSec {
     margin: 40px 0;
 
-    @media screen and (max-height: 720px) {
+    @media screen and (max-height: 768px) {
       margin: 3.472vh 0;
     }
   }
@@ -176,7 +179,7 @@ export const NavItem = styled.div`
   .case1Sec {
     margin: 40px 0;
 
-    @media screen and (max-height: 720px) {
+    @media screen and (max-height: 768px) {
       margin: 3.472vh 0;
     }
   }
@@ -184,7 +187,7 @@ export const NavItem = styled.div`
   .case2Sec {
     margin: 40px 0;
 
-    @media screen and (max-height: 720px) {
+    @media screen and (max-height: 768px) {
       margin: 3.472vh 0;
     }
   }
@@ -192,7 +195,7 @@ export const NavItem = styled.div`
   .case3Sec {
     margin: 40px 0;
 
-    @media screen and (max-height: 720px) {
+    @media screen and (max-height: 768px) {
       margin: 3.472vh 0;
     }
   }
@@ -200,7 +203,7 @@ export const NavItem = styled.div`
   .mpSec {
     margin: 40px 0;
 
-    @media screen and (max-height: 720px) {
+    @media screen and (max-height: 768px) {
       margin: 3.472vh 0;
     }
   }
@@ -220,7 +223,7 @@ export const NavItem = styled.div`
   .worksSec {
     margin: 40px 0;
 
-    @media screen and (max-height: 720px) {
+    @media screen and (max-height: 768px) {
       margin: 3.472vh 0;
     }
   }
@@ -228,7 +231,7 @@ export const NavItem = styled.div`
   .contactSec {
     margin: 40px 0;
 
-    @media screen and (max-height: 720px) {
+    @media screen and (max-height: 768px) {
       margin: 3.472vh 0;
     }
   }
@@ -272,7 +275,7 @@ export const NavLinks = styled(LinkS)`
       }
     }
 
-    @media screen and (max-height: 720px) {
+    @media screen and (max-height: 768px) {
       font-size: 2.22vh;
     }
   }

@@ -206,6 +206,75 @@ const Article_Case3 = () => {
             </IntroWrapper>
           </IntroContainer>
 
+          {/* KPI */}
+          <ContentTitleContainer>
+            <ContentTitleWrapper>
+              <div>
+                <span>
+                  Optimizing Conversion Acquisition that A User-Centric KPI
+                  Strategy for Seamless Product Navigation and Profitability
+                </span>
+              </div>
+            </ContentTitleWrapper>
+          </ContentTitleContainer>
+
+          <FullWidthContainer>
+            <ContentInfoContainer>
+              <ColumnContentLg>
+                <div>
+                  <h2>My strategy of KPI</h2>
+                  <p>
+                    The KPI strategy I’ve dedicated to revolves around
+                    optimizing conversion acquisition, ensuring every step
+                    aligns with user-centric design principles, and employing a
+                    systematic approach to refine and enhance the overall user
+                    experience.
+                  </p>
+                  <p className="caption">
+                    Revitalizing User Engagement and Conversion Acquisition: Key
+                    Responsibilities of the Project
+                  </p>
+                  <p style={{ color: "#010606" }}>Primary priorities of KPI</p>
+                  <div className="list">
+                    <p>• Organic traffic</p>
+                    <p>• Pages per session</p>
+                    <p>• Click rate</p>
+                    <p>• Cart abandonment rate</p>
+                    <p>• Bounce rate</p>
+                    <p>• Promotion page conversion rates</p>
+                    <p>• Product pages conversion rates</p>
+                    <p>• Landing Page Samples conversion rate</p>
+                  </div>
+                  <p style={{ color: "#010606" }}>
+                    Secondary priorities of KPI{" "}
+                  </p>
+                  <div className="list">
+                    <p>• Customer Acquisition Cost</p>
+                    <p>• Customer Lifetime Value</p>
+                    <p>• Marketing Return on Investment</p>
+                    <p>• Churn Rate</p>
+                    <p>• Full Product</p>
+                  </div>
+                  <p>
+                    This involves iterative design practices, incorporating
+                    pricing psychology, and utilizing A/B testing for continuous
+                    improvement. The goal is to maximize engagement, support
+                    profitability, and provide a seamless, intuitive experience
+                    for users navigating the products and making purchase
+                    decisions.
+                  </p>
+                  <p>
+                    Frequently, exercising patience is crucial to achieving
+                    meaningful contributions. The secure and experiential
+                    process not only forms the foundation for results but also
+                    brings expansive joy to my work through the satisfaction of
+                    accomplishments.
+                  </p>
+                </div>
+              </ColumnContentLg>
+            </ContentInfoContainer>
+          </FullWidthContainer>
+
           {/* Snackbar */}
           <ContentTitleContainer>
             <ContentTitleWrapper>
@@ -867,70 +936,6 @@ const Article_Case3 = () => {
               </ColumnContentSm>
             </ResearchInsight>
           </FullWidthContainer>
-
-          {/* KPI */}
-          <ContentTitleContainer>
-            <ContentTitleWrapper>
-              <div>
-                <span>
-                  Optimizing Conversion Acquisition that A User-Centric KPI
-                  Strategy for Seamless Product Navigation and Profitability
-                </span>
-              </div>
-            </ContentTitleWrapper>
-          </ContentTitleContainer>
-
-          <ContentInfoContainer>
-            <ColumnContentLg>
-              <div>
-                <h2>My strategy of KPI</h2>
-                <p>
-                  The KPI strategy I’ve dedicated to revolves around optimizing
-                  conversion acquisition, ensuring every step aligns with
-                  user-centric design principles, and employing a systematic
-                  approach to refine and enhance the overall user experience.
-                </p>
-                <p className="caption">
-                  Revitalizing User Engagement and Conversion Acquisition: Key
-                  Responsibilities of the Project
-                </p>
-                <p style={{ color: "#010606" }}>Primary priorities of KPI</p>
-                <div className="list">
-                  <p>• Organic traffic</p>
-                  <p>• Pages per session</p>
-                  <p>• Click rate</p>
-                  <p>• Cart abandonment rate</p>
-                  <p>• Bounce rate</p>
-                  <p>• Promotion page conversion rates</p>
-                  <p>• Product pages conversion rates</p>
-                  <p>• Landing Page Samples conversion rate</p>
-                </div>
-                <p style={{ color: "#010606" }}>Secondary priorities of KPI </p>
-                <div className="list">
-                  <p>• Customer Acquisition Cost</p>
-                  <p>• Customer Lifetime Value</p>
-                  <p>• Marketing Return on Investment</p>
-                  <p>• Churn Rate</p>
-                  <p>• Full Product</p>
-                </div>
-                <p>
-                  This involves iterative design practices, incorporating
-                  pricing psychology, and utilizing A/B testing for continuous
-                  improvement. The goal is to maximize engagement, support
-                  profitability, and provide a seamless, intuitive experience
-                  for users navigating the products and making purchase
-                  decisions.
-                </p>
-                <p>
-                  Frequently, exercising patience is crucial to achieving
-                  meaningful contributions. The secure and experiential process
-                  not only forms the foundation for results but also brings
-                  expansive joy to my work through the satisfaction of
-                  accomplishments.
-                </p>
-              </div>
-            </ColumnContentLg>
-          </ContentInfoContainer>
 
           <ClosingWrapper>
             <Image src={case3_closing} id="" />

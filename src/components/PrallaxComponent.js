@@ -52,7 +52,7 @@ export const ParallaxContainer = styled.div`
     .parallax-wrapper {
       height: 670px;
       border-radius: 50%;
-      border: solid 1px var(--primaly-bg);
+      border: solid 2px var(--primaly-bg);
     }
   }
 
@@ -265,19 +265,19 @@ export const ParallaxContainer = styled.div`
   @media only screen and (max-width: 470px) {
     .parallax-layer.layer1 {
       top: 14rem;
-      height: 25rem;
+      height: 27rem;
     }
     .parallax-layer.layer2 {
-      top: 48rem;
-      height: 45rem;
+      top: 49rem;
+      height: 33rem;
     }
     .parallax-layer.layer3 {
-      top: 48rem;
+      top: 50rem;
       height: 24rem;
     }
     .parallax-layer.layer4 {
-      top: 60rem;
-      height: 25rem;
+      top: 59rem;
+      height: 10rem;
     }
   }
 

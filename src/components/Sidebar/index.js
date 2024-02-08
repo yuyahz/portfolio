@@ -79,7 +79,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            <p>Riversol Hop</p>
+            <p>Riversol Empathy</p>
           </SidebarLink>
           <SidebarLink
             to="case2"
@@ -91,7 +91,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            <p>Riversol Step</p>
+            <p>Riversol Challenge</p>
           </SidebarLink>
           <SidebarLink
             to="case3"
@@ -103,7 +103,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             offset={0}
             activeClass="active"
           >
-            <p>RIversol Jump</p>
+            <p>Riversol Reinforce</p>
           </SidebarLink>
           <SidebarLink
             to="mp"

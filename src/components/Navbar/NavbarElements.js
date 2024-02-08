@@ -130,6 +130,10 @@ export const NavMenu = styled.div`
   border-radius: 50px;
   padding: 30px 10px 30px 0;
 
+  @media screen and (max-height: 768px) {
+    padding: 30px 4px;
+  }
+
   @media screen and (max-width: 960px) {
     display: none;
   }

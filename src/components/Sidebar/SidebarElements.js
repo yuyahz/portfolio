@@ -34,6 +34,10 @@ export const SidebarLink = styled(LinkS)`
     font-size: 24px;
     font-weight: 500;
     padding: 10px 16px;
+
+    @media screen and (max-width: 359px) {
+      font-size: 6.685vw;
+    }
   }
 `;
 
@@ -48,7 +52,7 @@ export const Icon = styled.div`
       width: 40px;
       height: 45px;
       position: fixed;
-      top: 36px;
+      top: 30px;
       right: 8.5vw;
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);

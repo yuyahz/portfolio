@@ -95,7 +95,7 @@ const Navbar = ({ toggle }) => {
                 offset={0}
                 activeClass="active"
               >
-                Riversol Hop
+                Riversol Empathy
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -109,7 +109,7 @@ const Navbar = ({ toggle }) => {
                 offset={0}
                 activeClass="active"
               >
-                Riversol Step
+                Riversol Challenge
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -123,7 +123,7 @@ const Navbar = ({ toggle }) => {
                 offset={0}
                 activeClass="active"
               >
-                Riversol Jump
+                Riversol Reinforce
               </NavLinks>
             </NavItem>
             <NavItem>

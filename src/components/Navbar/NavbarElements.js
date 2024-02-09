@@ -128,10 +128,10 @@ export const NavMenu = styled.div`
   align-items: center;
   background-color: var(--primaly-bg);
   border-radius: 50px;
-  padding: 30px 10px 30px 0;
+  padding: 30px 6px 30px 0;
 
   @media screen and (max-height: 768px) {
-    padding: 30px 4px;
+    padding: 20px 4px;
   }
 
   @media screen and (max-width: 960px) {
@@ -168,52 +168,52 @@ export const NavItem = styled.div`
   @media screen and (max-height: 768px) {
     max-width: 60px;
   }
-  @media screen and (max-height: 466px) {
+  /* @media screen and (max-height: 466px) {
     max-width: 30px;
-  }
+  } */
 
   .aboutSec {
-    margin: 40px 0;
+    margin: 34px 0;
 
     @media screen and (max-height: 768px) {
-      margin: 3.472vh 0;
+      margin: 3.6vh 0;
     }
   }
 
   .case1Sec {
-    margin: 40px 0;
+    margin: 34px 0;
 
     @media screen and (max-height: 768px) {
-      margin: 3.472vh 0;
+      margin: 3.6vh 0;
     }
   }
 
   .case2Sec {
-    margin: 40px 0;
+    margin: 34px 0;
 
     @media screen and (max-height: 768px) {
-      margin: 3.472vh 0;
+      margin: 3.6vh 0;
     }
   }
 
   .case3Sec {
-    margin: 40px 0;
+    margin: 34px 0;
 
     @media screen and (max-height: 768px) {
-      margin: 3.472vh 0;
+      margin: 3.6vh 0;
     }
   }
 
   .mpSec {
-    margin: 40px 0;
+    margin: 34px 0;
 
     @media screen and (max-height: 768px) {
-      margin: 3.472vh 0;
+      margin: 3.6vh 0;
     }
   }
 
   /* .vectorSec {
-    margin: 30px 0;
+    margin: 34px 0;
   }
 
   .uiSec {
@@ -225,18 +225,18 @@ export const NavItem = styled.div`
   } */
 
   .worksSec {
-    margin: 40px 0;
+    margin: 34px 0;
 
     @media screen and (max-height: 768px) {
-      margin: 3.472vh 0;
+      margin: 3.6vh 0;
     }
   }
 
   .contactSec {
-    margin: 40px 0;
+    margin: 34px 0;
 
     @media screen and (max-height: 768px) {
-      margin: 3.472vh 0;
+      margin: 3.6vh 0;
     }
   }
 `;
@@ -252,7 +252,7 @@ export const NavLinks = styled(LinkS)`
     /* text-align: center; */
     font-family: "GT";
     font-weight: 700;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     padding-bottom: 6px;
     border-bottom: double 3px var(--secondary-bg);
     transition: 0.2 cubic-bezier(0.33, 1, 0.68, 1);

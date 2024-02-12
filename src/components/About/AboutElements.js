@@ -66,18 +66,28 @@ export const AboutWrapper = styled.div`
     color: var(--primary-txt-color);
     font-weight: 700;
     font-size: 7rem;
-    -ms-user-select: none; /* IE 10+ */
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
     user-select: none;
 
     &:nth-child(3) {
       margin-bottom: 2rem;
     }
+    @media only screen and (max-width: 1160px) {
+      font-size: 9.655vw;
+    }
+    @media only screen and (max-width: 960px) {
+      font-size: 10.1vw;
+    }
+  }
+
+  h3 {
+    color: var(--primary-txt-color);
+    font-family: "GT";
+    font-weight: 500;
+    font-size: 4rem;
 
     @media only screen and (max-width: 960px) {
-      font-size: 11.11vw;
+      /* padding-left: 3.33vw; */
+      font-size: 6.667vw;
     }
   }
 
@@ -113,6 +123,14 @@ export const AboutInnerWrapper = styled.div`
     /* padding-left: 0.3rem; */
   }
 
+  .start-cap {
+    padding-top: 2rem;
+
+    @media only screen and (max-width: 960px) {
+      padding-top: 2vw;
+    }
+  }
+
   .end-cap {
     padding-bottom: 2rem;
 
@@ -133,7 +151,19 @@ export const AboutInnerWrapper = styled.div`
       padding-bottom: 2rem;
     }
     &:nth-child(7) {
-      padding-bottom: 2.5rem;
+      padding-bottom: 2rem;
+    }
+    &:nth-child(8) {
+      padding-bottom: 2rem;
+    }
+    &:nth-child(9) {
+      padding-bottom: 2rem;
+    }
+    &:nth-child(10) {
+      padding-bottom: 2rem;
+    }
+    &:nth-child(11) {
+      padding-bottom: 4rem;
     }
 
     @media only screen and (max-width: 960px) {
@@ -147,7 +177,19 @@ export const AboutInnerWrapper = styled.div`
         padding-bottom: 2vw;
       }
       &:nth-child(7) {
-        padding-bottom: 4.55vw;
+        padding-bottom: 2vw;
+      }
+      &:nth-child(8) {
+        padding-bottom: 2vw;
+      }
+      &:nth-child(9) {
+        padding-bottom: 2vw;
+      }
+      &:nth-child(10) {
+        padding-bottom: 2vw;
+      }
+      &:nth-child(11) {
+        padding-bottom: 5.55vw;
       }
     }
   }

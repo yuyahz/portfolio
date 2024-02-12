@@ -61,8 +61,11 @@ const About = () => {
               <h2>Vancouver-based</h2>
             </div>
             <div className="end-cap">
-              <h2>UI / UX </h2>
+              <h2>Multimedia</h2>
               <h2 className="fancy-font">designer</h2>
+            </div>
+            <div className="end-cap start-cap">
+              <h3>Beliefs</h3>
             </div>
             <div>
               <h4>
@@ -70,21 +73,24 @@ const About = () => {
                 through research and empathy.
               </h4>
             </div>
+            <div className="end-cap start-cap">
+              <h3>Empathy and Passion</h3>
+            </div>
             <div>
               <h4>
-                "I have consistently centered my efforts on three core
-                frameworks for crafting compelling deliverables that engage
-                customers:
-                <span className="fancy-font-body">
-                  {" "}
-                  Design and Technology,{" "}
-                </span>
+                "I have consistently focused my efforts on three core frameworks
+                for creating compelling user-centered deliverables that
+                captivate customers:
+                <span className="fancy-font-body"> Design and Technology,</span>
                 <span className="fancy-font-body">Branding and Websites, </span>
                 <span className="fancy-font-body">
                   Simplicity and Sophistication
                 </span>
                 ."
               </h4>
+            </div>
+            <div className="end-cap start-cap">
+              <h3>Expertise in UI/UX design</h3>
             </div>
             <div>
               <h4>
@@ -95,7 +101,10 @@ const About = () => {
                 strong communication and transparency across the whole team.
               </h4>
             </div>
-            <div>
+            <div className="end-cap start-cap">
+              <h3>Commitment</h3>
+            </div>
+            <div className="end-cap">
               <h4>
                 I am committed to approaching these elements with flexibility
                 for every project and client.

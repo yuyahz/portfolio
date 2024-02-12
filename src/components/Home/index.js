@@ -134,7 +134,7 @@ const Home = () => {
               animate="visible"
               transition={{ duration: 2.5 }}
             >
-              UI UX Designer
+              Multimedia Designer
             </motion.p>
             <motion.p
               variants={fadeLeft}

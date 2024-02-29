@@ -30,14 +30,14 @@ export const SliderContainer = styled.div`
 
   .slide {
     opacity: 0;
-    transform-origin: right;
+    transform-origin: 93% 50%;
     transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out;
   }
 
   .slide.active {
     opacity: 1;
-    transition-duration: 0.3s;
+    transition-duration: 0.4s;
     transform: scale(1);
   }
 `;
@@ -95,6 +95,7 @@ export const ArrowWrapper = styled.div`
     }
 
     @media only screen and (max-width: 1024px) {
+      right: 19%;
       font-size: 4.7vw;
       margin: 2.35vw 2.35vw 0 0;
     }
@@ -105,6 +106,7 @@ export const ArrowWrapper = styled.div`
     }
 
     @media only screen and (max-width: 540px) {
+      right: 0;
       font-size: 9.5vw;
       margin: 3vw 3vw 0 0;
     }

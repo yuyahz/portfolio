@@ -35,7 +35,7 @@ const Footer = () => {
             {/* <WebsiteRights>dolla © {new Data().getFullYear()}All Right reserved.</WebsiteRights> */}
             <SocialIcons>
               <SocialIconLink
-                href="https://dribbble.com/Hashirizaki"
+                href="https://dribbble.com/yuya-hashirizaki"
                 target="_blank"
                 aria-label="dribbble"
               >
@@ -56,7 +56,7 @@ const Footer = () => {
                 <FiGithub />
               </SocialIconLink>
               <SocialIconLink
-                href="https://www.linkedin.com/in/yuya-hashirizaki-9b0065191"
+                href="https://www.linkedin.com/in/yuya-hashirizaki"
                 target="_blank"
                 aria-label="linkedIn"
               >

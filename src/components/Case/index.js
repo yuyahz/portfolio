@@ -52,7 +52,6 @@ const Case = ({
         <ColumnLgImg1 imageActivate1={imageActivate1}>
           <FadeIn.Left>
             <ImageSlider1 slides={SliderData1} />
-            {/* <Image src={img} alt={alt} id="" /> */}
           </FadeIn.Left>
         </ColumnLgImg1>
 

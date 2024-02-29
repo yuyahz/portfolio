@@ -36,8 +36,8 @@ function App() {
           <Route path="/larryPage" component={larryPage} exact />
           <Route path="/vectorPage" component={vectorPage} exact />
           <Route path="/darumaPage" component={darumaPage} exact />
-          <Route path="/dailyUiPage" component={dailyUiPage} exact />
           <Route path="/portfolioPage" component={portfolioPage} exact />
+          <Route path="/dailyUiPage" component={dailyUiPage} exact />
           <Route path="*" component={NoMatch} />
           <TouchStartListener />
         </Switch>

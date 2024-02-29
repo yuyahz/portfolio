@@ -135,7 +135,7 @@ const Article_DailyUi = () => {
               <ColumnContentLg>
                 <div className="centering">
                   <ButtonExternal
-                    href="https://dribbble.com/Hashirizaki"
+                    href="https://dribbble.com/yuya-daily-ui"
                     target="_blank"
                     aria-label="dribbble"
                   >

@@ -13,6 +13,7 @@
 // };
 
 export const worksLarry = {
+  head: "Works",
   id: "larry",
   to: "larryPage",
   title: "Larry",
@@ -51,5 +52,5 @@ export const worksPortfolio = {
   id: "art",
   to: "portfolioPage",
   title: "Portfolio",
-  number: "05",
+  number: "04",
 };

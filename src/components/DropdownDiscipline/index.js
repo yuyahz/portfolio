@@ -5,8 +5,10 @@ import {
   DropdownInnerWrapper,
   DropdownComponent,
 } from "../DropdownElements";
+import { Button } from "../ButtonCaseElements";
+import { FaDribbble } from "react-icons/fa";
 
-const DropdownDiscipline = () => {
+const DropdownDiscipline = ({ to, buttonLabel }) => {
   const [open, setOpen] = useState(false);
 
   let dropdownRef = useRef();
@@ -95,6 +97,23 @@ const DropdownDiscipline = () => {
                 />
                 <DropdownItem textTitle={"Logo Design"} textTag={"Design"} />
                 <DropdownItem textTitle={"Package Design"} textTag={"Design"} />
+                <DropdownItem
+                  textTitle={
+                    "Check out how I enhanced UI at the beginning of my career !!"
+                  }
+                  textTag={"Design"}
+                />
+                <Button
+                  to={"dailyUiPage"}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={0}
+                >
+                  <FaDribbble style={{ marginRight: "6px" }} />
+                  View Study
+                </Button>
               </ul>
             </div>
           </div>

@@ -54,7 +54,7 @@ export const AboutWrapper = styled.div`
   max-width: 1140px;
   display: block;
 
-  @media only screen and (max-width: 1280px) {
+  @media only screen and (max-width: 1350px) {
     margin: 0 30px 0 130px;
   }
 

@@ -17,12 +17,30 @@ export const WorksWrapper = styled.div`
 export const WorksInnerWrapper = styled.div`
   text-align: left;
 
-  @media only screen and (max-width: 1280px) {
-    margin: 0 30px 0 130px;
+  @media only screen and (max-width: 1350px) {
+    margin: 0 30px 0 110px;
   }
+
+  /* @media only screen and (max-width: 1280px) {
+    margin: 0 30px 0 130px;
+  } */
 
   @media only screen and (max-width: 960px) {
     margin: 0 30px 0 30px;
+  }
+`;
+
+export const WorksHead = styled.div`
+  color: var(--primary-txt-color);
+  font-family: "MyCase";
+  font-weight: 500;
+  font-size: 2.5rem;
+  text-decoration: none;
+  padding-bottom: 2rem;
+
+  @media only screen and (max-width: 960px) {
+    font-size: 5.56vw;
+    padding-bottom: 3.333vw;
   }
 `;
 

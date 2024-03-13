@@ -10,7 +10,7 @@ const Case_Title = () => {
           <CaseTitleWrapper>
             <div>
               <h2>Case Study</h2>
-              <h2 className="fancy-font"> ------- Latest parctice</h2>
+              <h2 className="fancy-font"> ------- Latest practice</h2>
             </div>
           </CaseTitleWrapper>
         </FadeIn.Right>

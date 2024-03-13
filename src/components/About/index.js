@@ -82,7 +82,10 @@ const About = () => {
                 for creating compelling user-centered deliverables that
                 captivate customers:
                 <span className="fancy-font-body"> Design and Technology,</span>
-                <span className="fancy-font-body">Branding and Websites, </span>
+                <span className="fancy-font-body">
+                  {" "}
+                  Branding and Websites,{" "}
+                </span>
                 <span className="fancy-font-body">
                   Simplicity and Sophistication
                 </span>

@@ -42,7 +42,7 @@ const StickyCTA = () => {
         offset={0}
         onClick={handleGate}
       >
-        Passward
+        Password
       </button>
     </div>
   );

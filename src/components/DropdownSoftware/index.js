@@ -47,25 +47,9 @@ const DropdownSoftware = () => {
             >
               <ul>
                 <DropdownItem
-                  textTitle={"VS Code"}
-                  // textTag={""}
-                />
-                <DropdownItem
-                  textTitle={"Wordpress"}
-                  // textTag={"Design / Analysis"}
-                />
-                <DropdownItem
-                  textTitle={"Shopify"}
-                  // textTag={"Design"}
-                />
-                <DropdownItem
-                  textTitle={"Replo Landing Page Designer"}
-                  // textTag={"Analysis"}
-                />
-                <DropdownItem
                   textTitle={"Adobe CC"}
                   textTag={
-                    "Illustrator / Photoshop / XD / Bridge / InDesign/ Premiere / After Effects"
+                    "Illustrator / Photoshop / XD / Bridge / InDesign / Premiere / After Effects"
                   }
                 />
                 <DropdownItem
@@ -81,8 +65,32 @@ const DropdownSoftware = () => {
                   // textTag={""}
                 />
                 <DropdownItem
+                  textTitle={"VS Code"}
+                  // textTag={""}
+                />
+                <DropdownItem
+                  textTitle={"Wordpress"}
+                  // textTag={"Design / Analysis"}
+                />
+                <DropdownItem
+                  textTitle={"Webflow"}
+                  // textTag={"Design / Analysis"}
+                />
+                <DropdownItem
                   textTitle={"Wix"}
                   // textTag={""}
+                />
+                <DropdownItem
+                  textTitle={"Squarespace"}
+                  // textTag={"Design / Analysis"}
+                />
+                <DropdownItem
+                  textTitle={"Shopify"}
+                  // textTag={"Design"}
+                />
+                <DropdownItem
+                  textTitle={"Replo Landing Page Designer"}
+                  // textTag={"Analysis"}
                 />
                 <DropdownItem
                   textTitle={"Miro"}

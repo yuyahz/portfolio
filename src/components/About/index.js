@@ -97,11 +97,12 @@ const About = () => {
             </div>
             <div>
               <h4>
-                Iterations are crucial for shaping the customer base, and
-                ensuring products are functional, visually appealing, and
-                catered to the end user needs, and to facilitate this, I am
-                committed to attempting to supportive work culture built on
-                strong communication and transparency across the whole team.
+                Research and Iterations are essential for shaping the customer
+                base and ensuring that products are functional, visually
+                appealing, and personalized to end-user needs. To facilitate
+                this, I am committed to fostering a supportive work culture
+                built on strong communication and transparency across the entire
+                team.
               </h4>
             </div>
             <div className="end-cap start-cap">

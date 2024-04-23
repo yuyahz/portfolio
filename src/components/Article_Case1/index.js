@@ -281,7 +281,7 @@ const Article_Case1 = () => {
               </ResearchInsight>
             </FullWidthContainer>
 
-            <PersonaContainer>
+            {/* <PersonaContainer>
               <ColumnContentLg>
                 <div>
                   <h2>User Personas</h2>
@@ -605,7 +605,7 @@ const Article_Case1 = () => {
                   </ColumnContentLg>
                 </ColumnLg>
               </FullWidthFlipWrapper>
-            </FullWidthContainer>
+            </FullWidthContainer> */}
           </Hide>
           <StickyCTA />
 

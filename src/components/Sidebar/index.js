@@ -29,11 +29,13 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
 
   return (
     <SidebarContainer>
-      <Icon onClick={toggle} darkBurger={darkBurger}>
+      <Icon isOpen={isOpen} onClick={toggle} darkBurger={darkBurger}>
         <div id="burger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </Icon>
       <SidebarWrapper isOpen={isOpen} onClick={toggle} ontouchstart="">
@@ -85,7 +87,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             to="case2"
             onClick={toggle}
             smooth={true}
-            duration={800}
+            duration={700}
             spy={true}
             exact="true"
             offset={0}

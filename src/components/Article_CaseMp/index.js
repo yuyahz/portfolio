@@ -217,7 +217,7 @@ const Article_CaseMp = () => {
               </ColumnContentLg>
             </InsightsContainer>
 
-            <FullWidthContainer>
+            {/* <FullWidthContainer>
               <FullWidthWrapper>
                 <ColumnLg>
                   <Image src={caseMp_credibility} id="" />
@@ -295,7 +295,7 @@ const Article_CaseMp = () => {
                   </ColumnContentLg>
                 </ColumnLg>
               </FullWidthWrapper>
-            </FullWidthContainer>
+            </FullWidthContainer> */}
           </Hide>
           <StickyCTA />
 

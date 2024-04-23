@@ -317,7 +317,7 @@ const Article_Case2 = () => {
               </FullWidthWrapper>
             </FullWidthContainer>
 
-            <FullWidthContainer>
+            {/* <FullWidthContainer>
               <FullWidthWrapper>
                 <ColumnLg>
                   <Image src={case2_filter_iterative} id="" />
@@ -467,10 +467,10 @@ const Article_Case2 = () => {
                   </div>
                 </ColumnContentSm>
               </ResearchInsight>
-            </FullWidthContainer>
+            </FullWidthContainer> */}
 
             {/* Auto-Replenishment */}
-            <ContentTitleContainer>
+            {/* <ContentTitleContainer>
               <ContentTitleWrapper>
                 <div>
                   <span>Creating an Auto-Replenishment Functionality</span>
@@ -603,10 +603,10 @@ const Article_Case2 = () => {
                   </div>
                 </ColumnContentSm>
               </ResearchInsight>
-            </FullWidthContainer>
+            </FullWidthContainer> */}
 
             {/* About */}
-            <ContentTitleContainer>
+            {/* <ContentTitleContainer>
               <ContentTitleWrapper>
                 <div>
                   <span>Revamping the About Page to Emphasize Value</span>
@@ -854,7 +854,7 @@ const Article_Case2 = () => {
                   </div>
                 </ColumnContentSm>
               </ResearchInsight>
-            </FullWidthContainer>
+            </FullWidthContainer> */}
           </Hide>
           <StickyCTA />
 

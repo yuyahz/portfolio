@@ -281,7 +281,7 @@ const Article_Case3 = () => {
             </FullWidthContainer>
 
             {/* Snackbar */}
-            <ContentTitleContainer>
+            {/* <ContentTitleContainer>
               <ContentTitleWrapper>
                 <div>
                   <span>
@@ -443,10 +443,10 @@ const Article_Case3 = () => {
                   </div>
                 </ColumnContentSm>
               </ResearchInsight>
-            </FullWidthContainer>
+            </FullWidthContainer> */}
 
             {/* Cross-sell */}
-            <ContentTitleContainer>
+            {/* <ContentTitleContainer>
               <ContentTitleWrapper>
                 <div>
                   <span>
@@ -655,10 +655,10 @@ const Article_Case3 = () => {
                   </div>
                 </ColumnContentSm>
               </ResearchInsight>
-            </FullWidthContainer>
+            </FullWidthContainer> */}
 
             {/* PDP */}
-            <ContentTitleContainer>
+            {/* <ContentTitleContainer>
               <ContentTitleWrapper>
                 <div>
                   <span>
@@ -952,7 +952,7 @@ const Article_Case3 = () => {
                   </div>
                 </ColumnContentSm>
               </ResearchInsight>
-            </FullWidthContainer>
+            </FullWidthContainer> */}
           </Hide>
           <StickyCTA />
 

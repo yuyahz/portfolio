@@ -53,16 +53,52 @@ const About = () => {
         {/* <Parallax y={[-5, 5]}> */}
         <FadeIn.Right>
           <AboutInnerWrapper>
-            <div>
+            {/* <div>
               <h2 className="fancy-font">Yuya</h2>
               <h2>Hashirizaki</h2>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <h2>Vancouver-based</h2>
-            </div>
-            <div className="end-cap">
-              <h2>Multimedia</h2>
+            </div> */}
+            {/* <div>
+              <h2>UI&nbsp;/&nbsp;UX</h2>
               <h2 className="fancy-font">designer</h2>
+            </div> */}
+            {/* <div className="end-cap">
+              <h2>
+                Vancouver-based
+                <i className="fancy-title">UI&nbsp;/&nbsp;UX designer</i>
+                Front-end &<i className="fancy-title">UI Developer</i>
+                who excels in UX design and
+                <i className="fancy-title">creative</i>problem-solving
+              </h2>
+            </div> */}
+            {/* <div>
+              <h2 className="fancy-font">Yuya</h2>
+              <h2>Hashirizaki</h2>
+            </div> */}
+            <span>
+              <h2>Vancouver-based</h2>
+            </span>
+            <span>
+              <h2 className="fancy-font">UI / UX designer</h2>
+            </span>
+            <span>
+              <h2>Front-end and</h2>
+            </span>
+            <span>
+              <h2>UI Developer</h2>
+            </span>
+            <span className="end-cap">
+              <h2 className="fancy-font">
+                who excels in UX design and creative problem-solving
+              </h2>
+            </span>
+            <div className="end-cap start-cap">
+              <h4>
+                With nearly a decade in the industry, I've designed complex
+                products spanning from advertising to e-commerce.
+              </h4>
             </div>
             <div className="end-cap start-cap">
               <h3>Beliefs</h3>

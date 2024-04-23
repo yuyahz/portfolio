@@ -10,17 +10,19 @@ export const HomeIconWrapper = styled.div`
 export const HomeIcon = styled(Link)`
   text-decoration: none;
   font-family: "GT";
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   display: block;
-  background-color: var(--secondary-bg);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--primary-txt-color);
+  background-color: var(--primaly-bg);
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 10px 25px;
+  border-radius: 70px;
   position: fixed;
-  top: 1.5rem;
+  top: 2.5rem;
   right: 3rem;
   transition: all 1s linear 0s;
   cursor: pointer;
@@ -49,8 +51,7 @@ export const HomeIcon = styled(Link)`
   }
 
   @media screen and (max-width: 960px) {
-    font-size: 5.5vw;
-    padding: 0.5rem;
+    font-size: 24px;
     position: fixed;
     top: 1.5rem;
     right: 2rem;
@@ -58,7 +59,7 @@ export const HomeIcon = styled(Link)`
 
   @media screen and (max-width: 540px) {
     font-size: 17px;
-    top: 1rem;
+    /* top: 1rem; */
     right: 1.5rem;
   }
 `;

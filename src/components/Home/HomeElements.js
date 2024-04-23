@@ -33,12 +33,12 @@ export const HomeWrapper = styled.div`
     font-weight: 700;
     font-size: 9.9vw;
     margin-bottom: 6px;
-    pointer-events: none;
-    -ms-user-select: none; /* IE 10+ */
+    /* pointer-events: none;
+    -ms-user-select: none; 
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
-    user-select: none;
+    user-select: none; */
 
     @media only screen and (max-width: 1919px) {
       font-size: 150px;
@@ -63,12 +63,12 @@ export const HomeWrapper = styled.div`
     font-size: 6.7vw;
     margin-bottom: 34px;
     line-height: 0.9;
-    pointer-events: none;
-    -ms-user-select: none; /* IE 10+ */
+    /* pointer-events: none;
+    -ms-user-select: none;
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
-    user-select: none;
+    user-select: none; */
 
     @media only screen and (max-width: 1919px) {
       font-size: 120px;
@@ -100,17 +100,17 @@ export const HomeWrapper = styled.div`
     font-weight: 300;
     font-size: 1.1vw;
     margin: 0.5rem 0 0 0.8rem;
-    letter-spacing: 0.3rem;
-    pointer-events: none;
+    letter-spacing: 0.1rem;
+    /* pointer-events: none;
     user-select: none;
-    -ms-user-select: none; /* IE 10+ */
+    -ms-user-select: none;
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
-    user-select: none;
+    user-select: none; */
 
     @media only screen and (max-width: 1919px) {
-      font-size: 24px;
+      font-size: 19px;
     }
 
     @media only screen and (max-width: 960px) {

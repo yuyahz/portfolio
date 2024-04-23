@@ -26,10 +26,34 @@ export const Nav = styled.nav`
 
 export const NavLogoSm = styled(LinkR)`
   position: fixed;
-  margin: 36px 0 0 6.25vw;
-  width: 70px;
+  /* margin: 36px 0 0 6.25vw; */
+  // for txt logo //
+  margin: 22px 0 0 2.5vw;
+  background-color: var(--primaly-bg);
+  border-radius: 70px;
+  // for v1 image logo //
+  /* width: 70px; */
   height: auto;
   z-index: 22147483638;
+  text-decoration: none;
+
+  h4 {
+    // for txt logo //
+    padding: 10px 25px;
+    color: var(--primary-txt-color);
+    font-family: "GT";
+    font-weight: 500;
+    font-size: 2rem;
+
+    @media only screen and (max-width: 960px) {
+      font-size: 5vw;
+    }
+  }
+
+  h4:hover {
+    animation: tilt-move-shaking 0.3s;
+    animation-iteration-count: infinite;
+  }
 
   @media screen and (min-width: 960px) {
     display: none;
@@ -40,7 +64,7 @@ export const NavLogoSm = styled(LinkR)`
   }
 
   @media screen and (max-width: 430px) {
-    margin: 36px 0 0 8.5vw;
+    /* margin: 36px 0 0 8.5vw; */
   }
 `;
 
@@ -48,14 +72,38 @@ export const NavLogo = styled(LinkR)`
   position: fixed;
   top: 0;
   left: 10;
-  margin: 20px 0 0 200px;
-  width: 70px;
+  margin: 45px 0 0 360px;
+  // for txt logo //
+  padding: 10px 25px;
+  background-color: var(--primaly-bg);
+  border-radius: 70px;
+  // for v1 image logo //
+  /* margin: 20px 0 0 200px; */
+  /* width: 70px; */
   height: auto;
+  text-decoration: none;
 
-  img:hover {
+  h4 {
+    color: var(--primary-txt-color);
+    font-family: "GT";
+    font-weight: 500;
+    font-size: 2rem;
+
+    @media only screen and (max-width: 960px) {
+      font-size: 5vw;
+    }
+  }
+
+  h4:hover {
     animation: tilt-move-shaking 0.3s;
     animation-iteration-count: infinite;
   }
+
+  // for v1 image logo //
+  /* img:hover {
+    animation: tilt-move-shaking 0.3s;
+    animation-iteration-count: infinite;
+  } */
 
   @keyframes tilt-move-shaking {
     0% {
@@ -245,7 +293,8 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   transform: rotate(0.75turn);
   text-decoration: none;
-  padding: 0.1rem 0.1rem;
+  // for txt logo //
+  /* padding: 0.1rem 0.1rem; */
   cursor: pointer;
 
   &.active {

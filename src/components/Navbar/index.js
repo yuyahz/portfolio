@@ -42,12 +42,18 @@ const Navbar = ({ toggle }) => {
     <>
       {/* <IconContext.Provider value={{ color: "var(--secondary-bg);" }}> */}
       <NavLogoSm to="/" onClick={toggleHome} isClicked={false}>
-        <Image className="logo" src={logo} id="" />
+        {/* <Image className="logo" src={logo} id="" /> */}
+        <h4 className="logo" src={logo} id="">
+          Yuya Hashirizaki
+        </h4>
       </NavLogoSm>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome} isClicked={false}>
-            <Image className="logo" src={logo} id="" />
+            {/* <Image className="logo" src={logo} id="" /> */}
+            <h4 className="logo" src={logo} id="">
+              Yuya Hashirizaki
+            </h4>
           </NavLogo>
           {/* <MobileIcon onClick={toggle}>
               <TiEquals size={40} />

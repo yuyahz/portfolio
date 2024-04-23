@@ -62,11 +62,33 @@ export const AboutWrapper = styled.div`
     margin: 0 30px 0 30px;
   }
 
+  .fancy-title {
+    color: var(--primary-txt-color);
+    font-family: "GT";
+    font-weight: 500;
+    font-size: 6rem;
+    &:nth-child(1) {
+      padding-right: 2vw;
+      padding-left: 1vw;
+    }
+    &:nth-child(2) {
+      padding: 0 2vw;
+    }
+    &:nth-child(3) {
+      padding: 0 2vw;
+    }
+    @media only screen and (max-width: 1160px) {
+      font-size: 9.655vw;
+    }
+    @media only screen and (max-width: 960px) {
+      font-size: 10.1vw;
+    }
+  }
+
   h2 {
     color: var(--primary-txt-color);
     font-weight: 700;
-    font-size: 7rem;
-    user-select: none;
+    font-size: 6rem;
 
     &:nth-child(3) {
       margin-bottom: 2rem;
@@ -163,6 +185,12 @@ export const AboutInnerWrapper = styled.div`
       padding-bottom: 2rem;
     }
     &:nth-child(11) {
+      padding-bottom: 2rem;
+    }
+    &:nth-child(12) {
+      padding-bottom: 2rem;
+    }
+    &:nth-child(14) {
       padding-bottom: 4rem;
     }
 
@@ -189,7 +217,13 @@ export const AboutInnerWrapper = styled.div`
         padding-bottom: 2vw;
       }
       &:nth-child(11) {
-        padding-bottom: 5.55vw;
+        padding-bottom: 2vw;
+      }
+      &:nth-child(12) {
+        padding-bottom: 2vw;
+      }
+      &:nth-child(14) {
+        padding-bottom: 5.5vw;
       }
     }
   }

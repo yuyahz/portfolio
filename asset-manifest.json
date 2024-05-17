@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b6221d4e.css",
-    "main.js": "/portfolio/static/js/main.ad63fc4a.js",
+    "main.js": "/portfolio/static/js/main.05a045ea.js",
     "static/media/case2_closing.png": "/portfolio/static/media/case2_closing.888626fd3d1e90efbea2.png",
     "static/media/caseMp_closing.png": "/portfolio/static/media/caseMp_closing.6a04b2dac72e7bba15ef.png",
     "static/media/case3_closing.png": "/portfolio/static/media/case3_closing.f63e97eeb9dfb4ac11e6.png",
@@ -21,7 +21,7 @@
     "static/media/Cathy.png": "/portfolio/static/media/Cathy.214a54490147d44fa818.png",
     "static/media/case2_about_credibility.png": "/portfolio/static/media/case2_about_credibility.ac9d0a4709ef3928988d.png",
     "static/media/Allison.png": "/portfolio/static/media/Allison.1fbd9514418faaf10868.png",
-    "static/media/case_3_v3.png": "/portfolio/static/media/case_3_v3.1fd03cd8061fb9752204.png",
+    "static/media/case_3_v3.png": "/portfolio/static/media/case_3_v3.f4713fa04a0acc5bed0a.png",
     "static/media/case2_about_customerbase.png": "/portfolio/static/media/case2_about_customerbase.9c9051373e458af4382d.png",
     "static/media/case_2_v2.png": "/portfolio/static/media/case_2_v2.3b541b01bfda2744a7e4.png",
     "static/media/case2_about_result.png": "/portfolio/static/media/case2_about_result.b7d9b4b20ed95dc3c026.png",
@@ -102,10 +102,10 @@
     "static/media/logo.svg": "/portfolio/static/media/logo.215608270b0f1bb0037ac9a136635d0c.svg",
     "index.html": "/portfolio/index.html",
     "main.b6221d4e.css.map": "/portfolio/static/css/main.b6221d4e.css.map",
-    "main.ad63fc4a.js.map": "/portfolio/static/js/main.ad63fc4a.js.map"
+    "main.05a045ea.js.map": "/portfolio/static/js/main.05a045ea.js.map"
   },
   "entrypoints": [
     "static/css/main.b6221d4e.css",
-    "static/js/main.ad63fc4a.js"
+    "static/js/main.05a045ea.js"
   ]
 }

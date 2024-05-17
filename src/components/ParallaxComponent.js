@@ -307,7 +307,7 @@ export const ParallaxContainer = styled.div`
 
 const ParallaxComponent = () => {
   return (
-    <ParallaxContainer>
+    <ParallaxContainer id="parallax">
       <div className="parallax-wrapper">
         <div className="parallax-layer layer1">
           <p className="hide">Let's Make</p>

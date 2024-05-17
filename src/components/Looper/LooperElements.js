@@ -24,6 +24,14 @@ export const LooperContainer = styled.div`
       height: 4.13vw;
       margin-bottom: 2.783vw;
     }
+
+    @media screen and (max-width: 960px) {
+      height: 40px;
+    }
+
+    @media screen and (max-width: 530px) {
+      height: 7.547vw;
+    }
   }
 
   .looper-t::before,
@@ -42,6 +50,16 @@ export const LooperContainer = styled.div`
 
     @media only screen and (max-width: 2300px) {
       font-size: 2.783vw;
+    }
+
+    @media screen and (max-width: 960px) {
+      content: "☺︎ Designing without research is like ☹︎";
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 530px) {
+      content: "☺︎ Designing without research is like ☹︎";
+      font-size: 4.528vw;
     }
   }
 
@@ -73,11 +91,19 @@ export const LooperContainer = styled.div`
     @media only screen and (max-width: 2300px) {
       height: 4.13vw;
     }
+
+    @media screen and (max-width: 960px) {
+      height: 40px;
+    }
+
+    @media screen and (max-width: 530px) {
+      height: 7.547vw;
+    }
   }
 
   .looper-b::before,
   .looper-b::after {
-    content: "☹︎ Once you reach your destination, settle in and kick off the iterative process ☺︎ ";
+    content: "☹︎ Once you reach your destination, settle in and kick off the iterative process ☺︎";
     width: 100%;
     height: auto;
     position: absolute;
@@ -90,6 +116,16 @@ export const LooperContainer = styled.div`
 
     @media only screen and (max-width: 2300px) {
       font-size: 2.783vw;
+    }
+
+    @media screen and (max-width: 960px) {
+      content: "☺︎ hopping into a taxi and just saying, 'Drive' ☹︎";
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 530px) {
+      content: "☺︎ hopping into a taxi and just saying, 'Drive' ☹︎";
+      font-size: 4.528vw;
     }
   }
 

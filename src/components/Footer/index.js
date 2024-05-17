@@ -22,7 +22,7 @@ const Footer = () => {
   };
 
   return (
-    <FooterContainer>
+    <FooterContainer id="footer">
       <FooterWrapper>
         <FooterLinksWrapper>
           <FootertText>Thank you.</FootertText>

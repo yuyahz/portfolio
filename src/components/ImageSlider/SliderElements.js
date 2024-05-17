@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const SliderContainer = styled.div`
   .slider {
     display: flex;
@@ -16,6 +17,7 @@ export const SliderContainer = styled.div`
 
   .image {
     width: 100%;
+    max-height: 700px;
     border: solid 2px var(--secondary-bg);
     border-radius: 15px;
 
@@ -37,7 +39,6 @@ export const SliderContainer = styled.div`
 
   .slide.active {
     opacity: 1;
-    transition-duration: 0.4s;
     transform: scale(1);
   }
 `;
@@ -65,17 +66,6 @@ export const ArrowWrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  /* .right-arrow {
-    position: absolute;
-    bottom: -10%;
-    right: 45%;
-    font-size: 1.5rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    color: var(--primary-txt-color);;
-  } */
-
   .left-arrow {
     position: absolute;
     top: 0;
@@ -88,21 +78,27 @@ export const ArrowWrapper = styled.div`
     margin: 24px 24px 0 0;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-    //// responsible button size ////
     @media only screen and (max-width: 1570px) {
       font-size: 3vw;
       margin: 1.6vw 1.6vw 0 0;
     }
 
+    @media only screen and (min-width: 961px) {
+      &:hover {
+        animation: tilt-n-move-shaking 0.3s;
+        animation-iteration-count: 5;
+      }
+    }
+
     @media only screen and (max-width: 1024px) {
       right: 19%;
       font-size: 4.7vw;
-      margin: 2.35vw 2.35vw 0 0;
+      margin: 2.35vw 4.5vw 0 0;
     }
 
     @media only screen and (max-width: 960px) {
       font-size: 5vw;
-      margin: 2.5vw 2.5vw 0 0;
+      margin: 2.5vw 4.3vw 0 0;
     }
 
     @media only screen and (max-width: 540px) {
@@ -110,11 +106,6 @@ export const ArrowWrapper = styled.div`
       font-size: 9.5vw;
       margin: 3vw 3vw 0 0;
     }
-  }
-
-  svg:hover {
-    animation: tilt-n-move-shaking 0.3s;
-    animation-iteration-count: 10;
   }
 
   @keyframes tilt-n-move-shaking {

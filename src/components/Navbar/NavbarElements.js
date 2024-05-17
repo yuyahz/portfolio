@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 // import { motion } from "framer-motion";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
@@ -24,28 +24,52 @@ export const Nav = styled.nav`
   }
 `;
 
+const tapAnimation = keyframes`
+  0% { transform: scale(1); }
+  50% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+`;
+
+const tapTiltMoveShaking = keyframes`
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+`;
+
 export const NavLogoSm = styled(LinkR)`
   position: fixed;
   /* margin: 36px 0 0 6.25vw; */
   // for txt logo //
   margin: 22px 0 0 2.5vw;
-  background-color: var(--primaly-bg);
-  border-radius: 70px;
+  /* background-color: var(--primaly-bg);
+  border-radius: 70px; */
   // for v1 image logo //
   /* width: 70px; */
   height: auto;
   z-index: 22147483638;
   text-decoration: none;
+  animation: ${tapTiltMoveShaking} 0.3s 10;
 
-  &:hover {
-    animation: tilt-move-shaking 0.3s;
-    animation-iteration-count: 10;
+  &:active {
+    animation: ${tapAnimation} 0.3s 3 forwards;
   }
 
   h4 {
     // for txt logo //
     padding: 10px 12px;
-    color: var(--primary-txt-color);
+    /* color: var(--primary-txt-color); */
     font-family: "GT";
     font-weight: 500;
     font-size: 2rem;
@@ -53,11 +77,6 @@ export const NavLogoSm = styled(LinkR)`
     @media only screen and (max-width: 960px) {
       font-size: 5vw;
     }
-  }
-
-  h4:hover {
-    animation: tilt-move-shaking 0.3s;
-    animation-iteration-count: 10;
   }
 
   @media screen and (min-width: 960px) {
@@ -80,8 +99,8 @@ export const NavLogo = styled(LinkR)`
   margin: 22px 0 0 350px;
   // for txt logo //
   padding: 10px 25px;
-  background-color: var(--primaly-bg);
-  border-radius: 70px;
+  /* background-color: var(--primaly-bg);
+  border-radius: 70px; */
   // for v1 image logo //
   /* margin: 20px 0 0 200px; */
   /* width: 70px; */
@@ -94,7 +113,7 @@ export const NavLogo = styled(LinkR)`
   }
 
   h4 {
-    color: var(--primary-txt-color);
+    /* color: var(--primary-txt-color); */
     font-family: "GT";
     font-weight: 500;
     font-size: 2rem;
@@ -150,7 +169,7 @@ export const NavbarContainer = styled.div`
 //   display: none;
 
 //   @media screen and (max-width: 959.99px) {
-//     color: var(--primary-txt-color);;
+//     color: var(--primary-txt-color);
 //     display: block;
 //     position: absolute;
 //     top: 40px;
@@ -197,7 +216,7 @@ export const NavItem = styled.div`
 
   a:hover {
     animation: nav-move-shaking 0.3s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 5;
   }
 
   @keyframes nav-move-shaking {

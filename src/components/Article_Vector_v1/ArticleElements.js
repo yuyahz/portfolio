@@ -47,7 +47,7 @@ export const Icon = styled(Link)`
 
   &:hover {
     animation: tilt-n-move-shaking 0.3s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 10;
   }
 
   @keyframes tilt-n-move-shaking {

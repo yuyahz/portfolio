@@ -37,9 +37,14 @@ export const NavLogoSm = styled(LinkR)`
   z-index: 22147483638;
   text-decoration: none;
 
+  &:hover {
+    animation: tilt-move-shaking 0.3s;
+    animation-iteration-count: 10;
+  }
+
   h4 {
     // for txt logo //
-    padding: 10px 25px;
+    padding: 10px 12px;
     color: var(--primary-txt-color);
     font-family: "GT";
     font-weight: 500;
@@ -52,7 +57,7 @@ export const NavLogoSm = styled(LinkR)`
 
   h4:hover {
     animation: tilt-move-shaking 0.3s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 10;
   }
 
   @media screen and (min-width: 960px) {
@@ -72,7 +77,7 @@ export const NavLogo = styled(LinkR)`
   position: fixed;
   top: 0;
   left: 10;
-  margin: 45px 0 0 360px;
+  margin: 22px 0 0 350px;
   // for txt logo //
   padding: 10px 25px;
   background-color: var(--primaly-bg);
@@ -83,6 +88,11 @@ export const NavLogo = styled(LinkR)`
   height: auto;
   text-decoration: none;
 
+  &:hover {
+    animation: tilt-move-shaking 0.3s;
+    animation-iteration-count: 10;
+  }
+
   h4 {
     color: var(--primary-txt-color);
     font-family: "GT";
@@ -92,11 +102,6 @@ export const NavLogo = styled(LinkR)`
     @media only screen and (max-width: 960px) {
       font-size: 5vw;
     }
-  }
-
-  h4:hover {
-    animation: tilt-move-shaking 0.3s;
-    animation-iteration-count: infinite;
   }
 
   // for v1 image logo //

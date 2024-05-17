@@ -32,7 +32,7 @@ import {
 import Case from "../components/Case";
 import Works from "../components/Works";
 import Contact from "../components/Contact";
-import ParallaxComponent from "../components/PrallaxComponent";
+import ParallaxComponent from "../components/ParallaxComponent";
 import Footer from "../components/Footer";
 
 const Index = () => {

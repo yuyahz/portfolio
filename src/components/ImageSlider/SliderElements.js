@@ -16,7 +16,7 @@ export const SliderContainer = styled.div`
   }
 
   .image {
-    width: 100%;
+    width: auto;
     max-height: 700px;
     border: solid 2px var(--secondary-bg);
     border-radius: 15px;

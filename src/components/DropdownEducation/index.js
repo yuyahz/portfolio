@@ -51,12 +51,12 @@ const Dropdown = () => {
                     "Cornerstone International Community College of Canada"
                   }
                   textContent={"Web & Mobile App Development Diploma"}
-                  textDate={"Shcool of 2021"}
+                  textDate={"School of 2021"}
                 />
                 <DropdownItem
                   textTitle={"Osaka University of Arts"}
                   textContent={"Bachelor of Fine Arts"}
-                  textDate={"Shcool of 2009"}
+                  textDate={"School of 2009"}
                 />
               </ul>
             </div>

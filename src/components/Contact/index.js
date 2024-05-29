@@ -43,15 +43,6 @@ const Contact = () => {
             </a>
           </div>
         </ContactContentsSm>
-        {/* <Parallax x={[5, -5]}>
-          <p>Let's make</p>
-        </Parallax>
-        <Parallax x={[-5, 10]}>
-          <p>Something</p>
-        </Parallax>
-        <Parallax x={[10, -10]}>
-          <p>Amazing</p>
-        </Parallax> */}
       </ContactWrapper>
     </ContactContainer>
   );

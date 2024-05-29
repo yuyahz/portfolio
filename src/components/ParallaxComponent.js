@@ -1,5 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
+import { FaDribbble, FaBehance, FaLinkedinIn } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
 
 export const ParallaxContainer = styled.div`
   margin: 0;
@@ -46,13 +48,13 @@ export const ParallaxContainer = styled.div`
     height: 100vh;
   }
 
-  /// font size ///
   p {
     font-size: 460px;
     font-weight: 100;
     color: var(--fourth-txt-color);
     text-align: center;
   }
+
   @media only screen and (max-width: 2560px) {
     p {
       font-size: 17.969vw;
@@ -76,114 +78,151 @@ export const ParallaxContainer = styled.div`
       font-size: 19vw;
     }
   }
+  @media only screen and (max-width: 369px) {
+    p {
+      padding: 1%;
+      font-size: 17.5vw;
+    }
+  }
 
-  /// layer positions ///
+  .parallax-layer p {
+    width: 100%;
+    background: rgb(254, 0, 0);
+    background: -moz-linear-gradient(
+      180deg,
+      rgba(254, 0, 0, 1) 97%,
+      rgba(250, 248, 246, 0) 100%
+    );
+    background: -webkit-linear-gradient(
+      180deg,
+      rgba(254, 0, 0, 1) 97%,
+      rgba(250, 248, 246, 0) 100%
+    );
+    background: linear-gradient(
+      180deg,
+      rgba(254, 0, 0, 1) 97%,
+      rgba(250, 248, 246, 0) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe0000",endColorstr="#faf8f6",GradientType=1);
+  }
+
   .parallax-layer {
     width: 100%;
     max-height: 2160px;
   }
   .parallax-layer.layer1 {
-    z-index: 20;
-    background-color: var(--secondary-bg);
-    border-radius: 0 0 50% 50%;
+    z-index: 10;
   }
   .parallax-layer.layer2 {
-    z-index: 30;
-    padding-top: 60%;
+    z-index: 20;
+    transition: all 0.5s ease-out;
   }
   .parallax-layer.layer3 {
-    z-index: 10;
-    height: 350px;
-    margin-top: 125%;
-    border-radius: 50%;
+    z-index: 30;
+    transition: all 1.5s ease-out;
+  }
+  .parallax-layer.layer4 {
+    position: fixed;
+    top: 0;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-height: 200px;
+    max-width: 1700px;
+    border-radius: 50% 50% 0 0;
     background: rgb(250, 248, 246);
     background: linear-gradient(
       180deg,
       rgba(250, 248, 246, 1) 0%,
       rgba(251, 167, 166, 1) 10%,
       rgba(252, 108, 107, 1) 20%,
-      rgba(254, 0, 0, 1) 30%
+      rgba(254, 0, 0, 0) 30%
     );
+    transition: all 2s ease-out;
+
+    @media only screen and (max-width: 960px) {
+      bottom: 7.5%;
+    }
+    @media only screen and (max-width: 540px) {
+      max-height: 130px;
+    }
   }
-  .parallax-layer.layer4 {
+  .parallax-layer.layer5 {
     z-index: 10;
-    padding-top: 100%;
+    transition: all 6s ease-out;
+  }
+  .parallax-layer.layer6 {
+    z-index: 50;
+    transition: all 6s ease-out;
   }
 
-  @media only screen and (max-width: 1280px) {
-    .parallax-layer.layer3 {
-      height: 400px;
-      margin-top: 110%;
-    }
-  }
+  h3 {
+    color: var(--fourth-txt-color);
+    font-family: "GT";
+    font-size: 48px;
+    font-weight: 500;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 160px;
 
-  @media only screen and (max-width: 960px) {
-    .parallax-layer.layer3 {
-      margin-top: 125%;
-      border-radius: 50%;
-    }
-  }
-
-  @media only screen and (max-width: 834px) {
-    .parallax-layer.layer3 {
-      margin-top: 140%;
-    }
-  }
-
-  @media only screen and (max-width: 540px) {
-    .parallax-layer.layer3 {
-      margin-top: 170%;
-    }
-  }
-  @media only screen and (max-width: 470px) {
-    .parallax-wrapper .layer3 {
-      margin-top: 180%;
+    @media screen and (max-width: 520px) {
+      font-size: 32px;
     }
   }
 `;
 
-/* @media only screen and (max-width: 540px) {
-    .parallax-wrapper {
-      max-height: 650px;
-      height: 70vh;
-    }
-  } */
+export const SocialIcons = styled.div`
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 76px;
+`;
 
-/* @media only screen and (max-width: 1920px) {
-    .parallax-wrapper {
-      height: 1080px;
-    }
+export const SocialIconLink = styled.a`
+  color: var(--primaly-bg);
+  font-size: 24px;
+  transition: 0.3s ease;
+
+  &:hover {
+    padding: 0 0 16px 0;
   }
-  @media only screen and (max-width: 960px) {
-    .parallax-wrapper {
-      height: 1024px;
-      border-radius: 20px 20px 60px 60px;
-    }
-  }
-  @media only screen and (max-width: 470px) {
-    .parallax-wrapper {
-      height: 670px;
-    }
-  } */
+`;
 
 const ParallaxComponent = () => {
   const parallaxRef = useRef(null);
+  const [active, setActive] = useState(false);
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
     const parallaxElement = parallaxRef.current;
+    const position = 100; // Example start position
+    const positionBottom = 100; // Example end position
+
     if (parallaxElement) {
       const top = parallaxElement.offsetTop;
       if (scrollY >= top) {
         console.log("Parallax element reached the top of the viewport");
-        // Add your actions here
       }
       const layers = parallaxElement.querySelectorAll(".parallax-layer");
       layers.forEach((layer, index) => {
-        const depth = (index + 1) * 0.5; // Adjust depth calculation
+        const depth = (index + 1) * 0.5;
         const depthAdjusted = (scrollY - top) * depth;
         layer.style.transform = `translateY(${depthAdjusted}px)`;
       });
+
+      if (scrollY > position && scrollY < positionBottom) {
+        setActive(true);
+      } else {
+        setActive(false);
+      }
     }
   };
 
@@ -197,16 +236,50 @@ const ParallaxComponent = () => {
   return (
     <ParallaxContainer id="parallax" ref={parallaxRef}>
       <div className="parallax-wrapper">
-        <div className="parallax-layer layer1">
-          <p>Let's Make</p>
+        <div className={`parallax-layer layer1 ${active ? "act" : ""}`}>
+          <p className="first-copy">Let's Make</p>
         </div>
         <div className="parallax-layer layer2">
           <p>Something</p>
         </div>
-
-        <div className="parallax-layer layer3"></div>
-        <div className="parallax-layer layer4">
+        <div className="parallax-layer layer3">
+          <div className="parallax-layer layer4"></div>
           <p>Amazing</p>
+        </div>
+        <div className="parallax-layer layer5">
+          <h3>Thank you.</h3>
+        </div>
+        <div className="parallax-layer layer6">
+          <SocialIcons>
+            <SocialIconLink
+              href="https://dribbble.com/yuya-hashirizaki"
+              target="_blank"
+              aria-label="dribbble"
+            >
+              <FaDribbble />
+            </SocialIconLink>
+            <SocialIconLink
+              href="https://www.behance.net/yuyahashirizaki"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <FaBehance />
+            </SocialIconLink>
+            <SocialIconLink
+              href="https://github.com/Yuya61"
+              target="_blank"
+              aria-label="github"
+            >
+              <FiGithub />
+            </SocialIconLink>
+            <SocialIconLink
+              href="https://www.linkedin.com/in/yuya-hashirizaki"
+              target="_blank"
+              aria-label="linkedIn"
+            >
+              <FaLinkedinIn />
+            </SocialIconLink>
+          </SocialIcons>
         </div>
       </div>
     </ParallaxContainer>
@@ -214,6 +287,224 @@ const ParallaxComponent = () => {
 };
 
 export default ParallaxComponent;
+
+// v2
+// import React, { useEffect, useRef } from "react";
+// import styled from "styled-components";
+
+// export const ParallaxContainer = styled.div`
+//   margin: 0;
+//   max-height: 4320px;
+//   background-color: var(--secondary-bg);
+//   padding: 16px 0 0 100px;
+//   overscroll-behavior: auto !important;
+
+//   @media only screen and (max-width: 960px) {
+//     padding-left: 15px;
+//   }
+//   @media only screen and (max-width: 470px) {
+//     padding-right: 15px;
+//   }
+
+//   .parallax-wrapper {
+//     max-width: 2560px;
+//     margin: 0 auto;
+//     height: 100vh;
+//     border-radius: 10%;
+//     overflow-x: hidden;
+//     perspective: 1px;
+//     scroll-behavior: smooth;
+//     overscroll-behavior: auto !important;
+//     -webkit-overflow-scrolling: touch;
+//     -ms-overflow-style: none;
+//     scrollbar-width: none;
+//     ::-webkit-scrollbar {
+//       display: none;
+//     }
+//   }
+//   @media only screen and (max-width: 540px) {
+//     .parallax-wrapper {
+//       border-radius: 5%;
+//     }
+//   }
+
+//   .parallax-layer {
+//     position: absolute;
+//     top: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//   }
+
+//   /// font size ///
+//   p {
+//     font-size: 460px;
+//     font-weight: 100;
+//     color: var(--fourth-txt-color);
+//     text-align: center;
+//   }
+//   @media only screen and (max-width: 2560px) {
+//     p {
+//       font-size: 17.969vw;
+//     }
+//   }
+//   @media only screen and (max-width: 1960px) {
+//     .layer2 {
+//       transform: translateZ(-1px);
+//     }
+//     p {
+//       font-size: 18vw;
+//     }
+//   }
+//   @media only screen and (max-width: 960px) {
+//     p {
+//       font-size: 20vw;
+//     }
+//   }
+//   @media only screen and (max-width: 540px) {
+//     p {
+//       font-size: 19vw;
+//     }
+//   }
+
+//   /// layer positions ///
+//   .parallax-layer {
+//     width: 100%;
+//     max-height: 2160px;
+//   }
+//   .parallax-layer.layer1 {
+//     z-index: 20;
+//     background-color: var(--secondary-bg);
+//     border-radius: 0 0 50% 50%;
+//   }
+//   .parallax-layer.layer2 {
+//     z-index: 30;
+//     padding-top: 60%;
+//   }
+//   .parallax-layer.layer3 {
+//     z-index: 10;
+//     height: 350px;
+//     margin-top: 125%;
+//     border-radius: 50%;
+//     background: rgb(250, 248, 246);
+//     background: linear-gradient(
+//       180deg,
+//       rgba(250, 248, 246, 1) 0%,
+//       rgba(251, 167, 166, 1) 10%,
+//       rgba(252, 108, 107, 1) 20%,
+//       rgba(254, 0, 0, 1) 30%
+//     );
+//   }
+//   .parallax-layer.layer4 {
+//     z-index: 10;
+//     padding-top: 100%;
+//   }
+
+//   @media only screen and (max-width: 1280px) {
+//     .parallax-layer.layer3 {
+//       height: 400px;
+//       margin-top: 110%;
+//     }
+//   }
+
+//   @media only screen and (max-width: 960px) {
+//     .parallax-layer.layer3 {
+//       margin-top: 125%;
+//       border-radius: 50%;
+//     }
+//   }
+
+//   @media only screen and (max-width: 834px) {
+//     .parallax-layer.layer3 {
+//       margin-top: 140%;
+//     }
+//   }
+
+//   @media only screen and (max-width: 540px) {
+//     .parallax-layer.layer3 {
+//       margin-top: 170%;
+//     }
+//   }
+//   @media only screen and (max-width: 470px) {
+//     .parallax-wrapper .layer3 {
+//       margin-top: 180%;
+//     }
+//   }
+// `;
+
+// /* @media only screen and (max-width: 540px) {
+//     .parallax-wrapper {
+//       max-height: 650px;
+//       height: 70vh;
+//     }
+//   } */
+
+// /* @media only screen and (max-width: 1920px) {
+//     .parallax-wrapper {
+//       height: 1080px;
+//     }
+//   }
+//   @media only screen and (max-width: 960px) {
+//     .parallax-wrapper {
+//       height: 1024px;
+//       border-radius: 20px 20px 60px 60px;
+//     }
+//   }
+//   @media only screen and (max-width: 470px) {
+//     .parallax-wrapper {
+//       height: 670px;
+//     }
+//   } */
+
+// const ParallaxComponent = () => {
+//   const parallaxRef = useRef(null);
+
+//   const handleScroll = () => {
+//     const scrollY = window.scrollY;
+//     const parallaxElement = parallaxRef.current;
+//     if (parallaxElement) {
+//       const top = parallaxElement.offsetTop;
+//       if (scrollY >= top) {
+//         console.log("Parallax element reached the top of the viewport");
+//         // Add your actions here
+//       }
+//       const layers = parallaxElement.querySelectorAll(".parallax-layer");
+//       layers.forEach((layer, index) => {
+//         const depth = (index + 1) * 0.5; // Adjust depth calculation
+//         const depthAdjusted = (scrollY - top) * depth;
+//         layer.style.transform = `translateY(${depthAdjusted}px)`;
+//       });
+//     }
+//   };
+
+//   useEffect(() => {
+//     window.addEventListener("scroll", handleScroll);
+//     return () => {
+//       window.removeEventListener("scroll", handleScroll);
+//     };
+//   }, []);
+
+//   return (
+//     <ParallaxContainer id="parallax" ref={parallaxRef}>
+//       <div className="parallax-wrapper">
+//         <div className="parallax-layer layer1">
+//           <p>Let's Make</p>
+//         </div>
+//         <div className="parallax-layer layer2">
+//           <p>Something</p>
+//         </div>
+
+//         <div className="parallax-layer layer3"></div>
+//         <div className="parallax-layer layer4">
+//           <p>Amazing</p>
+//         </div>
+//       </div>
+//     </ParallaxContainer>
+//   );
+// };
+
+// export default ParallaxComponent;
 
 // v1
 // import React from "react";

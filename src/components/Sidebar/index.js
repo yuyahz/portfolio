@@ -78,7 +78,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             duration={700}
             spy={true}
             exact="true"
-            offset={0}
+            offset={100}
             activeClass="active"
           >
             <p>Riversol Empathy</p>
@@ -90,7 +90,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             duration={700}
             spy={true}
             exact="true"
-            offset={0}
+            offset={200}
             activeClass="active"
           >
             <p>Riversol Challenge</p>
@@ -102,7 +102,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             duration={700}
             spy={true}
             exact="true"
-            offset={0}
+            offset={200}
             activeClass="active"
           >
             <p>Riversol Reinforce</p>
@@ -114,7 +114,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             duration={700}
             spy={true}
             exact="true"
-            offset={0}
+            offset={150}
             activeClass="active"
           >
             <p>Midnight Paloma</p>
@@ -126,7 +126,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             duration={700}
             spy={true}
             exact="true"
-            offset={0}
+            offset={-100}
             activeClass="active"
           >
             <p>Work</p>
@@ -138,7 +138,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             duration={700}
             spy={true}
             exact="true"
-            offset={0}
+            offset={-200}
             activeClass="active"
           >
             <p>Contact</p>

@@ -9,6 +9,7 @@ export const ParallaxContainer = styled.div`
   background-color: var(--secondary-bg);
   padding: 16px 0 0 100px;
   overscroll-behavior: auto !important;
+  overflow: hidden;
 
   @media only screen and (max-width: 960px) {
     padding-left: 15px;
@@ -18,6 +19,7 @@ export const ParallaxContainer = styled.div`
   }
 
   .parallax-wrapper {
+    overflow: auto;
     max-width: 2560px;
     margin: 0 auto;
     height: 100vh;
@@ -45,7 +47,7 @@ export const ParallaxContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
   }
 
   p {
@@ -118,16 +120,162 @@ export const ParallaxContainer = styled.div`
     transition: all 0.5s ease-out;
   }
   .parallax-layer.layer3 {
-    z-index: 30;
+    z-index: 20;
     transition: all 1.5s ease-out;
+    background: rgb(254, 0, 0);
+    background: -moz-linear-gradient(
+      180deg,
+      rgba(254, 0, 0, 1) 75%,
+      rgba(250, 248, 246, 0) 85%
+    );
+    background: -webkit-linear-gradient(
+      180deg,
+      rgba(254, 0, 0, 1) 75%,
+      rgba(250, 248, 246, 0) 85%
+    );
+    background: linear-gradient(
+      180deg,
+      rgba(254, 0, 0, 1) 75%,
+      rgba(250, 248, 246, 0) 85%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe0000",endColorstr="#faf8f6",GradientType=1);
+
+    @media only screen and (max-width: 810px) {
+      background: rgb(254, 0, 0);
+      background: -moz-linear-gradient(
+        180deg,
+        rgba(254, 0, 0, 1) 60%,
+        rgba(250, 248, 246, 0) 69%
+      );
+      background: -webkit-linear-gradient(
+        180deg,
+        rgba(254, 0, 0, 1) 60%,
+        rgba(250, 248, 246, 0) 69%
+      );
+      background: linear-gradient(
+        180deg,
+        rgba(254, 0, 0, 1) 60%,
+        rgba(250, 248, 246, 0) 69%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe0000",endColorstr="#faf8f6",GradientType=1);
+    }
+
+    .vertical {
+      display: block;
+      span::after {
+        content: "Amazing";
+      }
+
+      .moon {
+        z-index: 30;
+        border-radius: 50% 50% 0 0;
+        background: rgb(250, 248, 246);
+        background: linear-gradient(
+          180deg,
+          rgba(250, 248, 246, 1) 0%,
+          rgba(251, 167, 166, 1) 10%,
+          rgba(252, 108, 107, 1) 20%,
+          rgba(254, 0, 0, 0) 30%
+        );
+        animation-name: sway;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        @keyframes sway {
+          from {
+            padding: 44px;
+          }
+          to {
+            padding: 6px;
+          }
+        }
+        @media only screen and (max-width: 540px) {
+          @keyframes sway {
+            from {
+              padding: 54px;
+            }
+            to {
+              padding: 16px;
+            }
+          }
+        }
+        @media only screen and (max-width: 960px) {
+          @keyframes sway {
+            from {
+              padding: 74px;
+            }
+            to {
+              padding: 24px;
+            }
+          }
+        }
+        @media only screen and (max-width: 1280px) {
+          @keyframes sway {
+            from {
+              padding: 84px;
+            }
+            to {
+              padding: 44px;
+            }
+          }
+        }
+        @media only screen and (max-width: 1920px) {
+          @keyframes sway {
+            from {
+              padding: 122px;
+            }
+            to {
+              padding: 66px;
+            }
+          }
+        }
+        @media only screen and (max-width: 2560px) {
+          @keyframes sway {
+            from {
+              padding: 160px;
+            }
+            to {
+              padding: 80px;
+            }
+          }
+        }
+        }
+        //Amazing//
+        font-size: 460px;
+        font-weight: 100;
+        color: var(--fourth-txt-color);
+        text-align: center;
+
+        @media only screen and (max-width: 2560px) {
+          font-size: 17.969vw;
+        }
+        @media only screen and (max-width: 1920px) {
+          font-size: 18vw;
+        }
+        @media only screen and (max-width: 960px) {
+          font-size: 20vw;
+        }
+        @media only screen and (max-width: 540px) {
+          font-size: 19vw;
+        }
+        @media only screen and (max-width: 369px) {
+          padding: 1%;
+          font-size: 17.5vw;
+        }
+        /* 
+    @media only screen and (max-width: 960px) {
+      bottom: 15%;
+    } */
+        /* @media only screen and (max-width: 540px) {
+          max-height: 130px;
+        } */
+      }
+    }
   }
   .parallax-layer.layer4 {
-    position: fixed;
-    top: 0;
-    bottom: 25%;
-    left: 0;
-    right: 0;
-    margin: auto;
+    z-index: 30;
+    transition: all 3s ease-out;
     max-height: 200px;
     max-width: 1700px;
     border-radius: 50% 50% 0 0;
@@ -139,22 +287,21 @@ export const ParallaxContainer = styled.div`
       rgba(252, 108, 107, 1) 20%,
       rgba(254, 0, 0, 0) 30%
     );
-    transition: all 2s ease-out;
-
+    /* 
     @media only screen and (max-width: 960px) {
-      bottom: 7.5%;
-    }
+      bottom: 15%;
+    } */
     @media only screen and (max-width: 540px) {
       max-height: 130px;
     }
   }
   .parallax-layer.layer5 {
-    z-index: 10;
-    transition: all 6s ease-out;
+    z-index: 30;
+    transition: all 3s ease-out;
   }
   .parallax-layer.layer6 {
-    z-index: 50;
-    transition: all 6s ease-out;
+    z-index: 30;
+    transition: all 2s ease-out;
   }
 
   h3 {
@@ -166,7 +313,7 @@ export const ParallaxContainer = styled.div`
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding-bottom: 160px;
+    padding-bottom: 100px;
 
     @media screen and (max-width: 520px) {
       font-size: 32px;
@@ -183,7 +330,7 @@ export const SocialIcons = styled.div`
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding-bottom: 76px;
+  padding-bottom: 44px;
 `;
 
 export const SocialIconLink = styled.a`
@@ -213,7 +360,7 @@ const ParallaxComponent = () => {
       }
       const layers = parallaxElement.querySelectorAll(".parallax-layer");
       layers.forEach((layer, index) => {
-        const depth = (index + 1) * 0.5;
+        const depth = (index + 1) * 0.8;
         const depthAdjusted = (scrollY - top) * depth;
         layer.style.transform = `translateY(${depthAdjusted}px)`;
       });
@@ -243,9 +390,11 @@ const ParallaxComponent = () => {
           <p>Something</p>
         </div>
         <div className="parallax-layer layer3">
-          <div className="parallax-layer layer4"></div>
-          <p>Amazing</p>
+          <div className="vertical">
+            <span className="moon"></span>
+          </div>
         </div>
+        {/* <div className="parallax-layer layer4"></div> */}
         <div className="parallax-layer layer5">
           <h3>Thank you.</h3>
         </div>

@@ -8,8 +8,8 @@ export const ParallaxContainer = styled.div`
   max-height: 4320px;
   background-color: var(--secondary-bg);
   padding: 16px 0 0 100px;
-  overscroll-behavior: auto !important;
   overflow: hidden;
+  overscroll-behavior: auto !important;
 
   @media only screen and (max-width: 960px) {
     padding-left: 15px;
@@ -19,7 +19,6 @@ export const ParallaxContainer = styled.div`
   }
 
   .parallax-wrapper {
-    overflow: auto;
     max-width: 2560px;
     margin: 0 auto;
     height: 100vh;
@@ -42,12 +41,12 @@ export const ParallaxContainer = styled.div`
   }
 
   .parallax-layer {
+    display: flex;
     position: absolute;
     top: 0;
-    display: flex;
+    height: 90vh;
     justify-content: center;
     align-items: center;
-    height: 90vh;
   }
 
   p {
@@ -63,9 +62,6 @@ export const ParallaxContainer = styled.div`
     }
   }
   @media only screen and (max-width: 1960px) {
-    .layer2 {
-      transform: translateZ(-1px);
-    }
     p {
       font-size: 18vw;
     }
@@ -82,7 +78,6 @@ export const ParallaxContainer = styled.div`
   }
   @media only screen and (max-width: 369px) {
     p {
-      padding: 1%;
       font-size: 17.5vw;
     }
   }
@@ -178,35 +173,25 @@ export const ParallaxContainer = styled.div`
           rgba(254, 0, 0, 0) 30%
         );
         animation-name: sway;
-        animation-duration: 2s;
+        animation-duration: 4s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         @keyframes sway {
           from {
-            padding: 44px;
+            padding: 160px;
           }
           to {
-            padding: 6px;
+            padding: 80px;
           }
         }
-        @media only screen and (max-width: 540px) {
+        @media only screen and (max-width: 1920px) {
           @keyframes sway {
             from {
-              padding: 54px;
+              padding: 122px;
             }
             to {
-              padding: 16px;
-            }
-          }
-        }
-        @media only screen and (max-width: 960px) {
-          @keyframes sway {
-            from {
-              padding: 74px;
-            }
-            to {
-              padding: 24px;
+              padding: 66px;
             }
           }
         }
@@ -220,86 +205,55 @@ export const ParallaxContainer = styled.div`
             }
           }
         }
-        @media only screen and (max-width: 1920px) {
-          @keyframes sway {
-            from {
-              padding: 122px;
-            }
-            to {
-              padding: 66px;
-            }
-          }
-        }
-        @media only screen and (max-width: 2560px) {
-          @keyframes sway {
-            from {
-              padding: 160px;
-            }
-            to {
-              padding: 80px;
-            }
-          }
-        }
-        }
-        //Amazing//
-        font-size: 460px;
-        font-weight: 100;
-        color: var(--fourth-txt-color);
-        text-align: center;
-
-        @media only screen and (max-width: 2560px) {
-          font-size: 17.969vw;
-        }
-        @media only screen and (max-width: 1920px) {
-          font-size: 18vw;
-        }
         @media only screen and (max-width: 960px) {
-          font-size: 20vw;
+          @keyframes sway {
+            from {
+              padding: 74px;
+            }
+            to {
+              padding: 24px;
+            }
+          }
         }
         @media only screen and (max-width: 540px) {
-          font-size: 19vw;
+          @keyframes sway {
+            from {
+              padding: 54px;
+            }
+            to {
+              padding: 30px;
+            }
+          }
         }
-        @media only screen and (max-width: 369px) {
-          padding: 1%;
-          font-size: 17.5vw;
-        }
-        /* 
-    @media only screen and (max-width: 960px) {
-      bottom: 15%;
-    } */
-        /* @media only screen and (max-width: 540px) {
-          max-height: 130px;
-        } */
+      }
+      //Amazing//
+      font-size: 460px;
+      font-weight: 100;
+      color: var(--fourth-txt-color);
+      text-align: center;
+
+      @media only screen and (max-width: 2560px) {
+        font-size: 17.969vw;
+      }
+      @media only screen and (max-width: 1920px) {
+        font-size: 18vw;
+      }
+      @media only screen and (max-width: 960px) {
+        font-size: 20vw;
+      }
+      @media only screen and (max-width: 540px) {
+        font-size: 19vw;
+      }
+      @media only screen and (max-width: 369px) {
+        font-size: 17.5vw;
       }
     }
   }
   .parallax-layer.layer4 {
     z-index: 30;
     transition: all 3s ease-out;
-    max-height: 200px;
-    max-width: 1700px;
-    border-radius: 50% 50% 0 0;
-    background: rgb(250, 248, 246);
-    background: linear-gradient(
-      180deg,
-      rgba(250, 248, 246, 1) 0%,
-      rgba(251, 167, 166, 1) 10%,
-      rgba(252, 108, 107, 1) 20%,
-      rgba(254, 0, 0, 0) 30%
-    );
-    /* 
-    @media only screen and (max-width: 960px) {
-      bottom: 15%;
-    } */
-    @media only screen and (max-width: 540px) {
-      max-height: 130px;
-    }
   }
   .parallax-layer.layer5 {
-    z-index: 30;
-    transition: all 3s ease-out;
-  }
-  .parallax-layer.layer6 {
     z-index: 30;
     transition: all 2s ease-out;
   }
@@ -394,11 +348,10 @@ const ParallaxComponent = () => {
             <span className="moon"></span>
           </div>
         </div>
-        {/* <div className="parallax-layer layer4"></div> */}
-        <div className="parallax-layer layer5">
+        <div className="parallax-layer layer4">
           <h3>Thank you.</h3>
         </div>
-        <div className="parallax-layer layer6">
+        <div className="parallax-layer layer5">
           <SocialIcons>
             <SocialIconLink
               href="https://dribbble.com/yuya-hashirizaki"

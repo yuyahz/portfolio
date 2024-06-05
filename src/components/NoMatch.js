@@ -5,7 +5,7 @@ import BackButton from "./BackButton";
 const Styles = styled.div`
   .NoMatchContainer {
     min-height: 100vh;
-    background-color: var(--primaly-bg);
+    background-color: var(--primary-bg);
   }
 
   .NoMatchWrapper {

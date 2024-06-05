@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DropdownContainer = styled.div`
-  /* background: var(--primaly-bg); */
+  /* background: var(--primary-bg); */
   width: 100%;
   max-width: 1140px;
 `;
@@ -48,7 +48,7 @@ export const DropdownInnerWrapper = styled.div`
       transition-timing-function: ease-in-out;
       border-radius: 50px;
       border: solid 2px var(--secondary-bg);
-      background: var(--primaly-bg);
+      background: var(--primary-bg);
       white-space: nowrap;
       padding: 10px 25px;
     }
@@ -98,7 +98,7 @@ export const DropdownInnerWrapper = styled.div`
   //// Contents of chips /////
   .dropdown-contents {
     padding: 2rem 3rem;
-    /* background: var(--primaly-bg); */
+    /* background: var(--primary-bg); */
     border: solid 2px var(--secondary-bg);
     border-radius: 15px;
 

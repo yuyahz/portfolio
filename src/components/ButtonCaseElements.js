@@ -5,7 +5,7 @@ export const Button = styled(Link)`
   max-width: 200px;
   border-radius: 50px;
   border: solid 2px var(--secondary-bg);
-  background: var(--primaly-bg);
+  background: var(--primary-bg);
   white-space: nowrap;
   padding: 10px 25px;
   color: var(--primary-txt-color);
@@ -20,7 +20,7 @@ export const Button = styled(Link)`
   &:hover {
     transition: 0.2s cubic-bezier(0.65, 0, 0.16, 1);
     background-color: var(--secondary-bg);
-    color: var(--primaly-bg);
+    color: var(--primary-bg);
   }
 
   @media only screen and (max-width: 960px) {
@@ -32,7 +32,7 @@ export const ButtonExternal = styled.a`
   max-width: 200px;
   border-radius: 50px;
   border: solid 2px var(--secondary-bg);
-  background: var(--primaly-bg);
+  background: var(--primary-bg);
   white-space: nowrap;
   padding: 10px 25px;
   color: var(--primary-txt-color);
@@ -47,7 +47,7 @@ export const ButtonExternal = styled.a`
   &:hover {
     transition: 0.2s cubic-bezier(0.65, 0, 0.16, 1);
     background-color: var(--secondary-bg);
-    color: var(--primaly-bg);
+    color: var(--primary-bg);
   }
 
   @media only screen and (max-width: 960px) {

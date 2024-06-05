@@ -4,7 +4,7 @@ import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 export const ContentsContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) =>
-    lightBg ? "  var(--primaly-bg)" : "rgba(218, 218, 218, 1)"};
+    lightBg ? "  var(--primary-bg)" : "rgba(218, 218, 218, 1)"};
   -webkit-overflow-scrolling: touch;
 `;
 

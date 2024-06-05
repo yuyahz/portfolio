@@ -65,12 +65,12 @@ export const ContactWrapper = styled.div`
     @keyframes pulse1 {
       0%,
       100% {
-        background-color: var(--primaly-bg);
+        background-color: var(--primary-bg);
         color: var(--primary-txt-color);
       }
       50% {
-        background-color: var(--primaly-bg);
-        color: var(--primaly-bg);
+        background-color: var(--primary-bg);
+        color: var(--primary-bg);
       }
     }
 
@@ -80,12 +80,12 @@ export const ContactWrapper = styled.div`
     @keyframes pulse1 {
       0%,
       100% {
-        background-color:   var(--primaly-bg);
+        background-color:   var(--primary-bg);
         color: var(--primary-txt-color);;
       }
       50% {
-        background-color:   var(--primaly-bg);
-        color:   var(--primaly-bg);
+        background-color:   var(--primary-bg);
+        color:   var(--primary-bg);
       }
     }
 
@@ -137,10 +137,10 @@ export const ContactWrapper = styled.div`
     0%,
     100% {
       background-color: var(--primary-txt-color);
-      color: var(--primaly-bg);
+      color: var(--primary-bg);
     }
     50% {
-      background-color: var(--primaly-bg);
+      background-color: var(--primary-bg);
       color: var(--primary-txt-color);
     }
   }

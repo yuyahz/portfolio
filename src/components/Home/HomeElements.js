@@ -6,7 +6,7 @@ export const HomeContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--primaly-bg);
+  background: var(--primary-bg);
 
   @media only screen and (max-width: 540px) {
     height: 183vw;
@@ -112,9 +112,21 @@ export const HomeWrapper = styled.div`
     @media only screen and (max-width: 1919px) {
       font-size: 19px;
     }
-
     @media only screen and (max-width: 960px) {
+      margin: 0.2rem 0 0 0.8rem;
       font-size: 3.3vw;
+    }
+  }
+
+  .caption {
+    font-size: 0.7vw;
+
+    @media only screen and (max-width: 1919px) {
+      font-size: 12px;
+    }
+    @media only screen and (max-width: 960px) {
+      margin: 0.5rem 0 0 0.8rem;
+      font-size: 2.1vw;
     }
   }
 `;
@@ -215,7 +227,7 @@ export const ImageMac = styled(motion.img)`
 //   display: flex;
 //   justify-content: center;
 //   align-items: center;
-//   background:   var(--primaly-bg);
+//   background:   var(--primary-bg);
 //   /* for iphone se */
 //   @media screen and (max-width: 320px) {
 //     height: 110vh;

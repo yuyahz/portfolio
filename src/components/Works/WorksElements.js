@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const WorksContainer = styled.div`
   width: 100%;
-  background: var(--primaly-bg);
+  background: var(--primary-bg);
   display: block;
   padding: 0.5rem;
   border-bottom: 2px solid red;
@@ -72,7 +72,7 @@ export const WorksTitle = styled(Link)`
     position: absolute;
     width: 840px;
     height: 130px;
-    background-color: var(--primaly-bg);
+    background-color: var(--primary-bg);
     top: 0;
     left: 0;
     transform-origin: right;

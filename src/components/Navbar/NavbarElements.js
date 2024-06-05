@@ -53,7 +53,7 @@ export const NavLogoSm = styled(LinkR)`
   /* margin: 36px 0 0 6.25vw; */
   // for txt logo //
   margin: 22px 0 0 2.5vw;
-  /* background-color: var(--primaly-bg);
+  /* background-color: var(--primary-bg);
   border-radius: 70px; */
   // for v1 image logo //
   /* width: 70px; */
@@ -99,7 +99,7 @@ export const NavLogo = styled(LinkR)`
   margin: 22px 0 0 350px;
   // for txt logo //
   padding: 10px 25px;
-  /* background-color: var(--primaly-bg);
+  /* background-color: var(--primary-bg);
   border-radius: 70px; */
   // for v1 image logo //
   /* margin: 20px 0 0 200px; */
@@ -198,7 +198,7 @@ export const NavMenu = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--primaly-bg);
+  background-color: var(--primary-bg);
   border-radius: 50px;
   padding: 30px 6px 30px 0;
 

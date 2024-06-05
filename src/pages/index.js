@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 // import AboutParallax from "../components/AboutParallax";
 import About from "../components/About";
 import Looper from "../components/Looper";
+import Banner from "../components/Banner";
 import Contents from "../components/Contents";
 import {
   // homeLarry,
@@ -32,7 +33,8 @@ import {
 import Case from "../components/Case";
 import Works from "../components/Works";
 import Contact from "../components/Contact";
-import ParallaxComponent from "../components/ParallaxComponent";
+import ParallaxComponentLg from "../components/ParallaxComponentLg";
+import ParallaxComponentSm from "../components/ParallaxComponentSm";
 import Footer from "../components/Footer";
 
 const Index = () => {
@@ -49,7 +51,8 @@ const Index = () => {
       <Home />
       {/* <AboutParallax /> */}
       <About />
-      <Looper />
+      {/* <Looper /> */}
+      <Banner />
       {/* <PicLarry />
       <Contents {...homeLarry} />
       <PicVector />
@@ -73,7 +76,8 @@ const Index = () => {
       <Works {...worksPortfolio} />
       <Contact />
       {/* <Footer /> */}
-      <ParallaxComponent />
+      <ParallaxComponentLg />
+      <ParallaxComponentSm />
     </>
   );
 };

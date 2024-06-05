@@ -123,7 +123,7 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-  color: var(--primaly-bg);
+  color: var(--primary-bg);
   font-size: 24px;
   transition: 0.3s ease;
 

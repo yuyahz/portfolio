@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  background: var(--primaly-bg);
+  background: var(--primary-bg);
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 export const AboutTitleWrapper = styled.div`
-  background: var(--primaly-bg);
+  background: var(--primary-bg);
   padding-bottom: 2rem;
 
   @media only screen and (max-width: 960px) {
@@ -32,7 +32,7 @@ export const AboutTitleWrapper = styled.div`
 `;
 
 export const AboutImageWrapper = styled.div`
-  background: var(--primaly-bg);
+  background: var(--primary-bg);
   padding-bottom: 2rem;
 
   @media only screen and (max-width: 960px) {
@@ -49,7 +49,7 @@ export const AboutImage = styled.img`
 `;
 
 export const AboutWrapper = styled.div`
-  background: var(--primaly-bg);
+  background: var(--primary-bg);
   width: 100%;
   max-width: 1140px;
   display: block;
@@ -89,6 +89,8 @@ export const AboutWrapper = styled.div`
     color: var(--primary-txt-color);
     font-weight: 700;
     font-size: 6rem;
+    /* text-align: justify;
+    text-justify: inter-ideograph; */
 
     &:nth-child(3) {
       margin-bottom: 2rem;
@@ -125,7 +127,7 @@ export const AboutWrapper = styled.div`
 `;
 
 export const AboutInnerWrapper = styled.div`
-  background: var(--primaly-bg);
+  background: var(--primary-bg);
 
   .fancy-font {
     font-family: "GT";
@@ -136,6 +138,11 @@ export const AboutInnerWrapper = styled.div`
     &:nth-child(2) {
       padding-left: 2vw;
     }
+  }
+
+  .fancy-font-title {
+    font-family: "GT";
+    font-weight: 500;
   }
 
   .fancy-font-body {
@@ -230,7 +237,7 @@ export const AboutInnerWrapper = styled.div`
 `;
 
 export const AboutDropdownWrapper = styled.div`
-  background: var(--primaly-bg);
+  background: var(--primary-bg);
   padding-bottom: 17rem;
 
   @media only screen and (max-width: 960px) {
@@ -257,7 +264,7 @@ export const AboutDropdown = styled.div`
 // Archive 22021
 // export const AboutContainer = styled.div`
 //   z-index: 1;
-//   background:   var(--primaly-bg);
+//   background:   var(--primary-bg);
 //   display: flex;
 //   justify-content: center;
 //   align-items: center;

@@ -77,23 +77,33 @@ const About = () => {
               <h2 className="fancy-font">Yuya</h2>
               <h2>Hashirizaki</h2>
             </div> */}
-            <span>
-              <h2>Vancouver-based</h2>
+
+            {/* <span>
+              <h2 className="fancy-font">Vancouver-based</h2>{" "}
             </span>
             <span>
-              <h2 className="fancy-font">UI / UX designer</h2>
+              <h2>Product designer with</h2>
             </span>
             <span>
-              <h2>Front-end and</h2>
+              <h2 className="fancy-font">Focus on UI Development</h2>
             </span>
             <span>
-              <h2>UI Developer</h2>
+              <h2>and Exceptional UX Design</h2>
             </span>
             <span className="end-cap">
               <h2 className="fancy-font">
                 who excels in UX design and creative problem-solving
               </h2>
-            </span>
+            </span> */}
+            <div>
+              <h2>
+                I <span className="fancy-font-title">design </span>
+                solutions that address both&nbsp;
+                <span className="fancy-font-title">aesthetics </span>and&nbsp;
+                <span className="fancy-font-title">business challenges.</span>
+              </h2>
+            </div>
+
             <div className="end-cap start-cap">
               <h4>
                 With nearly a decade in the industry, I've designed complex
@@ -129,7 +139,7 @@ const About = () => {
               </h4>
             </div>
             <div className="end-cap start-cap">
-              <h3>Expertise in UI/UX design</h3>
+              <h3>Expertise in UX/UI design</h3>
             </div>
             <div>
               <h4>

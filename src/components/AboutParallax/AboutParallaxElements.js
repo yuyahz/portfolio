@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutParallaxContainer = styled.div`
-  background: var(--primaly-bg);
+  background: var(--primary-bg);
   display: flex;
   justify-content: center;
   align-items: center;

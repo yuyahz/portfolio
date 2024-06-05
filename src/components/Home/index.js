@@ -134,7 +134,7 @@ const Home = () => {
               animate="visible"
               transition={{ duration: 2.5 }}
             >
-              UI/UX Designer (7+ YOE)
+              Product Designer
             </motion.p>
             <motion.p
               variants={fadeLeft}
@@ -142,15 +142,16 @@ const Home = () => {
               animate="visible"
               transition={{ duration: 3 }}
             >
-              Front-end & UI Developer
+              Creative Problem Solver
             </motion.p>
             <motion.p
+              className="caption"
               variants={fadeLeft}
               initial="hidden"
               animate="visible"
               transition={{ duration: 3.5 }}
             >
-              Creative Problem Solver
+              with Front-End and UI Development
             </motion.p>
           </div>
         </div>

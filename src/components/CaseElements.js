@@ -14,7 +14,7 @@ export const HomeIcon = styled(Link)`
   font-weight: 500;
   display: block;
   color: var(--primary-txt-color);
-  background-color: var(--primaly-bg);
+  background-color: var(--primary-bg);
   /* -webkit-background-clip: text; */
   /* -webkit-text-fill-color: transparent; */
   max-width: 900px;
@@ -66,7 +66,7 @@ export const HomeIcon = styled(Link)`
 
 ///// global /////
 export const CaseContainer = styled.div`
-  background: var(--primaly-bg);
+  background: var(--primary-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -571,7 +571,7 @@ export const Tag = styled.div`
   align-items: center;
 
   p {
-    color: var(--primaly-bg);
+    color: var(--primary-bg);
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;

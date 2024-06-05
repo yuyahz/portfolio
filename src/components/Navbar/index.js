@@ -16,7 +16,7 @@ import styled from "styled-components";
 const Logo = styled.h4`
   color: ${(props) =>
     props.isInParallaxOrContactOrFooter
-      ? "var(--primaly-bg)"
+      ? "var(--primary-bg)"
       : "var(--primary-txt-color)"};
 `;
 

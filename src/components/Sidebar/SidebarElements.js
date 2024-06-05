@@ -17,7 +17,7 @@ export const SidebarWrapper = styled.aside`
   margin: 5rem 15px 0 0;
   border: thick double var(--secondary-bg);
   border-radius: 10px;
-  background: var(--primaly-bg);
+  background: var(--primary-bg);
   transition: ${({ isOpen }) => (isOpen ? "0.3s ease" : "0.3s ease")};
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
@@ -54,7 +54,7 @@ export const Icon = styled.div`
     position: fixed;
     top: 20px;
     right: 15px;
-    background-color: var(--primaly-bg);
+    background-color: var(--primary-bg);
     border-radius: 50%;
 
     .burger-menu-bg {

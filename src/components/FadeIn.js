@@ -99,7 +99,7 @@ const FadeIn = styled.div`
 
 const FadeInUp = styled(FadeIn)`
   opacity: 0;
-  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.6s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translateY(60px);
@@ -108,7 +108,7 @@ const FadeInUp = styled(FadeIn)`
 
 const FadeInDown = styled(FadeIn)`
   opacity: 0;
-  transition: 1s opacity 0.6s ease, transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 1s opacity 0.6s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translateY(-60px);
@@ -117,7 +117,7 @@ const FadeInDown = styled(FadeIn)`
 
 const FadeInLeft = styled(FadeIn)`
   opacity: 0;
-  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.6s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translateX(-60px);
@@ -135,7 +135,7 @@ const FadeInLeftWorks = styled(FadeIn)`
 
 const FadeInRight = styled(FadeIn)`
   opacity: 0;
-  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.6s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translateX(60px);
@@ -144,7 +144,7 @@ const FadeInRight = styled(FadeIn)`
 
 const FadeInDiagonal1 = styled(FadeIn)`
   opacity: 0;
-  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.6s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translate(-150px, -150px);
@@ -153,7 +153,7 @@ const FadeInDiagonal1 = styled(FadeIn)`
 
 const FadeInDiagonal2 = styled(FadeIn)`
   opacity: 0;
-  transition: opacity 0.6s ease, transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.6s ease, transform 1.3s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translate(-150px, -150px);
@@ -162,7 +162,7 @@ const FadeInDiagonal2 = styled(FadeIn)`
 
 const FadeInDiagonal3 = styled(FadeIn)`
   opacity: 0;
-  transition: opacity 0.6s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.6s ease, transform 1.6s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translate(-150px, -150px);
@@ -171,7 +171,7 @@ const FadeInDiagonal3 = styled(FadeIn)`
 
 const FadeInDiagonal4 = styled(FadeIn)`
   opacity: 0;
-  transition: opacity 0.6s ease, transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.6s ease, transform 1.9s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translate(-150px, -150px);
@@ -180,7 +180,7 @@ const FadeInDiagonal4 = styled(FadeIn)`
 
 const FadeInDiagonal5 = styled(FadeIn)`
   opacity: 0;
-  transition: opacity 0.6s ease, transform 1.4s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.6s ease, transform 2.1s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translate(-150px, -150px);
@@ -189,7 +189,7 @@ const FadeInDiagonal5 = styled(FadeIn)`
 
 const FadeInDiagonal6 = styled(FadeIn)`
   opacity: 0;
-  transition: opacity 0.6s ease, transform 1.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.6s ease, transform 2.4s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translate(-150px, -150px);

@@ -13,7 +13,8 @@ export const ParallaxContainer = styled.div`
     display: none;
   }
   @media only screen and (max-width: 960px) {
-    display: block;
+    //display: block;//
+    display: none;
     padding: 0 15px;
   }
 `;
@@ -119,7 +120,7 @@ const ParallaxLayer = styled.div`
   }
 `;
 
-const ParallaxComponent = () => {
+const ParallaxComponentSm = () => {
   const parallaxRef = useRef(null);
   const [active, setActive] = useState(false);
 
@@ -154,7 +155,7 @@ const ParallaxComponent = () => {
   }, []);
 
   return (
-    <ParallaxContainer ref={parallaxRef}>
+    <ParallaxContainer id="parallaxSm" ref={parallaxRef}>
       <ParallaxLayer className={`parallax-layer layer1 ${active ? "act" : ""}`}>
         <p className="first-copy">Let's Make</p>
       </ParallaxLayer>
@@ -198,9 +199,16 @@ const ParallaxComponent = () => {
             <FaDribbble />
           </a>
         </div>
+        {/* <div className="parallax-layer layer6">
+            <p className="rights">
+              {" "}
+              &copy; {new Date().getFullYear()} Your Website. All rights
+              reserved.
+            </p>
+          </div> */}
       </ParallaxLayer>
     </ParallaxContainer>
   );
 };
 
-export default ParallaxComponent;
+export default ParallaxComponentSm;

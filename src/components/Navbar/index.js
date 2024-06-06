@@ -1,65 +1,59 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import {
-  Nav,
-  NavbarContainer,
+  NavContainer,
+  NavWrapper,
   NavLogoSm,
   NavLogo,
-  NavMenu,
+  NavContentsWrapper,
   NavItem,
   NavLinks,
 } from "./NavbarElements";
-import logo from "../../images/logo.svg";
 import styled from "styled-components";
 
 // Styled Logo component with conditional styling
 const Logo = styled.h4`
   color: ${(props) =>
-    props.isInParallaxOrContactOrFooter
-      ? "var(--primary-bg)"
+    props.isInParallaxOrContact
+      ? "var(--fourth-txt-color)"
       : "var(--primary-txt-color)"};
 `;
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
-  const [isInParallaxOrContactOrFooter, setIsInParallaxOrContactOrFooter] =
-    useState(false);
-
-  const changeNav = () => {
-    if (window.scrollY >= 1) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
-
-    // Check if the "parallax", "contact", or "footer" section is in view
-    const parallaxSection = document.getElementById("parallax");
-    const contactSection = document.getElementById("contact");
-    const footerSection = document.getElementById("footer");
-
-    if (parallaxSection || contactSection || footerSection) {
-      const isInParallax =
-        parallaxSection &&
-        parallaxSection.getBoundingClientRect().top <= 0 &&
-        parallaxSection.getBoundingClientRect().bottom >= 0;
-      const isInContact =
-        contactSection &&
-        contactSection.getBoundingClientRect().top <= 0 &&
-        contactSection.getBoundingClientRect().bottom >= 0;
-      const isInFooter =
-        footerSection &&
-        footerSection.getBoundingClientRect().top <= 0 &&
-        footerSection.getBoundingClientRect().bottom >= 0;
-      setIsInParallaxOrContactOrFooter(
-        isInParallax || isInContact || isInFooter
-      );
-    }
-  };
+  const [isInParallaxOrContact, setIsInParallaxOrContact] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.body.clientHeight;
+      let coefficient = 0.95; // Default coefficient
+
+      // Adjust coefficient for small screens
+      if (window.innerWidth < 960) {
+        coefficient = 0.99;
+      }
+
+      const scrolledMostOfThePage =
+        window.scrollY >= (documentHeight - windowHeight) * coefficient;
+
+      if (scrolledMostOfThePage) {
+        setIsInParallaxOrContact(true);
+      } else {
+        setIsInParallaxOrContact(false);
+      }
+
+      if (window.scrollY >= 100) {
+        setScrollNav(true);
+      } else {
+        setScrollNav(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      window.removeEventListener("scroll", changeNav);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -69,29 +63,23 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <NavLogoSm to="/" onClick={toggleHome} isClicked={false}>
-        <Logo
-          src={logo}
-          isInParallaxOrContactOrFooter={isInParallaxOrContactOrFooter}
-        >
+      <NavLogoSm to="/" onClick={toggleHome}>
+        <Logo isInParallaxOrContact={isInParallaxOrContact}>
           Yuya Hashirizaki
         </Logo>
       </NavLogoSm>
-      <Nav scrollNav={scrollNav}>
-        <NavbarContainer>
-          <NavLogo to="/" onClick={toggleHome} isClicked={false}>
-            <Logo
-              src={logo}
-              isInParallaxOrContactOrFooter={isInParallaxOrContactOrFooter}
-            >
+      <NavContainer scrollNav={scrollNav}>
+        <NavWrapper>
+          <NavLogo to="/" onClick={toggleHome}>
+            <Logo isInParallaxOrContact={isInParallaxOrContact}>
               Yuya Hashirizaki
             </Logo>
           </NavLogo>
-          <NavMenu>
+          <NavContentsWrapper>
             <NavItem>
               <NavLinks
-                className="homeSec"
-                to="/"
+                to="home"
+                onClick={toggle}
                 smooth={true}
                 duration={700}
                 spy={true}
@@ -172,62 +160,6 @@ const Navbar = ({ toggle }) => {
                 Midnight Paloma
               </NavLinks>
             </NavItem>
-            {/* <NavItem>
-              <NavLinks
-                className="larrySec"
-                to="larry-pic"
-                smooth={true}
-                duration={700}
-                spy={true}
-                exact="true"
-                offset={0}
-                activeClass="active"
-              >
-                Larry
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                className="vectorSec"
-                to="vector-pic"
-                smooth={true}
-                duration={700}
-                spy={true}
-                exact="true"
-                offset={0}
-                activeClass="active"
-              >
-                Vector
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                className="uiSec"
-                to="ui-pic"
-                smooth={true}
-                duration={700}
-                spy={true}
-                exact="true"
-                offset={0}
-                activeClass="active"
-              >
-                DailyUI
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                className="darumaSec"
-                to="daruma-pic"
-                smooth={true}
-                duration={700}
-                spy={true}
-                exact="true"
-                offset={0}
-                activeClass="active"
-              >
-                Daruma
-              </NavLinks>
-            </NavItem> */}
             <NavItem>
               <NavLinks
                 className="worksSec"
@@ -256,9 +188,9 @@ const Navbar = ({ toggle }) => {
                 Contact
               </NavLinks>
             </NavItem>
-          </NavMenu>
-        </NavbarContainer>
-      </Nav>
+          </NavContentsWrapper>
+        </NavWrapper>
+      </NavContainer>
     </>
   );
 };
@@ -273,12 +205,12 @@ export default Navbar;
 // import * as AiIcons from "react-icons/ai";
 // import { HiMail } from "react-icons/hi";
 // import {
-//   Nav,
-//   NavbarContainer,
+//   NavContainer,
+//   NavWrapper,
 //   NavLogoSm,
 //   NavLogo,
 //   // MobileIcon,
-//   NavMenu,
+//   NavContentsWrapper,
 //   NavItem,
 //   NavLinks,
 //   NavSNS,
@@ -315,8 +247,8 @@ export default Navbar;
 //           Yuya Hashirizaki
 //         </h4>
 //       </NavLogoSm>
-//       <Nav scrollNav={scrollNav}>
-//         <NavbarContainer>
+//       <NavContainer scrollNav={scrollNav}>
+//         <NavWrapper>
 //           <NavLogo to="/" onClick={toggleHome} isClicked={false}>
 //             {/* <Image className="logo" src={logo} id="" /> */}
 //             <h4 className="logo" src={logo} id="">
@@ -343,7 +275,7 @@ export default Navbar;
 //                 <AiIcons.AiFillLinkedin />
 //               </a>
 //             </NavSNS> */}
-//           <NavMenu>
+//           <NavContentsWrapper>
 //             <NavItem>
 //               <NavLinks
 //                 className="aboutSec"
@@ -498,7 +430,7 @@ export default Navbar;
 //                 Contact
 //               </NavLinks>
 //             </NavItem>
-//           </NavMenu>
+//           </NavContentsWrapper>
 //           {/* <NavMail>
 //               <a target="_blank" href="mailto:hashirizaki61@gmail.com">
 //                 <HiMail />
@@ -507,8 +439,8 @@ export default Navbar;
 //           {/* <NavBtn>
 //               <NavBtnLink to="/signin">Sign In</NavBtnLink>
 //             </NavBtn> */}
-//         </NavbarContainer>
-//       </Nav>
+//         </NavWrapper>
+//       </NavContainer>
 //       {/* </IconContext.Provider> */}
 //     </>
 //   );

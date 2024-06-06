@@ -106,11 +106,13 @@ const About = () => {
 
             <div className="end-cap start-cap">
               <h4>
-                With nearly a decade in the industry, I've designed complex
-                products spanning from advertising to e-commerce.
+                I'm not your conventional designer crafting attractive
+                interfaces. As a Product Designer, I immerse myself in business
+                complexities, developing efficient solutions that extend beyond
+                aesthetics to create genuine change.
               </h4>
             </div>
-            <div className="end-cap start-cap">
+            {/* <div className="end-cap start-cap">
               <h3>Beliefs</h3>
             </div>
             <div>
@@ -118,37 +120,29 @@ const About = () => {
                 Challenging the status quo and creating an inclusive experience
                 through research and empathy.
               </h4>
-            </div>
+            </div> */}
             <div className="end-cap start-cap">
-              <h3>Empathy and Passion</h3>
+              <h3>Expertise in UX design</h3>
             </div>
             <div>
               <h4>
-                "I have consistently focused my efforts on three core frameworks
-                for creating compelling user-centered deliverables that
-                captivate customers:
-                <span className="fancy-font-body"> Design and Technology,</span>
-                <span className="fancy-font-body">
-                  {" "}
-                  Branding and Websites,{" "}
-                </span>
-                <span className="fancy-font-body">
-                  Simplicity and Sophistication
-                </span>
-                ."
+                Quantitative and qualitative UX research and iterations are
+                essential for shaping the customer base and ensuring that
+                products are functional, visually appealing, and personalized to
+                end-user needs. To facilitate this, I am committed to
+                cultivating a supportive work culture built on strong
+                communication and transparency across the entire team.
               </h4>
             </div>
             <div className="end-cap start-cap">
-              <h3>Expertise in UX/UI design</h3>
+              <h3>Empathy in UI Design</h3>
             </div>
             <div>
               <h4>
-                Research and Iterations are essential for shaping the customer
-                base and ensuring that products are functional, visually
-                appealing, and personalized to end-user needs. To facilitate
-                this, I am committed to fostering a supportive work culture
-                built on strong communication and transparency across the entire
-                team.
+                Designing with empathy is not easy, so I dedicate foundational
+                steps in my human-centred design process to immerse myself in
+                the user's world and craft solutions tailored to their genuine
+                requirements.
               </h4>
             </div>
             <div className="end-cap start-cap">
@@ -157,7 +151,20 @@ const About = () => {
             <div className="end-cap">
               <h4>
                 I am committed to approaching these elements with flexibility
-                for every project and client.
+                for every project and client. I deliver core user-centered
+                solutions in
+                <span className="fancy-font-body">
+                  {" "}
+                  "Design and Technology,
+                </span>
+                <span className="fancy-font-body">
+                  {" "}
+                  Branding and Websites,{" "}
+                </span>
+                <span className="fancy-font-body">
+                  Simplicity and Sophistication"
+                </span>
+                &nbsp;that captivate customers.
               </h4>
             </div>
           </AboutInnerWrapper>

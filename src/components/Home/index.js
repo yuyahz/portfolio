@@ -61,7 +61,7 @@ const Home = () => {
               variants={fadeLeft}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 1 }}
+              transition={{ duration: 2 }}
             >
               H
             </motion.h1>
@@ -77,14 +77,14 @@ const Home = () => {
                 opacity: 1,
                 y: 0,
                 rotate: [0, 5, 10, -10, 0],
-                transition: { duration: 1 },
+                transition: { duration: 2 },
               }}
             />
             <motion.h1
               variants={fadeLeft}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 1 }}
+              transition={{ duration: 2 }}
             >
               llo.
             </motion.h1>

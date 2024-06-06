@@ -5,6 +5,7 @@ import {
   SidebarWrapper,
   Icon,
   SidebarMenu,
+  SidebarItem,
   SidebarLink,
 } from "./SidebarElements";
 
@@ -47,102 +48,118 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
           </div>
         </Icon>
         <SidebarMenu>
-          <SidebarLink
-            to="home"
-            onClick={toggle}
-            smooth={true}
-            duration={700}
-            spy={true}
-            exact="true"
-            offset={0}
-            activeClass="active"
-          >
-            <p>Home</p>
-          </SidebarLink>
-          <SidebarLink
-            to="about"
-            onClick={toggle}
-            smooth={true}
-            duration={700}
-            spy={true}
-            exact="true"
-            offset={0}
-            activeClass="active"
-          >
-            <p>About</p>
-          </SidebarLink>
-          <SidebarLink
-            to="case1"
-            onClick={toggle}
-            smooth={true}
-            duration={700}
-            spy={true}
-            exact="true"
-            offset={100}
-            activeClass="active"
-          >
-            <p>Riversol Empathy</p>
-          </SidebarLink>
-          <SidebarLink
-            to="case2"
-            onClick={toggle}
-            smooth={true}
-            duration={700}
-            spy={true}
-            exact="true"
-            offset={200}
-            activeClass="active"
-          >
-            <p>Riversol Challenge</p>
-          </SidebarLink>
-          <SidebarLink
-            to="case3"
-            onClick={toggle}
-            smooth={true}
-            duration={700}
-            spy={true}
-            exact="true"
-            offset={200}
-            activeClass="active"
-          >
-            <p>Riversol Reinforce</p>
-          </SidebarLink>
-          <SidebarLink
-            to="mp"
-            onClick={toggle}
-            smooth={true}
-            duration={700}
-            spy={true}
-            exact="true"
-            offset={150}
-            activeClass="active"
-          >
-            <p>Midnight Paloma</p>
-          </SidebarLink>
-          <SidebarLink
-            to="larry"
-            onClick={toggle}
-            smooth={true}
-            duration={700}
-            spy={true}
-            exact="true"
-            offset={-100}
-            activeClass="active"
-          >
-            <p>Work</p>
-          </SidebarLink>
-          <SidebarLink
-            to="contact"
-            onClick={toggle}
-            smooth={true}
-            duration={700}
-            spy={true}
-            exact="true"
-            offset={-200}
-            activeClass="active"
-          >
-            <p>Contact</p>
-          </SidebarLink>
+          <SidebarItem>
+            <SidebarLink
+              to="home"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={0}
+              activeClass="active"
+            >
+              Home
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink
+              to="about"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={0}
+              activeClass="active"
+            >
+              About
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink
+              to="case1"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={0}
+              activeClass="active"
+            >
+              Riversol Empathy
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink
+              to="case2"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={0}
+              activeClass="active"
+            >
+              Riversol Challenge
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink
+              to="case3"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={0}
+              activeClass="active"
+            >
+              Riversol Reinforce
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink
+              to="mp"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={0}
+              activeClass="active"
+            >
+              Midnight Paloma
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink
+              to="larry"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={0}
+              activeClass="active"
+            >
+              Work
+            </SidebarLink>
+          </SidebarItem>
+          <SidebarItem>
+            <SidebarLink
+              to="contact"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={0}
+              activeClass="active"
+            >
+              Contact
+            </SidebarLink>
+          </SidebarItem>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

@@ -6,17 +6,25 @@ import { Link as LinkS } from "react-scroll";
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 22147483638;
+  color: var(--primary-txt-color);
+  font-size: 24px;
+  font-weight: 500;
+
+  @media screen and (max-height: 540px) {
+    font-size: 4.444vh;
+  }
 `;
 
 export const SidebarWrapper = styled.aside`
+  display: flex;
+  justify-content: center;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 2147483638;
-  max-width: 260px;
-  margin: 5rem 15px 0 0;
-  border: thick double var(--secondary-bg);
-  border-radius: 10px;
+  max-width: 80%;
+  height: 100vh;
+  border-left: solid 2px var(--secondary-bg);
   background: var(--primary-bg);
   transition: ${({ isOpen }) => (isOpen ? "0.3s ease" : "0.3s ease")};
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
@@ -24,20 +32,42 @@ export const SidebarWrapper = styled.aside`
 `;
 
 export const SidebarMenu = styled.div`
-  /* padding: 64px 0 24px 0; */
-  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const SidebarItem = styled.div`
+  width: 100%;
+  border-bottom: solid 2px var(--secondary-bg);
+  padding: 16px 0 16px 16px;
+  margin-top: 32px;
+
+  @media screen and (max-height: 770px) {
+    padding: 1.2vh 0 1.2vh 1.2vh;
+    margin-top: 4.156vh;
+  }
+  @media screen and (max-height: 540px) {
+    margin-top: 2.5vh;
+  }
 `;
 
 export const SidebarLink = styled(LinkS)`
-  div,
-  p {
-    color: var(--primary-txt-color);
-    font-size: 24px;
-    font-weight: 500;
-    padding: 10px 16px;
+  display: block;
+  /* padding: 6px;
+  margin-top: 32px; */
+  transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
 
-    @media screen and (max-width: 359px) {
-      font-size: 6.685vw;
+  &.active {
+    color: var(--fourth-txt-color);
+    background-color: var(--secondary-bg);
+    border-radius: 200px 5px 5px 200px;
+    transform: translateX(9px);
+    backface-visibility: hidden;
+    padding: 16px;
+
+    @media screen and (max-height: 540px) {
+      padding: 2.9vh;
     }
   }
 `;

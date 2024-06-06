@@ -3,6 +3,13 @@ import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
   background-color: var(--secondary-bg);
+
+  @media only screen and (min-width: 959.99px) {
+    display: none;
+  }
+  @media only screen and (max-width: 960px) {
+    display: block;
+  }
 `;
 
 export const FooterWrapper = styled.div`

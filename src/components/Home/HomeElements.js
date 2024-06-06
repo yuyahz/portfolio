@@ -87,14 +87,14 @@ export const HomeWrapper = styled.div`
     } */
   }
 
-  h2:first-child {
+  /* h2:first-child {
     margin-left: 32px;
 
     @media only screen and (max-width: 539px) {
       margin-left: 16px;
       margin-bottom: 16px;
     }
-  }
+  } */
 
   p {
     font-weight: 300;

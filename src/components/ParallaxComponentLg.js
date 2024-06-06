@@ -299,7 +299,7 @@ export const SocialIconLink = styled.a`
   }
 `;
 
-const ParallaxComponent = () => {
+const ParallaxComponentLg = () => {
   const parallaxRef = useRef(null);
   const [active, setActive] = useState(false);
 
@@ -337,7 +337,7 @@ const ParallaxComponent = () => {
   }, []);
 
   return (
-    <ParallaxContainer id="parallax" ref={parallaxRef}>
+    <ParallaxContainer id="parallaxLg" ref={parallaxRef}>
       <div className="parallax-wrapper">
         <div className={`parallax-layer layer1 ${active ? "act" : ""}`}>
           <p className="first-copy">Let's Make</p>
@@ -384,13 +384,20 @@ const ParallaxComponent = () => {
               <FaDribbble />
             </SocialIconLink>
           </SocialIcons>
+          {/* <div className="parallax-layer layer6">
+            <p className="rights">
+              {" "}
+              &copy; {new Date().getFullYear()} Your Website. All rights
+              reserved.
+            </p>
+          </div> */}
         </div>
       </div>
     </ParallaxContainer>
   );
 };
 
-export default ParallaxComponent;
+export default ParallaxComponentLg;
 
 // v2
 // import React, { useEffect, useRef } from "react";

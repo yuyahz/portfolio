@@ -10,7 +10,7 @@ export const SidebarContainer = styled.aside`
   font-size: 24px;
   font-weight: 500;
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 960.999px) {
     display: none;
   }
   @media screen and (max-height: 540px) {

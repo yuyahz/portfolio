@@ -107,16 +107,8 @@ export const NavLogoSm = styled(LinkR)`
     }
   }
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 960.999px) {
     display: none;
-  }
-
-  @media screen and (max-width: 960px) {
-    display: block;
-  }
-
-  @media screen and (max-width: 430px) {
-    /* margin: 36px 0 0 8.5vw; */
   }
 `;
 
@@ -133,6 +125,10 @@ export const NavContainer = styled.nav`
   background-color: var(--primary-bg);
   z-index: 22147483638;
 
+  @media screen and (max-width: 1280px) {
+    width: 70px;
+    font-size: 12px;
+  }
   @media screen and (max-width: 960px) {
     display: none;
   }
@@ -202,6 +198,10 @@ export const NavLinks = styled(LinkS)`
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 1280px) {
+      height: 170px;
+      transform: translateX(-3px);
+    }
     @media screen and (max-height: 630px) {
       height: 20vh;
     }

@@ -134,15 +134,16 @@ const Home = () => {
               animate="visible"
               transition={{ duration: 2.5 }}
             >
-              Product Designer
+              Creative Problem Solver
             </motion.p>
             <motion.p
+              className="caption"
               variants={fadeLeft}
               initial="hidden"
               animate="visible"
               transition={{ duration: 3 }}
             >
-              Creative Problem Solver
+              UX/UI & Brand Storytelling Designer
             </motion.p>
             <motion.p
               className="caption"

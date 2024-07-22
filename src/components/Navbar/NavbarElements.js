@@ -188,10 +188,10 @@ export const NavLinks = styled(LinkS)`
     font-weight: 700;
     color: var(--fourth-txt-color);
     background-color: var(--secondary-bg);
-    border-radius: 5px 200px 200px 5px;
+    border-radius: 5px 15px 15px 5px;
     margin: 6px 0;
     padding: 25%;
-    height: 200px;
+    height: 60vh;
     transform: translateX(-8px);
     backface-visibility: hidden;
     flex-direction: column;

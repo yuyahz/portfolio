@@ -1,55 +1,55 @@
 // export const worksRv = {
-//   className: "rv",
+//   id: "rv",
 //   to: "darumaPage",
 //   title: "Riversol",
 //   number: "01",
 // };
 
 // export const worksMp = {
-//   className: "mp",
+//   id: "mp",
 //   to: "darumaPage",
-//   title: "MclassNamenight Paloma",
+//   title: "Midnight Paloma",
 //   number: "01",
 // };
 
 export const worksLarry = {
   head: "Works",
-  className: "larry",
+  id: "larry",
   to: "larryPage",
   title: "Larry",
   number: "01",
 };
 
 export const worksVector = {
-  className: "vector",
+  id: "vector",
   to: "vectorPage",
   title: "Vector",
   number: "02",
 };
 
 export const worksDaruma = {
-  className: "daruma",
+  id: "daruma",
   to: "darumaPage",
   title: "Daruma",
   number: "03",
 };
 
 export const worksPortfolio = {
-  className: "portfolio",
+  id: "portfolio",
   to: "portfolioPage",
   title: "Portfolio",
   number: "04",
 };
 
 // export const worksDailyUi = {
-//   className: "ui",
+//   id: "ui",
 //   to: "dailyUiPage",
 //   title: "Daily UI",
 //   number: "04",
 // };
 
 // export const worksArtDirections = {
-//   className: "art",
+//   id: "art",
 //   to: "darumaPage",
 //   title: "Art Directions",
 //   number: "05",

@@ -163,7 +163,7 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 className="worksSec"
-                to="works"
+                to="larry"
                 smooth={true}
                 duration={700}
                 spy={true}

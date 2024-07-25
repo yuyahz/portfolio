@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
+// logo //
 const tapAnimation = keyframes`
   0% { transform: scale(1); }
   50% { transform: scale(0.9); }
@@ -112,6 +113,7 @@ export const NavLogoSm = styled(LinkR)`
   }
 `;
 
+// vertical nav //
 export const NavContainer = styled.nav`
   width: 100px;
   height: 100vh;
@@ -126,7 +128,7 @@ export const NavContainer = styled.nav`
   z-index: 22147483638;
 
   @media screen and (max-width: 1280px) {
-    width: 70px;
+    width: 80px;
     font-size: 12px;
   }
   @media screen and (max-width: 960px) {
@@ -136,29 +138,25 @@ export const NavContainer = styled.nav`
     font-size: 1.823vh;
   }
   @media screen and (max-height: 630px) {
-    width: 13.021vh;
+    width: 13.3vh;
   }
 `;
 
-export const NavWrapper = styled.div`
+export const NavWrapper = styled.ul`
   /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; */
   /* padding: 15px 0 15px 15px; */
-  margin-top: 80px;
+  /* margin-top: 80px; */
   height: 100vh;
+  position: relative;
   z-index: 1;
   width: 100%;
   max-width: 960px;
-
-  @media screen and (max-height: 768px) {
-    margin-top: 16px;
-  }
 `;
 
-export const NavContentsWrapper = styled.div`
-  display: flex;
+export const NavContentsWrapper = styled.li`
   flex-direction: column;
   align-items: start;
 
@@ -176,22 +174,23 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   cursor: pointer;
   text-decoration: none;
-  margin-top: 24px;
-  padding: 6px;
-  transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+  margin-left: 100px;
+  padding: 18px 16px;
+  transform: translateX(-100px);
 
   @media screen and (max-height: 510px) {
-    margin-top: 16px;
+    padding: 16px;
   }
 
   &.active {
     font-weight: 700;
     color: var(--fourth-txt-color);
     background-color: var(--secondary-bg);
-    border-radius: 5px 15px 15px 5px;
+    border-radius: 0px 15px 15px 0px;
     margin: 6px 0;
     padding: 25%;
-    height: 60vh;
+    height: 30vh;
+    transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
     transform: translateX(-8px);
     backface-visibility: hidden;
     flex-direction: column;
@@ -202,29 +201,119 @@ export const NavLinks = styled(LinkS)`
       height: 170px;
       transform: translateX(-3px);
     }
-    @media screen and (max-height: 630px) {
-      height: 20vh;
+    @media screen and (max-height: 910px) {
+      height: fit-content;
     }
   }
 `;
 
-export const NavMail = styled.div`
-  display: flex;
-  flex-direction: column;
-  font-size: 2.5rem;
-  cursor: pointer;
-  align-items: center;
-  padding-bottom: 1rem;
-`;
+export const SocialItem = styled.div`
+  width: 100%;
+  border-bottom: dotted 2px var(--secondary-bg);
+  &:last-child {
+    border-bottom: none;
+  }
 
-export const Image = styled.img`
-  max-width: 100%;
-  padding-top: 1.5rem;
-
-  @media screen and (max-width: 960px) {
-    height: 30vh;
+  @media screen and (max-height: 673px) {
+    border-bottom: none;
   }
 `;
+
+export const SocialIcon = styled.div`
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  text-decoration: none;
+  border-top: dotted 2px var(--secondary-bg);
+  width: 100%;
+  height: auto;
+  @media screen and (min-height: 673px) {
+    border-top: dotted 2px var(--secondary-bg);
+  }
+`;
+
+export const SocialIconLink = styled.a`
+  display: block;
+  text-align: center;
+  color: var(--secondary-bg);
+  font-size: 20px;
+  padding: 16px 16px 6px 16px;
+
+  @media screen and (max-height: 768px) {
+    font-size: 1.823vh;
+  }
+  @media screen and (max-height: 673px) {
+    display: none;
+  }
+`;
+
+export const NavLinksContact = styled(LinkS)`
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 100px;
+  padding: 18px 45px;
+  transform: translateX(-100px);
+  transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .contactImg {
+    padding-bottom: 6px;
+  }
+
+  @media screen and (max-height: 630px) {
+    padding: 2.6vh 6vh;
+    .contactImg {
+      width: 2vw;
+    }
+  }
+  @media screen and (max-height: 400px) {
+    .contactImg {
+      display: none;
+    }
+  }
+
+  &.active {
+    font-weight: 700;
+    color: var(--fourth-txt-color);
+    background-color: var(--secondary-bg);
+    border-radius: 0px 15px 15px 0px;
+    margin: 6px 0;
+    padding: 25%;
+    height: fit-content;
+    transition: transform 0.8s cubic-bezier(0.87, 0, 0.13, 1);
+    transform: translateX(-8px);
+    backface-visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 1280px) {
+      height: 170px;
+      transform: translateX(-3px);
+    }
+  }
+`;
+
+// export const NavMail = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   font-size: 2.5rem;
+//   cursor: pointer;
+//   align-items: center;
+//   padding-bottom: 1rem;
+// `;
+
+// export const Image = styled.img`
+//   max-width: 100%;
+//   padding-top: 1.5rem;
+
+//   @media screen and (max-width: 960px) {
+//     height: 30vh;
+//   }
+// `;
 
 // export const MobileIcon = styled.div`
 //   display: none;

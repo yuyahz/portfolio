@@ -125,8 +125,8 @@ export const HomeWrapper = styled.div`
       font-size: 12px;
     }
     @media only screen and (max-width: 960px) {
-      margin: 0.5rem 0 0 0.8rem;
-      font-size: 2.1vw;
+      margin: 0.3rem 0 0 0.8rem;
+      font-size: 3.3vw;
     }
   }
 `;

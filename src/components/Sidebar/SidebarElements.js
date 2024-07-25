@@ -45,12 +45,17 @@ export const SidebarItem = styled.div`
   border-bottom: solid 2px var(--secondary-bg);
   padding: 16px 0 16px 16px;
   margin-top: 32px;
-
-  @media screen and (max-height: 770px) {
+  &:last-child {
+    padding: 2px 0 16px 16px;
+  }
+  @media screen and (max-height: 810px) {
     padding: 1.2vh 0 1.2vh 1.2vh;
     margin-top: 4.156vh;
+    &:last-child {
+      padding: 0.1vh 0 1.2vh 1.2vh;
+    }
   }
-  @media screen and (max-height: 540px) {
+  @media screen and (max-height: 580px) {
     margin-top: 2.5vh;
   }
 `;
@@ -60,6 +65,11 @@ export const SidebarLink = styled(LinkS)`
   /* padding: 6px;
   margin-top: 32px; */
   transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+
+  .contactImg {
+    width: 45px;
+    padding-left: 9px;
+  }
 
   &.active {
     color: var(--fourth-txt-color);

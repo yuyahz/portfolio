@@ -8,7 +8,12 @@ import {
   NavContentsWrapper,
   NavItem,
   NavLinks,
+  NavLinksContact,
+  SocialItem,
+  SocialIcon,
+  SocialIconLink,
 } from "./NavbarElements";
+import { FaDribbble, FaBehance, FaLinkedinIn } from "react-icons/fa";
 import styled from "styled-components";
 
 // Styled Logo component with conditional styling
@@ -174,20 +179,54 @@ const Navbar = ({ toggle }) => {
                 Works
               </NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks
-                className="contactSec"
-                to="contact"
-                smooth={true}
-                duration={700}
-                spy={true}
-                exact="true"
-                offset={0}
-                activeClass="active"
-              >
-                Contact
-              </NavLinks>
-            </NavItem>
+
+            <SocialIcon>
+              <SocialItem>
+                <SocialIconLink
+                  href="https://dribbble.com/yuya-hashirizaki"
+                  target="_blank"
+                  aria-label="dribbble"
+                >
+                  <FaDribbble />
+                </SocialIconLink>
+              </SocialItem>
+              <SocialItem>
+                <SocialIconLink
+                  href="https://www.behance.net/yuyahashirizaki"
+                  target="_blank"
+                  aria-label="behance"
+                >
+                  <FaBehance />
+                </SocialIconLink>
+              </SocialItem>
+              <SocialItem>
+                <SocialIconLink
+                  href="https://www.linkedin.com/in/yuya-hashirizaki"
+                  target="_blank"
+                  aria-label="linkedIn"
+                >
+                  <FaLinkedinIn />
+                </SocialIconLink>
+              </SocialItem>
+              <SocialItem>
+                <NavLinksContact
+                  className="contactSec"
+                  to="contact"
+                  smooth={true}
+                  duration={700}
+                  spy={true}
+                  exact="true"
+                  offset={0}
+                  activeClass="active"
+                >
+                  <img
+                    className="contactImg"
+                    src="https://win98icons.alexmeub.com/icons/png/network_internet_pcs_installer-2.png"
+                  ></img>
+                  Contact
+                </NavLinksContact>
+              </SocialItem>
+            </SocialIcon>
           </NavContentsWrapper>
         </NavWrapper>
       </NavContainer>

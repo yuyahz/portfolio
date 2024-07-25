@@ -158,6 +158,10 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
               activeClass="active"
             >
               Contact
+              <img
+                className="contactImg"
+                src="https://win98icons.alexmeub.com/icons/png/network_internet_pcs_installer-2.png"
+              ></img>
             </SidebarLink>
           </SidebarItem>
         </SidebarMenu>

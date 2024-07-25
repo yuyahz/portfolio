@@ -278,7 +278,7 @@ export const ParallaxContainer = styled.div`
 `;
 
 export const SocialIcons = styled.div`
-  max-width: 200px;
+  max-width: 160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -362,17 +362,17 @@ const ParallaxComponentLg = () => {
             >
               <FaLinkedinIn />
             </SocialIconLink>
-            <SocialIconLink
+            {/* <SocialIconLink
               href="https://github.com/Yuya61"
               target="_blank"
               aria-label="github"
             >
               <FiGithub />
-            </SocialIconLink>
+            </SocialIconLink> */}
             <SocialIconLink
               href="https://www.behance.net/yuyahashirizaki"
               target="_blank"
-              aria-label="Instagram"
+              aria-label="behance"
             >
               <FaBehance />
             </SocialIconLink>

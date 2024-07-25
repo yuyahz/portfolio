@@ -177,17 +177,17 @@ const ParallaxComponentSm = () => {
           >
             <FaLinkedinIn />
           </a>
-          <a
+          {/* <a
             href="https://github.com/Yuya61"
             target="_blank"
             aria-label="github"
           >
             <FiGithub />
-          </a>
+          </a> */}
           <a
             href="https://www.behance.net/yuyahashirizaki"
             target="_blank"
-            aria-label="Instagram"
+            aria-label="behance"
           >
             <FaBehance />
           </a>

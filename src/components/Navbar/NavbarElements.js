@@ -201,7 +201,10 @@ export const NavLinks = styled(LinkS)`
       height: 170px;
       transform: translateX(-3px);
     }
-    @media screen and (max-height: 910px) {
+    @media screen and (max-height: 935px) {
+      height: 15vh;
+    }
+    @media screen and (max-height: 768px) {
       height: fit-content;
     }
   }

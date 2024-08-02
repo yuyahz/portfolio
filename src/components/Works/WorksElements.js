@@ -72,7 +72,7 @@ export const WorksTitle = styled(Link)`
     position: absolute;
     width: 840px;
     height: 130px;
-    background-color: var(--primary-bg);
+    background-color: var(--index-bg);
     top: 0;
     left: 0;
     transform-origin: right;

@@ -4,10 +4,6 @@ export const LooperContainer = styled.div`
   width: 100%;
   background: var(--primly-bg);
   color: var(--fourth-txt-color);
-  -ms-user-select: none; /* IE 10+ */
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
 
   @media only screen and (max-width: 960px) {
     padding: 0.833vw 0;

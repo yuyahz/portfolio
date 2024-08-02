@@ -30,6 +30,7 @@ import Contact from "../components/Contact";
 import ParallaxComponentLg from "../components/ParallaxComponentLg";
 import ParallaxComponentSm from "../components/ParallaxComponentSm";
 import Footer from "../components/Footer";
+
 // import PicLarry from "../components/PicLarry";
 // import PicVector from "../components/PicVector";
 // import PicDailyUi from "../components/PicDailyUI";
@@ -47,14 +48,18 @@ const Index = () => {
   useEffect(() => {
     const handleScroll = () => {
       const homeSection = document.getElementById("home");
-      const rect = homeSection.getBoundingClientRect();
 
       // If the Home section is no longer in view, show the navbar
-      if (rect.bottom <= 0) {
-        setShowNavbar(true);
-        setAnimateNavbar(true); // Trigger animation when navbar should show
+      if (homeSection) {
+        const rect = homeSection.getBoundingClientRect();
+        if (rect.bottom <= 0) {
+          setShowNavbar(true);
+          setAnimateNavbar(true); // Trigger animation when navbar should show
+        } else {
+          setAnimateNavbar(false); // Reset animation when not visible
+        }
       } else {
-        setAnimateNavbar(false); // Reset animation when not visible
+        console.warn("Element with ID 'home' not found.");
       }
     };
 

@@ -6,7 +6,7 @@ export const HomeContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--primary-bg);
+  background: var(--index-bg);
 
   @media only screen and (max-width: 540px) {
     height: 183vw;

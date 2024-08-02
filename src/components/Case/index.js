@@ -27,7 +27,7 @@ import { SliderData3 } from "../ImageSlider/SliderData3";
 import { SliderData4 } from "../ImageSlider/SliderData4";
 
 const Case = ({
-  id,
+  name,
   to,
   // img,
   // alt,
@@ -43,7 +43,7 @@ const Case = ({
   paddingEnd,
 }) => {
   return (
-    <CaseContainer id={id}>
+    <CaseContainer name={name}>
       <FullWidthWrapper
         paddingStart={paddingStart}
         paddingEnd={paddingEnd}

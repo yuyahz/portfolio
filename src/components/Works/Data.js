@@ -14,28 +14,28 @@
 
 export const worksLarry = {
   head: "Works",
-  id: "larry",
+  name: "larry",
   to: "larryPage",
   title: "Larry",
   number: "01",
 };
 
 export const worksVector = {
-  id: "vector",
+  name: "vector",
   to: "vectorPage",
   title: "Vector",
   number: "02",
 };
 
 export const worksDaruma = {
-  id: "daruma",
+  name: "daruma",
   to: "darumaPage",
   title: "Daruma",
   number: "03",
 };
 
 export const worksPortfolio = {
-  id: "portfolio",
+  name: "portfolio",
   to: "portfolioPage",
   title: "Portfolio",
   number: "04",

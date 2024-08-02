@@ -2,6 +2,7 @@
   --primary-bg: #faf8f6;
   --secondary-bg: #fe0000;
   --third-bg: #010606;
+  --index-bg: #fffbf4;
   --primary-txt-color: #fe0000;
   --secondary-txt-color: #010606;
   --third-txt-color: #888888;
@@ -17,6 +18,9 @@
   -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-shadow: 0 0 #00000009, 0 0 #0000000c, 0 0 #0000000f, 0 0 #00000012,
+    0 2px 5px #00000016, 0 10px 15px #0001;
 }
 
 html {

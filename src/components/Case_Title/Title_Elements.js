@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CaseContainer = styled.div`
-  background: var(--primary-bg);
+  background: var(--index-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,11 +53,6 @@ export const CaseWrapper = styled.div`
     color: var(--primary-txt-color);
     font-weight: 700;
     font-size: 7rem;
-    -ms-user-select: none; /* IE 10+ */
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
 
     &:nth-child(3) {
       margin-bottom: 2rem;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const WorksContainer = styled.div`
   width: 100%;
-  background: var(--primary-bg);
+  background: var(--index-bg);
   display: block;
   padding: 0.5rem;
   border-bottom: 2px solid red;

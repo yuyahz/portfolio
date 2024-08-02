@@ -32,6 +32,9 @@ export const SidebarWrapper = styled.aside`
   transition: ${({ isOpen }) => (isOpen ? "0.3s ease" : "0.3s ease")};
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  background-image: linear-gradient(0deg, transparent 15px, #fe000040 16px),
+    linear-gradient(90deg, transparent 15px, #fe000040 16px);
+  background-size: 16px 16px;
 `;
 
 export const SidebarMenu = styled.div`
@@ -78,6 +81,9 @@ export const SidebarLink = styled(LinkS)`
     transform: translateX(9px);
     backface-visibility: hidden;
     padding: 16px;
+    background-image: linear-gradient(0deg, transparent 15px, #fe000070 16px),
+      linear-gradient(90deg, transparent 15px, #fe000070 16px);
+    background-size: 16px 16px;
 
     @media screen and (max-height: 540px) {
       padding: 2.9vh;
@@ -97,7 +103,7 @@ export const Icon = styled.div`
     position: fixed;
     top: 20px;
     right: 15px;
-    background-color: var(--primary-bg);
+    background-color: var(--index-bg);
     border-radius: 50%;
 
     .burger-menu-bg {

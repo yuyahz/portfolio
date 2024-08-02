@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import * as FadeIn from "../FadeIn";
 import { CaseContainer, CaseWrapper, CaseTitleWrapper } from "./Title_Elements";
 

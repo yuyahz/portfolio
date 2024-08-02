@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 // import { motion } from "framer-motion";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
@@ -115,22 +115,30 @@ export const NavLogoSm = styled(LinkR)`
 
 // vertical nav //
 export const NavContainer = styled.nav`
-  width: 100px;
+  width: 80px;
   height: 100vh;
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: center;
-  top: 0;
-  font-size: 14px;
   color: var(--primary-txt-color);
   border-right: solid 2px var(--secondary-bg);
   background-color: var(--primary-bg);
   z-index: 22147483638;
 
-  @media screen and (max-width: 1280px) {
-    width: 80px;
-    font-size: 12px;
-  }
+  transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1);
+  ${(props) =>
+    props.animateNavbar
+      ? css`
+          transform: translateX(0);
+        `
+      : css`
+          transform: translateX(-100%);
+        `}
+
+  /* @media screen and (max-width: 1280px) {
+    width: 60px;
+  } */
   @media screen and (max-width: 960px) {
     display: none;
   }
@@ -177,6 +185,11 @@ export const NavLinks = styled(LinkS)`
   margin-left: 100px;
   padding: 18px 16px;
   transform: translateX(-100px);
+  font-size: 12px;
+
+  @media screen and (max-height: 500px) {
+    font-size: 2.4vh;
+  }
 
   @media screen and (max-height: 510px) {
     padding: 16px;
@@ -184,28 +197,91 @@ export const NavLinks = styled(LinkS)`
 
   &.active {
     font-weight: 700;
-    color: var(--fourth-txt-color);
-    background-color: var(--secondary-bg);
+    /* color: var(--fourth-txt-color); */
+    background-color: var(--index-bg);
     border-radius: 0px 15px 15px 0px;
+    box-shadow: var(--primary-shadow);
+    border: 2px solid var(--secondary-bg);
     margin: 6px 0;
     padding: 25%;
-    height: 30vh;
+    height: 45vh;
     transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
-    transform: translateX(-8px);
+    transform: translateX(-6px);
     backface-visibility: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(0deg, transparent 15px, #fe000070 16px),
+      linear-gradient(90deg, transparent 15px, #fe000070 16px);
+    background-size: 16px 16px;
 
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-height: 630px) {
+      background-image: linear-gradient(0deg, transparent 7px, #fe000070 8px),
+        linear-gradient(90deg, transparent 7px, #fe000070 8px);
+      background-size: 8px 8px;
+    }
+
+    //dinamic nav copy after selected//
+    font-size: 0;
+    .hm:before {
+      content: "hi! I'm Yuya:)";
+      font-size: 12px;
+      @media screen and (max-height: 768px) {
+        font-size: 1.563vh;
+      }
+    }
+    .ab:before {
+      content: "Passion as a Designer";
+      font-size: 12px;
+      @media screen and (max-height: 768px) {
+        font-size: 1.563vh;
+      }
+    }
+    .rv1:before {
+      content: "Latest Practice";
+      font-size: 12px;
+      @media screen and (max-height: 768px) {
+        font-size: 1.563vh;
+      }
+    }
+    /* .rv2:before {
+      content: "Riversol Challenge";
+      font-size: 12px;
+      @media screen and (max-height: 768px) {
+        font-size: 1.563vh;
+      }
+    }
+    .rv3:before {
+      content: "Riversol Reinforce";
+      font-size: 12px;
+      @media screen and (max-height: 768px) {
+        font-size: 1.563vh;
+      }
+    }
+    .mp:before {
+      content: "Midnight Paloma";
+      font-size: 12px;
+      @media screen and (max-height: 768px) {
+        font-size: 1.563vh;
+      }
+    } */
+    .wk:before {
+      content: "Achieved Projects";
+      font-size: 12px;
+      @media screen and (max-height: 768px) {
+        font-size: 1.563vh;
+      }
+    }
+
+    /* @media screen and (max-width: 1280px) {
       height: 170px;
       transform: translateX(-3px);
-    }
+    } */
     @media screen and (max-height: 935px) {
-      height: 15vh;
+      height: 40vh;
     }
     @media screen and (max-height: 768px) {
-      height: fit-content;
+      height: 30vh;
     }
   }
 `;
@@ -254,13 +330,18 @@ export const NavLinksContact = styled(LinkS)`
   display: flex;
   cursor: pointer;
   text-decoration: none;
-  margin-left: 100px;
   padding: 18px 45px;
-  transform: translateX(-100px);
+  margin-left: 80px;
+  transform: translateX(-90px);
   transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 12px;
+
+  @media screen and (max-height: 500px) {
+    font-size: 2.4vh;
+  }
 
   .contactImg {
     padding-bottom: 6px;
@@ -268,13 +349,9 @@ export const NavLinksContact = styled(LinkS)`
 
   @media screen and (max-height: 630px) {
     padding: 2.6vh 6vh;
+    margin-left: 90px;
     .contactImg {
       width: 2vw;
-    }
-  }
-  @media screen and (max-height: 400px) {
-    .contactImg {
-      display: none;
     }
   }
 
@@ -283,11 +360,13 @@ export const NavLinksContact = styled(LinkS)`
     color: var(--fourth-txt-color);
     background-color: var(--secondary-bg);
     border-radius: 0px 15px 15px 0px;
+    box-shadow: var(--primary-shadow);
+    border: 1.5px solid var(--secondary-bg);
     margin: 6px 0;
     padding: 25%;
     height: fit-content;
     transition: transform 0.8s cubic-bezier(0.87, 0, 0.13, 1);
-    transform: translateX(-8px);
+    transform: translateX(-6px);
     backface-visibility: hidden;
     flex-direction: column;
     justify-content: center;

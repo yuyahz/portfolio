@@ -1,5 +1,5 @@
 export const case1 = {
-  id: "case1",
+  name: "case1",
   to: "case1Page",
   title: "Cultivating Core User Empathy",
   body: "Analyzing the factors that enhance user experience is a significant process before driving the car.",
@@ -16,7 +16,7 @@ export const case1 = {
 };
 
 export const case2 = {
-  id: "case2",
+  name: "case2",
   to: "case2Page",
   title: "Resolving Design Challenges",
   body: "Challenges are ever-present, and addressing issues comprehensively is a problem-solving.",
@@ -33,7 +33,7 @@ export const case2 = {
 };
 
 export const case3 = {
-  id: "case3",
+  name: "case3",
   to: "case3Page",
   title: "Enhancing Website Profitability",
   body: "Product appeal and profitability improve through continuous enhancements and ongoing analysis.",
@@ -50,10 +50,10 @@ export const case3 = {
 };
 
 export const caseMp = {
-  id: "mp",
+  name: "mp",
   to: "caseMpPage",
-  title: "Midnight Paloma",
-  body: "Midnight Paloma website was a long overdue revamp but has committed to completing it within a tight timeframe.",
+  title: "Mnamenight Paloma",
+  body: "Mnamenight Paloma website was a long overdue revamp but has committed to completing it within a tight timeframe.",
   imageActivate1: false,
   imageActivate2: false,
   imageActivate3: false,

@@ -24,7 +24,7 @@ const Logo = styled.h4`
       : "var(--primary-txt-color)"};
 `;
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, animateNavbar }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const [isInParallaxOrContact, setIsInParallaxOrContact] = useState(false);
 
@@ -73,7 +73,7 @@ const Navbar = ({ toggle }) => {
           Yuya Hashirizaki
         </Logo>
       </NavLogoSm>
-      <NavContainer scrollNav={scrollNav}>
+      <NavContainer scrollNav={scrollNav} animateNavbar={animateNavbar}>
         <NavWrapper>
           <NavLogo to="/" onClick={toggleHome}>
             <Logo isInParallaxOrContact={isInParallaxOrContact}>
@@ -92,7 +92,7 @@ const Navbar = ({ toggle }) => {
                 offset={0}
                 activeClass="active"
               >
-                Home
+                <p className="hm">Home</p>
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -106,13 +106,13 @@ const Navbar = ({ toggle }) => {
                 offset={0}
                 activeClass="active"
               >
-                About
+                <p className="ab">About</p>
               </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks
                 className="case1Sec"
-                to="case1"
+                to="caseStudy"
                 smooth={true}
                 duration={700}
                 spy={true}
@@ -120,10 +120,10 @@ const Navbar = ({ toggle }) => {
                 offset={0}
                 activeClass="active"
               >
-                Riversol Empathy
+                <p className="rv1">Case Study</p>
               </NavLinks>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLinks
                 className="case2Sec"
                 to="case2"
@@ -134,7 +134,7 @@ const Navbar = ({ toggle }) => {
                 offset={0}
                 activeClass="active"
               >
-                Riversol Challenge
+                <p className="rv2">Case Study</p>
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -148,7 +148,7 @@ const Navbar = ({ toggle }) => {
                 offset={0}
                 activeClass="active"
               >
-                Riversol Reinforce
+                <p className="rv3">Case Study</p>
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -162,13 +162,13 @@ const Navbar = ({ toggle }) => {
                 offset={0}
                 activeClass="active"
               >
-                Midnight Paloma
+                <p className="mp">Case Study</p>
               </NavLinks>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLinks
                 className="worksSec"
-                to="larry"
+                to="works"
                 smooth={true}
                 duration={700}
                 spy={true}
@@ -176,7 +176,7 @@ const Navbar = ({ toggle }) => {
                 offset={0}
                 activeClass="active"
               >
-                Works
+                <p className="wk">Works</p>
               </NavLinks>
             </NavItem>
 
@@ -216,7 +216,7 @@ const Navbar = ({ toggle }) => {
                   duration={700}
                   spy={true}
                   exact="true"
-                  offset={0}
+                  offset={-200}
                   activeClass="active"
                 >
                   <img

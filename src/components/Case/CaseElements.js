@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CaseContainer = styled.div`
   width: 100%;
-  background: var(--primary-bg);
+  background: var(--index-bg);
   display: flex;
   justify-content: center;
 `;

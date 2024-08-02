@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  background: var(--primary-bg);
+  background: var(--index-bg);
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 export const AboutTitleWrapper = styled.div`
-  background: var(--primary-bg);
   padding-bottom: 2rem;
 
   @media only screen and (max-width: 960px) {
@@ -32,7 +31,6 @@ export const AboutTitleWrapper = styled.div`
 `;
 
 export const AboutImageWrapper = styled.div`
-  background: var(--primary-bg);
   padding-bottom: 2rem;
 
   @media only screen and (max-width: 960px) {
@@ -49,7 +47,6 @@ export const AboutImage = styled.img`
 `;
 
 export const AboutWrapper = styled.div`
-  background: var(--primary-bg);
   width: 100%;
   max-width: 1140px;
   display: block;
@@ -127,8 +124,6 @@ export const AboutWrapper = styled.div`
 `;
 
 export const AboutInnerWrapper = styled.div`
-  background: var(--primary-bg);
-
   .fancy-font {
     font-family: "GT";
     font-weight: 500;
@@ -237,7 +232,6 @@ export const AboutInnerWrapper = styled.div`
 `;
 
 export const AboutDropdownWrapper = styled.div`
-  background: var(--primary-bg);
   padding-bottom: 17rem;
 
   @media only screen and (max-width: 960px) {

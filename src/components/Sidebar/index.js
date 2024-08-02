@@ -134,7 +134,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
           </SidebarItem>
           <SidebarItem>
             <SidebarLink
-              to="larry"
+              to="works"
               onClick={toggle}
               smooth={true}
               duration={700}

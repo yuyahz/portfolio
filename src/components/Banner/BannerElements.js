@@ -3,7 +3,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const BannerContainer = styled.div`
   width: 100%;
-  background: var(--primary-bg);
+  background: var(--index-bg);
   color: var(--primary-txt-color);
   font-weight: 100;
   font-size: 2.5rem;

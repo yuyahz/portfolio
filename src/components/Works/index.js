@@ -9,9 +9,9 @@ import {
   WorksTitle,
 } from "./WorksElements";
 
-const Works = ({ id, to, head, title, number }) => {
+const Works = ({ name, to, head, title, number }) => {
   return (
-    <WorksContainer id={id}>
+    <WorksContainer name={name}>
       <FadeIn.Left>
         <WorksWrapper>
           <WorksInnerWrapper>

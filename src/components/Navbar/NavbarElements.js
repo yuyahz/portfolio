@@ -79,6 +79,8 @@ export const NavLogo = styled(LinkR)`
 
 export const NavLogoSm = styled(LinkR)`
   position: fixed;
+  top: 0;
+  left: 10;
   /* margin: 36px 0 0 6.25vw; */
   // for txt logo //
   margin: 22px 0 0 2.5vw;
@@ -101,9 +103,9 @@ export const NavLogoSm = styled(LinkR)`
     /* color: var(--primary-txt-color); */
     font-family: "GT";
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 540px) {
       font-size: 5vw;
     }
   }

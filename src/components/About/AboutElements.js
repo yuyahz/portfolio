@@ -8,7 +8,12 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutTitleWrapper = styled.div`
+  padding-top: 8.5rem;
   padding-bottom: 2rem;
+
+  @media only screen and (max-width: 960px) {
+    padding-top: 14.167vw;
+  }
 
   @media only screen and (max-width: 960px) {
     padding-bottom: 2vw;

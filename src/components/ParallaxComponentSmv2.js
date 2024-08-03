@@ -61,7 +61,8 @@ const Section = styled.section`
     background: var(--secondary-bg);
 
     .moon {
-      animation-name: sway;
+      padding-bottom: 4.167vw;
+      /* animation-name: sway;
       animation-duration: 4s;
       animation-direction: alternate;
       animation-iteration-count: infinite;
@@ -73,7 +74,7 @@ const Section = styled.section`
         to {
           padding-bottom: 7.161vw;
         }
-      }
+      } */
     }
   }
 

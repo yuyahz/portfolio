@@ -12,6 +12,7 @@ const ParallaxContainer = styled.div`
 
 const ParallaxWrapper = styled.div`
   width: 100%;
+  background: var(--seconday-bg);
 `;
 
 const Section = styled.section`
@@ -87,7 +88,7 @@ const Section = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     /* padding: 0 100px; */
     margin-top: 100vh;

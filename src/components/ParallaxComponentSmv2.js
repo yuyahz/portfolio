@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ParallaxContainer = styled.div`
   width: 100%;
-  /* background: var(--secondary-bg); */
+  background: var(--secondary-bg);
 
   @media only screen and (min-width: 959.99px) {
     display: none;
@@ -33,6 +33,7 @@ const Section = styled.section`
       color: var(--fourth-txt-color);
       font-family: "GT";
       font-weight: 300;
+      z-index: 1;
     }
 
     @media only screen and (max-width: 540px) {
@@ -51,7 +52,7 @@ const Section = styled.section`
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
+    /* z-index: -1; */
     display: block;
     width: 100%;
     height: 100vh;
@@ -89,10 +90,6 @@ const Section = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    /* padding: 0 100px; */
-    margin-top: 100vh;
-    margin-top: auto;
   }
 
   span {

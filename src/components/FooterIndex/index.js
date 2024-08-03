@@ -4,8 +4,7 @@ import { FaDribbble, FaBehance, FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 
 import {
-  FooterContainerSm,
-  FooterContainerLg,
+  FooterContainer,
   FooterWrapper,
   FooterLinksWrapper,
   FootertText,
@@ -24,7 +23,7 @@ const Footer = () => {
 
   return (
     <div>
-      <FooterContainerSm id="footer">
+      <FooterContainer id="footer">
         <FooterWrapper>
           <FooterLinksWrapper>
             <FootertText>Thank you.</FootertText>
@@ -68,53 +67,7 @@ const Footer = () => {
             </SocialMediaWrap>
           </SocialMedia>
         </FooterWrapper>
-      </FooterContainerSm>
-
-      <FooterContainerLg id="footer">
-        <FooterWrapper>
-          <FooterLinksWrapper>
-            <FootertText>Thank you.</FootertText>
-          </FooterLinksWrapper>
-          <SocialMedia>
-            <SocialMediaWrap>
-              <SocialLogo to="/" onClick={toggleHome}>
-                Yuya Hashirizaki
-              </SocialLogo>
-              {/* <WebsiteRights>dolla © {new Data().getFullYear()}All Right reserved.</WebsiteRights> */}
-              <SocialIcons>
-                <SocialIconLink
-                  href="https://dribbble.com/yuya-daily-ui"
-                  target="_blank"
-                  aria-label="dribbble"
-                >
-                  <FaDribbble />
-                </SocialIconLink>
-                <SocialIconLink
-                  href="https://www.behance.net/yuyahashirizaki"
-                  target="_blank"
-                  aria-label="Instagram"
-                >
-                  <FaBehance />
-                </SocialIconLink>
-                {/* <SocialIconLink
-                href="https://github.com/Yuya61"
-                target="_blank"
-                aria-label="github"
-              >
-                <FiGithub />
-              </SocialIconLink> */}
-                <SocialIconLink
-                  href="https://www.linkedin.com/in/yuya-hashirizaki"
-                  target="_blank"
-                  aria-label="linkedIn"
-                >
-                  <FaLinkedinIn />
-                </SocialIconLink>
-              </SocialIcons>
-            </SocialMediaWrap>
-          </SocialMedia>
-        </FooterWrapper>
-      </FooterContainerLg>
+      </FooterContainer>
     </div>
   );
 };

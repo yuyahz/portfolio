@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const FooterContainerSm = styled.footer`
+export const FooterContainer = styled.footer`
   background-color: var(--secondary-bg);
 
   @media only screen and (min-width: 959.99px) {
@@ -9,14 +9,6 @@ export const FooterContainerSm = styled.footer`
   }
   @media only screen and (max-width: 960px) {
     display: block;
-  }
-`;
-
-export const FooterContainerLg = styled.footer`
-  background-color: var(--secondary-bg);
-
-  @media only screen and (max-width: 960px) {
-    display: none;
   }
 `;
 

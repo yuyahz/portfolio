@@ -29,7 +29,8 @@ import Works from "../components/Works";
 import Contact from "../components/Contact";
 import ParallaxComponentLg from "../components/ParallaxComponentLg";
 import ParallaxComponentSm from "../components/ParallaxComponentSm";
-import Footer from "../components/Footer";
+import ParallaxComponentSmv2 from "../components/ParallaxComponentSmv2";
+import FooterIndex from "../components/FooterIndex";
 
 // import PicLarry from "../components/PicLarry";
 // import PicVector from "../components/PicVector";
@@ -107,10 +108,11 @@ const Index = () => {
       <Works {...worksPortfolio} />
       <div name="contact">
         <Contact />
-        <ParallaxComponentLg />
         <ParallaxComponentSm />
+        <ParallaxComponentSmv2 />
+        <ParallaxComponentLg />
       </div>
-      <Footer />
+      <FooterIndex />
     </>
   );
 };

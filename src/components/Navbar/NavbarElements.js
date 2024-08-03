@@ -225,49 +225,49 @@ export const NavLinks = styled(LinkS)`
 
     //dinamic nav copy after selected//
     font-size: 0;
-    .hm:before {
+    .hm::before {
       content: "hi! I'm Yuya:)";
       font-size: 12px;
       @media screen and (max-height: 768px) {
         font-size: 1.563vh;
       }
     }
-    .ab:before {
+    .ab::before {
       content: "Passion as a Designer";
       font-size: 12px;
       @media screen and (max-height: 768px) {
         font-size: 1.563vh;
       }
     }
-    .rv1:before {
+    .rv1::before {
       content: "Latest Practice";
       font-size: 12px;
       @media screen and (max-height: 768px) {
         font-size: 1.563vh;
       }
     }
-    /* .rv2:before {
+    /* .rv2::before {
       content: "Riversol Challenge";
       font-size: 12px;
       @media screen and (max-height: 768px) {
         font-size: 1.563vh;
       }
     }
-    .rv3:before {
+    .rv3::before {
       content: "Riversol Reinforce";
       font-size: 12px;
       @media screen and (max-height: 768px) {
         font-size: 1.563vh;
       }
     }
-    .mp:before {
+    .mp::before {
       content: "Midnight Paloma";
       font-size: 12px;
       @media screen and (max-height: 768px) {
         font-size: 1.563vh;
       }
     } */
-    .wk:before {
+    .wk::before {
       content: "Achieved Projects";
       font-size: 12px;
       @media screen and (max-height: 768px) {

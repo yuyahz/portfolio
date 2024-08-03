@@ -84,6 +84,8 @@ export const ParallaxContainer = styled.div`
   }
 
   .parallax-layer p {
+    font-family: "GT";
+    font-weight: 300;
     width: 100%;
     background: rgb(254, 0, 0);
     background: -moz-linear-gradient(
@@ -161,6 +163,8 @@ export const ParallaxContainer = styled.div`
       display: block;
       span::after {
         content: "Amazing";
+        font-family: "GT";
+        font-weight: 300;
       }
 
       .moon {

@@ -30,9 +30,6 @@ const ParallaxLayer = styled.div`
   align-items: center;
   transition: transform 0.6s ease-out; /* Add transition for smoother animation */
 
-  .layer2 {
-  }
-
   p {
     font-size: 460px;
     font-weight: 100;
@@ -106,7 +103,6 @@ const ParallaxLayer = styled.div`
     text-align: center;
     padding: 30px;
     position: fixed;
-    bottom: 0;
   }
 
   a {

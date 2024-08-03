@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Footer from "./FooterIndex";
-import { FaDribbble, FaBehance, FaLinkedinIn } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
 
 const ParallaxContainer = styled.div`
   width: 100%;
+  /* background: var(--secondary-bg); */
 
   @media only screen and (min-width: 959.99px) {
     display: none;
@@ -34,7 +32,6 @@ const Section = styled.section`
       color: var(--fourth-txt-color);
       font-family: "GT";
       font-weight: 300;
-      text-align: center;
     }
 
     @media only screen and (max-width: 540px) {
@@ -86,13 +83,13 @@ const Section = styled.section`
     text-align: center;
   }
 
-  .LayerFrame01 {
+  .LayerFrame {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    padding: 0 100px;
+    /* padding: 0 100px; */
     margin-top: 100vh;
     margin-top: auto;
   }

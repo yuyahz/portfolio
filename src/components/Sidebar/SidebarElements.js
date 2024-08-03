@@ -9,6 +9,7 @@ export const SidebarContainer = styled.aside`
   color: var(--primary-txt-color);
   font-size: 24px;
   font-weight: 500;
+  overflow: scroll;
 
   @media screen and (min-width: 960.999px) {
     display: none;

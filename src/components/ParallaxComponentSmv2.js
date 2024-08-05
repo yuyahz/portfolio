@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import * as FadeIn from "./FadeIn";
 import ParallaxBg from "../images/ParallaxSmv2.png";
 import ParallaxBgTxt from "../images/ParallaxSmv2Txt.png";
 
@@ -19,7 +20,34 @@ const ParallaxWrapper = styled.div`
 const ParallaxSection = styled.section`
   position: relative;
   width: 100%;
-  height: 100vh;
+  //v1v2//
+  /* height: 100h; */
+  //v3//
+  height: 70vh;
+  background: var(--secondary-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  p {
+    font-size: 20vw;
+    color: var(--fourth-txt-color);
+    font-family: "GT";
+    font-weight: 300;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 540px) {
+    p {
+      font-size: 19vw;
+    }
+  }
+  @media only screen and (max-width: 369px) {
+    p {
+      font-size: 17.5vw;
+    }
+  }
 
   .sectionInner {
     position: absolute;
@@ -28,7 +56,7 @@ const ParallaxSection = styled.section`
     width: 100%;
     height: 100%;
     background: var(--secondary-bg);
-    clip: rect(auto, auto, auto, auto); /* This clips the background */
+    clip: rect(auto, auto, auto, auto);
     z-index: 1;
 
     p {
@@ -113,6 +141,7 @@ const ParallaxSection = styled.section`
 
   .moon {
     padding-bottom: 4.167vw;
+    margin-bottom: 4.167vw;
     /* animation-name: sway;
     animation-duration: 4s;
     animation-direction: alternate;
@@ -129,39 +158,25 @@ const ParallaxSection = styled.section`
   }
 `;
 
+//v3//
 const ParallaxComponentSmv2 = () => {
   return (
     <ParallaxContainer>
       <ParallaxWrapper>
         <ParallaxSection>
-          <div className="sectionInner">
-            <div
-              className="ParallaxBg"
-              style={{ backgroundImage: `url(${ParallaxBgTxt})` }}
-            >
-              {/* <div className="txtCenter">
-                <p>Let's Make</p>
-              </div> */}
-            </div>
-            <div className="LayerFrameTop">
-              <p>Something</p>
-            </div>
-          </div>
-        </ParallaxSection>
-        <ParallaxSection>
-          <div className="sectionInner">
-            <div
-              className="ParallaxBg"
-              style={{ backgroundImage: `url(${ParallaxBg})` }}
-            >
-              <div className="txtCenter">
-                <div className="vertical">
-                  <p className="moon">Amazing</p>
-                  <span></span>
-                </div>
-              </div>
-            </div>
-            {/* <div className="LayerFrameBottom"></div> */}
+          <div className="txtCenter">
+            <FadeIn.DiagonalLeft>
+              <p>Let's Make</p>
+            </FadeIn.DiagonalLeft>
+            <FadeIn.DiagonalRight>
+              <p>Someting</p>
+            </FadeIn.DiagonalRight>
+            <FadeIn.DiagonalLeft>
+              <p className="moon">Amazing</p>
+            </FadeIn.DiagonalLeft>
+            <FadeIn.UpDelay>
+              <span></span>
+            </FadeIn.UpDelay>
           </div>
         </ParallaxSection>
       </ParallaxWrapper>
@@ -169,7 +184,46 @@ const ParallaxComponentSmv2 = () => {
   );
 };
 
-export default ParallaxComponentSmv2;
+//v2//
+// const ParallaxComponentSmv2 = () => {
+//   return (
+//     <ParallaxContainer>
+//       <ParallaxWrapper>
+//         <ParallaxSection>
+//           <div className="sectionInner">
+//             <div
+//               className="ParallaxBg"
+//               style={{ backgroundImage: `url(${ParallaxBgTxt})` }}
+//             >
+//               {/* <div className="txtCenter">
+//                 <p>Let's Make</p>
+//               </div> */}
+//             </div>
+//             <div className="LayerFrameTop">
+//               <p>Something</p>
+//             </div>
+//           </div>
+//         </ParallaxSection>
+//         <ParallaxSection>
+//           <div className="sectionInner">
+//             <div
+//               className="ParallaxBg"
+//               style={{ backgroundImage: `url(${ParallaxBg})` }}
+//             >
+//               <div className="txtCenter">
+//                 <div className="vertical">
+//                   <p className="moon">Amazing</p>
+//                   <span></span>
+//                 </div>
+//               </div>
+//             </div>
+//             {/* <div className="LayerFrameBottom"></div> */}
+//           </div>
+//         </ParallaxSection>
+//       </ParallaxWrapper>
+//     </ParallaxContainer>
+//   );
+// };
 
 //v1//
 // const ParallaxContainer = styled.div`
@@ -318,4 +372,4 @@ export default ParallaxComponentSmv2;
 //   );
 // };
 
-// export default ParallaxComponentSmv2;
+export default ParallaxComponentSmv2;

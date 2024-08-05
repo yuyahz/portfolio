@@ -10,6 +10,14 @@ export const Up = ({ children, delay, margin = "-20%" }) => (
   </InViewMonitor>
 );
 
+export const UpDelay = ({ children, delay, margin = "-20%" }) => (
+  <InViewMonitor childPropsInView={{ isActive: true }} intoViewMargin={margin}>
+    <FadeInUpDelay isActive={false} delay={delay}>
+      {children}
+    </FadeInUpDelay>
+  </InViewMonitor>
+);
+
 export const Down = ({ children, delay, margin = "-20%" }) => (
   <InViewMonitor childPropsInView={{ isActive: true }} intoViewMargin={margin}>
     <FadeInDown isActive={false} delay={delay}>
@@ -90,6 +98,22 @@ export const Diagonal6 = ({ children, delay, margin = "-1%" }) => (
   </InViewMonitor>
 );
 
+export const DiagonalRight = ({ children, delay, margin = "-1%" }) => (
+  <InViewMonitor childPropsInView={{ isActive: true }} intoViewMargin={margin}>
+    <FadeInDiagonalRight isActive={false} delay={delay}>
+      {children}
+    </FadeInDiagonalRight>
+  </InViewMonitor>
+);
+
+export const DiagonalLeft = ({ children, delay, margin = "-1%" }) => (
+  <InViewMonitor childPropsInView={{ isActive: true }} intoViewMargin={margin}>
+    <FadeInDiagonalLeft isActive={false} delay={delay}>
+      {children}
+    </FadeInDiagonalLeft>
+  </InViewMonitor>
+);
+
 const FadeIn = styled.div`
   opacity: 0;
   transition: opacity 0.6s ease, transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
@@ -103,6 +127,15 @@ const FadeInUp = styled(FadeIn)`
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translateY(60px);
+  ${({ isActive }) => isActive && `transform: translateY(0px);`}
+`;
+
+const FadeInUpDelay = styled(FadeIn)`
+  opacity: 0;
+  transition: opacity 6s ease, transform 6s cubic-bezier(0.25, 1, 0.5, 1);
+  ${({ isActive }) => isActive && `opacity: 1;`}
+  ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
+  transform: translateY(120px);
   ${({ isActive }) => isActive && `transform: translateY(0px);`}
 `;
 
@@ -193,5 +226,23 @@ const FadeInDiagonal6 = styled(FadeIn)`
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translate(-150px, -150px);
+  ${({ isActive }) => isActive && `transform: translate(0px, 0px);`}
+`;
+
+const FadeInDiagonalRight = styled(FadeIn)`
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 2.1s cubic-bezier(0.25, 1, 0.5, 1);
+  ${({ isActive }) => isActive && `opacity: 1;`}
+  ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
+  transform: translate(125px, 125px);
+  ${({ isActive }) => isActive && `transform: translate(0px, 0px);`}
+`;
+
+const FadeInDiagonalLeft = styled(FadeIn)`
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 2.1s cubic-bezier(0.25, 1, 0.5, 1);
+  ${({ isActive }) => isActive && `opacity: 1;`}
+  ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
+  transform: translate(-125px, -125px);
   ${({ isActive }) => isActive && `transform: translate(0px, 0px);`}
 `;

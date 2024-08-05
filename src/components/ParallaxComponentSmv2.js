@@ -1,9 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import ParallaxBg from "../images/ParallaxSmv2.png"; // Ensure correct path
+import ParallaxBg from "../images/ParallaxSmv2.png";
+import ParallaxBgTxt from "../images/ParallaxSmv2Txt.png";
 
 const ParallaxContainer = styled.div`
   width: 100%;
+
+  @media only screen and (min-width: 959.99px) {
+    display: none;
+  }
 `;
 
 const ParallaxWrapper = styled.div`
@@ -53,7 +58,7 @@ const ParallaxSection = styled.section`
     z-index: -1;
     display: block;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
 
@@ -132,11 +137,11 @@ const ParallaxComponentSmv2 = () => {
           <div className="sectionInner">
             <div
               className="ParallaxBg"
-              style={{ backgroundImage: `url(${ParallaxBg})` }}
+              style={{ backgroundImage: `url(${ParallaxBgTxt})` }}
             >
-              <div className="txtCenter">
+              {/* <div className="txtCenter">
                 <p>Let's Make</p>
-              </div>
+              </div> */}
             </div>
             <div className="LayerFrameTop">
               <p>Something</p>

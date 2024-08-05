@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bf82fce8.css",
-    "main.js": "/portfolio/static/js/main.144aff04.js",
+    "main.js": "/portfolio/static/js/main.ad2c3a3e.js",
     "static/media/case2_closing.png": "/portfolio/static/media/case2_closing.888626fd3d1e90efbea2.png",
     "static/media/caseMp_closing.png": "/portfolio/static/media/caseMp_closing.6a04b2dac72e7bba15ef.png",
     "static/media/case3_closing.png": "/portfolio/static/media/case3_closing.f63e97eeb9dfb4ac11e6.png",
@@ -96,16 +96,17 @@
     "static/media/Compatitor_City_Beauty.png": "/portfolio/static/media/Compatitor_City_Beauty.acf94a6d3552a335d727.png",
     "static/media/Compatitor_LA_ROCHE_POSAY.png": "/portfolio/static/media/Compatitor_LA_ROCHE_POSAY.57ed3229f4d59516d1fc.png",
     "static/media/Compatitor_NEOSTRATA.png": "/portfolio/static/media/Compatitor_NEOSTRATA.e15f293123d0b7a6a1d2.png",
+    "static/media/ParallaxSmv2Txt.png": "/portfolio/static/media/ParallaxSmv2Txt.605ebfbee1bb0992984f.png",
     "static/media/Compatitor_PERBLLE.png": "/portfolio/static/media/Compatitor_PERBLLE.9dbb21098c90ff71162a.png",
     "static/media/GT-Ultra-Fine-Regular-Italic.woff": "/portfolio/static/media/GT-Ultra-Fine-Regular-Italic.cacfb4c5ff4e57762f7d.woff",
     "static/media/GT-Ultra-Fine-Thin-Italic.woff": "/portfolio/static/media/GT-Ultra-Fine-Thin-Italic.9060a189cb76cade53a4.woff",
     "static/media/ParallaxSmv2.png": "/portfolio/static/media/ParallaxSmv2.9448a69aac0f74a02b20.png",
     "index.html": "/portfolio/index.html",
     "main.bf82fce8.css.map": "/portfolio/static/css/main.bf82fce8.css.map",
-    "main.144aff04.js.map": "/portfolio/static/js/main.144aff04.js.map"
+    "main.ad2c3a3e.js.map": "/portfolio/static/js/main.ad2c3a3e.js.map"
   },
   "entrypoints": [
     "static/css/main.bf82fce8.css",
-    "static/js/main.144aff04.js"
+    "static/js/main.ad2c3a3e.js"
   ]
 }

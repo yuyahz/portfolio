@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import * as FadeIn from "./FadeIn";
+import { Parallax } from "react-scroll-parallax";
 import ParallaxBg from "../images/ParallaxSmv2.png";
 import ParallaxBgTxt from "../images/ParallaxSmv2Txt.png";
 

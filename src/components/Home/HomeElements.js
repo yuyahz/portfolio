@@ -61,7 +61,7 @@ export const HomeWrapper = styled.div`
     font-family: "GT";
     font-weight: 500;
     font-size: 6.7vw;
-    margin-bottom: 34px;
+    margin-bottom: 16px;
     line-height: 0.9;
     /* pointer-events: none;
     -ms-user-select: none;

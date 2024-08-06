@@ -1,0 +1,336 @@
+:root {
+  --primary-bg: #faf8f6;
+  --secondary-bg: #fe0000;
+  --third-bg: #010606;
+  --index-bg: #fffbf4;
+  --primary-txt-color: #fe0000;
+  --secondary-txt-color: #010606;
+  --third-txt-color: #888888;
+  --fourth-txt-color: #fffbf4;
+  --inversed-txt-color: #faf8f6;
+  --border-radius: 15px;
+  --speed: 500ms;
+  --primary-shadow: 0 0 #00000009, 0 0 #0000000c, 0 0 #0000000f, 0 0 #00000012,
+    0 2px 5px #00000016, 0 10px 15px #0001;
+}
+
+/* Global  all elements */
+* {
+  font-family: "MyCase", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "MyCase";
+  src: url(https://www.dropbox.com/s/x3vr0gwwxw6oq0d/Larsseit-Thin.woff)
+      format("woff"),
+    url(https://www.dropbox.com/s/706rbr82spceygd/Larsseit-Thin.eot)
+      format("eot");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "MyCase";
+  src: url(https://www.dropbox.com/s/kbo65aud6kagxu6/Larsseit-Light.woff)
+      format("woff"),
+    url(https://www.dropbox.com/s/szao9fw4rnont1k/Larsseit-Light.eot)
+      format("eot");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "MyCase";
+  src: url(https://www.dropbox.com/s/kbo65aud6kagxu6/Larsseit-Light.woff)
+      format("woff"),
+    url(https://www.dropbox.com/s/t83q4r2aj75hm3t/Larsseit-Medium.eot)
+      format("eot");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "MyCase";
+  src: url(https://www.dropbox.com/s/kt3hg6rnsra8hsn/Larsseit-Bold.woff)
+      format("woff"),
+    url(https://www.dropbox.com/s/ypwtyaso8ipky41/Larsseit-Bold.eot)
+      format("eot");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "MyCase";
+  src: url(https://www.dropbox.com/s/sx98torjwv6r08l/Larsseit-ExtraBold.woff)
+      format("woff"),
+    url(https://www.dropbox.com/s/uhcfamx4szioaq2/Larsseit-ExtraBold.eot)
+      format("eot");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "GT";
+  src: url(../src/fonts/GT-Ultra-Fine-Thin-Italic.woff) format("woff"),
+    url(../src/fonts/GT-Ultra-Fine-Thin-Italic.eot) format("eot");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "GT";
+  src: url(../src/fonts//GT-Ultra-Fine-Regular-Italic.woff) format("woff"),
+    url(../src/fonts/GT-Ultra-Fine-Regular-Italic.eot) format("eot");
+  font-weight: 500;
+}
+
+/* Base font size for desktops */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem; /* Will be 16px, 14px, or 18px depending on screen size */
+}
+
+/* extra small devices */
+@media (max-width: 479px) {
+  html {
+    font-size: 14px;
+  }
+}
+/* Small devices (Portrait Tablets and Large Phones) */
+@media (min-width: 480px) and (max-width: 767px) {
+  html {
+    font-size: 15px;
+  }
+}
+/* Medium devices (Landscape Tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 16px;
+  }
+}
+/* Large devices (Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 17px;
+  }
+}
+/* Extra large devices (Large Desktops) */
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Default h1 */
+h1 {
+  font-weight: bold;
+}
+/* Specific h1 */
+.section-hero .section-headline h1 {
+  font-size: 80px; /* Default font size for larger screens */
+  line-height: 1.2; /* Adjust line-height for better readability */
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  .section-hero .section-headline h1 {
+    font-size: 64px; /* Medium screen size */
+  }
+}
+@media (max-width: 768px) {
+  .section-hero .section-headline h1 {
+    font-size: 48px; /* Small screen size */
+  }
+}
+/* h1 in another context */
+.section-another h1 {
+  font-size: 48px; /* Default font size for larger screens */
+  line-height: 1.3; /* Adjust line-height for better readability */
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  .section-another h1 {
+    font-size: 40px; /* Medium screen size */
+  }
+}
+@media (max-width: 768px) {
+  .section-another h1 {
+    font-size: 32px; /* Small screen size */
+  }
+}
+
+/* Default h2 */
+h2 {
+  font-weight: bold;
+}
+/* .section-headline */
+.section-headline h2 {
+  font-size: 56px;
+}
+@media (max-width: 1200px) {
+  .section-headline h2 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .section-headline h2 {
+    font-size: 28px;
+  }
+}
+/* .section-headline-secondary */
+.section-headline-secondary h2 {
+  font-size: 48px;
+}
+@media (max-width: 1200px) {
+  .section-headline-secondary h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .section-headline-secondary h2 {
+    font-size: 24px;
+  }
+}
+/* .section-headline-tertiary */
+.section-headline-another h2 {
+  font-size: 32px;
+}
+@media (max-width: 1200px) {
+  .section-headline-another h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .section-headline-anoter h2 {
+    font-size: 24px;
+  }
+}
+
+/* Default h3 */
+h3 {
+  font-weight: bold;
+}
+/* .block-headline */
+.block-headline h3 {
+  font-size: 28px;
+}
+@media (max-width: 1200px) {
+  .block-headline h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .block-headline h3 {
+    font-size: 21px;
+  }
+}
+
+/* .item-header-headline */
+.item-header-headline h3 {
+  font-size: 12px;
+}
+@media (max-width: 768px) {
+  .item-header-headline h3 {
+    font-size: 12px;
+  }
+}
+
+/* Default p */
+p {
+  font-weight: normal; /* Default weight */
+}
+/* .block-subheading */
+.block-subheading p {
+  font-size: 17px;
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  .block-subheading p {
+    font-size: 14px;
+  }
+}
+/* .block-body */
+.block-body p {
+  font-size: 17px;
+}
+@media (max-width: 1200px) {
+  .block-body p {
+    font-size: 14px;
+  }
+}
+
+/* Default a */
+a {
+  text-decoration: none;
+}
+/* links within .item */
+.item a {
+  font-size: 24px;
+  line-height: 21px;
+}
+@media (max-width: 1200px) {
+  .item a {
+    font-size: 20px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .item a {
+    font-size: 18px;
+    line-height: 16px;
+  }
+}
+/* links within .item-secondary */
+.item-secondary a {
+  font-size: 14px;
+  line-height: 12px;
+}
+
+@media (max-width: 1200px) {
+  .item-secondary a {
+    font-size: 12px;
+    line-height: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .item-secondary a {
+    font-size: 10px;
+    line-height: 8px;
+  }
+}
+
+/* Default buttons */
+button {
+  font-size: 14px;
+}
+@media (min-width: 735px) {
+  button {
+    font-size: 17px;
+  }
+}
+/* Default button arrows */
+.button-arrow {
+  font-size: 14px;
+}
+@media (min-width: 735px) {
+  .button-arrow {
+    font-size: 19px;
+  }
+}
+
+/* usasge
+Using Both
+<section class="section-welcome">
+  <div class="typography-section-headline">
+    <h1>Welcome to Our Website</h1>
+  </div>
+  <p>This section uses a larger headline for a welcome message.</p>
+</section>
+
+Simplified Approach
+<section class="section-welcome">
+  <h1>Welcome to Our Website</h1>
+  <p>This section uses a larger headline for a welcome message.</p>
+</section> */

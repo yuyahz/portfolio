@@ -7,7 +7,11 @@ import {
   SidebarMenu,
   SidebarItem,
   SidebarLink,
+  SidebarTag,
+  SidebarSocialItem,
+  SidebarSocialIconLink,
 } from "./SidebarElements";
+import { FaDribbble, FaBehance, FaLinkedinIn } from "react-icons/fa";
 
 const Sidebar = ({ isOpen, toggle, darkBurger }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -77,6 +81,18 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
+            <SidebarTag
+              to="case1"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={0}
+              activeClass="active"
+            >
+              <p className="tagCopy">Case Study 1</p>
+            </SidebarTag>
             <SidebarLink
               to="case1"
               onClick={toggle}
@@ -91,6 +107,18 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
+            <SidebarTag
+              to="case2"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={0}
+              activeClass="active"
+            >
+              <p className="tagCopy">Case Study 2</p>
+            </SidebarTag>
             <SidebarLink
               to="case2"
               onClick={toggle}
@@ -105,6 +133,18 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
+            <SidebarTag
+              to="case3"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={0}
+              activeClass="active"
+            >
+              <p className="tagCopy">Case Study 3</p>
+            </SidebarTag>
             <SidebarLink
               to="case3"
               onClick={toggle}
@@ -119,6 +159,18 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
             </SidebarLink>
           </SidebarItem>
           <SidebarItem>
+            <SidebarTag
+              to="case4"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={0}
+              activeClass="active"
+            >
+              <p className="tagCopy">Case Study 4</p>
+            </SidebarTag>
             <SidebarLink
               to="case4"
               onClick={toggle}
@@ -164,6 +216,29 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
               ></img>
             </SidebarLink>
           </SidebarItem>
+          <SidebarSocialItem>
+            <SidebarSocialIconLink
+              href="https://dribbble.com/yuya-hashirizaki"
+              target="_blank"
+              aria-label="dribbble"
+            >
+              <FaDribbble />
+            </SidebarSocialIconLink>
+            <SidebarSocialIconLink
+              href="https://www.behance.net/yuyahashirizaki"
+              target="_blank"
+              aria-label="behance"
+            >
+              <FaBehance />
+            </SidebarSocialIconLink>
+            <SidebarSocialIconLink
+              href="https://www.linkedin.com/in/yuya-hashirizaki"
+              target="_blank"
+              aria-label="linkedIn"
+            >
+              <FaLinkedinIn />
+            </SidebarSocialIconLink>
+          </SidebarSocialItem>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

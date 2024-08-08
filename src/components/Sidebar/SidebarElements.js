@@ -21,6 +21,7 @@ export const SidebarContainer = styled.aside`
 
 export const SidebarWrapper = styled.aside`
   display: flex;
+  overflow: scroll;
   justify-content: center;
   position: fixed;
   top: 0;
@@ -39,20 +40,18 @@ export const SidebarWrapper = styled.aside`
 `;
 
 export const SidebarMenu = styled.div`
-  display: flex;
+  margin-top: 75px;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 `;
 
 export const SidebarItem = styled.div`
   width: 100%;
   border-bottom: solid 2px var(--secondary-bg);
   padding: 16px 0 16px 16px;
-  margin-top: 32px;
-  &:last-child {
-    padding: 2px 0 16px 16px;
-  }
-  @media screen and (max-height: 810px) {
+
+  /* @media screen and (max-height: 810px) {
     padding: 1.2vh 0 1.2vh 1.2vh;
     margin-top: 4.156vh;
     &:last-child {
@@ -61,17 +60,15 @@ export const SidebarItem = styled.div`
   }
   @media screen and (max-height: 580px) {
     margin-top: 2.5vh;
-  }
+  } */
 `;
 
 export const SidebarLink = styled(LinkS)`
   display: block;
-  /* padding: 6px;
-  margin-top: 32px; */
   transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
 
   .contactImg {
-    width: 45px;
+    width: 38px;
     padding-left: 9px;
   }
 
@@ -89,6 +86,53 @@ export const SidebarLink = styled(LinkS)`
     @media screen and (max-height: 540px) {
       padding: 2.9vh;
     }
+  }
+`;
+
+export const SidebarTag = styled(LinkS)`
+  width: fit-content;
+  border-radius: 50px;
+  background-color: var(--index-bg);
+  border: 1.5px solid var(--secondary-bg);
+  margin-bottom: 4px;
+  padding: 2px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+
+  .tagCopy {
+    color: var(--primaly-text-color);
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  &.active {
+    padding: 4px 9px;
+    color: var(--fourth-txt-color);
+    background-color: var(--secondary-bg);
+    transform: translateX(4px);
+    backface-visibility: hidden;
+
+    .tagCopy {
+      font-weight: 500;
+    }
+  }
+`;
+
+export const SidebarSocialItem = styled.div`
+  display: flex;
+`;
+
+export const SidebarSocialIconLink = styled.a`
+  color: var(--secondary-bg);
+  font-size: 20px;
+  padding: 24px 16px 16px 16px;
+
+  :first-child {
+    padding-left: 24px;
   }
 `;
 

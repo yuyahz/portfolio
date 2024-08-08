@@ -3,8 +3,6 @@ import styled from "styled-components";
 import LarryArticle_11 from "../images/LarryArticle_11.png";
 import DarumaArticle_1 from "../images/DarumaArticle_1.png";
 import VectorArticle_1 from "../images/VectorArticle_1.png";
-import { FaDribbble, FaBehance, FaLinkedinIn } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
 
 const Wrapper = styled.div`
   width: 100%;

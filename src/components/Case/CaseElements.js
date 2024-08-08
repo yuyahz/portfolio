@@ -154,7 +154,7 @@ export const ColumnContentLg = styled.div`
     }
   }
 
-  p {
+  .body {
     color: var(--primary-txt-color);
     font-weight: 100;
     font-size: 3rem;
@@ -168,6 +168,37 @@ export const ColumnContentLg = styled.div`
   a {
     @media only screen and (max-width: 1024px) {
       margin: 0 auto;
+    }
+  }
+`;
+
+export const TagWrapper = styled.div`
+  display: flex;
+`;
+
+export const Tag = styled.div`
+  width: fit-content;
+  border-radius: 50px;
+  background-color: var(--secondary-bg);
+  margin: 0 16px 9px 0;
+  padding: 6px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .tagCopy {
+    color: var(--primary-bg);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  @media only screen and (max-width: 540px) {
+    padding: 4px 10px;
+
+    .tagCopy {
+      font-size: 12px;
     }
   }
 `;

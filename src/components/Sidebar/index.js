@@ -120,7 +120,7 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
           </SidebarItem>
           <SidebarItem>
             <SidebarLink
-              to="mp"
+              to="case4"
               onClick={toggle}
               smooth={true}
               duration={700}

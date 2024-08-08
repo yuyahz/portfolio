@@ -5,14 +5,10 @@ import {
   HomeIconWrapper,
   HomeIcon,
   ColumnLg,
-  ColumnSm,
   ColumnContentLg,
   ColumnContentSm,
-  ColumnInsertContent,
   Image,
   ImageCs,
-  ImageSm,
-  ImageCircle,
   CaseContainer,
   CaseWrapper,
   HeroImageWrapper,
@@ -26,7 +22,6 @@ import {
   CreditBody,
   FullWidthContainer,
   FullWidthWrapper,
-  FullWidthFlipWrapper,
   ClosingWrapper,
   Hide,
 } from "../CaseElements";
@@ -34,36 +29,16 @@ import {
   IntroContainer,
   IntroWrapper,
   ResearchInsight,
-  PersonaContainer,
-  PersonaWrapper,
-  EmpathyContainer,
-  EmpathyWrapper,
-  CompetitorContainer,
-  CompetitorImageWrapper,
   InsertContainer,
   InsertWrapper,
-  InsertImageContainer,
-  InsertImageWrapper,
 } from "./Case1_Elements";
 import case1_hero from "../../images/case1_hero.png";
 import case1_closing from "../../images/case1_closing.png";
 import case1_research from "../../images/case1_research.png";
-import case1_cathy from "../../images/Cathy.png";
-import case1_allison from "../../images/Allison.png";
-import compatitor_laroche from "../../images/Compatitor_LA_ROCHE_POSAY.png";
-import compatitor_neostrata from "../../images/Compatitor_NEOSTRATA.png";
-import compatitor_perblle from "../../images/Compatitor_PERBLLE.png";
-import compatitor_solvaderm from "../../images/Compatitor_SOLVADERM.png";
-import compatitor_city from "../../images/Compatitor_City_Beauty.png";
-import case1_insert from "../../images/case1_insert.png";
-import case1_journey from "../../images/case1_journey.png";
-import case1_architecture from "../../images/case1_architecture.png";
-import case1_flow from "../../images/case1_flow.png";
-import case1_overview from "../../images/case1_overview.png";
 
 const Article_Case1 = () => {
   return (
-    <CaseContainer id="case1">
+    <CaseContainer>
       <motion.div
         animate={{
           x: 0,

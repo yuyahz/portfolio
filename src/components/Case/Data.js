@@ -2,6 +2,7 @@ export const case1 = {
   name: "case1",
   to: "case1Page",
   title: "Cultivating Core User Empathy",
+  tag: "Case Study 1",
   body: "Analyzing the factors that enhance user experience is a significant process before driving the car.",
   imageActivate1: true,
   imageActivate2: false,
@@ -12,13 +13,14 @@ export const case1 = {
   imageLeft: true,
   paddingStart: false,
   paddingEnd: false,
-  buttonLabel: "View Study",
+  buttonLabel: "View Case Study 1",
 };
 
 export const case2 = {
   name: "case2",
   to: "case2Page",
   title: "Resolving Design Challenges",
+  tag: "Case Study 2",
   body: "Challenges are ever-present, and addressing issues comprehensively is a problem-solving.",
   imageActivate1: false,
   imageActivate2: true,
@@ -29,13 +31,14 @@ export const case2 = {
   imageLeft: false,
   paddingStart: true,
   paddingEnd: false,
-  buttonLabel: "View Study",
+  buttonLabel: "View Case Study 2",
 };
 
 export const case3 = {
   name: "case3",
   to: "case3Page",
   title: "Enhancing Website Profitability",
+  tag: "Case Study 3",
   body: "Product appeal and profitability improve through continuous enhancements and ongoing analysis.",
   imageActivate1: false,
   imageActivate2: false,
@@ -46,14 +49,15 @@ export const case3 = {
   imageLeft: true,
   paddingStart: true,
   paddingEnd: false,
-  buttonLabel: "View Study",
+  buttonLabel: "View Case Study 3",
 };
 
-export const caseMp = {
-  name: "mp",
-  to: "caseMpPage",
-  title: "Mnamenight Paloma",
-  body: "Mnamenight Paloma website was a long overdue revamp but has committed to completing it within a tight timeframe.",
+export const case4 = {
+  name: "case4",
+  to: "case4Page",
+  title: "Midnight Paloma",
+  tag: "Case Study 4",
+  body: "Midnight Paloma website was a long overdue revamp but has committed to completing it within a tight timeframe.",
   imageActivate1: false,
   imageActivate2: false,
   imageActivate3: false,
@@ -63,5 +67,5 @@ export const caseMp = {
   imageLeft: false,
   paddingStart: true,
   paddingEnd: true,
-  buttonLabel: "View Study",
+  buttonLabel: "View Case Study 4",
 };

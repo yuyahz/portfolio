@@ -57,7 +57,7 @@ import case2_closing from "../../images/case2_closing.png";
 
 const Article_Case2 = () => {
   return (
-    <CaseContainer id="case1">
+    <CaseContainer>
       <motion.div
         animate={{
           x: 0,

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { FaDribbble, FaBehance, FaLinkedinIn } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
 
 export const ParallaxContainer = styled.div`
   margin: 0;

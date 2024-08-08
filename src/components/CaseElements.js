@@ -580,10 +580,10 @@ export const Tag = styled.div`
 
   @media only screen and (max-width: 540px) {
     margin: 0 9px 6px 0;
-    padding: 4px 12px;
+    padding: 4px 10px;
 
     p {
-      font-size: 9px;
+      font-size: 12px;
     }
   }
 `;

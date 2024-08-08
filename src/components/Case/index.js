@@ -16,6 +16,8 @@ import {
   ColumnLgImg4,
   ColumnLg,
   ColumnContentLg,
+  Tag,
+  TagWrapper,
 } from "./CaseElements";
 import ImageSlider1 from "../ImageSlider/Slider1";
 import ImageSlider2 from "../ImageSlider/Slider2";
@@ -32,6 +34,7 @@ const Case = ({
   // img,
   // alt,
   title,
+  tag,
   body,
   imageActivate1,
   imageActivate2,
@@ -78,8 +81,13 @@ const Case = ({
             <div>
               <h2>{title}</h2>
             </div>
+            <TagWrapper>
+              <Tag>
+                <p className="tagCopy">{tag}</p>
+              </Tag>
+            </TagWrapper>
             <div>
-              <p>{body}</p>
+              <p className="body">{body}</p>
             </div>
             <Button
               to={to}

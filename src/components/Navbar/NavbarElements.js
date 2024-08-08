@@ -239,28 +239,28 @@ export const NavLinks = styled(LinkS)`
         font-size: 1.563vh;
       }
     }
-    .rv1::before {
+    .case1::before {
       content: "Latest Practice";
       font-size: 12px;
       @media screen and (max-height: 768px) {
         font-size: 1.563vh;
       }
     }
-    /* .rv2::before {
+    /* .case2::before {
       content: "Riversol Challenge";
       font-size: 12px;
       @media screen and (max-height: 768px) {
         font-size: 1.563vh;
       }
     }
-    .rv3::before {
+    .case3::before {
       content: "Riversol Reinforce";
       font-size: 12px;
       @media screen and (max-height: 768px) {
         font-size: 1.563vh;
       }
     }
-    .mp::before {
+    .case4::before {
       content: "Midnight Paloma";
       font-size: 12px;
       @media screen and (max-height: 768px) {

@@ -5,14 +5,10 @@ import {
   HomeIconWrapper,
   HomeIcon,
   ColumnLg,
-  ColumnContentLgMd,
   ColumnContentLg,
-  ColumnContentMd,
   ColumnContentSm,
-  ColumnInsertContent,
   Image,
   ImageCs,
-  ImageSm,
   CaseContainer,
   CaseWrapper,
   HeroImageWrapper,
@@ -32,34 +28,18 @@ import {
 import {
   IntroContainer,
   IntroWrapper,
-  ResearchInsight,
   BoxWrapper,
   ContentInfoContainer,
   ContentTitleContainer,
   ContentTitleWrapper,
-  InsertImageContainer,
-  InsertImageWrapper,
 } from "./Case2_Elements";
 import case2_hero from "../../images/case2_hero.png";
 import case2_filter_initial from "../../images/case2_filter_initial.png";
-import case2_filter_iterative from "../../images/case2_filter_iterative.png";
-import case2_filter_usability from "../../images/case2_filter_usability.png";
-import case2_filter_chip from "../../images/case2_filter_chip.png";
-import case2_filter_result from "../../images/case2_filter_result.png";
-import case2_replenishment_mockup from "../../images/case2_replenishment_mockup.png";
-import case2_replenishment_userflow from "../../images/case2_replenishment_userflow.png";
-import case2_replenishment_result from "../../images/case2_replenishment_result.png";
-import case2_about_identify from "../../images/case2_about_identify.png";
-import case2_about_credibility from "../../images/case2_about_credibility.png";
-import case2_about_customerbase from "../../images/case2_about_customerbase.png";
-import case2_about_responsible from "../../images/case2_about_responsible.png";
-import case2_about_insert from "../../images/case2_about_insert.png";
-import case2_about_result from "../../images/case2_about_result.png";
 import case2_closing from "../../images/case2_closing.png";
 
 const Article_Case2 = () => {
   return (
-    <CaseContainer id="case1">
+    <CaseContainer>
       <motion.div
         animate={{
           x: 0,

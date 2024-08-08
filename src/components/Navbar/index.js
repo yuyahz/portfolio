@@ -120,7 +120,7 @@ const Navbar = ({ toggle, animateNavbar }) => {
                 offset={0}
                 activeClass="active"
               >
-                <p className="rv1">Case Study</p>
+                <p className="case1">Case Study</p>
               </NavLinks>
             </NavItem>
             {/* <NavItem>
@@ -134,7 +134,7 @@ const Navbar = ({ toggle, animateNavbar }) => {
                 offset={0}
                 activeClass="active"
               >
-                <p className="rv2">Case Study</p>
+                <p className="case2">Case Study</p>
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -148,7 +148,7 @@ const Navbar = ({ toggle, animateNavbar }) => {
                 offset={0}
                 activeClass="active"
               >
-                <p className="rv3">Case Study</p>
+                <p className="case3">Case Study</p>
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -162,7 +162,7 @@ const Navbar = ({ toggle, animateNavbar }) => {
                 offset={0}
                 activeClass="active"
               >
-                <p className="mp">Case Study</p>
+                <p className="case4">Case Study</p>
               </NavLinks>
             </NavItem> */}
             <NavItem>

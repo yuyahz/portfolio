@@ -4,11 +4,7 @@ import StickyCTA from "../StickyCTA/StickyCTA";
 import {
   HomeIconWrapper,
   HomeIcon,
-  ColumnLg,
-  ColumnContentLgMd,
   ColumnContentLg,
-  ColumnContentMd,
-  ColumnContentSm,
   Image,
   ImageCs,
   CaseContainer,
@@ -23,37 +19,22 @@ import {
   CreditTitle,
   CreditBody,
   FullWidthContainer,
-  FullWidthWrapper,
   ClosingWrapper,
   Hide,
 } from "../CaseElements";
 import {
   IntroContainer,
   IntroWrapper,
-  ResearchInsight,
   ContentInfoContainer,
   ContentTitleContainer,
   ContentTitleWrapper,
 } from "./Case3_Elements";
 import case3_hero from "../../images/case3_hero.png";
-import case3_snackbar_ensure from "../../images/case3_snackbar_ensure.png";
-import case3_snackbar_responsive from "../../images/case3_snackbar_responsive.png";
-import case3_snackbar_result from "../../images/case3_snackbar_result.png";
-import case3_sales_integrating from "../../images/case3_sales_integrating.png";
-import case3_sales_components from "../../images/case3_sales_components.png";
-import case3_sales_consistency from "../../images/case3_sales_consistency.png";
-import case3_sales_result from "../../images/case2_about_result.png";
-import case3_pdp_integrating from "../../images/case3_pdp_integrating.png";
-import case3_pdp_usability from "../../images/case3_pdp_usability.png";
-import case3_pdp_engagement from "../../images/case3_pdp_engagement.png";
-import case3_pdp_additional from "../../images/case3_pdp_additional.png";
-import case3_pdp_altenative from "../../images/case3_pdp_alternative.png";
-import case3_pdp_result from "../../images/case3_pdp_result.png";
 import case3_closing from "../../images/case3_closing.png";
 
 const Article_Case3 = () => {
   return (
-    <CaseContainer id="case1">
+    <CaseContainer>
       <motion.div
         animate={{
           x: 0,

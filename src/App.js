@@ -3,13 +3,13 @@ import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages";
 import case1Page from "./pages/articleCase1";
-import rv1 from "./pages/articleRv1";
+import case1 from "./pages/articleCase_1";
 import case2Page from "./pages/articleCase2";
-import rv2 from "./pages/articleRv2";
+import case2 from "./pages/articleCase_2";
 import case3Page from "./pages/articleCase3";
-import rv3 from "./pages/articleRv3";
-import caseMpPage from "./pages/articleCaseMp";
-import mp1 from "./pages/articleMp1";
+import case3 from "./pages/articleCase_3";
+import case4Page from "./pages/articleCase4";
+import case4 from "./pages/articleCase_4";
 import larryPage from "./pages/articleLarry";
 import vectorPage from "./pages/articleVector";
 import darumaPage from "./pages/articleDaruma";
@@ -26,13 +26,13 @@ function App() {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/case1Page" component={case1Page} exact />
-          <Route path="/rv1" component={rv1} exact />
+          <Route path="/case1" component={case1} exact />
           <Route path="/case2Page" component={case2Page} exact />
-          <Route path="/rv2" component={rv2} exact />
+          <Route path="/case2" component={case2} exact />
           <Route path="/case3Page" component={case3Page} exact />
-          <Route path="/rv3" component={rv3} exact />
-          <Route path="/caseMpPage" component={caseMpPage} exact />
-          <Route path="/mp1" component={mp1} exact />
+          <Route path="/case3" component={case3} exact />
+          <Route path="/case4Page" component={case4Page} exact />
+          <Route path="/case4" component={case4} exact />
           <Route path="/larryPage" component={larryPage} exact />
           <Route path="/vectorPage" component={vectorPage} exact />
           <Route path="/darumaPage" component={darumaPage} exact />

@@ -61,7 +61,7 @@ import case1_overview from "../../images/case1_overview.png";
 
 const Article_Case1 = () => {
   return (
-    <CaseContainer id="case1">
+    <CaseContainer>
       <motion.div
         animate={{
           x: 0,

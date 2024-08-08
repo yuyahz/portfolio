@@ -40,27 +40,13 @@ export const SidebarWrapper = styled.aside`
 `;
 
 export const SidebarMenu = styled.div`
-  margin-top: 75px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
+  margin-top: 100px 0;
 `;
 
 export const SidebarItem = styled.div`
   width: 100%;
   border-bottom: solid 2px var(--secondary-bg);
   padding: 16px 0 16px 16px;
-
-  /* @media screen and (max-height: 810px) {
-    padding: 1.2vh 0 1.2vh 1.2vh;
-    margin-top: 4.156vh;
-    &:last-child {
-      padding: 0.1vh 0 1.2vh 1.2vh;
-    }
-  }
-  @media screen and (max-height: 580px) {
-    margin-top: 2.5vh;
-  } */
 `;
 
 export const SidebarLink = styled(LinkS)`

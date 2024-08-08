@@ -36,7 +36,7 @@ export const IntroWrapper = styled.div`
   div {
     margin-top: 100px;
 
-    :first-child {
+    &:first-child {
       margin-top: 0px;
     }
 
@@ -135,11 +135,11 @@ export const ContentInfoContainer = styled.div`
       }
     }
 
-    p:first-child {
+    p&:first-child {
       margin-top: 0.5em;
     }
 
-    p:not(:first-child) {
+    p:not(&:first-child) {
       margin-top: 6px;
     }
   }

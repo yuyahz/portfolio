@@ -141,7 +141,7 @@ export const SocialIconLink = styled.a`
   @media screen and (max-width: 960px) {
     padding-left: 6vw;
 
-    :first-child {
+    &:first-child {
       padding-left: 0;
     }
   }

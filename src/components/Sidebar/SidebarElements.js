@@ -40,7 +40,7 @@ export const SidebarWrapper = styled.aside`
 `;
 
 export const SidebarMenu = styled.div`
-  margin-top: 100px 0;
+  margin-top: 100px;
 `;
 
 export const SidebarItem = styled.div`
@@ -110,14 +110,15 @@ export const SidebarTag = styled(LinkS)`
 
 export const SidebarSocialItem = styled.div`
   display: flex;
+  padding-bottom: 100px;
 `;
 
 export const SidebarSocialIconLink = styled.a`
   color: var(--secondary-bg);
-  font-size: 20px;
+  font-size: 24px;
   padding: 24px 16px 16px 16px;
 
-  :first-child {
+  &:first-child {
     padding-left: 24px;
   }
 `;

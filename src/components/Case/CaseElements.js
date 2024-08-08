@@ -26,7 +26,7 @@ export const FullWidthWrapper = styled.div`
   }
 
   @media only screen and (max-width: 960px) {
-    margin: 0 30px 0 30px;
+    margin: 0 30px;
   }
 `;
 
@@ -100,13 +100,13 @@ export const ColumnLgImg4 = styled.div`
 
 export const ColumnLg = styled.div`
   width: 100%;
-  padding: 24px;
+  padding: 0 24px 24px 24px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   // md sm center //
-  width: 100%;
+  /* width: 100%; */
 
   // lg //
   @media (min-width: 1024px) {
@@ -134,7 +134,11 @@ export const Image = styled.img`
 `;
 
 export const ColumnContentLg = styled.div`
-  /* padding: 34px; */
+  padding: 0 60px;
+
+  @media only screen and (max-width: 540px) {
+    padding: 0;
+  }
 
   h2 {
     color: var(--primary-txt-color);

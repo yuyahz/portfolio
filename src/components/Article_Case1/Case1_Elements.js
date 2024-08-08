@@ -20,7 +20,7 @@ export const IntroWrapper = styled.div`
   div {
     margin-top: 100px;
 
-    :first-child {
+    &:first-child {
       margin-top: 0px;
     }
 
@@ -41,7 +41,7 @@ export const ResearchInsight = styled.div`
   width: 50%;
 
   p {
-    :first-child {
+    &:first-child {
       margin-top: 0px;
       color: var(--secondary-txt-color);
       font-weight: 600;
@@ -136,7 +136,7 @@ export const EmpathyWrapper = styled.div`
       padding-left: 0.7em;
       text-indent: -0.7em;
 
-      :first-child {
+      &:first-child {
         margin-top: 0;
         color: var(--secondary-txt-color);
         font-weight: 600;
@@ -163,7 +163,7 @@ export const CompetitorContainer = styled.div`
     padding-left: 0.7em;
     text-indent: -0.7em;
 
-    p:not(:first-child) {
+    p:not(&:first-child) {
       margin-top: 6px;
     }
   }

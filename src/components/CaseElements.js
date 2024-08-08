@@ -203,7 +203,7 @@ export const SingleColumnWrapper = styled.div`
   div {
     /* margin-top: 100px;
 
-    :first-child {
+    &:first-child {
       margin-top: 0px;
     }
 
@@ -227,7 +227,7 @@ export const ColumnLg = styled.div`
   // md sm center //
   width: 100%;
 
-  :first-child {
+  &:first-child {
     margin-top: 34px;
   }
 
@@ -254,25 +254,25 @@ export const ColumnContentLg = styled.div`
 
   p {
     margin-top: 44px;
-    :first-child {
+    &:first-child {
       margin-top: 60px;
     }
 
     @media only screen and (max-width: 1920px) {
       margin-top: 34px;
-      :first-child {
+      &:first-child {
         margin-top: 44px;
       }
     }
     @media only screen and (max-width: 1024px) {
       margin-top: 24px;
-      :first-child {
+      &:first-child {
         margin-top: 34px;
       }
     }
     @media only screen and (max-width: 540px) {
       margin-top: 5.5vw;
-      :first-child {
+      &:first-child {
         margin-top: 5vw;
       }
     }
@@ -292,25 +292,25 @@ export const ColumnContentLgMd = styled.div`
 
   p {
     margin-top: 44px;
-    :first-child {
+    &:first-child {
       margin-top: 60px;
     }
 
     @media only screen and (max-width: 1920px) {
       margin-top: 34px;
-      :first-child {
+      &:first-child {
         margin-top: 44px;
       }
     }
     @media only screen and (max-width: 1024px) {
       margin-top: 24px;
-      :first-child {
+      &:first-child {
         margin-top: 34px;
       }
     }
     @media only screen and (max-width: 540px) {
       margin-top: 5.5vw;
-      :first-child {
+      &:first-child {
         margin-top: 5vw;
       }
     }
@@ -328,7 +328,7 @@ export const ColumnContentLgTxt = styled.div`
 
   p {
     margin-top: 44px;
-    :first-child {
+    &:first-child {
       margin-top: 0;
     }
 
@@ -357,25 +357,25 @@ export const ColumnContentMd = styled.div`
 
   p {
     margin-top: 44px;
-    :first-child {
+    &:first-child {
       margin-top: 60px;
     }
 
     @media only screen and (max-width: 1920px) {
       margin-top: 34px;
-      :first-child {
+      &:first-child {
         margin-top: 44px;
       }
     }
     @media only screen and (max-width: 1024px) {
       margin-top: 24px;
-      :first-child {
+      &:first-child {
         margin-top: 24px !important;
       }
     }
     @media only screen and (max-width: 540px) {
       margin-top: 5.5vw;
-      :first-child {
+      &:first-child {
         margin-top: 5.5vw;
       }
     }
@@ -401,25 +401,25 @@ export const ColumnInsertContent = styled.div`
 
   p {
     margin-top: 44px;
-    :first-child {
+    &:first-child {
       margin-top: 60px;
     }
 
     @media only screen and (max-width: 1920px) {
       margin-top: 34px;
-      :first-child {
+      &:first-child {
         margin-top: 44px;
       }
     }
     @media only screen and (max-width: 1024px) {
       margin-top: 24px;
-      :first-child {
+      &:first-child {
         margin-top: 34px;
       }
     }
     @media only screen and (max-width: 540px) {
       margin-top: 5.5vw;
-      :first-child {
+      &:first-child {
         margin-top: 5vw;
       }
     }
@@ -533,7 +533,7 @@ export const TitleColumn = styled.div`
   width: 100%;
 
   // lg left //
-  :first-child {
+  &:first-child {
     @media (min-width: 1024px) {
       width: calc(100% - 290px);
       padding-right: 24px;

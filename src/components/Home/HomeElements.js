@@ -87,7 +87,7 @@ export const HomeWrapper = styled.div`
     } */
   }
 
-  /* h2:first-child {
+  /* h2&:first-child {
     margin-left: 32px;
 
     @media only screen and (max-width: 539px) {

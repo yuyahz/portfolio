@@ -37,7 +37,7 @@ export const IntroWrapper = styled.div`
   div {
     margin-top: 100px;
 
-    :first-child {
+    &:first-child {
       margin-top: 0px;
     }
 
@@ -115,7 +115,7 @@ export const InsightsContainer = styled.div`
       text-indent: -0.9em;
     }
 
-    p:not(:first-child) {
+    p:not(&:first-child) {
       margin-top: 6px;
     }
   }

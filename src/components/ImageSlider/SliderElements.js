@@ -40,6 +40,7 @@ export const SliderContainer = styled.div`
   .slide.active {
     opacity: 1;
     transform: scale(1);
+    width: 100%;
   }
 `;
 

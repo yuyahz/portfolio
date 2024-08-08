@@ -8,9 +8,9 @@ export const HomeContainer = styled.section`
   align-items: center;
   background: var(--index-bg);
 
-  @media only screen and (max-width: 540px) {
-    height: 183vw;
-  }
+  /* @media only screen and (max-width: 540px) {
+    height: 18;
+  } */
 `;
 
 export const HomeWrapper = styled.div`

@@ -62,7 +62,7 @@ const Home = () => {
             animate="visible"
             transition={{ duration: 2 }}
           >
-            H
+            HH
           </motion.h1>
           <ImageWin
             src={win}

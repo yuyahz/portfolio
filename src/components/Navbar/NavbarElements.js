@@ -126,7 +126,7 @@ export const NavContainer = styled.nav`
   color: var(--primary-txt-color);
   border-right: solid 2px var(--secondary-bg);
   background-color: var(--primary-bg);
-  z-index: 22147483638;
+  z-index: 1000;
 
   transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1);
   ${(props) =>
@@ -443,7 +443,7 @@ export const NavLinksContact = styled(LinkS)`
 //   justify-content: center;
 //   position: fixed;
 //   top: 0;
-//   z-index: 22147483638;
+//   z-index: 1000;
 //   transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 
 //   @media screen and (max-width: 960px) {
@@ -489,7 +489,7 @@ export const NavLinksContact = styled(LinkS)`
 //   // for v1 image logo //
 //   /* width: 70px; */
 //   height: auto;
-//   z-index: 22147483638;
+//   z-index: 1000;
 //   text-decoration: none;
 //   animation: ${tapTiltMoveShaking} 0.3s 10;
 

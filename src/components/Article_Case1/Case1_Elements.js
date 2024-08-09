@@ -127,7 +127,7 @@ export const EmpathyWrapper = styled.div`
       border-radius: 10px;
     }
     @media only screen and (max-width: 540px) {
-      border: solid 0.5px var(--secondary-bg);
+      /* border: solid 0.5px var(--secondary-bg); */
       border-radius: 6px;
     }
 

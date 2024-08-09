@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 ///// home button /////
 export const HomeIconWrapper = styled.div`
   position: relative;
-  z-index: 999;
+  z-index: 10001;
 `;
 
 export const HomeIcon = styled(Link)`
@@ -20,7 +20,8 @@ export const HomeIcon = styled(Link)`
   max-width: 900px;
   margin: 0 auto;
   padding: 10px 25px;
-  border-radius: 70px;
+  border: solid 2px var(--secondary-bg);
+  border-radius: 50px;
   position: fixed;
   top: 2.5rem;
   right: 3rem;
@@ -641,7 +642,7 @@ export const Image = styled.img`
     border-radius: 10px;
   }
   @media only screen and (max-width: 540px) {
-    border: solid 0.5px var(--secondary-bg);
+    /* border: solid 0.5px var(--secondary-bg); */
     border-radius: 6px;
   }
 `;
@@ -663,7 +664,7 @@ export const ImageCs = styled.img`
     object-fit: cover;
   }
   @media only screen and (max-width: 540px) {
-    border: solid 0.5px var(--secondary-bg);
+    /* border: solid 0.5px var(--secondary-bg); */
     border-radius: 6px;
   }
 `;
@@ -683,7 +684,7 @@ export const ImageSm = styled.img`
   }
   @media only screen and (max-width: 540px) {
     max-width: 60%;
-    border: solid 0.5px var(--secondary-bg);
+    /* border: solid 0.5px var(--secondary-bg); */
     border-radius: 10px;
   }
 `;
@@ -697,7 +698,7 @@ export const ImageCircle = styled.img`
     border: solid 1px var(--secondary-bg);
   }
   @media only screen and (max-width: 540px) {
-    border: solid 0.5px var(--secondary-bg);
+    /* border: solid 0.5px var(--secondary-bg); */
   }
 `;
 
@@ -711,7 +712,7 @@ export const ImageCircleFb = styled.img`
     border: solid 1px var(--secondary-bg);
   }
   @media only screen and (max-width: 540px) {
-    border: solid 0.5px var(--secondary-bg);
+    /* border: solid 0.5px var(--secondary-bg); */
   }
 `;
 

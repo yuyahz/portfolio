@@ -5,11 +5,12 @@ import { Link as LinkS } from "react-scroll";
 ///// bar setting /////
 export const SidebarContainer = styled.aside`
   position: fixed;
-  z-index: 22147483638;
+  z-index: 1000;
   color: var(--primary-txt-color);
   font-size: 24px;
   font-weight: 500;
   overflow: scroll;
+  overflow-x: hidden;
 
   @media screen and (min-width: 960.999px) {
     display: none;
@@ -127,6 +128,7 @@ export const SidebarSocialIconLink = styled.a`
 export const Icon = styled.div`
   display: none;
   opacity: ${({ isOpen }) => (isOpen ? "0" : "100%")};
+  z-index: 1001;
 
   @media screen and (max-width: 959.99px) {
     display: block;

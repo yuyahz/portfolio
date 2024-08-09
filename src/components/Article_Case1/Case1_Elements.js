@@ -77,7 +77,7 @@ export const PersonaWrapper = styled.div`
   flex-wrap: wrap;
 
   @media (max-width: 1024px) {
-    :last-child {
+    &:last-child {
       flex-direction: column-reverse;
     }
   }
@@ -163,7 +163,7 @@ export const CompetitorContainer = styled.div`
     padding-left: 0.7em;
     text-indent: -0.7em;
 
-    p:not(&:first-child) {
+    p:not(:first-child) {
       margin-top: 6px;
     }
   }
@@ -188,7 +188,7 @@ export const CompetitorImageWrapper = styled.div`
     width: 17%;
     margin-right: auto;
 
-    :last-child {
+    &:last-child {
       margin-right: 0px;
     }
   }

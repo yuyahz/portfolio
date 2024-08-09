@@ -540,7 +540,7 @@ export const TitleColumn = styled.div`
     }
   }
   // lg right //
-  :last-child {
+  &:last-child {
     @media (min-width: 1024px) {
       width: 290px;
     }

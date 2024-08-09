@@ -115,7 +115,7 @@ export const InsightsContainer = styled.div`
       text-indent: -0.9em;
     }
 
-    p:not(&:first-child) {
+    p:not(:first-child) {
       margin-top: 6px;
     }
   }

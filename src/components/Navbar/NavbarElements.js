@@ -291,7 +291,7 @@ export const NavLinks = styled(LinkS)`
 export const SocialItem = styled.div`
   width: 100%;
   border-bottom: dotted 2px var(--secondary-bg);
-  &:last-child {
+  &&:last-child {
     border-bottom: none;
   }
 

@@ -196,11 +196,11 @@ export const ContentInfoContainer = styled.div`
       }
     }
 
-    p&:first-child {
+    p:first-child {
       margin-top: 0.5em;
     }
 
-    p:not(&:first-child) {
+    p:not(:first-child) {
       margin-top: 6px;
     }
   }

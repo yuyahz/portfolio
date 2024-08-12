@@ -8,45 +8,46 @@ const ImageSlider1 = () => {
   const [sectionInView, setSectionInView] = useState(false);
   const sectionRef = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setSectionInView(entry.isIntersecting);
-      },
-      { threshold: 0.5 }
-    );
+  // the function of an automatic slide
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       setSectionInView(entry.isIntersecting);
+  //     },
+  //     { threshold: 0.5 }
+  //   );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+  //   if (sectionRef.current) {
+  //     observer.observe(sectionRef.current);
+  //   }
 
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
+  //   return () => {
+  //     if (sectionRef.current) {
+  //       observer.unobserve(sectionRef.current);
+  //     }
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    let timeoutId;
-    if (sectionInView) {
-      timeoutId = setTimeout(() => {
-        setCurrentSlide(1);
-      }, 3000);
-    }
+  // useEffect(() => {
+  //   let timeoutId;
+  //   if (sectionInView) {
+  //     timeoutId = setTimeout(() => {
+  //       setCurrentSlide(1);
+  //     }, 3000);
+  //   }
 
-    return () => clearTimeout(timeoutId);
-  }, [sectionInView]);
+  //   return () => clearTimeout(timeoutId);
+  // }, [sectionInView]);
 
-  const nextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % SliderData1.length);
-  };
+  // const nextSlide = () => {
+  //   setCurrentSlide((prevSlide) => (prevSlide + 1) % SliderData1.length);
+  // };
 
-  const prevSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? SliderData1.length - 1 : prevSlide - 1
-    );
-  };
+  // const prevSlide = () => {
+  //   setCurrentSlide((prevSlide) =>
+  //     prevSlide === 0 ? SliderData1.length - 1 : prevSlide - 1
+  //   );
+  // };
 
   return (
     <SliderContainer>
@@ -61,9 +62,9 @@ const ImageSlider1 = () => {
             )}
           </div>
         ))}
-        <ArrowWrapper>
+        {/* <ArrowWrapper>
           <IoArrowBackCircle className="left-arrow" onClick={prevSlide} />
-        </ArrowWrapper>
+        </ArrowWrapper> */}
       </div>
       <section ref={sectionRef} />
     </SliderContainer>

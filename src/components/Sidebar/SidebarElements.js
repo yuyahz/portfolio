@@ -9,8 +9,6 @@ export const SidebarContainer = styled.aside`
   color: var(--primary-txt-color);
   font-size: 24px;
   font-weight: 500;
-  overflow: scroll;
-  overflow-x: hidden;
 
   @media screen and (min-width: 960.999px) {
     display: none;
@@ -23,11 +21,13 @@ export const SidebarContainer = styled.aside`
 export const SidebarWrapper = styled.aside`
   display: flex;
   overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
   justify-content: center;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 2147483638;
+  z-index: 1000;
   max-width: 80%;
   height: 100vh;
   border-left: solid 2px var(--secondary-bg);
@@ -65,10 +65,7 @@ export const SidebarLink = styled(LinkS)`
     border-radius: 200px 5px 5px 200px;
     transform: translateX(9px);
     backface-visibility: hidden;
-    padding: 16px;
-    background-image: linear-gradient(0deg, transparent 15px, #fe000070 16px),
-      linear-gradient(90deg, transparent 15px, #fe000070 16px);
-    background-size: 16px 16px;
+    padding: 6px 12px;
 
     @media screen and (max-height: 540px) {
       padding: 2.9vh;

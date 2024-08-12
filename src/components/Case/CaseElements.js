@@ -167,6 +167,9 @@ export const ColumnContentLg = styled.div`
     @media only screen and (max-width: 960px) {
       font-size: 4.44vw;
     }
+    @media only screen and (max-width: 540px) {
+      margin-bottom: 2rem;
+    }
   }
 
   a {

@@ -26,7 +26,7 @@ export const SliderContainer = styled.div`
     }
 
     @media only screen and (max-width: 540px) {
-      width: 100%;
+      width: 80%;
     }
   }
 
@@ -41,6 +41,7 @@ export const SliderContainer = styled.div`
     opacity: 1;
     transform: scale(1);
     width: 100%;
+    text-align: center;
   }
 `;
 

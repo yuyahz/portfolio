@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const WorksContainer = styled.div`
@@ -61,27 +61,27 @@ export const WorksNumber = styled.div`
 export const WorksTitle = styled(Link)`
   color: var(--primary-txt-color);
   position: relative;
-  z-index: 0;
   font-family: "GT";
   font-weight: 500;
   font-size: 7rem;
   text-decoration: none;
+  overflow: hidden;
 
-  ::before {
+  &::before {
     content: "Read more";
     position: absolute;
-    width: 840px;
-    height: 130px;
-    background-color: var(--index-bg);
+    min-width: 550px;
+    height: 100%;
+    background: var(--index-bg);
     top: 0;
     left: 0;
     transform-origin: right;
     transform: scaleX(0);
     transition: transform 0.6s ease-in-out;
-    z-index: 100;
+    z-index: 1;
   }
 
-  :hover::before {
+  &:hover::before {
     transform-origin: left;
     transform: scaleX(1);
   }
@@ -90,3 +90,36 @@ export const WorksTitle = styled(Link)`
     font-size: 11.11vw;
   }
 `;
+
+// export const WorksTitle = styled(Link)`
+//   color: var(--primary-txt-color);
+//   position: relative;
+//   z-index: 0;
+//   font-family: "GT";
+//   font-weight: 500;
+//   font-size: 7rem;
+//   text-decoration: none;
+
+//   ::before {
+//     content: "Read more";
+//     position: absolute;
+//     width: 840px;
+//     height: 130px;
+//     background-color: var(--index-bg);
+//     top: 0;
+//     left: 0;
+//     transform-origin: right;
+//     transform: scaleX(0);
+//     transition: transform 0.6s ease-in-out;
+//     z-index: 100;
+//   }
+
+//   &:hover::before {
+//     transform-origin: left;
+//     transform: scaleX(1);
+//   }
+
+//   @media only screen and (max-width: 960px) {
+//     font-size: 11.11vw;
+//   }
+// `;

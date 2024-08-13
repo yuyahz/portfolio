@@ -47,6 +47,13 @@ const Dropdown = () => {
             >
               <ul>
                 <DropdownItem
+                  textTitle={"The Interaction Design Foundation"}
+                  textContent={
+                    "Human-Computer Interaction, Behavioral Neuroscience"
+                  }
+                  textDate={"2024"}
+                />
+                <DropdownItem
                   textTitle={
                     "Cornerstone International Community College of Canada"
                   }

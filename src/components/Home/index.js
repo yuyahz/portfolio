@@ -56,103 +56,105 @@ const Home = () => {
     <HomeContainer id="home">
       <HomeWrapper ref={constraintsRef}>
         <div>
-          <motion.h1
-            variants={fadeLeft}
-            initial="hidden"
-            animate="visible"
-            transition={{ duration: 2 }}
-          >
-            H
-          </motion.h1>
-          <ImageWin
-            src={win}
-            alt="icon-win"
-            drag={true}
-            // dragConstraints={constraintsRef}
-            dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
-            dragElastic={3}
-            initial={{ opacity: 0, y: 0 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              rotate: [0, 5, 10, -10, 0],
-              transition: { duration: 2 },
-            }}
-          />
-          <motion.h1
-            variants={fadeLeft}
-            initial="hidden"
-            animate="visible"
-            transition={{ duration: 2 }}
-          >
-            llo.
-          </motion.h1>
-        </div>
-        <div>
-          <motion.h2
-            variants={fadeLeft}
-            initial="hidden"
-            animate="visible"
-            transition={{ duration: 1.5 }}
-          >
-            I am
-          </motion.h2>
-          <ImageMac
-            src={mac}
-            alt="icon-mac"
-            drag={true}
-            // dragConstraints={constraintsRef}
-            dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
-            dragElastic={3}
-            initial={{ opacity: 0, y: 0 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              rotate: [0, 5, 10, -10, 0],
-              transition: { duration: 1 },
-            }}
-          />
-          <motion.h2
-            variants={fadeLeft}
-            initial="hidden"
-            animate="visible"
-            transition={{ duration: 1.5 }}
-          >
-            Yuya
-          </motion.h2>
-        </div>
-        <div>
-          <Parallax x={[-10, 10]}>
-            <div className="home-subtitle">
-              <motion.p
-                variants={fadeLeft}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 2.5 }}
-              >
-                Creative Problem Solver
-              </motion.p>
+          <div className="inner-component">
+            <motion.h1
+              variants={fadeLeft}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 2 }}
+            >
+              H
+            </motion.h1>
+            <ImageWin
+              src={win}
+              alt="icon-win"
+              drag={true}
+              // dragConstraints={constraintsRef}
+              dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
+              dragElastic={3}
+              initial={{ opacity: 0, y: 0 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                rotate: [0, 5, 10, -10, 0],
+                transition: { duration: 2 },
+              }}
+            />
+            <motion.h1
+              variants={fadeLeft}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 2 }}
+            >
+              llo.
+            </motion.h1>
+          </div>
+          <div className="inner-component">
+            <motion.h2
+              variants={fadeLeft}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 1.5 }}
+            >
+              I am
+            </motion.h2>
+            <ImageMac
+              src={mac}
+              alt="icon-mac"
+              drag={true}
+              // dragConstraints={constraintsRef}
+              dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
+              dragElastic={3}
+              initial={{ opacity: 0, y: 0 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                rotate: [0, 5, 10, -10, 0],
+                transition: { duration: 1 },
+              }}
+            />
+            <motion.h2
+              variants={fadeLeft}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 1.5 }}
+            >
+              Yuya
+            </motion.h2>
+          </div>
+          <div className="inner-component">
+            <Parallax x={[-10, 10]}>
+              <div className="home-subtitle">
+                <motion.p
+                  variants={fadeLeft}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ duration: 2.5 }}
+                >
+                  Creative Problem Solver
+                </motion.p>
 
-              <motion.p
-                className="caption"
-                variants={fadeLeft}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 3 }}
-              >
-                UX/UI & Brand Storytelling Designer
-              </motion.p>
-              <motion.p
-                className="caption"
-                variants={fadeLeft}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 3.5 }}
-              >
-                with Front-End and UI Development
-              </motion.p>
-            </div>
-          </Parallax>
+                <motion.p
+                  className="caption"
+                  variants={fadeLeft}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ duration: 3 }}
+                >
+                  UX/UI & Brand Storytelling Designer
+                </motion.p>
+                <motion.p
+                  className="caption"
+                  variants={fadeLeft}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ duration: 3.5 }}
+                >
+                  with Front-End and UI Development
+                </motion.p>
+              </div>
+            </Parallax>
+          </div>
         </div>
       </HomeWrapper>
     </HomeContainer>

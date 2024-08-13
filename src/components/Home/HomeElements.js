@@ -2,25 +2,25 @@ import styled from "styled-components";
 import { motion, transform } from "framer-motion";
 
 export const HomeContainer = styled.section`
+  width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--index-bg);
-
-  /* @media only screen and (max-width: 540px) {
-    height: 18;
-  } */
 `;
 
 export const HomeWrapper = styled.div`
-  /* align-items: flex-start; */
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  color: var(--fourth-txt-color);
+  background: var(--secondary-bg);
   text-align: left;
   white-space: nowrap;
-  color: var(--primary-txt-color);
-  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-  div {
+  div .inner-component {
     display: flex;
     .home-subtitle {
       position: relative;
@@ -29,16 +29,9 @@ export const HomeWrapper = styled.div`
   }
 
   h1 {
-    color: var(--primary-txt-color);
     font-weight: 700;
     font-size: 9.9vw;
     margin-bottom: 6px;
-    /* pointer-events: none;
-    -ms-user-select: none; 
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none; */
 
     @media only screen and (max-width: 1919px) {
       font-size: 150px;
@@ -47,14 +40,6 @@ export const HomeWrapper = styled.div`
     @media only screen and (max-width: 960px) {
       font-size: 25vw;
     }
-
-    /* @media only screen and (max-width: 539px) {
-      font-size: 6rem;
-    }
-
-    @media only screen and (max-width: 374px) {
-      font-size: 4rem;
-    } */
   }
 
   h2 {
@@ -63,12 +48,6 @@ export const HomeWrapper = styled.div`
     font-size: 6.7vw;
     margin-bottom: 16px;
     line-height: 0.9;
-    /* pointer-events: none;
-    -ms-user-select: none;
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none; */
 
     @media only screen and (max-width: 1919px) {
       font-size: 120px;
@@ -77,37 +56,13 @@ export const HomeWrapper = styled.div`
     @media only screen and (max-width: 960px) {
       font-size: 17.5vw;
     }
-    /* 
-    @media only screen and (max-width: 539px) {
-      font-size: 4rem;
-    }
-
-    @media only screen and (max-width: 374px) {
-      font-size: 3rem;
-    } */
   }
-
-  /* h2&:first-child {
-    margin-left: 32px;
-
-    @media only screen and (max-width: 539px) {
-      margin-left: 16px;
-      margin-bottom: 16px;
-    }
-  } */
 
   p {
     font-weight: 300;
     font-size: 1.1vw;
     margin: 0.5rem 0 0 0.8rem;
     letter-spacing: 0.1rem;
-    /* pointer-events: none;
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none; */
 
     @media only screen and (max-width: 1919px) {
       font-size: 19px;
@@ -138,8 +93,8 @@ export const ImageWin = styled(motion.img)`
   height: auto;
   filter: drop-shadow(0 1px 7px #0000001a) drop-shadow(0 2px 3px #00000014)
     drop-shadow(0 4px 7px #00000029);
-  animation: tilt-n-move-shaking 0.2s;
-  animation-iteration-count: 15;
+  animation: tilt-n-move-shaking 2s;
+  animation-iteration-count: infinite;
 
   @keyframes tilt-n-move-shaking {
     0% {
@@ -166,14 +121,6 @@ export const ImageWin = styled(motion.img)`
   @media only screen and (max-width: 960px) {
     width: 17.5vw;
   }
-
-  /* @media only screen and (max-width: 539px) {
-    width: 70px;
-  }
-
-  @media only screen and (max-width: 374px) {
-    width: 45px;
-  } */
 `;
 
 export const ImageMac = styled(motion.img)`
@@ -183,8 +130,8 @@ export const ImageMac = styled(motion.img)`
   padding-bottom: 24px;
   filter: drop-shadow(0 1px 7px #0000001a) drop-shadow(0 2px 3px #00000014)
     drop-shadow(0 4px 7px #00000029);
-  animation: tilt-n-move-shaking 0.2s;
-  animation-iteration-count: 15;
+  animation: tilt-n-move-shaking 3s;
+  animation-iteration-count: infinite;
 
   @keyframes tilt-n-move-shaking {
     0% {
@@ -211,14 +158,6 @@ export const ImageMac = styled(motion.img)`
   @media only screen and (max-width: 960px) {
     width: 13.7vw;
   }
-
-  /* @media only screen and (max-width: 539px) {
-    width: 60px;
-  }
-
-  @media only screen and (max-width: 374px) {
-    width: 40px;
-  } */
 `;
 
 // Archive of 2021

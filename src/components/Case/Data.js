@@ -1,14 +1,13 @@
-export const case1 = {
+export const case01 = {
   name: "case1",
   to: "case1Page",
   title: "Cultivating Core User Empathy",
   tag: "Case Study 1",
   body: "Analyzing the factors that enhance user experience is a significant process before driving the car.",
-  imageActivate1: true,
-  imageActivate2: false,
-  imageActivate3: false,
-  imageActivate4: false,
-  img: require("../../images/case_1_v2.png"),
+  imageActivate01: true,
+  imageActivate02: false,
+  imageActivate03: false,
+  imageActivate04: false,
   alt: "Image",
   imageLeft: true,
   paddingStart: false,
@@ -16,17 +15,16 @@ export const case1 = {
   buttonLabel: "View Case Study 1",
 };
 
-export const case2 = {
+export const case02 = {
   name: "case2",
   to: "case2Page",
   title: "Resolving Design Challenges",
   tag: "Case Study 2",
   body: "Challenges are ever-present, and addressing issues comprehensively is a problem-solving.",
-  imageActivate1: false,
-  imageActivate2: true,
-  imageActivate3: false,
-  imageActivate4: false,
-  img: require("../../images/case_2.png"),
+  imageActivate01: false,
+  imageActivate02: true,
+  imageActivate03: false,
+  imageActivate04: false,
   alt: "Image",
   imageLeft: false,
   paddingStart: true,
@@ -34,17 +32,16 @@ export const case2 = {
   buttonLabel: "View Case Study 2",
 };
 
-export const case3 = {
+export const case03 = {
   name: "case3",
   to: "case3Page",
   title: "Enhancing Website Profitability",
   tag: "Case Study 3",
   body: "Product appeal and profitability improve through continuous enhancements and ongoing analysis.",
-  imageActivate1: false,
-  imageActivate2: false,
-  imageActivate3: true,
-  imageActivate4: false,
-  img: require("../../images/case_3.png"),
+  imageActivate01: false,
+  imageActivate02: false,
+  imageActivate03: true,
+  imageActivate04: false,
   alt: "Image",
   imageLeft: true,
   paddingStart: true,
@@ -52,16 +49,16 @@ export const case3 = {
   buttonLabel: "View Case Study 3",
 };
 
-export const case4 = {
+export const case04 = {
   name: "case4",
   to: "case4Page",
   title: "Midnight Paloma",
   tag: "Case Study 4",
   body: "Midnight Paloma website was a long overdue revamp but has committed to completing it within a tight timeframe.",
-  imageActivate1: false,
-  imageActivate2: false,
-  imageActivate3: false,
-  imageActivate4: true,
+  imageActivate01: false,
+  imageActivate02: false,
+  imageActivate03: false,
+  imageActivate04: true,
   img: require("../../images/case_mp.png"),
   alt: "Image",
   imageLeft: false,

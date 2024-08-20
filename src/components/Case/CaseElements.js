@@ -30,10 +30,24 @@ export const FullWidthWrapper = styled.div`
   }
 `;
 
-export const ColumnLgImg1 = styled.div`
+export const ColumnLgImg01 = styled.div`
   width: 100%;
   padding: 24px;
-  display: ${({ imageActivate1 }) => (imageActivate1 ? "flex" : "none")};
+  display: ${({ imageActivate01 }) => (imageActivate01 ? "flex" : "none")};
+  align-items: center;
+  justify-content: center;
+
+  // lg //
+  @media (min-width: 1024px) {
+    width: 50%;
+    padding: 44px;
+  }
+`;
+
+export const ColumnLgImg02 = styled.div`
+  width: 100%;
+  padding: 24px;
+  display: ${({ imageActivate02 }) => (imageActivate02 ? "flex" : "none")};
   align-items: center;
   justify-content: center;
 
@@ -47,15 +61,12 @@ export const ColumnLgImg1 = styled.div`
   }
 `;
 
-export const ColumnLgImg2 = styled.div`
+export const ColumnLgImg03 = styled.div`
   width: 100%;
   padding: 24px;
-  display: ${({ imageActivate2 }) => (imageActivate2 ? "flex" : "none")};
+  display: ${({ imageActivate03 }) => (imageActivate03 ? "flex" : "none")};
   align-items: center;
   justify-content: center;
-
-  // md sm center //
-  width: 100%;
 
   // lg //
   @media (min-width: 1024px) {
@@ -64,27 +75,10 @@ export const ColumnLgImg2 = styled.div`
   }
 `;
 
-export const ColumnLgImg3 = styled.div`
+export const ColumnLgImg04 = styled.div`
   width: 100%;
   padding: 24px;
-  display: ${({ imageActivate3 }) => (imageActivate3 ? "flex" : "none")};
-  align-items: center;
-  justify-content: center;
-
-  // md sm center //
-  width: 100%;
-
-  // lg //
-  @media (min-width: 1024px) {
-    width: 50%;
-    padding: 44px;
-  }
-`;
-
-export const ColumnLgImg4 = styled.div`
-  width: 100%;
-  padding: 24px;
-  display: ${({ imageActivate4 }) => (imageActivate4 ? "flex" : "none")};
+  display: ${({ imageActivate04 }) => (imageActivate04 ? "flex" : "none")};
   align-items: center;
   justify-content: center;
 

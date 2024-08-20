@@ -27,7 +27,6 @@ export const SidebarWrapper = styled.aside`
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1000;
   max-width: 80%;
   height: 100vh;
   border-left: solid 2px var(--secondary-bg);
@@ -123,9 +122,9 @@ export const SidebarSocialIconLink = styled.a`
 
 ///// icon /////
 export const Icon = styled.div`
-  display: none;
-  opacity: ${({ isOpen }) => (isOpen ? "0" : "100%")};
+  display: block;
   z-index: 1001;
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "100%")};
 
   @media screen and (max-width: 959.99px) {
     display: block;
@@ -136,30 +135,27 @@ export const Icon = styled.div`
     right: 15px;
     background-color: var(--index-bg);
     border-radius: 50%;
+    border: solid 2px var(--secondary-bg);
 
     .burger-menu-bg {
       padding-top: 20px;
     }
 
     #burger-menu {
-      width: 30px;
+      width: 26px;
       height: auto;
       position: fixed;
-      top: 29px;
-      right: 24px;
-      /* -webkit-transform: rotate(0deg);
+      top: 31px;
+      right: 26px;
+      -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
       -o-transform: rotate(0deg);
       transform: rotate(0deg);
       -webkit-transition: 1s ease-in-out;
       -moz-transition: 1s ease-in-out;
       -o-transition: 1s ease-in-out;
-      transition: 1s ease-in-out; */
+      transition: 1s ease-in-out;
       cursor: pointer;
-
-      .burger-menu-bg {
-        padding-top: 20px;
-      }
     }
 
     #burger-menu span {
@@ -167,20 +163,18 @@ export const Icon = styled.div`
       position: absolute;
       height: 6px;
       width: 100%;
-      background: ${({ darkBurger }) =>
-        darkBurger ? "var(--secondary-bg);" : "#ffffff"};
-      z-index: ${({ isOpen }) => (isOpen ? "100" : "0")};
+      background: var(--secondary-bg);
       border-radius: 9px;
       opacity: 1;
       left: 0;
-      /* -webkit-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
       -o-transform: rotate(0deg);
       transform: rotate(0deg);
       -webkit-transition: 0.5s ease-in-out;
       -moz-transition: 0.5s ease-in-out;
       -o-transition: 0.5s ease-in-out;
-      transition: 0.5s ease-in-out; */
+      transition: 0.5s ease-in-out;
     }
 
     #burger-menu span:nth-child(1) {
@@ -188,15 +182,15 @@ export const Icon = styled.div`
     }
 
     #burger-menu span:nth-child(2) {
-      top: 12px;
+      top: 10px;
     }
 
     #burger-menu span:nth-child(3) {
-      top: 24px;
+      top: 20px;
     }
 
     #burger-menu.open span:nth-child(1) {
-      top: 12px;
+      top: 10px;
       -webkit-transform: rotate(135deg);
       -moz-transform: rotate(135deg);
       -o-transform: rotate(135deg);
@@ -211,7 +205,7 @@ export const Icon = styled.div`
     }
 
     #burger-menu.open span:nth-child(3) {
-      top: 12px;
+      top: 10px;
       -webkit-transform: rotate(-135deg);
       -moz-transform: rotate(-135deg);
       -o-transform: rotate(-135deg);

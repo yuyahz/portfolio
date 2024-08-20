@@ -14,7 +14,7 @@ import {
 } from "../components/Contents/Data";
 import Case from "../components/Case";
 import Case_Title from "../components/Case_Title";
-import { case1, case2, case3, case4 } from "../components/Case/Data";
+import { case01, case02, case03, case04 } from "../components/Case/Data";
 import {
   // worksRv,
   // worksMp,
@@ -91,10 +91,10 @@ const Index = () => {
       <Contents {...homeDaruma} /> */}
       <div name="caseStudy">
         <Case_Title />
-        <Case {...case1} />
-        <Case {...case2} />
-        <Case {...case3} />
-        <Case {...case4} />
+        <Case {...case01} />
+        <Case {...case02} />
+        <Case {...case03} />
+        <Case {...case04} />
       </div>
       {/* <Works {...worksRv} /> */}
       {/* <Works {...worksMp} /> */}

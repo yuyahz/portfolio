@@ -5,6 +5,14 @@ export const AboutContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 60px 60px 0 0;
+
+  @media only screen and (max-width: 960px) {
+    border-radius: 44px 44px 0 0;
+  }
+  @media only screen and (max-width: 359px) {
+    border-radius: 24px 24px 0 0;
+  }
 `;
 
 export const AboutTitleWrapper = styled.div`

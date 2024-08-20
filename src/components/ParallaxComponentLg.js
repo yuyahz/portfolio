@@ -22,7 +22,7 @@ export const ParallaxContainer = styled.div`
     max-width: 2560px;
     margin: 0 auto;
     height: 100vh;
-    border-radius: 10%;
+    border-radius: 44px;
     overflow-x: hidden;
     perspective: 1px;
     scroll-behavior: smooth;

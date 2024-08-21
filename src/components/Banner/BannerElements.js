@@ -26,6 +26,11 @@ export const BannerWrapper = styled.div`
   justify-content: center;
   cursor: pointer;
   font-size: 100%;
+  padding-bottom: 17rem;
+
+  @media only screen and (max-width: 960px) {
+    padding-bottom: 26.33vw;
+  }
 `;
 
 export const BannerLinks = styled(LinkS)`

@@ -11,7 +11,7 @@ export const case01 = {
   alt: "Image",
   imageLeft: true,
   paddingStart: false,
-  paddingEnd: false,
+  paddingEnd: true,
   buttonLabel: "View Case Study 1",
 };
 
@@ -27,8 +27,8 @@ export const case02 = {
   imageActivate04: false,
   alt: "Image",
   imageLeft: false,
-  paddingStart: true,
-  paddingEnd: false,
+  paddingStart: false,
+  paddingEnd: true,
   buttonLabel: "View Case Study 2",
 };
 
@@ -44,8 +44,8 @@ export const case03 = {
   imageActivate04: false,
   alt: "Image",
   imageLeft: true,
-  paddingStart: true,
-  paddingEnd: false,
+  paddingStart: false,
+  paddingEnd: true,
   buttonLabel: "View Case Study 3",
 };
 
@@ -62,7 +62,7 @@ export const case04 = {
   img: require("../../images/case_mp.png"),
   alt: "Image",
   imageLeft: false,
-  paddingStart: true,
+  paddingStart: false,
   paddingEnd: true,
   buttonLabel: "View Case Study 4",
 };

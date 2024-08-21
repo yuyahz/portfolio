@@ -13,7 +13,6 @@ export const CaseTitleWrapper = styled.div`
   @media only screen and (max-width: 960px) {
     padding-bottom: 10vw;
   }
-
   @media only screen and (max-width: 540px) {
     padding-bottom: 7vw;
   }
@@ -38,14 +37,13 @@ export const CaseWrapper = styled.div`
   max-width: 1140px;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 17rem;
+  /* padding-top: 17rem; */
 
   @media only screen and (max-width: 1340px) {
     margin: 0 30px 0 130px;
   }
-
   @media only screen and (max-width: 960px) {
-    padding-top: 26.33vw;
+    /* padding-top: 26.33vw; */
     margin: 0 30px;
   }
 

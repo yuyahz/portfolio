@@ -61,15 +61,26 @@ export const HomeWrapper = styled.div`
   p {
     font-weight: 300;
     font-size: 1.1vw;
-    margin: 0.5rem 0 0 0.8rem;
     letter-spacing: 0.1rem;
 
     @media only screen and (max-width: 1919px) {
       font-size: 19px;
     }
-    @media only screen and (max-width: 960px) {
-      margin: 0.2rem 0 0 0.8rem;
-      font-size: 3.3vw;
+    @media only screen and (max-width: 480px) {
+      letter-spacing: 0.05rem;
+      font-size: 4vw;
+    }
+  }
+
+  .subtitle {
+    margin: 0.5rem 0;
+
+    @media only screen and (max-width: 480px) {
+      margin: 1.667vw 0;
+    }
+    @media only screen and (max-width: 376px) {
+      margin: 0 0 2.13vw 0;
+      font-size: 5.6vw;
     }
   }
 
@@ -79,9 +90,11 @@ export const HomeWrapper = styled.div`
     @media only screen and (max-width: 1919px) {
       font-size: 12px;
     }
-    @media only screen and (max-width: 960px) {
-      margin: 0.3rem 0 0 0.8rem;
-      font-size: 3.3vw;
+    @media only screen and (max-width: 480px) {
+      font-size: 2.5vw;
+    }
+    @media only screen and (max-width: 376px) {
+      font-size: 3.2vw;
     }
   }
 `;

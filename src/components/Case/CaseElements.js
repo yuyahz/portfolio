@@ -21,8 +21,8 @@ export const FullWidthWrapper = styled.div`
   }
 
   @media only screen and (max-width: 960px) {
-    padding-top: ${({ paddingStart }) => (paddingStart ? "26.33vw;" : "0")};
-    padding-bottom: ${({ paddingEnd }) => (paddingEnd ? "26.33vw;" : "0")};
+    padding-top: ${({ paddingStart }) => (paddingStart ? "13.4vw;" : "0")};
+    padding-bottom: ${({ paddingEnd }) => (paddingEnd ? "13.4vw;" : "0")};
   }
 
   @media only screen and (max-width: 960px) {

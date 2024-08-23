@@ -88,7 +88,7 @@ export const CaseContainer = styled.div`
   }
 
   h2 {
-    color: var(--secondary-txt-color);
+    color: var(--primary-txt-color);
     font-weight: 600;
     font-size: 4rem;
     line-height: 1.25;

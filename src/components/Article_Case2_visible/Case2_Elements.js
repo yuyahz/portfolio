@@ -42,7 +42,7 @@ export const ResearchInsight = styled.div`
 
   div .text-bold {
     margin-top: 0px;
-    color: var(--secondary-txt-color);
+    color: var(--primary-txt-color);
     font-weight: 600;
 
     @media (max-width: 540px) {
@@ -106,7 +106,7 @@ export const BoxWrapper = styled.div`
 
       &:first-child {
         margin-top: 0;
-        color: var(--secondary-txt-color);
+        color: var(--primary-txt-color);
         font-weight: 600;
       }
     }
@@ -132,12 +132,7 @@ export const ContentTitleWrapper = styled.div`
     font-size: 7rem;
     font-weight: 100;
     line-height: 1.2;
-    color: var(--secondary-txt-color);
-    -ms-user-select: none;
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+    color: var(--primary-txt-color);
 
     @media only screen and (max-width: 1280px) {
       font-size: 7.656vw;
@@ -163,7 +158,7 @@ export const ContentInfoContainer = styled.div`
   }
 
   .caption {
-    color: var(--secondary-txt-color);
+    color: var(--primary-txt-color);
     font-weight: 600;
   }
 

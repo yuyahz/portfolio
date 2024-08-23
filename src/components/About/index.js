@@ -153,15 +153,15 @@ const About = () => {
                 I am committed to approaching these elements with flexibility
                 for every project and client. I deliver core user-centered
                 solutions in
-                <span className="fancy-font-body">
+                <span className="fancy-font-title">
                   {" "}
                   "Design and Technology,
                 </span>
-                <span className="fancy-font-body">
+                <span className="fancy-font-title">
                   {" "}
                   Branding and Websites,{" "}
                 </span>
-                <span className="fancy-font-body">
+                <span className="fancy-font-title">
                   Simplicity and Sophistication"
                 </span>
                 &nbsp;that captivate customers.

@@ -73,11 +73,6 @@ export const InsertWrapper = styled.div`
     font-weight: 100;
     line-height: 1.2;
     color: var(--primary-txt-color);
-    -ms-user-select: none;
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
 
     @media only screen and (max-width: 1280px) {
       font-size: 7.656vw;

@@ -153,13 +153,6 @@ export const AboutInnerWrapper = styled.div`
     font-weight: 500;
   }
 
-  .fancy-font-body {
-    font-family: "GT";
-    font-weight: 500;
-    color: var(--secondary-txt-color);
-    /* padding-left: 0.3rem; */
-  }
-
   .start-cap {
     padding-top: 2rem;
 

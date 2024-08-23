@@ -43,7 +43,6 @@ export const ResearchInsight = styled.div`
   p {
     &:first-child {
       margin-top: 0px;
-      color: var(--secondary-txt-color);
       font-weight: 600;
 
       @media (max-width: 540px) {
@@ -63,6 +62,10 @@ export const PersonaContainer = styled.div`
   padding: 110px 0;
   justify-content: center;
   margin: 0 auto;
+
+  h2 {
+    color: var(--primary-txt-color);
+  }
 
   @media only screen and (max-width: 960px) {
     padding-bottom: 11.5vw;
@@ -89,6 +92,10 @@ export const EmpathyContainer = styled.div`
   padding: 110px 0;
   justify-content: center;
   margin: 0 auto;
+
+  h2 {
+    color: var(--primary-txt-color);
+  }
 
   @media only screen and (max-width: 960px) {
     padding-bottom: 11.5vw;
@@ -127,7 +134,6 @@ export const EmpathyWrapper = styled.div`
       border-radius: 10px;
     }
     @media only screen and (max-width: 540px) {
-      /* border: solid 0.5px var(--secondary-bg); */
       border-radius: 6px;
     }
 
@@ -138,7 +144,6 @@ export const EmpathyWrapper = styled.div`
 
       &:first-child {
         margin-top: 0;
-        color: var(--secondary-txt-color);
         font-weight: 600;
       }
     }
@@ -151,6 +156,10 @@ export const CompetitorContainer = styled.div`
   padding: 110px 0;
   justify-content: center;
   margin: 0 auto;
+
+  h2 {
+    color: var(--primary-txt-color);
+  }
 
   @media only screen and (max-width: 960px) {
     padding-bottom: 11.5vw;
@@ -214,11 +223,6 @@ export const InsertWrapper = styled.div`
     font-weight: 100;
     line-height: 1.2;
     color: var(--primary-txt-color);
-    -ms-user-select: none;
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
 
     @media only screen and (max-width: 1280px) {
       font-size: 7.656vw;

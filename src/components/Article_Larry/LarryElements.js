@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const HeroImage = styled.img`
   max-width: 50%;
   margin: auto;
-  padding: 10rem 0 5rem 0;
+  padding: 5rem 0;
   display: block;
 
   @media screen and (max-width: 960px) {
@@ -12,7 +12,7 @@ export const HeroImage = styled.img`
   }
 
   @media screen and (max-width: 720px) {
-    padding: 16vw 0 8vw 0;
+    padding: 8vw 0;
   }
 `;
 

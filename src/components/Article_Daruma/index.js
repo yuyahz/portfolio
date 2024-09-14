@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import AutoHidingNavBar from "../AutoHidingNavBar";
 import {
-  HomeIconWrapper,
-  HomeIcon,
   ColumnContentLgTxt,
   ColumnContentLg,
   SingleColumnContainer,
@@ -21,7 +20,7 @@ import {
   CreditWrapper,
   CreditTitle,
   CreditBody,
-} from "../CaseElements";
+} from "../ArticleElements";
 import {
   HeroImage,
   IntroContainer,
@@ -58,9 +57,7 @@ const Article_Daruma = () => {
           duration: 0.5,
         }}
       >
-        <HomeIconWrapper>
-          <HomeIcon to="/">Home</HomeIcon>
-        </HomeIconWrapper>
+        <AutoHidingNavBar />
 
         <CaseWrapper>
           <HeroImageWrapper>

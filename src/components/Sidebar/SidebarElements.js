@@ -40,7 +40,6 @@ export const SidebarLogoSm = styled(LinkR)`
     font-family: "GT";
     font-weight: 500;
     font-size: 1.5rem;
-    z-index: 999;
 
     @media only screen and (max-width: 540px) {
       font-size: 5vw;

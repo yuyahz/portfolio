@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import AutoHidingNavBar from "../AutoHidingNavBar";
 import {
-  HomeIconWrapper,
-  HomeIcon,
   ColumnContentLg,
   ImageCs,
   CaseContainer,
@@ -15,7 +14,7 @@ import {
   CreditWrapper,
   CreditTitle,
   CreditBody,
-} from "../CaseElements";
+} from "../ArticleElements";
 import {
   TitleWrapper,
   IntroContainer,
@@ -47,9 +46,7 @@ const Article_DailyUi = () => {
           duration: 0.5,
         }}
       >
-        <HomeIconWrapper>
-          <HomeIcon to="/">Home</HomeIcon>
-        </HomeIconWrapper>
+        <AutoHidingNavBar />
 
         <CaseWrapper>
           <HeroImageWrapper>

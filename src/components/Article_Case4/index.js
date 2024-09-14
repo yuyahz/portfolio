@@ -1,9 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import StickyCTA from "../StickyCTA/StickyCTA";
+import AutoHidingNavBar from "../AutoHidingNavBar";
 import {
-  HomeIconWrapper,
-  HomeIcon,
   ColumnContentLg,
   Image,
   ImageCs,
@@ -20,7 +19,7 @@ import {
   CreditBody,
   ClosingWrapper,
   Hide,
-} from "../CaseElements";
+} from "../ArticleElements";
 import {
   IntroContainer,
   IntroWrapper,
@@ -51,9 +50,7 @@ const Article_Case4 = () => {
           duration: 0.5,
         }}
       >
-        <HomeIconWrapper>
-          <HomeIcon to="/">Home</HomeIcon>
-        </HomeIconWrapper>
+        <AutoHidingNavBar />
 
         <CaseWrapper>
           <HeroImageWrapper>

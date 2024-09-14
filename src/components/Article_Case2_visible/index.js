@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import AutoHidingNavBar from "../AutoHidingNavBar";
 import {
-  HomeIconWrapper,
-  HomeIcon,
   ColumnLg,
   ColumnContentLgMd,
   ColumnContentLg,
@@ -26,7 +25,7 @@ import {
   FullWidthContainer,
   FullWidthWrapper,
   ClosingWrapper,
-} from "../CaseElements";
+} from "../ArticleElements";
 import {
   IntroContainer,
   IntroWrapper,
@@ -75,9 +74,7 @@ const Article_Case2 = () => {
           duration: 0.5,
         }}
       >
-        <HomeIconWrapper>
-          <HomeIcon to="/">Home</HomeIcon>
-        </HomeIconWrapper>
+        <AutoHidingNavBar />
 
         <CaseWrapper>
           <HeroImageWrapper>

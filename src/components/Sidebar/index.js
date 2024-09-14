@@ -8,7 +8,7 @@ import {
   SidebarContainer,
   SidebarWrapper,
   SidebarHeader,
-  SidebarLogoSm,
+  SidebarLogo,
   SidebarMenu,
   SidebarItem,
   SidebarLink,
@@ -76,9 +76,9 @@ const Sidebar = ({ isOpen, toggle }) => {
     <SidebarContainer isOpen={isOpen}>
       <AutoHiding hide={hideAutoHidingSection}>
         <SidebarHeader>
-          <SidebarLogoSm to="/" onClick={toggleHome}>
+          <SidebarLogo to="/" onClick={toggleHome}>
             <LogoTop>Yuya Hashirizaki</LogoTop>
-          </SidebarLogoSm>
+          </SidebarLogo>
           <BurgerMenu isOpen={isOpen} onClick={toggle}>
             <div id="burger-menu" className={isOpen ? "open" : ""}>
               <span></span>
@@ -90,11 +90,11 @@ const Sidebar = ({ isOpen, toggle }) => {
       </AutoHiding>
 
       <OverlayLogo>
-        <SidebarLogoSm to="/" onClick={toggleHome}>
+        <SidebarLogo to="/" onClick={toggleHome}>
           <LogoBottom isInParallaxOrContact={isInParallaxOrContact}>
             Yuya Hashirizaki
           </LogoBottom>
-        </SidebarLogoSm>
+        </SidebarLogo>
       </OverlayLogo>
 
       <SidebarWrapper isOpen={isOpen} onClick={toggle}>

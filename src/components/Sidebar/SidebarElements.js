@@ -5,7 +5,9 @@ import { Link as LinkS } from "react-scroll";
 ///// logo /////
 const tapAnimation = keyframes`
   0% { transform: scale(1); }
-  50% { transform: scale(0.9); }
+  25% { transform: scale(0.99); }
+  50% { transform: scale(0.98); }
+  75% { transform: scale(0.99); }
   100% { transform: scale(1); }
 `;
 
@@ -27,7 +29,7 @@ const tapTiltMoveShaking = keyframes`
   }
 `;
 
-export const SidebarLogoSm = styled(LinkR)`
+export const SidebarLogo = styled(LinkR)`
   width: 90px;
   text-decoration: none;
   animation: ${tapTiltMoveShaking} 0.3s 6;
@@ -42,11 +44,11 @@ export const SidebarLogoSm = styled(LinkR)`
     font-size: 1.5rem;
 
     @media only screen and (max-width: 540px) {
-      font-size: 5vw;
+      font-size: 4.4vw;
     }
   }
 
-  @media screen and (min-width: 960.999px) {
+  @media screen and (min-width: 960px) {
     display: none;
   }
 `;

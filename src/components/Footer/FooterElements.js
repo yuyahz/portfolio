@@ -108,6 +108,7 @@ export const SocialLogo = styled(Link)`
   font-size: 24px;
   letter-spacing: 1px;
   color: var(--fourth-txt-color);
+  text-shadow: 1px 1px 10px var(--index-bg);
   justify-content: flex-start;
   cursor: pointer;
   text-decoration: none;

@@ -30,9 +30,9 @@ const Footer = () => {
           </FooterLinksWrapper>
           <SocialMedia>
             <SocialMediaWrap>
-              <SocialLogo to="/" onClick={toggleHome}>
-                Yuya Hashirizaki
-              </SocialLogo>
+              {/* <SocialLogo to="/" onClick={toggleHome}>
+                Yuya
+              </SocialLogo> */}
               {/* <WebsiteRights>dolla © {new Data().getFullYear()}All Right reserved.</WebsiteRights> */}
               <SocialIcons>
                 <SocialIconLink

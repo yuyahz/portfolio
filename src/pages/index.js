@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Home from "../components/Home";
 import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
+import VerticalNavbar from "../components/VerticalNavbar";
 // import AboutParallax from "../components/AboutParallax";
 import About from "../components/About";
 import Banner from "../components/Banner";
@@ -78,7 +78,9 @@ const Index = () => {
       <div id="home">
         <Home />
       </div>
-      {showNavbar && <Navbar toggle={toggle} animateNavbar={animateNavbar} />}
+      {showNavbar && (
+        <VerticalNavbar toggle={toggle} animateNavbar={animateNavbar} />
+      )}
       <About />
       <Banner />
       {/* <PicLarry />

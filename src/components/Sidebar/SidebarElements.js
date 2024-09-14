@@ -1,9 +1,76 @@
-import styled from "styled-components";
-// import { Link as LinkR } from 'react-router-dom';
+import styled, { keyframes, css } from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
-///// bar setting /////
+///// logo /////
+const tapAnimation = keyframes`
+  0% { transform: scale(1); }
+  50% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+`;
+
+const tapTiltMoveShaking = keyframes`
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+`;
+
+export const SidebarLogoSm = styled(LinkR)`
+  width: 90px;
+  text-decoration: none;
+  animation: ${tapTiltMoveShaking} 0.3s 6;
+
+  &:active {
+    animation: ${tapAnimation} 0.3s 3 forwards;
+  }
+
+  h4 {
+    font-family: "GT";
+    font-weight: 500;
+    font-size: 1.5rem;
+    z-index: 999;
+
+    @media only screen and (max-width: 540px) {
+      font-size: 5vw;
+    }
+  }
+
+  @media screen and (min-width: 960.999px) {
+    display: none;
+  }
+`;
+
+export const LogoTop = styled.h4`
+  color: var(--primary-txt-color);
+`;
+
+export const LogoBottom = styled.h4`
+  color: var(--fourth-txt-color);
+  opacity: ${(props) => (props.isInParallaxOrContact ? 1 : 0)};
+  pointer-events: ${(props) => (props.isInParallaxOrContact ? "auto" : "none")};
+  text-shadow: ${(props) =>
+    props.isInParallaxOrContact ? "1px 1px 6px var(--index-bg)" : "none"};
+  transform: ${(props) =>
+    props.isInParallaxOrContact ? "translateY(0)" : "translateY(-20px)"};
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.87, 0, 0.13, 1),
+    color 0.4s ease, text-shadow 0.4s ease;
+`;
+
+///// Sidebar setting /////
 export const SidebarContainer = styled.aside`
+  width: 100%;
   position: fixed;
   z-index: 1000;
   color: var(--primary-txt-color);
@@ -18,8 +85,35 @@ export const SidebarContainer = styled.aside`
   }
 `;
 
-export const SidebarWrapper = styled.aside`
+export const AutoHiding = styled.div`
+  position: sticky;
+  top: 0;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1002;
+  transition: transform 0.3s ease;
+  transform: ${(props) => (props.hide ? "translateY(-100%)" : "translateY(0)")};
+`;
+
+export const SidebarHeader = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 30px;
+`;
+
+export const OverlayLogo = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 17.5px;
+  left: 30px;
+`;
+
+export const SidebarWrapper = styled.aside`
+  /* display: flex; */
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: auto;
@@ -120,33 +214,30 @@ export const SidebarSocialIconLink = styled.a`
   }
 `;
 
-///// icon /////
-export const Icon = styled.div`
-  display: block;
-  z-index: 1001;
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "100%")};
-
+///// burger-menu /////
+export const BurgerMenu = styled.div`
   @media screen and (max-width: 959.99px) {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    margin-left: auto;
+    /* display: block; */
     width: 48px;
     height: 48px;
-    position: fixed;
+    /* position: fixed;
     top: 20px;
-    right: 15px;
+    right: 15px; */
     background-color: var(--index-bg);
     border-radius: 50%;
     border: solid 2px var(--secondary-bg);
 
-    .burger-menu-bg {
-      padding-top: 20px;
-    }
-
     #burger-menu {
       width: 26px;
-      height: auto;
-      position: fixed;
+      height: 26px;
+      /* position: fixed;
       top: 31px;
-      right: 26px;
+      right: 26px; */
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
       -o-transform: rotate(0deg);

@@ -21,7 +21,7 @@ const ParallaxSection = styled.section`
   //v1v2//
   /* height: 100h; */
   //v3//
-  height: 70vh;
+  height: 75vh;
   background: var(--secondary-bg);
   display: flex;
   justify-content: center;

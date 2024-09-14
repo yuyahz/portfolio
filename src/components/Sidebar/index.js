@@ -1,46 +1,102 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import {
+  LogoTop,
+  LogoBottom,
+  OverlayLogo,
+  AutoHiding,
   SidebarContainer,
   SidebarWrapper,
-  Icon,
+  SidebarHeader,
+  SidebarLogoSm,
   SidebarMenu,
   SidebarItem,
   SidebarLink,
   SidebarTag,
   SidebarSocialItem,
   SidebarSocialIconLink,
+  BurgerMenu,
 } from "./SidebarElements";
 import { FaDribbble, FaBehance, FaLinkedinIn } from "react-icons/fa";
 
-const Sidebar = ({ isOpen, toggle, darkBurger }) => {
+const Sidebar = ({ isOpen, toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
-
-  const changeNav = () => {
-    if (window.scrollY >= 1) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
-  };
+  const [isInParallaxOrContact, setIsInParallaxOrContact] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [hideAutoHidingSection, setHideAutoHidingSection] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-  }, []);
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.body.clientHeight;
+      let coefficient = 0.95; // Default coefficient
+
+      // Adjust coefficient for small screens
+      if (window.innerWidth < 960) {
+        coefficient = 0.99;
+      }
+
+      const scrolledMostOfThePage =
+        window.scrollY >= (documentHeight - windowHeight) * coefficient;
+
+      if (scrolledMostOfThePage) {
+        setIsInParallaxOrContact(true);
+      } else {
+        setIsInParallaxOrContact(false);
+      }
+
+      // Auto-hide logic
+      if (window.scrollY > lastScrollY && window.scrollY >= 100) {
+        setHideAutoHidingSection(true);
+      } else {
+        setHideAutoHidingSection(false);
+      }
+      setLastScrollY(window.scrollY);
+
+      // Show sidebar on scroll
+      if (window.scrollY >= 100) {
+        setScrollNav(true);
+      } else {
+        setScrollNav(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   const toggleHome = () => {
     scroll.scrollToTop();
   };
 
   return (
-    <SidebarContainer>
-      <Icon isOpen={isOpen} onClick={toggle} darkBurger={darkBurger}>
-        <div id="burger-menu" className={isOpen ? "open" : ""}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </Icon>
+    <SidebarContainer isOpen={isOpen}>
+      <AutoHiding hide={hideAutoHidingSection}>
+        <SidebarHeader>
+          <SidebarLogoSm to="/" onClick={toggleHome}>
+            <LogoTop>Yuya Hashirizaki</LogoTop>
+          </SidebarLogoSm>
+          <BurgerMenu isOpen={isOpen} onClick={toggle}>
+            <div id="burger-menu" className={isOpen ? "open" : ""}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </BurgerMenu>
+        </SidebarHeader>
+      </AutoHiding>
+
+      <OverlayLogo>
+        <SidebarLogoSm to="/" onClick={toggleHome}>
+          <LogoBottom isInParallaxOrContact={isInParallaxOrContact}>
+            Yuya Hashirizaki
+          </LogoBottom>
+        </SidebarLogoSm>
+      </OverlayLogo>
+
       <SidebarWrapper isOpen={isOpen} onClick={toggle}>
         <SidebarMenu>
           <SidebarItem>
@@ -207,30 +263,30 @@ const Sidebar = ({ isOpen, toggle, darkBurger }) => {
               ></img>
             </SidebarLink>
           </SidebarItem>
-          <SidebarSocialItem>
-            <SidebarSocialIconLink
-              href="https://dribbble.com/yuya-hashirizaki"
-              target="_blank"
-              aria-label="dribbble"
-            >
-              <FaDribbble />
-            </SidebarSocialIconLink>
-            <SidebarSocialIconLink
-              href="https://www.behance.net/yuyahashirizaki"
-              target="_blank"
-              aria-label="behance"
-            >
-              <FaBehance />
-            </SidebarSocialIconLink>
-            <SidebarSocialIconLink
-              href="https://www.linkedin.com/in/yuya-hashirizaki"
-              target="_blank"
-              aria-label="linkedIn"
-            >
-              <FaLinkedinIn />
-            </SidebarSocialIconLink>
-          </SidebarSocialItem>
         </SidebarMenu>
+        <SidebarSocialItem>
+          <SidebarSocialIconLink
+            href="https://dribbble.com/yuya-hashirizaki"
+            target="_blank"
+            aria-label="dribbble"
+          >
+            <FaDribbble />
+          </SidebarSocialIconLink>
+          <SidebarSocialIconLink
+            href="https://www.behance.net/yuyahashirizaki"
+            target="_blank"
+            aria-label="behance"
+          >
+            <FaBehance />
+          </SidebarSocialIconLink>
+          <SidebarSocialIconLink
+            href="https://www.linkedin.com/in/yuya-hashirizaki"
+            target="_blank"
+            aria-label="linkedIn"
+          >
+            <FaLinkedinIn />
+          </SidebarSocialIconLink>
+        </SidebarSocialItem>
       </SidebarWrapper>
     </SidebarContainer>
   );

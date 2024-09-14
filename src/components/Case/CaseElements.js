@@ -167,9 +167,10 @@ export const ColumnContentLg = styled.div`
   }
 
   a {
-    @media only screen and (max-width: 1024px) {
+    margin: 0 auto;
+    /* @media only screen and (max-width: 1024px) {
       margin: 0 auto;
-    }
+    } */
   }
 `;
 

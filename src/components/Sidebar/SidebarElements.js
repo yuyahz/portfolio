@@ -53,31 +53,17 @@ export const SidebarLogo = styled(LinkR)`
   }
 `;
 
-export const LogoTop = styled.h4`
+export const Logo = styled.h4`
   color: ${(props) =>
     props.isInParallaxOrContact
       ? "var(--fourth-txt-color);"
       : "var(--primary-txt-color);"};
   pointer-events: ${(props) => (props.isInParallaxOrContact ? "auto" : "none")};
   text-shadow: ${(props) =>
-    props.isInParallaxOrContact ? "2px 2px 5px var(--index-bg)" : "none"};
-  /* transform: ${(props) =>
-    props.isInParallaxOrContact ? "translateY(-100%)" : "translateY(0)"};
-  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.87, 0, 0.13, 1),
-    color 0.4s ease, text-shadow 0.4s ease; */
+    props.isInParallaxOrContact
+      ? "1px 1px 7px var(--index-bg), -1px -1px 7px var(--index-bg)"
+      : "none"};
 `;
-
-// export const LogoBottom = styled.h4`
-//   color: var(--fourth-txt-color);
-//   opacity: ${(props) => (props.isInParallaxOrContact ? 1 : 0)};
-//   pointer-events: ${(props) => (props.isInParallaxOrContact ? "auto" : "none")};
-//   text-shadow: ${(props) =>
-//     props.isInParallaxOrContact ? "1px 1px 6px var(--index-bg)" : "none"};
-//   transform: ${(props) =>
-//     props.isInParallaxOrContact ? "translateY(0)" : "translateY(-20px)"};
-//   transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.87, 0, 0.13, 1),
-//     color 0.4s ease, text-shadow 0.4s ease;
-// `;
 
 ///// Sidebar setting /////
 export const SidebarContainer = styled.aside`

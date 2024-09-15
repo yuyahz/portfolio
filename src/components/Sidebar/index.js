@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import {
-  LogoTop,
-  LogoBottom,
-  OverlayLogo,
+  Logo,
   AutoHiding,
   SidebarContainer,
   SidebarWrapper,
@@ -77,9 +75,9 @@ const Sidebar = ({ isOpen, toggle }) => {
       <AutoHiding hide={hideAutoHidingSection}>
         <SidebarHeader>
           <SidebarLogo to="/" onClick={toggleHome}>
-            <LogoTop isInParallaxOrContact={isInParallaxOrContact}>
+            <Logo isInParallaxOrContact={isInParallaxOrContact}>
               Yuya Hashirizaki
-            </LogoTop>
+            </Logo>
           </SidebarLogo>
           <BurgerMenu isOpen={isOpen} onClick={toggle}>
             <div id="burger-menu" className={isOpen ? "open" : ""}>
@@ -90,14 +88,6 @@ const Sidebar = ({ isOpen, toggle }) => {
           </BurgerMenu>
         </SidebarHeader>
       </AutoHiding>
-
-      {/* <OverlayLogo>
-        <SidebarLogo to="/" onClick={toggleHome}>
-          <LogoBottom isInParallaxOrContact={isInParallaxOrContact}>
-            Yuya Hashirizaki
-          </LogoBottom>
-        </SidebarLogo>
-      </OverlayLogo> */}
 
       <SidebarWrapper isOpen={isOpen} onClick={toggle}>
         <SidebarMenu>

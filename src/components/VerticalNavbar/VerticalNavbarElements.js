@@ -51,11 +51,13 @@ export const LogoBottom = styled.h4`
   opacity: ${(props) => (props.isInParallaxOrContact ? 1 : 0)};
   pointer-events: ${(props) => (props.isInParallaxOrContact ? "auto" : "none")};
   text-shadow: ${(props) =>
-    props.isInParallaxOrContact ? "1px 1px 6px var(--index-bg)" : "none"};
+    props.isInParallaxOrContact
+      ? "1px 1px 15px var(--index-bg), -1px -1px 15px var(--index-bg)"
+      : "none"};
   transform: ${(props) =>
     props.isInParallaxOrContact ? "translateY(0)" : "translateY(-20px)"};
-  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.87, 0, 0.13, 1),
-    color 0.4s ease, text-shadow 0.4s ease;
+  transition: opacity 1s ease, transform 1s cubic-bezier(0.87, 0, 0.13, 1),
+    color 1s ease, text-shadow 1s ease;
 `;
 
 export const AutoHidingWrapper = styled.div`
@@ -154,7 +156,6 @@ export const NavLinks = styled(LinkS)`
 
   &.active {
     font-weight: 700;
-    /* color: var(--fourth-txt-color); */
     background-color: var(--index-bg);
     border-radius: 0px 15px 15px 0px;
     box-shadow: var(--primary-shadow);

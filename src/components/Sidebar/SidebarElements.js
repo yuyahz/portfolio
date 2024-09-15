@@ -61,7 +61,7 @@ export const Logo = styled.h4`
   pointer-events: ${(props) => (props.isInParallaxOrContact ? "auto" : "none")};
   text-shadow: ${(props) =>
     props.isInParallaxOrContact
-      ? "1px 1px 7px var(--index-bg), -1px -1px 7px var(--index-bg)"
+      ? "1px 1px 5px var(--index-bg), -1px -1px 5px var(--index-bg)"
       : "none"};
 `;
 

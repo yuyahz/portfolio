@@ -25,11 +25,6 @@ export const NavLogo = styled(LinkR)`
   width: 90px;
   text-decoration: none;
 
-  &:hover {
-    animation: ${hoverShaking} 0.3s;
-    animation-iteration-count: 6;
-  }
-
   h4 {
     font-family: "GT";
     font-weight: 500;
@@ -64,6 +59,11 @@ export const AutoHidingWrapper = styled.div`
   width: 120px;
   height: 78px;
   margin-left: 40px;
+
+  &:hover {
+    animation: ${hoverShaking} 0.3s;
+    animation-iteration-count: 6;
+  }
 `;
 
 export const AutoHiding = styled.div`

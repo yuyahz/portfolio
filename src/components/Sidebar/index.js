@@ -77,7 +77,9 @@ const Sidebar = ({ isOpen, toggle }) => {
       <AutoHiding hide={hideAutoHidingSection}>
         <SidebarHeader>
           <SidebarLogo to="/" onClick={toggleHome}>
-            <LogoTop>Yuya Hashirizaki</LogoTop>
+            <LogoTop isInParallaxOrContact={isInParallaxOrContact}>
+              Yuya Hashirizaki
+            </LogoTop>
           </SidebarLogo>
           <BurgerMenu isOpen={isOpen} onClick={toggle}>
             <div id="burger-menu" className={isOpen ? "open" : ""}>
@@ -89,13 +91,13 @@ const Sidebar = ({ isOpen, toggle }) => {
         </SidebarHeader>
       </AutoHiding>
 
-      <OverlayLogo>
+      {/* <OverlayLogo>
         <SidebarLogo to="/" onClick={toggleHome}>
           <LogoBottom isInParallaxOrContact={isInParallaxOrContact}>
             Yuya Hashirizaki
           </LogoBottom>
         </SidebarLogo>
-      </OverlayLogo>
+      </OverlayLogo> */}
 
       <SidebarWrapper isOpen={isOpen} onClick={toggle}>
         <SidebarMenu>

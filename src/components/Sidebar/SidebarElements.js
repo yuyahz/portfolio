@@ -131,7 +131,7 @@ export const SidebarWrapper = styled.aside`
 `;
 
 export const SidebarMenu = styled.div`
-  margin-top: 100px;
+  margin-top: 60px;
 `;
 
 export const SidebarItem = styled.div`

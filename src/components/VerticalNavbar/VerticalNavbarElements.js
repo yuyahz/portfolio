@@ -30,11 +30,6 @@ export const NavLogo = styled(LinkR)`
     font-weight: 500;
     font-size: 1.5rem;
   }
-
-  @media screen and (max-width: 960px) {
-    margin: 10px 0 0 10px;
-    width: 60px;
-  }
 `;
 
 export const LogoTop = styled.h4`
@@ -67,24 +62,22 @@ export const AutoHidingWrapper = styled.div`
 `;
 
 export const AutoHiding = styled.div`
-  position: sticky;
-  top: 30px;
+  position: relative;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition: transform 0.3s ease;
-  transform: ${(props) => (props.hide ? "translateY(-130%)" : "translateY(0)")};
+  transform: ${(props) => (props.hide ? "translateY(-150%)" : "translateY(0)")};
 `;
 
 export const OverlayLogo = styled.div`
   position: absolute;
   top: 30px;
-  left: 120px;
 `;
 
 // VerticalNavbar setting //
 export const NavContainer = styled.nav`
-  /* width: auto; */
   height: 100vh;
   position: fixed;
   top: 0;

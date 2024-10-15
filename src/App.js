@@ -15,6 +15,7 @@ import DarumaPage from "./pages/articleDaruma";
 import DailyUiPage from "./pages/articleDailyUi";
 import PortfolioPage from "./pages/articlePortfolio";
 import NoMatch from "./components/NoMatch";
+import Wedding from "./components/Wedding";
 import TouchStartListener from "./components/TouchStartListener";
 import { ParallaxProvider } from "react-scroll-parallax";
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/darumaPage" element={<DarumaPage />} />
           <Route path="/portfolioPage" element={<PortfolioPage />} />
           <Route path="/dailyUiPage" element={<DailyUiPage />} />
+          <Route path="/wedding" element={<Wedding />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
         <TouchStartListener /> {/* Moved out of Routes */}

@@ -19,7 +19,7 @@ const Home = () => {
               variants={fadeLeft}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 1.1 }}
             >
               H
             </motion.h1>
@@ -28,7 +28,7 @@ const Home = () => {
               variants={fadeLeft}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.2 }}
             >
               llo.
             </motion.h1>
@@ -38,7 +38,7 @@ const Home = () => {
               variants={fadeLeft}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 0.9 }}
+              transition={{ duration: 1.3 }}
             >
               I am
             </motion.h2>
@@ -47,7 +47,7 @@ const Home = () => {
               variants={fadeLeft}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 1 }}
+              transition={{ duration: 1.4 }}
             >
               Yuya
             </motion.h2>
@@ -59,7 +59,7 @@ const Home = () => {
                 variants={fadeLeft}
                 initial="hidden"
                 animate="visible"
-                transition={{ duration: 1.2 }}
+                transition={{ duration: 1.5 }}
               >
                 Creative Problem Solver
               </motion.p>
@@ -69,7 +69,7 @@ const Home = () => {
                 variants={fadeLeft}
                 initial="hidden"
                 animate="visible"
-                transition={{ duration: 1.3 }}
+                transition={{ duration: 1.6 }}
               >
                 UX/UI & Brand Storytelling Designer
               </motion.p>
@@ -78,7 +78,7 @@ const Home = () => {
                 variants={fadeLeft}
                 initial="hidden"
                 animate="visible"
-                transition={{ duration: 1.4 }}
+                transition={{ duration: 1.7 }}
               >
                 with Front-End and UI Development
               </motion.p>

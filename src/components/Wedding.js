@@ -27,7 +27,7 @@ const Styles = styled.div`
     border: 0;
     outline: 0;
     font-size: 100%;
-    font-family: "Spectral", Georgia, serif;
+    font-family: "Spectral", serif;
     font-weight: 300;
     font-style: normal;
     vertical-align: baseline;
@@ -37,14 +37,14 @@ const Styles = styled.div`
   span {
     color: rgb(245, 183, 66);
     font-size: 48px;
-    font-family: "Alice", Georgia, serif;
+    font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
     font-style: italic;
   }
 
   .aoP a[href] {
-    font-family: "Spectral", Georgia, serif;
+    font-family: "Spectral", serif;
     font-weight: 300;
     font-style: normal;
     color: rgb(245, 183, 66);
@@ -53,7 +53,7 @@ const Styles = styled.div`
   }
 
   a {
-    font-family: "Spectral", Georgia, serif;
+    font-family: "Spectral", serif;
     font-weight: 300;
     font-style: normal;
     text-decoration: underline;
@@ -99,7 +99,7 @@ const Styles = styled.div`
   }
 
   .content {
-    font-family: "Spectral", Georgia, serif;
+    font-family: "Spectral", serif;
     font-weight: 300;
     font-style: normal;
     padding-top: 16px;

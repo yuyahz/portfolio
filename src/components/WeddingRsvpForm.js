@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import styled from "styled-components";
 
-const Styles = styled.div`
+const RsvpFormStyles = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Alice&family=Spectral:wght@300&display=swap");
 
   form {
@@ -20,10 +20,8 @@ const Styles = styled.div`
     line-height: 34px;
     display: flex;
     flex-direction: column;
-
     font-family: "Spectral", serif;
     font-weight: 300;
-    font-style: normal;
   }
 
   .margin-top {
@@ -41,10 +39,16 @@ const Styles = styled.div`
     border-radius: 6px;
     background-color: rgba(255, 255, 255, 0.8);
     color: black;
-
     font-family: "Spectral", serif;
     font-weight: 300;
-    font-style: normal;
+  }
+
+  input:focus {
+    outline: solid 2px rgb(245, 183, 66);
+  }
+
+  select:focus {
+    outline: solid 2px rgb(245, 183, 66);
   }
 
   button {
@@ -58,10 +62,8 @@ const Styles = styled.div`
     font-size: 16px;
     border-radius: 50px;
     transition: background-color 0.3s, color 0.3s;
-
     font-family: "Spectral", serif;
     font-weight: 300;
-    font-style: normal;
   }
 
   button:hover {
@@ -88,7 +90,6 @@ const Styles = styled.div`
     padding: 44px 24px;
     border-radius: 5px;
     text-align: center;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +100,6 @@ const Styles = styled.div`
       font-size: 34px;
       font-family: "Alice", serif;
       font-weight: 400;
-      font-style: normal;
       font-style: italic;
 
       @media only screen and (max-width: 280px) {
@@ -110,6 +110,8 @@ const Styles = styled.div`
 `;
 
 const RSVPForm = () => {
+  console.log("RSVPForm is rendering");
+
   const [name, setName] = useState("");
   const [isAttending, setIsAttending] = useState(true);
   const [modalVisible, setModalVisible] = useState(false);
@@ -150,7 +152,7 @@ const RSVPForm = () => {
   };
 
   return (
-    <Styles>
+    <RsvpFormStyles>
       <form onSubmit={handleSubmit}>
         <div className="margin-top">
           <label>
@@ -177,9 +179,7 @@ const RSVPForm = () => {
         </div>
         <button type="submit">Send RSVP</button>
       </form>
-      {error && <p style={{ color: "red" }}>{error}</p>}{" "}
-      {/* Display error message */}
-      {/* Modal for confirmation message */}
+      {error && <p style={{ color: "red" }}>{error}</p>}
       {modalVisible && (
         <div className="modal">
           <div className="modal-content">
@@ -187,7 +187,7 @@ const RSVPForm = () => {
           </div>
         </div>
       )}
-    </Styles>
+    </RsvpFormStyles>
   );
 };
 

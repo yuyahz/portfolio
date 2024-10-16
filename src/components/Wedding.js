@@ -2,7 +2,7 @@ import React from "react";
 import RSVPForm from "./WeddingRsvpForm";
 import styled from "styled-components";
 
-const Styles = styled.div`
+const WeddingStyles = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Alice&family=Spectral:wght@0,300;1,300&display=swap");
 
   html,
@@ -40,7 +40,6 @@ const Styles = styled.div`
     font-size: 48px;
     font-family: "Alice", serif;
     font-weight: 400;
-    font-style: normal;
     font-style: italic;
 
     @media only screen and (max-width: 280px) {
@@ -54,7 +53,6 @@ const Styles = styled.div`
     font-size: 24px;
     font-family: "Alice", serif;
     font-weight: 400;
-    font-style: normal;
     font-style: italic;
 
     @media only screen and (max-width: 280px) {
@@ -62,18 +60,10 @@ const Styles = styled.div`
     }
   }
 
-  .aoP a[href] {
-    font-family: "Spectral", serif;
-    font-weight: 300;
-    font-style: normal;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
+  .aoP a[href],
   a {
     font-family: "Spectral", serif;
     font-weight: 300;
-    font-style: normal;
     text-decoration: underline;
     cursor: pointer;
   }
@@ -163,7 +153,7 @@ const Styles = styled.div`
 `;
 
 export const Wedding = () => (
-  <Styles>
+  <WeddingStyles>
     <div className="background">
       <div className="container">
         <div className="wrapper">
@@ -229,7 +219,7 @@ export const Wedding = () => (
         <div className="animated-bottom"></div>
       </div>
     </div>
-  </Styles>
+  </WeddingStyles>
 );
 
 export default Wedding;

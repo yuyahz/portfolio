@@ -1,113 +1,87 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import styled from "styled-components";
 
-const RsvpFormStyles = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Alice&family=Spectral:wght@300&display=swap");
+const formStyles = {
+  display: "flex",
+  flexDirection: "column",
+  gap: "10px",
+  maxWidth: "400px",
+  margin: "auto",
+  backgroundColor: "rgba(69, 89, 73, 0.9)",
+  borderRadius: "8px",
+  color: "#e5f5f0",
+  padding: "0 20px",
+};
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: auto;
-    background-color: rgba(69, 89, 73, 0.9);
-    border-radius: 8px;
-    color: #e5f5f0;
-  }
+const labelStyles = {
+  lineHeight: "34px",
+  display: "flex",
+  flexDirection: "column",
+  fontFamily: "'Spectral', serif",
+  fontWeight: 300,
+};
 
-  label {
-    line-height: 34px;
-    display: flex;
-    flex-direction: column;
-    font-family: "Spectral", serif;
-    font-weight: 300;
-  }
+const inputStyles = (isFocused) => ({
+  padding: "10px",
+  border: "none",
+  borderRadius: "6px",
+  backgroundColor: "rgba(255, 255, 255, 0.8)",
+  color: "black",
+  fontFamily: "'Spectral', serif",
+  fontWeight: 300,
+  outline: isFocused ? "solid 2px rgb(245, 183, 66)" : "none",
+});
 
-  .margin-top {
-    margin-top: 24px;
-  }
+const selectStyles = (isFocused) => ({
+  padding: "10px",
+  border: "none",
+  borderRadius: "6px",
+  backgroundColor: "rgba(255, 255, 255, 0.8)",
+  color: "black",
+  fontFamily: "'Spectral', serif",
+  fontWeight: 300,
+  outline: isFocused ? "solid 2px rgb(245, 183, 66)" : "none",
+});
 
-  .margin-bottom {
-    margin-bottom: 24px;
-  }
+const buttonStyles = {
+  margin: "0 auto",
+  minWidth: "170px",
+  padding: "10px",
+  backgroundColor: "transparent",
+  border: "solid 1px rgb(245, 183, 66)",
+  color: "rgb(245, 183, 66)",
+  cursor: "pointer",
+  fontSize: "16px",
+  borderRadius: "50px",
+  transition: "background-color 0.3s, color 0.3s",
+  fontFamily: "'Spectral', serif",
+  fontWeight: 300,
+};
 
-  input,
-  select {
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black;
-    font-family: "Spectral", serif;
-    font-weight: 300;
-  }
+const modalStyles = {
+  position: "fixed",
+  top: 0,
+  left: 0,
+  right: 0,
+  bottom: 0,
+  backgroundColor: "rgba(0, 0, 0, 0.8)",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  zIndex: 1000,
+};
 
-  input:focus {
-    outline: solid 2px rgb(245, 183, 66);
-  }
-
-  select:focus {
-    outline: solid 2px rgb(245, 183, 66);
-  }
-
-  button {
-    margin: 0 auto;
-    min-width: 170px;
-    padding: 10px;
-    background-color: transparent;
-    border: solid 1px rgb(245, 183, 66);
-    color: rgb(245, 183, 66);
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 50px;
-    transition: background-color 0.3s, color 0.3s;
-    font-family: "Spectral", serif;
-    font-weight: 300;
-  }
-
-  button:hover {
-    background-color: rgb(245, 183, 66);
-    color: #455949;
-  }
-
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-
-  .modal-content {
-    background: rgba(245, 183, 66);
-    max-width: 320px;
-    padding: 44px 24px;
-    border-radius: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    p {
-      color: #455949;
-      font-size: 34px;
-      font-family: "Alice", serif;
-      font-weight: 400;
-      font-style: italic;
-
-      @media only screen and (max-width: 280px) {
-        font-size: 13.077vw;
-      }
-    }
-  }
-`;
+const modalContentStyles = {
+  background: "rgba(245, 183, 66)",
+  maxWidth: "320px",
+  padding: "44px 24px",
+  borderRadius: "5px",
+  textAlign: "center",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  flexDirection: "column",
+};
 
 const RSVPForm = () => {
   console.log("RSVPForm is rendering");
@@ -117,6 +91,8 @@ const RSVPForm = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
+  const [inputFocused, setInputFocused] = useState(false);
+  const [selectFocused, setSelectFocused] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -152,42 +128,60 @@ const RSVPForm = () => {
   };
 
   return (
-    <RsvpFormStyles>
+    <div style={formStyles}>
       <form onSubmit={handleSubmit}>
-        <div className="margin-top">
-          <label>
+        <div style={{ marginTop: "24px" }}>
+          <label style={labelStyles}>
             Your Name:
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
+              style={inputStyles(inputFocused)}
+              onFocus={() => setInputFocused(true)}
+              onBlur={() => setInputFocused(false)}
             />
           </label>
         </div>
-        <div className="margin-bottom">
-          <label>
+        <div style={{ marginBottom: "24px" }}>
+          <label style={labelStyles}>
             Will you attend?
             <select
               value={isAttending ? "yes" : "no"}
               onChange={(e) => setIsAttending(e.target.value === "yes")}
+              style={selectStyles(selectFocused)}
+              onFocus={() => setSelectFocused(true)}
+              onBlur={() => setSelectFocused(false)}
             >
               <option value="yes">Yes</option>
               <option value="no">No</option>
             </select>
           </label>
         </div>
-        <button type="submit">Send RSVP</button>
+        <button type="submit" style={buttonStyles}>
+          Send RSVP
+        </button>
       </form>
       {error && <p style={{ color: "red" }}>{error}</p>}
       {modalVisible && (
-        <div className="modal">
-          <div className="modal-content">
-            <p>{message}</p>
+        <div style={modalStyles}>
+          <div style={modalContentStyles}>
+            <p
+              style={{
+                color: "#455949",
+                fontSize: "34px",
+                fontFamily: "'Alice', serif",
+                fontWeight: 400,
+                fontStyle: "italic",
+              }}
+            >
+              {message}
+            </p>
           </div>
         </div>
       )}
-    </RsvpFormStyles>
+    </div>
   );
 };
 

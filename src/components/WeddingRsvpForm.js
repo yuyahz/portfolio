@@ -43,20 +43,20 @@ const selectStyles = (isFocused) => ({
   outline: isFocused ? "solid 2px rgb(245, 183, 66)" : "none",
 });
 
-const buttonStyles = {
+const buttonStyles = (isHovered) => ({
   margin: "0 auto",
   minWidth: "170px",
   padding: "10px",
-  backgroundColor: "transparent",
+  backgroundColor: isHovered ? "rgb(245, 183, 66)" : "transparent",
   border: "solid 1px rgb(245, 183, 66)",
-  color: "rgb(245, 183, 66)",
+  color: isHovered ? "#455949" : "rgb(245, 183, 66)",
   cursor: "pointer",
   fontSize: "16px",
   borderRadius: "50px",
   transition: "background-color 0.3s, color 0.3s",
   fontFamily: "'Spectral', serif",
   fontWeight: 300,
-};
+});
 
 const modalStyles = {
   position: "fixed",
@@ -93,6 +93,7 @@ const RSVPForm = () => {
   const [error, setError] = useState("");
   const [inputFocused, setInputFocused] = useState(false);
   const [selectFocused, setSelectFocused] = useState(false);
+  const [buttonHovered, setButtonHovered] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -159,7 +160,12 @@ const RSVPForm = () => {
             </select>
           </label>
         </div>
-        <button type="submit" style={buttonStyles}>
+        <button
+          type="submit"
+          style={buttonStyles(buttonHovered)}
+          onMouseEnter={() => setButtonHovered(true)}
+          onMouseLeave={() => setButtonHovered(false)}
+        >
           Send RSVP
         </button>
       </form>

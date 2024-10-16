@@ -172,7 +172,7 @@ export const Wedding = () => (
           </div>
           <div className="content">
             <p>
-              Saturday, the thirty of November, 2024 Three o'clock in the
+              Saturday, the thirty of November, 2024, Three o'clock in the
               afternoon at&nbsp;
               <a
                 className="orange"

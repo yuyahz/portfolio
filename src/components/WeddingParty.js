@@ -171,7 +171,8 @@ export const WeddingParty = () => (
           </div>
           <div className="content">
             <p>
-              Cocktail reception to follow eight o'clock in the evening at&nbsp;
+              Cocktail reception to follow Saturday, the thirty of November,
+              2024, Eight o'clock at&nbsp;
               <a className="orange" href="https://caffelatana.ca/">
                 Caffé La Tana
               </a>

@@ -109,6 +109,7 @@ const RSVPForm = () => {
     const templateParams = {
       name,
       attending: isAttending ? "Yes" : "No",
+      subject: `RSVP from ${name}`,
     };
 
     emailjs

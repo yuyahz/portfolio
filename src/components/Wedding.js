@@ -1,4 +1,5 @@
 import React from "react";
+import RSVPForm from "./WeddingRsvpForm";
 import styled from "styled-components";
 
 const Styles = styled.div`
@@ -41,13 +42,30 @@ const Styles = styled.div`
     font-weight: 400;
     font-style: normal;
     font-style: italic;
+
+    @media only screen and (max-width: 280px) {
+      font-size: 17.143vw;
+    }
+  }
+
+  h1 {
+    padding-bottom: 16px;
+    color: #e5f5f0;
+    font-size: 24px;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-style: italic;
+
+    @media only screen and (max-width: 280px) {
+      font-size: 16px;
+    }
   }
 
   .aoP a[href] {
     font-family: "Spectral", serif;
     font-weight: 300;
     font-style: normal;
-    color: rgb(245, 183, 66);
     text-decoration: underline;
     cursor: pointer;
   }
@@ -57,7 +75,7 @@ const Styles = styled.div`
     font-weight: 300;
     font-style: normal;
     text-decoration: underline;
-    cursor: auto;
+    cursor: pointer;
   }
 
   .container {
@@ -110,7 +128,7 @@ const Styles = styled.div`
   }
 
   .animated-top {
-    margin-top: 58px;
+    margin-top: 24px;
     height: 18px;
     background-size: 40px 20px;
     background-image: radial-gradient(
@@ -149,6 +167,7 @@ export const Wedding = () => (
     <div className="background">
       <div className="container">
         <div className="wrapper">
+          <h1>2024, Nov, 30th</h1>
           <div className="title">
             <span>Chanel Blouin</span>
             <p>and</p>
@@ -182,6 +201,9 @@ export const Wedding = () => (
               </a>
             </p>
           </div>
+
+          <RSVPForm />
+
           <div className="content-top details">
             <p>
               Margaret Pigott Park:

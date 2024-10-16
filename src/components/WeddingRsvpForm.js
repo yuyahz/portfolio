@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import weddingArrow from "../images/wedding_arrow.svg";
 
 const formStyles = {
   display: "flex",
@@ -40,7 +41,14 @@ const selectStyles = (isFocused) => ({
   color: "black",
   fontFamily: "'Spectral', serif",
   fontWeight: 300,
+  lineHeight: "1.5",
   outline: isFocused ? "solid 2px rgb(245, 183, 66)" : "none",
+  appearance: "none",
+  WebkitAppearance: "none",
+  backgroundImage: `url(${weddingArrow})`,
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "right 10px center",
+  backgroundSize: "12px",
 });
 
 const buttonStyles = (isHovered) => ({

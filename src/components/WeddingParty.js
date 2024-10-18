@@ -2,7 +2,7 @@ import React from "react";
 import RSVPForm from "./WeddingRsvpForm";
 import styled from "styled-components";
 
-const WeddingStyles = styled.div`
+const WeddingPartyStyles = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Alice&family=Spectral:wght@200;300;400;500;600;700;800&display=swap");
 
   html,
@@ -36,15 +36,18 @@ const WeddingStyles = styled.div`
   }
 
   h1 {
-    padding-bottom: 16px;
-    color: #e5f5f0;
-    font-size: 24px;
+    margin: 0 auto;
+    color: rgb(245, 183, 66);
+    font-size: 16px;
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: italic;
+    line-height: 1.1em;
+    max-width: 240px;
+    padding-bottom: 16px;
 
     @media only screen and (max-width: 280px) {
-      font-size: 16px;
+      font-size: 17.143vw;
     }
   }
 
@@ -165,12 +168,15 @@ const WeddingStyles = styled.div`
   }
 `;
 
-export const Wedding = () => (
-  <WeddingStyles>
+export const WeddingParty = () => (
+  <WeddingPartyStyles>
     <div className="background">
       <div className="container">
         <div className="wrapper">
-          <h1>2024, Nov, 30th</h1>
+          <h1>
+            The honour of your presence is joyfully requested at the marriage
+            celebration of
+          </h1>
           <div className="title">
             <h2>Chanel Blouin</h2>
             <p>and</p>
@@ -178,18 +184,9 @@ export const Wedding = () => (
             <h2 className="no-wrap">Hashirizaki</h2>
           </div>
           <div className="content-top">
-            <p className="italic">
-              The honour of your presence is joyfully requested at the marriage
-              celebration of
-            </p>
-            <p className="italic content-middle">
-              Chanel Blouin and Yuya Hashirizaki
-            </p>
-          </div>
-          <div className="content-top">
             <p>
-              Saturday, <span className="bold">November 30th, 2024</span> at
-              nine o'clock in the evening at&nbsp;
+              <span className="bold">Saturday, November 30th, 2024</span> at
+              nine o’clock in the evening at&nbsp;
               <a className="orange" href="https://caffelatana.ca/">
                 Caffé La Tana
               </a>
@@ -197,6 +194,10 @@ export const Wedding = () => (
           </div>
 
           <RSVPForm />
+
+          <div className="content-middle details">
+            <p>Please kindly reply by November 10th</p>
+          </div>
 
           <div className="content-bottom details">
             <p>
@@ -214,7 +215,7 @@ export const Wedding = () => (
         <div className="animated-bottom"></div>
       </div>
     </div>
-  </WeddingStyles>
+  </WeddingPartyStyles>
 );
 
-export default Wedding;
+export default WeddingParty;

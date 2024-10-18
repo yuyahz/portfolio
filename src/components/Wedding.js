@@ -36,15 +36,18 @@ const WeddingStyles = styled.div`
   }
 
   h1 {
-    padding-bottom: 16px;
-    color: #e5f5f0;
-    font-size: 24px;
+    margin: 0 auto;
+    color: rgb(245, 183, 66);
+    font-size: 16px;
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: italic;
+    line-height: 1.1em;
+    max-width: 240px;
+    padding-bottom: 16px;
 
     @media only screen and (max-width: 280px) {
-      font-size: 16px;
+      font-size: 17.143vw;
     }
   }
 
@@ -170,7 +173,10 @@ export const Wedding = () => (
     <div className="background">
       <div className="container">
         <div className="wrapper">
-          <h1>2024, Nov, 30th</h1>
+          <h1>
+            The honour of your presence is joyfully requested at the marriage
+            celebration of
+          </h1>
           <div className="title">
             <h2>Chanel Blouin</h2>
             <p>and</p>
@@ -178,18 +184,9 @@ export const Wedding = () => (
             <h2 className="no-wrap">Hashirizaki</h2>
           </div>
           <div className="content-top">
-            <p className="italic">
-              The honour of your presence is joyfully requested at the marriage
-              celebration of
-            </p>
-            <p className="italic content-middle">
-              Chanel Blouin and Yuya Hashirizaki
-            </p>
-          </div>
-          <div className="content-top">
             <p>
-              Saturday, <span className="bold">November 30th, 2024</span> at
-              three o'clock in the afternoon at &nbsp;
+              <span className="bold">Saturday, November 30th, 2024</span> at
+              three o'clock in the afternoon at&nbsp;
               <a
                 className="orange"
                 href="https://www.google.com/maps/place/Margaret+Pigott+Park/@49.2721556,-123.1675639,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMVaJETlXYRpifTCbjgDd12mMtkPlV1QYRASXPP!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMVaJETlXYRpifTCbjgDd12mMtkPlV1QYRASXPP%3Dw114-h86-k-no!7i4032!8i3024!4m18!1m8!3m7!1s0x5486724db416c141:0x837df7e3662f91ab!2sMargaret+Pigott+Park!8m2!3d49.2721556!4d-123.1675639!10e5!16s%2Fm%2F04zhvkm!3m8!1s0x5486724db416c141:0x837df7e3662f91ab!8m2!3d49.2721556!4d-123.1675639!10e5!14m1!1BCgIgAQ!16s%2Fm%2F04zhvkm?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D"
@@ -208,6 +205,10 @@ export const Wedding = () => (
           </div>
 
           <RSVPForm />
+
+          <div className="content-middle details">
+            <p>Please kindly reply by November 10th</p>
+          </div>
 
           <div className="content-bottom details">
             <p>

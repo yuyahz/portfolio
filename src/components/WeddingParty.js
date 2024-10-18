@@ -2,8 +2,8 @@ import React from "react";
 import RSVPForm from "./WeddingRsvpForm";
 import styled from "styled-components";
 
-const WeddingPartyStyles = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Alice&family=Spectral:wght@0,300;1,300&display=swap");
+const WeddingStyles = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Alice&family=Spectral:wght@200;300;400;500;600;700;800&display=swap");
 
   html,
   body {
@@ -35,18 +35,6 @@ const WeddingPartyStyles = styled.div`
     background: transparent;
   }
 
-  span {
-    color: rgb(245, 183, 66);
-    font-size: 48px;
-    font-family: "Alice", serif;
-    font-weight: 400;
-    font-style: italic;
-
-    @media only screen and (max-width: 280px) {
-      font-size: 17.143vw;
-    }
-  }
-
   h1 {
     padding-bottom: 16px;
     color: #e5f5f0;
@@ -57,6 +45,18 @@ const WeddingPartyStyles = styled.div`
 
     @media only screen and (max-width: 280px) {
       font-size: 16px;
+    }
+  }
+
+  h2 {
+    color: rgb(245, 183, 66);
+    font-size: 48px;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: italic;
+
+    @media only screen and (max-width: 280px) {
+      font-size: 17.143vw;
     }
   }
 
@@ -88,6 +88,11 @@ const WeddingPartyStyles = styled.div`
     color: rgb(245, 183, 66);
   }
 
+  .bold {
+    font-family: "Spectral", serif;
+    font-weight: 700;
+  }
+
   .reset-color {
     color: #e5f5f0;
   }
@@ -102,14 +107,23 @@ const WeddingPartyStyles = styled.div`
     white-space: nowrap;
   }
 
-  .content-top {
-    padding-top: 44px;
-  }
-
   .content {
     font-family: "Spectral", serif;
     font-weight: 300;
+    font-style: normal;
     padding-top: 16px;
+  }
+
+  .content-top {
+    padding-top: 24px;
+  }
+
+  .content-middle {
+    padding-top: 12px;
+  }
+
+  .content-bottom {
+    padding-top: 44px;
   }
 
   .details {
@@ -151,28 +165,31 @@ const WeddingPartyStyles = styled.div`
   }
 `;
 
-export const WeddingParty = () => (
-  <WeddingPartyStyles>
+export const Wedding = () => (
+  <WeddingStyles>
     <div className="background">
       <div className="container">
         <div className="wrapper">
           <h1>2024, Nov, 30th</h1>
           <div className="title">
-            <span>Chanel Blouin</span>
+            <h2>Chanel Blouin</h2>
             <p>and</p>
-            <span>Yuya </span>
-            <span className="no-wrap">Hashirizaki</span>
+            <h2>Yuya </h2>
+            <h2 className="no-wrap">Hashirizaki</h2>
           </div>
           <div className="content-top">
             <p className="italic">
               The honour of your presence is joyfully requested at the marriage
-              celebration of us
+              celebration of
+            </p>
+            <p className="italic content-middle">
+              Chanel Blouin and Yuya Hashirizaki
             </p>
           </div>
-          <div className="content">
+          <div className="content-top">
             <p>
-              Cocktail reception to follow Saturday, the thirty of November,
-              2024, Eight o'clock at&nbsp;
+              Saturday, <span className="bold">November 30th, 2024</span> at
+              nine o'clock in the evening at&nbsp;
               <a className="orange" href="https://caffelatana.ca/">
                 Caffé La Tana
               </a>
@@ -181,9 +198,9 @@ export const WeddingParty = () => (
 
           <RSVPForm />
 
-          <div className="content-top details">
+          <div className="content-bottom details">
             <p>
-              Caffé La Tana:
+              Caffé La Tana:&nbsp;
               <a
                 className="reset-color"
                 href="https://maps.app.goo.gl/ceLV6cvE8wJ8VsLN7"
@@ -197,7 +214,7 @@ export const WeddingParty = () => (
         <div className="animated-bottom"></div>
       </div>
     </div>
-  </WeddingPartyStyles>
+  </WeddingStyles>
 );
 
-export default WeddingParty;
+export default Wedding;

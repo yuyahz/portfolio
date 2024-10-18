@@ -81,8 +81,9 @@ const modalStyles = {
 
 const modalContentStyles = {
   background: "rgba(245, 183, 66)",
-  maxWidth: "320px",
-  padding: "44px 24px",
+  maxWidth: "420px",
+  padding: "44px",
+  margin: "30px",
   borderRadius: "5px",
   textAlign: "center",
   display: "flex",
@@ -102,6 +103,8 @@ const RSVPForm = () => {
   const [inputFocused, setInputFocused] = useState(false);
   const [selectFocused, setSelectFocused] = useState(false);
   const [buttonHovered, setButtonHovered] = useState(false);
+  const [dietaryRestrictions, setDietaryRestrictions] = useState("");
+  const [dietaryFocused, setDietaryFocused] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -110,6 +113,7 @@ const RSVPForm = () => {
       name,
       attending: isAttending ? "Yes" : "No",
       subject: `RSVP from ${name}`,
+      dietaryRestrictions,
     };
 
     emailjs
@@ -142,7 +146,7 @@ const RSVPForm = () => {
       <form onSubmit={handleSubmit}>
         <div style={{ marginTop: "24px" }}>
           <label style={labelStyles}>
-            Your Name:
+            Name(s):
             <input
               type="text"
               value={name}
@@ -154,9 +158,9 @@ const RSVPForm = () => {
             />
           </label>
         </div>
-        <div style={{ marginBottom: "24px" }}>
+        <div>
           <label style={labelStyles}>
-            Will you attend?
+            Attendance:
             <select
               value={isAttending ? "yes" : "no"}
               onChange={(e) => setIsAttending(e.target.value === "yes")}
@@ -167,6 +171,19 @@ const RSVPForm = () => {
               <option value="yes">Yes</option>
               <option value="no">No</option>
             </select>
+          </label>
+        </div>
+        <div style={{ marginBottom: "30px" }}>
+          <label style={labelStyles}>
+            Dietary Restrictions:
+            <input
+              type="text"
+              value={dietaryRestrictions}
+              onChange={(e) => setDietaryRestrictions(e.target.value)}
+              style={inputStyles(dietaryFocused)}
+              onFocus={() => setDietaryFocused(true)}
+              onBlur={() => setDietaryFocused(false)}
+            />
           </label>
         </div>
         <button

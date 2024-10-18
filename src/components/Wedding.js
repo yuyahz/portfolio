@@ -3,7 +3,7 @@ import RSVPForm from "./WeddingRsvpForm";
 import styled from "styled-components";
 
 const WeddingStyles = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Alice&family=Spectral:wght@0,300;1,300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Alice&family=Spectral:wght@200;300;400;500;600;700;800&display=swap");
 
   html,
   body {
@@ -35,18 +35,6 @@ const WeddingStyles = styled.div`
     background: transparent;
   }
 
-  span {
-    color: rgb(245, 183, 66);
-    font-size: 48px;
-    font-family: "Alice", serif;
-    font-weight: 400;
-    font-style: italic;
-
-    @media only screen and (max-width: 280px) {
-      font-size: 17.143vw;
-    }
-  }
-
   h1 {
     padding-bottom: 16px;
     color: #e5f5f0;
@@ -57,6 +45,18 @@ const WeddingStyles = styled.div`
 
     @media only screen and (max-width: 280px) {
       font-size: 16px;
+    }
+  }
+
+  h2 {
+    color: rgb(245, 183, 66);
+    font-size: 48px;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: italic;
+
+    @media only screen and (max-width: 280px) {
+      font-size: 17.143vw;
     }
   }
 
@@ -88,6 +88,11 @@ const WeddingStyles = styled.div`
     color: rgb(245, 183, 66);
   }
 
+  .bold {
+    font-family: "Spectral", serif;
+    font-weight: 700;
+  }
+
   .reset-color {
     color: #e5f5f0;
   }
@@ -102,15 +107,23 @@ const WeddingStyles = styled.div`
     white-space: nowrap;
   }
 
-  .content-top {
-    padding-top: 44px;
-  }
-
   .content {
     font-family: "Spectral", serif;
     font-weight: 300;
     font-style: normal;
     padding-top: 16px;
+  }
+
+  .content-top {
+    padding-top: 24px;
+  }
+
+  .content-middle {
+    padding-top: 12px;
+  }
+
+  .content-bottom {
+    padding-top: 44px;
   }
 
   .details {
@@ -159,21 +172,24 @@ export const Wedding = () => (
         <div className="wrapper">
           <h1>2024, Nov, 30th</h1>
           <div className="title">
-            <span>Chanel Blouin</span>
+            <h2>Chanel Blouin</h2>
             <p>and</p>
-            <span>Yuya </span>
-            <span className="no-wrap">Hashirizaki</span>
+            <h2>Yuya </h2>
+            <h2 className="no-wrap">Hashirizaki</h2>
           </div>
           <div className="content-top">
             <p className="italic">
               The honour of your presence is joyfully requested at the marriage
-              celebration of us
+              celebration of
+            </p>
+            <p className="italic content-middle">
+              Chanel Blouin and Yuya Hashirizaki
             </p>
           </div>
-          <div className="content">
+          <div className="content-top">
             <p>
-              Saturday, the thirty of November, 2024, Three o'clock in the
-              afternoon at&nbsp;
+              Saturday, <span className="bold">November 30th, 2024</span> at
+              three o'clock in the afternoon at &nbsp;
               <a
                 className="orange"
                 href="https://www.google.com/maps/place/Margaret+Pigott+Park/@49.2721556,-123.1675639,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMVaJETlXYRpifTCbjgDd12mMtkPlV1QYRASXPP!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMVaJETlXYRpifTCbjgDd12mMtkPlV1QYRASXPP%3Dw114-h86-k-no!7i4032!8i3024!4m18!1m8!3m7!1s0x5486724db416c141:0x837df7e3662f91ab!2sMargaret+Pigott+Park!8m2!3d49.2721556!4d-123.1675639!10e5!16s%2Fm%2F04zhvkm!3m8!1s0x5486724db416c141:0x837df7e3662f91ab!8m2!3d49.2721556!4d-123.1675639!10e5!14m1!1BCgIgAQ!16s%2Fm%2F04zhvkm?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D"
@@ -184,8 +200,7 @@ export const Wedding = () => (
           </div>
           <div className="content">
             <p>
-              Cocktail & dinner reception to follow Six o'clock in the evening
-              at&nbsp;
+              Reception to follow at six o'clock in the evening at&nbsp;
               <a className="orange" href="https://caffelatana.ca/">
                 Caffé La Tana
               </a>
@@ -194,9 +209,9 @@ export const Wedding = () => (
 
           <RSVPForm />
 
-          <div className="content-top details">
+          <div className="content-bottom details">
             <p>
-              Margaret Pigott Park:
+              Margaret Pigott Park:&nbsp;
               <a
                 className="reset-color"
                 href="https://maps.app.goo.gl/JQWFiarMDQizi2QZ6"
@@ -205,7 +220,7 @@ export const Wedding = () => (
               </a>
             </p>
             <p>
-              Caffé La Tana:
+              Caffé La Tana:&nbsp;
               <a
                 className="reset-color"
                 href="https://maps.app.goo.gl/ceLV6cvE8wJ8VsLN7"

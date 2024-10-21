@@ -118,10 +118,10 @@ const RSVPForm = () => {
 
     emailjs
       .send(
-        "service_0vclej2", // Your service ID
-        "template_ocg3cuz", // Your template ID
+        "service_g5afb3b", // Your service ID
+        "template_6ok2qyp", // Your template ID
         templateParams,
-        "onV4InPOesawgVb8O" // Your public key
+        "Ea2-RV-7RmCvQcZgm" // Your public key
       )
       .then((response) => {
         console.log("Email sent successfully!", response.status, response.text);

@@ -30,7 +30,7 @@ import {
   InsertContainer,
   InsertWrapper,
   InsightsContainer,
-} from "./Case4_Elements";
+} from "./ArticleCaseVisibleElemets";
 import caseMp_hero from "../../images/caseMp_hero.png";
 import caseMp_closing from "../../images/caseMp_closing.png";
 import caseMp_credibility from "../../images/caseMp_credibility.png";

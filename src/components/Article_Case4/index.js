@@ -34,27 +34,45 @@ const Article_Case4 = () => {
   return (
     <CaseContainer>
       <AutoHidingNavBar />
-      <motion.div
-        animate={{
-          x: 0,
-          opacity: 1,
-        }}
-        initial={{
-          x: 700,
-          opacity: 0,
-        }}
-        exit={{
-          x: -700,
-          opacity: 0,
-        }}
-        transition={{
-          duration: 0.5,
-        }}
-      >
-        <CaseWrapper>
+      <CaseWrapper>
+        <motion.div
+          animate={{
+            x: 0,
+            opacity: 1,
+          }}
+          initial={{
+            x: -700,
+            opacity: 0,
+          }}
+          exit={{
+            x: 700,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
           <HeroImageWrapper>
             <ImageCs src={caseMp_hero} id="" />
           </HeroImageWrapper>
+        </motion.div>
+        <motion.div
+          animate={{
+            x: 0,
+            opacity: 1,
+          }}
+          initial={{
+            x: 700,
+            opacity: 0,
+          }}
+          exit={{
+            x: -700,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
           <TitleContainer>
             <TitleColumn>
               <TitleWrapper>
@@ -205,94 +223,13 @@ const Article_Case4 = () => {
                 </div>
               </ColumnContentLg>
             </InsightsContainer>
-
-            {/* <FullWidthContainer>
-              <FullWidthWrapper>
-                <ColumnLg>
-                  <Image src={caseMp_credibility} id="" />
-                </ColumnLg>
-                <ColumnLg>
-                  <ColumnContentLg>
-                    <div>
-                      <h2>Credibility in Design</h2>
-                    </div>
-                    <div>
-                      <p>
-                        Based on my research and experience, the Aesthetic
-                        Usability Effect proves to be a powerful tool. Users
-                        tend to perceive aesthetically pleasing products as more
-                        usable. Therefore, we concentrated on enhancing our
-                        design by incorporating the results of our analysis,
-                        leading us to introduce a two-column design in the hero
-                        section and a grid-based layout.
-                      </p>
-                    </div>
-                  </ColumnContentLg>
-                </ColumnLg>
-              </FullWidthWrapper>
-            </FullWidthContainer>
-
-            <FullWidthContainer>
-              <FullWidthFlipWrapper>
-                <ColumnLg>
-                  <Image src={caseMp_consistency} id="" />
-                </ColumnLg>
-                <ColumnLg>
-                  <ColumnContentLg>
-                    <div>
-                      <h2>Consistency in UI design</h2>
-                    </div>
-                    <div>
-                      <p>
-                        In every project, aligning the concept with users’ needs
-                        while maintaining credibility is essential. One
-                        fundamental principle in UI design is consistency, as it
-                        serves to reduce cognitive load. Consistency simplifies
-                        the user’s understanding of how to use the product,
-                        diminishing the mental effort required to learn and
-                        navigate the interface. I am dedicated to upholding this
-                        principle in the development of collections and product
-                        pages.
-                      </p>
-                    </div>
-                  </ColumnContentLg>
-                </ColumnLg>
-              </FullWidthFlipWrapper>
-            </FullWidthContainer>
-
-            <FullWidthContainer>
-              <FullWidthWrapper>
-                <ColumnLg>
-                  <Image src={caseMp_reuseable} id="" />
-                </ColumnLg>
-                <ColumnLg>
-                  <ColumnContentLg>
-                    <div>
-                      <h2>Reusable User Interfaces</h2>
-                    </div>
-                    <div>
-                      <p>
-                        Addressing the challenge of consistently updating the
-                        website for promotions and blogs, involving multiple
-                        team members, required the implementation of a reusable
-                        component design system. This approach not only
-                        supported rapid updates but also ensured consistency.
-                        Effective communication with a developer became
-                        indispensable for the success of this project.
-                      </p>
-                    </div>
-                  </ColumnContentLg>
-                </ColumnLg>
-              </FullWidthWrapper>
-            </FullWidthContainer> */}
           </Hide>
           <Password targetPath="/visible/Article_Case4" />
-
-          <ClosingWrapper>
-            <Image src={caseMp_closing} id="" />
-          </ClosingWrapper>
-        </CaseWrapper>
-      </motion.div>
+        </motion.div>
+        <ClosingWrapper>
+          <Image src={caseMp_closing} id="" />
+        </ClosingWrapper>
+      </CaseWrapper>
     </CaseContainer>
   );
 };

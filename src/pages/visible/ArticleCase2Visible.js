@@ -38,7 +38,7 @@ import {
   ContentTitleWrapper,
   InsertImageContainer,
   InsertImageWrapper,
-} from "./Case2_Elements";
+} from "./ArticleCaseVisibleElemets";
 import case2_hero from "../../images/case2_hero.png";
 import case2_filter_initial from "../../images/case2_filter_initial.png";
 import case2_filter_iterative from "../../images/case2_filter_iterative.png";

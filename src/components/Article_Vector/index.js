@@ -53,29 +53,46 @@ import VectorMovie_1 from "../../videos/VectorMovie_1.mp4";
 const Article_Vector = () => {
   return (
     <CaseContainer id="vector" style={{ background: "white" }}>
-      <motion.div
-        animate={{
-          x: 0,
-          opacity: 1,
-        }}
-        initial={{
-          x: 700,
-          opacity: 0,
-        }}
-        exit={{
-          x: -700,
-          opacity: 0,
-        }}
-        transition={{
-          duration: 0.5,
-        }}
-      >
-        <AutoHidingNavBar />
-
-        <CaseWrapper>
+      <AutoHidingNavBar />
+      <CaseWrapper>
+        <motion.div
+          animate={{
+            x: 0,
+            opacity: 1,
+          }}
+          initial={{
+            x: -700,
+            opacity: 0,
+          }}
+          exit={{
+            x: 700,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
           <HeroImageWrapper>
             <HeroImage src={VectorArticle_1} id="" />
           </HeroImageWrapper>
+        </motion.div>
+        <motion.div
+          animate={{
+            x: 0,
+            opacity: 1,
+          }}
+          initial={{
+            x: 700,
+            opacity: 0,
+          }}
+          exit={{
+            x: -700,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
           <TitleContainer>
             <TitleColumn>
               <TitleWrapper>
@@ -462,12 +479,8 @@ const Article_Vector = () => {
               </div>
             </ColumnContentLg>
           </ContentInfoContainer>
-
-          {/* <ClosingWrapper>
-            <Image src={LarryArticle_9} />
-          </ClosingWrapper> */}
-        </CaseWrapper>
-      </motion.div>
+        </motion.div>
+      </CaseWrapper>
     </CaseContainer>
   );
 };

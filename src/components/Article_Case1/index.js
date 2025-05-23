@@ -39,28 +39,45 @@ const Article_Case1 = () => {
   return (
     <CaseContainer>
       <AutoHidingNavBar />
-      <motion.div
-        animate={{
-          x: 0,
-          opacity: 1,
-        }}
-        initial={{
-          x: 700,
-          opacity: 0,
-        }}
-        exit={{
-          x: -700,
-          opacity: 0,
-        }}
-        transition={{
-          duration: 0.5,
-        }}
-      >
-        <CaseWrapper>
+      <CaseWrapper>
+        <motion.div
+          animate={{
+            x: 0,
+            opacity: 1,
+          }}
+          initial={{
+            x: -700,
+            opacity: 0,
+          }}
+          exit={{
+            x: 700,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
           <HeroImageWrapper>
             <ImageCs src={case1_hero} id="" />
           </HeroImageWrapper>
-
+        </motion.div>
+        <motion.div
+          animate={{
+            x: 0,
+            opacity: 1,
+          }}
+          initial={{
+            x: 700,
+            opacity: 0,
+          }}
+          exit={{
+            x: -700,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
           <TitleContainer>
             <TitleColumn>
               <TitleWrapper>
@@ -253,12 +270,11 @@ const Article_Case1 = () => {
             </FullWidthContainer>
           </Hide>
           <Password targetPath="/visible/Article_Case1" />
-
-          <ClosingWrapper>
-            <Image src={case1_closing} id="" />
-          </ClosingWrapper>
-        </CaseWrapper>
-      </motion.div>
+        </motion.div>
+        <ClosingWrapper>
+          <Image src={case1_closing} id="" />
+        </ClosingWrapper>
+      </CaseWrapper>
     </CaseContainer>
   );
 };

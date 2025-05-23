@@ -2,10 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import AutoHidingNavBar from "../AutoHidingNavBar";
 import {
-  Image,
   CaseContainer,
-  // CaseWrapper,
-  HeroImageWrapper,
   TitleContainer,
   TitleWrapper,
   TitleColumn,
@@ -20,34 +17,29 @@ import {
   IntroContainer,
   IntroWrapper,
 } from "./CasePortfolio_Elements";
-// import casePortfolio_hero from "../../images/casePortfolio_hero.png";
 
 const Article_Portfolio = () => {
   return (
-    <CaseContainer id="po">
-      <motion.div
-        animate={{
-          x: 0,
-          opacity: 1,
-        }}
-        initial={{
-          x: 700,
-          opacity: 0,
-        }}
-        exit={{
-          x: -700,
-          opacity: 0,
-        }}
-        transition={{
-          duration: 0.5,
-        }}
-      >
-        <AutoHidingNavBar />
-
-        <CaseWrapper>
-          {/* <HeroImageWrapper>
-            <Image src={case_hero} id="" />
-          </HeroImageWrapper> */}
+    <CaseContainer id="portfolio">
+      <AutoHidingNavBar />
+      <CaseWrapper>
+        <motion.div
+          animate={{
+            x: 0,
+            opacity: 1,
+          }}
+          initial={{
+            x: 700,
+            opacity: 0,
+          }}
+          exit={{
+            x: -700,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
           <TitleContainer>
             <TitleColumn>
               <TitleWrapper>
@@ -148,8 +140,8 @@ const Article_Portfolio = () => {
               </div>
             </IntroWrapper>
           </IntroContainer>
-        </CaseWrapper>
-      </motion.div>
+        </motion.div>
+      </CaseWrapper>
     </CaseContainer>
   );
 };

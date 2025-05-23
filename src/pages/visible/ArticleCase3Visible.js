@@ -33,7 +33,7 @@ import {
   ContentInfoContainer,
   ContentTitleContainer,
   ContentTitleWrapper,
-} from "./Case3_Elements";
+} from "./ArticleCaseVisibleElemets";
 import case3_hero from "../../images/case3_hero.png";
 import case3_snackbar_ensure from "../../images/case3_snackbar_ensure.png";
 import case3_snackbar_responsive from "../../images/case3_snackbar_responsive.png";

@@ -43,7 +43,7 @@ import {
   InsertWrapper,
   InsertImageContainer,
   InsertImageWrapper,
-} from "./Case1_Elements";
+} from "./ArticleCaseVisibleElemets";
 import case1_hero from "../../images/case1_hero.png";
 import case1_closing from "../../images/case1_closing.png";
 import case1_research from "../../images/case1_research.png";

@@ -40,29 +40,46 @@ import DarumaArticle_7 from "../../images/DarumaArticle_7.png";
 const Article_Daruma = () => {
   return (
     <CaseContainer id="daruma" style={{ background: "white" }}>
-      <motion.div
-        animate={{
-          x: 0,
-          opacity: 1,
-        }}
-        initial={{
-          x: 700,
-          opacity: 0,
-        }}
-        exit={{
-          x: -700,
-          opacity: 0,
-        }}
-        transition={{
-          duration: 0.5,
-        }}
-      >
-        <AutoHidingNavBar />
-
-        <CaseWrapper>
+      <AutoHidingNavBar />
+      <CaseWrapper>
+        <motion.div
+          animate={{
+            x: 0,
+            opacity: 1,
+          }}
+          initial={{
+            x: -700,
+            opacity: 0,
+          }}
+          exit={{
+            x: 700,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
           <HeroImageWrapper>
             <HeroImage src={DarumaArticle_1} id="" />
           </HeroImageWrapper>
+        </motion.div>
+        <motion.div
+          animate={{
+            x: 0,
+            opacity: 1,
+          }}
+          initial={{
+            x: 700,
+            opacity: 0,
+          }}
+          exit={{
+            x: -700,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
           <TitleContainer>
             <TitleColumn>
               <TitleWrapper>
@@ -448,8 +465,8 @@ const Article_Daruma = () => {
               </div>
             </ColumnContentLg>
           </ContentInfoContainer>
-        </CaseWrapper>
-      </motion.div>
+        </motion.div>
+      </CaseWrapper>
     </CaseContainer>
   );
 };

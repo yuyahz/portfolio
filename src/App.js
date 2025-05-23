@@ -1,14 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages";
 import Case1Page from "./pages/articleCase1";
-import Case1 from "./pages/articleCase_1";
+// import Case1 from "./pages/articleCase_1";
 import Case2Page from "./pages/articleCase2";
-import Case2 from "./pages/articleCase_2";
+// import Case2 from "./pages/articleCase_2";
 import Case3Page from "./pages/articleCase3";
-import Case3 from "./pages/articleCase_3";
+// import Case3 from "./pages/articleCase_3";
 import Case4Page from "./pages/articleCase4";
-import Case4 from "./pages/articleCase_4";
+// import Case4 from "./pages/articleCase_4";
 import LarryPage from "./pages/articleLarry";
 import VectorPage from "./pages/articleVector";
 import DarumaPage from "./pages/articleDaruma";
@@ -19,6 +20,17 @@ import Wedding from "./components/Wedding";
 import WeddingParty from "./components/WeddingParty";
 import TouchStartListener from "./components/TouchStartListener";
 import { ParallaxProvider } from "react-scroll-parallax";
+import ArticleCase1Visible from "./pages/visible/ArticleCase1Visible";
+import ArticleCase2Visible from "./pages/visible/ArticleCase2Visible";
+import ArticleCase3Visible from "./pages/visible/ArticleCase3Visible";
+import ArticleCase4Visible from "./pages/visible/ArticleCase4Visible";
+
+import { Navigate } from "react-router-dom";
+
+const ProtectedRoute = ({ children }) => {
+  const isAuthenticated = localStorage.getItem("authenticated") === "true";
+  return isAuthenticated ? children : <Navigate to="/" replace />;
+};
 
 function App() {
   return (
@@ -27,13 +39,45 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/case1Page" element={<Case1Page />} />
-          <Route path="/case1" element={<Case1 />} />
+          {/* <Route path="/case1" element={<Case1 />} /> */}
+          <Route
+            path="/visible/Article_Case1"
+            element={
+              <ProtectedRoute>
+                <ArticleCase1Visible />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/case2Page" element={<Case2Page />} />
-          <Route path="/case2" element={<Case2 />} />
+          {/* <Route path="/case2" element={<Case2 />} /> */}
+          <Route
+            path="/visible/Article_Case2"
+            element={
+              <ProtectedRoute>
+                <ArticleCase2Visible />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/case3Page" element={<Case3Page />} />
-          <Route path="/case3" element={<Case3 />} />
+          {/* <Route path="/case3" element={<Case3 />} /> */}
+          <Route
+            path="/visible/Article_Case3"
+            element={
+              <ProtectedRoute>
+                <ArticleCase3Visible />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/case4Page" element={<Case4Page />} />
-          <Route path="/case4" element={<Case4 />} />
+          {/* <Route path="/case4" element={<Case4 />} /> */}
+          <Route
+            path="/visible/Article_Case4"
+            element={
+              <ProtectedRoute>
+                <ArticleCase4Visible />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/larryPage" element={<LarryPage />} />
           <Route path="/vectorPage" element={<VectorPage />} />
           <Route path="/darumaPage" element={<DarumaPage />} />
@@ -43,7 +87,7 @@ function App() {
           <Route path="/weddingParty" element={<WeddingParty />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
-        <TouchStartListener /> {/* Moved out of Routes */}
+        <TouchStartListener />
       </Router>
     </ParallaxProvider>
   );

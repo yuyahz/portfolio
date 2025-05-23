@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import StickyCTA from "../StickyCTA/StickyCTA";
+import Password from "../Password/Password";
 import AutoHidingNavBar from "../AutoHidingNavBar";
 import {
   ColumnContentLg,
@@ -34,6 +34,7 @@ import case3_closing from "../../images/case3_closing.png";
 const Article_Case3 = () => {
   return (
     <CaseContainer>
+      <AutoHidingNavBar />
       <motion.div
         animate={{
           x: 0,
@@ -51,8 +52,6 @@ const Article_Case3 = () => {
           duration: 0.5,
         }}
       >
-        <AutoHidingNavBar />
-
         <CaseWrapper>
           <HeroImageWrapper>
             <ImageCs src={case3_hero} id="" />
@@ -932,7 +931,7 @@ const Article_Case3 = () => {
               </ResearchInsight>
             </FullWidthContainer> */}
           </Hide>
-          <StickyCTA />
+          <Password targetPath="/visible/Article_Case3" />
 
           <ClosingWrapper>
             <Image src={case3_closing} id="" />

@@ -282,10 +282,6 @@ const Article_Case1 = () => {
                   I utilized the survey findings to craft user personas, laying
                   the foundation for the project ahead.
                 </p>
-                <p>
-                  I utilized the survey findings to craft user personas, laying
-                  the foundation for the project ahead.
-                </p>
               </div>
             </ColumnContentLg>
 

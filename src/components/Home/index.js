@@ -61,7 +61,7 @@ const Home = () => {
                 animate="visible"
                 transition={{ duration: 1.5 }}
               >
-                Creative Problem Solver
+                Product Designer
               </motion.p>
 
               <motion.p
@@ -71,7 +71,7 @@ const Home = () => {
                 animate="visible"
                 transition={{ duration: 1.6 }}
               >
-                UX/UI & Brand Storytelling Designer
+                UX/UI, brand & digital design
               </motion.p>
               <motion.p
                 className="caption"
@@ -80,7 +80,7 @@ const Home = () => {
                 animate="visible"
                 transition={{ duration: 1.7 }}
               >
-                with Front-End and UI Development
+                through creative problem-solving
               </motion.p>
             </div>
           </div>

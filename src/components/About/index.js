@@ -107,9 +107,10 @@ const About = () => {
             <div className="end-cap start-cap">
               <h4>
                 I'm not your conventional designer crafting attractive
-                interfaces. As a UX/UI & Brand Storytelling Designer, I immerse
-                myself in business complexities, developing efficient solutions
-                that extend beyond aesthetics to create genuine change.
+                interfaces. As a Product Designer specializing in UX/UI, brand
+                and digital design, I immerse myself in business complexities,
+                developing efficient solutions that extend beyond aesthetics to
+                create genuine change.
               </h4>
             </div>
             {/* <div className="end-cap start-cap">

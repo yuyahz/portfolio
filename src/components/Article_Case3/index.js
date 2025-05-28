@@ -42,11 +42,11 @@ const Article_Case3 = () => {
             opacity: 1,
           }}
           initial={{
-            x: 700,
+            x: -700,
             opacity: 0,
           }}
           exit={{
-            x: -700,
+            x: 700,
             opacity: 0,
           }}
           transition={{
